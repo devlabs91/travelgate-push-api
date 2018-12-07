@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,13 +15,13 @@ class RefPointsType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\RefPoint[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\RefPoint[]
      */
     public $RefPoint;
     /**
      * Constructor method for RefPointsType
      * @uses RefPointsType::setRefPoint()
-     * @param \StructType\RefPoint[] $refPoint
+     * @param \Devlabs91\TravelgatePushApi\StructType\RefPoint[] $refPoint
      */
     public function __construct(array $refPoint = array())
     {
@@ -30,7 +30,7 @@ class RefPointsType extends AbstractStructBase
     }
     /**
      * Get RefPoint value
-     * @return \StructType\RefPoint[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\RefPoint[]|null
      */
     public function getRefPoint()
     {
@@ -39,15 +39,15 @@ class RefPointsType extends AbstractStructBase
     /**
      * Set RefPoint value
      * @throws \InvalidArgumentException
-     * @param \StructType\RefPoint[] $refPoint
-     * @return \StructType\RefPointsType
+     * @param \Devlabs91\TravelgatePushApi\StructType\RefPoint[] $refPoint
+     * @return \Devlabs91\TravelgatePushApi\StructType\RefPointsType
      */
     public function setRefPoint(array $refPoint = array())
     {
         foreach ($refPoint as $refPointsTypeRefPointItem) {
             // validation for constraint: itemType
-            if (!$refPointsTypeRefPointItem instanceof \StructType\RefPoint) {
-                throw new \InvalidArgumentException(sprintf('The RefPoint property can only contain items of \StructType\RefPoint, "%s" given', is_object($refPointsTypeRefPointItem) ? get_class($refPointsTypeRefPointItem) : gettype($refPointsTypeRefPointItem)), __LINE__);
+            if (!$refPointsTypeRefPointItem instanceof \Devlabs91\TravelgatePushApi\StructType\RefPoint) {
+                throw new \InvalidArgumentException(sprintf('The RefPoint property can only contain items of \Devlabs91\TravelgatePushApi\StructType\RefPoint, "%s" given', is_object($refPointsTypeRefPointItem) ? get_class($refPointsTypeRefPointItem) : gettype($refPointsTypeRefPointItem)), __LINE__);
             }
         }
         $this->RefPoint = $refPoint;
@@ -56,14 +56,14 @@ class RefPointsType extends AbstractStructBase
     /**
      * Add item to RefPoint value
      * @throws \InvalidArgumentException
-     * @param \StructType\RefPoint $item
-     * @return \StructType\RefPointsType
+     * @param \Devlabs91\TravelgatePushApi\StructType\RefPoint $item
+     * @return \Devlabs91\TravelgatePushApi\StructType\RefPointsType
      */
-    public function addToRefPoint(\StructType\RefPoint $item)
+    public function addToRefPoint(\Devlabs91\TravelgatePushApi\StructType\RefPoint $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\RefPoint) {
-            throw new \InvalidArgumentException(sprintf('The RefPoint property can only contain items of \StructType\RefPoint, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\RefPoint) {
+            throw new \InvalidArgumentException(sprintf('The RefPoint property can only contain items of \Devlabs91\TravelgatePushApi\StructType\RefPoint, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->RefPoint[] = $item;
         return $this;
@@ -74,7 +74,7 @@ class RefPointsType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\RefPointsType
+     * @return \Devlabs91\TravelgatePushApi\StructType\RefPointsType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -76,7 +76,7 @@ class TypeRoom extends AbstractStructBase
     /**
      * Set StandardOccupancy value
      * @param int $standardOccupancy
-     * @return \StructType\TypeRoom
+     * @return \Devlabs91\TravelgatePushApi\StructType\TypeRoom
      */
     public function setStandardOccupancy($standardOccupancy = null)
     {
@@ -98,7 +98,7 @@ class TypeRoom extends AbstractStructBase
     /**
      * Set Size value
      * @param int $size
-     * @return \StructType\TypeRoom
+     * @return \Devlabs91\TravelgatePushApi\StructType\TypeRoom
      */
     public function setSize($size = null)
     {
@@ -120,7 +120,7 @@ class TypeRoom extends AbstractStructBase
     /**
      * Set RoomTypeCode value
      * @param string $roomTypeCode
-     * @return \StructType\TypeRoom
+     * @return \Devlabs91\TravelgatePushApi\StructType\TypeRoom
      */
     public function setRoomTypeCode($roomTypeCode = null)
     {
@@ -142,7 +142,7 @@ class TypeRoom extends AbstractStructBase
     /**
      * Set RoomViewCode value
      * @param string $roomViewCode
-     * @return \StructType\TypeRoom
+     * @return \Devlabs91\TravelgatePushApi\StructType\TypeRoom
      */
     public function setRoomViewCode($roomViewCode = null)
     {
@@ -164,7 +164,7 @@ class TypeRoom extends AbstractStructBase
     /**
      * Set Quantity value
      * @param int $quantity
-     * @return \StructType\TypeRoom
+     * @return \Devlabs91\TravelgatePushApi\StructType\TypeRoom
      */
     public function setQuantity($quantity = null)
     {
@@ -186,7 +186,7 @@ class TypeRoom extends AbstractStructBase
     /**
      * Set RoomClassificationCode value
      * @param string $roomClassificationCode
-     * @return \StructType\TypeRoom
+     * @return \Devlabs91\TravelgatePushApi\StructType\TypeRoom
      */
     public function setRoomClassificationCode($roomClassificationCode = null)
     {
@@ -203,7 +203,7 @@ class TypeRoom extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\TypeRoom
+     * @return \Devlabs91\TravelgatePushApi\StructType\TypeRoom
      */
     public static function __set_state(array $array)
     {

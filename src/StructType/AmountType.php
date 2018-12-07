@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class AmountType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\TotalType
+     * @var \Devlabs91\TravelgatePushApi\StructType\TotalType
      */
     public $Base;
     /**
@@ -23,7 +23,7 @@ class AmountType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\AdditionalGuestAmounts
+     * @var \Devlabs91\TravelgatePushApi\StructType\AdditionalGuestAmounts
      */
     public $AdditionalGuestAmounts;
     /**
@@ -31,7 +31,7 @@ class AmountType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\CancelPenaltiesType
+     * @var \Devlabs91\TravelgatePushApi\StructType\CancelPenaltiesType
      */
     public $CancelPolicies;
     /**
@@ -39,7 +39,7 @@ class AmountType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Discount[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\Discount[]
      */
     public $Discount;
     /**
@@ -47,7 +47,7 @@ class AmountType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\TotalType
+     * @var \Devlabs91\TravelgatePushApi\StructType\TotalType
      */
     public $Total;
     /**
@@ -69,15 +69,15 @@ class AmountType extends AbstractStructBase
      * @uses AmountType::setTotal()
      * @uses AmountType::setEffectiveDate()
      * @uses AmountType::setExpireDate()
-     * @param \StructType\TotalType $base
-     * @param \StructType\AdditionalGuestAmounts $additionalGuestAmounts
-     * @param \StructType\CancelPenaltiesType $cancelPolicies
-     * @param \StructType\Discount[] $discount
-     * @param \StructType\TotalType $total
+     * @param \Devlabs91\TravelgatePushApi\StructType\TotalType $base
+     * @param \Devlabs91\TravelgatePushApi\StructType\AdditionalGuestAmounts $additionalGuestAmounts
+     * @param \Devlabs91\TravelgatePushApi\StructType\CancelPenaltiesType $cancelPolicies
+     * @param \Devlabs91\TravelgatePushApi\StructType\Discount[] $discount
+     * @param \Devlabs91\TravelgatePushApi\StructType\TotalType $total
      * @param string $effectiveDate
      * @param string $expireDate
      */
-    public function __construct(\StructType\TotalType $base = null, \StructType\AdditionalGuestAmounts $additionalGuestAmounts = null, \StructType\CancelPenaltiesType $cancelPolicies = null, array $discount = array(), \StructType\TotalType $total = null, $effectiveDate = null, $expireDate = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\StructType\TotalType $base = null, \Devlabs91\TravelgatePushApi\StructType\AdditionalGuestAmounts $additionalGuestAmounts = null, \Devlabs91\TravelgatePushApi\StructType\CancelPenaltiesType $cancelPolicies = null, array $discount = array(), \Devlabs91\TravelgatePushApi\StructType\TotalType $total = null, $effectiveDate = null, $expireDate = null)
     {
         $this
             ->setBase($base)
@@ -90,7 +90,7 @@ class AmountType extends AbstractStructBase
     }
     /**
      * Get Base value
-     * @return \StructType\TotalType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\TotalType|null
      */
     public function getBase()
     {
@@ -98,17 +98,17 @@ class AmountType extends AbstractStructBase
     }
     /**
      * Set Base value
-     * @param \StructType\TotalType $base
-     * @return \StructType\AmountType
+     * @param \Devlabs91\TravelgatePushApi\StructType\TotalType $base
+     * @return \Devlabs91\TravelgatePushApi\StructType\AmountType
      */
-    public function setBase(\StructType\TotalType $base = null)
+    public function setBase(\Devlabs91\TravelgatePushApi\StructType\TotalType $base = null)
     {
         $this->Base = $base;
         return $this;
     }
     /**
      * Get AdditionalGuestAmounts value
-     * @return \StructType\AdditionalGuestAmounts|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\AdditionalGuestAmounts|null
      */
     public function getAdditionalGuestAmounts()
     {
@@ -116,17 +116,17 @@ class AmountType extends AbstractStructBase
     }
     /**
      * Set AdditionalGuestAmounts value
-     * @param \StructType\AdditionalGuestAmounts $additionalGuestAmounts
-     * @return \StructType\AmountType
+     * @param \Devlabs91\TravelgatePushApi\StructType\AdditionalGuestAmounts $additionalGuestAmounts
+     * @return \Devlabs91\TravelgatePushApi\StructType\AmountType
      */
-    public function setAdditionalGuestAmounts(\StructType\AdditionalGuestAmounts $additionalGuestAmounts = null)
+    public function setAdditionalGuestAmounts(\Devlabs91\TravelgatePushApi\StructType\AdditionalGuestAmounts $additionalGuestAmounts = null)
     {
         $this->AdditionalGuestAmounts = $additionalGuestAmounts;
         return $this;
     }
     /**
      * Get CancelPolicies value
-     * @return \StructType\CancelPenaltiesType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\CancelPenaltiesType|null
      */
     public function getCancelPolicies()
     {
@@ -134,17 +134,17 @@ class AmountType extends AbstractStructBase
     }
     /**
      * Set CancelPolicies value
-     * @param \StructType\CancelPenaltiesType $cancelPolicies
-     * @return \StructType\AmountType
+     * @param \Devlabs91\TravelgatePushApi\StructType\CancelPenaltiesType $cancelPolicies
+     * @return \Devlabs91\TravelgatePushApi\StructType\AmountType
      */
-    public function setCancelPolicies(\StructType\CancelPenaltiesType $cancelPolicies = null)
+    public function setCancelPolicies(\Devlabs91\TravelgatePushApi\StructType\CancelPenaltiesType $cancelPolicies = null)
     {
         $this->CancelPolicies = $cancelPolicies;
         return $this;
     }
     /**
      * Get Discount value
-     * @return \StructType\Discount[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Discount[]|null
      */
     public function getDiscount()
     {
@@ -153,15 +153,15 @@ class AmountType extends AbstractStructBase
     /**
      * Set Discount value
      * @throws \InvalidArgumentException
-     * @param \StructType\Discount[] $discount
-     * @return \StructType\AmountType
+     * @param \Devlabs91\TravelgatePushApi\StructType\Discount[] $discount
+     * @return \Devlabs91\TravelgatePushApi\StructType\AmountType
      */
     public function setDiscount(array $discount = array())
     {
         foreach ($discount as $amountTypeDiscountItem) {
             // validation for constraint: itemType
-            if (!$amountTypeDiscountItem instanceof \StructType\Discount) {
-                throw new \InvalidArgumentException(sprintf('The Discount property can only contain items of \StructType\Discount, "%s" given', is_object($amountTypeDiscountItem) ? get_class($amountTypeDiscountItem) : gettype($amountTypeDiscountItem)), __LINE__);
+            if (!$amountTypeDiscountItem instanceof \Devlabs91\TravelgatePushApi\StructType\Discount) {
+                throw new \InvalidArgumentException(sprintf('The Discount property can only contain items of \Devlabs91\TravelgatePushApi\StructType\Discount, "%s" given', is_object($amountTypeDiscountItem) ? get_class($amountTypeDiscountItem) : gettype($amountTypeDiscountItem)), __LINE__);
             }
         }
         $this->Discount = $discount;
@@ -170,21 +170,21 @@ class AmountType extends AbstractStructBase
     /**
      * Add item to Discount value
      * @throws \InvalidArgumentException
-     * @param \StructType\Discount $item
-     * @return \StructType\AmountType
+     * @param \Devlabs91\TravelgatePushApi\StructType\Discount $item
+     * @return \Devlabs91\TravelgatePushApi\StructType\AmountType
      */
-    public function addToDiscount(\StructType\Discount $item)
+    public function addToDiscount(\Devlabs91\TravelgatePushApi\StructType\Discount $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Discount) {
-            throw new \InvalidArgumentException(sprintf('The Discount property can only contain items of \StructType\Discount, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\Discount) {
+            throw new \InvalidArgumentException(sprintf('The Discount property can only contain items of \Devlabs91\TravelgatePushApi\StructType\Discount, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->Discount[] = $item;
         return $this;
     }
     /**
      * Get Total value
-     * @return \StructType\TotalType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\TotalType|null
      */
     public function getTotal()
     {
@@ -192,10 +192,10 @@ class AmountType extends AbstractStructBase
     }
     /**
      * Set Total value
-     * @param \StructType\TotalType $total
-     * @return \StructType\AmountType
+     * @param \Devlabs91\TravelgatePushApi\StructType\TotalType $total
+     * @return \Devlabs91\TravelgatePushApi\StructType\AmountType
      */
-    public function setTotal(\StructType\TotalType $total = null)
+    public function setTotal(\Devlabs91\TravelgatePushApi\StructType\TotalType $total = null)
     {
         $this->Total = $total;
         return $this;
@@ -211,7 +211,7 @@ class AmountType extends AbstractStructBase
     /**
      * Set EffectiveDate value
      * @param string $effectiveDate
-     * @return \StructType\AmountType
+     * @return \Devlabs91\TravelgatePushApi\StructType\AmountType
      */
     public function setEffectiveDate($effectiveDate = null)
     {
@@ -233,7 +233,7 @@ class AmountType extends AbstractStructBase
     /**
      * Set ExpireDate value
      * @param string $expireDate
-     * @return \StructType\AmountType
+     * @return \Devlabs91\TravelgatePushApi\StructType\AmountType
      */
     public function setExpireDate($expireDate = null)
     {
@@ -250,7 +250,7 @@ class AmountType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\AmountType
+     * @return \Devlabs91\TravelgatePushApi\StructType\AmountType
      */
     public static function __set_state(array $array)
     {

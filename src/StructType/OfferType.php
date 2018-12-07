@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class OfferType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfOfferTypeOfferRule
+     * @var \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfOfferTypeOfferRule
      */
     public $OfferRules;
     /**
@@ -23,7 +23,7 @@ class OfferType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Discount
+     * @var \Devlabs91\TravelgatePushApi\StructType\Discount
      */
     public $Discount;
     /**
@@ -31,7 +31,7 @@ class OfferType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\FreeUpgrade
+     * @var \Devlabs91\TravelgatePushApi\StructType\FreeUpgrade
      */
     public $FreeUpgrade;
     /**
@@ -39,7 +39,7 @@ class OfferType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\ParagraphType
+     * @var \Devlabs91\TravelgatePushApi\StructType\ParagraphType
      */
     public $OfferDescription;
     /**
@@ -66,15 +66,15 @@ class OfferType extends AbstractStructBase
      * @uses OfferType::setOfferCode()
      * @uses OfferType::setOfferStatusType()
      * @uses OfferType::setOfferNotifType()
-     * @param \ArrayType\ArrayOfOfferTypeOfferRule $offerRules
-     * @param \StructType\Discount $discount
-     * @param \StructType\FreeUpgrade $freeUpgrade
-     * @param \StructType\ParagraphType $offerDescription
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfOfferTypeOfferRule $offerRules
+     * @param \Devlabs91\TravelgatePushApi\StructType\Discount $discount
+     * @param \Devlabs91\TravelgatePushApi\StructType\FreeUpgrade $freeUpgrade
+     * @param \Devlabs91\TravelgatePushApi\StructType\ParagraphType $offerDescription
      * @param string $offerCode
      * @param string $offerStatusType
      * @param string $offerNotifType
      */
-    public function __construct(\ArrayType\ArrayOfOfferTypeOfferRule $offerRules = null, \StructType\Discount $discount = null, \StructType\FreeUpgrade $freeUpgrade = null, \StructType\ParagraphType $offerDescription = null, $offerCode = null, $offerStatusType = null, $offerNotifType = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\ArrayType\ArrayOfOfferTypeOfferRule $offerRules = null, \Devlabs91\TravelgatePushApi\StructType\Discount $discount = null, \Devlabs91\TravelgatePushApi\StructType\FreeUpgrade $freeUpgrade = null, \Devlabs91\TravelgatePushApi\StructType\ParagraphType $offerDescription = null, $offerCode = null, $offerStatusType = null, $offerNotifType = null)
     {
         $this
             ->setOfferRules($offerRules)
@@ -87,7 +87,7 @@ class OfferType extends AbstractStructBase
     }
     /**
      * Get OfferRules value
-     * @return \ArrayType\ArrayOfOfferTypeOfferRule|null
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfOfferTypeOfferRule|null
      */
     public function getOfferRules()
     {
@@ -95,17 +95,17 @@ class OfferType extends AbstractStructBase
     }
     /**
      * Set OfferRules value
-     * @param \ArrayType\ArrayOfOfferTypeOfferRule $offerRules
-     * @return \StructType\OfferType
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfOfferTypeOfferRule $offerRules
+     * @return \Devlabs91\TravelgatePushApi\StructType\OfferType
      */
-    public function setOfferRules(\ArrayType\ArrayOfOfferTypeOfferRule $offerRules = null)
+    public function setOfferRules(\Devlabs91\TravelgatePushApi\ArrayType\ArrayOfOfferTypeOfferRule $offerRules = null)
     {
         $this->OfferRules = $offerRules;
         return $this;
     }
     /**
      * Get Discount value
-     * @return \StructType\Discount|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Discount|null
      */
     public function getDiscount()
     {
@@ -113,17 +113,17 @@ class OfferType extends AbstractStructBase
     }
     /**
      * Set Discount value
-     * @param \StructType\Discount $discount
-     * @return \StructType\OfferType
+     * @param \Devlabs91\TravelgatePushApi\StructType\Discount $discount
+     * @return \Devlabs91\TravelgatePushApi\StructType\OfferType
      */
-    public function setDiscount(\StructType\Discount $discount = null)
+    public function setDiscount(\Devlabs91\TravelgatePushApi\StructType\Discount $discount = null)
     {
         $this->Discount = $discount;
         return $this;
     }
     /**
      * Get FreeUpgrade value
-     * @return \StructType\FreeUpgrade|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\FreeUpgrade|null
      */
     public function getFreeUpgrade()
     {
@@ -131,17 +131,17 @@ class OfferType extends AbstractStructBase
     }
     /**
      * Set FreeUpgrade value
-     * @param \StructType\FreeUpgrade $freeUpgrade
-     * @return \StructType\OfferType
+     * @param \Devlabs91\TravelgatePushApi\StructType\FreeUpgrade $freeUpgrade
+     * @return \Devlabs91\TravelgatePushApi\StructType\OfferType
      */
-    public function setFreeUpgrade(\StructType\FreeUpgrade $freeUpgrade = null)
+    public function setFreeUpgrade(\Devlabs91\TravelgatePushApi\StructType\FreeUpgrade $freeUpgrade = null)
     {
         $this->FreeUpgrade = $freeUpgrade;
         return $this;
     }
     /**
      * Get OfferDescription value
-     * @return \StructType\ParagraphType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\ParagraphType|null
      */
     public function getOfferDescription()
     {
@@ -149,10 +149,10 @@ class OfferType extends AbstractStructBase
     }
     /**
      * Set OfferDescription value
-     * @param \StructType\ParagraphType $offerDescription
-     * @return \StructType\OfferType
+     * @param \Devlabs91\TravelgatePushApi\StructType\ParagraphType $offerDescription
+     * @return \Devlabs91\TravelgatePushApi\StructType\OfferType
      */
-    public function setOfferDescription(\StructType\ParagraphType $offerDescription = null)
+    public function setOfferDescription(\Devlabs91\TravelgatePushApi\StructType\ParagraphType $offerDescription = null)
     {
         $this->OfferDescription = $offerDescription;
         return $this;
@@ -168,7 +168,7 @@ class OfferType extends AbstractStructBase
     /**
      * Set OfferCode value
      * @param string $offerCode
-     * @return \StructType\OfferType
+     * @return \Devlabs91\TravelgatePushApi\StructType\OfferType
      */
     public function setOfferCode($offerCode = null)
     {
@@ -190,7 +190,7 @@ class OfferType extends AbstractStructBase
     /**
      * Set OfferStatusType value
      * @param string $offerStatusType
-     * @return \StructType\OfferType
+     * @return \Devlabs91\TravelgatePushApi\StructType\OfferType
      */
     public function setOfferStatusType($offerStatusType = null)
     {
@@ -212,7 +212,7 @@ class OfferType extends AbstractStructBase
     /**
      * Set OfferNotifType value
      * @param string $offerNotifType
-     * @return \StructType\OfferType
+     * @return \Devlabs91\TravelgatePushApi\StructType\OfferType
      */
     public function setOfferNotifType($offerNotifType = null)
     {
@@ -229,7 +229,7 @@ class OfferType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\OfferType
+     * @return \Devlabs91\TravelgatePushApi\StructType\OfferType
      */
     public static function __set_state(array $array)
     {

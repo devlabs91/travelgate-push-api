@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Recreations extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Recreation[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\Recreation[]
      */
     public $Recreation;
     /**
@@ -27,7 +27,7 @@ class Recreations extends AbstractStructBase
      * Constructor method for Recreations
      * @uses Recreations::setRecreation()
      * @uses Recreations::setLastUpdated()
-     * @param \StructType\Recreation[] $recreation
+     * @param \Devlabs91\TravelgatePushApi\StructType\Recreation[] $recreation
      * @param bool $lastUpdated
      */
     public function __construct(array $recreation = array(), $lastUpdated = null)
@@ -38,7 +38,7 @@ class Recreations extends AbstractStructBase
     }
     /**
      * Get Recreation value
-     * @return \StructType\Recreation[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Recreation[]|null
      */
     public function getRecreation()
     {
@@ -47,15 +47,15 @@ class Recreations extends AbstractStructBase
     /**
      * Set Recreation value
      * @throws \InvalidArgumentException
-     * @param \StructType\Recreation[] $recreation
-     * @return \StructType\Recreations
+     * @param \Devlabs91\TravelgatePushApi\StructType\Recreation[] $recreation
+     * @return \Devlabs91\TravelgatePushApi\StructType\Recreations
      */
     public function setRecreation(array $recreation = array())
     {
         foreach ($recreation as $recreationsRecreationItem) {
             // validation for constraint: itemType
-            if (!$recreationsRecreationItem instanceof \StructType\Recreation) {
-                throw new \InvalidArgumentException(sprintf('The Recreation property can only contain items of \StructType\Recreation, "%s" given', is_object($recreationsRecreationItem) ? get_class($recreationsRecreationItem) : gettype($recreationsRecreationItem)), __LINE__);
+            if (!$recreationsRecreationItem instanceof \Devlabs91\TravelgatePushApi\StructType\Recreation) {
+                throw new \InvalidArgumentException(sprintf('The Recreation property can only contain items of \Devlabs91\TravelgatePushApi\StructType\Recreation, "%s" given', is_object($recreationsRecreationItem) ? get_class($recreationsRecreationItem) : gettype($recreationsRecreationItem)), __LINE__);
             }
         }
         $this->Recreation = $recreation;
@@ -64,14 +64,14 @@ class Recreations extends AbstractStructBase
     /**
      * Add item to Recreation value
      * @throws \InvalidArgumentException
-     * @param \StructType\Recreation $item
-     * @return \StructType\Recreations
+     * @param \Devlabs91\TravelgatePushApi\StructType\Recreation $item
+     * @return \Devlabs91\TravelgatePushApi\StructType\Recreations
      */
-    public function addToRecreation(\StructType\Recreation $item)
+    public function addToRecreation(\Devlabs91\TravelgatePushApi\StructType\Recreation $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Recreation) {
-            throw new \InvalidArgumentException(sprintf('The Recreation property can only contain items of \StructType\Recreation, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\Recreation) {
+            throw new \InvalidArgumentException(sprintf('The Recreation property can only contain items of \Devlabs91\TravelgatePushApi\StructType\Recreation, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->Recreation[] = $item;
         return $this;
@@ -87,7 +87,7 @@ class Recreations extends AbstractStructBase
     /**
      * Set LastUpdated value
      * @param bool $lastUpdated
-     * @return \StructType\Recreations
+     * @return \Devlabs91\TravelgatePushApi\StructType\Recreations
      */
     public function setLastUpdated($lastUpdated = null)
     {
@@ -104,7 +104,7 @@ class Recreations extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Recreations
+     * @return \Devlabs91\TravelgatePushApi\StructType\Recreations
      */
     public static function __set_state(array $array)
     {

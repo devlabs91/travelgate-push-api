@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -44,7 +44,7 @@ class Award extends AbstractStructBase
     /**
      * Set Rating value
      * @param string $rating
-     * @return \StructType\Award
+     * @return \Devlabs91\TravelgatePushApi\StructType\Award
      */
     public function setRating($rating = null)
     {
@@ -66,7 +66,7 @@ class Award extends AbstractStructBase
     /**
      * Set RatingSymbol value
      * @param string $ratingSymbol
-     * @return \StructType\Award
+     * @return \Devlabs91\TravelgatePushApi\StructType\Award
      */
     public function setRatingSymbol($ratingSymbol = null)
     {
@@ -83,7 +83,7 @@ class Award extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Award
+     * @return \Devlabs91\TravelgatePushApi\StructType\Award
      */
     public static function __set_state(array $array)
     {

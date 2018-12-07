@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class HotelResRetrieve extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\OTA_ReadRQ
+     * @var \Devlabs91\TravelgatePushApi\StructType\OTA_ReadRQ
      */
     public $request;
     /**
      * Constructor method for HotelResRetrieve
      * @uses HotelResRetrieve::setRequest()
-     * @param \StructType\OTA_ReadRQ $request
+     * @param \Devlabs91\TravelgatePushApi\StructType\OTA_ReadRQ $request
      */
-    public function __construct(\StructType\OTA_ReadRQ $request = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\StructType\OTA_ReadRQ $request = null)
     {
         $this
             ->setRequest($request);
     }
     /**
      * Get request value
-     * @return \StructType\OTA_ReadRQ|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_ReadRQ|null
      */
     public function getRequest()
     {
@@ -38,10 +38,10 @@ class HotelResRetrieve extends AbstractStructBase
     }
     /**
      * Set request value
-     * @param \StructType\OTA_ReadRQ $request
-     * @return \StructType\HotelResRetrieve
+     * @param \Devlabs91\TravelgatePushApi\StructType\OTA_ReadRQ $request
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelResRetrieve
      */
-    public function setRequest(\StructType\OTA_ReadRQ $request = null)
+    public function setRequest(\Devlabs91\TravelgatePushApi\StructType\OTA_ReadRQ $request = null)
     {
         $this->request = $request;
         return $this;
@@ -52,7 +52,7 @@ class HotelResRetrieve extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HotelResRetrieve
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelResRetrieve
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace ArrayType;
+namespace Devlabs91\TravelgatePushApi\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class ArrayOfFacilityInfoTypeGuestRoomsGuestRoomAmenity extends AbstractStructAr
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Amenity[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\Amenity[]
      */
     public $Amenity;
     /**
      * Constructor method for ArrayOfFacilityInfoTypeGuestRoomsGuestRoomAmenity
      * @uses ArrayOfFacilityInfoTypeGuestRoomsGuestRoomAmenity::setAmenity()
-     * @param \StructType\Amenity[] $amenity
+     * @param \Devlabs91\TravelgatePushApi\StructType\Amenity[] $amenity
      */
     public function __construct(array $amenity = array())
     {
@@ -31,7 +31,7 @@ class ArrayOfFacilityInfoTypeGuestRoomsGuestRoomAmenity extends AbstractStructAr
     }
     /**
      * Get Amenity value
-     * @return \StructType\Amenity[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Amenity[]|null
      */
     public function getAmenity()
     {
@@ -40,15 +40,15 @@ class ArrayOfFacilityInfoTypeGuestRoomsGuestRoomAmenity extends AbstractStructAr
     /**
      * Set Amenity value
      * @throws \InvalidArgumentException
-     * @param \StructType\Amenity[] $amenity
-     * @return \ArrayType\ArrayOfFacilityInfoTypeGuestRoomsGuestRoomAmenity
+     * @param \Devlabs91\TravelgatePushApi\StructType\Amenity[] $amenity
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfFacilityInfoTypeGuestRoomsGuestRoomAmenity
      */
     public function setAmenity(array $amenity = array())
     {
         foreach ($amenity as $arrayOfFacilityInfoTypeGuestRoomsGuestRoomAmenityAmenityItem) {
             // validation for constraint: itemType
-            if (!$arrayOfFacilityInfoTypeGuestRoomsGuestRoomAmenityAmenityItem instanceof \StructType\Amenity) {
-                throw new \InvalidArgumentException(sprintf('The Amenity property can only contain items of \StructType\Amenity, "%s" given', is_object($arrayOfFacilityInfoTypeGuestRoomsGuestRoomAmenityAmenityItem) ? get_class($arrayOfFacilityInfoTypeGuestRoomsGuestRoomAmenityAmenityItem) : gettype($arrayOfFacilityInfoTypeGuestRoomsGuestRoomAmenityAmenityItem)), __LINE__);
+            if (!$arrayOfFacilityInfoTypeGuestRoomsGuestRoomAmenityAmenityItem instanceof \Devlabs91\TravelgatePushApi\StructType\Amenity) {
+                throw new \InvalidArgumentException(sprintf('The Amenity property can only contain items of \Devlabs91\TravelgatePushApi\StructType\Amenity, "%s" given', is_object($arrayOfFacilityInfoTypeGuestRoomsGuestRoomAmenityAmenityItem) ? get_class($arrayOfFacilityInfoTypeGuestRoomsGuestRoomAmenityAmenityItem) : gettype($arrayOfFacilityInfoTypeGuestRoomsGuestRoomAmenityAmenityItem)), __LINE__);
             }
         }
         $this->Amenity = $amenity;
@@ -57,14 +57,14 @@ class ArrayOfFacilityInfoTypeGuestRoomsGuestRoomAmenity extends AbstractStructAr
     /**
      * Add item to Amenity value
      * @throws \InvalidArgumentException
-     * @param \StructType\Amenity $item
-     * @return \ArrayType\ArrayOfFacilityInfoTypeGuestRoomsGuestRoomAmenity
+     * @param \Devlabs91\TravelgatePushApi\StructType\Amenity $item
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfFacilityInfoTypeGuestRoomsGuestRoomAmenity
      */
-    public function addToAmenity(\StructType\Amenity $item)
+    public function addToAmenity(\Devlabs91\TravelgatePushApi\StructType\Amenity $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Amenity) {
-            throw new \InvalidArgumentException(sprintf('The Amenity property can only contain items of \StructType\Amenity, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\Amenity) {
+            throw new \InvalidArgumentException(sprintf('The Amenity property can only contain items of \Devlabs91\TravelgatePushApi\StructType\Amenity, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->Amenity[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class ArrayOfFacilityInfoTypeGuestRoomsGuestRoomAmenity extends AbstractStructAr
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \StructType\Amenity|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Amenity|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class ArrayOfFacilityInfoTypeGuestRoomsGuestRoomAmenity extends AbstractStructAr
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \StructType\Amenity|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Amenity|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class ArrayOfFacilityInfoTypeGuestRoomsGuestRoomAmenity extends AbstractStructAr
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \StructType\Amenity|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Amenity|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class ArrayOfFacilityInfoTypeGuestRoomsGuestRoomAmenity extends AbstractStructAr
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \StructType\Amenity|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Amenity|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class ArrayOfFacilityInfoTypeGuestRoomsGuestRoomAmenity extends AbstractStructAr
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \StructType\Amenity|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Amenity|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class ArrayOfFacilityInfoTypeGuestRoomsGuestRoomAmenity extends AbstractStructAr
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \ArrayType\ArrayOfFacilityInfoTypeGuestRoomsGuestRoomAmenity
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfFacilityInfoTypeGuestRoomsGuestRoomAmenity
      */
     public static function __set_state(array $array)
     {

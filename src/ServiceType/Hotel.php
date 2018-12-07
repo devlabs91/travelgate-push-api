@@ -1,6 +1,6 @@
 <?php
 
-namespace ServiceType;
+namespace Devlabs91\TravelgatePushApi\ServiceType;
 
 use \WsdlToPhp\PackageBase\AbstractSoapClientBase;
 
@@ -16,10 +16,10 @@ class Hotel extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\HotelAvail $parameters
-     * @return \StructType\HotelAvailResponse|bool
+     * @param \Devlabs91\TravelgatePushApi\StructType\HotelAvail $parameters
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelAvailResponse|bool
      */
-    public function HotelAvail(\StructType\HotelAvail $parameters)
+    public function HotelAvail(\Devlabs91\TravelgatePushApi\StructType\HotelAvail $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->HotelAvail($parameters));
@@ -35,10 +35,10 @@ class Hotel extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\HotelValuation $parameters
-     * @return \StructType\HotelValuationResponse|bool
+     * @param \Devlabs91\TravelgatePushApi\StructType\HotelValuation $parameters
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelValuationResponse|bool
      */
-    public function HotelValuation(\StructType\HotelValuation $parameters)
+    public function HotelValuation(\Devlabs91\TravelgatePushApi\StructType\HotelValuation $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->HotelValuation($parameters));
@@ -54,10 +54,10 @@ class Hotel extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\HotelRes $parameters
-     * @return \StructType\HotelResResponse|bool
+     * @param \Devlabs91\TravelgatePushApi\StructType\HotelRes $parameters
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelResResponse|bool
      */
-    public function HotelRes(\StructType\HotelRes $parameters)
+    public function HotelRes(\Devlabs91\TravelgatePushApi\StructType\HotelRes $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->HotelRes($parameters));
@@ -73,10 +73,10 @@ class Hotel extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\HotelResRead $parameters
-     * @return \StructType\HotelResReadResponse|bool
+     * @param \Devlabs91\TravelgatePushApi\StructType\HotelResRead $parameters
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelResReadResponse|bool
      */
-    public function HotelResRead(\StructType\HotelResRead $parameters)
+    public function HotelResRead(\Devlabs91\TravelgatePushApi\StructType\HotelResRead $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->HotelResRead($parameters));
@@ -92,10 +92,10 @@ class Hotel extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\HotelReservationList $parameters
-     * @return \StructType\HotelReservationListResponse|bool
+     * @param \Devlabs91\TravelgatePushApi\StructType\HotelReservationList $parameters
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelReservationListResponse|bool
      */
-    public function HotelReservationList(\StructType\HotelReservationList $parameters)
+    public function HotelReservationList(\Devlabs91\TravelgatePushApi\StructType\HotelReservationList $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->HotelReservationList($parameters));
@@ -111,10 +111,10 @@ class Hotel extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\HotelDescriptiveInfo $parameters
-     * @return \StructType\HotelDescriptiveInfoResponse|bool
+     * @param \Devlabs91\TravelgatePushApi\StructType\HotelDescriptiveInfo $parameters
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelDescriptiveInfoResponse|bool
      */
-    public function HotelDescriptiveInfo(\StructType\HotelDescriptiveInfo $parameters)
+    public function HotelDescriptiveInfo(\Devlabs91\TravelgatePushApi\StructType\HotelDescriptiveInfo $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->HotelDescriptiveInfo($parameters));
@@ -130,10 +130,10 @@ class Hotel extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\HotelListInfo $parameters
-     * @return \StructType\HotelListInfoResponse|bool
+     * @param \Devlabs91\TravelgatePushApi\StructType\HotelListInfo $parameters
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelListInfoResponse|bool
      */
-    public function HotelListInfo(\StructType\HotelListInfo $parameters)
+    public function HotelListInfo(\Devlabs91\TravelgatePushApi\StructType\HotelListInfo $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->HotelListInfo($parameters));
@@ -149,10 +149,10 @@ class Hotel extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\HotelAvailNotif $parameters
-     * @return \StructType\HotelAvailNotifResponse|bool
+     * @param \Devlabs91\TravelgatePushApi\StructType\HotelAvailNotif $parameters
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelAvailNotifResponse|bool
      */
-    public function HotelAvailNotif(\StructType\HotelAvailNotif $parameters)
+    public function HotelAvailNotif(\Devlabs91\TravelgatePushApi\StructType\HotelAvailNotif $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->HotelAvailNotif($parameters));
@@ -168,10 +168,10 @@ class Hotel extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\HotelRatePlanNotif $parameters
-     * @return \StructType\HotelRatePlanNotifResponse|bool
+     * @param \Devlabs91\TravelgatePushApi\StructType\HotelRatePlanNotif $parameters
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRatePlanNotifResponse|bool
      */
-    public function HotelRatePlanNotif(\StructType\HotelRatePlanNotif $parameters)
+    public function HotelRatePlanNotif(\Devlabs91\TravelgatePushApi\StructType\HotelRatePlanNotif $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->HotelRatePlanNotif($parameters));
@@ -187,10 +187,10 @@ class Hotel extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\HotelRatePlanInventoryNotif $parameters
-     * @return \StructType\HotelRatePlanInventoryNotifResponse|bool
+     * @param \Devlabs91\TravelgatePushApi\StructType\HotelRatePlanInventoryNotif $parameters
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRatePlanInventoryNotifResponse|bool
      */
-    public function HotelRatePlanInventoryNotif(\StructType\HotelRatePlanInventoryNotif $parameters)
+    public function HotelRatePlanInventoryNotif(\Devlabs91\TravelgatePushApi\StructType\HotelRatePlanInventoryNotif $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->HotelRatePlanInventoryNotif($parameters));
@@ -206,10 +206,10 @@ class Hotel extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\HotelRatePlanRetrieve $parameters
-     * @return \StructType\HotelRatePlanRetrieveResponse|bool
+     * @param \Devlabs91\TravelgatePushApi\StructType\HotelRatePlanRetrieve $parameters
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRatePlanRetrieveResponse|bool
      */
-    public function HotelRatePlanRetrieve(\StructType\HotelRatePlanRetrieve $parameters)
+    public function HotelRatePlanRetrieve(\Devlabs91\TravelgatePushApi\StructType\HotelRatePlanRetrieve $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->HotelRatePlanRetrieve($parameters));
@@ -225,10 +225,10 @@ class Hotel extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\HotelAvailRetrieve $parameters
-     * @return \StructType\HotelAvailRetrieveResponse|bool
+     * @param \Devlabs91\TravelgatePushApi\StructType\HotelAvailRetrieve $parameters
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelAvailRetrieveResponse|bool
      */
-    public function HotelAvailRetrieve(\StructType\HotelAvailRetrieve $parameters)
+    public function HotelAvailRetrieve(\Devlabs91\TravelgatePushApi\StructType\HotelAvailRetrieve $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->HotelAvailRetrieve($parameters));
@@ -244,10 +244,10 @@ class Hotel extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\HotelRatePlanInventoryRetrieve $parameters
-     * @return \StructType\HotelRatePlanInventoryRetrieveResponse|bool
+     * @param \Devlabs91\TravelgatePushApi\StructType\HotelRatePlanInventoryRetrieve $parameters
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRatePlanInventoryRetrieveResponse|bool
      */
-    public function HotelRatePlanInventoryRetrieve(\StructType\HotelRatePlanInventoryRetrieve $parameters)
+    public function HotelRatePlanInventoryRetrieve(\Devlabs91\TravelgatePushApi\StructType\HotelRatePlanInventoryRetrieve $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->HotelRatePlanInventoryRetrieve($parameters));
@@ -263,10 +263,10 @@ class Hotel extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\HotelResRetrieve $parameters
-     * @return \StructType\HotelResRetrieveResponse|bool
+     * @param \Devlabs91\TravelgatePushApi\StructType\HotelResRetrieve $parameters
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelResRetrieveResponse|bool
      */
-    public function HotelResRetrieve(\StructType\HotelResRetrieve $parameters)
+    public function HotelResRetrieve(\Devlabs91\TravelgatePushApi\StructType\HotelResRetrieve $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->HotelResRetrieve($parameters));
@@ -282,10 +282,10 @@ class Hotel extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\HotelRoomListRetrieve $parameters
-     * @return \StructType\HotelRoomListRetrieveResponse|bool
+     * @param \Devlabs91\TravelgatePushApi\StructType\HotelRoomListRetrieve $parameters
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRoomListRetrieveResponse|bool
      */
-    public function HotelRoomListRetrieve(\StructType\HotelRoomListRetrieve $parameters)
+    public function HotelRoomListRetrieve(\Devlabs91\TravelgatePushApi\StructType\HotelRoomListRetrieve $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->HotelRoomListRetrieve($parameters));
@@ -298,7 +298,7 @@ class Hotel extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \StructType\HotelAvailNotifResponse|\StructType\HotelAvailResponse|\StructType\HotelAvailRetrieveResponse|\StructType\HotelDescriptiveInfoResponse|\StructType\HotelListInfoResponse|\StructType\HotelRatePlanInventoryNotifResponse|\StructType\HotelRatePlanInventoryRetrieveResponse|\StructType\HotelRatePlanNotifResponse|\StructType\HotelRatePlanRetrieveResponse|\StructType\HotelReservationListResponse|\StructType\HotelResReadResponse|\StructType\HotelResResponse|\StructType\HotelResRetrieveResponse|\StructType\HotelRoomListRetrieveResponse|\StructType\HotelValuationResponse
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelAvailNotifResponse|\Devlabs91\TravelgatePushApi\StructType\HotelAvailResponse|\Devlabs91\TravelgatePushApi\StructType\HotelAvailRetrieveResponse|\Devlabs91\TravelgatePushApi\StructType\HotelDescriptiveInfoResponse|\Devlabs91\TravelgatePushApi\StructType\HotelListInfoResponse|\Devlabs91\TravelgatePushApi\StructType\HotelRatePlanInventoryNotifResponse|\Devlabs91\TravelgatePushApi\StructType\HotelRatePlanInventoryRetrieveResponse|\Devlabs91\TravelgatePushApi\StructType\HotelRatePlanNotifResponse|\Devlabs91\TravelgatePushApi\StructType\HotelRatePlanRetrieveResponse|\Devlabs91\TravelgatePushApi\StructType\HotelReservationListResponse|\Devlabs91\TravelgatePushApi\StructType\HotelResReadResponse|\Devlabs91\TravelgatePushApi\StructType\HotelResResponse|\Devlabs91\TravelgatePushApi\StructType\HotelResRetrieveResponse|\Devlabs91\TravelgatePushApi\StructType\HotelRoomListRetrieveResponse|\Devlabs91\TravelgatePushApi\StructType\HotelValuationResponse
      */
     public function getResult()
     {

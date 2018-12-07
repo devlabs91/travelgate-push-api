@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class RoomRateType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfRateTypeRate
+     * @var \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRateTypeRate
      */
     public $Rates;
     /**
@@ -23,7 +23,7 @@ class RoomRateType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\TotalType
+     * @var \Devlabs91\TravelgatePushApi\StructType\TotalType
      */
     public $Total;
     /**
@@ -31,7 +31,7 @@ class RoomRateType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfRoomRateTypeFeature
+     * @var \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRoomRateTypeFeature
      */
     public $Features;
     /**
@@ -87,9 +87,9 @@ class RoomRateType extends AbstractStructBase
      * @uses RoomRateType::setNumberOfUnits()
      * @uses RoomRateType::setRatePlanCode()
      * @uses RoomRateType::setRoomID()
-     * @param \ArrayType\ArrayOfRateTypeRate $rates
-     * @param \StructType\TotalType $total
-     * @param \ArrayType\ArrayOfRoomRateTypeFeature $features
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRateTypeRate $rates
+     * @param \Devlabs91\TravelgatePushApi\StructType\TotalType $total
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRoomRateTypeFeature $features
      * @param string $bookingCode
      * @param string $effectiveDate
      * @param string $expireDate
@@ -99,7 +99,7 @@ class RoomRateType extends AbstractStructBase
      * @param string $ratePlanCode
      * @param string $roomID
      */
-    public function __construct(\ArrayType\ArrayOfRateTypeRate $rates = null, \StructType\TotalType $total = null, \ArrayType\ArrayOfRoomRateTypeFeature $features = null, $bookingCode = null, $effectiveDate = null, $expireDate = null, $roomTypeCode = null, $invBlockCode = null, $numberOfUnits = null, $ratePlanCode = null, $roomID = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRateTypeRate $rates = null, \Devlabs91\TravelgatePushApi\StructType\TotalType $total = null, \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRoomRateTypeFeature $features = null, $bookingCode = null, $effectiveDate = null, $expireDate = null, $roomTypeCode = null, $invBlockCode = null, $numberOfUnits = null, $ratePlanCode = null, $roomID = null)
     {
         $this
             ->setRates($rates)
@@ -116,7 +116,7 @@ class RoomRateType extends AbstractStructBase
     }
     /**
      * Get Rates value
-     * @return \ArrayType\ArrayOfRateTypeRate|null
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRateTypeRate|null
      */
     public function getRates()
     {
@@ -124,17 +124,17 @@ class RoomRateType extends AbstractStructBase
     }
     /**
      * Set Rates value
-     * @param \ArrayType\ArrayOfRateTypeRate $rates
-     * @return \StructType\RoomRateType
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRateTypeRate $rates
+     * @return \Devlabs91\TravelgatePushApi\StructType\RoomRateType
      */
-    public function setRates(\ArrayType\ArrayOfRateTypeRate $rates = null)
+    public function setRates(\Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRateTypeRate $rates = null)
     {
         $this->Rates = $rates;
         return $this;
     }
     /**
      * Get Total value
-     * @return \StructType\TotalType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\TotalType|null
      */
     public function getTotal()
     {
@@ -142,17 +142,17 @@ class RoomRateType extends AbstractStructBase
     }
     /**
      * Set Total value
-     * @param \StructType\TotalType $total
-     * @return \StructType\RoomRateType
+     * @param \Devlabs91\TravelgatePushApi\StructType\TotalType $total
+     * @return \Devlabs91\TravelgatePushApi\StructType\RoomRateType
      */
-    public function setTotal(\StructType\TotalType $total = null)
+    public function setTotal(\Devlabs91\TravelgatePushApi\StructType\TotalType $total = null)
     {
         $this->Total = $total;
         return $this;
     }
     /**
      * Get Features value
-     * @return \ArrayType\ArrayOfRoomRateTypeFeature|null
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRoomRateTypeFeature|null
      */
     public function getFeatures()
     {
@@ -160,10 +160,10 @@ class RoomRateType extends AbstractStructBase
     }
     /**
      * Set Features value
-     * @param \ArrayType\ArrayOfRoomRateTypeFeature $features
-     * @return \StructType\RoomRateType
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRoomRateTypeFeature $features
+     * @return \Devlabs91\TravelgatePushApi\StructType\RoomRateType
      */
-    public function setFeatures(\ArrayType\ArrayOfRoomRateTypeFeature $features = null)
+    public function setFeatures(\Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRoomRateTypeFeature $features = null)
     {
         $this->Features = $features;
         return $this;
@@ -179,7 +179,7 @@ class RoomRateType extends AbstractStructBase
     /**
      * Set BookingCode value
      * @param string $bookingCode
-     * @return \StructType\RoomRateType
+     * @return \Devlabs91\TravelgatePushApi\StructType\RoomRateType
      */
     public function setBookingCode($bookingCode = null)
     {
@@ -201,7 +201,7 @@ class RoomRateType extends AbstractStructBase
     /**
      * Set EffectiveDate value
      * @param string $effectiveDate
-     * @return \StructType\RoomRateType
+     * @return \Devlabs91\TravelgatePushApi\StructType\RoomRateType
      */
     public function setEffectiveDate($effectiveDate = null)
     {
@@ -223,7 +223,7 @@ class RoomRateType extends AbstractStructBase
     /**
      * Set ExpireDate value
      * @param string $expireDate
-     * @return \StructType\RoomRateType
+     * @return \Devlabs91\TravelgatePushApi\StructType\RoomRateType
      */
     public function setExpireDate($expireDate = null)
     {
@@ -245,7 +245,7 @@ class RoomRateType extends AbstractStructBase
     /**
      * Set RoomTypeCode value
      * @param string $roomTypeCode
-     * @return \StructType\RoomRateType
+     * @return \Devlabs91\TravelgatePushApi\StructType\RoomRateType
      */
     public function setRoomTypeCode($roomTypeCode = null)
     {
@@ -267,7 +267,7 @@ class RoomRateType extends AbstractStructBase
     /**
      * Set InvBlockCode value
      * @param string $invBlockCode
-     * @return \StructType\RoomRateType
+     * @return \Devlabs91\TravelgatePushApi\StructType\RoomRateType
      */
     public function setInvBlockCode($invBlockCode = null)
     {
@@ -289,7 +289,7 @@ class RoomRateType extends AbstractStructBase
     /**
      * Set NumberOfUnits value
      * @param int $numberOfUnits
-     * @return \StructType\RoomRateType
+     * @return \Devlabs91\TravelgatePushApi\StructType\RoomRateType
      */
     public function setNumberOfUnits($numberOfUnits = null)
     {
@@ -311,7 +311,7 @@ class RoomRateType extends AbstractStructBase
     /**
      * Set RatePlanCode value
      * @param string $ratePlanCode
-     * @return \StructType\RoomRateType
+     * @return \Devlabs91\TravelgatePushApi\StructType\RoomRateType
      */
     public function setRatePlanCode($ratePlanCode = null)
     {
@@ -333,7 +333,7 @@ class RoomRateType extends AbstractStructBase
     /**
      * Set RoomID value
      * @param string $roomID
-     * @return \StructType\RoomRateType
+     * @return \Devlabs91\TravelgatePushApi\StructType\RoomRateType
      */
     public function setRoomID($roomID = null)
     {
@@ -350,7 +350,7 @@ class RoomRateType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\RoomRateType
+     * @return \Devlabs91\TravelgatePushApi\StructType\RoomRateType
      */
     public static function __set_state(array $array)
     {

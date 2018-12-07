@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class MultimediaDescriptionType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\ImageItemsType
+     * @var \Devlabs91\TravelgatePushApi\StructType\ImageItemsType
      */
     public $ImageItems;
     /**
@@ -23,17 +23,17 @@ class MultimediaDescriptionType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\TextItemsType
+     * @var \Devlabs91\TravelgatePushApi\StructType\TextItemsType
      */
     public $TextItems;
     /**
      * Constructor method for MultimediaDescriptionType
      * @uses MultimediaDescriptionType::setImageItems()
      * @uses MultimediaDescriptionType::setTextItems()
-     * @param \StructType\ImageItemsType $imageItems
-     * @param \StructType\TextItemsType $textItems
+     * @param \Devlabs91\TravelgatePushApi\StructType\ImageItemsType $imageItems
+     * @param \Devlabs91\TravelgatePushApi\StructType\TextItemsType $textItems
      */
-    public function __construct(\StructType\ImageItemsType $imageItems = null, \StructType\TextItemsType $textItems = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\StructType\ImageItemsType $imageItems = null, \Devlabs91\TravelgatePushApi\StructType\TextItemsType $textItems = null)
     {
         $this
             ->setImageItems($imageItems)
@@ -41,7 +41,7 @@ class MultimediaDescriptionType extends AbstractStructBase
     }
     /**
      * Get ImageItems value
-     * @return \StructType\ImageItemsType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\ImageItemsType|null
      */
     public function getImageItems()
     {
@@ -49,17 +49,17 @@ class MultimediaDescriptionType extends AbstractStructBase
     }
     /**
      * Set ImageItems value
-     * @param \StructType\ImageItemsType $imageItems
-     * @return \StructType\MultimediaDescriptionType
+     * @param \Devlabs91\TravelgatePushApi\StructType\ImageItemsType $imageItems
+     * @return \Devlabs91\TravelgatePushApi\StructType\MultimediaDescriptionType
      */
-    public function setImageItems(\StructType\ImageItemsType $imageItems = null)
+    public function setImageItems(\Devlabs91\TravelgatePushApi\StructType\ImageItemsType $imageItems = null)
     {
         $this->ImageItems = $imageItems;
         return $this;
     }
     /**
      * Get TextItems value
-     * @return \StructType\TextItemsType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\TextItemsType|null
      */
     public function getTextItems()
     {
@@ -67,10 +67,10 @@ class MultimediaDescriptionType extends AbstractStructBase
     }
     /**
      * Set TextItems value
-     * @param \StructType\TextItemsType $textItems
-     * @return \StructType\MultimediaDescriptionType
+     * @param \Devlabs91\TravelgatePushApi\StructType\TextItemsType $textItems
+     * @return \Devlabs91\TravelgatePushApi\StructType\MultimediaDescriptionType
      */
-    public function setTextItems(\StructType\TextItemsType $textItems = null)
+    public function setTextItems(\Devlabs91\TravelgatePushApi\StructType\TextItemsType $textItems = null)
     {
         $this->TextItems = $textItems;
         return $this;
@@ -81,7 +81,7 @@ class MultimediaDescriptionType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\MultimediaDescriptionType
+     * @return \Devlabs91\TravelgatePushApi\StructType\MultimediaDescriptionType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace ArrayType;
+namespace Devlabs91\TravelgatePushApi\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,14 +16,14 @@ class ArrayOfAvailRequestSegmentsTypeAvailRequestSegmentRoomStayCandidate extend
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\RoomStayCandidate[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\RoomStayCandidate[]
      */
     public $RoomStayCandidate;
     /**
      * Constructor method for
      * ArrayOfAvailRequestSegmentsTypeAvailRequestSegmentRoomStayCandidate
      * @uses ArrayOfAvailRequestSegmentsTypeAvailRequestSegmentRoomStayCandidate::setRoomStayCandidate()
-     * @param \StructType\RoomStayCandidate[] $roomStayCandidate
+     * @param \Devlabs91\TravelgatePushApi\StructType\RoomStayCandidate[] $roomStayCandidate
      */
     public function __construct(array $roomStayCandidate = array())
     {
@@ -32,7 +32,7 @@ class ArrayOfAvailRequestSegmentsTypeAvailRequestSegmentRoomStayCandidate extend
     }
     /**
      * Get RoomStayCandidate value
-     * @return \StructType\RoomStayCandidate[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\RoomStayCandidate[]|null
      */
     public function getRoomStayCandidate()
     {
@@ -41,15 +41,15 @@ class ArrayOfAvailRequestSegmentsTypeAvailRequestSegmentRoomStayCandidate extend
     /**
      * Set RoomStayCandidate value
      * @throws \InvalidArgumentException
-     * @param \StructType\RoomStayCandidate[] $roomStayCandidate
-     * @return \ArrayType\ArrayOfAvailRequestSegmentsTypeAvailRequestSegmentRoomStayCandidate
+     * @param \Devlabs91\TravelgatePushApi\StructType\RoomStayCandidate[] $roomStayCandidate
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfAvailRequestSegmentsTypeAvailRequestSegmentRoomStayCandidate
      */
     public function setRoomStayCandidate(array $roomStayCandidate = array())
     {
         foreach ($roomStayCandidate as $arrayOfAvailRequestSegmentsTypeAvailRequestSegmentRoomStayCandidateRoomStayCandidateItem) {
             // validation for constraint: itemType
-            if (!$arrayOfAvailRequestSegmentsTypeAvailRequestSegmentRoomStayCandidateRoomStayCandidateItem instanceof \StructType\RoomStayCandidate) {
-                throw new \InvalidArgumentException(sprintf('The RoomStayCandidate property can only contain items of \StructType\RoomStayCandidate, "%s" given', is_object($arrayOfAvailRequestSegmentsTypeAvailRequestSegmentRoomStayCandidateRoomStayCandidateItem) ? get_class($arrayOfAvailRequestSegmentsTypeAvailRequestSegmentRoomStayCandidateRoomStayCandidateItem) : gettype($arrayOfAvailRequestSegmentsTypeAvailRequestSegmentRoomStayCandidateRoomStayCandidateItem)), __LINE__);
+            if (!$arrayOfAvailRequestSegmentsTypeAvailRequestSegmentRoomStayCandidateRoomStayCandidateItem instanceof \Devlabs91\TravelgatePushApi\StructType\RoomStayCandidate) {
+                throw new \InvalidArgumentException(sprintf('The RoomStayCandidate property can only contain items of \Devlabs91\TravelgatePushApi\StructType\RoomStayCandidate, "%s" given', is_object($arrayOfAvailRequestSegmentsTypeAvailRequestSegmentRoomStayCandidateRoomStayCandidateItem) ? get_class($arrayOfAvailRequestSegmentsTypeAvailRequestSegmentRoomStayCandidateRoomStayCandidateItem) : gettype($arrayOfAvailRequestSegmentsTypeAvailRequestSegmentRoomStayCandidateRoomStayCandidateItem)), __LINE__);
             }
         }
         $this->RoomStayCandidate = $roomStayCandidate;
@@ -58,14 +58,14 @@ class ArrayOfAvailRequestSegmentsTypeAvailRequestSegmentRoomStayCandidate extend
     /**
      * Add item to RoomStayCandidate value
      * @throws \InvalidArgumentException
-     * @param \StructType\RoomStayCandidate $item
-     * @return \ArrayType\ArrayOfAvailRequestSegmentsTypeAvailRequestSegmentRoomStayCandidate
+     * @param \Devlabs91\TravelgatePushApi\StructType\RoomStayCandidate $item
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfAvailRequestSegmentsTypeAvailRequestSegmentRoomStayCandidate
      */
-    public function addToRoomStayCandidate(\StructType\RoomStayCandidate $item)
+    public function addToRoomStayCandidate(\Devlabs91\TravelgatePushApi\StructType\RoomStayCandidate $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\RoomStayCandidate) {
-            throw new \InvalidArgumentException(sprintf('The RoomStayCandidate property can only contain items of \StructType\RoomStayCandidate, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\RoomStayCandidate) {
+            throw new \InvalidArgumentException(sprintf('The RoomStayCandidate property can only contain items of \Devlabs91\TravelgatePushApi\StructType\RoomStayCandidate, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->RoomStayCandidate[] = $item;
         return $this;
@@ -73,7 +73,7 @@ class ArrayOfAvailRequestSegmentsTypeAvailRequestSegmentRoomStayCandidate extend
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \StructType\RoomStayCandidate|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\RoomStayCandidate|null
      */
     public function current()
     {
@@ -83,7 +83,7 @@ class ArrayOfAvailRequestSegmentsTypeAvailRequestSegmentRoomStayCandidate extend
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \StructType\RoomStayCandidate|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\RoomStayCandidate|null
      */
     public function item($index)
     {
@@ -92,7 +92,7 @@ class ArrayOfAvailRequestSegmentsTypeAvailRequestSegmentRoomStayCandidate extend
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \StructType\RoomStayCandidate|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\RoomStayCandidate|null
      */
     public function first()
     {
@@ -101,7 +101,7 @@ class ArrayOfAvailRequestSegmentsTypeAvailRequestSegmentRoomStayCandidate extend
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \StructType\RoomStayCandidate|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\RoomStayCandidate|null
      */
     public function last()
     {
@@ -111,7 +111,7 @@ class ArrayOfAvailRequestSegmentsTypeAvailRequestSegmentRoomStayCandidate extend
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \StructType\RoomStayCandidate|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\RoomStayCandidate|null
      */
     public function offsetGet($offset)
     {
@@ -132,7 +132,7 @@ class ArrayOfAvailRequestSegmentsTypeAvailRequestSegmentRoomStayCandidate extend
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \ArrayType\ArrayOfAvailRequestSegmentsTypeAvailRequestSegmentRoomStayCandidate
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfAvailRequestSegmentsTypeAvailRequestSegmentRoomStayCandidate
      */
     public static function __set_state(array $array)
     {

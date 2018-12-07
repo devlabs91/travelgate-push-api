@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,13 +15,13 @@ class ErrorsType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\ErrorType[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\ErrorType[]
      */
     public $Error;
     /**
      * Constructor method for ErrorsType
      * @uses ErrorsType::setError()
-     * @param \StructType\ErrorType[] $error
+     * @param \Devlabs91\TravelgatePushApi\StructType\ErrorType[] $error
      */
     public function __construct(array $error = array())
     {
@@ -30,7 +30,7 @@ class ErrorsType extends AbstractStructBase
     }
     /**
      * Get Error value
-     * @return \StructType\ErrorType[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\ErrorType[]|null
      */
     public function getError()
     {
@@ -39,15 +39,15 @@ class ErrorsType extends AbstractStructBase
     /**
      * Set Error value
      * @throws \InvalidArgumentException
-     * @param \StructType\ErrorType[] $error
-     * @return \StructType\ErrorsType
+     * @param \Devlabs91\TravelgatePushApi\StructType\ErrorType[] $error
+     * @return \Devlabs91\TravelgatePushApi\StructType\ErrorsType
      */
     public function setError(array $error = array())
     {
         foreach ($error as $errorsTypeErrorItem) {
             // validation for constraint: itemType
-            if (!$errorsTypeErrorItem instanceof \StructType\ErrorType) {
-                throw new \InvalidArgumentException(sprintf('The Error property can only contain items of \StructType\ErrorType, "%s" given', is_object($errorsTypeErrorItem) ? get_class($errorsTypeErrorItem) : gettype($errorsTypeErrorItem)), __LINE__);
+            if (!$errorsTypeErrorItem instanceof \Devlabs91\TravelgatePushApi\StructType\ErrorType) {
+                throw new \InvalidArgumentException(sprintf('The Error property can only contain items of \Devlabs91\TravelgatePushApi\StructType\ErrorType, "%s" given', is_object($errorsTypeErrorItem) ? get_class($errorsTypeErrorItem) : gettype($errorsTypeErrorItem)), __LINE__);
             }
         }
         $this->Error = $error;
@@ -56,14 +56,14 @@ class ErrorsType extends AbstractStructBase
     /**
      * Add item to Error value
      * @throws \InvalidArgumentException
-     * @param \StructType\ErrorType $item
-     * @return \StructType\ErrorsType
+     * @param \Devlabs91\TravelgatePushApi\StructType\ErrorType $item
+     * @return \Devlabs91\TravelgatePushApi\StructType\ErrorsType
      */
-    public function addToError(\StructType\ErrorType $item)
+    public function addToError(\Devlabs91\TravelgatePushApi\StructType\ErrorType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\ErrorType) {
-            throw new \InvalidArgumentException(sprintf('The Error property can only contain items of \StructType\ErrorType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\ErrorType) {
+            throw new \InvalidArgumentException(sprintf('The Error property can only contain items of \Devlabs91\TravelgatePushApi\StructType\ErrorType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->Error[] = $item;
         return $this;
@@ -74,7 +74,7 @@ class ErrorsType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ErrorsType
+     * @return \Devlabs91\TravelgatePushApi\StructType\ErrorsType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class SellableProduct extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\GuestRoomType
+     * @var \Devlabs91\TravelgatePushApi\StructType\GuestRoomType
      */
     public $GuestRoom;
     /**
@@ -23,7 +23,7 @@ class SellableProduct extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\ParagraphType
+     * @var \Devlabs91\TravelgatePushApi\StructType\ParagraphType
      */
     public $Description;
     /**
@@ -60,15 +60,15 @@ class SellableProduct extends AbstractStructBase
      * @uses SellableProduct::setInvNotifType()
      * @uses SellableProduct::setInvStatusType()
      * @uses SellableProduct::setInvTypeCode()
-     * @param \StructType\GuestRoomType $guestRoom
-     * @param \StructType\ParagraphType $description
+     * @param \Devlabs91\TravelgatePushApi\StructType\GuestRoomType $guestRoom
+     * @param \Devlabs91\TravelgatePushApi\StructType\ParagraphType $description
      * @param string $invCode
      * @param string $invType
      * @param string $invNotifType
      * @param string $invStatusType
      * @param string $invTypeCode
      */
-    public function __construct(\StructType\GuestRoomType $guestRoom = null, \StructType\ParagraphType $description = null, $invCode = null, $invType = null, $invNotifType = null, $invStatusType = null, $invTypeCode = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\StructType\GuestRoomType $guestRoom = null, \Devlabs91\TravelgatePushApi\StructType\ParagraphType $description = null, $invCode = null, $invType = null, $invNotifType = null, $invStatusType = null, $invTypeCode = null)
     {
         $this
             ->setGuestRoom($guestRoom)
@@ -81,7 +81,7 @@ class SellableProduct extends AbstractStructBase
     }
     /**
      * Get GuestRoom value
-     * @return \StructType\GuestRoomType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\GuestRoomType|null
      */
     public function getGuestRoom()
     {
@@ -89,17 +89,17 @@ class SellableProduct extends AbstractStructBase
     }
     /**
      * Set GuestRoom value
-     * @param \StructType\GuestRoomType $guestRoom
-     * @return \StructType\SellableProduct
+     * @param \Devlabs91\TravelgatePushApi\StructType\GuestRoomType $guestRoom
+     * @return \Devlabs91\TravelgatePushApi\StructType\SellableProduct
      */
-    public function setGuestRoom(\StructType\GuestRoomType $guestRoom = null)
+    public function setGuestRoom(\Devlabs91\TravelgatePushApi\StructType\GuestRoomType $guestRoom = null)
     {
         $this->GuestRoom = $guestRoom;
         return $this;
     }
     /**
      * Get Description value
-     * @return \StructType\ParagraphType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\ParagraphType|null
      */
     public function getDescription()
     {
@@ -107,10 +107,10 @@ class SellableProduct extends AbstractStructBase
     }
     /**
      * Set Description value
-     * @param \StructType\ParagraphType $description
-     * @return \StructType\SellableProduct
+     * @param \Devlabs91\TravelgatePushApi\StructType\ParagraphType $description
+     * @return \Devlabs91\TravelgatePushApi\StructType\SellableProduct
      */
-    public function setDescription(\StructType\ParagraphType $description = null)
+    public function setDescription(\Devlabs91\TravelgatePushApi\StructType\ParagraphType $description = null)
     {
         $this->Description = $description;
         return $this;
@@ -126,7 +126,7 @@ class SellableProduct extends AbstractStructBase
     /**
      * Set InvCode value
      * @param string $invCode
-     * @return \StructType\SellableProduct
+     * @return \Devlabs91\TravelgatePushApi\StructType\SellableProduct
      */
     public function setInvCode($invCode = null)
     {
@@ -148,7 +148,7 @@ class SellableProduct extends AbstractStructBase
     /**
      * Set InvType value
      * @param string $invType
-     * @return \StructType\SellableProduct
+     * @return \Devlabs91\TravelgatePushApi\StructType\SellableProduct
      */
     public function setInvType($invType = null)
     {
@@ -170,7 +170,7 @@ class SellableProduct extends AbstractStructBase
     /**
      * Set InvNotifType value
      * @param string $invNotifType
-     * @return \StructType\SellableProduct
+     * @return \Devlabs91\TravelgatePushApi\StructType\SellableProduct
      */
     public function setInvNotifType($invNotifType = null)
     {
@@ -192,7 +192,7 @@ class SellableProduct extends AbstractStructBase
     /**
      * Set InvStatusType value
      * @param string $invStatusType
-     * @return \StructType\SellableProduct
+     * @return \Devlabs91\TravelgatePushApi\StructType\SellableProduct
      */
     public function setInvStatusType($invStatusType = null)
     {
@@ -214,7 +214,7 @@ class SellableProduct extends AbstractStructBase
     /**
      * Set InvTypeCode value
      * @param string $invTypeCode
-     * @return \StructType\SellableProduct
+     * @return \Devlabs91\TravelgatePushApi\StructType\SellableProduct
      */
     public function setInvTypeCode($invTypeCode = null)
     {
@@ -231,7 +231,7 @@ class SellableProduct extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\SellableProduct
+     * @return \Devlabs91\TravelgatePushApi\StructType\SellableProduct
      */
     public static function __set_state(array $array)
     {

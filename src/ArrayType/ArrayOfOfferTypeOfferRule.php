@@ -1,6 +1,6 @@
 <?php
 
-namespace ArrayType;
+namespace Devlabs91\TravelgatePushApi\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -15,13 +15,13 @@ class ArrayOfOfferTypeOfferRule extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\OfferRule[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\OfferRule[]
      */
     public $OfferRule;
     /**
      * Constructor method for ArrayOfOfferTypeOfferRule
      * @uses ArrayOfOfferTypeOfferRule::setOfferRule()
-     * @param \StructType\OfferRule[] $offerRule
+     * @param \Devlabs91\TravelgatePushApi\StructType\OfferRule[] $offerRule
      */
     public function __construct(array $offerRule = array())
     {
@@ -30,7 +30,7 @@ class ArrayOfOfferTypeOfferRule extends AbstractStructArrayBase
     }
     /**
      * Get OfferRule value
-     * @return \StructType\OfferRule[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\OfferRule[]|null
      */
     public function getOfferRule()
     {
@@ -39,15 +39,15 @@ class ArrayOfOfferTypeOfferRule extends AbstractStructArrayBase
     /**
      * Set OfferRule value
      * @throws \InvalidArgumentException
-     * @param \StructType\OfferRule[] $offerRule
-     * @return \ArrayType\ArrayOfOfferTypeOfferRule
+     * @param \Devlabs91\TravelgatePushApi\StructType\OfferRule[] $offerRule
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfOfferTypeOfferRule
      */
     public function setOfferRule(array $offerRule = array())
     {
         foreach ($offerRule as $arrayOfOfferTypeOfferRuleOfferRuleItem) {
             // validation for constraint: itemType
-            if (!$arrayOfOfferTypeOfferRuleOfferRuleItem instanceof \StructType\OfferRule) {
-                throw new \InvalidArgumentException(sprintf('The OfferRule property can only contain items of \StructType\OfferRule, "%s" given', is_object($arrayOfOfferTypeOfferRuleOfferRuleItem) ? get_class($arrayOfOfferTypeOfferRuleOfferRuleItem) : gettype($arrayOfOfferTypeOfferRuleOfferRuleItem)), __LINE__);
+            if (!$arrayOfOfferTypeOfferRuleOfferRuleItem instanceof \Devlabs91\TravelgatePushApi\StructType\OfferRule) {
+                throw new \InvalidArgumentException(sprintf('The OfferRule property can only contain items of \Devlabs91\TravelgatePushApi\StructType\OfferRule, "%s" given', is_object($arrayOfOfferTypeOfferRuleOfferRuleItem) ? get_class($arrayOfOfferTypeOfferRuleOfferRuleItem) : gettype($arrayOfOfferTypeOfferRuleOfferRuleItem)), __LINE__);
             }
         }
         $this->OfferRule = $offerRule;
@@ -56,14 +56,14 @@ class ArrayOfOfferTypeOfferRule extends AbstractStructArrayBase
     /**
      * Add item to OfferRule value
      * @throws \InvalidArgumentException
-     * @param \StructType\OfferRule $item
-     * @return \ArrayType\ArrayOfOfferTypeOfferRule
+     * @param \Devlabs91\TravelgatePushApi\StructType\OfferRule $item
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfOfferTypeOfferRule
      */
-    public function addToOfferRule(\StructType\OfferRule $item)
+    public function addToOfferRule(\Devlabs91\TravelgatePushApi\StructType\OfferRule $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\OfferRule) {
-            throw new \InvalidArgumentException(sprintf('The OfferRule property can only contain items of \StructType\OfferRule, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\OfferRule) {
+            throw new \InvalidArgumentException(sprintf('The OfferRule property can only contain items of \Devlabs91\TravelgatePushApi\StructType\OfferRule, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->OfferRule[] = $item;
         return $this;
@@ -71,7 +71,7 @@ class ArrayOfOfferTypeOfferRule extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \StructType\OfferRule|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\OfferRule|null
      */
     public function current()
     {
@@ -81,7 +81,7 @@ class ArrayOfOfferTypeOfferRule extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \StructType\OfferRule|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\OfferRule|null
      */
     public function item($index)
     {
@@ -90,7 +90,7 @@ class ArrayOfOfferTypeOfferRule extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \StructType\OfferRule|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\OfferRule|null
      */
     public function first()
     {
@@ -99,7 +99,7 @@ class ArrayOfOfferTypeOfferRule extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \StructType\OfferRule|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\OfferRule|null
      */
     public function last()
     {
@@ -109,7 +109,7 @@ class ArrayOfOfferTypeOfferRule extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \StructType\OfferRule|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\OfferRule|null
      */
     public function offsetGet($offset)
     {
@@ -130,7 +130,7 @@ class ArrayOfOfferTypeOfferRule extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \ArrayType\ArrayOfOfferTypeOfferRule
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfOfferTypeOfferRule
      */
     public static function __set_state(array $array)
     {

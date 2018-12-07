@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -22,7 +22,7 @@ class HotelRatePlanType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\BookingRules
+     * @var \Devlabs91\TravelgatePushApi\StructType\BookingRules
      */
     public $BookingRules;
     /**
@@ -30,7 +30,7 @@ class HotelRatePlanType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfHotelRatePlanTypeRate
+     * @var \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfHotelRatePlanTypeRate
      */
     public $Rates;
     /**
@@ -38,7 +38,7 @@ class HotelRatePlanType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfHotelRatePlanTypeSupplement
+     * @var \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfHotelRatePlanTypeSupplement
      */
     public $Supplements;
     /**
@@ -46,7 +46,7 @@ class HotelRatePlanType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfHotelRatePlanTypeOffer
+     * @var \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfHotelRatePlanTypeOffer
      */
     public $Offers;
     /**
@@ -54,7 +54,7 @@ class HotelRatePlanType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\HotelRatePlanInclusionsType
+     * @var \Devlabs91\TravelgatePushApi\StructType\HotelRatePlanInclusionsType
      */
     public $RatePlanInclusionsType;
     /**
@@ -62,7 +62,7 @@ class HotelRatePlanType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfSellableProductsTypeSellableProduct
+     * @var \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfSellableProductsTypeSellableProduct
      */
     public $SellableProducts;
     /**
@@ -70,7 +70,7 @@ class HotelRatePlanType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\CommissionType
+     * @var \Devlabs91\TravelgatePushApi\StructType\CommissionType
      */
     public $Commission;
     /**
@@ -78,7 +78,7 @@ class HotelRatePlanType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\ParagraphType[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\ParagraphType[]
      */
     public $Description;
     /**
@@ -86,7 +86,7 @@ class HotelRatePlanType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\TaxesType
+     * @var \Devlabs91\TravelgatePushApi\StructType\TaxesType
      */
     public $Taxes;
     /**
@@ -198,15 +198,15 @@ class HotelRatePlanType extends AbstractStructBase
      * @uses HotelRatePlanType::setAdjustedPercentage()
      * @uses HotelRatePlanType::setAdjustUpIndicator()
      * @param bool $rateReturn
-     * @param \StructType\BookingRules $bookingRules
-     * @param \ArrayType\ArrayOfHotelRatePlanTypeRate $rates
-     * @param \ArrayType\ArrayOfHotelRatePlanTypeSupplement $supplements
-     * @param \ArrayType\ArrayOfHotelRatePlanTypeOffer $offers
-     * @param \StructType\HotelRatePlanInclusionsType $ratePlanInclusionsType
-     * @param \ArrayType\ArrayOfSellableProductsTypeSellableProduct $sellableProducts
-     * @param \StructType\CommissionType $commission
-     * @param \StructType\ParagraphType[] $description
-     * @param \StructType\TaxesType $taxes
+     * @param \Devlabs91\TravelgatePushApi\StructType\BookingRules $bookingRules
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfHotelRatePlanTypeRate $rates
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfHotelRatePlanTypeSupplement $supplements
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfHotelRatePlanTypeOffer $offers
+     * @param \Devlabs91\TravelgatePushApi\StructType\HotelRatePlanInclusionsType $ratePlanInclusionsType
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfSellableProductsTypeSellableProduct $sellableProducts
+     * @param \Devlabs91\TravelgatePushApi\StructType\CommissionType $commission
+     * @param \Devlabs91\TravelgatePushApi\StructType\ParagraphType[] $description
+     * @param \Devlabs91\TravelgatePushApi\StructType\TaxesType $taxes
      * @param string $start
      * @param string $duration
      * @param string $end
@@ -224,7 +224,7 @@ class HotelRatePlanType extends AbstractStructBase
      * @param float $adjustedPercentage
      * @param bool $adjustUpIndicator
      */
-    public function __construct($rateReturn = null, \StructType\BookingRules $bookingRules = null, \ArrayType\ArrayOfHotelRatePlanTypeRate $rates = null, \ArrayType\ArrayOfHotelRatePlanTypeSupplement $supplements = null, \ArrayType\ArrayOfHotelRatePlanTypeOffer $offers = null, \StructType\HotelRatePlanInclusionsType $ratePlanInclusionsType = null, \ArrayType\ArrayOfSellableProductsTypeSellableProduct $sellableProducts = null, \StructType\CommissionType $commission = null, array $description = array(), \StructType\TaxesType $taxes = null, $start = null, $duration = null, $end = null, $currencyCode = null, $promotionCode = null, $ratePlanType = null, $ratePlanCode = null, $ratePlanNotifType = null, $suplementsNotifType = null, $ratePlanStatusType = null, $isCommissionable = null, $yieldableIndicator = null, $baseRatePlanCode = null, $adjustedAmount = null, $adjustedPercentage = null, $adjustUpIndicator = null)
+    public function __construct($rateReturn = null, \Devlabs91\TravelgatePushApi\StructType\BookingRules $bookingRules = null, \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfHotelRatePlanTypeRate $rates = null, \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfHotelRatePlanTypeSupplement $supplements = null, \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfHotelRatePlanTypeOffer $offers = null, \Devlabs91\TravelgatePushApi\StructType\HotelRatePlanInclusionsType $ratePlanInclusionsType = null, \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfSellableProductsTypeSellableProduct $sellableProducts = null, \Devlabs91\TravelgatePushApi\StructType\CommissionType $commission = null, array $description = array(), \Devlabs91\TravelgatePushApi\StructType\TaxesType $taxes = null, $start = null, $duration = null, $end = null, $currencyCode = null, $promotionCode = null, $ratePlanType = null, $ratePlanCode = null, $ratePlanNotifType = null, $suplementsNotifType = null, $ratePlanStatusType = null, $isCommissionable = null, $yieldableIndicator = null, $baseRatePlanCode = null, $adjustedAmount = null, $adjustedPercentage = null, $adjustUpIndicator = null)
     {
         $this
             ->setRateReturn($rateReturn)
@@ -265,7 +265,7 @@ class HotelRatePlanType extends AbstractStructBase
     /**
      * Set RateReturn value
      * @param bool $rateReturn
-     * @return \StructType\HotelRatePlanType
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRatePlanType
      */
     public function setRateReturn($rateReturn = null)
     {
@@ -278,7 +278,7 @@ class HotelRatePlanType extends AbstractStructBase
     }
     /**
      * Get BookingRules value
-     * @return \StructType\BookingRules|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\BookingRules|null
      */
     public function getBookingRules()
     {
@@ -286,17 +286,17 @@ class HotelRatePlanType extends AbstractStructBase
     }
     /**
      * Set BookingRules value
-     * @param \StructType\BookingRules $bookingRules
-     * @return \StructType\HotelRatePlanType
+     * @param \Devlabs91\TravelgatePushApi\StructType\BookingRules $bookingRules
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRatePlanType
      */
-    public function setBookingRules(\StructType\BookingRules $bookingRules = null)
+    public function setBookingRules(\Devlabs91\TravelgatePushApi\StructType\BookingRules $bookingRules = null)
     {
         $this->BookingRules = $bookingRules;
         return $this;
     }
     /**
      * Get Rates value
-     * @return \ArrayType\ArrayOfHotelRatePlanTypeRate|null
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfHotelRatePlanTypeRate|null
      */
     public function getRates()
     {
@@ -304,17 +304,17 @@ class HotelRatePlanType extends AbstractStructBase
     }
     /**
      * Set Rates value
-     * @param \ArrayType\ArrayOfHotelRatePlanTypeRate $rates
-     * @return \StructType\HotelRatePlanType
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfHotelRatePlanTypeRate $rates
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRatePlanType
      */
-    public function setRates(\ArrayType\ArrayOfHotelRatePlanTypeRate $rates = null)
+    public function setRates(\Devlabs91\TravelgatePushApi\ArrayType\ArrayOfHotelRatePlanTypeRate $rates = null)
     {
         $this->Rates = $rates;
         return $this;
     }
     /**
      * Get Supplements value
-     * @return \ArrayType\ArrayOfHotelRatePlanTypeSupplement|null
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfHotelRatePlanTypeSupplement|null
      */
     public function getSupplements()
     {
@@ -322,17 +322,17 @@ class HotelRatePlanType extends AbstractStructBase
     }
     /**
      * Set Supplements value
-     * @param \ArrayType\ArrayOfHotelRatePlanTypeSupplement $supplements
-     * @return \StructType\HotelRatePlanType
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfHotelRatePlanTypeSupplement $supplements
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRatePlanType
      */
-    public function setSupplements(\ArrayType\ArrayOfHotelRatePlanTypeSupplement $supplements = null)
+    public function setSupplements(\Devlabs91\TravelgatePushApi\ArrayType\ArrayOfHotelRatePlanTypeSupplement $supplements = null)
     {
         $this->Supplements = $supplements;
         return $this;
     }
     /**
      * Get Offers value
-     * @return \ArrayType\ArrayOfHotelRatePlanTypeOffer|null
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfHotelRatePlanTypeOffer|null
      */
     public function getOffers()
     {
@@ -340,17 +340,17 @@ class HotelRatePlanType extends AbstractStructBase
     }
     /**
      * Set Offers value
-     * @param \ArrayType\ArrayOfHotelRatePlanTypeOffer $offers
-     * @return \StructType\HotelRatePlanType
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfHotelRatePlanTypeOffer $offers
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRatePlanType
      */
-    public function setOffers(\ArrayType\ArrayOfHotelRatePlanTypeOffer $offers = null)
+    public function setOffers(\Devlabs91\TravelgatePushApi\ArrayType\ArrayOfHotelRatePlanTypeOffer $offers = null)
     {
         $this->Offers = $offers;
         return $this;
     }
     /**
      * Get RatePlanInclusionsType value
-     * @return \StructType\HotelRatePlanInclusionsType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRatePlanInclusionsType|null
      */
     public function getRatePlanInclusionsType()
     {
@@ -358,17 +358,17 @@ class HotelRatePlanType extends AbstractStructBase
     }
     /**
      * Set RatePlanInclusionsType value
-     * @param \StructType\HotelRatePlanInclusionsType $ratePlanInclusionsType
-     * @return \StructType\HotelRatePlanType
+     * @param \Devlabs91\TravelgatePushApi\StructType\HotelRatePlanInclusionsType $ratePlanInclusionsType
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRatePlanType
      */
-    public function setRatePlanInclusionsType(\StructType\HotelRatePlanInclusionsType $ratePlanInclusionsType = null)
+    public function setRatePlanInclusionsType(\Devlabs91\TravelgatePushApi\StructType\HotelRatePlanInclusionsType $ratePlanInclusionsType = null)
     {
         $this->RatePlanInclusionsType = $ratePlanInclusionsType;
         return $this;
     }
     /**
      * Get SellableProducts value
-     * @return \ArrayType\ArrayOfSellableProductsTypeSellableProduct|null
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfSellableProductsTypeSellableProduct|null
      */
     public function getSellableProducts()
     {
@@ -376,17 +376,17 @@ class HotelRatePlanType extends AbstractStructBase
     }
     /**
      * Set SellableProducts value
-     * @param \ArrayType\ArrayOfSellableProductsTypeSellableProduct $sellableProducts
-     * @return \StructType\HotelRatePlanType
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfSellableProductsTypeSellableProduct $sellableProducts
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRatePlanType
      */
-    public function setSellableProducts(\ArrayType\ArrayOfSellableProductsTypeSellableProduct $sellableProducts = null)
+    public function setSellableProducts(\Devlabs91\TravelgatePushApi\ArrayType\ArrayOfSellableProductsTypeSellableProduct $sellableProducts = null)
     {
         $this->SellableProducts = $sellableProducts;
         return $this;
     }
     /**
      * Get Commission value
-     * @return \StructType\CommissionType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\CommissionType|null
      */
     public function getCommission()
     {
@@ -394,17 +394,17 @@ class HotelRatePlanType extends AbstractStructBase
     }
     /**
      * Set Commission value
-     * @param \StructType\CommissionType $commission
-     * @return \StructType\HotelRatePlanType
+     * @param \Devlabs91\TravelgatePushApi\StructType\CommissionType $commission
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRatePlanType
      */
-    public function setCommission(\StructType\CommissionType $commission = null)
+    public function setCommission(\Devlabs91\TravelgatePushApi\StructType\CommissionType $commission = null)
     {
         $this->Commission = $commission;
         return $this;
     }
     /**
      * Get Description value
-     * @return \StructType\ParagraphType[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\ParagraphType[]|null
      */
     public function getDescription()
     {
@@ -413,15 +413,15 @@ class HotelRatePlanType extends AbstractStructBase
     /**
      * Set Description value
      * @throws \InvalidArgumentException
-     * @param \StructType\ParagraphType[] $description
-     * @return \StructType\HotelRatePlanType
+     * @param \Devlabs91\TravelgatePushApi\StructType\ParagraphType[] $description
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRatePlanType
      */
     public function setDescription(array $description = array())
     {
         foreach ($description as $hotelRatePlanTypeDescriptionItem) {
             // validation for constraint: itemType
-            if (!$hotelRatePlanTypeDescriptionItem instanceof \StructType\ParagraphType) {
-                throw new \InvalidArgumentException(sprintf('The Description property can only contain items of \StructType\ParagraphType, "%s" given', is_object($hotelRatePlanTypeDescriptionItem) ? get_class($hotelRatePlanTypeDescriptionItem) : gettype($hotelRatePlanTypeDescriptionItem)), __LINE__);
+            if (!$hotelRatePlanTypeDescriptionItem instanceof \Devlabs91\TravelgatePushApi\StructType\ParagraphType) {
+                throw new \InvalidArgumentException(sprintf('The Description property can only contain items of \Devlabs91\TravelgatePushApi\StructType\ParagraphType, "%s" given', is_object($hotelRatePlanTypeDescriptionItem) ? get_class($hotelRatePlanTypeDescriptionItem) : gettype($hotelRatePlanTypeDescriptionItem)), __LINE__);
             }
         }
         $this->Description = $description;
@@ -430,21 +430,21 @@ class HotelRatePlanType extends AbstractStructBase
     /**
      * Add item to Description value
      * @throws \InvalidArgumentException
-     * @param \StructType\ParagraphType $item
-     * @return \StructType\HotelRatePlanType
+     * @param \Devlabs91\TravelgatePushApi\StructType\ParagraphType $item
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRatePlanType
      */
-    public function addToDescription(\StructType\ParagraphType $item)
+    public function addToDescription(\Devlabs91\TravelgatePushApi\StructType\ParagraphType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\ParagraphType) {
-            throw new \InvalidArgumentException(sprintf('The Description property can only contain items of \StructType\ParagraphType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\ParagraphType) {
+            throw new \InvalidArgumentException(sprintf('The Description property can only contain items of \Devlabs91\TravelgatePushApi\StructType\ParagraphType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->Description[] = $item;
         return $this;
     }
     /**
      * Get Taxes value
-     * @return \StructType\TaxesType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\TaxesType|null
      */
     public function getTaxes()
     {
@@ -452,10 +452,10 @@ class HotelRatePlanType extends AbstractStructBase
     }
     /**
      * Set Taxes value
-     * @param \StructType\TaxesType $taxes
-     * @return \StructType\HotelRatePlanType
+     * @param \Devlabs91\TravelgatePushApi\StructType\TaxesType $taxes
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRatePlanType
      */
-    public function setTaxes(\StructType\TaxesType $taxes = null)
+    public function setTaxes(\Devlabs91\TravelgatePushApi\StructType\TaxesType $taxes = null)
     {
         $this->Taxes = $taxes;
         return $this;
@@ -471,7 +471,7 @@ class HotelRatePlanType extends AbstractStructBase
     /**
      * Set Start value
      * @param string $start
-     * @return \StructType\HotelRatePlanType
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRatePlanType
      */
     public function setStart($start = null)
     {
@@ -493,7 +493,7 @@ class HotelRatePlanType extends AbstractStructBase
     /**
      * Set Duration value
      * @param string $duration
-     * @return \StructType\HotelRatePlanType
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRatePlanType
      */
     public function setDuration($duration = null)
     {
@@ -515,7 +515,7 @@ class HotelRatePlanType extends AbstractStructBase
     /**
      * Set End value
      * @param string $end
-     * @return \StructType\HotelRatePlanType
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRatePlanType
      */
     public function setEnd($end = null)
     {
@@ -537,7 +537,7 @@ class HotelRatePlanType extends AbstractStructBase
     /**
      * Set CurrencyCode value
      * @param string $currencyCode
-     * @return \StructType\HotelRatePlanType
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRatePlanType
      */
     public function setCurrencyCode($currencyCode = null)
     {
@@ -559,7 +559,7 @@ class HotelRatePlanType extends AbstractStructBase
     /**
      * Set PromotionCode value
      * @param string $promotionCode
-     * @return \StructType\HotelRatePlanType
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRatePlanType
      */
     public function setPromotionCode($promotionCode = null)
     {
@@ -581,7 +581,7 @@ class HotelRatePlanType extends AbstractStructBase
     /**
      * Set RatePlanType value
      * @param string $ratePlanType
-     * @return \StructType\HotelRatePlanType
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRatePlanType
      */
     public function setRatePlanType($ratePlanType = null)
     {
@@ -603,7 +603,7 @@ class HotelRatePlanType extends AbstractStructBase
     /**
      * Set RatePlanCode value
      * @param string $ratePlanCode
-     * @return \StructType\HotelRatePlanType
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRatePlanType
      */
     public function setRatePlanCode($ratePlanCode = null)
     {
@@ -625,7 +625,7 @@ class HotelRatePlanType extends AbstractStructBase
     /**
      * Set RatePlanNotifType value
      * @param string $ratePlanNotifType
-     * @return \StructType\HotelRatePlanType
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRatePlanType
      */
     public function setRatePlanNotifType($ratePlanNotifType = null)
     {
@@ -647,7 +647,7 @@ class HotelRatePlanType extends AbstractStructBase
     /**
      * Set SuplementsNotifType value
      * @param string $suplementsNotifType
-     * @return \StructType\HotelRatePlanType
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRatePlanType
      */
     public function setSuplementsNotifType($suplementsNotifType = null)
     {
@@ -669,7 +669,7 @@ class HotelRatePlanType extends AbstractStructBase
     /**
      * Set RatePlanStatusType value
      * @param string $ratePlanStatusType
-     * @return \StructType\HotelRatePlanType
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRatePlanType
      */
     public function setRatePlanStatusType($ratePlanStatusType = null)
     {
@@ -691,7 +691,7 @@ class HotelRatePlanType extends AbstractStructBase
     /**
      * Set IsCommissionable value
      * @param bool $isCommissionable
-     * @return \StructType\HotelRatePlanType
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRatePlanType
      */
     public function setIsCommissionable($isCommissionable = null)
     {
@@ -713,7 +713,7 @@ class HotelRatePlanType extends AbstractStructBase
     /**
      * Set YieldableIndicator value
      * @param bool $yieldableIndicator
-     * @return \StructType\HotelRatePlanType
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRatePlanType
      */
     public function setYieldableIndicator($yieldableIndicator = null)
     {
@@ -735,7 +735,7 @@ class HotelRatePlanType extends AbstractStructBase
     /**
      * Set BaseRatePlanCode value
      * @param string $baseRatePlanCode
-     * @return \StructType\HotelRatePlanType
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRatePlanType
      */
     public function setBaseRatePlanCode($baseRatePlanCode = null)
     {
@@ -757,7 +757,7 @@ class HotelRatePlanType extends AbstractStructBase
     /**
      * Set AdjustedAmount value
      * @param float $adjustedAmount
-     * @return \StructType\HotelRatePlanType
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRatePlanType
      */
     public function setAdjustedAmount($adjustedAmount = null)
     {
@@ -775,7 +775,7 @@ class HotelRatePlanType extends AbstractStructBase
     /**
      * Set AdjustedPercentage value
      * @param float $adjustedPercentage
-     * @return \StructType\HotelRatePlanType
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRatePlanType
      */
     public function setAdjustedPercentage($adjustedPercentage = null)
     {
@@ -793,7 +793,7 @@ class HotelRatePlanType extends AbstractStructBase
     /**
      * Set AdjustUpIndicator value
      * @param bool $adjustUpIndicator
-     * @return \StructType\HotelRatePlanType
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRatePlanType
      */
     public function setAdjustUpIndicator($adjustUpIndicator = null)
     {
@@ -810,7 +810,7 @@ class HotelRatePlanType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HotelRatePlanType
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRatePlanType
      */
     public static function __set_state(array $array)
     {

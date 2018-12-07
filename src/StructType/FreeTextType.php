@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -44,7 +44,7 @@ class FreeTextType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\FreeTextType
+     * @return \Devlabs91\TravelgatePushApi\StructType\FreeTextType
      */
     public function set_($_ = null)
     {
@@ -66,7 +66,7 @@ class FreeTextType extends AbstractStructBase
     /**
      * Set Language value
      * @param string $language
-     * @return \StructType\FreeTextType
+     * @return \Devlabs91\TravelgatePushApi\StructType\FreeTextType
      */
     public function setLanguage($language = null)
     {
@@ -83,7 +83,7 @@ class FreeTextType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\FreeTextType
+     * @return \Devlabs91\TravelgatePushApi\StructType\FreeTextType
      */
     public static function __set_state(array $array)
     {

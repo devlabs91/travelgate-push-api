@@ -1,6 +1,6 @@
 <?php
 
-namespace ArrayType;
+namespace Devlabs91\TravelgatePushApi\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -15,13 +15,13 @@ class ArrayOfAddressesTypeAddress extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Address[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\Address[]
      */
     public $Address;
     /**
      * Constructor method for ArrayOfAddressesTypeAddress
      * @uses ArrayOfAddressesTypeAddress::setAddress()
-     * @param \StructType\Address[] $address
+     * @param \Devlabs91\TravelgatePushApi\StructType\Address[] $address
      */
     public function __construct(array $address = array())
     {
@@ -30,7 +30,7 @@ class ArrayOfAddressesTypeAddress extends AbstractStructArrayBase
     }
     /**
      * Get Address value
-     * @return \StructType\Address[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Address[]|null
      */
     public function getAddress()
     {
@@ -39,15 +39,15 @@ class ArrayOfAddressesTypeAddress extends AbstractStructArrayBase
     /**
      * Set Address value
      * @throws \InvalidArgumentException
-     * @param \StructType\Address[] $address
-     * @return \ArrayType\ArrayOfAddressesTypeAddress
+     * @param \Devlabs91\TravelgatePushApi\StructType\Address[] $address
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfAddressesTypeAddress
      */
     public function setAddress(array $address = array())
     {
         foreach ($address as $arrayOfAddressesTypeAddressAddressItem) {
             // validation for constraint: itemType
-            if (!$arrayOfAddressesTypeAddressAddressItem instanceof \StructType\Address) {
-                throw new \InvalidArgumentException(sprintf('The Address property can only contain items of \StructType\Address, "%s" given', is_object($arrayOfAddressesTypeAddressAddressItem) ? get_class($arrayOfAddressesTypeAddressAddressItem) : gettype($arrayOfAddressesTypeAddressAddressItem)), __LINE__);
+            if (!$arrayOfAddressesTypeAddressAddressItem instanceof \Devlabs91\TravelgatePushApi\StructType\Address) {
+                throw new \InvalidArgumentException(sprintf('The Address property can only contain items of \Devlabs91\TravelgatePushApi\StructType\Address, "%s" given', is_object($arrayOfAddressesTypeAddressAddressItem) ? get_class($arrayOfAddressesTypeAddressAddressItem) : gettype($arrayOfAddressesTypeAddressAddressItem)), __LINE__);
             }
         }
         $this->Address = $address;
@@ -56,14 +56,14 @@ class ArrayOfAddressesTypeAddress extends AbstractStructArrayBase
     /**
      * Add item to Address value
      * @throws \InvalidArgumentException
-     * @param \StructType\Address $item
-     * @return \ArrayType\ArrayOfAddressesTypeAddress
+     * @param \Devlabs91\TravelgatePushApi\StructType\Address $item
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfAddressesTypeAddress
      */
-    public function addToAddress(\StructType\Address $item)
+    public function addToAddress(\Devlabs91\TravelgatePushApi\StructType\Address $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Address) {
-            throw new \InvalidArgumentException(sprintf('The Address property can only contain items of \StructType\Address, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\Address) {
+            throw new \InvalidArgumentException(sprintf('The Address property can only contain items of \Devlabs91\TravelgatePushApi\StructType\Address, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->Address[] = $item;
         return $this;
@@ -71,7 +71,7 @@ class ArrayOfAddressesTypeAddress extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \StructType\Address|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Address|null
      */
     public function current()
     {
@@ -81,7 +81,7 @@ class ArrayOfAddressesTypeAddress extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \StructType\Address|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Address|null
      */
     public function item($index)
     {
@@ -90,7 +90,7 @@ class ArrayOfAddressesTypeAddress extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \StructType\Address|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Address|null
      */
     public function first()
     {
@@ -99,7 +99,7 @@ class ArrayOfAddressesTypeAddress extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \StructType\Address|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Address|null
      */
     public function last()
     {
@@ -109,7 +109,7 @@ class ArrayOfAddressesTypeAddress extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \StructType\Address|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Address|null
      */
     public function offsetGet($offset)
     {
@@ -130,7 +130,7 @@ class ArrayOfAddressesTypeAddress extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \ArrayType\ArrayOfAddressesTypeAddress
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfAddressesTypeAddress
      */
     public static function __set_state(array $array)
     {

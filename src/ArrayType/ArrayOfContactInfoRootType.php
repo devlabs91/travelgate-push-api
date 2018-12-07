@@ -1,6 +1,6 @@
 <?php
 
-namespace ArrayType;
+namespace Devlabs91\TravelgatePushApi\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -15,13 +15,13 @@ class ArrayOfContactInfoRootType extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\ContactInfoRootType[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\ContactInfoRootType[]
      */
     public $ContactInfo;
     /**
      * Constructor method for ArrayOfContactInfoRootType
      * @uses ArrayOfContactInfoRootType::setContactInfo()
-     * @param \StructType\ContactInfoRootType[] $contactInfo
+     * @param \Devlabs91\TravelgatePushApi\StructType\ContactInfoRootType[] $contactInfo
      */
     public function __construct(array $contactInfo = array())
     {
@@ -30,7 +30,7 @@ class ArrayOfContactInfoRootType extends AbstractStructArrayBase
     }
     /**
      * Get ContactInfo value
-     * @return \StructType\ContactInfoRootType[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\ContactInfoRootType[]|null
      */
     public function getContactInfo()
     {
@@ -39,15 +39,15 @@ class ArrayOfContactInfoRootType extends AbstractStructArrayBase
     /**
      * Set ContactInfo value
      * @throws \InvalidArgumentException
-     * @param \StructType\ContactInfoRootType[] $contactInfo
-     * @return \ArrayType\ArrayOfContactInfoRootType
+     * @param \Devlabs91\TravelgatePushApi\StructType\ContactInfoRootType[] $contactInfo
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfContactInfoRootType
      */
     public function setContactInfo(array $contactInfo = array())
     {
         foreach ($contactInfo as $arrayOfContactInfoRootTypeContactInfoItem) {
             // validation for constraint: itemType
-            if (!$arrayOfContactInfoRootTypeContactInfoItem instanceof \StructType\ContactInfoRootType) {
-                throw new \InvalidArgumentException(sprintf('The ContactInfo property can only contain items of \StructType\ContactInfoRootType, "%s" given', is_object($arrayOfContactInfoRootTypeContactInfoItem) ? get_class($arrayOfContactInfoRootTypeContactInfoItem) : gettype($arrayOfContactInfoRootTypeContactInfoItem)), __LINE__);
+            if (!$arrayOfContactInfoRootTypeContactInfoItem instanceof \Devlabs91\TravelgatePushApi\StructType\ContactInfoRootType) {
+                throw new \InvalidArgumentException(sprintf('The ContactInfo property can only contain items of \Devlabs91\TravelgatePushApi\StructType\ContactInfoRootType, "%s" given', is_object($arrayOfContactInfoRootTypeContactInfoItem) ? get_class($arrayOfContactInfoRootTypeContactInfoItem) : gettype($arrayOfContactInfoRootTypeContactInfoItem)), __LINE__);
             }
         }
         $this->ContactInfo = $contactInfo;
@@ -56,14 +56,14 @@ class ArrayOfContactInfoRootType extends AbstractStructArrayBase
     /**
      * Add item to ContactInfo value
      * @throws \InvalidArgumentException
-     * @param \StructType\ContactInfoRootType $item
-     * @return \ArrayType\ArrayOfContactInfoRootType
+     * @param \Devlabs91\TravelgatePushApi\StructType\ContactInfoRootType $item
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfContactInfoRootType
      */
-    public function addToContactInfo(\StructType\ContactInfoRootType $item)
+    public function addToContactInfo(\Devlabs91\TravelgatePushApi\StructType\ContactInfoRootType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\ContactInfoRootType) {
-            throw new \InvalidArgumentException(sprintf('The ContactInfo property can only contain items of \StructType\ContactInfoRootType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\ContactInfoRootType) {
+            throw new \InvalidArgumentException(sprintf('The ContactInfo property can only contain items of \Devlabs91\TravelgatePushApi\StructType\ContactInfoRootType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->ContactInfo[] = $item;
         return $this;
@@ -71,7 +71,7 @@ class ArrayOfContactInfoRootType extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \StructType\ContactInfoRootType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\ContactInfoRootType|null
      */
     public function current()
     {
@@ -81,7 +81,7 @@ class ArrayOfContactInfoRootType extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \StructType\ContactInfoRootType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\ContactInfoRootType|null
      */
     public function item($index)
     {
@@ -90,7 +90,7 @@ class ArrayOfContactInfoRootType extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \StructType\ContactInfoRootType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\ContactInfoRootType|null
      */
     public function first()
     {
@@ -99,7 +99,7 @@ class ArrayOfContactInfoRootType extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \StructType\ContactInfoRootType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\ContactInfoRootType|null
      */
     public function last()
     {
@@ -109,7 +109,7 @@ class ArrayOfContactInfoRootType extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \StructType\ContactInfoRootType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\ContactInfoRootType|null
      */
     public function offsetGet($offset)
     {
@@ -130,7 +130,7 @@ class ArrayOfContactInfoRootType extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \ArrayType\ArrayOfContactInfoRootType
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfContactInfoRootType
      */
     public static function __set_state(array $array)
     {

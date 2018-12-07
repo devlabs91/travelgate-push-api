@@ -1,6 +1,6 @@
 <?php
 
-namespace ArrayType;
+namespace Devlabs91\TravelgatePushApi\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -15,13 +15,13 @@ class ArrayOfOTA_HotelAvailGetRQHotelAvailRequest extends AbstractStructArrayBas
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\HotelAvailRequest[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\HotelAvailRequest[]
      */
     public $HotelAvailRequest;
     /**
      * Constructor method for ArrayOfOTA_HotelAvailGetRQHotelAvailRequest
      * @uses ArrayOfOTA_HotelAvailGetRQHotelAvailRequest::setHotelAvailRequest()
-     * @param \StructType\HotelAvailRequest[] $hotelAvailRequest
+     * @param \Devlabs91\TravelgatePushApi\StructType\HotelAvailRequest[] $hotelAvailRequest
      */
     public function __construct(array $hotelAvailRequest = array())
     {
@@ -30,7 +30,7 @@ class ArrayOfOTA_HotelAvailGetRQHotelAvailRequest extends AbstractStructArrayBas
     }
     /**
      * Get HotelAvailRequest value
-     * @return \StructType\HotelAvailRequest[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelAvailRequest[]|null
      */
     public function getHotelAvailRequest()
     {
@@ -39,15 +39,15 @@ class ArrayOfOTA_HotelAvailGetRQHotelAvailRequest extends AbstractStructArrayBas
     /**
      * Set HotelAvailRequest value
      * @throws \InvalidArgumentException
-     * @param \StructType\HotelAvailRequest[] $hotelAvailRequest
-     * @return \ArrayType\ArrayOfOTA_HotelAvailGetRQHotelAvailRequest
+     * @param \Devlabs91\TravelgatePushApi\StructType\HotelAvailRequest[] $hotelAvailRequest
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfOTA_HotelAvailGetRQHotelAvailRequest
      */
     public function setHotelAvailRequest(array $hotelAvailRequest = array())
     {
         foreach ($hotelAvailRequest as $arrayOfOTA_HotelAvailGetRQHotelAvailRequestHotelAvailRequestItem) {
             // validation for constraint: itemType
-            if (!$arrayOfOTA_HotelAvailGetRQHotelAvailRequestHotelAvailRequestItem instanceof \StructType\HotelAvailRequest) {
-                throw new \InvalidArgumentException(sprintf('The HotelAvailRequest property can only contain items of \StructType\HotelAvailRequest, "%s" given', is_object($arrayOfOTA_HotelAvailGetRQHotelAvailRequestHotelAvailRequestItem) ? get_class($arrayOfOTA_HotelAvailGetRQHotelAvailRequestHotelAvailRequestItem) : gettype($arrayOfOTA_HotelAvailGetRQHotelAvailRequestHotelAvailRequestItem)), __LINE__);
+            if (!$arrayOfOTA_HotelAvailGetRQHotelAvailRequestHotelAvailRequestItem instanceof \Devlabs91\TravelgatePushApi\StructType\HotelAvailRequest) {
+                throw new \InvalidArgumentException(sprintf('The HotelAvailRequest property can only contain items of \Devlabs91\TravelgatePushApi\StructType\HotelAvailRequest, "%s" given', is_object($arrayOfOTA_HotelAvailGetRQHotelAvailRequestHotelAvailRequestItem) ? get_class($arrayOfOTA_HotelAvailGetRQHotelAvailRequestHotelAvailRequestItem) : gettype($arrayOfOTA_HotelAvailGetRQHotelAvailRequestHotelAvailRequestItem)), __LINE__);
             }
         }
         $this->HotelAvailRequest = $hotelAvailRequest;
@@ -56,14 +56,14 @@ class ArrayOfOTA_HotelAvailGetRQHotelAvailRequest extends AbstractStructArrayBas
     /**
      * Add item to HotelAvailRequest value
      * @throws \InvalidArgumentException
-     * @param \StructType\HotelAvailRequest $item
-     * @return \ArrayType\ArrayOfOTA_HotelAvailGetRQHotelAvailRequest
+     * @param \Devlabs91\TravelgatePushApi\StructType\HotelAvailRequest $item
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfOTA_HotelAvailGetRQHotelAvailRequest
      */
-    public function addToHotelAvailRequest(\StructType\HotelAvailRequest $item)
+    public function addToHotelAvailRequest(\Devlabs91\TravelgatePushApi\StructType\HotelAvailRequest $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\HotelAvailRequest) {
-            throw new \InvalidArgumentException(sprintf('The HotelAvailRequest property can only contain items of \StructType\HotelAvailRequest, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\HotelAvailRequest) {
+            throw new \InvalidArgumentException(sprintf('The HotelAvailRequest property can only contain items of \Devlabs91\TravelgatePushApi\StructType\HotelAvailRequest, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->HotelAvailRequest[] = $item;
         return $this;
@@ -71,7 +71,7 @@ class ArrayOfOTA_HotelAvailGetRQHotelAvailRequest extends AbstractStructArrayBas
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \StructType\HotelAvailRequest|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelAvailRequest|null
      */
     public function current()
     {
@@ -81,7 +81,7 @@ class ArrayOfOTA_HotelAvailGetRQHotelAvailRequest extends AbstractStructArrayBas
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \StructType\HotelAvailRequest|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelAvailRequest|null
      */
     public function item($index)
     {
@@ -90,7 +90,7 @@ class ArrayOfOTA_HotelAvailGetRQHotelAvailRequest extends AbstractStructArrayBas
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \StructType\HotelAvailRequest|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelAvailRequest|null
      */
     public function first()
     {
@@ -99,7 +99,7 @@ class ArrayOfOTA_HotelAvailGetRQHotelAvailRequest extends AbstractStructArrayBas
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \StructType\HotelAvailRequest|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelAvailRequest|null
      */
     public function last()
     {
@@ -109,7 +109,7 @@ class ArrayOfOTA_HotelAvailGetRQHotelAvailRequest extends AbstractStructArrayBas
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \StructType\HotelAvailRequest|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelAvailRequest|null
      */
     public function offsetGet($offset)
     {
@@ -130,7 +130,7 @@ class ArrayOfOTA_HotelAvailGetRQHotelAvailRequest extends AbstractStructArrayBas
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \ArrayType\ArrayOfOTA_HotelAvailGetRQHotelAvailRequest
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfOTA_HotelAvailGetRQHotelAvailRequest
      */
     public static function __set_state(array $array)
     {

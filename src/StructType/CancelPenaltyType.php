@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class CancelPenaltyType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Deadline
+     * @var \Devlabs91\TravelgatePushApi\StructType\Deadline
      */
     public $Deadline;
     /**
@@ -23,7 +23,7 @@ class CancelPenaltyType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\AmountPercentType
+     * @var \Devlabs91\TravelgatePushApi\StructType\AmountPercentType
      */
     public $AmountPercent;
     /**
@@ -60,15 +60,15 @@ class CancelPenaltyType extends AbstractStructBase
      * @uses CancelPenaltyType::setStart()
      * @uses CancelPenaltyType::setDuration()
      * @uses CancelPenaltyType::setEnd()
-     * @param \StructType\Deadline $deadline
-     * @param \StructType\AmountPercentType $amountPercent
+     * @param \Devlabs91\TravelgatePushApi\StructType\Deadline $deadline
+     * @param \Devlabs91\TravelgatePushApi\StructType\AmountPercentType $amountPercent
      * @param string $policyCode
      * @param bool $nonRefundable
      * @param string $start
      * @param string $duration
      * @param string $end
      */
-    public function __construct(\StructType\Deadline $deadline = null, \StructType\AmountPercentType $amountPercent = null, $policyCode = null, $nonRefundable = null, $start = null, $duration = null, $end = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\StructType\Deadline $deadline = null, \Devlabs91\TravelgatePushApi\StructType\AmountPercentType $amountPercent = null, $policyCode = null, $nonRefundable = null, $start = null, $duration = null, $end = null)
     {
         $this
             ->setDeadline($deadline)
@@ -81,7 +81,7 @@ class CancelPenaltyType extends AbstractStructBase
     }
     /**
      * Get Deadline value
-     * @return \StructType\Deadline|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Deadline|null
      */
     public function getDeadline()
     {
@@ -89,17 +89,17 @@ class CancelPenaltyType extends AbstractStructBase
     }
     /**
      * Set Deadline value
-     * @param \StructType\Deadline $deadline
-     * @return \StructType\CancelPenaltyType
+     * @param \Devlabs91\TravelgatePushApi\StructType\Deadline $deadline
+     * @return \Devlabs91\TravelgatePushApi\StructType\CancelPenaltyType
      */
-    public function setDeadline(\StructType\Deadline $deadline = null)
+    public function setDeadline(\Devlabs91\TravelgatePushApi\StructType\Deadline $deadline = null)
     {
         $this->Deadline = $deadline;
         return $this;
     }
     /**
      * Get AmountPercent value
-     * @return \StructType\AmountPercentType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\AmountPercentType|null
      */
     public function getAmountPercent()
     {
@@ -107,10 +107,10 @@ class CancelPenaltyType extends AbstractStructBase
     }
     /**
      * Set AmountPercent value
-     * @param \StructType\AmountPercentType $amountPercent
-     * @return \StructType\CancelPenaltyType
+     * @param \Devlabs91\TravelgatePushApi\StructType\AmountPercentType $amountPercent
+     * @return \Devlabs91\TravelgatePushApi\StructType\CancelPenaltyType
      */
-    public function setAmountPercent(\StructType\AmountPercentType $amountPercent = null)
+    public function setAmountPercent(\Devlabs91\TravelgatePushApi\StructType\AmountPercentType $amountPercent = null)
     {
         $this->AmountPercent = $amountPercent;
         return $this;
@@ -126,7 +126,7 @@ class CancelPenaltyType extends AbstractStructBase
     /**
      * Set PolicyCode value
      * @param string $policyCode
-     * @return \StructType\CancelPenaltyType
+     * @return \Devlabs91\TravelgatePushApi\StructType\CancelPenaltyType
      */
     public function setPolicyCode($policyCode = null)
     {
@@ -148,7 +148,7 @@ class CancelPenaltyType extends AbstractStructBase
     /**
      * Set NonRefundable value
      * @param bool $nonRefundable
-     * @return \StructType\CancelPenaltyType
+     * @return \Devlabs91\TravelgatePushApi\StructType\CancelPenaltyType
      */
     public function setNonRefundable($nonRefundable = null)
     {
@@ -170,7 +170,7 @@ class CancelPenaltyType extends AbstractStructBase
     /**
      * Set Start value
      * @param string $start
-     * @return \StructType\CancelPenaltyType
+     * @return \Devlabs91\TravelgatePushApi\StructType\CancelPenaltyType
      */
     public function setStart($start = null)
     {
@@ -192,7 +192,7 @@ class CancelPenaltyType extends AbstractStructBase
     /**
      * Set Duration value
      * @param string $duration
-     * @return \StructType\CancelPenaltyType
+     * @return \Devlabs91\TravelgatePushApi\StructType\CancelPenaltyType
      */
     public function setDuration($duration = null)
     {
@@ -214,7 +214,7 @@ class CancelPenaltyType extends AbstractStructBase
     /**
      * Set End value
      * @param string $end
-     * @return \StructType\CancelPenaltyType
+     * @return \Devlabs91\TravelgatePushApi\StructType\CancelPenaltyType
      */
     public function setEnd($end = null)
     {
@@ -231,7 +231,7 @@ class CancelPenaltyType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\CancelPenaltyType
+     * @return \Devlabs91\TravelgatePushApi\StructType\CancelPenaltyType
      */
     public static function __set_state(array $array)
     {

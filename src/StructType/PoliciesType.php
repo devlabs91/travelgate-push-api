@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,13 +15,13 @@ class PoliciesType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Policy[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\Policy[]
      */
     public $Policy;
     /**
      * Constructor method for PoliciesType
      * @uses PoliciesType::setPolicy()
-     * @param \StructType\Policy[] $policy
+     * @param \Devlabs91\TravelgatePushApi\StructType\Policy[] $policy
      */
     public function __construct(array $policy = array())
     {
@@ -30,7 +30,7 @@ class PoliciesType extends AbstractStructBase
     }
     /**
      * Get Policy value
-     * @return \StructType\Policy[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Policy[]|null
      */
     public function getPolicy()
     {
@@ -39,15 +39,15 @@ class PoliciesType extends AbstractStructBase
     /**
      * Set Policy value
      * @throws \InvalidArgumentException
-     * @param \StructType\Policy[] $policy
-     * @return \StructType\PoliciesType
+     * @param \Devlabs91\TravelgatePushApi\StructType\Policy[] $policy
+     * @return \Devlabs91\TravelgatePushApi\StructType\PoliciesType
      */
     public function setPolicy(array $policy = array())
     {
         foreach ($policy as $policiesTypePolicyItem) {
             // validation for constraint: itemType
-            if (!$policiesTypePolicyItem instanceof \StructType\Policy) {
-                throw new \InvalidArgumentException(sprintf('The Policy property can only contain items of \StructType\Policy, "%s" given', is_object($policiesTypePolicyItem) ? get_class($policiesTypePolicyItem) : gettype($policiesTypePolicyItem)), __LINE__);
+            if (!$policiesTypePolicyItem instanceof \Devlabs91\TravelgatePushApi\StructType\Policy) {
+                throw new \InvalidArgumentException(sprintf('The Policy property can only contain items of \Devlabs91\TravelgatePushApi\StructType\Policy, "%s" given', is_object($policiesTypePolicyItem) ? get_class($policiesTypePolicyItem) : gettype($policiesTypePolicyItem)), __LINE__);
             }
         }
         $this->Policy = $policy;
@@ -56,14 +56,14 @@ class PoliciesType extends AbstractStructBase
     /**
      * Add item to Policy value
      * @throws \InvalidArgumentException
-     * @param \StructType\Policy $item
-     * @return \StructType\PoliciesType
+     * @param \Devlabs91\TravelgatePushApi\StructType\Policy $item
+     * @return \Devlabs91\TravelgatePushApi\StructType\PoliciesType
      */
-    public function addToPolicy(\StructType\Policy $item)
+    public function addToPolicy(\Devlabs91\TravelgatePushApi\StructType\Policy $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Policy) {
-            throw new \InvalidArgumentException(sprintf('The Policy property can only contain items of \StructType\Policy, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\Policy) {
+            throw new \InvalidArgumentException(sprintf('The Policy property can only contain items of \Devlabs91\TravelgatePushApi\StructType\Policy, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->Policy[] = $item;
         return $this;
@@ -74,7 +74,7 @@ class PoliciesType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\PoliciesType
+     * @return \Devlabs91\TravelgatePushApi\StructType\PoliciesType
      */
     public static function __set_state(array $array)
     {

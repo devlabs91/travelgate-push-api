@@ -1,6 +1,6 @@
 <?php
 
-namespace ArrayType;
+namespace Devlabs91\TravelgatePushApi\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -15,13 +15,13 @@ class ArrayOfGuaranteeTypeGuaranteeAccepted extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\GuaranteeAccepted[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\GuaranteeAccepted[]
      */
     public $GuaranteeAccepted;
     /**
      * Constructor method for ArrayOfGuaranteeTypeGuaranteeAccepted
      * @uses ArrayOfGuaranteeTypeGuaranteeAccepted::setGuaranteeAccepted()
-     * @param \StructType\GuaranteeAccepted[] $guaranteeAccepted
+     * @param \Devlabs91\TravelgatePushApi\StructType\GuaranteeAccepted[] $guaranteeAccepted
      */
     public function __construct(array $guaranteeAccepted = array())
     {
@@ -30,7 +30,7 @@ class ArrayOfGuaranteeTypeGuaranteeAccepted extends AbstractStructArrayBase
     }
     /**
      * Get GuaranteeAccepted value
-     * @return \StructType\GuaranteeAccepted[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\GuaranteeAccepted[]|null
      */
     public function getGuaranteeAccepted()
     {
@@ -39,15 +39,15 @@ class ArrayOfGuaranteeTypeGuaranteeAccepted extends AbstractStructArrayBase
     /**
      * Set GuaranteeAccepted value
      * @throws \InvalidArgumentException
-     * @param \StructType\GuaranteeAccepted[] $guaranteeAccepted
-     * @return \ArrayType\ArrayOfGuaranteeTypeGuaranteeAccepted
+     * @param \Devlabs91\TravelgatePushApi\StructType\GuaranteeAccepted[] $guaranteeAccepted
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfGuaranteeTypeGuaranteeAccepted
      */
     public function setGuaranteeAccepted(array $guaranteeAccepted = array())
     {
         foreach ($guaranteeAccepted as $arrayOfGuaranteeTypeGuaranteeAcceptedGuaranteeAcceptedItem) {
             // validation for constraint: itemType
-            if (!$arrayOfGuaranteeTypeGuaranteeAcceptedGuaranteeAcceptedItem instanceof \StructType\GuaranteeAccepted) {
-                throw new \InvalidArgumentException(sprintf('The GuaranteeAccepted property can only contain items of \StructType\GuaranteeAccepted, "%s" given', is_object($arrayOfGuaranteeTypeGuaranteeAcceptedGuaranteeAcceptedItem) ? get_class($arrayOfGuaranteeTypeGuaranteeAcceptedGuaranteeAcceptedItem) : gettype($arrayOfGuaranteeTypeGuaranteeAcceptedGuaranteeAcceptedItem)), __LINE__);
+            if (!$arrayOfGuaranteeTypeGuaranteeAcceptedGuaranteeAcceptedItem instanceof \Devlabs91\TravelgatePushApi\StructType\GuaranteeAccepted) {
+                throw new \InvalidArgumentException(sprintf('The GuaranteeAccepted property can only contain items of \Devlabs91\TravelgatePushApi\StructType\GuaranteeAccepted, "%s" given', is_object($arrayOfGuaranteeTypeGuaranteeAcceptedGuaranteeAcceptedItem) ? get_class($arrayOfGuaranteeTypeGuaranteeAcceptedGuaranteeAcceptedItem) : gettype($arrayOfGuaranteeTypeGuaranteeAcceptedGuaranteeAcceptedItem)), __LINE__);
             }
         }
         $this->GuaranteeAccepted = $guaranteeAccepted;
@@ -56,14 +56,14 @@ class ArrayOfGuaranteeTypeGuaranteeAccepted extends AbstractStructArrayBase
     /**
      * Add item to GuaranteeAccepted value
      * @throws \InvalidArgumentException
-     * @param \StructType\GuaranteeAccepted $item
-     * @return \ArrayType\ArrayOfGuaranteeTypeGuaranteeAccepted
+     * @param \Devlabs91\TravelgatePushApi\StructType\GuaranteeAccepted $item
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfGuaranteeTypeGuaranteeAccepted
      */
-    public function addToGuaranteeAccepted(\StructType\GuaranteeAccepted $item)
+    public function addToGuaranteeAccepted(\Devlabs91\TravelgatePushApi\StructType\GuaranteeAccepted $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\GuaranteeAccepted) {
-            throw new \InvalidArgumentException(sprintf('The GuaranteeAccepted property can only contain items of \StructType\GuaranteeAccepted, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\GuaranteeAccepted) {
+            throw new \InvalidArgumentException(sprintf('The GuaranteeAccepted property can only contain items of \Devlabs91\TravelgatePushApi\StructType\GuaranteeAccepted, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->GuaranteeAccepted[] = $item;
         return $this;
@@ -71,7 +71,7 @@ class ArrayOfGuaranteeTypeGuaranteeAccepted extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \StructType\GuaranteeAccepted|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\GuaranteeAccepted|null
      */
     public function current()
     {
@@ -81,7 +81,7 @@ class ArrayOfGuaranteeTypeGuaranteeAccepted extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \StructType\GuaranteeAccepted|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\GuaranteeAccepted|null
      */
     public function item($index)
     {
@@ -90,7 +90,7 @@ class ArrayOfGuaranteeTypeGuaranteeAccepted extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \StructType\GuaranteeAccepted|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\GuaranteeAccepted|null
      */
     public function first()
     {
@@ -99,7 +99,7 @@ class ArrayOfGuaranteeTypeGuaranteeAccepted extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \StructType\GuaranteeAccepted|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\GuaranteeAccepted|null
      */
     public function last()
     {
@@ -109,7 +109,7 @@ class ArrayOfGuaranteeTypeGuaranteeAccepted extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \StructType\GuaranteeAccepted|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\GuaranteeAccepted|null
      */
     public function offsetGet($offset)
     {
@@ -130,7 +130,7 @@ class ArrayOfGuaranteeTypeGuaranteeAccepted extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \ArrayType\ArrayOfGuaranteeTypeGuaranteeAccepted
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfGuaranteeTypeGuaranteeAccepted
      */
     public static function __set_state(array $array)
     {

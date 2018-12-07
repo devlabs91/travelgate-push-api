@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -44,7 +44,7 @@ class Position extends AbstractStructBase
     /**
      * Set Latitude value
      * @param string $latitude
-     * @return \StructType\Position
+     * @return \Devlabs91\TravelgatePushApi\StructType\Position
      */
     public function setLatitude($latitude = null)
     {
@@ -66,7 +66,7 @@ class Position extends AbstractStructBase
     /**
      * Set Longitude value
      * @param string $longitude
-     * @return \StructType\Position
+     * @return \Devlabs91\TravelgatePushApi\StructType\Position
      */
     public function setLongitude($longitude = null)
     {
@@ -83,7 +83,7 @@ class Position extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Position
+     * @return \Devlabs91\TravelgatePushApi\StructType\Position
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class HotelAvailRetrieve extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\OTA_HotelAvailGetRQ
+     * @var \Devlabs91\TravelgatePushApi\StructType\OTA_HotelAvailGetRQ
      */
     public $request;
     /**
      * Constructor method for HotelAvailRetrieve
      * @uses HotelAvailRetrieve::setRequest()
-     * @param \StructType\OTA_HotelAvailGetRQ $request
+     * @param \Devlabs91\TravelgatePushApi\StructType\OTA_HotelAvailGetRQ $request
      */
-    public function __construct(\StructType\OTA_HotelAvailGetRQ $request = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\StructType\OTA_HotelAvailGetRQ $request = null)
     {
         $this
             ->setRequest($request);
     }
     /**
      * Get request value
-     * @return \StructType\OTA_HotelAvailGetRQ|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_HotelAvailGetRQ|null
      */
     public function getRequest()
     {
@@ -38,10 +38,10 @@ class HotelAvailRetrieve extends AbstractStructBase
     }
     /**
      * Set request value
-     * @param \StructType\OTA_HotelAvailGetRQ $request
-     * @return \StructType\HotelAvailRetrieve
+     * @param \Devlabs91\TravelgatePushApi\StructType\OTA_HotelAvailGetRQ $request
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelAvailRetrieve
      */
-    public function setRequest(\StructType\OTA_HotelAvailGetRQ $request = null)
+    public function setRequest(\Devlabs91\TravelgatePushApi\StructType\OTA_HotelAvailGetRQ $request = null)
     {
         $this->request = $request;
         return $this;
@@ -52,7 +52,7 @@ class HotelAvailRetrieve extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HotelAvailRetrieve
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelAvailRetrieve
      */
     public static function __set_state(array $array)
     {

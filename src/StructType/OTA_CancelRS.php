@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class OTA_CancelRS extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\CancelInfoRSType
+     * @var \Devlabs91\TravelgatePushApi\StructType\CancelInfoRSType
      */
     public $CancelInfoRS;
     /**
@@ -23,7 +23,7 @@ class OTA_CancelRS extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\ErrorsType
+     * @var \Devlabs91\TravelgatePushApi\StructType\ErrorsType
      */
     public $Errors;
     /**
@@ -31,7 +31,7 @@ class OTA_CancelRS extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\SuccessType
+     * @var \Devlabs91\TravelgatePushApi\StructType\SuccessType
      */
     public $Success;
     /**
@@ -39,7 +39,7 @@ class OTA_CancelRS extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\UniqueID_Type
+     * @var \Devlabs91\TravelgatePushApi\StructType\UniqueID_Type
      */
     public $UniqueID;
     /**
@@ -66,15 +66,15 @@ class OTA_CancelRS extends AbstractStructBase
      * @uses OTA_CancelRS::setEchoToken()
      * @uses OTA_CancelRS::setTimeStamp()
      * @uses OTA_CancelRS::setTransactionStatusCode()
-     * @param \StructType\CancelInfoRSType $cancelInfoRS
-     * @param \StructType\ErrorsType $errors
-     * @param \StructType\SuccessType $success
-     * @param \StructType\UniqueID_Type $uniqueID
+     * @param \Devlabs91\TravelgatePushApi\StructType\CancelInfoRSType $cancelInfoRS
+     * @param \Devlabs91\TravelgatePushApi\StructType\ErrorsType $errors
+     * @param \Devlabs91\TravelgatePushApi\StructType\SuccessType $success
+     * @param \Devlabs91\TravelgatePushApi\StructType\UniqueID_Type $uniqueID
      * @param string $echoToken
      * @param string $timeStamp
      * @param string $transactionStatusCode
      */
-    public function __construct(\StructType\CancelInfoRSType $cancelInfoRS = null, \StructType\ErrorsType $errors = null, \StructType\SuccessType $success = null, \StructType\UniqueID_Type $uniqueID = null, $echoToken = null, $timeStamp = null, $transactionStatusCode = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\StructType\CancelInfoRSType $cancelInfoRS = null, \Devlabs91\TravelgatePushApi\StructType\ErrorsType $errors = null, \Devlabs91\TravelgatePushApi\StructType\SuccessType $success = null, \Devlabs91\TravelgatePushApi\StructType\UniqueID_Type $uniqueID = null, $echoToken = null, $timeStamp = null, $transactionStatusCode = null)
     {
         $this
             ->setCancelInfoRS($cancelInfoRS)
@@ -87,7 +87,7 @@ class OTA_CancelRS extends AbstractStructBase
     }
     /**
      * Get CancelInfoRS value
-     * @return \StructType\CancelInfoRSType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\CancelInfoRSType|null
      */
     public function getCancelInfoRS()
     {
@@ -95,17 +95,17 @@ class OTA_CancelRS extends AbstractStructBase
     }
     /**
      * Set CancelInfoRS value
-     * @param \StructType\CancelInfoRSType $cancelInfoRS
-     * @return \StructType\OTA_CancelRS
+     * @param \Devlabs91\TravelgatePushApi\StructType\CancelInfoRSType $cancelInfoRS
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_CancelRS
      */
-    public function setCancelInfoRS(\StructType\CancelInfoRSType $cancelInfoRS = null)
+    public function setCancelInfoRS(\Devlabs91\TravelgatePushApi\StructType\CancelInfoRSType $cancelInfoRS = null)
     {
         $this->CancelInfoRS = $cancelInfoRS;
         return $this;
     }
     /**
      * Get Errors value
-     * @return \StructType\ErrorsType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\ErrorsType|null
      */
     public function getErrors()
     {
@@ -113,17 +113,17 @@ class OTA_CancelRS extends AbstractStructBase
     }
     /**
      * Set Errors value
-     * @param \StructType\ErrorsType $errors
-     * @return \StructType\OTA_CancelRS
+     * @param \Devlabs91\TravelgatePushApi\StructType\ErrorsType $errors
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_CancelRS
      */
-    public function setErrors(\StructType\ErrorsType $errors = null)
+    public function setErrors(\Devlabs91\TravelgatePushApi\StructType\ErrorsType $errors = null)
     {
         $this->Errors = $errors;
         return $this;
     }
     /**
      * Get Success value
-     * @return \StructType\SuccessType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\SuccessType|null
      */
     public function getSuccess()
     {
@@ -131,17 +131,17 @@ class OTA_CancelRS extends AbstractStructBase
     }
     /**
      * Set Success value
-     * @param \StructType\SuccessType $success
-     * @return \StructType\OTA_CancelRS
+     * @param \Devlabs91\TravelgatePushApi\StructType\SuccessType $success
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_CancelRS
      */
-    public function setSuccess(\StructType\SuccessType $success = null)
+    public function setSuccess(\Devlabs91\TravelgatePushApi\StructType\SuccessType $success = null)
     {
         $this->Success = $success;
         return $this;
     }
     /**
      * Get UniqueID value
-     * @return \StructType\UniqueID_Type|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\UniqueID_Type|null
      */
     public function getUniqueID()
     {
@@ -149,10 +149,10 @@ class OTA_CancelRS extends AbstractStructBase
     }
     /**
      * Set UniqueID value
-     * @param \StructType\UniqueID_Type $uniqueID
-     * @return \StructType\OTA_CancelRS
+     * @param \Devlabs91\TravelgatePushApi\StructType\UniqueID_Type $uniqueID
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_CancelRS
      */
-    public function setUniqueID(\StructType\UniqueID_Type $uniqueID = null)
+    public function setUniqueID(\Devlabs91\TravelgatePushApi\StructType\UniqueID_Type $uniqueID = null)
     {
         $this->UniqueID = $uniqueID;
         return $this;
@@ -168,7 +168,7 @@ class OTA_CancelRS extends AbstractStructBase
     /**
      * Set EchoToken value
      * @param string $echoToken
-     * @return \StructType\OTA_CancelRS
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_CancelRS
      */
     public function setEchoToken($echoToken = null)
     {
@@ -190,7 +190,7 @@ class OTA_CancelRS extends AbstractStructBase
     /**
      * Set TimeStamp value
      * @param string $timeStamp
-     * @return \StructType\OTA_CancelRS
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_CancelRS
      */
     public function setTimeStamp($timeStamp = null)
     {
@@ -212,7 +212,7 @@ class OTA_CancelRS extends AbstractStructBase
     /**
      * Set TransactionStatusCode value
      * @param string $transactionStatusCode
-     * @return \StructType\OTA_CancelRS
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_CancelRS
      */
     public function setTransactionStatusCode($transactionStatusCode = null)
     {
@@ -229,7 +229,7 @@ class OTA_CancelRS extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\OTA_CancelRS
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_CancelRS
      */
     public static function __set_state(array $array)
     {

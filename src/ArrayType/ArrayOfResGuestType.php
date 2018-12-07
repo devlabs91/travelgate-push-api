@@ -1,6 +1,6 @@
 <?php
 
-namespace ArrayType;
+namespace Devlabs91\TravelgatePushApi\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -15,13 +15,13 @@ class ArrayOfResGuestType extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\ResGuestType[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\ResGuestType[]
      */
     public $ResGuest;
     /**
      * Constructor method for ArrayOfResGuestType
      * @uses ArrayOfResGuestType::setResGuest()
-     * @param \StructType\ResGuestType[] $resGuest
+     * @param \Devlabs91\TravelgatePushApi\StructType\ResGuestType[] $resGuest
      */
     public function __construct(array $resGuest = array())
     {
@@ -30,7 +30,7 @@ class ArrayOfResGuestType extends AbstractStructArrayBase
     }
     /**
      * Get ResGuest value
-     * @return \StructType\ResGuestType[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\ResGuestType[]|null
      */
     public function getResGuest()
     {
@@ -39,15 +39,15 @@ class ArrayOfResGuestType extends AbstractStructArrayBase
     /**
      * Set ResGuest value
      * @throws \InvalidArgumentException
-     * @param \StructType\ResGuestType[] $resGuest
-     * @return \ArrayType\ArrayOfResGuestType
+     * @param \Devlabs91\TravelgatePushApi\StructType\ResGuestType[] $resGuest
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfResGuestType
      */
     public function setResGuest(array $resGuest = array())
     {
         foreach ($resGuest as $arrayOfResGuestTypeResGuestItem) {
             // validation for constraint: itemType
-            if (!$arrayOfResGuestTypeResGuestItem instanceof \StructType\ResGuestType) {
-                throw new \InvalidArgumentException(sprintf('The ResGuest property can only contain items of \StructType\ResGuestType, "%s" given', is_object($arrayOfResGuestTypeResGuestItem) ? get_class($arrayOfResGuestTypeResGuestItem) : gettype($arrayOfResGuestTypeResGuestItem)), __LINE__);
+            if (!$arrayOfResGuestTypeResGuestItem instanceof \Devlabs91\TravelgatePushApi\StructType\ResGuestType) {
+                throw new \InvalidArgumentException(sprintf('The ResGuest property can only contain items of \Devlabs91\TravelgatePushApi\StructType\ResGuestType, "%s" given', is_object($arrayOfResGuestTypeResGuestItem) ? get_class($arrayOfResGuestTypeResGuestItem) : gettype($arrayOfResGuestTypeResGuestItem)), __LINE__);
             }
         }
         $this->ResGuest = $resGuest;
@@ -56,14 +56,14 @@ class ArrayOfResGuestType extends AbstractStructArrayBase
     /**
      * Add item to ResGuest value
      * @throws \InvalidArgumentException
-     * @param \StructType\ResGuestType $item
-     * @return \ArrayType\ArrayOfResGuestType
+     * @param \Devlabs91\TravelgatePushApi\StructType\ResGuestType $item
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfResGuestType
      */
-    public function addToResGuest(\StructType\ResGuestType $item)
+    public function addToResGuest(\Devlabs91\TravelgatePushApi\StructType\ResGuestType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\ResGuestType) {
-            throw new \InvalidArgumentException(sprintf('The ResGuest property can only contain items of \StructType\ResGuestType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\ResGuestType) {
+            throw new \InvalidArgumentException(sprintf('The ResGuest property can only contain items of \Devlabs91\TravelgatePushApi\StructType\ResGuestType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->ResGuest[] = $item;
         return $this;
@@ -71,7 +71,7 @@ class ArrayOfResGuestType extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \StructType\ResGuestType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\ResGuestType|null
      */
     public function current()
     {
@@ -81,7 +81,7 @@ class ArrayOfResGuestType extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \StructType\ResGuestType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\ResGuestType|null
      */
     public function item($index)
     {
@@ -90,7 +90,7 @@ class ArrayOfResGuestType extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \StructType\ResGuestType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\ResGuestType|null
      */
     public function first()
     {
@@ -99,7 +99,7 @@ class ArrayOfResGuestType extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \StructType\ResGuestType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\ResGuestType|null
      */
     public function last()
     {
@@ -109,7 +109,7 @@ class ArrayOfResGuestType extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \StructType\ResGuestType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\ResGuestType|null
      */
     public function offsetGet($offset)
     {
@@ -130,7 +130,7 @@ class ArrayOfResGuestType extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \ArrayType\ArrayOfResGuestType
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfResGuestType
      */
     public static function __set_state(array $array)
     {

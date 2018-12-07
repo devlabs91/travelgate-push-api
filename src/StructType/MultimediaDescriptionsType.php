@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class MultimediaDescriptionsType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\MultimediaDescriptionType[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\MultimediaDescriptionType[]
      */
     public $MultimediaDescription;
     /**
@@ -27,7 +27,7 @@ class MultimediaDescriptionsType extends AbstractStructBase
      * Constructor method for MultimediaDescriptionsType
      * @uses MultimediaDescriptionsType::setMultimediaDescription()
      * @uses MultimediaDescriptionsType::setLastUpdated()
-     * @param \StructType\MultimediaDescriptionType[] $multimediaDescription
+     * @param \Devlabs91\TravelgatePushApi\StructType\MultimediaDescriptionType[] $multimediaDescription
      * @param string $lastUpdated
      */
     public function __construct(array $multimediaDescription = array(), $lastUpdated = null)
@@ -38,7 +38,7 @@ class MultimediaDescriptionsType extends AbstractStructBase
     }
     /**
      * Get MultimediaDescription value
-     * @return \StructType\MultimediaDescriptionType[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\MultimediaDescriptionType[]|null
      */
     public function getMultimediaDescription()
     {
@@ -47,15 +47,15 @@ class MultimediaDescriptionsType extends AbstractStructBase
     /**
      * Set MultimediaDescription value
      * @throws \InvalidArgumentException
-     * @param \StructType\MultimediaDescriptionType[] $multimediaDescription
-     * @return \StructType\MultimediaDescriptionsType
+     * @param \Devlabs91\TravelgatePushApi\StructType\MultimediaDescriptionType[] $multimediaDescription
+     * @return \Devlabs91\TravelgatePushApi\StructType\MultimediaDescriptionsType
      */
     public function setMultimediaDescription(array $multimediaDescription = array())
     {
         foreach ($multimediaDescription as $multimediaDescriptionsTypeMultimediaDescriptionItem) {
             // validation for constraint: itemType
-            if (!$multimediaDescriptionsTypeMultimediaDescriptionItem instanceof \StructType\MultimediaDescriptionType) {
-                throw new \InvalidArgumentException(sprintf('The MultimediaDescription property can only contain items of \StructType\MultimediaDescriptionType, "%s" given', is_object($multimediaDescriptionsTypeMultimediaDescriptionItem) ? get_class($multimediaDescriptionsTypeMultimediaDescriptionItem) : gettype($multimediaDescriptionsTypeMultimediaDescriptionItem)), __LINE__);
+            if (!$multimediaDescriptionsTypeMultimediaDescriptionItem instanceof \Devlabs91\TravelgatePushApi\StructType\MultimediaDescriptionType) {
+                throw new \InvalidArgumentException(sprintf('The MultimediaDescription property can only contain items of \Devlabs91\TravelgatePushApi\StructType\MultimediaDescriptionType, "%s" given', is_object($multimediaDescriptionsTypeMultimediaDescriptionItem) ? get_class($multimediaDescriptionsTypeMultimediaDescriptionItem) : gettype($multimediaDescriptionsTypeMultimediaDescriptionItem)), __LINE__);
             }
         }
         $this->MultimediaDescription = $multimediaDescription;
@@ -64,14 +64,14 @@ class MultimediaDescriptionsType extends AbstractStructBase
     /**
      * Add item to MultimediaDescription value
      * @throws \InvalidArgumentException
-     * @param \StructType\MultimediaDescriptionType $item
-     * @return \StructType\MultimediaDescriptionsType
+     * @param \Devlabs91\TravelgatePushApi\StructType\MultimediaDescriptionType $item
+     * @return \Devlabs91\TravelgatePushApi\StructType\MultimediaDescriptionsType
      */
-    public function addToMultimediaDescription(\StructType\MultimediaDescriptionType $item)
+    public function addToMultimediaDescription(\Devlabs91\TravelgatePushApi\StructType\MultimediaDescriptionType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\MultimediaDescriptionType) {
-            throw new \InvalidArgumentException(sprintf('The MultimediaDescription property can only contain items of \StructType\MultimediaDescriptionType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\MultimediaDescriptionType) {
+            throw new \InvalidArgumentException(sprintf('The MultimediaDescription property can only contain items of \Devlabs91\TravelgatePushApi\StructType\MultimediaDescriptionType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->MultimediaDescription[] = $item;
         return $this;
@@ -87,7 +87,7 @@ class MultimediaDescriptionsType extends AbstractStructBase
     /**
      * Set LastUpdated value
      * @param string $lastUpdated
-     * @return \StructType\MultimediaDescriptionsType
+     * @return \Devlabs91\TravelgatePushApi\StructType\MultimediaDescriptionsType
      */
     public function setLastUpdated($lastUpdated = null)
     {
@@ -104,7 +104,7 @@ class MultimediaDescriptionsType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\MultimediaDescriptionsType
+     * @return \Devlabs91\TravelgatePushApi\StructType\MultimediaDescriptionsType
      */
     public static function __set_state(array $array)
     {

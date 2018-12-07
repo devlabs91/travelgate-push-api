@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -36,7 +36,7 @@ class ServiceRPH extends AbstractStructBase
     /**
      * Set RPH value
      * @param string $rPH
-     * @return \StructType\ServiceRPH
+     * @return \Devlabs91\TravelgatePushApi\StructType\ServiceRPH
      */
     public function setRPH($rPH = null)
     {
@@ -53,7 +53,7 @@ class ServiceRPH extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ServiceRPH
+     * @return \Devlabs91\TravelgatePushApi\StructType\ServiceRPH
      */
     public static function __set_state(array $array)
     {

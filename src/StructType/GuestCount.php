@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -52,7 +52,7 @@ class GuestCount extends AbstractStructBase
     /**
      * Set AgeQualifyingCode value
      * @param string $ageQualifyingCode
-     * @return \StructType\GuestCount
+     * @return \Devlabs91\TravelgatePushApi\StructType\GuestCount
      */
     public function setAgeQualifyingCode($ageQualifyingCode = null)
     {
@@ -74,7 +74,7 @@ class GuestCount extends AbstractStructBase
     /**
      * Set Age value
      * @param int $age
-     * @return \StructType\GuestCount
+     * @return \Devlabs91\TravelgatePushApi\StructType\GuestCount
      */
     public function setAge($age = null)
     {
@@ -96,7 +96,7 @@ class GuestCount extends AbstractStructBase
     /**
      * Set Count value
      * @param int $count
-     * @return \StructType\GuestCount
+     * @return \Devlabs91\TravelgatePushApi\StructType\GuestCount
      */
     public function setCount($count = null)
     {
@@ -113,7 +113,7 @@ class GuestCount extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\GuestCount
+     * @return \Devlabs91\TravelgatePushApi\StructType\GuestCount
      */
     public static function __set_state(array $array)
     {

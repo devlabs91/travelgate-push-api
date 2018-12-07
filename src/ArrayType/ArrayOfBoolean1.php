@@ -1,6 +1,6 @@
 <?php
 
-namespace ArrayType;
+namespace Devlabs91\TravelgatePushApi\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -40,7 +40,7 @@ class ArrayOfBoolean1 extends AbstractStructArrayBase
      * Set RecreationDetail value
      * @throws \InvalidArgumentException
      * @param bool[] $recreationDetail
-     * @return \ArrayType\ArrayOfBoolean1
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfBoolean1
      */
     public function setRecreationDetail(array $recreationDetail = array())
     {
@@ -57,7 +57,7 @@ class ArrayOfBoolean1 extends AbstractStructArrayBase
      * Add item to RecreationDetail value
      * @throws \InvalidArgumentException
      * @param bool $item
-     * @return \ArrayType\ArrayOfBoolean1
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfBoolean1
      */
     public function addToRecreationDetail($item)
     {
@@ -130,7 +130,7 @@ class ArrayOfBoolean1 extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \ArrayType\ArrayOfBoolean1
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfBoolean1
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace ArrayType;
+namespace Devlabs91\TravelgatePushApi\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -15,13 +15,13 @@ class ArrayOfEmailsTypeEmail extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Email[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\Email[]
      */
     public $Email;
     /**
      * Constructor method for ArrayOfEmailsTypeEmail
      * @uses ArrayOfEmailsTypeEmail::setEmail()
-     * @param \StructType\Email[] $email
+     * @param \Devlabs91\TravelgatePushApi\StructType\Email[] $email
      */
     public function __construct(array $email = array())
     {
@@ -30,7 +30,7 @@ class ArrayOfEmailsTypeEmail extends AbstractStructArrayBase
     }
     /**
      * Get Email value
-     * @return \StructType\Email[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Email[]|null
      */
     public function getEmail()
     {
@@ -39,15 +39,15 @@ class ArrayOfEmailsTypeEmail extends AbstractStructArrayBase
     /**
      * Set Email value
      * @throws \InvalidArgumentException
-     * @param \StructType\Email[] $email
-     * @return \ArrayType\ArrayOfEmailsTypeEmail
+     * @param \Devlabs91\TravelgatePushApi\StructType\Email[] $email
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfEmailsTypeEmail
      */
     public function setEmail(array $email = array())
     {
         foreach ($email as $arrayOfEmailsTypeEmailEmailItem) {
             // validation for constraint: itemType
-            if (!$arrayOfEmailsTypeEmailEmailItem instanceof \StructType\Email) {
-                throw new \InvalidArgumentException(sprintf('The Email property can only contain items of \StructType\Email, "%s" given', is_object($arrayOfEmailsTypeEmailEmailItem) ? get_class($arrayOfEmailsTypeEmailEmailItem) : gettype($arrayOfEmailsTypeEmailEmailItem)), __LINE__);
+            if (!$arrayOfEmailsTypeEmailEmailItem instanceof \Devlabs91\TravelgatePushApi\StructType\Email) {
+                throw new \InvalidArgumentException(sprintf('The Email property can only contain items of \Devlabs91\TravelgatePushApi\StructType\Email, "%s" given', is_object($arrayOfEmailsTypeEmailEmailItem) ? get_class($arrayOfEmailsTypeEmailEmailItem) : gettype($arrayOfEmailsTypeEmailEmailItem)), __LINE__);
             }
         }
         $this->Email = $email;
@@ -56,14 +56,14 @@ class ArrayOfEmailsTypeEmail extends AbstractStructArrayBase
     /**
      * Add item to Email value
      * @throws \InvalidArgumentException
-     * @param \StructType\Email $item
-     * @return \ArrayType\ArrayOfEmailsTypeEmail
+     * @param \Devlabs91\TravelgatePushApi\StructType\Email $item
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfEmailsTypeEmail
      */
-    public function addToEmail(\StructType\Email $item)
+    public function addToEmail(\Devlabs91\TravelgatePushApi\StructType\Email $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Email) {
-            throw new \InvalidArgumentException(sprintf('The Email property can only contain items of \StructType\Email, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\Email) {
+            throw new \InvalidArgumentException(sprintf('The Email property can only contain items of \Devlabs91\TravelgatePushApi\StructType\Email, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->Email[] = $item;
         return $this;
@@ -71,7 +71,7 @@ class ArrayOfEmailsTypeEmail extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \StructType\Email|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Email|null
      */
     public function current()
     {
@@ -81,7 +81,7 @@ class ArrayOfEmailsTypeEmail extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \StructType\Email|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Email|null
      */
     public function item($index)
     {
@@ -90,7 +90,7 @@ class ArrayOfEmailsTypeEmail extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \StructType\Email|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Email|null
      */
     public function first()
     {
@@ -99,7 +99,7 @@ class ArrayOfEmailsTypeEmail extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \StructType\Email|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Email|null
      */
     public function last()
     {
@@ -109,7 +109,7 @@ class ArrayOfEmailsTypeEmail extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \StructType\Email|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Email|null
      */
     public function offsetGet($offset)
     {
@@ -130,7 +130,7 @@ class ArrayOfEmailsTypeEmail extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \ArrayType\ArrayOfEmailsTypeEmail
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfEmailsTypeEmail
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -60,7 +60,7 @@ class AmountPercentType extends AbstractStructBase
     /**
      * Set NmbrOfNights value
      * @param int $nmbrOfNights
-     * @return \StructType\AmountPercentType
+     * @return \Devlabs91\TravelgatePushApi\StructType\AmountPercentType
      */
     public function setNmbrOfNights($nmbrOfNights = null)
     {
@@ -82,7 +82,7 @@ class AmountPercentType extends AbstractStructBase
     /**
      * Set Percent value
      * @param float $percent
-     * @return \StructType\AmountPercentType
+     * @return \Devlabs91\TravelgatePushApi\StructType\AmountPercentType
      */
     public function setPercent($percent = null)
     {
@@ -100,7 +100,7 @@ class AmountPercentType extends AbstractStructBase
     /**
      * Set CurrencyCode value
      * @param string $currencyCode
-     * @return \StructType\AmountPercentType
+     * @return \Devlabs91\TravelgatePushApi\StructType\AmountPercentType
      */
     public function setCurrencyCode($currencyCode = null)
     {
@@ -122,7 +122,7 @@ class AmountPercentType extends AbstractStructBase
     /**
      * Set Amount value
      * @param float $amount
-     * @return \StructType\AmountPercentType
+     * @return \Devlabs91\TravelgatePushApi\StructType\AmountPercentType
      */
     public function setAmount($amount = null)
     {
@@ -135,7 +135,7 @@ class AmountPercentType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\AmountPercentType
+     * @return \Devlabs91\TravelgatePushApi\StructType\AmountPercentType
      */
     public static function __set_state(array $array)
     {

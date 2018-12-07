@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -82,7 +82,7 @@ class RestrictionStatus extends AbstractStructBase
     /**
      * Set Restriction value
      * @param string $restriction
-     * @return \StructType\RestrictionStatus
+     * @return \Devlabs91\TravelgatePushApi\StructType\RestrictionStatus
      */
     public function setRestriction($restriction = null)
     {
@@ -103,17 +103,17 @@ class RestrictionStatus extends AbstractStructBase
     }
     /**
      * Set Status value
-     * @uses \EnumType\AvailabilityStatusType::valueIsValid()
-     * @uses \EnumType\AvailabilityStatusType::getValidValues()
+     * @uses \Devlabs91\TravelgatePushApi\EnumType\AvailabilityStatusType::valueIsValid()
+     * @uses \Devlabs91\TravelgatePushApi\EnumType\AvailabilityStatusType::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $status
-     * @return \StructType\RestrictionStatus
+     * @return \Devlabs91\TravelgatePushApi\StructType\RestrictionStatus
      */
     public function setStatus($status = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\AvailabilityStatusType::valueIsValid($status)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $status, implode(', ', \EnumType\AvailabilityStatusType::getValidValues())), __LINE__);
+        if (!\Devlabs91\TravelgatePushApi\EnumType\AvailabilityStatusType::valueIsValid($status)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $status, implode(', ', \Devlabs91\TravelgatePushApi\EnumType\AvailabilityStatusType::getValidValues())), __LINE__);
         }
         $this->Status = $status;
         return $this;
@@ -129,7 +129,7 @@ class RestrictionStatus extends AbstractStructBase
     /**
      * Set SellThroughOpenIndicator value
      * @param bool $sellThroughOpenIndicator
-     * @return \StructType\RestrictionStatus
+     * @return \Devlabs91\TravelgatePushApi\StructType\RestrictionStatus
      */
     public function setSellThroughOpenIndicator($sellThroughOpenIndicator = null)
     {
@@ -151,7 +151,7 @@ class RestrictionStatus extends AbstractStructBase
     /**
      * Set MaxAdvancedBookingOffset value
      * @param string $maxAdvancedBookingOffset
-     * @return \StructType\RestrictionStatus
+     * @return \Devlabs91\TravelgatePushApi\StructType\RestrictionStatus
      */
     public function setMaxAdvancedBookingOffset($maxAdvancedBookingOffset = null)
     {
@@ -185,7 +185,7 @@ class RestrictionStatus extends AbstractStructBase
     /**
      * Set MinAdvancedBookingOffset value
      * @param string $minAdvancedBookingOffset
-     * @return \StructType\RestrictionStatus
+     * @return \Devlabs91\TravelgatePushApi\StructType\RestrictionStatus
      */
     public function setMinAdvancedBookingOffset($minAdvancedBookingOffset = null)
     {
@@ -214,7 +214,7 @@ class RestrictionStatus extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\RestrictionStatus
+     * @return \Devlabs91\TravelgatePushApi\StructType\RestrictionStatus
      */
     public static function __set_state(array $array)
     {

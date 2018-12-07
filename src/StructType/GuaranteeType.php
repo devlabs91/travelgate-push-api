@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -22,7 +22,7 @@ class GuaranteeType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfGuaranteeTypeGuaranteeAccepted
+     * @var \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfGuaranteeTypeGuaranteeAccepted
      */
     public $GuaranteesAccepted;
     /**
@@ -36,10 +36,10 @@ class GuaranteeType extends AbstractStructBase
      * @uses GuaranteeType::setGuaranteesAccepted()
      * @uses GuaranteeType::setGuaranteeCode()
      * @param string $paymentCode
-     * @param \ArrayType\ArrayOfGuaranteeTypeGuaranteeAccepted $guaranteesAccepted
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfGuaranteeTypeGuaranteeAccepted $guaranteesAccepted
      * @param string $guaranteeCode
      */
-    public function __construct($paymentCode = null, \ArrayType\ArrayOfGuaranteeTypeGuaranteeAccepted $guaranteesAccepted = null, $guaranteeCode = null)
+    public function __construct($paymentCode = null, \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfGuaranteeTypeGuaranteeAccepted $guaranteesAccepted = null, $guaranteeCode = null)
     {
         $this
             ->setPaymentCode($paymentCode)
@@ -57,7 +57,7 @@ class GuaranteeType extends AbstractStructBase
     /**
      * Set PaymentCode value
      * @param string $paymentCode
-     * @return \StructType\GuaranteeType
+     * @return \Devlabs91\TravelgatePushApi\StructType\GuaranteeType
      */
     public function setPaymentCode($paymentCode = null)
     {
@@ -70,7 +70,7 @@ class GuaranteeType extends AbstractStructBase
     }
     /**
      * Get GuaranteesAccepted value
-     * @return \ArrayType\ArrayOfGuaranteeTypeGuaranteeAccepted|null
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfGuaranteeTypeGuaranteeAccepted|null
      */
     public function getGuaranteesAccepted()
     {
@@ -78,10 +78,10 @@ class GuaranteeType extends AbstractStructBase
     }
     /**
      * Set GuaranteesAccepted value
-     * @param \ArrayType\ArrayOfGuaranteeTypeGuaranteeAccepted $guaranteesAccepted
-     * @return \StructType\GuaranteeType
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfGuaranteeTypeGuaranteeAccepted $guaranteesAccepted
+     * @return \Devlabs91\TravelgatePushApi\StructType\GuaranteeType
      */
-    public function setGuaranteesAccepted(\ArrayType\ArrayOfGuaranteeTypeGuaranteeAccepted $guaranteesAccepted = null)
+    public function setGuaranteesAccepted(\Devlabs91\TravelgatePushApi\ArrayType\ArrayOfGuaranteeTypeGuaranteeAccepted $guaranteesAccepted = null)
     {
         $this->GuaranteesAccepted = $guaranteesAccepted;
         return $this;
@@ -97,7 +97,7 @@ class GuaranteeType extends AbstractStructBase
     /**
      * Set GuaranteeCode value
      * @param string $guaranteeCode
-     * @return \StructType\GuaranteeType
+     * @return \Devlabs91\TravelgatePushApi\StructType\GuaranteeType
      */
     public function setGuaranteeCode($guaranteeCode = null)
     {
@@ -114,7 +114,7 @@ class GuaranteeType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\GuaranteeType
+     * @return \Devlabs91\TravelgatePushApi\StructType\GuaranteeType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class RatePlanType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\ParagraphType
+     * @var \Devlabs91\TravelgatePushApi\StructType\ParagraphType
      */
     public $RatePlanDescription;
     /**
@@ -23,7 +23,7 @@ class RatePlanType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\CommissionType
+     * @var \Devlabs91\TravelgatePushApi\StructType\CommissionType
      */
     public $Commission;
     /**
@@ -31,7 +31,7 @@ class RatePlanType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Guarantee[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\Guarantee[]
      */
     public $Guarantee;
     /**
@@ -69,16 +69,16 @@ class RatePlanType extends AbstractStructBase
      * @uses RatePlanType::setRatePlanName()
      * @uses RatePlanType::setPriceViewableInd()
      * @uses RatePlanType::setQualificationType()
-     * @param \StructType\ParagraphType $ratePlanDescription
-     * @param \StructType\CommissionType $commission
-     * @param \StructType\Guarantee[] $guarantee
+     * @param \Devlabs91\TravelgatePushApi\StructType\ParagraphType $ratePlanDescription
+     * @param \Devlabs91\TravelgatePushApi\StructType\CommissionType $commission
+     * @param \Devlabs91\TravelgatePushApi\StructType\Guarantee[] $guarantee
      * @param string $ratePlanCode
      * @param string $ratePlanType
      * @param string $ratePlanName
      * @param bool $priceViewableInd
      * @param string $qualificationType
      */
-    public function __construct(\StructType\ParagraphType $ratePlanDescription = null, \StructType\CommissionType $commission = null, array $guarantee = array(), $ratePlanCode = null, $ratePlanType = null, $ratePlanName = null, $priceViewableInd = null, $qualificationType = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\StructType\ParagraphType $ratePlanDescription = null, \Devlabs91\TravelgatePushApi\StructType\CommissionType $commission = null, array $guarantee = array(), $ratePlanCode = null, $ratePlanType = null, $ratePlanName = null, $priceViewableInd = null, $qualificationType = null)
     {
         $this
             ->setRatePlanDescription($ratePlanDescription)
@@ -92,7 +92,7 @@ class RatePlanType extends AbstractStructBase
     }
     /**
      * Get RatePlanDescription value
-     * @return \StructType\ParagraphType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\ParagraphType|null
      */
     public function getRatePlanDescription()
     {
@@ -100,17 +100,17 @@ class RatePlanType extends AbstractStructBase
     }
     /**
      * Set RatePlanDescription value
-     * @param \StructType\ParagraphType $ratePlanDescription
-     * @return \StructType\RatePlanType
+     * @param \Devlabs91\TravelgatePushApi\StructType\ParagraphType $ratePlanDescription
+     * @return \Devlabs91\TravelgatePushApi\StructType\RatePlanType
      */
-    public function setRatePlanDescription(\StructType\ParagraphType $ratePlanDescription = null)
+    public function setRatePlanDescription(\Devlabs91\TravelgatePushApi\StructType\ParagraphType $ratePlanDescription = null)
     {
         $this->RatePlanDescription = $ratePlanDescription;
         return $this;
     }
     /**
      * Get Commission value
-     * @return \StructType\CommissionType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\CommissionType|null
      */
     public function getCommission()
     {
@@ -118,17 +118,17 @@ class RatePlanType extends AbstractStructBase
     }
     /**
      * Set Commission value
-     * @param \StructType\CommissionType $commission
-     * @return \StructType\RatePlanType
+     * @param \Devlabs91\TravelgatePushApi\StructType\CommissionType $commission
+     * @return \Devlabs91\TravelgatePushApi\StructType\RatePlanType
      */
-    public function setCommission(\StructType\CommissionType $commission = null)
+    public function setCommission(\Devlabs91\TravelgatePushApi\StructType\CommissionType $commission = null)
     {
         $this->Commission = $commission;
         return $this;
     }
     /**
      * Get Guarantee value
-     * @return \StructType\Guarantee[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Guarantee[]|null
      */
     public function getGuarantee()
     {
@@ -137,15 +137,15 @@ class RatePlanType extends AbstractStructBase
     /**
      * Set Guarantee value
      * @throws \InvalidArgumentException
-     * @param \StructType\Guarantee[] $guarantee
-     * @return \StructType\RatePlanType
+     * @param \Devlabs91\TravelgatePushApi\StructType\Guarantee[] $guarantee
+     * @return \Devlabs91\TravelgatePushApi\StructType\RatePlanType
      */
     public function setGuarantee(array $guarantee = array())
     {
         foreach ($guarantee as $ratePlanTypeGuaranteeItem) {
             // validation for constraint: itemType
-            if (!$ratePlanTypeGuaranteeItem instanceof \StructType\Guarantee) {
-                throw new \InvalidArgumentException(sprintf('The Guarantee property can only contain items of \StructType\Guarantee, "%s" given', is_object($ratePlanTypeGuaranteeItem) ? get_class($ratePlanTypeGuaranteeItem) : gettype($ratePlanTypeGuaranteeItem)), __LINE__);
+            if (!$ratePlanTypeGuaranteeItem instanceof \Devlabs91\TravelgatePushApi\StructType\Guarantee) {
+                throw new \InvalidArgumentException(sprintf('The Guarantee property can only contain items of \Devlabs91\TravelgatePushApi\StructType\Guarantee, "%s" given', is_object($ratePlanTypeGuaranteeItem) ? get_class($ratePlanTypeGuaranteeItem) : gettype($ratePlanTypeGuaranteeItem)), __LINE__);
             }
         }
         $this->Guarantee = $guarantee;
@@ -154,14 +154,14 @@ class RatePlanType extends AbstractStructBase
     /**
      * Add item to Guarantee value
      * @throws \InvalidArgumentException
-     * @param \StructType\Guarantee $item
-     * @return \StructType\RatePlanType
+     * @param \Devlabs91\TravelgatePushApi\StructType\Guarantee $item
+     * @return \Devlabs91\TravelgatePushApi\StructType\RatePlanType
      */
-    public function addToGuarantee(\StructType\Guarantee $item)
+    public function addToGuarantee(\Devlabs91\TravelgatePushApi\StructType\Guarantee $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Guarantee) {
-            throw new \InvalidArgumentException(sprintf('The Guarantee property can only contain items of \StructType\Guarantee, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\Guarantee) {
+            throw new \InvalidArgumentException(sprintf('The Guarantee property can only contain items of \Devlabs91\TravelgatePushApi\StructType\Guarantee, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->Guarantee[] = $item;
         return $this;
@@ -177,7 +177,7 @@ class RatePlanType extends AbstractStructBase
     /**
      * Set RatePlanCode value
      * @param string $ratePlanCode
-     * @return \StructType\RatePlanType
+     * @return \Devlabs91\TravelgatePushApi\StructType\RatePlanType
      */
     public function setRatePlanCode($ratePlanCode = null)
     {
@@ -199,7 +199,7 @@ class RatePlanType extends AbstractStructBase
     /**
      * Set RatePlanType value
      * @param string $ratePlanType
-     * @return \StructType\RatePlanType
+     * @return \Devlabs91\TravelgatePushApi\StructType\RatePlanType
      */
     public function setRatePlanType($ratePlanType = null)
     {
@@ -221,7 +221,7 @@ class RatePlanType extends AbstractStructBase
     /**
      * Set RatePlanName value
      * @param string $ratePlanName
-     * @return \StructType\RatePlanType
+     * @return \Devlabs91\TravelgatePushApi\StructType\RatePlanType
      */
     public function setRatePlanName($ratePlanName = null)
     {
@@ -243,7 +243,7 @@ class RatePlanType extends AbstractStructBase
     /**
      * Set PriceViewableInd value
      * @param bool $priceViewableInd
-     * @return \StructType\RatePlanType
+     * @return \Devlabs91\TravelgatePushApi\StructType\RatePlanType
      */
     public function setPriceViewableInd($priceViewableInd = null)
     {
@@ -265,7 +265,7 @@ class RatePlanType extends AbstractStructBase
     /**
      * Set QualificationType value
      * @param string $qualificationType
-     * @return \StructType\RatePlanType
+     * @return \Devlabs91\TravelgatePushApi\StructType\RatePlanType
      */
     public function setQualificationType($qualificationType = null)
     {
@@ -282,7 +282,7 @@ class RatePlanType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\RatePlanType
+     * @return \Devlabs91\TravelgatePushApi\StructType\RatePlanType
      */
     public static function __set_state(array $array)
     {

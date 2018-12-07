@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class BookingRule extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\CancelPenaltiesType
+     * @var \Devlabs91\TravelgatePushApi\StructType\CancelPenaltiesType
      */
     public $CancelPenalties;
     /**
@@ -23,7 +23,7 @@ class BookingRule extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfViewershipsTypeViewership
+     * @var \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfViewershipsTypeViewership
      */
     public $Viewerships;
     /**
@@ -42,12 +42,12 @@ class BookingRule extends AbstractStructBase
      * @uses BookingRule::setViewerships()
      * @uses BookingRule::setStart()
      * @uses BookingRule::setEnd()
-     * @param \StructType\CancelPenaltiesType $cancelPenalties
-     * @param \ArrayType\ArrayOfViewershipsTypeViewership $viewerships
+     * @param \Devlabs91\TravelgatePushApi\StructType\CancelPenaltiesType $cancelPenalties
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfViewershipsTypeViewership $viewerships
      * @param string $start
      * @param string $end
      */
-    public function __construct(\StructType\CancelPenaltiesType $cancelPenalties = null, \ArrayType\ArrayOfViewershipsTypeViewership $viewerships = null, $start = null, $end = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\StructType\CancelPenaltiesType $cancelPenalties = null, \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfViewershipsTypeViewership $viewerships = null, $start = null, $end = null)
     {
         $this
             ->setCancelPenalties($cancelPenalties)
@@ -57,7 +57,7 @@ class BookingRule extends AbstractStructBase
     }
     /**
      * Get CancelPenalties value
-     * @return \StructType\CancelPenaltiesType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\CancelPenaltiesType|null
      */
     public function getCancelPenalties()
     {
@@ -65,17 +65,17 @@ class BookingRule extends AbstractStructBase
     }
     /**
      * Set CancelPenalties value
-     * @param \StructType\CancelPenaltiesType $cancelPenalties
-     * @return \StructType\BookingRule
+     * @param \Devlabs91\TravelgatePushApi\StructType\CancelPenaltiesType $cancelPenalties
+     * @return \Devlabs91\TravelgatePushApi\StructType\BookingRule
      */
-    public function setCancelPenalties(\StructType\CancelPenaltiesType $cancelPenalties = null)
+    public function setCancelPenalties(\Devlabs91\TravelgatePushApi\StructType\CancelPenaltiesType $cancelPenalties = null)
     {
         $this->CancelPenalties = $cancelPenalties;
         return $this;
     }
     /**
      * Get Viewerships value
-     * @return \ArrayType\ArrayOfViewershipsTypeViewership|null
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfViewershipsTypeViewership|null
      */
     public function getViewerships()
     {
@@ -83,10 +83,10 @@ class BookingRule extends AbstractStructBase
     }
     /**
      * Set Viewerships value
-     * @param \ArrayType\ArrayOfViewershipsTypeViewership $viewerships
-     * @return \StructType\BookingRule
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfViewershipsTypeViewership $viewerships
+     * @return \Devlabs91\TravelgatePushApi\StructType\BookingRule
      */
-    public function setViewerships(\ArrayType\ArrayOfViewershipsTypeViewership $viewerships = null)
+    public function setViewerships(\Devlabs91\TravelgatePushApi\ArrayType\ArrayOfViewershipsTypeViewership $viewerships = null)
     {
         $this->Viewerships = $viewerships;
         return $this;
@@ -102,7 +102,7 @@ class BookingRule extends AbstractStructBase
     /**
      * Set Start value
      * @param string $start
-     * @return \StructType\BookingRule
+     * @return \Devlabs91\TravelgatePushApi\StructType\BookingRule
      */
     public function setStart($start = null)
     {
@@ -124,7 +124,7 @@ class BookingRule extends AbstractStructBase
     /**
      * Set End value
      * @param string $end
-     * @return \StructType\BookingRule
+     * @return \Devlabs91\TravelgatePushApi\StructType\BookingRule
      */
     public function setEnd($end = null)
     {
@@ -141,7 +141,7 @@ class BookingRule extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\BookingRule
+     * @return \Devlabs91\TravelgatePushApi\StructType\BookingRule
      */
     public static function __set_state(array $array)
     {

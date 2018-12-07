@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,13 +15,13 @@ class Feature extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\ParagraphType[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\ParagraphType[]
      */
     public $Description;
     /**
      * Constructor method for Feature
      * @uses Feature::setDescription()
-     * @param \StructType\ParagraphType[] $description
+     * @param \Devlabs91\TravelgatePushApi\StructType\ParagraphType[] $description
      */
     public function __construct(array $description = array())
     {
@@ -30,7 +30,7 @@ class Feature extends AbstractStructBase
     }
     /**
      * Get Description value
-     * @return \StructType\ParagraphType[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\ParagraphType[]|null
      */
     public function getDescription()
     {
@@ -39,15 +39,15 @@ class Feature extends AbstractStructBase
     /**
      * Set Description value
      * @throws \InvalidArgumentException
-     * @param \StructType\ParagraphType[] $description
-     * @return \StructType\Feature
+     * @param \Devlabs91\TravelgatePushApi\StructType\ParagraphType[] $description
+     * @return \Devlabs91\TravelgatePushApi\StructType\Feature
      */
     public function setDescription(array $description = array())
     {
         foreach ($description as $featureDescriptionItem) {
             // validation for constraint: itemType
-            if (!$featureDescriptionItem instanceof \StructType\ParagraphType) {
-                throw new \InvalidArgumentException(sprintf('The Description property can only contain items of \StructType\ParagraphType, "%s" given', is_object($featureDescriptionItem) ? get_class($featureDescriptionItem) : gettype($featureDescriptionItem)), __LINE__);
+            if (!$featureDescriptionItem instanceof \Devlabs91\TravelgatePushApi\StructType\ParagraphType) {
+                throw new \InvalidArgumentException(sprintf('The Description property can only contain items of \Devlabs91\TravelgatePushApi\StructType\ParagraphType, "%s" given', is_object($featureDescriptionItem) ? get_class($featureDescriptionItem) : gettype($featureDescriptionItem)), __LINE__);
             }
         }
         $this->Description = $description;
@@ -56,14 +56,14 @@ class Feature extends AbstractStructBase
     /**
      * Add item to Description value
      * @throws \InvalidArgumentException
-     * @param \StructType\ParagraphType $item
-     * @return \StructType\Feature
+     * @param \Devlabs91\TravelgatePushApi\StructType\ParagraphType $item
+     * @return \Devlabs91\TravelgatePushApi\StructType\Feature
      */
-    public function addToDescription(\StructType\ParagraphType $item)
+    public function addToDescription(\Devlabs91\TravelgatePushApi\StructType\ParagraphType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\ParagraphType) {
-            throw new \InvalidArgumentException(sprintf('The Description property can only contain items of \StructType\ParagraphType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\ParagraphType) {
+            throw new \InvalidArgumentException(sprintf('The Description property can only contain items of \Devlabs91\TravelgatePushApi\StructType\ParagraphType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->Description[] = $item;
         return $this;
@@ -74,7 +74,7 @@ class Feature extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Feature
+     * @return \Devlabs91\TravelgatePushApi\StructType\Feature
      */
     public static function __set_state(array $array)
     {

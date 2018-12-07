@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -68,7 +68,7 @@ class Rate extends RateUploadType
     /**
      * Set InvCode value
      * @param string $invCode
-     * @return \StructType\Rate
+     * @return \Devlabs91\TravelgatePushApi\StructType\Rate
      */
     public function setInvCode($invCode = null)
     {
@@ -90,7 +90,7 @@ class Rate extends RateUploadType
     /**
      * Set InvTypeCode value
      * @param string $invTypeCode
-     * @return \StructType\Rate
+     * @return \Devlabs91\TravelgatePushApi\StructType\Rate
      */
     public function setInvTypeCode($invTypeCode = null)
     {
@@ -112,7 +112,7 @@ class Rate extends RateUploadType
     /**
      * Set AdjustedAmount value
      * @param float $adjustedAmount
-     * @return \StructType\Rate
+     * @return \Devlabs91\TravelgatePushApi\StructType\Rate
      */
     public function setAdjustedAmount($adjustedAmount = null)
     {
@@ -130,7 +130,7 @@ class Rate extends RateUploadType
     /**
      * Set AdjustedPercentage value
      * @param float $adjustedPercentage
-     * @return \StructType\Rate
+     * @return \Devlabs91\TravelgatePushApi\StructType\Rate
      */
     public function setAdjustedPercentage($adjustedPercentage = null)
     {
@@ -148,7 +148,7 @@ class Rate extends RateUploadType
     /**
      * Set AdjustUpIndicator value
      * @param bool $adjustUpIndicator
-     * @return \StructType\Rate
+     * @return \Devlabs91\TravelgatePushApi\StructType\Rate
      */
     public function setAdjustUpIndicator($adjustUpIndicator = null)
     {
@@ -165,7 +165,7 @@ class Rate extends RateUploadType
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Rate
+     * @return \Devlabs91\TravelgatePushApi\StructType\Rate
      */
     public static function __set_state(array $array)
     {

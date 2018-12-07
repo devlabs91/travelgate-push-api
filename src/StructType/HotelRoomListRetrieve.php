@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class HotelRoomListRetrieve extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\OTA_HotelRoomListRQ
+     * @var \Devlabs91\TravelgatePushApi\StructType\OTA_HotelRoomListRQ
      */
     public $request;
     /**
      * Constructor method for HotelRoomListRetrieve
      * @uses HotelRoomListRetrieve::setRequest()
-     * @param \StructType\OTA_HotelRoomListRQ $request
+     * @param \Devlabs91\TravelgatePushApi\StructType\OTA_HotelRoomListRQ $request
      */
-    public function __construct(\StructType\OTA_HotelRoomListRQ $request = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\StructType\OTA_HotelRoomListRQ $request = null)
     {
         $this
             ->setRequest($request);
     }
     /**
      * Get request value
-     * @return \StructType\OTA_HotelRoomListRQ|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_HotelRoomListRQ|null
      */
     public function getRequest()
     {
@@ -38,10 +38,10 @@ class HotelRoomListRetrieve extends AbstractStructBase
     }
     /**
      * Set request value
-     * @param \StructType\OTA_HotelRoomListRQ $request
-     * @return \StructType\HotelRoomListRetrieve
+     * @param \Devlabs91\TravelgatePushApi\StructType\OTA_HotelRoomListRQ $request
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRoomListRetrieve
      */
-    public function setRequest(\StructType\OTA_HotelRoomListRQ $request = null)
+    public function setRequest(\Devlabs91\TravelgatePushApi\StructType\OTA_HotelRoomListRQ $request = null)
     {
         $this->request = $request;
         return $this;
@@ -52,7 +52,7 @@ class HotelRoomListRetrieve extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HotelRoomListRetrieve
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRoomListRetrieve
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -36,7 +36,7 @@ class InsuranceCustomerType extends CustomerType
     /**
      * Set ID value
      * @param string $iD
-     * @return \StructType\InsuranceCustomerType
+     * @return \Devlabs91\TravelgatePushApi\StructType\InsuranceCustomerType
      */
     public function setID($iD = null)
     {
@@ -53,7 +53,7 @@ class InsuranceCustomerType extends CustomerType
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\InsuranceCustomerType
+     * @return \Devlabs91\TravelgatePushApi\StructType\InsuranceCustomerType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,13 +15,13 @@ class AvailRequestSegmentsType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\AvailRequestSegment[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\AvailRequestSegment[]
      */
     public $AvailRequestSegment;
     /**
      * Constructor method for AvailRequestSegmentsType
      * @uses AvailRequestSegmentsType::setAvailRequestSegment()
-     * @param \StructType\AvailRequestSegment[] $availRequestSegment
+     * @param \Devlabs91\TravelgatePushApi\StructType\AvailRequestSegment[] $availRequestSegment
      */
     public function __construct(array $availRequestSegment = array())
     {
@@ -30,7 +30,7 @@ class AvailRequestSegmentsType extends AbstractStructBase
     }
     /**
      * Get AvailRequestSegment value
-     * @return \StructType\AvailRequestSegment[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\AvailRequestSegment[]|null
      */
     public function getAvailRequestSegment()
     {
@@ -39,15 +39,15 @@ class AvailRequestSegmentsType extends AbstractStructBase
     /**
      * Set AvailRequestSegment value
      * @throws \InvalidArgumentException
-     * @param \StructType\AvailRequestSegment[] $availRequestSegment
-     * @return \StructType\AvailRequestSegmentsType
+     * @param \Devlabs91\TravelgatePushApi\StructType\AvailRequestSegment[] $availRequestSegment
+     * @return \Devlabs91\TravelgatePushApi\StructType\AvailRequestSegmentsType
      */
     public function setAvailRequestSegment(array $availRequestSegment = array())
     {
         foreach ($availRequestSegment as $availRequestSegmentsTypeAvailRequestSegmentItem) {
             // validation for constraint: itemType
-            if (!$availRequestSegmentsTypeAvailRequestSegmentItem instanceof \StructType\AvailRequestSegment) {
-                throw new \InvalidArgumentException(sprintf('The AvailRequestSegment property can only contain items of \StructType\AvailRequestSegment, "%s" given', is_object($availRequestSegmentsTypeAvailRequestSegmentItem) ? get_class($availRequestSegmentsTypeAvailRequestSegmentItem) : gettype($availRequestSegmentsTypeAvailRequestSegmentItem)), __LINE__);
+            if (!$availRequestSegmentsTypeAvailRequestSegmentItem instanceof \Devlabs91\TravelgatePushApi\StructType\AvailRequestSegment) {
+                throw new \InvalidArgumentException(sprintf('The AvailRequestSegment property can only contain items of \Devlabs91\TravelgatePushApi\StructType\AvailRequestSegment, "%s" given', is_object($availRequestSegmentsTypeAvailRequestSegmentItem) ? get_class($availRequestSegmentsTypeAvailRequestSegmentItem) : gettype($availRequestSegmentsTypeAvailRequestSegmentItem)), __LINE__);
             }
         }
         $this->AvailRequestSegment = $availRequestSegment;
@@ -56,14 +56,14 @@ class AvailRequestSegmentsType extends AbstractStructBase
     /**
      * Add item to AvailRequestSegment value
      * @throws \InvalidArgumentException
-     * @param \StructType\AvailRequestSegment $item
-     * @return \StructType\AvailRequestSegmentsType
+     * @param \Devlabs91\TravelgatePushApi\StructType\AvailRequestSegment $item
+     * @return \Devlabs91\TravelgatePushApi\StructType\AvailRequestSegmentsType
      */
-    public function addToAvailRequestSegment(\StructType\AvailRequestSegment $item)
+    public function addToAvailRequestSegment(\Devlabs91\TravelgatePushApi\StructType\AvailRequestSegment $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\AvailRequestSegment) {
-            throw new \InvalidArgumentException(sprintf('The AvailRequestSegment property can only contain items of \StructType\AvailRequestSegment, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\AvailRequestSegment) {
+            throw new \InvalidArgumentException(sprintf('The AvailRequestSegment property can only contain items of \Devlabs91\TravelgatePushApi\StructType\AvailRequestSegment, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->AvailRequestSegment[] = $item;
         return $this;
@@ -74,7 +74,7 @@ class AvailRequestSegmentsType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\AvailRequestSegmentsType
+     * @return \Devlabs91\TravelgatePushApi\StructType\AvailRequestSegmentsType
      */
     public static function __set_state(array $array)
     {

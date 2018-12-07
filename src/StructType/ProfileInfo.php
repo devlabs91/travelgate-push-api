@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class ProfileInfo extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\ProfileType
+     * @var \Devlabs91\TravelgatePushApi\StructType\ProfileType
      */
     public $Profile;
     /**
      * Constructor method for ProfileInfo
      * @uses ProfileInfo::setProfile()
-     * @param \StructType\ProfileType $profile
+     * @param \Devlabs91\TravelgatePushApi\StructType\ProfileType $profile
      */
-    public function __construct(\StructType\ProfileType $profile = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\StructType\ProfileType $profile = null)
     {
         $this
             ->setProfile($profile);
     }
     /**
      * Get Profile value
-     * @return \StructType\ProfileType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\ProfileType|null
      */
     public function getProfile()
     {
@@ -38,10 +38,10 @@ class ProfileInfo extends AbstractStructBase
     }
     /**
      * Set Profile value
-     * @param \StructType\ProfileType $profile
-     * @return \StructType\ProfileInfo
+     * @param \Devlabs91\TravelgatePushApi\StructType\ProfileType $profile
+     * @return \Devlabs91\TravelgatePushApi\StructType\ProfileInfo
      */
-    public function setProfile(\StructType\ProfileType $profile = null)
+    public function setProfile(\Devlabs91\TravelgatePushApi\StructType\ProfileType $profile = null)
     {
         $this->Profile = $profile;
         return $this;
@@ -52,7 +52,7 @@ class ProfileInfo extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ProfileInfo
+     * @return \Devlabs91\TravelgatePushApi\StructType\ProfileInfo
      */
     public static function __set_state(array $array)
     {

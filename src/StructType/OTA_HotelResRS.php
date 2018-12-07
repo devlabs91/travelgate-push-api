@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class OTA_HotelResRS extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfSourceType
+     * @var \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfSourceType
      */
     public $POS;
     /**
@@ -23,7 +23,7 @@ class OTA_HotelResRS extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\ErrorsType
+     * @var \Devlabs91\TravelgatePushApi\StructType\ErrorsType
      */
     public $Errors;
     /**
@@ -31,7 +31,7 @@ class OTA_HotelResRS extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\HotelReservationsType
+     * @var \Devlabs91\TravelgatePushApi\StructType\HotelReservationsType
      */
     public $HotelReservations;
     /**
@@ -39,7 +39,7 @@ class OTA_HotelResRS extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\SuccessType
+     * @var \Devlabs91\TravelgatePushApi\StructType\SuccessType
      */
     public $Success;
     /**
@@ -66,15 +66,15 @@ class OTA_HotelResRS extends AbstractStructBase
      * @uses OTA_HotelResRS::setEchoToken()
      * @uses OTA_HotelResRS::setTimeStamp()
      * @uses OTA_HotelResRS::setResResponseType()
-     * @param \ArrayType\ArrayOfSourceType $pOS
-     * @param \StructType\ErrorsType $errors
-     * @param \StructType\HotelReservationsType $hotelReservations
-     * @param \StructType\SuccessType $success
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfSourceType $pOS
+     * @param \Devlabs91\TravelgatePushApi\StructType\ErrorsType $errors
+     * @param \Devlabs91\TravelgatePushApi\StructType\HotelReservationsType $hotelReservations
+     * @param \Devlabs91\TravelgatePushApi\StructType\SuccessType $success
      * @param string $echoToken
      * @param string $timeStamp
      * @param string $resResponseType
      */
-    public function __construct(\ArrayType\ArrayOfSourceType $pOS = null, \StructType\ErrorsType $errors = null, \StructType\HotelReservationsType $hotelReservations = null, \StructType\SuccessType $success = null, $echoToken = null, $timeStamp = null, $resResponseType = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\ArrayType\ArrayOfSourceType $pOS = null, \Devlabs91\TravelgatePushApi\StructType\ErrorsType $errors = null, \Devlabs91\TravelgatePushApi\StructType\HotelReservationsType $hotelReservations = null, \Devlabs91\TravelgatePushApi\StructType\SuccessType $success = null, $echoToken = null, $timeStamp = null, $resResponseType = null)
     {
         $this
             ->setPOS($pOS)
@@ -87,7 +87,7 @@ class OTA_HotelResRS extends AbstractStructBase
     }
     /**
      * Get POS value
-     * @return \ArrayType\ArrayOfSourceType|null
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfSourceType|null
      */
     public function getPOS()
     {
@@ -95,17 +95,17 @@ class OTA_HotelResRS extends AbstractStructBase
     }
     /**
      * Set POS value
-     * @param \ArrayType\ArrayOfSourceType $pOS
-     * @return \StructType\OTA_HotelResRS
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfSourceType $pOS
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_HotelResRS
      */
-    public function setPOS(\ArrayType\ArrayOfSourceType $pOS = null)
+    public function setPOS(\Devlabs91\TravelgatePushApi\ArrayType\ArrayOfSourceType $pOS = null)
     {
         $this->POS = $pOS;
         return $this;
     }
     /**
      * Get Errors value
-     * @return \StructType\ErrorsType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\ErrorsType|null
      */
     public function getErrors()
     {
@@ -113,17 +113,17 @@ class OTA_HotelResRS extends AbstractStructBase
     }
     /**
      * Set Errors value
-     * @param \StructType\ErrorsType $errors
-     * @return \StructType\OTA_HotelResRS
+     * @param \Devlabs91\TravelgatePushApi\StructType\ErrorsType $errors
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_HotelResRS
      */
-    public function setErrors(\StructType\ErrorsType $errors = null)
+    public function setErrors(\Devlabs91\TravelgatePushApi\StructType\ErrorsType $errors = null)
     {
         $this->Errors = $errors;
         return $this;
     }
     /**
      * Get HotelReservations value
-     * @return \StructType\HotelReservationsType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelReservationsType|null
      */
     public function getHotelReservations()
     {
@@ -131,17 +131,17 @@ class OTA_HotelResRS extends AbstractStructBase
     }
     /**
      * Set HotelReservations value
-     * @param \StructType\HotelReservationsType $hotelReservations
-     * @return \StructType\OTA_HotelResRS
+     * @param \Devlabs91\TravelgatePushApi\StructType\HotelReservationsType $hotelReservations
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_HotelResRS
      */
-    public function setHotelReservations(\StructType\HotelReservationsType $hotelReservations = null)
+    public function setHotelReservations(\Devlabs91\TravelgatePushApi\StructType\HotelReservationsType $hotelReservations = null)
     {
         $this->HotelReservations = $hotelReservations;
         return $this;
     }
     /**
      * Get Success value
-     * @return \StructType\SuccessType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\SuccessType|null
      */
     public function getSuccess()
     {
@@ -149,10 +149,10 @@ class OTA_HotelResRS extends AbstractStructBase
     }
     /**
      * Set Success value
-     * @param \StructType\SuccessType $success
-     * @return \StructType\OTA_HotelResRS
+     * @param \Devlabs91\TravelgatePushApi\StructType\SuccessType $success
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_HotelResRS
      */
-    public function setSuccess(\StructType\SuccessType $success = null)
+    public function setSuccess(\Devlabs91\TravelgatePushApi\StructType\SuccessType $success = null)
     {
         $this->Success = $success;
         return $this;
@@ -168,7 +168,7 @@ class OTA_HotelResRS extends AbstractStructBase
     /**
      * Set EchoToken value
      * @param string $echoToken
-     * @return \StructType\OTA_HotelResRS
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_HotelResRS
      */
     public function setEchoToken($echoToken = null)
     {
@@ -190,7 +190,7 @@ class OTA_HotelResRS extends AbstractStructBase
     /**
      * Set TimeStamp value
      * @param string $timeStamp
-     * @return \StructType\OTA_HotelResRS
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_HotelResRS
      */
     public function setTimeStamp($timeStamp = null)
     {
@@ -211,17 +211,17 @@ class OTA_HotelResRS extends AbstractStructBase
     }
     /**
      * Set ResResponseType value
-     * @uses \EnumType\TransactionStatusType::valueIsValid()
-     * @uses \EnumType\TransactionStatusType::getValidValues()
+     * @uses \Devlabs91\TravelgatePushApi\EnumType\TransactionStatusType::valueIsValid()
+     * @uses \Devlabs91\TravelgatePushApi\EnumType\TransactionStatusType::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $resResponseType
-     * @return \StructType\OTA_HotelResRS
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_HotelResRS
      */
     public function setResResponseType($resResponseType = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\TransactionStatusType::valueIsValid($resResponseType)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $resResponseType, implode(', ', \EnumType\TransactionStatusType::getValidValues())), __LINE__);
+        if (!\Devlabs91\TravelgatePushApi\EnumType\TransactionStatusType::valueIsValid($resResponseType)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $resResponseType, implode(', ', \Devlabs91\TravelgatePushApi\EnumType\TransactionStatusType::getValidValues())), __LINE__);
         }
         $this->ResResponseType = $resResponseType;
         return $this;
@@ -232,7 +232,7 @@ class OTA_HotelResRS extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\OTA_HotelResRS
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_HotelResRS
      */
     public static function __set_state(array $array)
     {

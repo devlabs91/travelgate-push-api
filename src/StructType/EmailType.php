@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -52,7 +52,7 @@ class EmailType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\EmailType
+     * @return \Devlabs91\TravelgatePushApi\StructType\EmailType
      */
     public function set_($_ = null)
     {
@@ -74,7 +74,7 @@ class EmailType extends AbstractStructBase
     /**
      * Set DefaultInd value
      * @param bool $defaultInd
-     * @return \StructType\EmailType
+     * @return \Devlabs91\TravelgatePushApi\StructType\EmailType
      */
     public function setDefaultInd($defaultInd = null)
     {
@@ -96,7 +96,7 @@ class EmailType extends AbstractStructBase
     /**
      * Set EmailType value
      * @param string $emailType
-     * @return \StructType\EmailType
+     * @return \Devlabs91\TravelgatePushApi\StructType\EmailType
      */
     public function setEmailType($emailType = null)
     {
@@ -113,7 +113,7 @@ class EmailType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\EmailType
+     * @return \Devlabs91\TravelgatePushApi\StructType\EmailType
      */
     public static function __set_state(array $array)
     {

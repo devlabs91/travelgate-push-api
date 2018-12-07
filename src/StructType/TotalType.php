@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class TotalType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\TaxesType
+     * @var \Devlabs91\TravelgatePushApi\StructType\TaxesType
      */
     public $Taxes;
     /**
@@ -45,13 +45,13 @@ class TotalType extends AbstractStructBase
      * @uses TotalType::setAmountAfterTax()
      * @uses TotalType::setCurrencyCode()
      * @uses TotalType::setType()
-     * @param \StructType\TaxesType $taxes
+     * @param \Devlabs91\TravelgatePushApi\StructType\TaxesType $taxes
      * @param float $amountBeforeTax
      * @param float $amountAfterTax
      * @param string $currencyCode
      * @param string $type
      */
-    public function __construct(\StructType\TaxesType $taxes = null, $amountBeforeTax = null, $amountAfterTax = null, $currencyCode = null, $type = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\StructType\TaxesType $taxes = null, $amountBeforeTax = null, $amountAfterTax = null, $currencyCode = null, $type = null)
     {
         $this
             ->setTaxes($taxes)
@@ -62,7 +62,7 @@ class TotalType extends AbstractStructBase
     }
     /**
      * Get Taxes value
-     * @return \StructType\TaxesType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\TaxesType|null
      */
     public function getTaxes()
     {
@@ -70,10 +70,10 @@ class TotalType extends AbstractStructBase
     }
     /**
      * Set Taxes value
-     * @param \StructType\TaxesType $taxes
-     * @return \StructType\TotalType
+     * @param \Devlabs91\TravelgatePushApi\StructType\TaxesType $taxes
+     * @return \Devlabs91\TravelgatePushApi\StructType\TotalType
      */
-    public function setTaxes(\StructType\TaxesType $taxes = null)
+    public function setTaxes(\Devlabs91\TravelgatePushApi\StructType\TaxesType $taxes = null)
     {
         $this->Taxes = $taxes;
         return $this;
@@ -89,7 +89,7 @@ class TotalType extends AbstractStructBase
     /**
      * Set AmountBeforeTax value
      * @param float $amountBeforeTax
-     * @return \StructType\TotalType
+     * @return \Devlabs91\TravelgatePushApi\StructType\TotalType
      */
     public function setAmountBeforeTax($amountBeforeTax = null)
     {
@@ -107,7 +107,7 @@ class TotalType extends AbstractStructBase
     /**
      * Set AmountAfterTax value
      * @param float $amountAfterTax
-     * @return \StructType\TotalType
+     * @return \Devlabs91\TravelgatePushApi\StructType\TotalType
      */
     public function setAmountAfterTax($amountAfterTax = null)
     {
@@ -125,7 +125,7 @@ class TotalType extends AbstractStructBase
     /**
      * Set CurrencyCode value
      * @param string $currencyCode
-     * @return \StructType\TotalType
+     * @return \Devlabs91\TravelgatePushApi\StructType\TotalType
      */
     public function setCurrencyCode($currencyCode = null)
     {
@@ -147,7 +147,7 @@ class TotalType extends AbstractStructBase
     /**
      * Set Type value
      * @param string $type
-     * @return \StructType\TotalType
+     * @return \Devlabs91\TravelgatePushApi\StructType\TotalType
      */
     public function setType($type = null)
     {
@@ -164,7 +164,7 @@ class TotalType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\TotalType
+     * @return \Devlabs91\TravelgatePushApi\StructType\TotalType
      */
     public static function __set_state(array $array)
     {

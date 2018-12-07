@@ -1,6 +1,6 @@
 <?php
 
-namespace ArrayType;
+namespace Devlabs91\TravelgatePushApi\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -15,13 +15,13 @@ class ArrayOfRoomTypeType extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\RoomTypeType[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\RoomTypeType[]
      */
     public $RoomType;
     /**
      * Constructor method for ArrayOfRoomTypeType
      * @uses ArrayOfRoomTypeType::setRoomType()
-     * @param \StructType\RoomTypeType[] $roomType
+     * @param \Devlabs91\TravelgatePushApi\StructType\RoomTypeType[] $roomType
      */
     public function __construct(array $roomType = array())
     {
@@ -30,7 +30,7 @@ class ArrayOfRoomTypeType extends AbstractStructArrayBase
     }
     /**
      * Get RoomType value
-     * @return \StructType\RoomTypeType[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\RoomTypeType[]|null
      */
     public function getRoomType()
     {
@@ -39,15 +39,15 @@ class ArrayOfRoomTypeType extends AbstractStructArrayBase
     /**
      * Set RoomType value
      * @throws \InvalidArgumentException
-     * @param \StructType\RoomTypeType[] $roomType
-     * @return \ArrayType\ArrayOfRoomTypeType
+     * @param \Devlabs91\TravelgatePushApi\StructType\RoomTypeType[] $roomType
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRoomTypeType
      */
     public function setRoomType(array $roomType = array())
     {
         foreach ($roomType as $arrayOfRoomTypeTypeRoomTypeItem) {
             // validation for constraint: itemType
-            if (!$arrayOfRoomTypeTypeRoomTypeItem instanceof \StructType\RoomTypeType) {
-                throw new \InvalidArgumentException(sprintf('The RoomType property can only contain items of \StructType\RoomTypeType, "%s" given', is_object($arrayOfRoomTypeTypeRoomTypeItem) ? get_class($arrayOfRoomTypeTypeRoomTypeItem) : gettype($arrayOfRoomTypeTypeRoomTypeItem)), __LINE__);
+            if (!$arrayOfRoomTypeTypeRoomTypeItem instanceof \Devlabs91\TravelgatePushApi\StructType\RoomTypeType) {
+                throw new \InvalidArgumentException(sprintf('The RoomType property can only contain items of \Devlabs91\TravelgatePushApi\StructType\RoomTypeType, "%s" given', is_object($arrayOfRoomTypeTypeRoomTypeItem) ? get_class($arrayOfRoomTypeTypeRoomTypeItem) : gettype($arrayOfRoomTypeTypeRoomTypeItem)), __LINE__);
             }
         }
         $this->RoomType = $roomType;
@@ -56,14 +56,14 @@ class ArrayOfRoomTypeType extends AbstractStructArrayBase
     /**
      * Add item to RoomType value
      * @throws \InvalidArgumentException
-     * @param \StructType\RoomTypeType $item
-     * @return \ArrayType\ArrayOfRoomTypeType
+     * @param \Devlabs91\TravelgatePushApi\StructType\RoomTypeType $item
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRoomTypeType
      */
-    public function addToRoomType(\StructType\RoomTypeType $item)
+    public function addToRoomType(\Devlabs91\TravelgatePushApi\StructType\RoomTypeType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\RoomTypeType) {
-            throw new \InvalidArgumentException(sprintf('The RoomType property can only contain items of \StructType\RoomTypeType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\RoomTypeType) {
+            throw new \InvalidArgumentException(sprintf('The RoomType property can only contain items of \Devlabs91\TravelgatePushApi\StructType\RoomTypeType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->RoomType[] = $item;
         return $this;
@@ -71,7 +71,7 @@ class ArrayOfRoomTypeType extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \StructType\RoomTypeType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\RoomTypeType|null
      */
     public function current()
     {
@@ -81,7 +81,7 @@ class ArrayOfRoomTypeType extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \StructType\RoomTypeType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\RoomTypeType|null
      */
     public function item($index)
     {
@@ -90,7 +90,7 @@ class ArrayOfRoomTypeType extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \StructType\RoomTypeType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\RoomTypeType|null
      */
     public function first()
     {
@@ -99,7 +99,7 @@ class ArrayOfRoomTypeType extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \StructType\RoomTypeType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\RoomTypeType|null
      */
     public function last()
     {
@@ -109,7 +109,7 @@ class ArrayOfRoomTypeType extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \StructType\RoomTypeType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\RoomTypeType|null
      */
     public function offsetGet($offset)
     {
@@ -130,7 +130,7 @@ class ArrayOfRoomTypeType extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \ArrayType\ArrayOfRoomTypeType
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRoomTypeType
      */
     public static function __set_state(array $array)
     {

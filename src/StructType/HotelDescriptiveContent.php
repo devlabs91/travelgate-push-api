@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -60,7 +60,7 @@ class HotelDescriptiveContent extends HotelDescriptiveContentType
     /**
      * Set ChainCode value
      * @param string $chainCode
-     * @return \StructType\HotelDescriptiveContent
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelDescriptiveContent
      */
     public function setChainCode($chainCode = null)
     {
@@ -82,7 +82,7 @@ class HotelDescriptiveContent extends HotelDescriptiveContentType
     /**
      * Set HotelCode value
      * @param string $hotelCode
-     * @return \StructType\HotelDescriptiveContent
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelDescriptiveContent
      */
     public function setHotelCode($hotelCode = null)
     {
@@ -104,7 +104,7 @@ class HotelDescriptiveContent extends HotelDescriptiveContentType
     /**
      * Set HotelCityCode value
      * @param string $hotelCityCode
-     * @return \StructType\HotelDescriptiveContent
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelDescriptiveContent
      */
     public function setHotelCityCode($hotelCityCode = null)
     {
@@ -126,7 +126,7 @@ class HotelDescriptiveContent extends HotelDescriptiveContentType
     /**
      * Set HotelName value
      * @param string $hotelName
-     * @return \StructType\HotelDescriptiveContent
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelDescriptiveContent
      */
     public function setHotelName($hotelName = null)
     {
@@ -143,7 +143,7 @@ class HotelDescriptiveContent extends HotelDescriptiveContentType
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HotelDescriptiveContent
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelDescriptiveContent
      */
     public static function __set_state(array $array)
     {

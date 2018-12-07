@@ -1,6 +1,6 @@
 <?php
 
-namespace ArrayType;
+namespace Devlabs91\TravelgatePushApi\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -15,13 +15,13 @@ class ArrayOfPhonesTypePhone extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Phone[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\Phone[]
      */
     public $Phone;
     /**
      * Constructor method for ArrayOfPhonesTypePhone
      * @uses ArrayOfPhonesTypePhone::setPhone()
-     * @param \StructType\Phone[] $phone
+     * @param \Devlabs91\TravelgatePushApi\StructType\Phone[] $phone
      */
     public function __construct(array $phone = array())
     {
@@ -30,7 +30,7 @@ class ArrayOfPhonesTypePhone extends AbstractStructArrayBase
     }
     /**
      * Get Phone value
-     * @return \StructType\Phone[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Phone[]|null
      */
     public function getPhone()
     {
@@ -39,15 +39,15 @@ class ArrayOfPhonesTypePhone extends AbstractStructArrayBase
     /**
      * Set Phone value
      * @throws \InvalidArgumentException
-     * @param \StructType\Phone[] $phone
-     * @return \ArrayType\ArrayOfPhonesTypePhone
+     * @param \Devlabs91\TravelgatePushApi\StructType\Phone[] $phone
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfPhonesTypePhone
      */
     public function setPhone(array $phone = array())
     {
         foreach ($phone as $arrayOfPhonesTypePhonePhoneItem) {
             // validation for constraint: itemType
-            if (!$arrayOfPhonesTypePhonePhoneItem instanceof \StructType\Phone) {
-                throw new \InvalidArgumentException(sprintf('The Phone property can only contain items of \StructType\Phone, "%s" given', is_object($arrayOfPhonesTypePhonePhoneItem) ? get_class($arrayOfPhonesTypePhonePhoneItem) : gettype($arrayOfPhonesTypePhonePhoneItem)), __LINE__);
+            if (!$arrayOfPhonesTypePhonePhoneItem instanceof \Devlabs91\TravelgatePushApi\StructType\Phone) {
+                throw new \InvalidArgumentException(sprintf('The Phone property can only contain items of \Devlabs91\TravelgatePushApi\StructType\Phone, "%s" given', is_object($arrayOfPhonesTypePhonePhoneItem) ? get_class($arrayOfPhonesTypePhonePhoneItem) : gettype($arrayOfPhonesTypePhonePhoneItem)), __LINE__);
             }
         }
         $this->Phone = $phone;
@@ -56,14 +56,14 @@ class ArrayOfPhonesTypePhone extends AbstractStructArrayBase
     /**
      * Add item to Phone value
      * @throws \InvalidArgumentException
-     * @param \StructType\Phone $item
-     * @return \ArrayType\ArrayOfPhonesTypePhone
+     * @param \Devlabs91\TravelgatePushApi\StructType\Phone $item
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfPhonesTypePhone
      */
-    public function addToPhone(\StructType\Phone $item)
+    public function addToPhone(\Devlabs91\TravelgatePushApi\StructType\Phone $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Phone) {
-            throw new \InvalidArgumentException(sprintf('The Phone property can only contain items of \StructType\Phone, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\Phone) {
+            throw new \InvalidArgumentException(sprintf('The Phone property can only contain items of \Devlabs91\TravelgatePushApi\StructType\Phone, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->Phone[] = $item;
         return $this;
@@ -71,7 +71,7 @@ class ArrayOfPhonesTypePhone extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \StructType\Phone|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Phone|null
      */
     public function current()
     {
@@ -81,7 +81,7 @@ class ArrayOfPhonesTypePhone extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \StructType\Phone|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Phone|null
      */
     public function item($index)
     {
@@ -90,7 +90,7 @@ class ArrayOfPhonesTypePhone extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \StructType\Phone|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Phone|null
      */
     public function first()
     {
@@ -99,7 +99,7 @@ class ArrayOfPhonesTypePhone extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \StructType\Phone|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Phone|null
      */
     public function last()
     {
@@ -109,7 +109,7 @@ class ArrayOfPhonesTypePhone extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \StructType\Phone|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Phone|null
      */
     public function offsetGet($offset)
     {
@@ -130,7 +130,7 @@ class ArrayOfPhonesTypePhone extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \ArrayType\ArrayOfPhonesTypePhone
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfPhonesTypePhone
      */
     public static function __set_state(array $array)
     {

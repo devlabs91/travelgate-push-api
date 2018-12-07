@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -36,7 +36,7 @@ class DiscountType extends TotalType
     /**
      * Set DiscountCode value
      * @param string $discountCode
-     * @return \StructType\DiscountType
+     * @return \Devlabs91\TravelgatePushApi\StructType\DiscountType
      */
     public function setDiscountCode($discountCode = null)
     {
@@ -53,7 +53,7 @@ class DiscountType extends TotalType
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\DiscountType
+     * @return \Devlabs91\TravelgatePushApi\StructType\DiscountType
      */
     public static function __set_state(array $array)
     {

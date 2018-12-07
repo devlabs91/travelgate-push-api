@@ -1,6 +1,6 @@
 <?php
 
-namespace ArrayType;
+namespace Devlabs91\TravelgatePushApi\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -15,13 +15,13 @@ class ArrayOfHotelRatePlanTypeOffer extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Offer[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\Offer[]
      */
     public $Offer;
     /**
      * Constructor method for ArrayOfHotelRatePlanTypeOffer
      * @uses ArrayOfHotelRatePlanTypeOffer::setOffer()
-     * @param \StructType\Offer[] $offer
+     * @param \Devlabs91\TravelgatePushApi\StructType\Offer[] $offer
      */
     public function __construct(array $offer = array())
     {
@@ -30,7 +30,7 @@ class ArrayOfHotelRatePlanTypeOffer extends AbstractStructArrayBase
     }
     /**
      * Get Offer value
-     * @return \StructType\Offer[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Offer[]|null
      */
     public function getOffer()
     {
@@ -39,15 +39,15 @@ class ArrayOfHotelRatePlanTypeOffer extends AbstractStructArrayBase
     /**
      * Set Offer value
      * @throws \InvalidArgumentException
-     * @param \StructType\Offer[] $offer
-     * @return \ArrayType\ArrayOfHotelRatePlanTypeOffer
+     * @param \Devlabs91\TravelgatePushApi\StructType\Offer[] $offer
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfHotelRatePlanTypeOffer
      */
     public function setOffer(array $offer = array())
     {
         foreach ($offer as $arrayOfHotelRatePlanTypeOfferOfferItem) {
             // validation for constraint: itemType
-            if (!$arrayOfHotelRatePlanTypeOfferOfferItem instanceof \StructType\Offer) {
-                throw new \InvalidArgumentException(sprintf('The Offer property can only contain items of \StructType\Offer, "%s" given', is_object($arrayOfHotelRatePlanTypeOfferOfferItem) ? get_class($arrayOfHotelRatePlanTypeOfferOfferItem) : gettype($arrayOfHotelRatePlanTypeOfferOfferItem)), __LINE__);
+            if (!$arrayOfHotelRatePlanTypeOfferOfferItem instanceof \Devlabs91\TravelgatePushApi\StructType\Offer) {
+                throw new \InvalidArgumentException(sprintf('The Offer property can only contain items of \Devlabs91\TravelgatePushApi\StructType\Offer, "%s" given', is_object($arrayOfHotelRatePlanTypeOfferOfferItem) ? get_class($arrayOfHotelRatePlanTypeOfferOfferItem) : gettype($arrayOfHotelRatePlanTypeOfferOfferItem)), __LINE__);
             }
         }
         $this->Offer = $offer;
@@ -56,14 +56,14 @@ class ArrayOfHotelRatePlanTypeOffer extends AbstractStructArrayBase
     /**
      * Add item to Offer value
      * @throws \InvalidArgumentException
-     * @param \StructType\Offer $item
-     * @return \ArrayType\ArrayOfHotelRatePlanTypeOffer
+     * @param \Devlabs91\TravelgatePushApi\StructType\Offer $item
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfHotelRatePlanTypeOffer
      */
-    public function addToOffer(\StructType\Offer $item)
+    public function addToOffer(\Devlabs91\TravelgatePushApi\StructType\Offer $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Offer) {
-            throw new \InvalidArgumentException(sprintf('The Offer property can only contain items of \StructType\Offer, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\Offer) {
+            throw new \InvalidArgumentException(sprintf('The Offer property can only contain items of \Devlabs91\TravelgatePushApi\StructType\Offer, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->Offer[] = $item;
         return $this;
@@ -71,7 +71,7 @@ class ArrayOfHotelRatePlanTypeOffer extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \StructType\Offer|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Offer|null
      */
     public function current()
     {
@@ -81,7 +81,7 @@ class ArrayOfHotelRatePlanTypeOffer extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \StructType\Offer|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Offer|null
      */
     public function item($index)
     {
@@ -90,7 +90,7 @@ class ArrayOfHotelRatePlanTypeOffer extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \StructType\Offer|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Offer|null
      */
     public function first()
     {
@@ -99,7 +99,7 @@ class ArrayOfHotelRatePlanTypeOffer extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \StructType\Offer|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Offer|null
      */
     public function last()
     {
@@ -109,7 +109,7 @@ class ArrayOfHotelRatePlanTypeOffer extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \StructType\Offer|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Offer|null
      */
     public function offsetGet($offset)
     {
@@ -130,7 +130,7 @@ class ArrayOfHotelRatePlanTypeOffer extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \ArrayType\ArrayOfHotelRatePlanTypeOffer
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfHotelRatePlanTypeOffer
      */
     public static function __set_state(array $array)
     {

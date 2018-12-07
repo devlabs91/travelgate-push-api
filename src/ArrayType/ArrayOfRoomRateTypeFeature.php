@@ -1,6 +1,6 @@
 <?php
 
-namespace ArrayType;
+namespace Devlabs91\TravelgatePushApi\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -15,13 +15,13 @@ class ArrayOfRoomRateTypeFeature extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Feature[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\Feature[]
      */
     public $Feature;
     /**
      * Constructor method for ArrayOfRoomRateTypeFeature
      * @uses ArrayOfRoomRateTypeFeature::setFeature()
-     * @param \StructType\Feature[] $feature
+     * @param \Devlabs91\TravelgatePushApi\StructType\Feature[] $feature
      */
     public function __construct(array $feature = array())
     {
@@ -30,7 +30,7 @@ class ArrayOfRoomRateTypeFeature extends AbstractStructArrayBase
     }
     /**
      * Get Feature value
-     * @return \StructType\Feature[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Feature[]|null
      */
     public function getFeature()
     {
@@ -39,15 +39,15 @@ class ArrayOfRoomRateTypeFeature extends AbstractStructArrayBase
     /**
      * Set Feature value
      * @throws \InvalidArgumentException
-     * @param \StructType\Feature[] $feature
-     * @return \ArrayType\ArrayOfRoomRateTypeFeature
+     * @param \Devlabs91\TravelgatePushApi\StructType\Feature[] $feature
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRoomRateTypeFeature
      */
     public function setFeature(array $feature = array())
     {
         foreach ($feature as $arrayOfRoomRateTypeFeatureFeatureItem) {
             // validation for constraint: itemType
-            if (!$arrayOfRoomRateTypeFeatureFeatureItem instanceof \StructType\Feature) {
-                throw new \InvalidArgumentException(sprintf('The Feature property can only contain items of \StructType\Feature, "%s" given', is_object($arrayOfRoomRateTypeFeatureFeatureItem) ? get_class($arrayOfRoomRateTypeFeatureFeatureItem) : gettype($arrayOfRoomRateTypeFeatureFeatureItem)), __LINE__);
+            if (!$arrayOfRoomRateTypeFeatureFeatureItem instanceof \Devlabs91\TravelgatePushApi\StructType\Feature) {
+                throw new \InvalidArgumentException(sprintf('The Feature property can only contain items of \Devlabs91\TravelgatePushApi\StructType\Feature, "%s" given', is_object($arrayOfRoomRateTypeFeatureFeatureItem) ? get_class($arrayOfRoomRateTypeFeatureFeatureItem) : gettype($arrayOfRoomRateTypeFeatureFeatureItem)), __LINE__);
             }
         }
         $this->Feature = $feature;
@@ -56,14 +56,14 @@ class ArrayOfRoomRateTypeFeature extends AbstractStructArrayBase
     /**
      * Add item to Feature value
      * @throws \InvalidArgumentException
-     * @param \StructType\Feature $item
-     * @return \ArrayType\ArrayOfRoomRateTypeFeature
+     * @param \Devlabs91\TravelgatePushApi\StructType\Feature $item
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRoomRateTypeFeature
      */
-    public function addToFeature(\StructType\Feature $item)
+    public function addToFeature(\Devlabs91\TravelgatePushApi\StructType\Feature $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Feature) {
-            throw new \InvalidArgumentException(sprintf('The Feature property can only contain items of \StructType\Feature, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\Feature) {
+            throw new \InvalidArgumentException(sprintf('The Feature property can only contain items of \Devlabs91\TravelgatePushApi\StructType\Feature, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->Feature[] = $item;
         return $this;
@@ -71,7 +71,7 @@ class ArrayOfRoomRateTypeFeature extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \StructType\Feature|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Feature|null
      */
     public function current()
     {
@@ -81,7 +81,7 @@ class ArrayOfRoomRateTypeFeature extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \StructType\Feature|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Feature|null
      */
     public function item($index)
     {
@@ -90,7 +90,7 @@ class ArrayOfRoomRateTypeFeature extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \StructType\Feature|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Feature|null
      */
     public function first()
     {
@@ -99,7 +99,7 @@ class ArrayOfRoomRateTypeFeature extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \StructType\Feature|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Feature|null
      */
     public function last()
     {
@@ -109,7 +109,7 @@ class ArrayOfRoomRateTypeFeature extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \StructType\Feature|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Feature|null
      */
     public function offsetGet($offset)
     {
@@ -130,7 +130,7 @@ class ArrayOfRoomRateTypeFeature extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \ArrayType\ArrayOfRoomRateTypeFeature
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRoomRateTypeFeature
      */
     public static function __set_state(array $array)
     {

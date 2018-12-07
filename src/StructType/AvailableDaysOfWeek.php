@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -84,7 +84,7 @@ class AvailableDaysOfWeek extends AbstractStructBase
     /**
      * Set Mon value
      * @param bool $mon
-     * @return \StructType\AvailableDaysOfWeek
+     * @return \Devlabs91\TravelgatePushApi\StructType\AvailableDaysOfWeek
      */
     public function setMon($mon = null)
     {
@@ -106,7 +106,7 @@ class AvailableDaysOfWeek extends AbstractStructBase
     /**
      * Set Tue value
      * @param bool $tue
-     * @return \StructType\AvailableDaysOfWeek
+     * @return \Devlabs91\TravelgatePushApi\StructType\AvailableDaysOfWeek
      */
     public function setTue($tue = null)
     {
@@ -128,7 +128,7 @@ class AvailableDaysOfWeek extends AbstractStructBase
     /**
      * Set Weds value
      * @param bool $weds
-     * @return \StructType\AvailableDaysOfWeek
+     * @return \Devlabs91\TravelgatePushApi\StructType\AvailableDaysOfWeek
      */
     public function setWeds($weds = null)
     {
@@ -150,7 +150,7 @@ class AvailableDaysOfWeek extends AbstractStructBase
     /**
      * Set Thur value
      * @param bool $thur
-     * @return \StructType\AvailableDaysOfWeek
+     * @return \Devlabs91\TravelgatePushApi\StructType\AvailableDaysOfWeek
      */
     public function setThur($thur = null)
     {
@@ -172,7 +172,7 @@ class AvailableDaysOfWeek extends AbstractStructBase
     /**
      * Set Fri value
      * @param bool $fri
-     * @return \StructType\AvailableDaysOfWeek
+     * @return \Devlabs91\TravelgatePushApi\StructType\AvailableDaysOfWeek
      */
     public function setFri($fri = null)
     {
@@ -194,7 +194,7 @@ class AvailableDaysOfWeek extends AbstractStructBase
     /**
      * Set Sat value
      * @param bool $sat
-     * @return \StructType\AvailableDaysOfWeek
+     * @return \Devlabs91\TravelgatePushApi\StructType\AvailableDaysOfWeek
      */
     public function setSat($sat = null)
     {
@@ -216,7 +216,7 @@ class AvailableDaysOfWeek extends AbstractStructBase
     /**
      * Set Sun value
      * @param bool $sun
-     * @return \StructType\AvailableDaysOfWeek
+     * @return \Devlabs91\TravelgatePushApi\StructType\AvailableDaysOfWeek
      */
     public function setSun($sun = null)
     {
@@ -233,7 +233,7 @@ class AvailableDaysOfWeek extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\AvailableDaysOfWeek
+     * @return \Devlabs91\TravelgatePushApi\StructType\AvailableDaysOfWeek
      */
     public static function __set_state(array $array)
     {

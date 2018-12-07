@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -8,7 +8,7 @@ use \WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for List_PaymentCardIssuer StructType
  * @subpackage Structs
  */
-class List_PaymentCardIssuer extends \EnumType\List_PaymentCardIssuer_Base
+class List_PaymentCardIssuer extends \Devlabs91\TravelgatePushApi\EnumType\List_PaymentCardIssuer_Base
 {
     /**
      * The _
@@ -43,17 +43,17 @@ class List_PaymentCardIssuer extends \EnumType\List_PaymentCardIssuer_Base
     }
     /**
      * Set _ value
-     * @uses \EnumType\List_PaymentCardIssuer_Base::valueIsValid()
-     * @uses \EnumType\List_PaymentCardIssuer_Base::getValidValues()
+     * @uses \Devlabs91\TravelgatePushApi\EnumType\List_PaymentCardIssuer_Base::valueIsValid()
+     * @uses \Devlabs91\TravelgatePushApi\EnumType\List_PaymentCardIssuer_Base::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $_
-     * @return \StructType\List_PaymentCardIssuer
+     * @return \Devlabs91\TravelgatePushApi\StructType\List_PaymentCardIssuer
      */
     public function set_($_ = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\List_PaymentCardIssuer_Base::valueIsValid($_)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $_, implode(', ', \EnumType\List_PaymentCardIssuer_Base::getValidValues())), __LINE__);
+        if (!\Devlabs91\TravelgatePushApi\EnumType\List_PaymentCardIssuer_Base::valueIsValid($_)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $_, implode(', ', \Devlabs91\TravelgatePushApi\EnumType\List_PaymentCardIssuer_Base::getValidValues())), __LINE__);
         }
         $this->_ = $_;
         return $this;
@@ -69,7 +69,7 @@ class List_PaymentCardIssuer extends \EnumType\List_PaymentCardIssuer_Base
     /**
      * Set Code value
      * @param string $code
-     * @return \StructType\List_PaymentCardIssuer
+     * @return \Devlabs91\TravelgatePushApi\StructType\List_PaymentCardIssuer
      */
     public function setCode($code = null)
     {
@@ -86,7 +86,7 @@ class List_PaymentCardIssuer extends \EnumType\List_PaymentCardIssuer_Base
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\List_PaymentCardIssuer
+     * @return \Devlabs91\TravelgatePushApi\StructType\List_PaymentCardIssuer
      */
     public static function __set_state(array $array)
     {

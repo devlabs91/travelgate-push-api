@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class OTA_HotelRatePlanNotifRS extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\ErrorsType
+     * @var \Devlabs91\TravelgatePushApi\StructType\ErrorsType
      */
     public $Errors;
     /**
@@ -23,7 +23,7 @@ class OTA_HotelRatePlanNotifRS extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\SuccessType
+     * @var \Devlabs91\TravelgatePushApi\StructType\SuccessType
      */
     public $Success;
     /**
@@ -36,11 +36,11 @@ class OTA_HotelRatePlanNotifRS extends AbstractStructBase
      * @uses OTA_HotelRatePlanNotifRS::setErrors()
      * @uses OTA_HotelRatePlanNotifRS::setSuccess()
      * @uses OTA_HotelRatePlanNotifRS::setTransactionIdentifier()
-     * @param \StructType\ErrorsType $errors
-     * @param \StructType\SuccessType $success
+     * @param \Devlabs91\TravelgatePushApi\StructType\ErrorsType $errors
+     * @param \Devlabs91\TravelgatePushApi\StructType\SuccessType $success
      * @param string $transactionIdentifier
      */
-    public function __construct(\StructType\ErrorsType $errors = null, \StructType\SuccessType $success = null, $transactionIdentifier = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\StructType\ErrorsType $errors = null, \Devlabs91\TravelgatePushApi\StructType\SuccessType $success = null, $transactionIdentifier = null)
     {
         $this
             ->setErrors($errors)
@@ -49,7 +49,7 @@ class OTA_HotelRatePlanNotifRS extends AbstractStructBase
     }
     /**
      * Get Errors value
-     * @return \StructType\ErrorsType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\ErrorsType|null
      */
     public function getErrors()
     {
@@ -57,17 +57,17 @@ class OTA_HotelRatePlanNotifRS extends AbstractStructBase
     }
     /**
      * Set Errors value
-     * @param \StructType\ErrorsType $errors
-     * @return \StructType\OTA_HotelRatePlanNotifRS
+     * @param \Devlabs91\TravelgatePushApi\StructType\ErrorsType $errors
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_HotelRatePlanNotifRS
      */
-    public function setErrors(\StructType\ErrorsType $errors = null)
+    public function setErrors(\Devlabs91\TravelgatePushApi\StructType\ErrorsType $errors = null)
     {
         $this->Errors = $errors;
         return $this;
     }
     /**
      * Get Success value
-     * @return \StructType\SuccessType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\SuccessType|null
      */
     public function getSuccess()
     {
@@ -75,10 +75,10 @@ class OTA_HotelRatePlanNotifRS extends AbstractStructBase
     }
     /**
      * Set Success value
-     * @param \StructType\SuccessType $success
-     * @return \StructType\OTA_HotelRatePlanNotifRS
+     * @param \Devlabs91\TravelgatePushApi\StructType\SuccessType $success
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_HotelRatePlanNotifRS
      */
-    public function setSuccess(\StructType\SuccessType $success = null)
+    public function setSuccess(\Devlabs91\TravelgatePushApi\StructType\SuccessType $success = null)
     {
         $this->Success = $success;
         return $this;
@@ -94,7 +94,7 @@ class OTA_HotelRatePlanNotifRS extends AbstractStructBase
     /**
      * Set TransactionIdentifier value
      * @param string $transactionIdentifier
-     * @return \StructType\OTA_HotelRatePlanNotifRS
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_HotelRatePlanNotifRS
      */
     public function setTransactionIdentifier($transactionIdentifier = null)
     {
@@ -111,7 +111,7 @@ class OTA_HotelRatePlanNotifRS extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\OTA_HotelRatePlanNotifRS
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_HotelRatePlanNotifRS
      */
     public static function __set_state(array $array)
     {

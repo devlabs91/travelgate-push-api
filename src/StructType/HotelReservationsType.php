@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class HotelReservationsType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\HotelReservation[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\HotelReservation[]
      */
     public $HotelReservation;
     /**
@@ -30,7 +30,7 @@ class HotelReservationsType extends AbstractStructBase
      * Constructor method for HotelReservationsType
      * @uses HotelReservationsType::setHotelReservation()
      * @uses HotelReservationsType::setWrittenConfInst()
-     * @param \StructType\HotelReservation[] $hotelReservation
+     * @param \Devlabs91\TravelgatePushApi\StructType\HotelReservation[] $hotelReservation
      * @param string $writtenConfInst
      */
     public function __construct(array $hotelReservation = array(), $writtenConfInst = null)
@@ -41,7 +41,7 @@ class HotelReservationsType extends AbstractStructBase
     }
     /**
      * Get HotelReservation value
-     * @return \StructType\HotelReservation[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelReservation[]|null
      */
     public function getHotelReservation()
     {
@@ -50,15 +50,15 @@ class HotelReservationsType extends AbstractStructBase
     /**
      * Set HotelReservation value
      * @throws \InvalidArgumentException
-     * @param \StructType\HotelReservation[] $hotelReservation
-     * @return \StructType\HotelReservationsType
+     * @param \Devlabs91\TravelgatePushApi\StructType\HotelReservation[] $hotelReservation
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelReservationsType
      */
     public function setHotelReservation(array $hotelReservation = array())
     {
         foreach ($hotelReservation as $hotelReservationsTypeHotelReservationItem) {
             // validation for constraint: itemType
-            if (!$hotelReservationsTypeHotelReservationItem instanceof \StructType\HotelReservation) {
-                throw new \InvalidArgumentException(sprintf('The HotelReservation property can only contain items of \StructType\HotelReservation, "%s" given', is_object($hotelReservationsTypeHotelReservationItem) ? get_class($hotelReservationsTypeHotelReservationItem) : gettype($hotelReservationsTypeHotelReservationItem)), __LINE__);
+            if (!$hotelReservationsTypeHotelReservationItem instanceof \Devlabs91\TravelgatePushApi\StructType\HotelReservation) {
+                throw new \InvalidArgumentException(sprintf('The HotelReservation property can only contain items of \Devlabs91\TravelgatePushApi\StructType\HotelReservation, "%s" given', is_object($hotelReservationsTypeHotelReservationItem) ? get_class($hotelReservationsTypeHotelReservationItem) : gettype($hotelReservationsTypeHotelReservationItem)), __LINE__);
             }
         }
         $this->HotelReservation = $hotelReservation;
@@ -67,14 +67,14 @@ class HotelReservationsType extends AbstractStructBase
     /**
      * Add item to HotelReservation value
      * @throws \InvalidArgumentException
-     * @param \StructType\HotelReservation $item
-     * @return \StructType\HotelReservationsType
+     * @param \Devlabs91\TravelgatePushApi\StructType\HotelReservation $item
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelReservationsType
      */
-    public function addToHotelReservation(\StructType\HotelReservation $item)
+    public function addToHotelReservation(\Devlabs91\TravelgatePushApi\StructType\HotelReservation $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\HotelReservation) {
-            throw new \InvalidArgumentException(sprintf('The HotelReservation property can only contain items of \StructType\HotelReservation, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\HotelReservation) {
+            throw new \InvalidArgumentException(sprintf('The HotelReservation property can only contain items of \Devlabs91\TravelgatePushApi\StructType\HotelReservation, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->HotelReservation[] = $item;
         return $this;
@@ -90,7 +90,7 @@ class HotelReservationsType extends AbstractStructBase
     /**
      * Set WrittenConfInst value
      * @param string $writtenConfInst
-     * @return \StructType\HotelReservationsType
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelReservationsType
      */
     public function setWrittenConfInst($writtenConfInst = null)
     {
@@ -107,7 +107,7 @@ class HotelReservationsType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HotelReservationsType
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelReservationsType
      */
     public static function __set_state(array $array)
     {

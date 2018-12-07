@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -58,7 +58,7 @@ class Response extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $code
-     * @return \StructType\Response
+     * @return \Devlabs91\TravelgatePushApi\StructType\Response
      */
     public function setCode($code = null)
     {
@@ -89,7 +89,7 @@ class Response extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $status
-     * @return \StructType\Response
+     * @return \Devlabs91\TravelgatePushApi\StructType\Response
      */
     public function setStatus($status = null)
     {
@@ -110,7 +110,7 @@ class Response extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Response
+     * @return \Devlabs91\TravelgatePushApi\StructType\Response
      */
     public static function __set_state(array $array)
     {

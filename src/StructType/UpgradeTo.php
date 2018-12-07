@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -36,7 +36,7 @@ class UpgradeTo extends AbstractStructBase
     /**
      * Set InvCode value
      * @param string $invCode
-     * @return \StructType\UpgradeTo
+     * @return \Devlabs91\TravelgatePushApi\StructType\UpgradeTo
      */
     public function setInvCode($invCode = null)
     {
@@ -53,7 +53,7 @@ class UpgradeTo extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\UpgradeTo
+     * @return \Devlabs91\TravelgatePushApi\StructType\UpgradeTo
      */
     public static function __set_state(array $array)
     {

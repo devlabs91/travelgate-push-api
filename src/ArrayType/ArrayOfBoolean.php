@@ -1,6 +1,6 @@
 <?php
 
-namespace ArrayType;
+namespace Devlabs91\TravelgatePushApi\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -40,7 +40,7 @@ class ArrayOfBoolean extends AbstractStructArrayBase
      * Set OperationSchedule value
      * @throws \InvalidArgumentException
      * @param bool[] $operationSchedule
-     * @return \ArrayType\ArrayOfBoolean
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfBoolean
      */
     public function setOperationSchedule(array $operationSchedule = array())
     {
@@ -57,7 +57,7 @@ class ArrayOfBoolean extends AbstractStructArrayBase
      * Add item to OperationSchedule value
      * @throws \InvalidArgumentException
      * @param bool $item
-     * @return \ArrayType\ArrayOfBoolean
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfBoolean
      */
     public function addToOperationSchedule($item)
     {
@@ -130,7 +130,7 @@ class ArrayOfBoolean extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \ArrayType\ArrayOfBoolean
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfBoolean
      */
     public static function __set_state(array $array)
     {

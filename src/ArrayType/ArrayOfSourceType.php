@@ -1,6 +1,6 @@
 <?php
 
-namespace ArrayType;
+namespace Devlabs91\TravelgatePushApi\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -15,13 +15,13 @@ class ArrayOfSourceType extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\SourceType[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\SourceType[]
      */
     public $Source;
     /**
      * Constructor method for ArrayOfSourceType
      * @uses ArrayOfSourceType::setSource()
-     * @param \StructType\SourceType[] $source
+     * @param \Devlabs91\TravelgatePushApi\StructType\SourceType[] $source
      */
     public function __construct(array $source = array())
     {
@@ -30,7 +30,7 @@ class ArrayOfSourceType extends AbstractStructArrayBase
     }
     /**
      * Get Source value
-     * @return \StructType\SourceType[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\SourceType[]|null
      */
     public function getSource()
     {
@@ -39,15 +39,15 @@ class ArrayOfSourceType extends AbstractStructArrayBase
     /**
      * Set Source value
      * @throws \InvalidArgumentException
-     * @param \StructType\SourceType[] $source
-     * @return \ArrayType\ArrayOfSourceType
+     * @param \Devlabs91\TravelgatePushApi\StructType\SourceType[] $source
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfSourceType
      */
     public function setSource(array $source = array())
     {
         foreach ($source as $arrayOfSourceTypeSourceItem) {
             // validation for constraint: itemType
-            if (!$arrayOfSourceTypeSourceItem instanceof \StructType\SourceType) {
-                throw new \InvalidArgumentException(sprintf('The Source property can only contain items of \StructType\SourceType, "%s" given', is_object($arrayOfSourceTypeSourceItem) ? get_class($arrayOfSourceTypeSourceItem) : gettype($arrayOfSourceTypeSourceItem)), __LINE__);
+            if (!$arrayOfSourceTypeSourceItem instanceof \Devlabs91\TravelgatePushApi\StructType\SourceType) {
+                throw new \InvalidArgumentException(sprintf('The Source property can only contain items of \Devlabs91\TravelgatePushApi\StructType\SourceType, "%s" given', is_object($arrayOfSourceTypeSourceItem) ? get_class($arrayOfSourceTypeSourceItem) : gettype($arrayOfSourceTypeSourceItem)), __LINE__);
             }
         }
         $this->Source = $source;
@@ -56,14 +56,14 @@ class ArrayOfSourceType extends AbstractStructArrayBase
     /**
      * Add item to Source value
      * @throws \InvalidArgumentException
-     * @param \StructType\SourceType $item
-     * @return \ArrayType\ArrayOfSourceType
+     * @param \Devlabs91\TravelgatePushApi\StructType\SourceType $item
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfSourceType
      */
-    public function addToSource(\StructType\SourceType $item)
+    public function addToSource(\Devlabs91\TravelgatePushApi\StructType\SourceType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\SourceType) {
-            throw new \InvalidArgumentException(sprintf('The Source property can only contain items of \StructType\SourceType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\SourceType) {
+            throw new \InvalidArgumentException(sprintf('The Source property can only contain items of \Devlabs91\TravelgatePushApi\StructType\SourceType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->Source[] = $item;
         return $this;
@@ -71,7 +71,7 @@ class ArrayOfSourceType extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \StructType\SourceType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\SourceType|null
      */
     public function current()
     {
@@ -81,7 +81,7 @@ class ArrayOfSourceType extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \StructType\SourceType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\SourceType|null
      */
     public function item($index)
     {
@@ -90,7 +90,7 @@ class ArrayOfSourceType extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \StructType\SourceType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\SourceType|null
      */
     public function first()
     {
@@ -99,7 +99,7 @@ class ArrayOfSourceType extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \StructType\SourceType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\SourceType|null
      */
     public function last()
     {
@@ -109,7 +109,7 @@ class ArrayOfSourceType extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \StructType\SourceType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\SourceType|null
      */
     public function offsetGet($offset)
     {
@@ -130,7 +130,7 @@ class ArrayOfSourceType extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \ArrayType\ArrayOfSourceType
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfSourceType
      */
     public static function __set_state(array $array)
     {

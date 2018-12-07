@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -100,7 +100,7 @@ class Supplement extends AbstractStructBase
     /**
      * Set AgeQualifyingCode value
      * @param string $ageQualifyingCode
-     * @return \StructType\Supplement
+     * @return \Devlabs91\TravelgatePushApi\StructType\Supplement
      */
     public function setAgeQualifyingCode($ageQualifyingCode = null)
     {
@@ -122,7 +122,7 @@ class Supplement extends AbstractStructBase
     /**
      * Set CurrencyCode value
      * @param string $currencyCode
-     * @return \StructType\Supplement
+     * @return \Devlabs91\TravelgatePushApi\StructType\Supplement
      */
     public function setCurrencyCode($currencyCode = null)
     {
@@ -144,7 +144,7 @@ class Supplement extends AbstractStructBase
     /**
      * Set Amount value
      * @param float $amount
-     * @return \StructType\Supplement
+     * @return \Devlabs91\TravelgatePushApi\StructType\Supplement
      */
     public function setAmount($amount = null)
     {
@@ -162,7 +162,7 @@ class Supplement extends AbstractStructBase
     /**
      * Set Start value
      * @param string $start
-     * @return \StructType\Supplement
+     * @return \Devlabs91\TravelgatePushApi\StructType\Supplement
      */
     public function setStart($start = null)
     {
@@ -184,7 +184,7 @@ class Supplement extends AbstractStructBase
     /**
      * Set End value
      * @param string $end
-     * @return \StructType\Supplement
+     * @return \Devlabs91\TravelgatePushApi\StructType\Supplement
      */
     public function setEnd($end = null)
     {
@@ -206,7 +206,7 @@ class Supplement extends AbstractStructBase
     /**
      * Set SupplementType value
      * @param string $supplementType
-     * @return \StructType\Supplement
+     * @return \Devlabs91\TravelgatePushApi\StructType\Supplement
      */
     public function setSupplementType($supplementType = null)
     {
@@ -228,7 +228,7 @@ class Supplement extends AbstractStructBase
     /**
      * Set ChargeTypeCode value
      * @param string $chargeTypeCode
-     * @return \StructType\Supplement
+     * @return \Devlabs91\TravelgatePushApi\StructType\Supplement
      */
     public function setChargeTypeCode($chargeTypeCode = null)
     {
@@ -250,7 +250,7 @@ class Supplement extends AbstractStructBase
     /**
      * Set InvCode value
      * @param string $invCode
-     * @return \StructType\Supplement
+     * @return \Devlabs91\TravelgatePushApi\StructType\Supplement
      */
     public function setInvCode($invCode = null)
     {
@@ -272,7 +272,7 @@ class Supplement extends AbstractStructBase
     /**
      * Set Percent value
      * @param float $percent
-     * @return \StructType\Supplement
+     * @return \Devlabs91\TravelgatePushApi\StructType\Supplement
      */
     public function setPercent($percent = null)
     {
@@ -285,7 +285,7 @@ class Supplement extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Supplement
+     * @return \Devlabs91\TravelgatePushApi\StructType\Supplement
      */
     public static function __set_state(array $array)
     {

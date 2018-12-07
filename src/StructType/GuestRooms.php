@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class GuestRooms extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\GuestRoom[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\GuestRoom[]
      */
     public $GuestRoom;
     /**
@@ -27,7 +27,7 @@ class GuestRooms extends AbstractStructBase
      * Constructor method for GuestRooms
      * @uses GuestRooms::setGuestRoom()
      * @uses GuestRooms::setMaxOccupancy()
-     * @param \StructType\GuestRoom[] $guestRoom
+     * @param \Devlabs91\TravelgatePushApi\StructType\GuestRoom[] $guestRoom
      * @param bool $maxOccupancy
      */
     public function __construct(array $guestRoom = array(), $maxOccupancy = null)
@@ -38,7 +38,7 @@ class GuestRooms extends AbstractStructBase
     }
     /**
      * Get GuestRoom value
-     * @return \StructType\GuestRoom[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\GuestRoom[]|null
      */
     public function getGuestRoom()
     {
@@ -47,15 +47,15 @@ class GuestRooms extends AbstractStructBase
     /**
      * Set GuestRoom value
      * @throws \InvalidArgumentException
-     * @param \StructType\GuestRoom[] $guestRoom
-     * @return \StructType\GuestRooms
+     * @param \Devlabs91\TravelgatePushApi\StructType\GuestRoom[] $guestRoom
+     * @return \Devlabs91\TravelgatePushApi\StructType\GuestRooms
      */
     public function setGuestRoom(array $guestRoom = array())
     {
         foreach ($guestRoom as $guestRoomsGuestRoomItem) {
             // validation for constraint: itemType
-            if (!$guestRoomsGuestRoomItem instanceof \StructType\GuestRoom) {
-                throw new \InvalidArgumentException(sprintf('The GuestRoom property can only contain items of \StructType\GuestRoom, "%s" given', is_object($guestRoomsGuestRoomItem) ? get_class($guestRoomsGuestRoomItem) : gettype($guestRoomsGuestRoomItem)), __LINE__);
+            if (!$guestRoomsGuestRoomItem instanceof \Devlabs91\TravelgatePushApi\StructType\GuestRoom) {
+                throw new \InvalidArgumentException(sprintf('The GuestRoom property can only contain items of \Devlabs91\TravelgatePushApi\StructType\GuestRoom, "%s" given', is_object($guestRoomsGuestRoomItem) ? get_class($guestRoomsGuestRoomItem) : gettype($guestRoomsGuestRoomItem)), __LINE__);
             }
         }
         $this->GuestRoom = $guestRoom;
@@ -64,14 +64,14 @@ class GuestRooms extends AbstractStructBase
     /**
      * Add item to GuestRoom value
      * @throws \InvalidArgumentException
-     * @param \StructType\GuestRoom $item
-     * @return \StructType\GuestRooms
+     * @param \Devlabs91\TravelgatePushApi\StructType\GuestRoom $item
+     * @return \Devlabs91\TravelgatePushApi\StructType\GuestRooms
      */
-    public function addToGuestRoom(\StructType\GuestRoom $item)
+    public function addToGuestRoom(\Devlabs91\TravelgatePushApi\StructType\GuestRoom $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\GuestRoom) {
-            throw new \InvalidArgumentException(sprintf('The GuestRoom property can only contain items of \StructType\GuestRoom, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\GuestRoom) {
+            throw new \InvalidArgumentException(sprintf('The GuestRoom property can only contain items of \Devlabs91\TravelgatePushApi\StructType\GuestRoom, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->GuestRoom[] = $item;
         return $this;
@@ -87,7 +87,7 @@ class GuestRooms extends AbstractStructBase
     /**
      * Set MaxOccupancy value
      * @param bool $maxOccupancy
-     * @return \StructType\GuestRooms
+     * @return \Devlabs91\TravelgatePushApi\StructType\GuestRooms
      */
     public function setMaxOccupancy($maxOccupancy = null)
     {
@@ -104,7 +104,7 @@ class GuestRooms extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\GuestRooms
+     * @return \Devlabs91\TravelgatePushApi\StructType\GuestRooms
      */
     public static function __set_state(array $array)
     {

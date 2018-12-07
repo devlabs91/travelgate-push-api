@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class OTA_ReadRQ extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfSourceType
+     * @var \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfSourceType
      */
     public $POS;
     /**
@@ -23,7 +23,7 @@ class OTA_ReadRQ extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\UniqueID_Type
+     * @var \Devlabs91\TravelgatePushApi\StructType\UniqueID_Type
      */
     public $UniqueID;
     /**
@@ -31,7 +31,7 @@ class OTA_ReadRQ extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\ReadRequests
+     * @var \Devlabs91\TravelgatePushApi\StructType\ReadRequests
      */
     public $ReadRequests;
     /**
@@ -45,12 +45,12 @@ class OTA_ReadRQ extends AbstractStructBase
      * @uses OTA_ReadRQ::setUniqueID()
      * @uses OTA_ReadRQ::setReadRequests()
      * @uses OTA_ReadRQ::setPrimaryLangID()
-     * @param \ArrayType\ArrayOfSourceType $pOS
-     * @param \StructType\UniqueID_Type $uniqueID
-     * @param \StructType\ReadRequests $readRequests
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfSourceType $pOS
+     * @param \Devlabs91\TravelgatePushApi\StructType\UniqueID_Type $uniqueID
+     * @param \Devlabs91\TravelgatePushApi\StructType\ReadRequests $readRequests
      * @param string $primaryLangID
      */
-    public function __construct(\ArrayType\ArrayOfSourceType $pOS = null, \StructType\UniqueID_Type $uniqueID = null, \StructType\ReadRequests $readRequests = null, $primaryLangID = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\ArrayType\ArrayOfSourceType $pOS = null, \Devlabs91\TravelgatePushApi\StructType\UniqueID_Type $uniqueID = null, \Devlabs91\TravelgatePushApi\StructType\ReadRequests $readRequests = null, $primaryLangID = null)
     {
         $this
             ->setPOS($pOS)
@@ -60,7 +60,7 @@ class OTA_ReadRQ extends AbstractStructBase
     }
     /**
      * Get POS value
-     * @return \ArrayType\ArrayOfSourceType|null
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfSourceType|null
      */
     public function getPOS()
     {
@@ -68,17 +68,17 @@ class OTA_ReadRQ extends AbstractStructBase
     }
     /**
      * Set POS value
-     * @param \ArrayType\ArrayOfSourceType $pOS
-     * @return \StructType\OTA_ReadRQ
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfSourceType $pOS
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_ReadRQ
      */
-    public function setPOS(\ArrayType\ArrayOfSourceType $pOS = null)
+    public function setPOS(\Devlabs91\TravelgatePushApi\ArrayType\ArrayOfSourceType $pOS = null)
     {
         $this->POS = $pOS;
         return $this;
     }
     /**
      * Get UniqueID value
-     * @return \StructType\UniqueID_Type|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\UniqueID_Type|null
      */
     public function getUniqueID()
     {
@@ -86,17 +86,17 @@ class OTA_ReadRQ extends AbstractStructBase
     }
     /**
      * Set UniqueID value
-     * @param \StructType\UniqueID_Type $uniqueID
-     * @return \StructType\OTA_ReadRQ
+     * @param \Devlabs91\TravelgatePushApi\StructType\UniqueID_Type $uniqueID
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_ReadRQ
      */
-    public function setUniqueID(\StructType\UniqueID_Type $uniqueID = null)
+    public function setUniqueID(\Devlabs91\TravelgatePushApi\StructType\UniqueID_Type $uniqueID = null)
     {
         $this->UniqueID = $uniqueID;
         return $this;
     }
     /**
      * Get ReadRequests value
-     * @return \StructType\ReadRequests|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\ReadRequests|null
      */
     public function getReadRequests()
     {
@@ -104,10 +104,10 @@ class OTA_ReadRQ extends AbstractStructBase
     }
     /**
      * Set ReadRequests value
-     * @param \StructType\ReadRequests $readRequests
-     * @return \StructType\OTA_ReadRQ
+     * @param \Devlabs91\TravelgatePushApi\StructType\ReadRequests $readRequests
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_ReadRQ
      */
-    public function setReadRequests(\StructType\ReadRequests $readRequests = null)
+    public function setReadRequests(\Devlabs91\TravelgatePushApi\StructType\ReadRequests $readRequests = null)
     {
         $this->ReadRequests = $readRequests;
         return $this;
@@ -123,7 +123,7 @@ class OTA_ReadRQ extends AbstractStructBase
     /**
      * Set PrimaryLangID value
      * @param string $primaryLangID
-     * @return \StructType\OTA_ReadRQ
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_ReadRQ
      */
     public function setPrimaryLangID($primaryLangID = null)
     {
@@ -140,7 +140,7 @@ class OTA_ReadRQ extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\OTA_ReadRQ
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_ReadRQ
      */
     public static function __set_state(array $array)
     {

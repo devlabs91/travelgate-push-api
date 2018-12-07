@@ -1,6 +1,6 @@
 <?php
 
-namespace ArrayType;
+namespace Devlabs91\TravelgatePushApi\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -15,13 +15,13 @@ class ArrayOfProfilesTypeProfileInfo extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\ProfileInfo[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\ProfileInfo[]
      */
     public $ProfileInfo;
     /**
      * Constructor method for ArrayOfProfilesTypeProfileInfo
      * @uses ArrayOfProfilesTypeProfileInfo::setProfileInfo()
-     * @param \StructType\ProfileInfo[] $profileInfo
+     * @param \Devlabs91\TravelgatePushApi\StructType\ProfileInfo[] $profileInfo
      */
     public function __construct(array $profileInfo = array())
     {
@@ -30,7 +30,7 @@ class ArrayOfProfilesTypeProfileInfo extends AbstractStructArrayBase
     }
     /**
      * Get ProfileInfo value
-     * @return \StructType\ProfileInfo[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\ProfileInfo[]|null
      */
     public function getProfileInfo()
     {
@@ -39,15 +39,15 @@ class ArrayOfProfilesTypeProfileInfo extends AbstractStructArrayBase
     /**
      * Set ProfileInfo value
      * @throws \InvalidArgumentException
-     * @param \StructType\ProfileInfo[] $profileInfo
-     * @return \ArrayType\ArrayOfProfilesTypeProfileInfo
+     * @param \Devlabs91\TravelgatePushApi\StructType\ProfileInfo[] $profileInfo
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfProfilesTypeProfileInfo
      */
     public function setProfileInfo(array $profileInfo = array())
     {
         foreach ($profileInfo as $arrayOfProfilesTypeProfileInfoProfileInfoItem) {
             // validation for constraint: itemType
-            if (!$arrayOfProfilesTypeProfileInfoProfileInfoItem instanceof \StructType\ProfileInfo) {
-                throw new \InvalidArgumentException(sprintf('The ProfileInfo property can only contain items of \StructType\ProfileInfo, "%s" given', is_object($arrayOfProfilesTypeProfileInfoProfileInfoItem) ? get_class($arrayOfProfilesTypeProfileInfoProfileInfoItem) : gettype($arrayOfProfilesTypeProfileInfoProfileInfoItem)), __LINE__);
+            if (!$arrayOfProfilesTypeProfileInfoProfileInfoItem instanceof \Devlabs91\TravelgatePushApi\StructType\ProfileInfo) {
+                throw new \InvalidArgumentException(sprintf('The ProfileInfo property can only contain items of \Devlabs91\TravelgatePushApi\StructType\ProfileInfo, "%s" given', is_object($arrayOfProfilesTypeProfileInfoProfileInfoItem) ? get_class($arrayOfProfilesTypeProfileInfoProfileInfoItem) : gettype($arrayOfProfilesTypeProfileInfoProfileInfoItem)), __LINE__);
             }
         }
         $this->ProfileInfo = $profileInfo;
@@ -56,14 +56,14 @@ class ArrayOfProfilesTypeProfileInfo extends AbstractStructArrayBase
     /**
      * Add item to ProfileInfo value
      * @throws \InvalidArgumentException
-     * @param \StructType\ProfileInfo $item
-     * @return \ArrayType\ArrayOfProfilesTypeProfileInfo
+     * @param \Devlabs91\TravelgatePushApi\StructType\ProfileInfo $item
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfProfilesTypeProfileInfo
      */
-    public function addToProfileInfo(\StructType\ProfileInfo $item)
+    public function addToProfileInfo(\Devlabs91\TravelgatePushApi\StructType\ProfileInfo $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\ProfileInfo) {
-            throw new \InvalidArgumentException(sprintf('The ProfileInfo property can only contain items of \StructType\ProfileInfo, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\ProfileInfo) {
+            throw new \InvalidArgumentException(sprintf('The ProfileInfo property can only contain items of \Devlabs91\TravelgatePushApi\StructType\ProfileInfo, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->ProfileInfo[] = $item;
         return $this;
@@ -71,7 +71,7 @@ class ArrayOfProfilesTypeProfileInfo extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \StructType\ProfileInfo|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\ProfileInfo|null
      */
     public function current()
     {
@@ -81,7 +81,7 @@ class ArrayOfProfilesTypeProfileInfo extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \StructType\ProfileInfo|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\ProfileInfo|null
      */
     public function item($index)
     {
@@ -90,7 +90,7 @@ class ArrayOfProfilesTypeProfileInfo extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \StructType\ProfileInfo|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\ProfileInfo|null
      */
     public function first()
     {
@@ -99,7 +99,7 @@ class ArrayOfProfilesTypeProfileInfo extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \StructType\ProfileInfo|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\ProfileInfo|null
      */
     public function last()
     {
@@ -109,7 +109,7 @@ class ArrayOfProfilesTypeProfileInfo extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \StructType\ProfileInfo|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\ProfileInfo|null
      */
     public function offsetGet($offset)
     {
@@ -130,7 +130,7 @@ class ArrayOfProfilesTypeProfileInfo extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \ArrayType\ArrayOfProfilesTypeProfileInfo
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfProfilesTypeProfileInfo
      */
     public static function __set_state(array $array)
     {

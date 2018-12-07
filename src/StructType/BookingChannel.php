@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class BookingChannel extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\CompanyNameType
+     * @var \Devlabs91\TravelgatePushApi\StructType\CompanyNameType
      */
     public $CompanyName;
     /**
@@ -33,11 +33,11 @@ class BookingChannel extends AbstractStructBase
      * @uses BookingChannel::setCompanyName()
      * @uses BookingChannel::setType()
      * @uses BookingChannel::setPrimary()
-     * @param \StructType\CompanyNameType $companyName
+     * @param \Devlabs91\TravelgatePushApi\StructType\CompanyNameType $companyName
      * @param string $type
      * @param bool $primary
      */
-    public function __construct(\StructType\CompanyNameType $companyName = null, $type = null, $primary = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\StructType\CompanyNameType $companyName = null, $type = null, $primary = null)
     {
         $this
             ->setCompanyName($companyName)
@@ -46,7 +46,7 @@ class BookingChannel extends AbstractStructBase
     }
     /**
      * Get CompanyName value
-     * @return \StructType\CompanyNameType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\CompanyNameType|null
      */
     public function getCompanyName()
     {
@@ -54,10 +54,10 @@ class BookingChannel extends AbstractStructBase
     }
     /**
      * Set CompanyName value
-     * @param \StructType\CompanyNameType $companyName
-     * @return \StructType\BookingChannel
+     * @param \Devlabs91\TravelgatePushApi\StructType\CompanyNameType $companyName
+     * @return \Devlabs91\TravelgatePushApi\StructType\BookingChannel
      */
-    public function setCompanyName(\StructType\CompanyNameType $companyName = null)
+    public function setCompanyName(\Devlabs91\TravelgatePushApi\StructType\CompanyNameType $companyName = null)
     {
         $this->CompanyName = $companyName;
         return $this;
@@ -73,7 +73,7 @@ class BookingChannel extends AbstractStructBase
     /**
      * Set Type value
      * @param string $type
-     * @return \StructType\BookingChannel
+     * @return \Devlabs91\TravelgatePushApi\StructType\BookingChannel
      */
     public function setType($type = null)
     {
@@ -95,7 +95,7 @@ class BookingChannel extends AbstractStructBase
     /**
      * Set Primary value
      * @param bool $primary
-     * @return \StructType\BookingChannel
+     * @return \Devlabs91\TravelgatePushApi\StructType\BookingChannel
      */
     public function setPrimary($primary = null)
     {
@@ -112,7 +112,7 @@ class BookingChannel extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\BookingChannel
+     * @return \Devlabs91\TravelgatePushApi\StructType\BookingChannel
      */
     public static function __set_state(array $array)
     {

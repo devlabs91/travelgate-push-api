@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class DOW_RestrictionsType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\AvailableDaysOfWeek
+     * @var \Devlabs91\TravelgatePushApi\StructType\AvailableDaysOfWeek
      */
     public $AvailableDaysOfWeek;
     /**
      * Constructor method for DOW_RestrictionsType
      * @uses DOW_RestrictionsType::setAvailableDaysOfWeek()
-     * @param \StructType\AvailableDaysOfWeek $availableDaysOfWeek
+     * @param \Devlabs91\TravelgatePushApi\StructType\AvailableDaysOfWeek $availableDaysOfWeek
      */
-    public function __construct(\StructType\AvailableDaysOfWeek $availableDaysOfWeek = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\StructType\AvailableDaysOfWeek $availableDaysOfWeek = null)
     {
         $this
             ->setAvailableDaysOfWeek($availableDaysOfWeek);
     }
     /**
      * Get AvailableDaysOfWeek value
-     * @return \StructType\AvailableDaysOfWeek|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\AvailableDaysOfWeek|null
      */
     public function getAvailableDaysOfWeek()
     {
@@ -38,10 +38,10 @@ class DOW_RestrictionsType extends AbstractStructBase
     }
     /**
      * Set AvailableDaysOfWeek value
-     * @param \StructType\AvailableDaysOfWeek $availableDaysOfWeek
-     * @return \StructType\DOW_RestrictionsType
+     * @param \Devlabs91\TravelgatePushApi\StructType\AvailableDaysOfWeek $availableDaysOfWeek
+     * @return \Devlabs91\TravelgatePushApi\StructType\DOW_RestrictionsType
      */
-    public function setAvailableDaysOfWeek(\StructType\AvailableDaysOfWeek $availableDaysOfWeek = null)
+    public function setAvailableDaysOfWeek(\Devlabs91\TravelgatePushApi\StructType\AvailableDaysOfWeek $availableDaysOfWeek = null)
     {
         $this->AvailableDaysOfWeek = $availableDaysOfWeek;
         return $this;
@@ -52,7 +52,7 @@ class DOW_RestrictionsType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\DOW_RestrictionsType
+     * @return \Devlabs91\TravelgatePushApi\StructType\DOW_RestrictionsType
      */
     public static function __set_state(array $array)
     {

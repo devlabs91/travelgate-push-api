@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -37,7 +37,7 @@ class MealsIncluded extends AbstractStructBase
      * Set MealPlanCodes value
      * @throws \InvalidArgumentException
      * @param string[] $mealPlanCodes
-     * @return \StructType\MealsIncluded
+     * @return \Devlabs91\TravelgatePushApi\StructType\MealsIncluded
      */
     public function setMealPlanCodes(array $mealPlanCodes = array())
     {
@@ -54,7 +54,7 @@ class MealsIncluded extends AbstractStructBase
      * Add item to MealPlanCodes value
      * @throws \InvalidArgumentException
      * @param string $item
-     * @return \StructType\MealsIncluded
+     * @return \Devlabs91\TravelgatePushApi\StructType\MealsIncluded
      */
     public function addToMealPlanCodes($item)
     {
@@ -71,7 +71,7 @@ class MealsIncluded extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\MealsIncluded
+     * @return \Devlabs91\TravelgatePushApi\StructType\MealsIncluded
      */
     public static function __set_state(array $array)
     {

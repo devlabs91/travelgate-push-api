@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,13 +15,13 @@ class ImageItemsType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\ImageItem[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\ImageItem[]
      */
     public $ImageItem;
     /**
      * Constructor method for ImageItemsType
      * @uses ImageItemsType::setImageItem()
-     * @param \StructType\ImageItem[] $imageItem
+     * @param \Devlabs91\TravelgatePushApi\StructType\ImageItem[] $imageItem
      */
     public function __construct(array $imageItem = array())
     {
@@ -30,7 +30,7 @@ class ImageItemsType extends AbstractStructBase
     }
     /**
      * Get ImageItem value
-     * @return \StructType\ImageItem[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\ImageItem[]|null
      */
     public function getImageItem()
     {
@@ -39,15 +39,15 @@ class ImageItemsType extends AbstractStructBase
     /**
      * Set ImageItem value
      * @throws \InvalidArgumentException
-     * @param \StructType\ImageItem[] $imageItem
-     * @return \StructType\ImageItemsType
+     * @param \Devlabs91\TravelgatePushApi\StructType\ImageItem[] $imageItem
+     * @return \Devlabs91\TravelgatePushApi\StructType\ImageItemsType
      */
     public function setImageItem(array $imageItem = array())
     {
         foreach ($imageItem as $imageItemsTypeImageItemItem) {
             // validation for constraint: itemType
-            if (!$imageItemsTypeImageItemItem instanceof \StructType\ImageItem) {
-                throw new \InvalidArgumentException(sprintf('The ImageItem property can only contain items of \StructType\ImageItem, "%s" given', is_object($imageItemsTypeImageItemItem) ? get_class($imageItemsTypeImageItemItem) : gettype($imageItemsTypeImageItemItem)), __LINE__);
+            if (!$imageItemsTypeImageItemItem instanceof \Devlabs91\TravelgatePushApi\StructType\ImageItem) {
+                throw new \InvalidArgumentException(sprintf('The ImageItem property can only contain items of \Devlabs91\TravelgatePushApi\StructType\ImageItem, "%s" given', is_object($imageItemsTypeImageItemItem) ? get_class($imageItemsTypeImageItemItem) : gettype($imageItemsTypeImageItemItem)), __LINE__);
             }
         }
         $this->ImageItem = $imageItem;
@@ -56,14 +56,14 @@ class ImageItemsType extends AbstractStructBase
     /**
      * Add item to ImageItem value
      * @throws \InvalidArgumentException
-     * @param \StructType\ImageItem $item
-     * @return \StructType\ImageItemsType
+     * @param \Devlabs91\TravelgatePushApi\StructType\ImageItem $item
+     * @return \Devlabs91\TravelgatePushApi\StructType\ImageItemsType
      */
-    public function addToImageItem(\StructType\ImageItem $item)
+    public function addToImageItem(\Devlabs91\TravelgatePushApi\StructType\ImageItem $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\ImageItem) {
-            throw new \InvalidArgumentException(sprintf('The ImageItem property can only contain items of \StructType\ImageItem, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\ImageItem) {
+            throw new \InvalidArgumentException(sprintf('The ImageItem property can only contain items of \Devlabs91\TravelgatePushApi\StructType\ImageItem, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->ImageItem[] = $item;
         return $this;
@@ -74,7 +74,7 @@ class ImageItemsType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ImageItemsType
+     * @return \Devlabs91\TravelgatePushApi\StructType\ImageItemsType
      */
     public static function __set_state(array $array)
     {

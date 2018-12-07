@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class AreaInfoType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\RefPoints
+     * @var \Devlabs91\TravelgatePushApi\StructType\RefPoints
      */
     public $RefPoints;
     /**
@@ -23,7 +23,7 @@ class AreaInfoType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Attractions
+     * @var \Devlabs91\TravelgatePushApi\StructType\Attractions
      */
     public $Attractions;
     /**
@@ -31,7 +31,7 @@ class AreaInfoType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Recreations
+     * @var \Devlabs91\TravelgatePushApi\StructType\Recreations
      */
     public $Recreations;
     /**
@@ -39,11 +39,11 @@ class AreaInfoType extends AbstractStructBase
      * @uses AreaInfoType::setRefPoints()
      * @uses AreaInfoType::setAttractions()
      * @uses AreaInfoType::setRecreations()
-     * @param \StructType\RefPoints $refPoints
-     * @param \StructType\Attractions $attractions
-     * @param \StructType\Recreations $recreations
+     * @param \Devlabs91\TravelgatePushApi\StructType\RefPoints $refPoints
+     * @param \Devlabs91\TravelgatePushApi\StructType\Attractions $attractions
+     * @param \Devlabs91\TravelgatePushApi\StructType\Recreations $recreations
      */
-    public function __construct(\StructType\RefPoints $refPoints = null, \StructType\Attractions $attractions = null, \StructType\Recreations $recreations = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\StructType\RefPoints $refPoints = null, \Devlabs91\TravelgatePushApi\StructType\Attractions $attractions = null, \Devlabs91\TravelgatePushApi\StructType\Recreations $recreations = null)
     {
         $this
             ->setRefPoints($refPoints)
@@ -52,7 +52,7 @@ class AreaInfoType extends AbstractStructBase
     }
     /**
      * Get RefPoints value
-     * @return \StructType\RefPoints|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\RefPoints|null
      */
     public function getRefPoints()
     {
@@ -60,17 +60,17 @@ class AreaInfoType extends AbstractStructBase
     }
     /**
      * Set RefPoints value
-     * @param \StructType\RefPoints $refPoints
-     * @return \StructType\AreaInfoType
+     * @param \Devlabs91\TravelgatePushApi\StructType\RefPoints $refPoints
+     * @return \Devlabs91\TravelgatePushApi\StructType\AreaInfoType
      */
-    public function setRefPoints(\StructType\RefPoints $refPoints = null)
+    public function setRefPoints(\Devlabs91\TravelgatePushApi\StructType\RefPoints $refPoints = null)
     {
         $this->RefPoints = $refPoints;
         return $this;
     }
     /**
      * Get Attractions value
-     * @return \StructType\Attractions|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Attractions|null
      */
     public function getAttractions()
     {
@@ -78,17 +78,17 @@ class AreaInfoType extends AbstractStructBase
     }
     /**
      * Set Attractions value
-     * @param \StructType\Attractions $attractions
-     * @return \StructType\AreaInfoType
+     * @param \Devlabs91\TravelgatePushApi\StructType\Attractions $attractions
+     * @return \Devlabs91\TravelgatePushApi\StructType\AreaInfoType
      */
-    public function setAttractions(\StructType\Attractions $attractions = null)
+    public function setAttractions(\Devlabs91\TravelgatePushApi\StructType\Attractions $attractions = null)
     {
         $this->Attractions = $attractions;
         return $this;
     }
     /**
      * Get Recreations value
-     * @return \StructType\Recreations|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Recreations|null
      */
     public function getRecreations()
     {
@@ -96,10 +96,10 @@ class AreaInfoType extends AbstractStructBase
     }
     /**
      * Set Recreations value
-     * @param \StructType\Recreations $recreations
-     * @return \StructType\AreaInfoType
+     * @param \Devlabs91\TravelgatePushApi\StructType\Recreations $recreations
+     * @return \Devlabs91\TravelgatePushApi\StructType\AreaInfoType
      */
-    public function setRecreations(\StructType\Recreations $recreations = null)
+    public function setRecreations(\Devlabs91\TravelgatePushApi\StructType\Recreations $recreations = null)
     {
         $this->Recreations = $recreations;
         return $this;
@@ -110,7 +110,7 @@ class AreaInfoType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\AreaInfoType
+     * @return \Devlabs91\TravelgatePushApi\StructType\AreaInfoType
      */
     public static function __set_state(array $array)
     {

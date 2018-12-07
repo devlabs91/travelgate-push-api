@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class OperationScheduleType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\FeeType
+     * @var \Devlabs91\TravelgatePushApi\StructType\FeeType
      */
     public $Charge;
     /**
      * Constructor method for OperationScheduleType
      * @uses OperationScheduleType::setCharge()
-     * @param \StructType\FeeType $charge
+     * @param \Devlabs91\TravelgatePushApi\StructType\FeeType $charge
      */
-    public function __construct(\StructType\FeeType $charge = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\StructType\FeeType $charge = null)
     {
         $this
             ->setCharge($charge);
     }
     /**
      * Get Charge value
-     * @return \StructType\FeeType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\FeeType|null
      */
     public function getCharge()
     {
@@ -38,10 +38,10 @@ class OperationScheduleType extends AbstractStructBase
     }
     /**
      * Set Charge value
-     * @param \StructType\FeeType $charge
-     * @return \StructType\OperationScheduleType
+     * @param \Devlabs91\TravelgatePushApi\StructType\FeeType $charge
+     * @return \Devlabs91\TravelgatePushApi\StructType\OperationScheduleType
      */
-    public function setCharge(\StructType\FeeType $charge = null)
+    public function setCharge(\Devlabs91\TravelgatePushApi\StructType\FeeType $charge = null)
     {
         $this->Charge = $charge;
         return $this;
@@ -52,7 +52,7 @@ class OperationScheduleType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\OperationScheduleType
+     * @return \Devlabs91\TravelgatePushApi\StructType\OperationScheduleType
      */
     public static function __set_state(array $array)
     {

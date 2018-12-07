@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Policy extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\GuaranteePaymentPolicy
+     * @var \Devlabs91\TravelgatePushApi\StructType\GuaranteePaymentPolicy
      */
     public $GuaranteePaymentPolicy;
     /**
@@ -23,7 +23,7 @@ class Policy extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\PolicyInfo
+     * @var \Devlabs91\TravelgatePushApi\StructType\PolicyInfo
      */
     public $PolicyInfo;
     /**
@@ -36,11 +36,11 @@ class Policy extends AbstractStructBase
      * @uses Policy::setGuaranteePaymentPolicy()
      * @uses Policy::setPolicyInfo()
      * @uses Policy::setCode()
-     * @param \StructType\GuaranteePaymentPolicy $guaranteePaymentPolicy
-     * @param \StructType\PolicyInfo $policyInfo
+     * @param \Devlabs91\TravelgatePushApi\StructType\GuaranteePaymentPolicy $guaranteePaymentPolicy
+     * @param \Devlabs91\TravelgatePushApi\StructType\PolicyInfo $policyInfo
      * @param string $code
      */
-    public function __construct(\StructType\GuaranteePaymentPolicy $guaranteePaymentPolicy = null, \StructType\PolicyInfo $policyInfo = null, $code = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\StructType\GuaranteePaymentPolicy $guaranteePaymentPolicy = null, \Devlabs91\TravelgatePushApi\StructType\PolicyInfo $policyInfo = null, $code = null)
     {
         $this
             ->setGuaranteePaymentPolicy($guaranteePaymentPolicy)
@@ -49,7 +49,7 @@ class Policy extends AbstractStructBase
     }
     /**
      * Get GuaranteePaymentPolicy value
-     * @return \StructType\GuaranteePaymentPolicy|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\GuaranteePaymentPolicy|null
      */
     public function getGuaranteePaymentPolicy()
     {
@@ -57,17 +57,17 @@ class Policy extends AbstractStructBase
     }
     /**
      * Set GuaranteePaymentPolicy value
-     * @param \StructType\GuaranteePaymentPolicy $guaranteePaymentPolicy
-     * @return \StructType\Policy
+     * @param \Devlabs91\TravelgatePushApi\StructType\GuaranteePaymentPolicy $guaranteePaymentPolicy
+     * @return \Devlabs91\TravelgatePushApi\StructType\Policy
      */
-    public function setGuaranteePaymentPolicy(\StructType\GuaranteePaymentPolicy $guaranteePaymentPolicy = null)
+    public function setGuaranteePaymentPolicy(\Devlabs91\TravelgatePushApi\StructType\GuaranteePaymentPolicy $guaranteePaymentPolicy = null)
     {
         $this->GuaranteePaymentPolicy = $guaranteePaymentPolicy;
         return $this;
     }
     /**
      * Get PolicyInfo value
-     * @return \StructType\PolicyInfo|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\PolicyInfo|null
      */
     public function getPolicyInfo()
     {
@@ -75,10 +75,10 @@ class Policy extends AbstractStructBase
     }
     /**
      * Set PolicyInfo value
-     * @param \StructType\PolicyInfo $policyInfo
-     * @return \StructType\Policy
+     * @param \Devlabs91\TravelgatePushApi\StructType\PolicyInfo $policyInfo
+     * @return \Devlabs91\TravelgatePushApi\StructType\Policy
      */
-    public function setPolicyInfo(\StructType\PolicyInfo $policyInfo = null)
+    public function setPolicyInfo(\Devlabs91\TravelgatePushApi\StructType\PolicyInfo $policyInfo = null)
     {
         $this->PolicyInfo = $policyInfo;
         return $this;
@@ -94,7 +94,7 @@ class Policy extends AbstractStructBase
     /**
      * Set Code value
      * @param string $code
-     * @return \StructType\Policy
+     * @return \Devlabs91\TravelgatePushApi\StructType\Policy
      */
     public function setCode($code = null)
     {
@@ -111,7 +111,7 @@ class Policy extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Policy
+     * @return \Devlabs91\TravelgatePushApi\StructType\Policy
      */
     public static function __set_state(array $array)
     {

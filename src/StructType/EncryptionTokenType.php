@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -39,7 +39,7 @@ class EncryptionTokenType extends AbstractStructBase
     /**
      * Set PlainText value
      * @param string $plainText
-     * @return \StructType\EncryptionTokenType
+     * @return \Devlabs91\TravelgatePushApi\StructType\EncryptionTokenType
      */
     public function setPlainText($plainText = null)
     {
@@ -56,7 +56,7 @@ class EncryptionTokenType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\EncryptionTokenType
+     * @return \Devlabs91\TravelgatePushApi\StructType\EncryptionTokenType
      */
     public static function __set_state(array $array)
     {

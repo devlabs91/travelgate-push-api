@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class SourceType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\RequestorID
+     * @var \Devlabs91\TravelgatePushApi\StructType\RequestorID
      */
     public $RequestorID;
     /**
@@ -23,7 +23,7 @@ class SourceType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\BookingChannel
+     * @var \Devlabs91\TravelgatePushApi\StructType\BookingChannel
      */
     public $BookingChannel;
     /**
@@ -31,7 +31,7 @@ class SourceType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\TPA_ExtensionsType
+     * @var \Devlabs91\TravelgatePushApi\StructType\TPA_ExtensionsType
      */
     public $TPA_Extensions;
     /**
@@ -45,12 +45,12 @@ class SourceType extends AbstractStructBase
      * @uses SourceType::setBookingChannel()
      * @uses SourceType::setTPA_Extensions()
      * @uses SourceType::setISOCountry()
-     * @param \StructType\RequestorID $requestorID
-     * @param \StructType\BookingChannel $bookingChannel
-     * @param \StructType\TPA_ExtensionsType $tPA_Extensions
+     * @param \Devlabs91\TravelgatePushApi\StructType\RequestorID $requestorID
+     * @param \Devlabs91\TravelgatePushApi\StructType\BookingChannel $bookingChannel
+     * @param \Devlabs91\TravelgatePushApi\StructType\TPA_ExtensionsType $tPA_Extensions
      * @param string $iSOCountry
      */
-    public function __construct(\StructType\RequestorID $requestorID = null, \StructType\BookingChannel $bookingChannel = null, \StructType\TPA_ExtensionsType $tPA_Extensions = null, $iSOCountry = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\StructType\RequestorID $requestorID = null, \Devlabs91\TravelgatePushApi\StructType\BookingChannel $bookingChannel = null, \Devlabs91\TravelgatePushApi\StructType\TPA_ExtensionsType $tPA_Extensions = null, $iSOCountry = null)
     {
         $this
             ->setRequestorID($requestorID)
@@ -60,7 +60,7 @@ class SourceType extends AbstractStructBase
     }
     /**
      * Get RequestorID value
-     * @return \StructType\RequestorID|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\RequestorID|null
      */
     public function getRequestorID()
     {
@@ -68,17 +68,17 @@ class SourceType extends AbstractStructBase
     }
     /**
      * Set RequestorID value
-     * @param \StructType\RequestorID $requestorID
-     * @return \StructType\SourceType
+     * @param \Devlabs91\TravelgatePushApi\StructType\RequestorID $requestorID
+     * @return \Devlabs91\TravelgatePushApi\StructType\SourceType
      */
-    public function setRequestorID(\StructType\RequestorID $requestorID = null)
+    public function setRequestorID(\Devlabs91\TravelgatePushApi\StructType\RequestorID $requestorID = null)
     {
         $this->RequestorID = $requestorID;
         return $this;
     }
     /**
      * Get BookingChannel value
-     * @return \StructType\BookingChannel|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\BookingChannel|null
      */
     public function getBookingChannel()
     {
@@ -86,17 +86,17 @@ class SourceType extends AbstractStructBase
     }
     /**
      * Set BookingChannel value
-     * @param \StructType\BookingChannel $bookingChannel
-     * @return \StructType\SourceType
+     * @param \Devlabs91\TravelgatePushApi\StructType\BookingChannel $bookingChannel
+     * @return \Devlabs91\TravelgatePushApi\StructType\SourceType
      */
-    public function setBookingChannel(\StructType\BookingChannel $bookingChannel = null)
+    public function setBookingChannel(\Devlabs91\TravelgatePushApi\StructType\BookingChannel $bookingChannel = null)
     {
         $this->BookingChannel = $bookingChannel;
         return $this;
     }
     /**
      * Get TPA_Extensions value
-     * @return \StructType\TPA_ExtensionsType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\TPA_ExtensionsType|null
      */
     public function getTPA_Extensions()
     {
@@ -104,10 +104,10 @@ class SourceType extends AbstractStructBase
     }
     /**
      * Set TPA_Extensions value
-     * @param \StructType\TPA_ExtensionsType $tPA_Extensions
-     * @return \StructType\SourceType
+     * @param \Devlabs91\TravelgatePushApi\StructType\TPA_ExtensionsType $tPA_Extensions
+     * @return \Devlabs91\TravelgatePushApi\StructType\SourceType
      */
-    public function setTPA_Extensions(\StructType\TPA_ExtensionsType $tPA_Extensions = null)
+    public function setTPA_Extensions(\Devlabs91\TravelgatePushApi\StructType\TPA_ExtensionsType $tPA_Extensions = null)
     {
         $this->TPA_Extensions = $tPA_Extensions;
         return $this;
@@ -123,7 +123,7 @@ class SourceType extends AbstractStructBase
     /**
      * Set ISOCountry value
      * @param string $iSOCountry
-     * @return \StructType\SourceType
+     * @return \Devlabs91\TravelgatePushApi\StructType\SourceType
      */
     public function setISOCountry($iSOCountry = null)
     {
@@ -140,7 +140,7 @@ class SourceType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\SourceType
+     * @return \Devlabs91\TravelgatePushApi\StructType\SourceType
      */
     public static function __set_state(array $array)
     {

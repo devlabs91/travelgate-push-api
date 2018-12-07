@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -36,7 +36,7 @@ class Renovation extends AbstractStructBase
     /**
      * Set RenovationCompletionDate value
      * @param string $renovationCompletionDate
-     * @return \StructType\Renovation
+     * @return \Devlabs91\TravelgatePushApi\StructType\Renovation
      */
     public function setRenovationCompletionDate($renovationCompletionDate = null)
     {
@@ -53,7 +53,7 @@ class Renovation extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Renovation
+     * @return \Devlabs91\TravelgatePushApi\StructType\Renovation
      */
     public static function __set_state(array $array)
     {

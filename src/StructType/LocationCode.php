@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -36,7 +36,7 @@ class LocationCode extends AbstractStructBase
     /**
      * Set CountryCode value
      * @param string $countryCode
-     * @return \StructType\LocationCode
+     * @return \Devlabs91\TravelgatePushApi\StructType\LocationCode
      */
     public function setCountryCode($countryCode = null)
     {
@@ -53,7 +53,7 @@ class LocationCode extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\LocationCode
+     * @return \Devlabs91\TravelgatePushApi\StructType\LocationCode
      */
     public static function __set_state(array $array)
     {

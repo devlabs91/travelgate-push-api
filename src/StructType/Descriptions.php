@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Descriptions extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Renovation[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\Renovation[]
      */
     public $Renovation;
     /**
@@ -30,7 +30,7 @@ class Descriptions extends AbstractStructBase
      * Constructor method for Descriptions
      * @uses Descriptions::setRenovation()
      * @uses Descriptions::setDescriptiveText()
-     * @param \StructType\Renovation[] $renovation
+     * @param \Devlabs91\TravelgatePushApi\StructType\Renovation[] $renovation
      * @param string $descriptiveText
      */
     public function __construct(array $renovation = array(), $descriptiveText = null)
@@ -41,7 +41,7 @@ class Descriptions extends AbstractStructBase
     }
     /**
      * Get Renovation value
-     * @return \StructType\Renovation[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Renovation[]|null
      */
     public function getRenovation()
     {
@@ -50,15 +50,15 @@ class Descriptions extends AbstractStructBase
     /**
      * Set Renovation value
      * @throws \InvalidArgumentException
-     * @param \StructType\Renovation[] $renovation
-     * @return \StructType\Descriptions
+     * @param \Devlabs91\TravelgatePushApi\StructType\Renovation[] $renovation
+     * @return \Devlabs91\TravelgatePushApi\StructType\Descriptions
      */
     public function setRenovation(array $renovation = array())
     {
         foreach ($renovation as $descriptionsRenovationItem) {
             // validation for constraint: itemType
-            if (!$descriptionsRenovationItem instanceof \StructType\Renovation) {
-                throw new \InvalidArgumentException(sprintf('The Renovation property can only contain items of \StructType\Renovation, "%s" given', is_object($descriptionsRenovationItem) ? get_class($descriptionsRenovationItem) : gettype($descriptionsRenovationItem)), __LINE__);
+            if (!$descriptionsRenovationItem instanceof \Devlabs91\TravelgatePushApi\StructType\Renovation) {
+                throw new \InvalidArgumentException(sprintf('The Renovation property can only contain items of \Devlabs91\TravelgatePushApi\StructType\Renovation, "%s" given', is_object($descriptionsRenovationItem) ? get_class($descriptionsRenovationItem) : gettype($descriptionsRenovationItem)), __LINE__);
             }
         }
         $this->Renovation = $renovation;
@@ -67,14 +67,14 @@ class Descriptions extends AbstractStructBase
     /**
      * Add item to Renovation value
      * @throws \InvalidArgumentException
-     * @param \StructType\Renovation $item
-     * @return \StructType\Descriptions
+     * @param \Devlabs91\TravelgatePushApi\StructType\Renovation $item
+     * @return \Devlabs91\TravelgatePushApi\StructType\Descriptions
      */
-    public function addToRenovation(\StructType\Renovation $item)
+    public function addToRenovation(\Devlabs91\TravelgatePushApi\StructType\Renovation $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Renovation) {
-            throw new \InvalidArgumentException(sprintf('The Renovation property can only contain items of \StructType\Renovation, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\Renovation) {
+            throw new \InvalidArgumentException(sprintf('The Renovation property can only contain items of \Devlabs91\TravelgatePushApi\StructType\Renovation, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->Renovation[] = $item;
         return $this;
@@ -90,7 +90,7 @@ class Descriptions extends AbstractStructBase
     /**
      * Set DescriptiveText value
      * @param string $descriptiveText
-     * @return \StructType\Descriptions
+     * @return \Devlabs91\TravelgatePushApi\StructType\Descriptions
      */
     public function setDescriptiveText($descriptiveText = null)
     {
@@ -107,7 +107,7 @@ class Descriptions extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Descriptions
+     * @return \Devlabs91\TravelgatePushApi\StructType\Descriptions
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -84,7 +84,7 @@ class AdditionalGuestAmount extends AbstractStructBase
     /**
      * Set MaxAdditionalGuests value
      * @param int $maxAdditionalGuests
-     * @return \StructType\AdditionalGuestAmount
+     * @return \Devlabs91\TravelgatePushApi\StructType\AdditionalGuestAmount
      */
     public function setMaxAdditionalGuests($maxAdditionalGuests = null)
     {
@@ -106,7 +106,7 @@ class AdditionalGuestAmount extends AbstractStructBase
     /**
      * Set AgeQualifyingCode value
      * @param string $ageQualifyingCode
-     * @return \StructType\AdditionalGuestAmount
+     * @return \Devlabs91\TravelgatePushApi\StructType\AdditionalGuestAmount
      */
     public function setAgeQualifyingCode($ageQualifyingCode = null)
     {
@@ -128,7 +128,7 @@ class AdditionalGuestAmount extends AbstractStructBase
     /**
      * Set MaxAge value
      * @param int $maxAge
-     * @return \StructType\AdditionalGuestAmount
+     * @return \Devlabs91\TravelgatePushApi\StructType\AdditionalGuestAmount
      */
     public function setMaxAge($maxAge = null)
     {
@@ -149,17 +149,17 @@ class AdditionalGuestAmount extends AbstractStructBase
     }
     /**
      * Set Type value
-     * @uses \EnumType\AmountDeterminationType::valueIsValid()
-     * @uses \EnumType\AmountDeterminationType::getValidValues()
+     * @uses \Devlabs91\TravelgatePushApi\EnumType\AmountDeterminationType::valueIsValid()
+     * @uses \Devlabs91\TravelgatePushApi\EnumType\AmountDeterminationType::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\AdditionalGuestAmount
+     * @return \Devlabs91\TravelgatePushApi\StructType\AdditionalGuestAmount
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\AmountDeterminationType::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $type, implode(', ', \EnumType\AmountDeterminationType::getValidValues())), __LINE__);
+        if (!\Devlabs91\TravelgatePushApi\EnumType\AmountDeterminationType::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $type, implode(', ', \Devlabs91\TravelgatePushApi\EnumType\AmountDeterminationType::getValidValues())), __LINE__);
         }
         $this->Type = $type;
         return $this;
@@ -175,7 +175,7 @@ class AdditionalGuestAmount extends AbstractStructBase
     /**
      * Set Amount value
      * @param float $amount
-     * @return \StructType\AdditionalGuestAmount
+     * @return \Devlabs91\TravelgatePushApi\StructType\AdditionalGuestAmount
      */
     public function setAmount($amount = null)
     {
@@ -193,7 +193,7 @@ class AdditionalGuestAmount extends AbstractStructBase
     /**
      * Set CurrencyCode value
      * @param string $currencyCode
-     * @return \StructType\AdditionalGuestAmount
+     * @return \Devlabs91\TravelgatePushApi\StructType\AdditionalGuestAmount
      */
     public function setCurrencyCode($currencyCode = null)
     {
@@ -215,7 +215,7 @@ class AdditionalGuestAmount extends AbstractStructBase
     /**
      * Set Percent value
      * @param float $percent
-     * @return \StructType\AdditionalGuestAmount
+     * @return \Devlabs91\TravelgatePushApi\StructType\AdditionalGuestAmount
      */
     public function setPercent($percent = null)
     {
@@ -228,7 +228,7 @@ class AdditionalGuestAmount extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\AdditionalGuestAmount
+     * @return \Devlabs91\TravelgatePushApi\StructType\AdditionalGuestAmount
      */
     public static function __set_state(array $array)
     {

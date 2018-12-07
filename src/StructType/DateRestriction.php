@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -52,7 +52,7 @@ class DateRestriction extends AbstractStructBase
     /**
      * Set Start value
      * @param string $start
-     * @return \StructType\DateRestriction
+     * @return \Devlabs91\TravelgatePushApi\StructType\DateRestriction
      */
     public function setStart($start = null)
     {
@@ -74,7 +74,7 @@ class DateRestriction extends AbstractStructBase
     /**
      * Set Duration value
      * @param string $duration
-     * @return \StructType\DateRestriction
+     * @return \Devlabs91\TravelgatePushApi\StructType\DateRestriction
      */
     public function setDuration($duration = null)
     {
@@ -96,7 +96,7 @@ class DateRestriction extends AbstractStructBase
     /**
      * Set End value
      * @param string $end
-     * @return \StructType\DateRestriction
+     * @return \Devlabs91\TravelgatePushApi\StructType\DateRestriction
      */
     public function setEnd($end = null)
     {
@@ -113,7 +113,7 @@ class DateRestriction extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\DateRestriction
+     * @return \Devlabs91\TravelgatePushApi\StructType\DateRestriction
      */
     public static function __set_state(array $array)
     {

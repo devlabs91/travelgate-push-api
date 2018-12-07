@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -12,7 +12,7 @@ class ErrorType extends FreeTextType
 {
     /**
      * The _
-     * @var \StructType\FreeTextType
+     * @var \Devlabs91\TravelgatePushApi\StructType\FreeTextType
      */
     public $_;
     /**
@@ -36,12 +36,12 @@ class ErrorType extends FreeTextType
      * @uses ErrorType::setType()
      * @uses ErrorType::setShortText()
      * @uses ErrorType::setCode()
-     * @param \StructType\FreeTextType $_
+     * @param \Devlabs91\TravelgatePushApi\StructType\FreeTextType $_
      * @param string $type
      * @param string $shortText
      * @param string $code
      */
-    public function __construct(\StructType\FreeTextType $_ = null, $type = null, $shortText = null, $code = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\StructType\FreeTextType $_ = null, $type = null, $shortText = null, $code = null)
     {
         $this
             ->set_($_)
@@ -51,7 +51,7 @@ class ErrorType extends FreeTextType
     }
     /**
      * Get _ value
-     * @return \StructType\FreeTextType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\FreeTextType|null
      */
     public function get_()
     {
@@ -59,10 +59,10 @@ class ErrorType extends FreeTextType
     }
     /**
      * Set _ value
-     * @param \StructType\FreeTextType $_
-     * @return \StructType\ErrorType
+     * @param \Devlabs91\TravelgatePushApi\StructType\FreeTextType $_
+     * @return \Devlabs91\TravelgatePushApi\StructType\ErrorType
      */
-    public function set_(\StructType\FreeTextType $_ = null)
+    public function set_(\Devlabs91\TravelgatePushApi\StructType\FreeTextType $_ = null)
     {
         $this->_ = $_;
         return $this;
@@ -78,7 +78,7 @@ class ErrorType extends FreeTextType
     /**
      * Set Type value
      * @param string $type
-     * @return \StructType\ErrorType
+     * @return \Devlabs91\TravelgatePushApi\StructType\ErrorType
      */
     public function setType($type = null)
     {
@@ -100,7 +100,7 @@ class ErrorType extends FreeTextType
     /**
      * Set ShortText value
      * @param string $shortText
-     * @return \StructType\ErrorType
+     * @return \Devlabs91\TravelgatePushApi\StructType\ErrorType
      */
     public function setShortText($shortText = null)
     {
@@ -122,7 +122,7 @@ class ErrorType extends FreeTextType
     /**
      * Set Code value
      * @param string $code
-     * @return \StructType\ErrorType
+     * @return \Devlabs91\TravelgatePushApi\StructType\ErrorType
      */
     public function setCode($code = null)
     {
@@ -139,7 +139,7 @@ class ErrorType extends FreeTextType
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ErrorType
+     * @return \Devlabs91\TravelgatePushApi\StructType\ErrorType
      */
     public static function __set_state(array $array)
     {

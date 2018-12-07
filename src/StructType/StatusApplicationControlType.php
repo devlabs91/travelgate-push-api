@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -140,7 +140,7 @@ class StatusApplicationControlType extends AbstractStructBase
     /**
      * Set Start value
      * @param string $start
-     * @return \StructType\StatusApplicationControlType
+     * @return \Devlabs91\TravelgatePushApi\StructType\StatusApplicationControlType
      */
     public function setStart($start = null)
     {
@@ -162,7 +162,7 @@ class StatusApplicationControlType extends AbstractStructBase
     /**
      * Set End value
      * @param string $end
-     * @return \StructType\StatusApplicationControlType
+     * @return \Devlabs91\TravelgatePushApi\StructType\StatusApplicationControlType
      */
     public function setEnd($end = null)
     {
@@ -184,7 +184,7 @@ class StatusApplicationControlType extends AbstractStructBase
     /**
      * Set RatePlanCode value
      * @param string $ratePlanCode
-     * @return \StructType\StatusApplicationControlType
+     * @return \Devlabs91\TravelgatePushApi\StructType\StatusApplicationControlType
      */
     public function setRatePlanCode($ratePlanCode = null)
     {
@@ -206,7 +206,7 @@ class StatusApplicationControlType extends AbstractStructBase
     /**
      * Set PromotionCode value
      * @param string $promotionCode
-     * @return \StructType\StatusApplicationControlType
+     * @return \Devlabs91\TravelgatePushApi\StructType\StatusApplicationControlType
      */
     public function setPromotionCode($promotionCode = null)
     {
@@ -228,7 +228,7 @@ class StatusApplicationControlType extends AbstractStructBase
     /**
      * Set InvCode value
      * @param string $invCode
-     * @return \StructType\StatusApplicationControlType
+     * @return \Devlabs91\TravelgatePushApi\StructType\StatusApplicationControlType
      */
     public function setInvCode($invCode = null)
     {
@@ -250,7 +250,7 @@ class StatusApplicationControlType extends AbstractStructBase
     /**
      * Set InvType value
      * @param string $invType
-     * @return \StructType\StatusApplicationControlType
+     * @return \Devlabs91\TravelgatePushApi\StructType\StatusApplicationControlType
      */
     public function setInvType($invType = null)
     {
@@ -272,7 +272,7 @@ class StatusApplicationControlType extends AbstractStructBase
     /**
      * Set InvTypeCode value
      * @param string $invTypeCode
-     * @return \StructType\StatusApplicationControlType
+     * @return \Devlabs91\TravelgatePushApi\StructType\StatusApplicationControlType
      */
     public function setInvTypeCode($invTypeCode = null)
     {
@@ -294,7 +294,7 @@ class StatusApplicationControlType extends AbstractStructBase
     /**
      * Set Mon value
      * @param bool $mon
-     * @return \StructType\StatusApplicationControlType
+     * @return \Devlabs91\TravelgatePushApi\StructType\StatusApplicationControlType
      */
     public function setMon($mon = null)
     {
@@ -316,7 +316,7 @@ class StatusApplicationControlType extends AbstractStructBase
     /**
      * Set Tue value
      * @param bool $tue
-     * @return \StructType\StatusApplicationControlType
+     * @return \Devlabs91\TravelgatePushApi\StructType\StatusApplicationControlType
      */
     public function setTue($tue = null)
     {
@@ -338,7 +338,7 @@ class StatusApplicationControlType extends AbstractStructBase
     /**
      * Set Weds value
      * @param bool $weds
-     * @return \StructType\StatusApplicationControlType
+     * @return \Devlabs91\TravelgatePushApi\StructType\StatusApplicationControlType
      */
     public function setWeds($weds = null)
     {
@@ -360,7 +360,7 @@ class StatusApplicationControlType extends AbstractStructBase
     /**
      * Set Thur value
      * @param bool $thur
-     * @return \StructType\StatusApplicationControlType
+     * @return \Devlabs91\TravelgatePushApi\StructType\StatusApplicationControlType
      */
     public function setThur($thur = null)
     {
@@ -382,7 +382,7 @@ class StatusApplicationControlType extends AbstractStructBase
     /**
      * Set Fri value
      * @param bool $fri
-     * @return \StructType\StatusApplicationControlType
+     * @return \Devlabs91\TravelgatePushApi\StructType\StatusApplicationControlType
      */
     public function setFri($fri = null)
     {
@@ -404,7 +404,7 @@ class StatusApplicationControlType extends AbstractStructBase
     /**
      * Set Sat value
      * @param bool $sat
-     * @return \StructType\StatusApplicationControlType
+     * @return \Devlabs91\TravelgatePushApi\StructType\StatusApplicationControlType
      */
     public function setSat($sat = null)
     {
@@ -426,7 +426,7 @@ class StatusApplicationControlType extends AbstractStructBase
     /**
      * Set Sun value
      * @param bool $sun
-     * @return \StructType\StatusApplicationControlType
+     * @return \Devlabs91\TravelgatePushApi\StructType\StatusApplicationControlType
      */
     public function setSun($sun = null)
     {
@@ -443,7 +443,7 @@ class StatusApplicationControlType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\StatusApplicationControlType
+     * @return \Devlabs91\TravelgatePushApi\StructType\StatusApplicationControlType
      */
     public static function __set_state(array $array)
     {

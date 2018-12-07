@@ -1,6 +1,6 @@
 <?php
 
-namespace ArrayType;
+namespace Devlabs91\TravelgatePushApi\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -15,13 +15,13 @@ class ArrayOfRequiredPaymentsTypeGuaranteePayment extends AbstractStructArrayBas
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\GuaranteePayment[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\GuaranteePayment[]
      */
     public $GuaranteePayment;
     /**
      * Constructor method for ArrayOfRequiredPaymentsTypeGuaranteePayment
      * @uses ArrayOfRequiredPaymentsTypeGuaranteePayment::setGuaranteePayment()
-     * @param \StructType\GuaranteePayment[] $guaranteePayment
+     * @param \Devlabs91\TravelgatePushApi\StructType\GuaranteePayment[] $guaranteePayment
      */
     public function __construct(array $guaranteePayment = array())
     {
@@ -30,7 +30,7 @@ class ArrayOfRequiredPaymentsTypeGuaranteePayment extends AbstractStructArrayBas
     }
     /**
      * Get GuaranteePayment value
-     * @return \StructType\GuaranteePayment[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\GuaranteePayment[]|null
      */
     public function getGuaranteePayment()
     {
@@ -39,15 +39,15 @@ class ArrayOfRequiredPaymentsTypeGuaranteePayment extends AbstractStructArrayBas
     /**
      * Set GuaranteePayment value
      * @throws \InvalidArgumentException
-     * @param \StructType\GuaranteePayment[] $guaranteePayment
-     * @return \ArrayType\ArrayOfRequiredPaymentsTypeGuaranteePayment
+     * @param \Devlabs91\TravelgatePushApi\StructType\GuaranteePayment[] $guaranteePayment
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRequiredPaymentsTypeGuaranteePayment
      */
     public function setGuaranteePayment(array $guaranteePayment = array())
     {
         foreach ($guaranteePayment as $arrayOfRequiredPaymentsTypeGuaranteePaymentGuaranteePaymentItem) {
             // validation for constraint: itemType
-            if (!$arrayOfRequiredPaymentsTypeGuaranteePaymentGuaranteePaymentItem instanceof \StructType\GuaranteePayment) {
-                throw new \InvalidArgumentException(sprintf('The GuaranteePayment property can only contain items of \StructType\GuaranteePayment, "%s" given', is_object($arrayOfRequiredPaymentsTypeGuaranteePaymentGuaranteePaymentItem) ? get_class($arrayOfRequiredPaymentsTypeGuaranteePaymentGuaranteePaymentItem) : gettype($arrayOfRequiredPaymentsTypeGuaranteePaymentGuaranteePaymentItem)), __LINE__);
+            if (!$arrayOfRequiredPaymentsTypeGuaranteePaymentGuaranteePaymentItem instanceof \Devlabs91\TravelgatePushApi\StructType\GuaranteePayment) {
+                throw new \InvalidArgumentException(sprintf('The GuaranteePayment property can only contain items of \Devlabs91\TravelgatePushApi\StructType\GuaranteePayment, "%s" given', is_object($arrayOfRequiredPaymentsTypeGuaranteePaymentGuaranteePaymentItem) ? get_class($arrayOfRequiredPaymentsTypeGuaranteePaymentGuaranteePaymentItem) : gettype($arrayOfRequiredPaymentsTypeGuaranteePaymentGuaranteePaymentItem)), __LINE__);
             }
         }
         $this->GuaranteePayment = $guaranteePayment;
@@ -56,14 +56,14 @@ class ArrayOfRequiredPaymentsTypeGuaranteePayment extends AbstractStructArrayBas
     /**
      * Add item to GuaranteePayment value
      * @throws \InvalidArgumentException
-     * @param \StructType\GuaranteePayment $item
-     * @return \ArrayType\ArrayOfRequiredPaymentsTypeGuaranteePayment
+     * @param \Devlabs91\TravelgatePushApi\StructType\GuaranteePayment $item
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRequiredPaymentsTypeGuaranteePayment
      */
-    public function addToGuaranteePayment(\StructType\GuaranteePayment $item)
+    public function addToGuaranteePayment(\Devlabs91\TravelgatePushApi\StructType\GuaranteePayment $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\GuaranteePayment) {
-            throw new \InvalidArgumentException(sprintf('The GuaranteePayment property can only contain items of \StructType\GuaranteePayment, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\GuaranteePayment) {
+            throw new \InvalidArgumentException(sprintf('The GuaranteePayment property can only contain items of \Devlabs91\TravelgatePushApi\StructType\GuaranteePayment, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->GuaranteePayment[] = $item;
         return $this;
@@ -71,7 +71,7 @@ class ArrayOfRequiredPaymentsTypeGuaranteePayment extends AbstractStructArrayBas
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \StructType\GuaranteePayment|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\GuaranteePayment|null
      */
     public function current()
     {
@@ -81,7 +81,7 @@ class ArrayOfRequiredPaymentsTypeGuaranteePayment extends AbstractStructArrayBas
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \StructType\GuaranteePayment|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\GuaranteePayment|null
      */
     public function item($index)
     {
@@ -90,7 +90,7 @@ class ArrayOfRequiredPaymentsTypeGuaranteePayment extends AbstractStructArrayBas
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \StructType\GuaranteePayment|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\GuaranteePayment|null
      */
     public function first()
     {
@@ -99,7 +99,7 @@ class ArrayOfRequiredPaymentsTypeGuaranteePayment extends AbstractStructArrayBas
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \StructType\GuaranteePayment|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\GuaranteePayment|null
      */
     public function last()
     {
@@ -109,7 +109,7 @@ class ArrayOfRequiredPaymentsTypeGuaranteePayment extends AbstractStructArrayBas
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \StructType\GuaranteePayment|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\GuaranteePayment|null
      */
     public function offsetGet($offset)
     {
@@ -130,7 +130,7 @@ class ArrayOfRequiredPaymentsTypeGuaranteePayment extends AbstractStructArrayBas
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \ArrayType\ArrayOfRequiredPaymentsTypeGuaranteePayment
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRequiredPaymentsTypeGuaranteePayment
      */
     public static function __set_state(array $array)
     {

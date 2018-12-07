@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class ResCommonDetailType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\TimeSpan
+     * @var \Devlabs91\TravelgatePushApi\StructType\TimeSpan
      */
     public $TimeSpan;
     /**
@@ -23,7 +23,7 @@ class ResCommonDetailType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\GuaranteeType
+     * @var \Devlabs91\TravelgatePushApi\StructType\GuaranteeType
      */
     public $Guarantee;
     /**
@@ -31,7 +31,7 @@ class ResCommonDetailType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\TotalType
+     * @var \Devlabs91\TravelgatePushApi\StructType\TotalType
      */
     public $Total;
     /**
@@ -39,11 +39,11 @@ class ResCommonDetailType extends AbstractStructBase
      * @uses ResCommonDetailType::setTimeSpan()
      * @uses ResCommonDetailType::setGuarantee()
      * @uses ResCommonDetailType::setTotal()
-     * @param \StructType\TimeSpan $timeSpan
-     * @param \StructType\GuaranteeType $guarantee
-     * @param \StructType\TotalType $total
+     * @param \Devlabs91\TravelgatePushApi\StructType\TimeSpan $timeSpan
+     * @param \Devlabs91\TravelgatePushApi\StructType\GuaranteeType $guarantee
+     * @param \Devlabs91\TravelgatePushApi\StructType\TotalType $total
      */
-    public function __construct(\StructType\TimeSpan $timeSpan = null, \StructType\GuaranteeType $guarantee = null, \StructType\TotalType $total = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\StructType\TimeSpan $timeSpan = null, \Devlabs91\TravelgatePushApi\StructType\GuaranteeType $guarantee = null, \Devlabs91\TravelgatePushApi\StructType\TotalType $total = null)
     {
         $this
             ->setTimeSpan($timeSpan)
@@ -52,7 +52,7 @@ class ResCommonDetailType extends AbstractStructBase
     }
     /**
      * Get TimeSpan value
-     * @return \StructType\TimeSpan|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\TimeSpan|null
      */
     public function getTimeSpan()
     {
@@ -60,17 +60,17 @@ class ResCommonDetailType extends AbstractStructBase
     }
     /**
      * Set TimeSpan value
-     * @param \StructType\TimeSpan $timeSpan
-     * @return \StructType\ResCommonDetailType
+     * @param \Devlabs91\TravelgatePushApi\StructType\TimeSpan $timeSpan
+     * @return \Devlabs91\TravelgatePushApi\StructType\ResCommonDetailType
      */
-    public function setTimeSpan(\StructType\TimeSpan $timeSpan = null)
+    public function setTimeSpan(\Devlabs91\TravelgatePushApi\StructType\TimeSpan $timeSpan = null)
     {
         $this->TimeSpan = $timeSpan;
         return $this;
     }
     /**
      * Get Guarantee value
-     * @return \StructType\GuaranteeType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\GuaranteeType|null
      */
     public function getGuarantee()
     {
@@ -78,17 +78,17 @@ class ResCommonDetailType extends AbstractStructBase
     }
     /**
      * Set Guarantee value
-     * @param \StructType\GuaranteeType $guarantee
-     * @return \StructType\ResCommonDetailType
+     * @param \Devlabs91\TravelgatePushApi\StructType\GuaranteeType $guarantee
+     * @return \Devlabs91\TravelgatePushApi\StructType\ResCommonDetailType
      */
-    public function setGuarantee(\StructType\GuaranteeType $guarantee = null)
+    public function setGuarantee(\Devlabs91\TravelgatePushApi\StructType\GuaranteeType $guarantee = null)
     {
         $this->Guarantee = $guarantee;
         return $this;
     }
     /**
      * Get Total value
-     * @return \StructType\TotalType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\TotalType|null
      */
     public function getTotal()
     {
@@ -96,10 +96,10 @@ class ResCommonDetailType extends AbstractStructBase
     }
     /**
      * Set Total value
-     * @param \StructType\TotalType $total
-     * @return \StructType\ResCommonDetailType
+     * @param \Devlabs91\TravelgatePushApi\StructType\TotalType $total
+     * @return \Devlabs91\TravelgatePushApi\StructType\ResCommonDetailType
      */
-    public function setTotal(\StructType\TotalType $total = null)
+    public function setTotal(\Devlabs91\TravelgatePushApi\StructType\TotalType $total = null)
     {
         $this->Total = $total;
         return $this;
@@ -110,7 +110,7 @@ class ResCommonDetailType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ResCommonDetailType
+     * @return \Devlabs91\TravelgatePushApi\StructType\ResCommonDetailType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class ResGuestType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfProfilesTypeProfileInfo
+     * @var \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfProfilesTypeProfileInfo
      */
     public $Profiles;
     /**
@@ -23,7 +23,7 @@ class ResGuestType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\GuestCountType
+     * @var \Devlabs91\TravelgatePushApi\StructType\GuestCountType
      */
     public $GuestCounts;
     /**
@@ -54,14 +54,14 @@ class ResGuestType extends AbstractStructBase
      * @uses ResGuestType::setAgeQualifyingCode()
      * @uses ResGuestType::setPrimaryIndicator()
      * @uses ResGuestType::setAge()
-     * @param \ArrayType\ArrayOfProfilesTypeProfileInfo $profiles
-     * @param \StructType\GuestCountType $guestCounts
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfProfilesTypeProfileInfo $profiles
+     * @param \Devlabs91\TravelgatePushApi\StructType\GuestCountType $guestCounts
      * @param string $resGuestRPH
      * @param string $ageQualifyingCode
      * @param bool $primaryIndicator
      * @param int $age
      */
-    public function __construct(\ArrayType\ArrayOfProfilesTypeProfileInfo $profiles = null, \StructType\GuestCountType $guestCounts = null, $resGuestRPH = null, $ageQualifyingCode = null, $primaryIndicator = null, $age = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\ArrayType\ArrayOfProfilesTypeProfileInfo $profiles = null, \Devlabs91\TravelgatePushApi\StructType\GuestCountType $guestCounts = null, $resGuestRPH = null, $ageQualifyingCode = null, $primaryIndicator = null, $age = null)
     {
         $this
             ->setProfiles($profiles)
@@ -73,7 +73,7 @@ class ResGuestType extends AbstractStructBase
     }
     /**
      * Get Profiles value
-     * @return \ArrayType\ArrayOfProfilesTypeProfileInfo|null
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfProfilesTypeProfileInfo|null
      */
     public function getProfiles()
     {
@@ -81,17 +81,17 @@ class ResGuestType extends AbstractStructBase
     }
     /**
      * Set Profiles value
-     * @param \ArrayType\ArrayOfProfilesTypeProfileInfo $profiles
-     * @return \StructType\ResGuestType
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfProfilesTypeProfileInfo $profiles
+     * @return \Devlabs91\TravelgatePushApi\StructType\ResGuestType
      */
-    public function setProfiles(\ArrayType\ArrayOfProfilesTypeProfileInfo $profiles = null)
+    public function setProfiles(\Devlabs91\TravelgatePushApi\ArrayType\ArrayOfProfilesTypeProfileInfo $profiles = null)
     {
         $this->Profiles = $profiles;
         return $this;
     }
     /**
      * Get GuestCounts value
-     * @return \StructType\GuestCountType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\GuestCountType|null
      */
     public function getGuestCounts()
     {
@@ -99,10 +99,10 @@ class ResGuestType extends AbstractStructBase
     }
     /**
      * Set GuestCounts value
-     * @param \StructType\GuestCountType $guestCounts
-     * @return \StructType\ResGuestType
+     * @param \Devlabs91\TravelgatePushApi\StructType\GuestCountType $guestCounts
+     * @return \Devlabs91\TravelgatePushApi\StructType\ResGuestType
      */
-    public function setGuestCounts(\StructType\GuestCountType $guestCounts = null)
+    public function setGuestCounts(\Devlabs91\TravelgatePushApi\StructType\GuestCountType $guestCounts = null)
     {
         $this->GuestCounts = $guestCounts;
         return $this;
@@ -118,7 +118,7 @@ class ResGuestType extends AbstractStructBase
     /**
      * Set ResGuestRPH value
      * @param string $resGuestRPH
-     * @return \StructType\ResGuestType
+     * @return \Devlabs91\TravelgatePushApi\StructType\ResGuestType
      */
     public function setResGuestRPH($resGuestRPH = null)
     {
@@ -140,7 +140,7 @@ class ResGuestType extends AbstractStructBase
     /**
      * Set AgeQualifyingCode value
      * @param string $ageQualifyingCode
-     * @return \StructType\ResGuestType
+     * @return \Devlabs91\TravelgatePushApi\StructType\ResGuestType
      */
     public function setAgeQualifyingCode($ageQualifyingCode = null)
     {
@@ -162,7 +162,7 @@ class ResGuestType extends AbstractStructBase
     /**
      * Set PrimaryIndicator value
      * @param bool $primaryIndicator
-     * @return \StructType\ResGuestType
+     * @return \Devlabs91\TravelgatePushApi\StructType\ResGuestType
      */
     public function setPrimaryIndicator($primaryIndicator = null)
     {
@@ -184,7 +184,7 @@ class ResGuestType extends AbstractStructBase
     /**
      * Set Age value
      * @param int $age
-     * @return \StructType\ResGuestType
+     * @return \Devlabs91\TravelgatePushApi\StructType\ResGuestType
      */
     public function setAge($age = null)
     {
@@ -201,7 +201,7 @@ class ResGuestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ResGuestType
+     * @return \Devlabs91\TravelgatePushApi\StructType\ResGuestType
      */
     public static function __set_state(array $array)
     {

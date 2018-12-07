@@ -1,6 +1,6 @@
 <?php
 
-namespace ServiceType;
+namespace Devlabs91\TravelgatePushApi\ServiceType;
 
 use \WsdlToPhp\PackageBase\AbstractSoapClientBase;
 
@@ -16,10 +16,10 @@ class Cancel extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\Cancel $parameters
-     * @return \StructType\CancelResponse|bool
+     * @param \Devlabs91\TravelgatePushApi\StructType\Cancel $parameters
+     * @return \Devlabs91\TravelgatePushApi\StructType\CancelResponse|bool
      */
-    public function Cancel(\StructType\Cancel $parameters)
+    public function Cancel(\Devlabs91\TravelgatePushApi\StructType\Cancel $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->Cancel($parameters));
@@ -32,7 +32,7 @@ class Cancel extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \StructType\CancelResponse
+     * @return \Devlabs91\TravelgatePushApi\StructType\CancelResponse
      */
     public function getResult()
     {

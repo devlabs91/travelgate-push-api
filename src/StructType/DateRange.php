@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -44,7 +44,7 @@ class DateRange extends AbstractStructBase
     /**
      * Set Start value
      * @param string $start
-     * @return \StructType\DateRange
+     * @return \Devlabs91\TravelgatePushApi\StructType\DateRange
      */
     public function setStart($start = null)
     {
@@ -66,7 +66,7 @@ class DateRange extends AbstractStructBase
     /**
      * Set End value
      * @param string $end
-     * @return \StructType\DateRange
+     * @return \Devlabs91\TravelgatePushApi\StructType\DateRange
      */
     public function setEnd($end = null)
     {
@@ -83,7 +83,7 @@ class DateRange extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\DateRange
+     * @return \Devlabs91\TravelgatePushApi\StructType\DateRange
      */
     public static function __set_state(array $array)
     {

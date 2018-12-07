@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,13 +15,13 @@ class AdditionalGuestAmounts extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\AdditionalGuestAmountType[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\AdditionalGuestAmountType[]
      */
     public $AdditionalGuestAmount;
     /**
      * Constructor method for AdditionalGuestAmounts
      * @uses AdditionalGuestAmounts::setAdditionalGuestAmount()
-     * @param \StructType\AdditionalGuestAmountType[] $additionalGuestAmount
+     * @param \Devlabs91\TravelgatePushApi\StructType\AdditionalGuestAmountType[] $additionalGuestAmount
      */
     public function __construct(array $additionalGuestAmount = array())
     {
@@ -30,7 +30,7 @@ class AdditionalGuestAmounts extends AbstractStructBase
     }
     /**
      * Get AdditionalGuestAmount value
-     * @return \StructType\AdditionalGuestAmountType[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\AdditionalGuestAmountType[]|null
      */
     public function getAdditionalGuestAmount()
     {
@@ -39,15 +39,15 @@ class AdditionalGuestAmounts extends AbstractStructBase
     /**
      * Set AdditionalGuestAmount value
      * @throws \InvalidArgumentException
-     * @param \StructType\AdditionalGuestAmountType[] $additionalGuestAmount
-     * @return \StructType\AdditionalGuestAmounts
+     * @param \Devlabs91\TravelgatePushApi\StructType\AdditionalGuestAmountType[] $additionalGuestAmount
+     * @return \Devlabs91\TravelgatePushApi\StructType\AdditionalGuestAmounts
      */
     public function setAdditionalGuestAmount(array $additionalGuestAmount = array())
     {
         foreach ($additionalGuestAmount as $additionalGuestAmountsAdditionalGuestAmountItem) {
             // validation for constraint: itemType
-            if (!$additionalGuestAmountsAdditionalGuestAmountItem instanceof \StructType\AdditionalGuestAmountType) {
-                throw new \InvalidArgumentException(sprintf('The AdditionalGuestAmount property can only contain items of \StructType\AdditionalGuestAmountType, "%s" given', is_object($additionalGuestAmountsAdditionalGuestAmountItem) ? get_class($additionalGuestAmountsAdditionalGuestAmountItem) : gettype($additionalGuestAmountsAdditionalGuestAmountItem)), __LINE__);
+            if (!$additionalGuestAmountsAdditionalGuestAmountItem instanceof \Devlabs91\TravelgatePushApi\StructType\AdditionalGuestAmountType) {
+                throw new \InvalidArgumentException(sprintf('The AdditionalGuestAmount property can only contain items of \Devlabs91\TravelgatePushApi\StructType\AdditionalGuestAmountType, "%s" given', is_object($additionalGuestAmountsAdditionalGuestAmountItem) ? get_class($additionalGuestAmountsAdditionalGuestAmountItem) : gettype($additionalGuestAmountsAdditionalGuestAmountItem)), __LINE__);
             }
         }
         $this->AdditionalGuestAmount = $additionalGuestAmount;
@@ -56,14 +56,14 @@ class AdditionalGuestAmounts extends AbstractStructBase
     /**
      * Add item to AdditionalGuestAmount value
      * @throws \InvalidArgumentException
-     * @param \StructType\AdditionalGuestAmountType $item
-     * @return \StructType\AdditionalGuestAmounts
+     * @param \Devlabs91\TravelgatePushApi\StructType\AdditionalGuestAmountType $item
+     * @return \Devlabs91\TravelgatePushApi\StructType\AdditionalGuestAmounts
      */
-    public function addToAdditionalGuestAmount(\StructType\AdditionalGuestAmountType $item)
+    public function addToAdditionalGuestAmount(\Devlabs91\TravelgatePushApi\StructType\AdditionalGuestAmountType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\AdditionalGuestAmountType) {
-            throw new \InvalidArgumentException(sprintf('The AdditionalGuestAmount property can only contain items of \StructType\AdditionalGuestAmountType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\AdditionalGuestAmountType) {
+            throw new \InvalidArgumentException(sprintf('The AdditionalGuestAmount property can only contain items of \Devlabs91\TravelgatePushApi\StructType\AdditionalGuestAmountType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->AdditionalGuestAmount[] = $item;
         return $this;
@@ -74,7 +74,7 @@ class AdditionalGuestAmounts extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\AdditionalGuestAmounts
+     * @return \Devlabs91\TravelgatePushApi\StructType\AdditionalGuestAmounts
      */
     public static function __set_state(array $array)
     {

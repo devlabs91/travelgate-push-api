@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class ResGlobalInfoType extends ResCommonDetailType
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfHotelReservationIDsTypeHotelReservationID
+     * @var \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfHotelReservationIDsTypeHotelReservationID
      */
     public $HotelReservationIDs;
     /**
@@ -23,17 +23,17 @@ class ResGlobalInfoType extends ResCommonDetailType
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfProfilesTypeProfileInfo
+     * @var \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfProfilesTypeProfileInfo
      */
     public $Profiles;
     /**
      * Constructor method for ResGlobalInfoType
      * @uses ResGlobalInfoType::setHotelReservationIDs()
      * @uses ResGlobalInfoType::setProfiles()
-     * @param \ArrayType\ArrayOfHotelReservationIDsTypeHotelReservationID $hotelReservationIDs
-     * @param \ArrayType\ArrayOfProfilesTypeProfileInfo $profiles
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfHotelReservationIDsTypeHotelReservationID $hotelReservationIDs
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfProfilesTypeProfileInfo $profiles
      */
-    public function __construct(\ArrayType\ArrayOfHotelReservationIDsTypeHotelReservationID $hotelReservationIDs = null, \ArrayType\ArrayOfProfilesTypeProfileInfo $profiles = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\ArrayType\ArrayOfHotelReservationIDsTypeHotelReservationID $hotelReservationIDs = null, \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfProfilesTypeProfileInfo $profiles = null)
     {
         $this
             ->setHotelReservationIDs($hotelReservationIDs)
@@ -41,7 +41,7 @@ class ResGlobalInfoType extends ResCommonDetailType
     }
     /**
      * Get HotelReservationIDs value
-     * @return \ArrayType\ArrayOfHotelReservationIDsTypeHotelReservationID|null
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfHotelReservationIDsTypeHotelReservationID|null
      */
     public function getHotelReservationIDs()
     {
@@ -49,17 +49,17 @@ class ResGlobalInfoType extends ResCommonDetailType
     }
     /**
      * Set HotelReservationIDs value
-     * @param \ArrayType\ArrayOfHotelReservationIDsTypeHotelReservationID $hotelReservationIDs
-     * @return \StructType\ResGlobalInfoType
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfHotelReservationIDsTypeHotelReservationID $hotelReservationIDs
+     * @return \Devlabs91\TravelgatePushApi\StructType\ResGlobalInfoType
      */
-    public function setHotelReservationIDs(\ArrayType\ArrayOfHotelReservationIDsTypeHotelReservationID $hotelReservationIDs = null)
+    public function setHotelReservationIDs(\Devlabs91\TravelgatePushApi\ArrayType\ArrayOfHotelReservationIDsTypeHotelReservationID $hotelReservationIDs = null)
     {
         $this->HotelReservationIDs = $hotelReservationIDs;
         return $this;
     }
     /**
      * Get Profiles value
-     * @return \ArrayType\ArrayOfProfilesTypeProfileInfo|null
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfProfilesTypeProfileInfo|null
      */
     public function getProfiles()
     {
@@ -67,10 +67,10 @@ class ResGlobalInfoType extends ResCommonDetailType
     }
     /**
      * Set Profiles value
-     * @param \ArrayType\ArrayOfProfilesTypeProfileInfo $profiles
-     * @return \StructType\ResGlobalInfoType
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfProfilesTypeProfileInfo $profiles
+     * @return \Devlabs91\TravelgatePushApi\StructType\ResGlobalInfoType
      */
-    public function setProfiles(\ArrayType\ArrayOfProfilesTypeProfileInfo $profiles = null)
+    public function setProfiles(\Devlabs91\TravelgatePushApi\ArrayType\ArrayOfProfilesTypeProfileInfo $profiles = null)
     {
         $this->Profiles = $profiles;
         return $this;
@@ -81,7 +81,7 @@ class ResGlobalInfoType extends ResCommonDetailType
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ResGlobalInfoType
+     * @return \Devlabs91\TravelgatePushApi\StructType\ResGlobalInfoType
      */
     public static function __set_state(array $array)
     {

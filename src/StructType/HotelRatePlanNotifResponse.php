@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class HotelRatePlanNotifResponse extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\OTA_HotelRatePlanNotifRS
+     * @var \Devlabs91\TravelgatePushApi\StructType\OTA_HotelRatePlanNotifRS
      */
     public $HotelRatePlanNotifResult;
     /**
      * Constructor method for HotelRatePlanNotifResponse
      * @uses HotelRatePlanNotifResponse::setHotelRatePlanNotifResult()
-     * @param \StructType\OTA_HotelRatePlanNotifRS $hotelRatePlanNotifResult
+     * @param \Devlabs91\TravelgatePushApi\StructType\OTA_HotelRatePlanNotifRS $hotelRatePlanNotifResult
      */
-    public function __construct(\StructType\OTA_HotelRatePlanNotifRS $hotelRatePlanNotifResult = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\StructType\OTA_HotelRatePlanNotifRS $hotelRatePlanNotifResult = null)
     {
         $this
             ->setHotelRatePlanNotifResult($hotelRatePlanNotifResult);
     }
     /**
      * Get HotelRatePlanNotifResult value
-     * @return \StructType\OTA_HotelRatePlanNotifRS|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_HotelRatePlanNotifRS|null
      */
     public function getHotelRatePlanNotifResult()
     {
@@ -38,10 +38,10 @@ class HotelRatePlanNotifResponse extends AbstractStructBase
     }
     /**
      * Set HotelRatePlanNotifResult value
-     * @param \StructType\OTA_HotelRatePlanNotifRS $hotelRatePlanNotifResult
-     * @return \StructType\HotelRatePlanNotifResponse
+     * @param \Devlabs91\TravelgatePushApi\StructType\OTA_HotelRatePlanNotifRS $hotelRatePlanNotifResult
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRatePlanNotifResponse
      */
-    public function setHotelRatePlanNotifResult(\StructType\OTA_HotelRatePlanNotifRS $hotelRatePlanNotifResult = null)
+    public function setHotelRatePlanNotifResult(\Devlabs91\TravelgatePushApi\StructType\OTA_HotelRatePlanNotifRS $hotelRatePlanNotifResult = null)
     {
         $this->HotelRatePlanNotifResult = $hotelRatePlanNotifResult;
         return $this;
@@ -52,7 +52,7 @@ class HotelRatePlanNotifResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HotelRatePlanNotifResponse
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRatePlanNotifResponse
      */
     public static function __set_state(array $array)
     {

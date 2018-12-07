@@ -1,6 +1,6 @@
 <?php
 
-namespace ArrayType;
+namespace Devlabs91\TravelgatePushApi\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -15,13 +15,13 @@ class ArrayOfCommentTypeComment extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Comment[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\Comment[]
      */
     public $Comment;
     /**
      * Constructor method for ArrayOfCommentTypeComment
      * @uses ArrayOfCommentTypeComment::setComment()
-     * @param \StructType\Comment[] $comment
+     * @param \Devlabs91\TravelgatePushApi\StructType\Comment[] $comment
      */
     public function __construct(array $comment = array())
     {
@@ -30,7 +30,7 @@ class ArrayOfCommentTypeComment extends AbstractStructArrayBase
     }
     /**
      * Get Comment value
-     * @return \StructType\Comment[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Comment[]|null
      */
     public function getComment()
     {
@@ -39,15 +39,15 @@ class ArrayOfCommentTypeComment extends AbstractStructArrayBase
     /**
      * Set Comment value
      * @throws \InvalidArgumentException
-     * @param \StructType\Comment[] $comment
-     * @return \ArrayType\ArrayOfCommentTypeComment
+     * @param \Devlabs91\TravelgatePushApi\StructType\Comment[] $comment
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfCommentTypeComment
      */
     public function setComment(array $comment = array())
     {
         foreach ($comment as $arrayOfCommentTypeCommentCommentItem) {
             // validation for constraint: itemType
-            if (!$arrayOfCommentTypeCommentCommentItem instanceof \StructType\Comment) {
-                throw new \InvalidArgumentException(sprintf('The Comment property can only contain items of \StructType\Comment, "%s" given', is_object($arrayOfCommentTypeCommentCommentItem) ? get_class($arrayOfCommentTypeCommentCommentItem) : gettype($arrayOfCommentTypeCommentCommentItem)), __LINE__);
+            if (!$arrayOfCommentTypeCommentCommentItem instanceof \Devlabs91\TravelgatePushApi\StructType\Comment) {
+                throw new \InvalidArgumentException(sprintf('The Comment property can only contain items of \Devlabs91\TravelgatePushApi\StructType\Comment, "%s" given', is_object($arrayOfCommentTypeCommentCommentItem) ? get_class($arrayOfCommentTypeCommentCommentItem) : gettype($arrayOfCommentTypeCommentCommentItem)), __LINE__);
             }
         }
         $this->Comment = $comment;
@@ -56,14 +56,14 @@ class ArrayOfCommentTypeComment extends AbstractStructArrayBase
     /**
      * Add item to Comment value
      * @throws \InvalidArgumentException
-     * @param \StructType\Comment $item
-     * @return \ArrayType\ArrayOfCommentTypeComment
+     * @param \Devlabs91\TravelgatePushApi\StructType\Comment $item
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfCommentTypeComment
      */
-    public function addToComment(\StructType\Comment $item)
+    public function addToComment(\Devlabs91\TravelgatePushApi\StructType\Comment $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Comment) {
-            throw new \InvalidArgumentException(sprintf('The Comment property can only contain items of \StructType\Comment, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\Comment) {
+            throw new \InvalidArgumentException(sprintf('The Comment property can only contain items of \Devlabs91\TravelgatePushApi\StructType\Comment, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->Comment[] = $item;
         return $this;
@@ -71,7 +71,7 @@ class ArrayOfCommentTypeComment extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \StructType\Comment|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Comment|null
      */
     public function current()
     {
@@ -81,7 +81,7 @@ class ArrayOfCommentTypeComment extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \StructType\Comment|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Comment|null
      */
     public function item($index)
     {
@@ -90,7 +90,7 @@ class ArrayOfCommentTypeComment extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \StructType\Comment|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Comment|null
      */
     public function first()
     {
@@ -99,7 +99,7 @@ class ArrayOfCommentTypeComment extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \StructType\Comment|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Comment|null
      */
     public function last()
     {
@@ -109,7 +109,7 @@ class ArrayOfCommentTypeComment extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \StructType\Comment|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Comment|null
      */
     public function offsetGet($offset)
     {
@@ -130,7 +130,7 @@ class ArrayOfCommentTypeComment extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \ArrayType\ArrayOfCommentTypeComment
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfCommentTypeComment
      */
     public static function __set_state(array $array)
     {

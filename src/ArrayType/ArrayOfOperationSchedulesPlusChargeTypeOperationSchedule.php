@@ -1,6 +1,6 @@
 <?php
 
-namespace ArrayType;
+namespace Devlabs91\TravelgatePushApi\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class ArrayOfOperationSchedulesPlusChargeTypeOperationSchedule extends AbstractS
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\OperationSchedule[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\OperationSchedule[]
      */
     public $OperationSchedule;
     /**
      * Constructor method for ArrayOfOperationSchedulesPlusChargeTypeOperationSchedule
      * @uses ArrayOfOperationSchedulesPlusChargeTypeOperationSchedule::setOperationSchedule()
-     * @param \StructType\OperationSchedule[] $operationSchedule
+     * @param \Devlabs91\TravelgatePushApi\StructType\OperationSchedule[] $operationSchedule
      */
     public function __construct(array $operationSchedule = array())
     {
@@ -31,7 +31,7 @@ class ArrayOfOperationSchedulesPlusChargeTypeOperationSchedule extends AbstractS
     }
     /**
      * Get OperationSchedule value
-     * @return \StructType\OperationSchedule[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\OperationSchedule[]|null
      */
     public function getOperationSchedule()
     {
@@ -40,15 +40,15 @@ class ArrayOfOperationSchedulesPlusChargeTypeOperationSchedule extends AbstractS
     /**
      * Set OperationSchedule value
      * @throws \InvalidArgumentException
-     * @param \StructType\OperationSchedule[] $operationSchedule
-     * @return \ArrayType\ArrayOfOperationSchedulesPlusChargeTypeOperationSchedule
+     * @param \Devlabs91\TravelgatePushApi\StructType\OperationSchedule[] $operationSchedule
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfOperationSchedulesPlusChargeTypeOperationSchedule
      */
     public function setOperationSchedule(array $operationSchedule = array())
     {
         foreach ($operationSchedule as $arrayOfOperationSchedulesPlusChargeTypeOperationScheduleOperationScheduleItem) {
             // validation for constraint: itemType
-            if (!$arrayOfOperationSchedulesPlusChargeTypeOperationScheduleOperationScheduleItem instanceof \StructType\OperationSchedule) {
-                throw new \InvalidArgumentException(sprintf('The OperationSchedule property can only contain items of \StructType\OperationSchedule, "%s" given', is_object($arrayOfOperationSchedulesPlusChargeTypeOperationScheduleOperationScheduleItem) ? get_class($arrayOfOperationSchedulesPlusChargeTypeOperationScheduleOperationScheduleItem) : gettype($arrayOfOperationSchedulesPlusChargeTypeOperationScheduleOperationScheduleItem)), __LINE__);
+            if (!$arrayOfOperationSchedulesPlusChargeTypeOperationScheduleOperationScheduleItem instanceof \Devlabs91\TravelgatePushApi\StructType\OperationSchedule) {
+                throw new \InvalidArgumentException(sprintf('The OperationSchedule property can only contain items of \Devlabs91\TravelgatePushApi\StructType\OperationSchedule, "%s" given', is_object($arrayOfOperationSchedulesPlusChargeTypeOperationScheduleOperationScheduleItem) ? get_class($arrayOfOperationSchedulesPlusChargeTypeOperationScheduleOperationScheduleItem) : gettype($arrayOfOperationSchedulesPlusChargeTypeOperationScheduleOperationScheduleItem)), __LINE__);
             }
         }
         $this->OperationSchedule = $operationSchedule;
@@ -57,14 +57,14 @@ class ArrayOfOperationSchedulesPlusChargeTypeOperationSchedule extends AbstractS
     /**
      * Add item to OperationSchedule value
      * @throws \InvalidArgumentException
-     * @param \StructType\OperationSchedule $item
-     * @return \ArrayType\ArrayOfOperationSchedulesPlusChargeTypeOperationSchedule
+     * @param \Devlabs91\TravelgatePushApi\StructType\OperationSchedule $item
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfOperationSchedulesPlusChargeTypeOperationSchedule
      */
-    public function addToOperationSchedule(\StructType\OperationSchedule $item)
+    public function addToOperationSchedule(\Devlabs91\TravelgatePushApi\StructType\OperationSchedule $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\OperationSchedule) {
-            throw new \InvalidArgumentException(sprintf('The OperationSchedule property can only contain items of \StructType\OperationSchedule, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\OperationSchedule) {
+            throw new \InvalidArgumentException(sprintf('The OperationSchedule property can only contain items of \Devlabs91\TravelgatePushApi\StructType\OperationSchedule, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->OperationSchedule[] = $item;
         return $this;
@@ -72,7 +72,7 @@ class ArrayOfOperationSchedulesPlusChargeTypeOperationSchedule extends AbstractS
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \StructType\OperationSchedule|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\OperationSchedule|null
      */
     public function current()
     {
@@ -82,7 +82,7 @@ class ArrayOfOperationSchedulesPlusChargeTypeOperationSchedule extends AbstractS
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \StructType\OperationSchedule|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\OperationSchedule|null
      */
     public function item($index)
     {
@@ -91,7 +91,7 @@ class ArrayOfOperationSchedulesPlusChargeTypeOperationSchedule extends AbstractS
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \StructType\OperationSchedule|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\OperationSchedule|null
      */
     public function first()
     {
@@ -100,7 +100,7 @@ class ArrayOfOperationSchedulesPlusChargeTypeOperationSchedule extends AbstractS
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \StructType\OperationSchedule|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\OperationSchedule|null
      */
     public function last()
     {
@@ -110,7 +110,7 @@ class ArrayOfOperationSchedulesPlusChargeTypeOperationSchedule extends AbstractS
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \StructType\OperationSchedule|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\OperationSchedule|null
      */
     public function offsetGet($offset)
     {
@@ -131,7 +131,7 @@ class ArrayOfOperationSchedulesPlusChargeTypeOperationSchedule extends AbstractS
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \ArrayType\ArrayOfOperationSchedulesPlusChargeTypeOperationSchedule
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfOperationSchedulesPlusChargeTypeOperationSchedule
      */
     public static function __set_state(array $array)
     {

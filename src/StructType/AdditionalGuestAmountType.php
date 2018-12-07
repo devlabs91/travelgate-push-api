@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class AdditionalGuestAmountType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\TotalType
+     * @var \Devlabs91\TravelgatePushApi\StructType\TotalType
      */
     public $Amount;
     /**
@@ -39,12 +39,12 @@ class AdditionalGuestAmountType extends AbstractStructBase
      * @uses AdditionalGuestAmountType::setMaxAdditionalGuests()
      * @uses AdditionalGuestAmountType::setAgeQualifyingCode()
      * @uses AdditionalGuestAmountType::setType()
-     * @param \StructType\TotalType $amount
+     * @param \Devlabs91\TravelgatePushApi\StructType\TotalType $amount
      * @param int $maxAdditionalGuests
      * @param string $ageQualifyingCode
      * @param string $type
      */
-    public function __construct(\StructType\TotalType $amount = null, $maxAdditionalGuests = null, $ageQualifyingCode = null, $type = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\StructType\TotalType $amount = null, $maxAdditionalGuests = null, $ageQualifyingCode = null, $type = null)
     {
         $this
             ->setAmount($amount)
@@ -54,7 +54,7 @@ class AdditionalGuestAmountType extends AbstractStructBase
     }
     /**
      * Get Amount value
-     * @return \StructType\TotalType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\TotalType|null
      */
     public function getAmount()
     {
@@ -62,10 +62,10 @@ class AdditionalGuestAmountType extends AbstractStructBase
     }
     /**
      * Set Amount value
-     * @param \StructType\TotalType $amount
-     * @return \StructType\AdditionalGuestAmountType
+     * @param \Devlabs91\TravelgatePushApi\StructType\TotalType $amount
+     * @return \Devlabs91\TravelgatePushApi\StructType\AdditionalGuestAmountType
      */
-    public function setAmount(\StructType\TotalType $amount = null)
+    public function setAmount(\Devlabs91\TravelgatePushApi\StructType\TotalType $amount = null)
     {
         $this->Amount = $amount;
         return $this;
@@ -81,7 +81,7 @@ class AdditionalGuestAmountType extends AbstractStructBase
     /**
      * Set MaxAdditionalGuests value
      * @param int $maxAdditionalGuests
-     * @return \StructType\AdditionalGuestAmountType
+     * @return \Devlabs91\TravelgatePushApi\StructType\AdditionalGuestAmountType
      */
     public function setMaxAdditionalGuests($maxAdditionalGuests = null)
     {
@@ -103,7 +103,7 @@ class AdditionalGuestAmountType extends AbstractStructBase
     /**
      * Set AgeQualifyingCode value
      * @param string $ageQualifyingCode
-     * @return \StructType\AdditionalGuestAmountType
+     * @return \Devlabs91\TravelgatePushApi\StructType\AdditionalGuestAmountType
      */
     public function setAgeQualifyingCode($ageQualifyingCode = null)
     {
@@ -125,7 +125,7 @@ class AdditionalGuestAmountType extends AbstractStructBase
     /**
      * Set Type value
      * @param string $type
-     * @return \StructType\AdditionalGuestAmountType
+     * @return \Devlabs91\TravelgatePushApi\StructType\AdditionalGuestAmountType
      */
     public function setType($type = null)
     {
@@ -142,7 +142,7 @@ class AdditionalGuestAmountType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\AdditionalGuestAmountType
+     * @return \Devlabs91\TravelgatePushApi\StructType\AdditionalGuestAmountType
      */
     public static function __set_state(array $array)
     {

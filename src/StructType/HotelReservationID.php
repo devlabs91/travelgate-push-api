@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -52,7 +52,7 @@ class HotelReservationID extends AbstractStructBase
     /**
      * Set ResID_Type value
      * @param string $resID_Type
-     * @return \StructType\HotelReservationID
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelReservationID
      */
     public function setResID_Type($resID_Type = null)
     {
@@ -74,7 +74,7 @@ class HotelReservationID extends AbstractStructBase
     /**
      * Set ResID_Value value
      * @param string $resID_Value
-     * @return \StructType\HotelReservationID
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelReservationID
      */
     public function setResID_Value($resID_Value = null)
     {
@@ -96,7 +96,7 @@ class HotelReservationID extends AbstractStructBase
     /**
      * Set ResID_SourceContext value
      * @param string $resID_SourceContext
-     * @return \StructType\HotelReservationID
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelReservationID
      */
     public function setResID_SourceContext($resID_SourceContext = null)
     {
@@ -113,7 +113,7 @@ class HotelReservationID extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HotelReservationID
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelReservationID
      */
     public static function __set_state(array $array)
     {

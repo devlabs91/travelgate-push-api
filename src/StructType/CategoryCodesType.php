@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class CategoryCodesType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\LocationCategory[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\LocationCategory[]
      */
     public $LocationCategory;
     /**
@@ -23,7 +23,7 @@ class CategoryCodesType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\SegmentCategory[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\SegmentCategory[]
      */
     public $SegmentCategory;
     /**
@@ -31,7 +31,7 @@ class CategoryCodesType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\HotelCategory[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\HotelCategory[]
      */
     public $HotelCategory;
     /**
@@ -39,9 +39,9 @@ class CategoryCodesType extends AbstractStructBase
      * @uses CategoryCodesType::setLocationCategory()
      * @uses CategoryCodesType::setSegmentCategory()
      * @uses CategoryCodesType::setHotelCategory()
-     * @param \StructType\LocationCategory[] $locationCategory
-     * @param \StructType\SegmentCategory[] $segmentCategory
-     * @param \StructType\HotelCategory[] $hotelCategory
+     * @param \Devlabs91\TravelgatePushApi\StructType\LocationCategory[] $locationCategory
+     * @param \Devlabs91\TravelgatePushApi\StructType\SegmentCategory[] $segmentCategory
+     * @param \Devlabs91\TravelgatePushApi\StructType\HotelCategory[] $hotelCategory
      */
     public function __construct(array $locationCategory = array(), array $segmentCategory = array(), array $hotelCategory = array())
     {
@@ -52,7 +52,7 @@ class CategoryCodesType extends AbstractStructBase
     }
     /**
      * Get LocationCategory value
-     * @return \StructType\LocationCategory[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\LocationCategory[]|null
      */
     public function getLocationCategory()
     {
@@ -61,15 +61,15 @@ class CategoryCodesType extends AbstractStructBase
     /**
      * Set LocationCategory value
      * @throws \InvalidArgumentException
-     * @param \StructType\LocationCategory[] $locationCategory
-     * @return \StructType\CategoryCodesType
+     * @param \Devlabs91\TravelgatePushApi\StructType\LocationCategory[] $locationCategory
+     * @return \Devlabs91\TravelgatePushApi\StructType\CategoryCodesType
      */
     public function setLocationCategory(array $locationCategory = array())
     {
         foreach ($locationCategory as $categoryCodesTypeLocationCategoryItem) {
             // validation for constraint: itemType
-            if (!$categoryCodesTypeLocationCategoryItem instanceof \StructType\LocationCategory) {
-                throw new \InvalidArgumentException(sprintf('The LocationCategory property can only contain items of \StructType\LocationCategory, "%s" given', is_object($categoryCodesTypeLocationCategoryItem) ? get_class($categoryCodesTypeLocationCategoryItem) : gettype($categoryCodesTypeLocationCategoryItem)), __LINE__);
+            if (!$categoryCodesTypeLocationCategoryItem instanceof \Devlabs91\TravelgatePushApi\StructType\LocationCategory) {
+                throw new \InvalidArgumentException(sprintf('The LocationCategory property can only contain items of \Devlabs91\TravelgatePushApi\StructType\LocationCategory, "%s" given', is_object($categoryCodesTypeLocationCategoryItem) ? get_class($categoryCodesTypeLocationCategoryItem) : gettype($categoryCodesTypeLocationCategoryItem)), __LINE__);
             }
         }
         $this->LocationCategory = $locationCategory;
@@ -78,21 +78,21 @@ class CategoryCodesType extends AbstractStructBase
     /**
      * Add item to LocationCategory value
      * @throws \InvalidArgumentException
-     * @param \StructType\LocationCategory $item
-     * @return \StructType\CategoryCodesType
+     * @param \Devlabs91\TravelgatePushApi\StructType\LocationCategory $item
+     * @return \Devlabs91\TravelgatePushApi\StructType\CategoryCodesType
      */
-    public function addToLocationCategory(\StructType\LocationCategory $item)
+    public function addToLocationCategory(\Devlabs91\TravelgatePushApi\StructType\LocationCategory $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\LocationCategory) {
-            throw new \InvalidArgumentException(sprintf('The LocationCategory property can only contain items of \StructType\LocationCategory, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\LocationCategory) {
+            throw new \InvalidArgumentException(sprintf('The LocationCategory property can only contain items of \Devlabs91\TravelgatePushApi\StructType\LocationCategory, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->LocationCategory[] = $item;
         return $this;
     }
     /**
      * Get SegmentCategory value
-     * @return \StructType\SegmentCategory[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\SegmentCategory[]|null
      */
     public function getSegmentCategory()
     {
@@ -101,15 +101,15 @@ class CategoryCodesType extends AbstractStructBase
     /**
      * Set SegmentCategory value
      * @throws \InvalidArgumentException
-     * @param \StructType\SegmentCategory[] $segmentCategory
-     * @return \StructType\CategoryCodesType
+     * @param \Devlabs91\TravelgatePushApi\StructType\SegmentCategory[] $segmentCategory
+     * @return \Devlabs91\TravelgatePushApi\StructType\CategoryCodesType
      */
     public function setSegmentCategory(array $segmentCategory = array())
     {
         foreach ($segmentCategory as $categoryCodesTypeSegmentCategoryItem) {
             // validation for constraint: itemType
-            if (!$categoryCodesTypeSegmentCategoryItem instanceof \StructType\SegmentCategory) {
-                throw new \InvalidArgumentException(sprintf('The SegmentCategory property can only contain items of \StructType\SegmentCategory, "%s" given', is_object($categoryCodesTypeSegmentCategoryItem) ? get_class($categoryCodesTypeSegmentCategoryItem) : gettype($categoryCodesTypeSegmentCategoryItem)), __LINE__);
+            if (!$categoryCodesTypeSegmentCategoryItem instanceof \Devlabs91\TravelgatePushApi\StructType\SegmentCategory) {
+                throw new \InvalidArgumentException(sprintf('The SegmentCategory property can only contain items of \Devlabs91\TravelgatePushApi\StructType\SegmentCategory, "%s" given', is_object($categoryCodesTypeSegmentCategoryItem) ? get_class($categoryCodesTypeSegmentCategoryItem) : gettype($categoryCodesTypeSegmentCategoryItem)), __LINE__);
             }
         }
         $this->SegmentCategory = $segmentCategory;
@@ -118,21 +118,21 @@ class CategoryCodesType extends AbstractStructBase
     /**
      * Add item to SegmentCategory value
      * @throws \InvalidArgumentException
-     * @param \StructType\SegmentCategory $item
-     * @return \StructType\CategoryCodesType
+     * @param \Devlabs91\TravelgatePushApi\StructType\SegmentCategory $item
+     * @return \Devlabs91\TravelgatePushApi\StructType\CategoryCodesType
      */
-    public function addToSegmentCategory(\StructType\SegmentCategory $item)
+    public function addToSegmentCategory(\Devlabs91\TravelgatePushApi\StructType\SegmentCategory $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\SegmentCategory) {
-            throw new \InvalidArgumentException(sprintf('The SegmentCategory property can only contain items of \StructType\SegmentCategory, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\SegmentCategory) {
+            throw new \InvalidArgumentException(sprintf('The SegmentCategory property can only contain items of \Devlabs91\TravelgatePushApi\StructType\SegmentCategory, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->SegmentCategory[] = $item;
         return $this;
     }
     /**
      * Get HotelCategory value
-     * @return \StructType\HotelCategory[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelCategory[]|null
      */
     public function getHotelCategory()
     {
@@ -141,15 +141,15 @@ class CategoryCodesType extends AbstractStructBase
     /**
      * Set HotelCategory value
      * @throws \InvalidArgumentException
-     * @param \StructType\HotelCategory[] $hotelCategory
-     * @return \StructType\CategoryCodesType
+     * @param \Devlabs91\TravelgatePushApi\StructType\HotelCategory[] $hotelCategory
+     * @return \Devlabs91\TravelgatePushApi\StructType\CategoryCodesType
      */
     public function setHotelCategory(array $hotelCategory = array())
     {
         foreach ($hotelCategory as $categoryCodesTypeHotelCategoryItem) {
             // validation for constraint: itemType
-            if (!$categoryCodesTypeHotelCategoryItem instanceof \StructType\HotelCategory) {
-                throw new \InvalidArgumentException(sprintf('The HotelCategory property can only contain items of \StructType\HotelCategory, "%s" given', is_object($categoryCodesTypeHotelCategoryItem) ? get_class($categoryCodesTypeHotelCategoryItem) : gettype($categoryCodesTypeHotelCategoryItem)), __LINE__);
+            if (!$categoryCodesTypeHotelCategoryItem instanceof \Devlabs91\TravelgatePushApi\StructType\HotelCategory) {
+                throw new \InvalidArgumentException(sprintf('The HotelCategory property can only contain items of \Devlabs91\TravelgatePushApi\StructType\HotelCategory, "%s" given', is_object($categoryCodesTypeHotelCategoryItem) ? get_class($categoryCodesTypeHotelCategoryItem) : gettype($categoryCodesTypeHotelCategoryItem)), __LINE__);
             }
         }
         $this->HotelCategory = $hotelCategory;
@@ -158,14 +158,14 @@ class CategoryCodesType extends AbstractStructBase
     /**
      * Add item to HotelCategory value
      * @throws \InvalidArgumentException
-     * @param \StructType\HotelCategory $item
-     * @return \StructType\CategoryCodesType
+     * @param \Devlabs91\TravelgatePushApi\StructType\HotelCategory $item
+     * @return \Devlabs91\TravelgatePushApi\StructType\CategoryCodesType
      */
-    public function addToHotelCategory(\StructType\HotelCategory $item)
+    public function addToHotelCategory(\Devlabs91\TravelgatePushApi\StructType\HotelCategory $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\HotelCategory) {
-            throw new \InvalidArgumentException(sprintf('The HotelCategory property can only contain items of \StructType\HotelCategory, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\HotelCategory) {
+            throw new \InvalidArgumentException(sprintf('The HotelCategory property can only contain items of \Devlabs91\TravelgatePushApi\StructType\HotelCategory, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->HotelCategory[] = $item;
         return $this;
@@ -176,7 +176,7 @@ class CategoryCodesType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\CategoryCodesType
+     * @return \Devlabs91\TravelgatePushApi\StructType\CategoryCodesType
      */
     public static function __set_state(array $array)
     {

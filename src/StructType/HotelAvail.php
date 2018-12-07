@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class HotelAvail extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\OTA_HotelAvailRQ
+     * @var \Devlabs91\TravelgatePushApi\StructType\OTA_HotelAvailRQ
      */
     public $request;
     /**
      * Constructor method for HotelAvail
      * @uses HotelAvail::setRequest()
-     * @param \StructType\OTA_HotelAvailRQ $request
+     * @param \Devlabs91\TravelgatePushApi\StructType\OTA_HotelAvailRQ $request
      */
-    public function __construct(\StructType\OTA_HotelAvailRQ $request = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\StructType\OTA_HotelAvailRQ $request = null)
     {
         $this
             ->setRequest($request);
     }
     /**
      * Get request value
-     * @return \StructType\OTA_HotelAvailRQ|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_HotelAvailRQ|null
      */
     public function getRequest()
     {
@@ -38,10 +38,10 @@ class HotelAvail extends AbstractStructBase
     }
     /**
      * Set request value
-     * @param \StructType\OTA_HotelAvailRQ $request
-     * @return \StructType\HotelAvail
+     * @param \Devlabs91\TravelgatePushApi\StructType\OTA_HotelAvailRQ $request
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelAvail
      */
-    public function setRequest(\StructType\OTA_HotelAvailRQ $request = null)
+    public function setRequest(\Devlabs91\TravelgatePushApi\StructType\OTA_HotelAvailRQ $request = null)
     {
         $this->request = $request;
         return $this;
@@ -52,7 +52,7 @@ class HotelAvail extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HotelAvail
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelAvail
      */
     public static function __set_state(array $array)
     {

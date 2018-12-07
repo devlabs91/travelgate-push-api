@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class HotelRatePlanInventoryNotifResponse extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\OTA_HotelRatePlanNotifRS
+     * @var \Devlabs91\TravelgatePushApi\StructType\OTA_HotelRatePlanNotifRS
      */
     public $HotelRatePlanInventoryNotifResult;
     /**
      * Constructor method for HotelRatePlanInventoryNotifResponse
      * @uses HotelRatePlanInventoryNotifResponse::setHotelRatePlanInventoryNotifResult()
-     * @param \StructType\OTA_HotelRatePlanNotifRS $hotelRatePlanInventoryNotifResult
+     * @param \Devlabs91\TravelgatePushApi\StructType\OTA_HotelRatePlanNotifRS $hotelRatePlanInventoryNotifResult
      */
-    public function __construct(\StructType\OTA_HotelRatePlanNotifRS $hotelRatePlanInventoryNotifResult = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\StructType\OTA_HotelRatePlanNotifRS $hotelRatePlanInventoryNotifResult = null)
     {
         $this
             ->setHotelRatePlanInventoryNotifResult($hotelRatePlanInventoryNotifResult);
     }
     /**
      * Get HotelRatePlanInventoryNotifResult value
-     * @return \StructType\OTA_HotelRatePlanNotifRS|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_HotelRatePlanNotifRS|null
      */
     public function getHotelRatePlanInventoryNotifResult()
     {
@@ -38,10 +38,10 @@ class HotelRatePlanInventoryNotifResponse extends AbstractStructBase
     }
     /**
      * Set HotelRatePlanInventoryNotifResult value
-     * @param \StructType\OTA_HotelRatePlanNotifRS $hotelRatePlanInventoryNotifResult
-     * @return \StructType\HotelRatePlanInventoryNotifResponse
+     * @param \Devlabs91\TravelgatePushApi\StructType\OTA_HotelRatePlanNotifRS $hotelRatePlanInventoryNotifResult
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRatePlanInventoryNotifResponse
      */
-    public function setHotelRatePlanInventoryNotifResult(\StructType\OTA_HotelRatePlanNotifRS $hotelRatePlanInventoryNotifResult = null)
+    public function setHotelRatePlanInventoryNotifResult(\Devlabs91\TravelgatePushApi\StructType\OTA_HotelRatePlanNotifRS $hotelRatePlanInventoryNotifResult = null)
     {
         $this->HotelRatePlanInventoryNotifResult = $hotelRatePlanInventoryNotifResult;
         return $this;
@@ -52,7 +52,7 @@ class HotelRatePlanInventoryNotifResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HotelRatePlanInventoryNotifResponse
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRatePlanInventoryNotifResponse
      */
     public static function __set_state(array $array)
     {

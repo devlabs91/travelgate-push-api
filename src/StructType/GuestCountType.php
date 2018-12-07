@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class GuestCountType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\GuestCount[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\GuestCount[]
      */
     public $GuestCount;
     /**
@@ -30,7 +30,7 @@ class GuestCountType extends AbstractStructBase
      * Constructor method for GuestCountType
      * @uses GuestCountType::setGuestCount()
      * @uses GuestCountType::setIsPerRoom()
-     * @param \StructType\GuestCount[] $guestCount
+     * @param \Devlabs91\TravelgatePushApi\StructType\GuestCount[] $guestCount
      * @param string $isPerRoom
      */
     public function __construct(array $guestCount = array(), $isPerRoom = null)
@@ -41,7 +41,7 @@ class GuestCountType extends AbstractStructBase
     }
     /**
      * Get GuestCount value
-     * @return \StructType\GuestCount[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\GuestCount[]|null
      */
     public function getGuestCount()
     {
@@ -50,15 +50,15 @@ class GuestCountType extends AbstractStructBase
     /**
      * Set GuestCount value
      * @throws \InvalidArgumentException
-     * @param \StructType\GuestCount[] $guestCount
-     * @return \StructType\GuestCountType
+     * @param \Devlabs91\TravelgatePushApi\StructType\GuestCount[] $guestCount
+     * @return \Devlabs91\TravelgatePushApi\StructType\GuestCountType
      */
     public function setGuestCount(array $guestCount = array())
     {
         foreach ($guestCount as $guestCountTypeGuestCountItem) {
             // validation for constraint: itemType
-            if (!$guestCountTypeGuestCountItem instanceof \StructType\GuestCount) {
-                throw new \InvalidArgumentException(sprintf('The GuestCount property can only contain items of \StructType\GuestCount, "%s" given', is_object($guestCountTypeGuestCountItem) ? get_class($guestCountTypeGuestCountItem) : gettype($guestCountTypeGuestCountItem)), __LINE__);
+            if (!$guestCountTypeGuestCountItem instanceof \Devlabs91\TravelgatePushApi\StructType\GuestCount) {
+                throw new \InvalidArgumentException(sprintf('The GuestCount property can only contain items of \Devlabs91\TravelgatePushApi\StructType\GuestCount, "%s" given', is_object($guestCountTypeGuestCountItem) ? get_class($guestCountTypeGuestCountItem) : gettype($guestCountTypeGuestCountItem)), __LINE__);
             }
         }
         $this->GuestCount = $guestCount;
@@ -67,14 +67,14 @@ class GuestCountType extends AbstractStructBase
     /**
      * Add item to GuestCount value
      * @throws \InvalidArgumentException
-     * @param \StructType\GuestCount $item
-     * @return \StructType\GuestCountType
+     * @param \Devlabs91\TravelgatePushApi\StructType\GuestCount $item
+     * @return \Devlabs91\TravelgatePushApi\StructType\GuestCountType
      */
-    public function addToGuestCount(\StructType\GuestCount $item)
+    public function addToGuestCount(\Devlabs91\TravelgatePushApi\StructType\GuestCount $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\GuestCount) {
-            throw new \InvalidArgumentException(sprintf('The GuestCount property can only contain items of \StructType\GuestCount, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\GuestCount) {
+            throw new \InvalidArgumentException(sprintf('The GuestCount property can only contain items of \Devlabs91\TravelgatePushApi\StructType\GuestCount, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->GuestCount[] = $item;
         return $this;
@@ -90,7 +90,7 @@ class GuestCountType extends AbstractStructBase
     /**
      * Set IsPerRoom value
      * @param string $isPerRoom
-     * @return \StructType\GuestCountType
+     * @return \Devlabs91\TravelgatePushApi\StructType\GuestCountType
      */
     public function setIsPerRoom($isPerRoom = null)
     {
@@ -107,7 +107,7 @@ class GuestCountType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\GuestCountType
+     * @return \Devlabs91\TravelgatePushApi\StructType\GuestCountType
      */
     public static function __set_state(array $array)
     {

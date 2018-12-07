@@ -1,6 +1,6 @@
 <?php
 
-namespace ArrayType;
+namespace Devlabs91\TravelgatePushApi\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -15,13 +15,13 @@ class ArrayOfHotelReservationIDsTypeHotelReservationID extends AbstractStructArr
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\HotelReservationID[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\HotelReservationID[]
      */
     public $HotelReservationID;
     /**
      * Constructor method for ArrayOfHotelReservationIDsTypeHotelReservationID
      * @uses ArrayOfHotelReservationIDsTypeHotelReservationID::setHotelReservationID()
-     * @param \StructType\HotelReservationID[] $hotelReservationID
+     * @param \Devlabs91\TravelgatePushApi\StructType\HotelReservationID[] $hotelReservationID
      */
     public function __construct(array $hotelReservationID = array())
     {
@@ -30,7 +30,7 @@ class ArrayOfHotelReservationIDsTypeHotelReservationID extends AbstractStructArr
     }
     /**
      * Get HotelReservationID value
-     * @return \StructType\HotelReservationID[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelReservationID[]|null
      */
     public function getHotelReservationID()
     {
@@ -39,15 +39,15 @@ class ArrayOfHotelReservationIDsTypeHotelReservationID extends AbstractStructArr
     /**
      * Set HotelReservationID value
      * @throws \InvalidArgumentException
-     * @param \StructType\HotelReservationID[] $hotelReservationID
-     * @return \ArrayType\ArrayOfHotelReservationIDsTypeHotelReservationID
+     * @param \Devlabs91\TravelgatePushApi\StructType\HotelReservationID[] $hotelReservationID
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfHotelReservationIDsTypeHotelReservationID
      */
     public function setHotelReservationID(array $hotelReservationID = array())
     {
         foreach ($hotelReservationID as $arrayOfHotelReservationIDsTypeHotelReservationIDHotelReservationIDItem) {
             // validation for constraint: itemType
-            if (!$arrayOfHotelReservationIDsTypeHotelReservationIDHotelReservationIDItem instanceof \StructType\HotelReservationID) {
-                throw new \InvalidArgumentException(sprintf('The HotelReservationID property can only contain items of \StructType\HotelReservationID, "%s" given', is_object($arrayOfHotelReservationIDsTypeHotelReservationIDHotelReservationIDItem) ? get_class($arrayOfHotelReservationIDsTypeHotelReservationIDHotelReservationIDItem) : gettype($arrayOfHotelReservationIDsTypeHotelReservationIDHotelReservationIDItem)), __LINE__);
+            if (!$arrayOfHotelReservationIDsTypeHotelReservationIDHotelReservationIDItem instanceof \Devlabs91\TravelgatePushApi\StructType\HotelReservationID) {
+                throw new \InvalidArgumentException(sprintf('The HotelReservationID property can only contain items of \Devlabs91\TravelgatePushApi\StructType\HotelReservationID, "%s" given', is_object($arrayOfHotelReservationIDsTypeHotelReservationIDHotelReservationIDItem) ? get_class($arrayOfHotelReservationIDsTypeHotelReservationIDHotelReservationIDItem) : gettype($arrayOfHotelReservationIDsTypeHotelReservationIDHotelReservationIDItem)), __LINE__);
             }
         }
         $this->HotelReservationID = $hotelReservationID;
@@ -56,14 +56,14 @@ class ArrayOfHotelReservationIDsTypeHotelReservationID extends AbstractStructArr
     /**
      * Add item to HotelReservationID value
      * @throws \InvalidArgumentException
-     * @param \StructType\HotelReservationID $item
-     * @return \ArrayType\ArrayOfHotelReservationIDsTypeHotelReservationID
+     * @param \Devlabs91\TravelgatePushApi\StructType\HotelReservationID $item
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfHotelReservationIDsTypeHotelReservationID
      */
-    public function addToHotelReservationID(\StructType\HotelReservationID $item)
+    public function addToHotelReservationID(\Devlabs91\TravelgatePushApi\StructType\HotelReservationID $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\HotelReservationID) {
-            throw new \InvalidArgumentException(sprintf('The HotelReservationID property can only contain items of \StructType\HotelReservationID, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\HotelReservationID) {
+            throw new \InvalidArgumentException(sprintf('The HotelReservationID property can only contain items of \Devlabs91\TravelgatePushApi\StructType\HotelReservationID, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->HotelReservationID[] = $item;
         return $this;
@@ -71,7 +71,7 @@ class ArrayOfHotelReservationIDsTypeHotelReservationID extends AbstractStructArr
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \StructType\HotelReservationID|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelReservationID|null
      */
     public function current()
     {
@@ -81,7 +81,7 @@ class ArrayOfHotelReservationIDsTypeHotelReservationID extends AbstractStructArr
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \StructType\HotelReservationID|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelReservationID|null
      */
     public function item($index)
     {
@@ -90,7 +90,7 @@ class ArrayOfHotelReservationIDsTypeHotelReservationID extends AbstractStructArr
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \StructType\HotelReservationID|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelReservationID|null
      */
     public function first()
     {
@@ -99,7 +99,7 @@ class ArrayOfHotelReservationIDsTypeHotelReservationID extends AbstractStructArr
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \StructType\HotelReservationID|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelReservationID|null
      */
     public function last()
     {
@@ -109,7 +109,7 @@ class ArrayOfHotelReservationIDsTypeHotelReservationID extends AbstractStructArr
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \StructType\HotelReservationID|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelReservationID|null
      */
     public function offsetGet($offset)
     {
@@ -130,7 +130,7 @@ class ArrayOfHotelReservationIDsTypeHotelReservationID extends AbstractStructArr
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \ArrayType\ArrayOfHotelReservationIDsTypeHotelReservationID
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfHotelReservationIDsTypeHotelReservationID
      */
     public static function __set_state(array $array)
     {

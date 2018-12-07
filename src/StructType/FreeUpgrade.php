@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class FreeUpgrade extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\UpgradeFrom
+     * @var \Devlabs91\TravelgatePushApi\StructType\UpgradeFrom
      */
     public $UpgradeFrom;
     /**
@@ -23,17 +23,17 @@ class FreeUpgrade extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\UpgradeTo
+     * @var \Devlabs91\TravelgatePushApi\StructType\UpgradeTo
      */
     public $UpgradeTo;
     /**
      * Constructor method for FreeUpgrade
      * @uses FreeUpgrade::setUpgradeFrom()
      * @uses FreeUpgrade::setUpgradeTo()
-     * @param \StructType\UpgradeFrom $upgradeFrom
-     * @param \StructType\UpgradeTo $upgradeTo
+     * @param \Devlabs91\TravelgatePushApi\StructType\UpgradeFrom $upgradeFrom
+     * @param \Devlabs91\TravelgatePushApi\StructType\UpgradeTo $upgradeTo
      */
-    public function __construct(\StructType\UpgradeFrom $upgradeFrom = null, \StructType\UpgradeTo $upgradeTo = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\StructType\UpgradeFrom $upgradeFrom = null, \Devlabs91\TravelgatePushApi\StructType\UpgradeTo $upgradeTo = null)
     {
         $this
             ->setUpgradeFrom($upgradeFrom)
@@ -41,7 +41,7 @@ class FreeUpgrade extends AbstractStructBase
     }
     /**
      * Get UpgradeFrom value
-     * @return \StructType\UpgradeFrom|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\UpgradeFrom|null
      */
     public function getUpgradeFrom()
     {
@@ -49,17 +49,17 @@ class FreeUpgrade extends AbstractStructBase
     }
     /**
      * Set UpgradeFrom value
-     * @param \StructType\UpgradeFrom $upgradeFrom
-     * @return \StructType\FreeUpgrade
+     * @param \Devlabs91\TravelgatePushApi\StructType\UpgradeFrom $upgradeFrom
+     * @return \Devlabs91\TravelgatePushApi\StructType\FreeUpgrade
      */
-    public function setUpgradeFrom(\StructType\UpgradeFrom $upgradeFrom = null)
+    public function setUpgradeFrom(\Devlabs91\TravelgatePushApi\StructType\UpgradeFrom $upgradeFrom = null)
     {
         $this->UpgradeFrom = $upgradeFrom;
         return $this;
     }
     /**
      * Get UpgradeTo value
-     * @return \StructType\UpgradeTo|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\UpgradeTo|null
      */
     public function getUpgradeTo()
     {
@@ -67,10 +67,10 @@ class FreeUpgrade extends AbstractStructBase
     }
     /**
      * Set UpgradeTo value
-     * @param \StructType\UpgradeTo $upgradeTo
-     * @return \StructType\FreeUpgrade
+     * @param \Devlabs91\TravelgatePushApi\StructType\UpgradeTo $upgradeTo
+     * @return \Devlabs91\TravelgatePushApi\StructType\FreeUpgrade
      */
-    public function setUpgradeTo(\StructType\UpgradeTo $upgradeTo = null)
+    public function setUpgradeTo(\Devlabs91\TravelgatePushApi\StructType\UpgradeTo $upgradeTo = null)
     {
         $this->UpgradeTo = $upgradeTo;
         return $this;
@@ -81,7 +81,7 @@ class FreeUpgrade extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\FreeUpgrade
+     * @return \Devlabs91\TravelgatePushApi\StructType\FreeUpgrade
      */
     public static function __set_state(array $array)
     {

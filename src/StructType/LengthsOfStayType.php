@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class LengthsOfStayType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\LengthOfStay[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\LengthOfStay[]
      */
     public $LengthOfStay;
     /**
@@ -27,7 +27,7 @@ class LengthsOfStayType extends AbstractStructBase
      * Constructor method for LengthsOfStayType
      * @uses LengthsOfStayType::setLengthOfStay()
      * @uses LengthsOfStayType::setArrivalDateBased()
-     * @param \StructType\LengthOfStay[] $lengthOfStay
+     * @param \Devlabs91\TravelgatePushApi\StructType\LengthOfStay[] $lengthOfStay
      * @param bool $arrivalDateBased
      */
     public function __construct(array $lengthOfStay = array(), $arrivalDateBased = null)
@@ -38,7 +38,7 @@ class LengthsOfStayType extends AbstractStructBase
     }
     /**
      * Get LengthOfStay value
-     * @return \StructType\LengthOfStay[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\LengthOfStay[]|null
      */
     public function getLengthOfStay()
     {
@@ -47,15 +47,15 @@ class LengthsOfStayType extends AbstractStructBase
     /**
      * Set LengthOfStay value
      * @throws \InvalidArgumentException
-     * @param \StructType\LengthOfStay[] $lengthOfStay
-     * @return \StructType\LengthsOfStayType
+     * @param \Devlabs91\TravelgatePushApi\StructType\LengthOfStay[] $lengthOfStay
+     * @return \Devlabs91\TravelgatePushApi\StructType\LengthsOfStayType
      */
     public function setLengthOfStay(array $lengthOfStay = array())
     {
         foreach ($lengthOfStay as $lengthsOfStayTypeLengthOfStayItem) {
             // validation for constraint: itemType
-            if (!$lengthsOfStayTypeLengthOfStayItem instanceof \StructType\LengthOfStay) {
-                throw new \InvalidArgumentException(sprintf('The LengthOfStay property can only contain items of \StructType\LengthOfStay, "%s" given', is_object($lengthsOfStayTypeLengthOfStayItem) ? get_class($lengthsOfStayTypeLengthOfStayItem) : gettype($lengthsOfStayTypeLengthOfStayItem)), __LINE__);
+            if (!$lengthsOfStayTypeLengthOfStayItem instanceof \Devlabs91\TravelgatePushApi\StructType\LengthOfStay) {
+                throw new \InvalidArgumentException(sprintf('The LengthOfStay property can only contain items of \Devlabs91\TravelgatePushApi\StructType\LengthOfStay, "%s" given', is_object($lengthsOfStayTypeLengthOfStayItem) ? get_class($lengthsOfStayTypeLengthOfStayItem) : gettype($lengthsOfStayTypeLengthOfStayItem)), __LINE__);
             }
         }
         $this->LengthOfStay = $lengthOfStay;
@@ -64,14 +64,14 @@ class LengthsOfStayType extends AbstractStructBase
     /**
      * Add item to LengthOfStay value
      * @throws \InvalidArgumentException
-     * @param \StructType\LengthOfStay $item
-     * @return \StructType\LengthsOfStayType
+     * @param \Devlabs91\TravelgatePushApi\StructType\LengthOfStay $item
+     * @return \Devlabs91\TravelgatePushApi\StructType\LengthsOfStayType
      */
-    public function addToLengthOfStay(\StructType\LengthOfStay $item)
+    public function addToLengthOfStay(\Devlabs91\TravelgatePushApi\StructType\LengthOfStay $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\LengthOfStay) {
-            throw new \InvalidArgumentException(sprintf('The LengthOfStay property can only contain items of \StructType\LengthOfStay, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\LengthOfStay) {
+            throw new \InvalidArgumentException(sprintf('The LengthOfStay property can only contain items of \Devlabs91\TravelgatePushApi\StructType\LengthOfStay, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->LengthOfStay[] = $item;
         return $this;
@@ -87,7 +87,7 @@ class LengthsOfStayType extends AbstractStructBase
     /**
      * Set ArrivalDateBased value
      * @param bool $arrivalDateBased
-     * @return \StructType\LengthsOfStayType
+     * @return \Devlabs91\TravelgatePushApi\StructType\LengthsOfStayType
      */
     public function setArrivalDateBased($arrivalDateBased = null)
     {
@@ -104,7 +104,7 @@ class LengthsOfStayType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\LengthsOfStayType
+     * @return \Devlabs91\TravelgatePushApi\StructType\LengthsOfStayType
      */
     public static function __set_state(array $array)
     {

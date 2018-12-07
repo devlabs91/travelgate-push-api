@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class HotelReservationType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\UniqueID_Type[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\UniqueID_Type[]
      */
     public $UniqueID;
     /**
@@ -23,7 +23,7 @@ class HotelReservationType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfRoomStaysTypeRoomStay
+     * @var \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRoomStaysTypeRoomStay
      */
     public $RoomStays;
     /**
@@ -31,7 +31,7 @@ class HotelReservationType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfResGuestType
+     * @var \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfResGuestType
      */
     public $ResGuests;
     /**
@@ -39,7 +39,7 @@ class HotelReservationType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\ResGlobalInfoType
+     * @var \Devlabs91\TravelgatePushApi\StructType\ResGlobalInfoType
      */
     public $ResGlobalInfo;
     /**
@@ -47,7 +47,7 @@ class HotelReservationType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\TPA_ExtensionsType
+     * @var \Devlabs91\TravelgatePushApi\StructType\TPA_ExtensionsType
      */
     public $TPA_Extensions;
     /**
@@ -75,16 +75,16 @@ class HotelReservationType extends AbstractStructBase
      * @uses HotelReservationType::setCreateDateTime()
      * @uses HotelReservationType::setLastModifyDateTime()
      * @uses HotelReservationType::setResStatus()
-     * @param \StructType\UniqueID_Type[] $uniqueID
-     * @param \ArrayType\ArrayOfRoomStaysTypeRoomStay $roomStays
-     * @param \ArrayType\ArrayOfResGuestType $resGuests
-     * @param \StructType\ResGlobalInfoType $resGlobalInfo
-     * @param \StructType\TPA_ExtensionsType $tPA_Extensions
+     * @param \Devlabs91\TravelgatePushApi\StructType\UniqueID_Type[] $uniqueID
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRoomStaysTypeRoomStay $roomStays
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfResGuestType $resGuests
+     * @param \Devlabs91\TravelgatePushApi\StructType\ResGlobalInfoType $resGlobalInfo
+     * @param \Devlabs91\TravelgatePushApi\StructType\TPA_ExtensionsType $tPA_Extensions
      * @param string $createDateTime
      * @param string $lastModifyDateTime
      * @param string $resStatus
      */
-    public function __construct(array $uniqueID = array(), \ArrayType\ArrayOfRoomStaysTypeRoomStay $roomStays = null, \ArrayType\ArrayOfResGuestType $resGuests = null, \StructType\ResGlobalInfoType $resGlobalInfo = null, \StructType\TPA_ExtensionsType $tPA_Extensions = null, $createDateTime = null, $lastModifyDateTime = null, $resStatus = null)
+    public function __construct(array $uniqueID = array(), \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRoomStaysTypeRoomStay $roomStays = null, \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfResGuestType $resGuests = null, \Devlabs91\TravelgatePushApi\StructType\ResGlobalInfoType $resGlobalInfo = null, \Devlabs91\TravelgatePushApi\StructType\TPA_ExtensionsType $tPA_Extensions = null, $createDateTime = null, $lastModifyDateTime = null, $resStatus = null)
     {
         $this
             ->setUniqueID($uniqueID)
@@ -98,7 +98,7 @@ class HotelReservationType extends AbstractStructBase
     }
     /**
      * Get UniqueID value
-     * @return \StructType\UniqueID_Type[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\UniqueID_Type[]|null
      */
     public function getUniqueID()
     {
@@ -107,15 +107,15 @@ class HotelReservationType extends AbstractStructBase
     /**
      * Set UniqueID value
      * @throws \InvalidArgumentException
-     * @param \StructType\UniqueID_Type[] $uniqueID
-     * @return \StructType\HotelReservationType
+     * @param \Devlabs91\TravelgatePushApi\StructType\UniqueID_Type[] $uniqueID
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelReservationType
      */
     public function setUniqueID(array $uniqueID = array())
     {
         foreach ($uniqueID as $hotelReservationTypeUniqueIDItem) {
             // validation for constraint: itemType
-            if (!$hotelReservationTypeUniqueIDItem instanceof \StructType\UniqueID_Type) {
-                throw new \InvalidArgumentException(sprintf('The UniqueID property can only contain items of \StructType\UniqueID_Type, "%s" given', is_object($hotelReservationTypeUniqueIDItem) ? get_class($hotelReservationTypeUniqueIDItem) : gettype($hotelReservationTypeUniqueIDItem)), __LINE__);
+            if (!$hotelReservationTypeUniqueIDItem instanceof \Devlabs91\TravelgatePushApi\StructType\UniqueID_Type) {
+                throw new \InvalidArgumentException(sprintf('The UniqueID property can only contain items of \Devlabs91\TravelgatePushApi\StructType\UniqueID_Type, "%s" given', is_object($hotelReservationTypeUniqueIDItem) ? get_class($hotelReservationTypeUniqueIDItem) : gettype($hotelReservationTypeUniqueIDItem)), __LINE__);
             }
         }
         $this->UniqueID = $uniqueID;
@@ -124,21 +124,21 @@ class HotelReservationType extends AbstractStructBase
     /**
      * Add item to UniqueID value
      * @throws \InvalidArgumentException
-     * @param \StructType\UniqueID_Type $item
-     * @return \StructType\HotelReservationType
+     * @param \Devlabs91\TravelgatePushApi\StructType\UniqueID_Type $item
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelReservationType
      */
-    public function addToUniqueID(\StructType\UniqueID_Type $item)
+    public function addToUniqueID(\Devlabs91\TravelgatePushApi\StructType\UniqueID_Type $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\UniqueID_Type) {
-            throw new \InvalidArgumentException(sprintf('The UniqueID property can only contain items of \StructType\UniqueID_Type, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\UniqueID_Type) {
+            throw new \InvalidArgumentException(sprintf('The UniqueID property can only contain items of \Devlabs91\TravelgatePushApi\StructType\UniqueID_Type, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->UniqueID[] = $item;
         return $this;
     }
     /**
      * Get RoomStays value
-     * @return \ArrayType\ArrayOfRoomStaysTypeRoomStay|null
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRoomStaysTypeRoomStay|null
      */
     public function getRoomStays()
     {
@@ -146,17 +146,17 @@ class HotelReservationType extends AbstractStructBase
     }
     /**
      * Set RoomStays value
-     * @param \ArrayType\ArrayOfRoomStaysTypeRoomStay $roomStays
-     * @return \StructType\HotelReservationType
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRoomStaysTypeRoomStay $roomStays
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelReservationType
      */
-    public function setRoomStays(\ArrayType\ArrayOfRoomStaysTypeRoomStay $roomStays = null)
+    public function setRoomStays(\Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRoomStaysTypeRoomStay $roomStays = null)
     {
         $this->RoomStays = $roomStays;
         return $this;
     }
     /**
      * Get ResGuests value
-     * @return \ArrayType\ArrayOfResGuestType|null
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfResGuestType|null
      */
     public function getResGuests()
     {
@@ -164,17 +164,17 @@ class HotelReservationType extends AbstractStructBase
     }
     /**
      * Set ResGuests value
-     * @param \ArrayType\ArrayOfResGuestType $resGuests
-     * @return \StructType\HotelReservationType
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfResGuestType $resGuests
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelReservationType
      */
-    public function setResGuests(\ArrayType\ArrayOfResGuestType $resGuests = null)
+    public function setResGuests(\Devlabs91\TravelgatePushApi\ArrayType\ArrayOfResGuestType $resGuests = null)
     {
         $this->ResGuests = $resGuests;
         return $this;
     }
     /**
      * Get ResGlobalInfo value
-     * @return \StructType\ResGlobalInfoType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\ResGlobalInfoType|null
      */
     public function getResGlobalInfo()
     {
@@ -182,17 +182,17 @@ class HotelReservationType extends AbstractStructBase
     }
     /**
      * Set ResGlobalInfo value
-     * @param \StructType\ResGlobalInfoType $resGlobalInfo
-     * @return \StructType\HotelReservationType
+     * @param \Devlabs91\TravelgatePushApi\StructType\ResGlobalInfoType $resGlobalInfo
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelReservationType
      */
-    public function setResGlobalInfo(\StructType\ResGlobalInfoType $resGlobalInfo = null)
+    public function setResGlobalInfo(\Devlabs91\TravelgatePushApi\StructType\ResGlobalInfoType $resGlobalInfo = null)
     {
         $this->ResGlobalInfo = $resGlobalInfo;
         return $this;
     }
     /**
      * Get TPA_Extensions value
-     * @return \StructType\TPA_ExtensionsType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\TPA_ExtensionsType|null
      */
     public function getTPA_Extensions()
     {
@@ -200,10 +200,10 @@ class HotelReservationType extends AbstractStructBase
     }
     /**
      * Set TPA_Extensions value
-     * @param \StructType\TPA_ExtensionsType $tPA_Extensions
-     * @return \StructType\HotelReservationType
+     * @param \Devlabs91\TravelgatePushApi\StructType\TPA_ExtensionsType $tPA_Extensions
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelReservationType
      */
-    public function setTPA_Extensions(\StructType\TPA_ExtensionsType $tPA_Extensions = null)
+    public function setTPA_Extensions(\Devlabs91\TravelgatePushApi\StructType\TPA_ExtensionsType $tPA_Extensions = null)
     {
         $this->TPA_Extensions = $tPA_Extensions;
         return $this;
@@ -219,7 +219,7 @@ class HotelReservationType extends AbstractStructBase
     /**
      * Set CreateDateTime value
      * @param string $createDateTime
-     * @return \StructType\HotelReservationType
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelReservationType
      */
     public function setCreateDateTime($createDateTime = null)
     {
@@ -241,7 +241,7 @@ class HotelReservationType extends AbstractStructBase
     /**
      * Set LastModifyDateTime value
      * @param string $lastModifyDateTime
-     * @return \StructType\HotelReservationType
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelReservationType
      */
     public function setLastModifyDateTime($lastModifyDateTime = null)
     {
@@ -263,7 +263,7 @@ class HotelReservationType extends AbstractStructBase
     /**
      * Set ResStatus value
      * @param string $resStatus
-     * @return \StructType\HotelReservationType
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelReservationType
      */
     public function setResStatus($resStatus = null)
     {
@@ -280,7 +280,7 @@ class HotelReservationType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HotelReservationType
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelReservationType
      */
     public static function __set_state(array $array)
     {

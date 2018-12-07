@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -36,7 +36,7 @@ class Comment extends ParagraphType
     /**
      * Set CommentOriginatorCode value
      * @param string $commentOriginatorCode
-     * @return \StructType\Comment
+     * @return \Devlabs91\TravelgatePushApi\StructType\Comment
      */
     public function setCommentOriginatorCode($commentOriginatorCode = null)
     {
@@ -53,7 +53,7 @@ class Comment extends ParagraphType
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Comment
+     * @return \Devlabs91\TravelgatePushApi\StructType\Comment
      */
     public static function __set_state(array $array)
     {

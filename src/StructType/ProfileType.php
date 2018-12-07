@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class ProfileType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\CustomerType
+     * @var \Devlabs91\TravelgatePushApi\StructType\CustomerType
      */
     public $Customer;
     /**
@@ -27,10 +27,10 @@ class ProfileType extends AbstractStructBase
      * Constructor method for ProfileType
      * @uses ProfileType::setCustomer()
      * @uses ProfileType::setProfileType()
-     * @param \StructType\CustomerType $customer
+     * @param \Devlabs91\TravelgatePushApi\StructType\CustomerType $customer
      * @param string $profileType
      */
-    public function __construct(\StructType\CustomerType $customer = null, $profileType = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\StructType\CustomerType $customer = null, $profileType = null)
     {
         $this
             ->setCustomer($customer)
@@ -38,7 +38,7 @@ class ProfileType extends AbstractStructBase
     }
     /**
      * Get Customer value
-     * @return \StructType\CustomerType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\CustomerType|null
      */
     public function getCustomer()
     {
@@ -46,10 +46,10 @@ class ProfileType extends AbstractStructBase
     }
     /**
      * Set Customer value
-     * @param \StructType\CustomerType $customer
-     * @return \StructType\ProfileType
+     * @param \Devlabs91\TravelgatePushApi\StructType\CustomerType $customer
+     * @return \Devlabs91\TravelgatePushApi\StructType\ProfileType
      */
-    public function setCustomer(\StructType\CustomerType $customer = null)
+    public function setCustomer(\Devlabs91\TravelgatePushApi\StructType\CustomerType $customer = null)
     {
         $this->Customer = $customer;
         return $this;
@@ -65,7 +65,7 @@ class ProfileType extends AbstractStructBase
     /**
      * Set ProfileType value
      * @param string $profileType
-     * @return \StructType\ProfileType
+     * @return \Devlabs91\TravelgatePushApi\StructType\ProfileType
      */
     public function setProfileType($profileType = null)
     {
@@ -82,7 +82,7 @@ class ProfileType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ProfileType
+     * @return \Devlabs91\TravelgatePushApi\StructType\ProfileType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class ImageDescriptionType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\ImageFormat[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\ImageFormat[]
      */
     public $ImageFormat;
     /**
@@ -23,7 +23,7 @@ class ImageDescriptionType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Description[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\Description[]
      */
     public $Description;
     /**
@@ -36,8 +36,8 @@ class ImageDescriptionType extends AbstractStructBase
      * @uses ImageDescriptionType::setImageFormat()
      * @uses ImageDescriptionType::setDescription()
      * @uses ImageDescriptionType::setCategory()
-     * @param \StructType\ImageFormat[] $imageFormat
-     * @param \StructType\Description[] $description
+     * @param \Devlabs91\TravelgatePushApi\StructType\ImageFormat[] $imageFormat
+     * @param \Devlabs91\TravelgatePushApi\StructType\Description[] $description
      * @param string $category
      */
     public function __construct(array $imageFormat = array(), array $description = array(), $category = null)
@@ -49,7 +49,7 @@ class ImageDescriptionType extends AbstractStructBase
     }
     /**
      * Get ImageFormat value
-     * @return \StructType\ImageFormat[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\ImageFormat[]|null
      */
     public function getImageFormat()
     {
@@ -58,15 +58,15 @@ class ImageDescriptionType extends AbstractStructBase
     /**
      * Set ImageFormat value
      * @throws \InvalidArgumentException
-     * @param \StructType\ImageFormat[] $imageFormat
-     * @return \StructType\ImageDescriptionType
+     * @param \Devlabs91\TravelgatePushApi\StructType\ImageFormat[] $imageFormat
+     * @return \Devlabs91\TravelgatePushApi\StructType\ImageDescriptionType
      */
     public function setImageFormat(array $imageFormat = array())
     {
         foreach ($imageFormat as $imageDescriptionTypeImageFormatItem) {
             // validation for constraint: itemType
-            if (!$imageDescriptionTypeImageFormatItem instanceof \StructType\ImageFormat) {
-                throw new \InvalidArgumentException(sprintf('The ImageFormat property can only contain items of \StructType\ImageFormat, "%s" given', is_object($imageDescriptionTypeImageFormatItem) ? get_class($imageDescriptionTypeImageFormatItem) : gettype($imageDescriptionTypeImageFormatItem)), __LINE__);
+            if (!$imageDescriptionTypeImageFormatItem instanceof \Devlabs91\TravelgatePushApi\StructType\ImageFormat) {
+                throw new \InvalidArgumentException(sprintf('The ImageFormat property can only contain items of \Devlabs91\TravelgatePushApi\StructType\ImageFormat, "%s" given', is_object($imageDescriptionTypeImageFormatItem) ? get_class($imageDescriptionTypeImageFormatItem) : gettype($imageDescriptionTypeImageFormatItem)), __LINE__);
             }
         }
         $this->ImageFormat = $imageFormat;
@@ -75,21 +75,21 @@ class ImageDescriptionType extends AbstractStructBase
     /**
      * Add item to ImageFormat value
      * @throws \InvalidArgumentException
-     * @param \StructType\ImageFormat $item
-     * @return \StructType\ImageDescriptionType
+     * @param \Devlabs91\TravelgatePushApi\StructType\ImageFormat $item
+     * @return \Devlabs91\TravelgatePushApi\StructType\ImageDescriptionType
      */
-    public function addToImageFormat(\StructType\ImageFormat $item)
+    public function addToImageFormat(\Devlabs91\TravelgatePushApi\StructType\ImageFormat $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\ImageFormat) {
-            throw new \InvalidArgumentException(sprintf('The ImageFormat property can only contain items of \StructType\ImageFormat, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\ImageFormat) {
+            throw new \InvalidArgumentException(sprintf('The ImageFormat property can only contain items of \Devlabs91\TravelgatePushApi\StructType\ImageFormat, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->ImageFormat[] = $item;
         return $this;
     }
     /**
      * Get Description value
-     * @return \StructType\Description[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Description[]|null
      */
     public function getDescription()
     {
@@ -98,15 +98,15 @@ class ImageDescriptionType extends AbstractStructBase
     /**
      * Set Description value
      * @throws \InvalidArgumentException
-     * @param \StructType\Description[] $description
-     * @return \StructType\ImageDescriptionType
+     * @param \Devlabs91\TravelgatePushApi\StructType\Description[] $description
+     * @return \Devlabs91\TravelgatePushApi\StructType\ImageDescriptionType
      */
     public function setDescription(array $description = array())
     {
         foreach ($description as $imageDescriptionTypeDescriptionItem) {
             // validation for constraint: itemType
-            if (!$imageDescriptionTypeDescriptionItem instanceof \StructType\Description) {
-                throw new \InvalidArgumentException(sprintf('The Description property can only contain items of \StructType\Description, "%s" given', is_object($imageDescriptionTypeDescriptionItem) ? get_class($imageDescriptionTypeDescriptionItem) : gettype($imageDescriptionTypeDescriptionItem)), __LINE__);
+            if (!$imageDescriptionTypeDescriptionItem instanceof \Devlabs91\TravelgatePushApi\StructType\Description) {
+                throw new \InvalidArgumentException(sprintf('The Description property can only contain items of \Devlabs91\TravelgatePushApi\StructType\Description, "%s" given', is_object($imageDescriptionTypeDescriptionItem) ? get_class($imageDescriptionTypeDescriptionItem) : gettype($imageDescriptionTypeDescriptionItem)), __LINE__);
             }
         }
         $this->Description = $description;
@@ -115,14 +115,14 @@ class ImageDescriptionType extends AbstractStructBase
     /**
      * Add item to Description value
      * @throws \InvalidArgumentException
-     * @param \StructType\Description $item
-     * @return \StructType\ImageDescriptionType
+     * @param \Devlabs91\TravelgatePushApi\StructType\Description $item
+     * @return \Devlabs91\TravelgatePushApi\StructType\ImageDescriptionType
      */
-    public function addToDescription(\StructType\Description $item)
+    public function addToDescription(\Devlabs91\TravelgatePushApi\StructType\Description $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Description) {
-            throw new \InvalidArgumentException(sprintf('The Description property can only contain items of \StructType\Description, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\Description) {
+            throw new \InvalidArgumentException(sprintf('The Description property can only contain items of \Devlabs91\TravelgatePushApi\StructType\Description, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->Description[] = $item;
         return $this;
@@ -138,7 +138,7 @@ class ImageDescriptionType extends AbstractStructBase
     /**
      * Set Category value
      * @param string $category
-     * @return \StructType\ImageDescriptionType
+     * @return \Devlabs91\TravelgatePushApi\StructType\ImageDescriptionType
      */
     public function setCategory($category = null)
     {
@@ -155,7 +155,7 @@ class ImageDescriptionType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ImageDescriptionType
+     * @return \Devlabs91\TravelgatePushApi\StructType\ImageDescriptionType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class HotelRoomListType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfHotelRoomListTypeRoomStay
+     * @var \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfHotelRoomListTypeRoomStay
      */
     public $RoomStays;
     /**
@@ -33,11 +33,11 @@ class HotelRoomListType extends AbstractStructBase
      * @uses HotelRoomListType::setRoomStays()
      * @uses HotelRoomListType::setHotelCode()
      * @uses HotelRoomListType::setHotelName()
-     * @param \ArrayType\ArrayOfHotelRoomListTypeRoomStay $roomStays
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfHotelRoomListTypeRoomStay $roomStays
      * @param string $hotelCode
      * @param string $hotelName
      */
-    public function __construct(\ArrayType\ArrayOfHotelRoomListTypeRoomStay $roomStays = null, $hotelCode = null, $hotelName = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\ArrayType\ArrayOfHotelRoomListTypeRoomStay $roomStays = null, $hotelCode = null, $hotelName = null)
     {
         $this
             ->setRoomStays($roomStays)
@@ -46,7 +46,7 @@ class HotelRoomListType extends AbstractStructBase
     }
     /**
      * Get RoomStays value
-     * @return \ArrayType\ArrayOfHotelRoomListTypeRoomStay|null
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfHotelRoomListTypeRoomStay|null
      */
     public function getRoomStays()
     {
@@ -54,10 +54,10 @@ class HotelRoomListType extends AbstractStructBase
     }
     /**
      * Set RoomStays value
-     * @param \ArrayType\ArrayOfHotelRoomListTypeRoomStay $roomStays
-     * @return \StructType\HotelRoomListType
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfHotelRoomListTypeRoomStay $roomStays
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRoomListType
      */
-    public function setRoomStays(\ArrayType\ArrayOfHotelRoomListTypeRoomStay $roomStays = null)
+    public function setRoomStays(\Devlabs91\TravelgatePushApi\ArrayType\ArrayOfHotelRoomListTypeRoomStay $roomStays = null)
     {
         $this->RoomStays = $roomStays;
         return $this;
@@ -73,7 +73,7 @@ class HotelRoomListType extends AbstractStructBase
     /**
      * Set HotelCode value
      * @param string $hotelCode
-     * @return \StructType\HotelRoomListType
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRoomListType
      */
     public function setHotelCode($hotelCode = null)
     {
@@ -95,7 +95,7 @@ class HotelRoomListType extends AbstractStructBase
     /**
      * Set HotelName value
      * @param string $hotelName
-     * @return \StructType\HotelRoomListType
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRoomListType
      */
     public function setHotelName($hotelName = null)
     {
@@ -112,7 +112,7 @@ class HotelRoomListType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HotelRoomListType
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRoomListType
      */
     public static function __set_state(array $array)
     {

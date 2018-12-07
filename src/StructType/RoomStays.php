@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,13 +15,13 @@ class RoomStays extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\RoomStay[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\RoomStay[]
      */
     public $RoomStay;
     /**
      * Constructor method for RoomStays
      * @uses RoomStays::setRoomStay()
-     * @param \StructType\RoomStay[] $roomStay
+     * @param \Devlabs91\TravelgatePushApi\StructType\RoomStay[] $roomStay
      */
     public function __construct(array $roomStay = array())
     {
@@ -30,7 +30,7 @@ class RoomStays extends AbstractStructBase
     }
     /**
      * Get RoomStay value
-     * @return \StructType\RoomStay[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\RoomStay[]|null
      */
     public function getRoomStay()
     {
@@ -39,15 +39,15 @@ class RoomStays extends AbstractStructBase
     /**
      * Set RoomStay value
      * @throws \InvalidArgumentException
-     * @param \StructType\RoomStay[] $roomStay
-     * @return \StructType\RoomStays
+     * @param \Devlabs91\TravelgatePushApi\StructType\RoomStay[] $roomStay
+     * @return \Devlabs91\TravelgatePushApi\StructType\RoomStays
      */
     public function setRoomStay(array $roomStay = array())
     {
         foreach ($roomStay as $roomStaysRoomStayItem) {
             // validation for constraint: itemType
-            if (!$roomStaysRoomStayItem instanceof \StructType\RoomStay) {
-                throw new \InvalidArgumentException(sprintf('The RoomStay property can only contain items of \StructType\RoomStay, "%s" given', is_object($roomStaysRoomStayItem) ? get_class($roomStaysRoomStayItem) : gettype($roomStaysRoomStayItem)), __LINE__);
+            if (!$roomStaysRoomStayItem instanceof \Devlabs91\TravelgatePushApi\StructType\RoomStay) {
+                throw new \InvalidArgumentException(sprintf('The RoomStay property can only contain items of \Devlabs91\TravelgatePushApi\StructType\RoomStay, "%s" given', is_object($roomStaysRoomStayItem) ? get_class($roomStaysRoomStayItem) : gettype($roomStaysRoomStayItem)), __LINE__);
             }
         }
         $this->RoomStay = $roomStay;
@@ -56,14 +56,14 @@ class RoomStays extends AbstractStructBase
     /**
      * Add item to RoomStay value
      * @throws \InvalidArgumentException
-     * @param \StructType\RoomStay $item
-     * @return \StructType\RoomStays
+     * @param \Devlabs91\TravelgatePushApi\StructType\RoomStay $item
+     * @return \Devlabs91\TravelgatePushApi\StructType\RoomStays
      */
-    public function addToRoomStay(\StructType\RoomStay $item)
+    public function addToRoomStay(\Devlabs91\TravelgatePushApi\StructType\RoomStay $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\RoomStay) {
-            throw new \InvalidArgumentException(sprintf('The RoomStay property can only contain items of \StructType\RoomStay, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\RoomStay) {
+            throw new \InvalidArgumentException(sprintf('The RoomStay property can only contain items of \Devlabs91\TravelgatePushApi\StructType\RoomStay, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->RoomStay[] = $item;
         return $this;
@@ -74,7 +74,7 @@ class RoomStays extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\RoomStays
+     * @return \Devlabs91\TravelgatePushApi\StructType\RoomStays
      */
     public static function __set_state(array $array)
     {

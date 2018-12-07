@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,13 +15,13 @@ class RequiredPaymentsType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\GuaranteePayment[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\GuaranteePayment[]
      */
     public $GuaranteePayment;
     /**
      * Constructor method for RequiredPaymentsType
      * @uses RequiredPaymentsType::setGuaranteePayment()
-     * @param \StructType\GuaranteePayment[] $guaranteePayment
+     * @param \Devlabs91\TravelgatePushApi\StructType\GuaranteePayment[] $guaranteePayment
      */
     public function __construct(array $guaranteePayment = array())
     {
@@ -30,7 +30,7 @@ class RequiredPaymentsType extends AbstractStructBase
     }
     /**
      * Get GuaranteePayment value
-     * @return \StructType\GuaranteePayment[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\GuaranteePayment[]|null
      */
     public function getGuaranteePayment()
     {
@@ -39,15 +39,15 @@ class RequiredPaymentsType extends AbstractStructBase
     /**
      * Set GuaranteePayment value
      * @throws \InvalidArgumentException
-     * @param \StructType\GuaranteePayment[] $guaranteePayment
-     * @return \StructType\RequiredPaymentsType
+     * @param \Devlabs91\TravelgatePushApi\StructType\GuaranteePayment[] $guaranteePayment
+     * @return \Devlabs91\TravelgatePushApi\StructType\RequiredPaymentsType
      */
     public function setGuaranteePayment(array $guaranteePayment = array())
     {
         foreach ($guaranteePayment as $requiredPaymentsTypeGuaranteePaymentItem) {
             // validation for constraint: itemType
-            if (!$requiredPaymentsTypeGuaranteePaymentItem instanceof \StructType\GuaranteePayment) {
-                throw new \InvalidArgumentException(sprintf('The GuaranteePayment property can only contain items of \StructType\GuaranteePayment, "%s" given', is_object($requiredPaymentsTypeGuaranteePaymentItem) ? get_class($requiredPaymentsTypeGuaranteePaymentItem) : gettype($requiredPaymentsTypeGuaranteePaymentItem)), __LINE__);
+            if (!$requiredPaymentsTypeGuaranteePaymentItem instanceof \Devlabs91\TravelgatePushApi\StructType\GuaranteePayment) {
+                throw new \InvalidArgumentException(sprintf('The GuaranteePayment property can only contain items of \Devlabs91\TravelgatePushApi\StructType\GuaranteePayment, "%s" given', is_object($requiredPaymentsTypeGuaranteePaymentItem) ? get_class($requiredPaymentsTypeGuaranteePaymentItem) : gettype($requiredPaymentsTypeGuaranteePaymentItem)), __LINE__);
             }
         }
         $this->GuaranteePayment = $guaranteePayment;
@@ -56,14 +56,14 @@ class RequiredPaymentsType extends AbstractStructBase
     /**
      * Add item to GuaranteePayment value
      * @throws \InvalidArgumentException
-     * @param \StructType\GuaranteePayment $item
-     * @return \StructType\RequiredPaymentsType
+     * @param \Devlabs91\TravelgatePushApi\StructType\GuaranteePayment $item
+     * @return \Devlabs91\TravelgatePushApi\StructType\RequiredPaymentsType
      */
-    public function addToGuaranteePayment(\StructType\GuaranteePayment $item)
+    public function addToGuaranteePayment(\Devlabs91\TravelgatePushApi\StructType\GuaranteePayment $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\GuaranteePayment) {
-            throw new \InvalidArgumentException(sprintf('The GuaranteePayment property can only contain items of \StructType\GuaranteePayment, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\GuaranteePayment) {
+            throw new \InvalidArgumentException(sprintf('The GuaranteePayment property can only contain items of \Devlabs91\TravelgatePushApi\StructType\GuaranteePayment, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->GuaranteePayment[] = $item;
         return $this;
@@ -74,7 +74,7 @@ class RequiredPaymentsType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\RequiredPaymentsType
+     * @return \Devlabs91\TravelgatePushApi\StructType\RequiredPaymentsType
      */
     public static function __set_state(array $array)
     {

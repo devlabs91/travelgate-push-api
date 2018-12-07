@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -36,7 +36,7 @@ class Amenity extends AbstractStructBase
     /**
      * Set RoomAmenityCode value
      * @param string $roomAmenityCode
-     * @return \StructType\Amenity
+     * @return \Devlabs91\TravelgatePushApi\StructType\Amenity
      */
     public function setRoomAmenityCode($roomAmenityCode = null)
     {
@@ -53,7 +53,7 @@ class Amenity extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Amenity
+     * @return \Devlabs91\TravelgatePushApi\StructType\Amenity
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,7 +16,7 @@ class OTA_HotelDescriptiveInfoRSHotelDescriptiveContents extends AbstractStructB
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\HotelDescriptiveContent[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\HotelDescriptiveContent[]
      */
     public $HotelDescriptiveContent;
     /**
@@ -28,7 +28,7 @@ class OTA_HotelDescriptiveInfoRSHotelDescriptiveContents extends AbstractStructB
      * Constructor method for OTA_HotelDescriptiveInfoRSHotelDescriptiveContents
      * @uses OTA_HotelDescriptiveInfoRSHotelDescriptiveContents::setHotelDescriptiveContent()
      * @uses OTA_HotelDescriptiveInfoRSHotelDescriptiveContents::setHotelCodeCode()
-     * @param \StructType\HotelDescriptiveContent[] $hotelDescriptiveContent
+     * @param \Devlabs91\TravelgatePushApi\StructType\HotelDescriptiveContent[] $hotelDescriptiveContent
      * @param string $hotelCodeCode
      */
     public function __construct(array $hotelDescriptiveContent = array(), $hotelCodeCode = null)
@@ -39,7 +39,7 @@ class OTA_HotelDescriptiveInfoRSHotelDescriptiveContents extends AbstractStructB
     }
     /**
      * Get HotelDescriptiveContent value
-     * @return \StructType\HotelDescriptiveContent[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelDescriptiveContent[]|null
      */
     public function getHotelDescriptiveContent()
     {
@@ -48,15 +48,15 @@ class OTA_HotelDescriptiveInfoRSHotelDescriptiveContents extends AbstractStructB
     /**
      * Set HotelDescriptiveContent value
      * @throws \InvalidArgumentException
-     * @param \StructType\HotelDescriptiveContent[] $hotelDescriptiveContent
-     * @return \StructType\OTA_HotelDescriptiveInfoRSHotelDescriptiveContents
+     * @param \Devlabs91\TravelgatePushApi\StructType\HotelDescriptiveContent[] $hotelDescriptiveContent
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_HotelDescriptiveInfoRSHotelDescriptiveContents
      */
     public function setHotelDescriptiveContent(array $hotelDescriptiveContent = array())
     {
         foreach ($hotelDescriptiveContent as $oTA_HotelDescriptiveInfoRSHotelDescriptiveContentsHotelDescriptiveContentItem) {
             // validation for constraint: itemType
-            if (!$oTA_HotelDescriptiveInfoRSHotelDescriptiveContentsHotelDescriptiveContentItem instanceof \StructType\HotelDescriptiveContent) {
-                throw new \InvalidArgumentException(sprintf('The HotelDescriptiveContent property can only contain items of \StructType\HotelDescriptiveContent, "%s" given', is_object($oTA_HotelDescriptiveInfoRSHotelDescriptiveContentsHotelDescriptiveContentItem) ? get_class($oTA_HotelDescriptiveInfoRSHotelDescriptiveContentsHotelDescriptiveContentItem) : gettype($oTA_HotelDescriptiveInfoRSHotelDescriptiveContentsHotelDescriptiveContentItem)), __LINE__);
+            if (!$oTA_HotelDescriptiveInfoRSHotelDescriptiveContentsHotelDescriptiveContentItem instanceof \Devlabs91\TravelgatePushApi\StructType\HotelDescriptiveContent) {
+                throw new \InvalidArgumentException(sprintf('The HotelDescriptiveContent property can only contain items of \Devlabs91\TravelgatePushApi\StructType\HotelDescriptiveContent, "%s" given', is_object($oTA_HotelDescriptiveInfoRSHotelDescriptiveContentsHotelDescriptiveContentItem) ? get_class($oTA_HotelDescriptiveInfoRSHotelDescriptiveContentsHotelDescriptiveContentItem) : gettype($oTA_HotelDescriptiveInfoRSHotelDescriptiveContentsHotelDescriptiveContentItem)), __LINE__);
             }
         }
         $this->HotelDescriptiveContent = $hotelDescriptiveContent;
@@ -65,14 +65,14 @@ class OTA_HotelDescriptiveInfoRSHotelDescriptiveContents extends AbstractStructB
     /**
      * Add item to HotelDescriptiveContent value
      * @throws \InvalidArgumentException
-     * @param \StructType\HotelDescriptiveContent $item
-     * @return \StructType\OTA_HotelDescriptiveInfoRSHotelDescriptiveContents
+     * @param \Devlabs91\TravelgatePushApi\StructType\HotelDescriptiveContent $item
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_HotelDescriptiveInfoRSHotelDescriptiveContents
      */
-    public function addToHotelDescriptiveContent(\StructType\HotelDescriptiveContent $item)
+    public function addToHotelDescriptiveContent(\Devlabs91\TravelgatePushApi\StructType\HotelDescriptiveContent $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\HotelDescriptiveContent) {
-            throw new \InvalidArgumentException(sprintf('The HotelDescriptiveContent property can only contain items of \StructType\HotelDescriptiveContent, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\HotelDescriptiveContent) {
+            throw new \InvalidArgumentException(sprintf('The HotelDescriptiveContent property can only contain items of \Devlabs91\TravelgatePushApi\StructType\HotelDescriptiveContent, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->HotelDescriptiveContent[] = $item;
         return $this;
@@ -88,7 +88,7 @@ class OTA_HotelDescriptiveInfoRSHotelDescriptiveContents extends AbstractStructB
     /**
      * Set HotelCodeCode value
      * @param string $hotelCodeCode
-     * @return \StructType\OTA_HotelDescriptiveInfoRSHotelDescriptiveContents
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_HotelDescriptiveInfoRSHotelDescriptiveContents
      */
     public function setHotelCodeCode($hotelCodeCode = null)
     {
@@ -105,7 +105,7 @@ class OTA_HotelDescriptiveInfoRSHotelDescriptiveContents extends AbstractStructB
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\OTA_HotelDescriptiveInfoRSHotelDescriptiveContents
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_HotelDescriptiveInfoRSHotelDescriptiveContents
      */
     public static function __set_state(array $array)
     {

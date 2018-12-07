@@ -19,16 +19,16 @@ require_once __DIR__ . '/vendor/autoload.php';
  */
 $options = array(
     \WsdlToPhp\PackageBase\AbstractSoapClientBase::WSDL_URL => 'https://pushprovider.xmltravelgate.com/Service/Hotel/Provider/ProviderGEN.svc?wsdl',
-    \WsdlToPhp\PackageBase\AbstractSoapClientBase::WSDL_CLASSMAP => ClassMap::get(),
+    \WsdlToPhp\PackageBase\AbstractSoapClientBase::WSDL_CLASSMAP => \Devlabs91\TravelgatePushApi\ClassMap::get(),
 );
 /**
  * Samples for Check ServiceType
  */
-$check = new \ServiceType\Check($options);
+$check = new \Devlabs91\TravelgatePushApi\ServiceType\Check($options);
 /**
  * Sample call for CheckStatus operation/method
  */
-if ($check->CheckStatus(new \StructType\CheckStatus()) !== false) {
+if ($check->CheckStatus(new \Devlabs91\TravelgatePushApi\StructType\CheckStatus()) !== false) {
     print_r($check->getResult());
 } else {
     print_r($check->getLastError());
@@ -36,7 +36,7 @@ if ($check->CheckStatus(new \StructType\CheckStatus()) !== false) {
 /**
  * Sample call for CheckFlux operation/method
  */
-if ($check->CheckFlux(new \StructType\CheckFlux()) !== false) {
+if ($check->CheckFlux(new \Devlabs91\TravelgatePushApi\StructType\CheckFlux()) !== false) {
     print_r($check->getResult());
 } else {
     print_r($check->getLastError());
@@ -44,11 +44,11 @@ if ($check->CheckFlux(new \StructType\CheckFlux()) !== false) {
 /**
  * Samples for Hotel ServiceType
  */
-$hotel = new \ServiceType\Hotel($options);
+$hotel = new \Devlabs91\TravelgatePushApi\ServiceType\Hotel($options);
 /**
  * Sample call for HotelAvail operation/method
  */
-if ($hotel->HotelAvail(new \StructType\HotelAvail()) !== false) {
+if ($hotel->HotelAvail(new \Devlabs91\TravelgatePushApi\StructType\HotelAvail()) !== false) {
     print_r($hotel->getResult());
 } else {
     print_r($hotel->getLastError());
@@ -56,7 +56,7 @@ if ($hotel->HotelAvail(new \StructType\HotelAvail()) !== false) {
 /**
  * Sample call for HotelValuation operation/method
  */
-if ($hotel->HotelValuation(new \StructType\HotelValuation()) !== false) {
+if ($hotel->HotelValuation(new \Devlabs91\TravelgatePushApi\StructType\HotelValuation()) !== false) {
     print_r($hotel->getResult());
 } else {
     print_r($hotel->getLastError());
@@ -64,7 +64,7 @@ if ($hotel->HotelValuation(new \StructType\HotelValuation()) !== false) {
 /**
  * Sample call for HotelRes operation/method
  */
-if ($hotel->HotelRes(new \StructType\HotelRes()) !== false) {
+if ($hotel->HotelRes(new \Devlabs91\TravelgatePushApi\StructType\HotelRes()) !== false) {
     print_r($hotel->getResult());
 } else {
     print_r($hotel->getLastError());
@@ -72,7 +72,7 @@ if ($hotel->HotelRes(new \StructType\HotelRes()) !== false) {
 /**
  * Sample call for HotelResRead operation/method
  */
-if ($hotel->HotelResRead(new \StructType\HotelResRead()) !== false) {
+if ($hotel->HotelResRead(new \Devlabs91\TravelgatePushApi\StructType\HotelResRead()) !== false) {
     print_r($hotel->getResult());
 } else {
     print_r($hotel->getLastError());
@@ -80,7 +80,7 @@ if ($hotel->HotelResRead(new \StructType\HotelResRead()) !== false) {
 /**
  * Sample call for HotelReservationList operation/method
  */
-if ($hotel->HotelReservationList(new \StructType\HotelReservationList()) !== false) {
+if ($hotel->HotelReservationList(new \Devlabs91\TravelgatePushApi\StructType\HotelReservationList()) !== false) {
     print_r($hotel->getResult());
 } else {
     print_r($hotel->getLastError());
@@ -88,7 +88,7 @@ if ($hotel->HotelReservationList(new \StructType\HotelReservationList()) !== fal
 /**
  * Sample call for HotelDescriptiveInfo operation/method
  */
-if ($hotel->HotelDescriptiveInfo(new \StructType\HotelDescriptiveInfo()) !== false) {
+if ($hotel->HotelDescriptiveInfo(new \Devlabs91\TravelgatePushApi\StructType\HotelDescriptiveInfo()) !== false) {
     print_r($hotel->getResult());
 } else {
     print_r($hotel->getLastError());
@@ -96,7 +96,7 @@ if ($hotel->HotelDescriptiveInfo(new \StructType\HotelDescriptiveInfo()) !== fal
 /**
  * Sample call for HotelListInfo operation/method
  */
-if ($hotel->HotelListInfo(new \StructType\HotelListInfo()) !== false) {
+if ($hotel->HotelListInfo(new \Devlabs91\TravelgatePushApi\StructType\HotelListInfo()) !== false) {
     print_r($hotel->getResult());
 } else {
     print_r($hotel->getLastError());
@@ -104,7 +104,7 @@ if ($hotel->HotelListInfo(new \StructType\HotelListInfo()) !== false) {
 /**
  * Sample call for HotelAvailNotif operation/method
  */
-if ($hotel->HotelAvailNotif(new \StructType\HotelAvailNotif()) !== false) {
+if ($hotel->HotelAvailNotif(new \Devlabs91\TravelgatePushApi\StructType\HotelAvailNotif()) !== false) {
     print_r($hotel->getResult());
 } else {
     print_r($hotel->getLastError());
@@ -112,7 +112,7 @@ if ($hotel->HotelAvailNotif(new \StructType\HotelAvailNotif()) !== false) {
 /**
  * Sample call for HotelRatePlanNotif operation/method
  */
-if ($hotel->HotelRatePlanNotif(new \StructType\HotelRatePlanNotif()) !== false) {
+if ($hotel->HotelRatePlanNotif(new \Devlabs91\TravelgatePushApi\StructType\HotelRatePlanNotif()) !== false) {
     print_r($hotel->getResult());
 } else {
     print_r($hotel->getLastError());
@@ -120,7 +120,7 @@ if ($hotel->HotelRatePlanNotif(new \StructType\HotelRatePlanNotif()) !== false) 
 /**
  * Sample call for HotelRatePlanInventoryNotif operation/method
  */
-if ($hotel->HotelRatePlanInventoryNotif(new \StructType\HotelRatePlanInventoryNotif()) !== false) {
+if ($hotel->HotelRatePlanInventoryNotif(new \Devlabs91\TravelgatePushApi\StructType\HotelRatePlanInventoryNotif()) !== false) {
     print_r($hotel->getResult());
 } else {
     print_r($hotel->getLastError());
@@ -128,7 +128,7 @@ if ($hotel->HotelRatePlanInventoryNotif(new \StructType\HotelRatePlanInventoryNo
 /**
  * Sample call for HotelRatePlanRetrieve operation/method
  */
-if ($hotel->HotelRatePlanRetrieve(new \StructType\HotelRatePlanRetrieve()) !== false) {
+if ($hotel->HotelRatePlanRetrieve(new \Devlabs91\TravelgatePushApi\StructType\HotelRatePlanRetrieve()) !== false) {
     print_r($hotel->getResult());
 } else {
     print_r($hotel->getLastError());
@@ -136,7 +136,7 @@ if ($hotel->HotelRatePlanRetrieve(new \StructType\HotelRatePlanRetrieve()) !== f
 /**
  * Sample call for HotelAvailRetrieve operation/method
  */
-if ($hotel->HotelAvailRetrieve(new \StructType\HotelAvailRetrieve()) !== false) {
+if ($hotel->HotelAvailRetrieve(new \Devlabs91\TravelgatePushApi\StructType\HotelAvailRetrieve()) !== false) {
     print_r($hotel->getResult());
 } else {
     print_r($hotel->getLastError());
@@ -144,7 +144,7 @@ if ($hotel->HotelAvailRetrieve(new \StructType\HotelAvailRetrieve()) !== false) 
 /**
  * Sample call for HotelRatePlanInventoryRetrieve operation/method
  */
-if ($hotel->HotelRatePlanInventoryRetrieve(new \StructType\HotelRatePlanInventoryRetrieve()) !== false) {
+if ($hotel->HotelRatePlanInventoryRetrieve(new \Devlabs91\TravelgatePushApi\StructType\HotelRatePlanInventoryRetrieve()) !== false) {
     print_r($hotel->getResult());
 } else {
     print_r($hotel->getLastError());
@@ -152,7 +152,7 @@ if ($hotel->HotelRatePlanInventoryRetrieve(new \StructType\HotelRatePlanInventor
 /**
  * Sample call for HotelResRetrieve operation/method
  */
-if ($hotel->HotelResRetrieve(new \StructType\HotelResRetrieve()) !== false) {
+if ($hotel->HotelResRetrieve(new \Devlabs91\TravelgatePushApi\StructType\HotelResRetrieve()) !== false) {
     print_r($hotel->getResult());
 } else {
     print_r($hotel->getLastError());
@@ -160,7 +160,7 @@ if ($hotel->HotelResRetrieve(new \StructType\HotelResRetrieve()) !== false) {
 /**
  * Sample call for HotelRoomListRetrieve operation/method
  */
-if ($hotel->HotelRoomListRetrieve(new \StructType\HotelRoomListRetrieve()) !== false) {
+if ($hotel->HotelRoomListRetrieve(new \Devlabs91\TravelgatePushApi\StructType\HotelRoomListRetrieve()) !== false) {
     print_r($hotel->getResult());
 } else {
     print_r($hotel->getLastError());
@@ -168,11 +168,11 @@ if ($hotel->HotelRoomListRetrieve(new \StructType\HotelRoomListRetrieve()) !== f
 /**
  * Samples for Cancel ServiceType
  */
-$cancel = new \ServiceType\Cancel($options);
+$cancel = new \Devlabs91\TravelgatePushApi\ServiceType\Cancel($options);
 /**
  * Sample call for Cancel operation/method
  */
-if ($cancel->Cancel(new \StructType\Cancel()) !== false) {
+if ($cancel->Cancel(new \Devlabs91\TravelgatePushApi\StructType\Cancel()) !== false) {
     print_r($cancel->getResult());
 } else {
     print_r($cancel->getLastError());

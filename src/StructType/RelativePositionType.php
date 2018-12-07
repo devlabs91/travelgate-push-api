@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -36,7 +36,7 @@ class RelativePositionType extends AbstractStructBase
     /**
      * Set Name value
      * @param string $name
-     * @return \StructType\RelativePositionType
+     * @return \Devlabs91\TravelgatePushApi\StructType\RelativePositionType
      */
     public function setName($name = null)
     {
@@ -53,7 +53,7 @@ class RelativePositionType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\RelativePositionType
+     * @return \Devlabs91\TravelgatePushApi\StructType\RelativePositionType
      */
     public static function __set_state(array $array)
     {

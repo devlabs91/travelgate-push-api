@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -60,7 +60,7 @@ class Deadline extends AbstractStructBase
     /**
      * Set AbsoluteDeadline value
      * @param string $absoluteDeadline
-     * @return \StructType\Deadline
+     * @return \Devlabs91\TravelgatePushApi\StructType\Deadline
      */
     public function setAbsoluteDeadline($absoluteDeadline = null)
     {
@@ -81,17 +81,17 @@ class Deadline extends AbstractStructBase
     }
     /**
      * Set OffsetTimeUnit value
-     * @uses \EnumType\TimeUnitType::valueIsValid()
-     * @uses \EnumType\TimeUnitType::getValidValues()
+     * @uses \Devlabs91\TravelgatePushApi\EnumType\TimeUnitType::valueIsValid()
+     * @uses \Devlabs91\TravelgatePushApi\EnumType\TimeUnitType::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $offsetTimeUnit
-     * @return \StructType\Deadline
+     * @return \Devlabs91\TravelgatePushApi\StructType\Deadline
      */
     public function setOffsetTimeUnit($offsetTimeUnit = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\TimeUnitType::valueIsValid($offsetTimeUnit)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $offsetTimeUnit, implode(', ', \EnumType\TimeUnitType::getValidValues())), __LINE__);
+        if (!\Devlabs91\TravelgatePushApi\EnumType\TimeUnitType::valueIsValid($offsetTimeUnit)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $offsetTimeUnit, implode(', ', \Devlabs91\TravelgatePushApi\EnumType\TimeUnitType::getValidValues())), __LINE__);
         }
         $this->OffsetTimeUnit = $offsetTimeUnit;
         return $this;
@@ -107,7 +107,7 @@ class Deadline extends AbstractStructBase
     /**
      * Set OffsetUnitMultiplier value
      * @param int $offsetUnitMultiplier
-     * @return \StructType\Deadline
+     * @return \Devlabs91\TravelgatePushApi\StructType\Deadline
      */
     public function setOffsetUnitMultiplier($offsetUnitMultiplier = null)
     {
@@ -129,7 +129,7 @@ class Deadline extends AbstractStructBase
     /**
      * Set OffsetDropTime value
      * @param string $offsetDropTime
-     * @return \StructType\Deadline
+     * @return \Devlabs91\TravelgatePushApi\StructType\Deadline
      */
     public function setOffsetDropTime($offsetDropTime = null)
     {
@@ -146,7 +146,7 @@ class Deadline extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Deadline
+     * @return \Devlabs91\TravelgatePushApi\StructType\Deadline
      */
     public static function __set_state(array $array)
     {

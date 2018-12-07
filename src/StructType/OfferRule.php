@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class OfferRule extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\DateRestriction[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\DateRestriction[]
      */
     public $DateRestriction;
     /**
@@ -23,7 +23,7 @@ class OfferRule extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\LengthsOfStayType
+     * @var \Devlabs91\TravelgatePushApi\StructType\LengthsOfStayType
      */
     public $LengthsOfStay;
     /**
@@ -31,7 +31,7 @@ class OfferRule extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\DOW_RestrictionsType
+     * @var \Devlabs91\TravelgatePushApi\StructType\DOW_RestrictionsType
      */
     public $DOW_Restrictions;
     /**
@@ -39,7 +39,7 @@ class OfferRule extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfOfferTypeOfferRuleInventory
+     * @var \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfOfferTypeOfferRuleInventory
      */
     public $Inventories;
     /**
@@ -48,12 +48,12 @@ class OfferRule extends AbstractStructBase
      * @uses OfferRule::setLengthsOfStay()
      * @uses OfferRule::setDOW_Restrictions()
      * @uses OfferRule::setInventories()
-     * @param \StructType\DateRestriction[] $dateRestriction
-     * @param \StructType\LengthsOfStayType $lengthsOfStay
-     * @param \StructType\DOW_RestrictionsType $dOW_Restrictions
-     * @param \ArrayType\ArrayOfOfferTypeOfferRuleInventory $inventories
+     * @param \Devlabs91\TravelgatePushApi\StructType\DateRestriction[] $dateRestriction
+     * @param \Devlabs91\TravelgatePushApi\StructType\LengthsOfStayType $lengthsOfStay
+     * @param \Devlabs91\TravelgatePushApi\StructType\DOW_RestrictionsType $dOW_Restrictions
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfOfferTypeOfferRuleInventory $inventories
      */
-    public function __construct(array $dateRestriction = array(), \StructType\LengthsOfStayType $lengthsOfStay = null, \StructType\DOW_RestrictionsType $dOW_Restrictions = null, \ArrayType\ArrayOfOfferTypeOfferRuleInventory $inventories = null)
+    public function __construct(array $dateRestriction = array(), \Devlabs91\TravelgatePushApi\StructType\LengthsOfStayType $lengthsOfStay = null, \Devlabs91\TravelgatePushApi\StructType\DOW_RestrictionsType $dOW_Restrictions = null, \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfOfferTypeOfferRuleInventory $inventories = null)
     {
         $this
             ->setDateRestriction($dateRestriction)
@@ -63,7 +63,7 @@ class OfferRule extends AbstractStructBase
     }
     /**
      * Get DateRestriction value
-     * @return \StructType\DateRestriction[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\DateRestriction[]|null
      */
     public function getDateRestriction()
     {
@@ -72,15 +72,15 @@ class OfferRule extends AbstractStructBase
     /**
      * Set DateRestriction value
      * @throws \InvalidArgumentException
-     * @param \StructType\DateRestriction[] $dateRestriction
-     * @return \StructType\OfferRule
+     * @param \Devlabs91\TravelgatePushApi\StructType\DateRestriction[] $dateRestriction
+     * @return \Devlabs91\TravelgatePushApi\StructType\OfferRule
      */
     public function setDateRestriction(array $dateRestriction = array())
     {
         foreach ($dateRestriction as $offerRuleDateRestrictionItem) {
             // validation for constraint: itemType
-            if (!$offerRuleDateRestrictionItem instanceof \StructType\DateRestriction) {
-                throw new \InvalidArgumentException(sprintf('The DateRestriction property can only contain items of \StructType\DateRestriction, "%s" given', is_object($offerRuleDateRestrictionItem) ? get_class($offerRuleDateRestrictionItem) : gettype($offerRuleDateRestrictionItem)), __LINE__);
+            if (!$offerRuleDateRestrictionItem instanceof \Devlabs91\TravelgatePushApi\StructType\DateRestriction) {
+                throw new \InvalidArgumentException(sprintf('The DateRestriction property can only contain items of \Devlabs91\TravelgatePushApi\StructType\DateRestriction, "%s" given', is_object($offerRuleDateRestrictionItem) ? get_class($offerRuleDateRestrictionItem) : gettype($offerRuleDateRestrictionItem)), __LINE__);
             }
         }
         $this->DateRestriction = $dateRestriction;
@@ -89,21 +89,21 @@ class OfferRule extends AbstractStructBase
     /**
      * Add item to DateRestriction value
      * @throws \InvalidArgumentException
-     * @param \StructType\DateRestriction $item
-     * @return \StructType\OfferRule
+     * @param \Devlabs91\TravelgatePushApi\StructType\DateRestriction $item
+     * @return \Devlabs91\TravelgatePushApi\StructType\OfferRule
      */
-    public function addToDateRestriction(\StructType\DateRestriction $item)
+    public function addToDateRestriction(\Devlabs91\TravelgatePushApi\StructType\DateRestriction $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\DateRestriction) {
-            throw new \InvalidArgumentException(sprintf('The DateRestriction property can only contain items of \StructType\DateRestriction, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\DateRestriction) {
+            throw new \InvalidArgumentException(sprintf('The DateRestriction property can only contain items of \Devlabs91\TravelgatePushApi\StructType\DateRestriction, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->DateRestriction[] = $item;
         return $this;
     }
     /**
      * Get LengthsOfStay value
-     * @return \StructType\LengthsOfStayType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\LengthsOfStayType|null
      */
     public function getLengthsOfStay()
     {
@@ -111,17 +111,17 @@ class OfferRule extends AbstractStructBase
     }
     /**
      * Set LengthsOfStay value
-     * @param \StructType\LengthsOfStayType $lengthsOfStay
-     * @return \StructType\OfferRule
+     * @param \Devlabs91\TravelgatePushApi\StructType\LengthsOfStayType $lengthsOfStay
+     * @return \Devlabs91\TravelgatePushApi\StructType\OfferRule
      */
-    public function setLengthsOfStay(\StructType\LengthsOfStayType $lengthsOfStay = null)
+    public function setLengthsOfStay(\Devlabs91\TravelgatePushApi\StructType\LengthsOfStayType $lengthsOfStay = null)
     {
         $this->LengthsOfStay = $lengthsOfStay;
         return $this;
     }
     /**
      * Get DOW_Restrictions value
-     * @return \StructType\DOW_RestrictionsType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\DOW_RestrictionsType|null
      */
     public function getDOW_Restrictions()
     {
@@ -129,17 +129,17 @@ class OfferRule extends AbstractStructBase
     }
     /**
      * Set DOW_Restrictions value
-     * @param \StructType\DOW_RestrictionsType $dOW_Restrictions
-     * @return \StructType\OfferRule
+     * @param \Devlabs91\TravelgatePushApi\StructType\DOW_RestrictionsType $dOW_Restrictions
+     * @return \Devlabs91\TravelgatePushApi\StructType\OfferRule
      */
-    public function setDOW_Restrictions(\StructType\DOW_RestrictionsType $dOW_Restrictions = null)
+    public function setDOW_Restrictions(\Devlabs91\TravelgatePushApi\StructType\DOW_RestrictionsType $dOW_Restrictions = null)
     {
         $this->DOW_Restrictions = $dOW_Restrictions;
         return $this;
     }
     /**
      * Get Inventories value
-     * @return \ArrayType\ArrayOfOfferTypeOfferRuleInventory|null
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfOfferTypeOfferRuleInventory|null
      */
     public function getInventories()
     {
@@ -147,10 +147,10 @@ class OfferRule extends AbstractStructBase
     }
     /**
      * Set Inventories value
-     * @param \ArrayType\ArrayOfOfferTypeOfferRuleInventory $inventories
-     * @return \StructType\OfferRule
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfOfferTypeOfferRuleInventory $inventories
+     * @return \Devlabs91\TravelgatePushApi\StructType\OfferRule
      */
-    public function setInventories(\ArrayType\ArrayOfOfferTypeOfferRuleInventory $inventories = null)
+    public function setInventories(\Devlabs91\TravelgatePushApi\ArrayType\ArrayOfOfferTypeOfferRuleInventory $inventories = null)
     {
         $this->Inventories = $inventories;
         return $this;
@@ -161,7 +161,7 @@ class OfferRule extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\OfferRule
+     * @return \Devlabs91\TravelgatePushApi\StructType\OfferRule
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class HotelAvailNotifResponse extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\OTA_HotelAvailNotifRS
+     * @var \Devlabs91\TravelgatePushApi\StructType\OTA_HotelAvailNotifRS
      */
     public $HotelAvailNotifResult;
     /**
      * Constructor method for HotelAvailNotifResponse
      * @uses HotelAvailNotifResponse::setHotelAvailNotifResult()
-     * @param \StructType\OTA_HotelAvailNotifRS $hotelAvailNotifResult
+     * @param \Devlabs91\TravelgatePushApi\StructType\OTA_HotelAvailNotifRS $hotelAvailNotifResult
      */
-    public function __construct(\StructType\OTA_HotelAvailNotifRS $hotelAvailNotifResult = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\StructType\OTA_HotelAvailNotifRS $hotelAvailNotifResult = null)
     {
         $this
             ->setHotelAvailNotifResult($hotelAvailNotifResult);
     }
     /**
      * Get HotelAvailNotifResult value
-     * @return \StructType\OTA_HotelAvailNotifRS|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_HotelAvailNotifRS|null
      */
     public function getHotelAvailNotifResult()
     {
@@ -38,10 +38,10 @@ class HotelAvailNotifResponse extends AbstractStructBase
     }
     /**
      * Set HotelAvailNotifResult value
-     * @param \StructType\OTA_HotelAvailNotifRS $hotelAvailNotifResult
-     * @return \StructType\HotelAvailNotifResponse
+     * @param \Devlabs91\TravelgatePushApi\StructType\OTA_HotelAvailNotifRS $hotelAvailNotifResult
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelAvailNotifResponse
      */
-    public function setHotelAvailNotifResult(\StructType\OTA_HotelAvailNotifRS $hotelAvailNotifResult = null)
+    public function setHotelAvailNotifResult(\Devlabs91\TravelgatePushApi\StructType\OTA_HotelAvailNotifRS $hotelAvailNotifResult = null)
     {
         $this->HotelAvailNotifResult = $hotelAvailNotifResult;
         return $this;
@@ -52,7 +52,7 @@ class HotelAvailNotifResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HotelAvailNotifResponse
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelAvailNotifResponse
      */
     public static function __set_state(array $array)
     {

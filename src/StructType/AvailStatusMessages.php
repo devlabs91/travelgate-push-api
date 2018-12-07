@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class AvailStatusMessages extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\AvailStatusMessageType[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\AvailStatusMessageType[]
      */
     public $AvailStatusMessage;
     /**
@@ -27,7 +27,7 @@ class AvailStatusMessages extends AbstractStructBase
      * Constructor method for AvailStatusMessages
      * @uses AvailStatusMessages::setAvailStatusMessage()
      * @uses AvailStatusMessages::setHotelCode()
-     * @param \StructType\AvailStatusMessageType[] $availStatusMessage
+     * @param \Devlabs91\TravelgatePushApi\StructType\AvailStatusMessageType[] $availStatusMessage
      * @param string $hotelCode
      */
     public function __construct(array $availStatusMessage = array(), $hotelCode = null)
@@ -38,7 +38,7 @@ class AvailStatusMessages extends AbstractStructBase
     }
     /**
      * Get AvailStatusMessage value
-     * @return \StructType\AvailStatusMessageType[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\AvailStatusMessageType[]|null
      */
     public function getAvailStatusMessage()
     {
@@ -47,15 +47,15 @@ class AvailStatusMessages extends AbstractStructBase
     /**
      * Set AvailStatusMessage value
      * @throws \InvalidArgumentException
-     * @param \StructType\AvailStatusMessageType[] $availStatusMessage
-     * @return \StructType\AvailStatusMessages
+     * @param \Devlabs91\TravelgatePushApi\StructType\AvailStatusMessageType[] $availStatusMessage
+     * @return \Devlabs91\TravelgatePushApi\StructType\AvailStatusMessages
      */
     public function setAvailStatusMessage(array $availStatusMessage = array())
     {
         foreach ($availStatusMessage as $availStatusMessagesAvailStatusMessageItem) {
             // validation for constraint: itemType
-            if (!$availStatusMessagesAvailStatusMessageItem instanceof \StructType\AvailStatusMessageType) {
-                throw new \InvalidArgumentException(sprintf('The AvailStatusMessage property can only contain items of \StructType\AvailStatusMessageType, "%s" given', is_object($availStatusMessagesAvailStatusMessageItem) ? get_class($availStatusMessagesAvailStatusMessageItem) : gettype($availStatusMessagesAvailStatusMessageItem)), __LINE__);
+            if (!$availStatusMessagesAvailStatusMessageItem instanceof \Devlabs91\TravelgatePushApi\StructType\AvailStatusMessageType) {
+                throw new \InvalidArgumentException(sprintf('The AvailStatusMessage property can only contain items of \Devlabs91\TravelgatePushApi\StructType\AvailStatusMessageType, "%s" given', is_object($availStatusMessagesAvailStatusMessageItem) ? get_class($availStatusMessagesAvailStatusMessageItem) : gettype($availStatusMessagesAvailStatusMessageItem)), __LINE__);
             }
         }
         $this->AvailStatusMessage = $availStatusMessage;
@@ -64,14 +64,14 @@ class AvailStatusMessages extends AbstractStructBase
     /**
      * Add item to AvailStatusMessage value
      * @throws \InvalidArgumentException
-     * @param \StructType\AvailStatusMessageType $item
-     * @return \StructType\AvailStatusMessages
+     * @param \Devlabs91\TravelgatePushApi\StructType\AvailStatusMessageType $item
+     * @return \Devlabs91\TravelgatePushApi\StructType\AvailStatusMessages
      */
-    public function addToAvailStatusMessage(\StructType\AvailStatusMessageType $item)
+    public function addToAvailStatusMessage(\Devlabs91\TravelgatePushApi\StructType\AvailStatusMessageType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\AvailStatusMessageType) {
-            throw new \InvalidArgumentException(sprintf('The AvailStatusMessage property can only contain items of \StructType\AvailStatusMessageType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\AvailStatusMessageType) {
+            throw new \InvalidArgumentException(sprintf('The AvailStatusMessage property can only contain items of \Devlabs91\TravelgatePushApi\StructType\AvailStatusMessageType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->AvailStatusMessage[] = $item;
         return $this;
@@ -87,7 +87,7 @@ class AvailStatusMessages extends AbstractStructBase
     /**
      * Set HotelCode value
      * @param string $hotelCode
-     * @return \StructType\AvailStatusMessages
+     * @return \Devlabs91\TravelgatePushApi\StructType\AvailStatusMessages
      */
     public function setHotelCode($hotelCode = null)
     {
@@ -104,7 +104,7 @@ class AvailStatusMessages extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\AvailStatusMessages
+     * @return \Devlabs91\TravelgatePushApi\StructType\AvailStatusMessages
      */
     public static function __set_state(array $array)
     {

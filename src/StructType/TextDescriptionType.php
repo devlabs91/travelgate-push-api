@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class TextDescriptionType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Description
+     * @var \Devlabs91\TravelgatePushApi\StructType\Description
      */
     public $Description;
     /**
@@ -36,11 +36,11 @@ class TextDescriptionType extends AbstractStructBase
      * @uses TextDescriptionType::setDescription()
      * @uses TextDescriptionType::setURL()
      * @uses TextDescriptionType::setCategory()
-     * @param \StructType\Description $description
+     * @param \Devlabs91\TravelgatePushApi\StructType\Description $description
      * @param string $uRL
      * @param string $category
      */
-    public function __construct(\StructType\Description $description = null, $uRL = null, $category = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\StructType\Description $description = null, $uRL = null, $category = null)
     {
         $this
             ->setDescription($description)
@@ -49,7 +49,7 @@ class TextDescriptionType extends AbstractStructBase
     }
     /**
      * Get Description value
-     * @return \StructType\Description|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Description|null
      */
     public function getDescription()
     {
@@ -57,10 +57,10 @@ class TextDescriptionType extends AbstractStructBase
     }
     /**
      * Set Description value
-     * @param \StructType\Description $description
-     * @return \StructType\TextDescriptionType
+     * @param \Devlabs91\TravelgatePushApi\StructType\Description $description
+     * @return \Devlabs91\TravelgatePushApi\StructType\TextDescriptionType
      */
-    public function setDescription(\StructType\Description $description = null)
+    public function setDescription(\Devlabs91\TravelgatePushApi\StructType\Description $description = null)
     {
         $this->Description = $description;
         return $this;
@@ -76,7 +76,7 @@ class TextDescriptionType extends AbstractStructBase
     /**
      * Set URL value
      * @param string $uRL
-     * @return \StructType\TextDescriptionType
+     * @return \Devlabs91\TravelgatePushApi\StructType\TextDescriptionType
      */
     public function setURL($uRL = null)
     {
@@ -98,7 +98,7 @@ class TextDescriptionType extends AbstractStructBase
     /**
      * Set Category value
      * @param string $category
-     * @return \StructType\TextDescriptionType
+     * @return \Devlabs91\TravelgatePushApi\StructType\TextDescriptionType
      */
     public function setCategory($category = null)
     {
@@ -115,7 +115,7 @@ class TextDescriptionType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\TextDescriptionType
+     * @return \Devlabs91\TravelgatePushApi\StructType\TextDescriptionType
      */
     public static function __set_state(array $array)
     {

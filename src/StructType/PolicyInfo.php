@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -36,7 +36,7 @@ class PolicyInfo extends AbstractStructBase
     /**
      * Set MaxChildAge value
      * @param int $maxChildAge
-     * @return \StructType\PolicyInfo
+     * @return \Devlabs91\TravelgatePushApi\StructType\PolicyInfo
      */
     public function setMaxChildAge($maxChildAge = null)
     {
@@ -53,7 +53,7 @@ class PolicyInfo extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\PolicyInfo
+     * @return \Devlabs91\TravelgatePushApi\StructType\PolicyInfo
      */
     public static function __set_state(array $array)
     {

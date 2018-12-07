@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,13 +15,13 @@ class ItemSearchCriterionType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\HotelRef[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\HotelRef[]
      */
     public $HotelRef;
     /**
      * Constructor method for ItemSearchCriterionType
      * @uses ItemSearchCriterionType::setHotelRef()
-     * @param \StructType\HotelRef[] $hotelRef
+     * @param \Devlabs91\TravelgatePushApi\StructType\HotelRef[] $hotelRef
      */
     public function __construct(array $hotelRef = array())
     {
@@ -30,7 +30,7 @@ class ItemSearchCriterionType extends AbstractStructBase
     }
     /**
      * Get HotelRef value
-     * @return \StructType\HotelRef[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRef[]|null
      */
     public function getHotelRef()
     {
@@ -39,15 +39,15 @@ class ItemSearchCriterionType extends AbstractStructBase
     /**
      * Set HotelRef value
      * @throws \InvalidArgumentException
-     * @param \StructType\HotelRef[] $hotelRef
-     * @return \StructType\ItemSearchCriterionType
+     * @param \Devlabs91\TravelgatePushApi\StructType\HotelRef[] $hotelRef
+     * @return \Devlabs91\TravelgatePushApi\StructType\ItemSearchCriterionType
      */
     public function setHotelRef(array $hotelRef = array())
     {
         foreach ($hotelRef as $itemSearchCriterionTypeHotelRefItem) {
             // validation for constraint: itemType
-            if (!$itemSearchCriterionTypeHotelRefItem instanceof \StructType\HotelRef) {
-                throw new \InvalidArgumentException(sprintf('The HotelRef property can only contain items of \StructType\HotelRef, "%s" given', is_object($itemSearchCriterionTypeHotelRefItem) ? get_class($itemSearchCriterionTypeHotelRefItem) : gettype($itemSearchCriterionTypeHotelRefItem)), __LINE__);
+            if (!$itemSearchCriterionTypeHotelRefItem instanceof \Devlabs91\TravelgatePushApi\StructType\HotelRef) {
+                throw new \InvalidArgumentException(sprintf('The HotelRef property can only contain items of \Devlabs91\TravelgatePushApi\StructType\HotelRef, "%s" given', is_object($itemSearchCriterionTypeHotelRefItem) ? get_class($itemSearchCriterionTypeHotelRefItem) : gettype($itemSearchCriterionTypeHotelRefItem)), __LINE__);
             }
         }
         $this->HotelRef = $hotelRef;
@@ -56,14 +56,14 @@ class ItemSearchCriterionType extends AbstractStructBase
     /**
      * Add item to HotelRef value
      * @throws \InvalidArgumentException
-     * @param \StructType\HotelRef $item
-     * @return \StructType\ItemSearchCriterionType
+     * @param \Devlabs91\TravelgatePushApi\StructType\HotelRef $item
+     * @return \Devlabs91\TravelgatePushApi\StructType\ItemSearchCriterionType
      */
-    public function addToHotelRef(\StructType\HotelRef $item)
+    public function addToHotelRef(\Devlabs91\TravelgatePushApi\StructType\HotelRef $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\HotelRef) {
-            throw new \InvalidArgumentException(sprintf('The HotelRef property can only contain items of \StructType\HotelRef, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\HotelRef) {
+            throw new \InvalidArgumentException(sprintf('The HotelRef property can only contain items of \Devlabs91\TravelgatePushApi\StructType\HotelRef, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->HotelRef[] = $item;
         return $this;
@@ -74,7 +74,7 @@ class ItemSearchCriterionType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ItemSearchCriterionType
+     * @return \Devlabs91\TravelgatePushApi\StructType\ItemSearchCriterionType
      */
     public static function __set_state(array $array)
     {

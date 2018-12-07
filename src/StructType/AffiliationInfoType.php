@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class AffiliationInfoType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfAffiliationInfoTypeAward
+     * @var \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfAffiliationInfoTypeAward
      */
     public $Awards;
     /**
      * Constructor method for AffiliationInfoType
      * @uses AffiliationInfoType::setAwards()
-     * @param \ArrayType\ArrayOfAffiliationInfoTypeAward $awards
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfAffiliationInfoTypeAward $awards
      */
-    public function __construct(\ArrayType\ArrayOfAffiliationInfoTypeAward $awards = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\ArrayType\ArrayOfAffiliationInfoTypeAward $awards = null)
     {
         $this
             ->setAwards($awards);
     }
     /**
      * Get Awards value
-     * @return \ArrayType\ArrayOfAffiliationInfoTypeAward|null
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfAffiliationInfoTypeAward|null
      */
     public function getAwards()
     {
@@ -38,10 +38,10 @@ class AffiliationInfoType extends AbstractStructBase
     }
     /**
      * Set Awards value
-     * @param \ArrayType\ArrayOfAffiliationInfoTypeAward $awards
-     * @return \StructType\AffiliationInfoType
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfAffiliationInfoTypeAward $awards
+     * @return \Devlabs91\TravelgatePushApi\StructType\AffiliationInfoType
      */
-    public function setAwards(\ArrayType\ArrayOfAffiliationInfoTypeAward $awards = null)
+    public function setAwards(\Devlabs91\TravelgatePushApi\ArrayType\ArrayOfAffiliationInfoTypeAward $awards = null)
     {
         $this->Awards = $awards;
         return $this;
@@ -52,7 +52,7 @@ class AffiliationInfoType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\AffiliationInfoType
+     * @return \Devlabs91\TravelgatePushApi\StructType\AffiliationInfoType
      */
     public static function __set_state(array $array)
     {

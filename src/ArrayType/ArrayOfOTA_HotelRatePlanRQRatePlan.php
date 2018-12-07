@@ -1,6 +1,6 @@
 <?php
 
-namespace ArrayType;
+namespace Devlabs91\TravelgatePushApi\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -15,13 +15,13 @@ class ArrayOfOTA_HotelRatePlanRQRatePlan extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\RatePlan[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\RatePlan[]
      */
     public $RatePlan;
     /**
      * Constructor method for ArrayOfOTA_HotelRatePlanRQRatePlan
      * @uses ArrayOfOTA_HotelRatePlanRQRatePlan::setRatePlan()
-     * @param \StructType\RatePlan[] $ratePlan
+     * @param \Devlabs91\TravelgatePushApi\StructType\RatePlan[] $ratePlan
      */
     public function __construct(array $ratePlan = array())
     {
@@ -30,7 +30,7 @@ class ArrayOfOTA_HotelRatePlanRQRatePlan extends AbstractStructArrayBase
     }
     /**
      * Get RatePlan value
-     * @return \StructType\RatePlan[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\RatePlan[]|null
      */
     public function getRatePlan()
     {
@@ -39,15 +39,15 @@ class ArrayOfOTA_HotelRatePlanRQRatePlan extends AbstractStructArrayBase
     /**
      * Set RatePlan value
      * @throws \InvalidArgumentException
-     * @param \StructType\RatePlan[] $ratePlan
-     * @return \ArrayType\ArrayOfOTA_HotelRatePlanRQRatePlan
+     * @param \Devlabs91\TravelgatePushApi\StructType\RatePlan[] $ratePlan
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfOTA_HotelRatePlanRQRatePlan
      */
     public function setRatePlan(array $ratePlan = array())
     {
         foreach ($ratePlan as $arrayOfOTA_HotelRatePlanRQRatePlanRatePlanItem) {
             // validation for constraint: itemType
-            if (!$arrayOfOTA_HotelRatePlanRQRatePlanRatePlanItem instanceof \StructType\RatePlan) {
-                throw new \InvalidArgumentException(sprintf('The RatePlan property can only contain items of \StructType\RatePlan, "%s" given', is_object($arrayOfOTA_HotelRatePlanRQRatePlanRatePlanItem) ? get_class($arrayOfOTA_HotelRatePlanRQRatePlanRatePlanItem) : gettype($arrayOfOTA_HotelRatePlanRQRatePlanRatePlanItem)), __LINE__);
+            if (!$arrayOfOTA_HotelRatePlanRQRatePlanRatePlanItem instanceof \Devlabs91\TravelgatePushApi\StructType\RatePlan) {
+                throw new \InvalidArgumentException(sprintf('The RatePlan property can only contain items of \Devlabs91\TravelgatePushApi\StructType\RatePlan, "%s" given', is_object($arrayOfOTA_HotelRatePlanRQRatePlanRatePlanItem) ? get_class($arrayOfOTA_HotelRatePlanRQRatePlanRatePlanItem) : gettype($arrayOfOTA_HotelRatePlanRQRatePlanRatePlanItem)), __LINE__);
             }
         }
         $this->RatePlan = $ratePlan;
@@ -56,14 +56,14 @@ class ArrayOfOTA_HotelRatePlanRQRatePlan extends AbstractStructArrayBase
     /**
      * Add item to RatePlan value
      * @throws \InvalidArgumentException
-     * @param \StructType\RatePlan $item
-     * @return \ArrayType\ArrayOfOTA_HotelRatePlanRQRatePlan
+     * @param \Devlabs91\TravelgatePushApi\StructType\RatePlan $item
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfOTA_HotelRatePlanRQRatePlan
      */
-    public function addToRatePlan(\StructType\RatePlan $item)
+    public function addToRatePlan(\Devlabs91\TravelgatePushApi\StructType\RatePlan $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\RatePlan) {
-            throw new \InvalidArgumentException(sprintf('The RatePlan property can only contain items of \StructType\RatePlan, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\RatePlan) {
+            throw new \InvalidArgumentException(sprintf('The RatePlan property can only contain items of \Devlabs91\TravelgatePushApi\StructType\RatePlan, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->RatePlan[] = $item;
         return $this;
@@ -71,7 +71,7 @@ class ArrayOfOTA_HotelRatePlanRQRatePlan extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \StructType\RatePlan|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\RatePlan|null
      */
     public function current()
     {
@@ -81,7 +81,7 @@ class ArrayOfOTA_HotelRatePlanRQRatePlan extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \StructType\RatePlan|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\RatePlan|null
      */
     public function item($index)
     {
@@ -90,7 +90,7 @@ class ArrayOfOTA_HotelRatePlanRQRatePlan extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \StructType\RatePlan|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\RatePlan|null
      */
     public function first()
     {
@@ -99,7 +99,7 @@ class ArrayOfOTA_HotelRatePlanRQRatePlan extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \StructType\RatePlan|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\RatePlan|null
      */
     public function last()
     {
@@ -109,7 +109,7 @@ class ArrayOfOTA_HotelRatePlanRQRatePlan extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \StructType\RatePlan|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\RatePlan|null
      */
     public function offsetGet($offset)
     {
@@ -130,7 +130,7 @@ class ArrayOfOTA_HotelRatePlanRQRatePlan extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \ArrayType\ArrayOfOTA_HotelRatePlanRQRatePlan
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfOTA_HotelRatePlanRQRatePlan
      */
     public static function __set_state(array $array)
     {

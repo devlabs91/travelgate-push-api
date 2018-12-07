@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class AvailRequestSegment extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\HotelSearchCriteria
+     * @var \Devlabs91\TravelgatePushApi\StructType\HotelSearchCriteria
      */
     public $HotelSearchCriteria;
     /**
@@ -23,7 +23,7 @@ class AvailRequestSegment extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\DateTimeSpanType
+     * @var \Devlabs91\TravelgatePushApi\StructType\DateTimeSpanType
      */
     public $StayDateRange;
     /**
@@ -31,7 +31,7 @@ class AvailRequestSegment extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfRatePlanCandidatesTypeRatePlanCandidate
+     * @var \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRatePlanCandidatesTypeRatePlanCandidate
      */
     public $RatePlanCandidates;
     /**
@@ -39,7 +39,7 @@ class AvailRequestSegment extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfAvailRequestSegmentsTypeAvailRequestSegmentRoomStayCandidate
+     * @var \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfAvailRequestSegmentsTypeAvailRequestSegmentRoomStayCandidate
      */
     public $RoomStayCandidates;
     /**
@@ -47,7 +47,7 @@ class AvailRequestSegment extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\TPA_ExtensionsType
+     * @var \Devlabs91\TravelgatePushApi\StructType\TPA_ExtensionsType
      */
     public $TPA_Extensions;
     /**
@@ -57,13 +57,13 @@ class AvailRequestSegment extends AbstractStructBase
      * @uses AvailRequestSegment::setRatePlanCandidates()
      * @uses AvailRequestSegment::setRoomStayCandidates()
      * @uses AvailRequestSegment::setTPA_Extensions()
-     * @param \StructType\HotelSearchCriteria $hotelSearchCriteria
-     * @param \StructType\DateTimeSpanType $stayDateRange
-     * @param \ArrayType\ArrayOfRatePlanCandidatesTypeRatePlanCandidate $ratePlanCandidates
-     * @param \ArrayType\ArrayOfAvailRequestSegmentsTypeAvailRequestSegmentRoomStayCandidate $roomStayCandidates
-     * @param \StructType\TPA_ExtensionsType $tPA_Extensions
+     * @param \Devlabs91\TravelgatePushApi\StructType\HotelSearchCriteria $hotelSearchCriteria
+     * @param \Devlabs91\TravelgatePushApi\StructType\DateTimeSpanType $stayDateRange
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRatePlanCandidatesTypeRatePlanCandidate $ratePlanCandidates
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfAvailRequestSegmentsTypeAvailRequestSegmentRoomStayCandidate $roomStayCandidates
+     * @param \Devlabs91\TravelgatePushApi\StructType\TPA_ExtensionsType $tPA_Extensions
      */
-    public function __construct(\StructType\HotelSearchCriteria $hotelSearchCriteria = null, \StructType\DateTimeSpanType $stayDateRange = null, \ArrayType\ArrayOfRatePlanCandidatesTypeRatePlanCandidate $ratePlanCandidates = null, \ArrayType\ArrayOfAvailRequestSegmentsTypeAvailRequestSegmentRoomStayCandidate $roomStayCandidates = null, \StructType\TPA_ExtensionsType $tPA_Extensions = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\StructType\HotelSearchCriteria $hotelSearchCriteria = null, \Devlabs91\TravelgatePushApi\StructType\DateTimeSpanType $stayDateRange = null, \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRatePlanCandidatesTypeRatePlanCandidate $ratePlanCandidates = null, \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfAvailRequestSegmentsTypeAvailRequestSegmentRoomStayCandidate $roomStayCandidates = null, \Devlabs91\TravelgatePushApi\StructType\TPA_ExtensionsType $tPA_Extensions = null)
     {
         $this
             ->setHotelSearchCriteria($hotelSearchCriteria)
@@ -74,7 +74,7 @@ class AvailRequestSegment extends AbstractStructBase
     }
     /**
      * Get HotelSearchCriteria value
-     * @return \StructType\HotelSearchCriteria|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelSearchCriteria|null
      */
     public function getHotelSearchCriteria()
     {
@@ -82,17 +82,17 @@ class AvailRequestSegment extends AbstractStructBase
     }
     /**
      * Set HotelSearchCriteria value
-     * @param \StructType\HotelSearchCriteria $hotelSearchCriteria
-     * @return \StructType\AvailRequestSegment
+     * @param \Devlabs91\TravelgatePushApi\StructType\HotelSearchCriteria $hotelSearchCriteria
+     * @return \Devlabs91\TravelgatePushApi\StructType\AvailRequestSegment
      */
-    public function setHotelSearchCriteria(\StructType\HotelSearchCriteria $hotelSearchCriteria = null)
+    public function setHotelSearchCriteria(\Devlabs91\TravelgatePushApi\StructType\HotelSearchCriteria $hotelSearchCriteria = null)
     {
         $this->HotelSearchCriteria = $hotelSearchCriteria;
         return $this;
     }
     /**
      * Get StayDateRange value
-     * @return \StructType\DateTimeSpanType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\DateTimeSpanType|null
      */
     public function getStayDateRange()
     {
@@ -100,17 +100,17 @@ class AvailRequestSegment extends AbstractStructBase
     }
     /**
      * Set StayDateRange value
-     * @param \StructType\DateTimeSpanType $stayDateRange
-     * @return \StructType\AvailRequestSegment
+     * @param \Devlabs91\TravelgatePushApi\StructType\DateTimeSpanType $stayDateRange
+     * @return \Devlabs91\TravelgatePushApi\StructType\AvailRequestSegment
      */
-    public function setStayDateRange(\StructType\DateTimeSpanType $stayDateRange = null)
+    public function setStayDateRange(\Devlabs91\TravelgatePushApi\StructType\DateTimeSpanType $stayDateRange = null)
     {
         $this->StayDateRange = $stayDateRange;
         return $this;
     }
     /**
      * Get RatePlanCandidates value
-     * @return \ArrayType\ArrayOfRatePlanCandidatesTypeRatePlanCandidate|null
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRatePlanCandidatesTypeRatePlanCandidate|null
      */
     public function getRatePlanCandidates()
     {
@@ -118,17 +118,17 @@ class AvailRequestSegment extends AbstractStructBase
     }
     /**
      * Set RatePlanCandidates value
-     * @param \ArrayType\ArrayOfRatePlanCandidatesTypeRatePlanCandidate $ratePlanCandidates
-     * @return \StructType\AvailRequestSegment
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRatePlanCandidatesTypeRatePlanCandidate $ratePlanCandidates
+     * @return \Devlabs91\TravelgatePushApi\StructType\AvailRequestSegment
      */
-    public function setRatePlanCandidates(\ArrayType\ArrayOfRatePlanCandidatesTypeRatePlanCandidate $ratePlanCandidates = null)
+    public function setRatePlanCandidates(\Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRatePlanCandidatesTypeRatePlanCandidate $ratePlanCandidates = null)
     {
         $this->RatePlanCandidates = $ratePlanCandidates;
         return $this;
     }
     /**
      * Get RoomStayCandidates value
-     * @return \ArrayType\ArrayOfAvailRequestSegmentsTypeAvailRequestSegmentRoomStayCandidate|null
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfAvailRequestSegmentsTypeAvailRequestSegmentRoomStayCandidate|null
      */
     public function getRoomStayCandidates()
     {
@@ -136,17 +136,17 @@ class AvailRequestSegment extends AbstractStructBase
     }
     /**
      * Set RoomStayCandidates value
-     * @param \ArrayType\ArrayOfAvailRequestSegmentsTypeAvailRequestSegmentRoomStayCandidate $roomStayCandidates
-     * @return \StructType\AvailRequestSegment
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfAvailRequestSegmentsTypeAvailRequestSegmentRoomStayCandidate $roomStayCandidates
+     * @return \Devlabs91\TravelgatePushApi\StructType\AvailRequestSegment
      */
-    public function setRoomStayCandidates(\ArrayType\ArrayOfAvailRequestSegmentsTypeAvailRequestSegmentRoomStayCandidate $roomStayCandidates = null)
+    public function setRoomStayCandidates(\Devlabs91\TravelgatePushApi\ArrayType\ArrayOfAvailRequestSegmentsTypeAvailRequestSegmentRoomStayCandidate $roomStayCandidates = null)
     {
         $this->RoomStayCandidates = $roomStayCandidates;
         return $this;
     }
     /**
      * Get TPA_Extensions value
-     * @return \StructType\TPA_ExtensionsType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\TPA_ExtensionsType|null
      */
     public function getTPA_Extensions()
     {
@@ -154,10 +154,10 @@ class AvailRequestSegment extends AbstractStructBase
     }
     /**
      * Set TPA_Extensions value
-     * @param \StructType\TPA_ExtensionsType $tPA_Extensions
-     * @return \StructType\AvailRequestSegment
+     * @param \Devlabs91\TravelgatePushApi\StructType\TPA_ExtensionsType $tPA_Extensions
+     * @return \Devlabs91\TravelgatePushApi\StructType\AvailRequestSegment
      */
-    public function setTPA_Extensions(\StructType\TPA_ExtensionsType $tPA_Extensions = null)
+    public function setTPA_Extensions(\Devlabs91\TravelgatePushApi\StructType\TPA_ExtensionsType $tPA_Extensions = null)
     {
         $this->TPA_Extensions = $tPA_Extensions;
         return $this;
@@ -168,7 +168,7 @@ class AvailRequestSegment extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\AvailRequestSegment
+     * @return \Devlabs91\TravelgatePushApi\StructType\AvailRequestSegment
      */
     public static function __set_state(array $array)
     {

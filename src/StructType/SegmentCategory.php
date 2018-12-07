@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -44,7 +44,7 @@ class SegmentCategory extends AbstractStructBase
     /**
      * Set Code value
      * @param string $code
-     * @return \StructType\SegmentCategory
+     * @return \Devlabs91\TravelgatePushApi\StructType\SegmentCategory
      */
     public function setCode($code = null)
     {
@@ -66,7 +66,7 @@ class SegmentCategory extends AbstractStructBase
     /**
      * Set CodeDetail value
      * @param string $codeDetail
-     * @return \StructType\SegmentCategory
+     * @return \Devlabs91\TravelgatePushApi\StructType\SegmentCategory
      */
     public function setCodeDetail($codeDetail = null)
     {
@@ -83,7 +83,7 @@ class SegmentCategory extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\SegmentCategory
+     * @return \Devlabs91\TravelgatePushApi\StructType\SegmentCategory
      */
     public static function __set_state(array $array)
     {

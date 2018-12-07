@@ -1,6 +1,6 @@
 <?php
 
-namespace ServiceType;
+namespace Devlabs91\TravelgatePushApi\ServiceType;
 
 use \WsdlToPhp\PackageBase\AbstractSoapClientBase;
 
@@ -16,10 +16,10 @@ class Check extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\CheckStatus $parameters
-     * @return \StructType\CheckStatusResponse|bool
+     * @param \Devlabs91\TravelgatePushApi\StructType\CheckStatus $parameters
+     * @return \Devlabs91\TravelgatePushApi\StructType\CheckStatusResponse|bool
      */
-    public function CheckStatus(\StructType\CheckStatus $parameters)
+    public function CheckStatus(\Devlabs91\TravelgatePushApi\StructType\CheckStatus $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->CheckStatus($parameters));
@@ -35,10 +35,10 @@ class Check extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\CheckFlux $parameters
-     * @return \StructType\CheckFluxResponse|bool
+     * @param \Devlabs91\TravelgatePushApi\StructType\CheckFlux $parameters
+     * @return \Devlabs91\TravelgatePushApi\StructType\CheckFluxResponse|bool
      */
-    public function CheckFlux(\StructType\CheckFlux $parameters)
+    public function CheckFlux(\Devlabs91\TravelgatePushApi\StructType\CheckFlux $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->CheckFlux($parameters));
@@ -51,7 +51,7 @@ class Check extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \StructType\CheckFluxResponse|\StructType\CheckStatusResponse
+     * @return \Devlabs91\TravelgatePushApi\StructType\CheckFluxResponse|\Devlabs91\TravelgatePushApi\StructType\CheckStatusResponse
      */
     public function getResult()
     {

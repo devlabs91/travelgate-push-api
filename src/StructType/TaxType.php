@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class TaxType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\ParagraphType[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\ParagraphType[]
      */
     public $TaxDescription;
     /**
@@ -69,7 +69,7 @@ class TaxType extends AbstractStructBase
      * @uses TaxType::setChargeUnit()
      * @uses TaxType::setChargeFrequency()
      * @uses TaxType::setType()
-     * @param \StructType\ParagraphType[] $taxDescription
+     * @param \Devlabs91\TravelgatePushApi\StructType\ParagraphType[] $taxDescription
      * @param string $code
      * @param float $amount
      * @param string $currencyCode
@@ -94,7 +94,7 @@ class TaxType extends AbstractStructBase
     }
     /**
      * Get TaxDescription value
-     * @return \StructType\ParagraphType[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\ParagraphType[]|null
      */
     public function getTaxDescription()
     {
@@ -103,15 +103,15 @@ class TaxType extends AbstractStructBase
     /**
      * Set TaxDescription value
      * @throws \InvalidArgumentException
-     * @param \StructType\ParagraphType[] $taxDescription
-     * @return \StructType\TaxType
+     * @param \Devlabs91\TravelgatePushApi\StructType\ParagraphType[] $taxDescription
+     * @return \Devlabs91\TravelgatePushApi\StructType\TaxType
      */
     public function setTaxDescription(array $taxDescription = array())
     {
         foreach ($taxDescription as $taxTypeTaxDescriptionItem) {
             // validation for constraint: itemType
-            if (!$taxTypeTaxDescriptionItem instanceof \StructType\ParagraphType) {
-                throw new \InvalidArgumentException(sprintf('The TaxDescription property can only contain items of \StructType\ParagraphType, "%s" given', is_object($taxTypeTaxDescriptionItem) ? get_class($taxTypeTaxDescriptionItem) : gettype($taxTypeTaxDescriptionItem)), __LINE__);
+            if (!$taxTypeTaxDescriptionItem instanceof \Devlabs91\TravelgatePushApi\StructType\ParagraphType) {
+                throw new \InvalidArgumentException(sprintf('The TaxDescription property can only contain items of \Devlabs91\TravelgatePushApi\StructType\ParagraphType, "%s" given', is_object($taxTypeTaxDescriptionItem) ? get_class($taxTypeTaxDescriptionItem) : gettype($taxTypeTaxDescriptionItem)), __LINE__);
             }
         }
         $this->TaxDescription = $taxDescription;
@@ -120,14 +120,14 @@ class TaxType extends AbstractStructBase
     /**
      * Add item to TaxDescription value
      * @throws \InvalidArgumentException
-     * @param \StructType\ParagraphType $item
-     * @return \StructType\TaxType
+     * @param \Devlabs91\TravelgatePushApi\StructType\ParagraphType $item
+     * @return \Devlabs91\TravelgatePushApi\StructType\TaxType
      */
-    public function addToTaxDescription(\StructType\ParagraphType $item)
+    public function addToTaxDescription(\Devlabs91\TravelgatePushApi\StructType\ParagraphType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\ParagraphType) {
-            throw new \InvalidArgumentException(sprintf('The TaxDescription property can only contain items of \StructType\ParagraphType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\ParagraphType) {
+            throw new \InvalidArgumentException(sprintf('The TaxDescription property can only contain items of \Devlabs91\TravelgatePushApi\StructType\ParagraphType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->TaxDescription[] = $item;
         return $this;
@@ -143,7 +143,7 @@ class TaxType extends AbstractStructBase
     /**
      * Set Code value
      * @param string $code
-     * @return \StructType\TaxType
+     * @return \Devlabs91\TravelgatePushApi\StructType\TaxType
      */
     public function setCode($code = null)
     {
@@ -165,7 +165,7 @@ class TaxType extends AbstractStructBase
     /**
      * Set Amount value
      * @param float $amount
-     * @return \StructType\TaxType
+     * @return \Devlabs91\TravelgatePushApi\StructType\TaxType
      */
     public function setAmount($amount = null)
     {
@@ -183,7 +183,7 @@ class TaxType extends AbstractStructBase
     /**
      * Set CurrencyCode value
      * @param string $currencyCode
-     * @return \StructType\TaxType
+     * @return \Devlabs91\TravelgatePushApi\StructType\TaxType
      */
     public function setCurrencyCode($currencyCode = null)
     {
@@ -205,7 +205,7 @@ class TaxType extends AbstractStructBase
     /**
      * Set DecimalPlaces value
      * @param int $decimalPlaces
-     * @return \StructType\TaxType
+     * @return \Devlabs91\TravelgatePushApi\StructType\TaxType
      */
     public function setDecimalPlaces($decimalPlaces = null)
     {
@@ -227,7 +227,7 @@ class TaxType extends AbstractStructBase
     /**
      * Set Percent value
      * @param float $percent
-     * @return \StructType\TaxType
+     * @return \Devlabs91\TravelgatePushApi\StructType\TaxType
      */
     public function setPercent($percent = null)
     {
@@ -245,7 +245,7 @@ class TaxType extends AbstractStructBase
     /**
      * Set ChargeUnit value
      * @param string $chargeUnit
-     * @return \StructType\TaxType
+     * @return \Devlabs91\TravelgatePushApi\StructType\TaxType
      */
     public function setChargeUnit($chargeUnit = null)
     {
@@ -267,7 +267,7 @@ class TaxType extends AbstractStructBase
     /**
      * Set ChargeFrequency value
      * @param string $chargeFrequency
-     * @return \StructType\TaxType
+     * @return \Devlabs91\TravelgatePushApi\StructType\TaxType
      */
     public function setChargeFrequency($chargeFrequency = null)
     {
@@ -288,17 +288,17 @@ class TaxType extends AbstractStructBase
     }
     /**
      * Set Type value
-     * @uses \EnumType\AmountDeterminationType::valueIsValid()
-     * @uses \EnumType\AmountDeterminationType::getValidValues()
+     * @uses \Devlabs91\TravelgatePushApi\EnumType\AmountDeterminationType::valueIsValid()
+     * @uses \Devlabs91\TravelgatePushApi\EnumType\AmountDeterminationType::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\TaxType
+     * @return \Devlabs91\TravelgatePushApi\StructType\TaxType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\AmountDeterminationType::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $type, implode(', ', \EnumType\AmountDeterminationType::getValidValues())), __LINE__);
+        if (!\Devlabs91\TravelgatePushApi\EnumType\AmountDeterminationType::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $type, implode(', ', \Devlabs91\TravelgatePushApi\EnumType\AmountDeterminationType::getValidValues())), __LINE__);
         }
         $this->Type = $type;
         return $this;
@@ -309,7 +309,7 @@ class TaxType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\TaxType
+     * @return \Devlabs91\TravelgatePushApi\StructType\TaxType
      */
     public static function __set_state(array $array)
     {

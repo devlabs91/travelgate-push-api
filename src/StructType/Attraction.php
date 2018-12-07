@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Attraction extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Contact
+     * @var \Devlabs91\TravelgatePushApi\StructType\Contact
      */
     public $Contact;
     /**
@@ -23,7 +23,7 @@ class Attraction extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfOperationSchedulesPlusChargeTypeOperationSchedule
+     * @var \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfOperationSchedulesPlusChargeTypeOperationSchedule
      */
     public $OperationSchedules;
     /**
@@ -31,7 +31,7 @@ class Attraction extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfRefPointsTypeRefPoint
+     * @var \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRefPointsTypeRefPoint
      */
     public $RefPoints;
     /**
@@ -72,16 +72,16 @@ class Attraction extends AbstractStructBase
      * @uses Attraction::setAttractionName()
      * @uses Attraction::setCode()
      * @uses Attraction::setLanguage()
-     * @param \StructType\Contact $contact
-     * @param \ArrayType\ArrayOfOperationSchedulesPlusChargeTypeOperationSchedule $operationSchedules
-     * @param \ArrayType\ArrayOfRefPointsTypeRefPoint $refPoints
+     * @param \Devlabs91\TravelgatePushApi\StructType\Contact $contact
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfOperationSchedulesPlusChargeTypeOperationSchedule $operationSchedules
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRefPointsTypeRefPoint $refPoints
      * @param string $descriptiveText
      * @param string $attractionCategoryCode
      * @param string $attractionName
      * @param string $code
      * @param string $language
      */
-    public function __construct(\StructType\Contact $contact = null, \ArrayType\ArrayOfOperationSchedulesPlusChargeTypeOperationSchedule $operationSchedules = null, \ArrayType\ArrayOfRefPointsTypeRefPoint $refPoints = null, $descriptiveText = null, $attractionCategoryCode = null, $attractionName = null, $code = null, $language = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\StructType\Contact $contact = null, \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfOperationSchedulesPlusChargeTypeOperationSchedule $operationSchedules = null, \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRefPointsTypeRefPoint $refPoints = null, $descriptiveText = null, $attractionCategoryCode = null, $attractionName = null, $code = null, $language = null)
     {
         $this
             ->setContact($contact)
@@ -95,7 +95,7 @@ class Attraction extends AbstractStructBase
     }
     /**
      * Get Contact value
-     * @return \StructType\Contact|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Contact|null
      */
     public function getContact()
     {
@@ -103,17 +103,17 @@ class Attraction extends AbstractStructBase
     }
     /**
      * Set Contact value
-     * @param \StructType\Contact $contact
-     * @return \StructType\Attraction
+     * @param \Devlabs91\TravelgatePushApi\StructType\Contact $contact
+     * @return \Devlabs91\TravelgatePushApi\StructType\Attraction
      */
-    public function setContact(\StructType\Contact $contact = null)
+    public function setContact(\Devlabs91\TravelgatePushApi\StructType\Contact $contact = null)
     {
         $this->Contact = $contact;
         return $this;
     }
     /**
      * Get OperationSchedules value
-     * @return \ArrayType\ArrayOfOperationSchedulesPlusChargeTypeOperationSchedule|null
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfOperationSchedulesPlusChargeTypeOperationSchedule|null
      */
     public function getOperationSchedules()
     {
@@ -121,17 +121,17 @@ class Attraction extends AbstractStructBase
     }
     /**
      * Set OperationSchedules value
-     * @param \ArrayType\ArrayOfOperationSchedulesPlusChargeTypeOperationSchedule $operationSchedules
-     * @return \StructType\Attraction
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfOperationSchedulesPlusChargeTypeOperationSchedule $operationSchedules
+     * @return \Devlabs91\TravelgatePushApi\StructType\Attraction
      */
-    public function setOperationSchedules(\ArrayType\ArrayOfOperationSchedulesPlusChargeTypeOperationSchedule $operationSchedules = null)
+    public function setOperationSchedules(\Devlabs91\TravelgatePushApi\ArrayType\ArrayOfOperationSchedulesPlusChargeTypeOperationSchedule $operationSchedules = null)
     {
         $this->OperationSchedules = $operationSchedules;
         return $this;
     }
     /**
      * Get RefPoints value
-     * @return \ArrayType\ArrayOfRefPointsTypeRefPoint|null
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRefPointsTypeRefPoint|null
      */
     public function getRefPoints()
     {
@@ -139,10 +139,10 @@ class Attraction extends AbstractStructBase
     }
     /**
      * Set RefPoints value
-     * @param \ArrayType\ArrayOfRefPointsTypeRefPoint $refPoints
-     * @return \StructType\Attraction
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRefPointsTypeRefPoint $refPoints
+     * @return \Devlabs91\TravelgatePushApi\StructType\Attraction
      */
-    public function setRefPoints(\ArrayType\ArrayOfRefPointsTypeRefPoint $refPoints = null)
+    public function setRefPoints(\Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRefPointsTypeRefPoint $refPoints = null)
     {
         $this->RefPoints = $refPoints;
         return $this;
@@ -158,7 +158,7 @@ class Attraction extends AbstractStructBase
     /**
      * Set DescriptiveText value
      * @param string $descriptiveText
-     * @return \StructType\Attraction
+     * @return \Devlabs91\TravelgatePushApi\StructType\Attraction
      */
     public function setDescriptiveText($descriptiveText = null)
     {
@@ -180,7 +180,7 @@ class Attraction extends AbstractStructBase
     /**
      * Set AttractionCategoryCode value
      * @param string $attractionCategoryCode
-     * @return \StructType\Attraction
+     * @return \Devlabs91\TravelgatePushApi\StructType\Attraction
      */
     public function setAttractionCategoryCode($attractionCategoryCode = null)
     {
@@ -202,7 +202,7 @@ class Attraction extends AbstractStructBase
     /**
      * Set AttractionName value
      * @param string $attractionName
-     * @return \StructType\Attraction
+     * @return \Devlabs91\TravelgatePushApi\StructType\Attraction
      */
     public function setAttractionName($attractionName = null)
     {
@@ -224,7 +224,7 @@ class Attraction extends AbstractStructBase
     /**
      * Set Code value
      * @param string $code
-     * @return \StructType\Attraction
+     * @return \Devlabs91\TravelgatePushApi\StructType\Attraction
      */
     public function setCode($code = null)
     {
@@ -246,7 +246,7 @@ class Attraction extends AbstractStructBase
     /**
      * Set Language value
      * @param string $language
-     * @return \StructType\Attraction
+     * @return \Devlabs91\TravelgatePushApi\StructType\Attraction
      */
     public function setLanguage($language = null)
     {
@@ -263,7 +263,7 @@ class Attraction extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Attraction
+     * @return \Devlabs91\TravelgatePushApi\StructType\Attraction
      */
     public static function __set_state(array $array)
     {

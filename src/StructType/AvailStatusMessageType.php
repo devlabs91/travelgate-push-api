@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class AvailStatusMessageType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\StatusApplicationControlType
+     * @var \Devlabs91\TravelgatePushApi\StructType\StatusApplicationControlType
      */
     public $StatusApplicationControl;
     /**
@@ -23,7 +23,7 @@ class AvailStatusMessageType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\LengthsOfStayType
+     * @var \Devlabs91\TravelgatePushApi\StructType\LengthsOfStayType
      */
     public $LengthsOfStay;
     /**
@@ -31,7 +31,7 @@ class AvailStatusMessageType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\RestrictionStatus
+     * @var \Devlabs91\TravelgatePushApi\StructType\RestrictionStatus
      */
     public $RestrictionStatus;
     /**
@@ -51,13 +51,13 @@ class AvailStatusMessageType extends AbstractStructBase
      * @uses AvailStatusMessageType::setRestrictionStatus()
      * @uses AvailStatusMessageType::setBookingLimit()
      * @uses AvailStatusMessageType::setBookingSold()
-     * @param \StructType\StatusApplicationControlType $statusApplicationControl
-     * @param \StructType\LengthsOfStayType $lengthsOfStay
-     * @param \StructType\RestrictionStatus $restrictionStatus
+     * @param \Devlabs91\TravelgatePushApi\StructType\StatusApplicationControlType $statusApplicationControl
+     * @param \Devlabs91\TravelgatePushApi\StructType\LengthsOfStayType $lengthsOfStay
+     * @param \Devlabs91\TravelgatePushApi\StructType\RestrictionStatus $restrictionStatus
      * @param int $bookingLimit
      * @param int $bookingSold
      */
-    public function __construct(\StructType\StatusApplicationControlType $statusApplicationControl = null, \StructType\LengthsOfStayType $lengthsOfStay = null, \StructType\RestrictionStatus $restrictionStatus = null, $bookingLimit = null, $bookingSold = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\StructType\StatusApplicationControlType $statusApplicationControl = null, \Devlabs91\TravelgatePushApi\StructType\LengthsOfStayType $lengthsOfStay = null, \Devlabs91\TravelgatePushApi\StructType\RestrictionStatus $restrictionStatus = null, $bookingLimit = null, $bookingSold = null)
     {
         $this
             ->setStatusApplicationControl($statusApplicationControl)
@@ -68,7 +68,7 @@ class AvailStatusMessageType extends AbstractStructBase
     }
     /**
      * Get StatusApplicationControl value
-     * @return \StructType\StatusApplicationControlType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\StatusApplicationControlType|null
      */
     public function getStatusApplicationControl()
     {
@@ -76,17 +76,17 @@ class AvailStatusMessageType extends AbstractStructBase
     }
     /**
      * Set StatusApplicationControl value
-     * @param \StructType\StatusApplicationControlType $statusApplicationControl
-     * @return \StructType\AvailStatusMessageType
+     * @param \Devlabs91\TravelgatePushApi\StructType\StatusApplicationControlType $statusApplicationControl
+     * @return \Devlabs91\TravelgatePushApi\StructType\AvailStatusMessageType
      */
-    public function setStatusApplicationControl(\StructType\StatusApplicationControlType $statusApplicationControl = null)
+    public function setStatusApplicationControl(\Devlabs91\TravelgatePushApi\StructType\StatusApplicationControlType $statusApplicationControl = null)
     {
         $this->StatusApplicationControl = $statusApplicationControl;
         return $this;
     }
     /**
      * Get LengthsOfStay value
-     * @return \StructType\LengthsOfStayType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\LengthsOfStayType|null
      */
     public function getLengthsOfStay()
     {
@@ -94,17 +94,17 @@ class AvailStatusMessageType extends AbstractStructBase
     }
     /**
      * Set LengthsOfStay value
-     * @param \StructType\LengthsOfStayType $lengthsOfStay
-     * @return \StructType\AvailStatusMessageType
+     * @param \Devlabs91\TravelgatePushApi\StructType\LengthsOfStayType $lengthsOfStay
+     * @return \Devlabs91\TravelgatePushApi\StructType\AvailStatusMessageType
      */
-    public function setLengthsOfStay(\StructType\LengthsOfStayType $lengthsOfStay = null)
+    public function setLengthsOfStay(\Devlabs91\TravelgatePushApi\StructType\LengthsOfStayType $lengthsOfStay = null)
     {
         $this->LengthsOfStay = $lengthsOfStay;
         return $this;
     }
     /**
      * Get RestrictionStatus value
-     * @return \StructType\RestrictionStatus|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\RestrictionStatus|null
      */
     public function getRestrictionStatus()
     {
@@ -112,10 +112,10 @@ class AvailStatusMessageType extends AbstractStructBase
     }
     /**
      * Set RestrictionStatus value
-     * @param \StructType\RestrictionStatus $restrictionStatus
-     * @return \StructType\AvailStatusMessageType
+     * @param \Devlabs91\TravelgatePushApi\StructType\RestrictionStatus $restrictionStatus
+     * @return \Devlabs91\TravelgatePushApi\StructType\AvailStatusMessageType
      */
-    public function setRestrictionStatus(\StructType\RestrictionStatus $restrictionStatus = null)
+    public function setRestrictionStatus(\Devlabs91\TravelgatePushApi\StructType\RestrictionStatus $restrictionStatus = null)
     {
         $this->RestrictionStatus = $restrictionStatus;
         return $this;
@@ -131,7 +131,7 @@ class AvailStatusMessageType extends AbstractStructBase
     /**
      * Set BookingLimit value
      * @param int $bookingLimit
-     * @return \StructType\AvailStatusMessageType
+     * @return \Devlabs91\TravelgatePushApi\StructType\AvailStatusMessageType
      */
     public function setBookingLimit($bookingLimit = null)
     {
@@ -153,7 +153,7 @@ class AvailStatusMessageType extends AbstractStructBase
     /**
      * Set BookingSold value
      * @param int $bookingSold
-     * @return \StructType\AvailStatusMessageType
+     * @return \Devlabs91\TravelgatePushApi\StructType\AvailStatusMessageType
      */
     public function setBookingSold($bookingSold = null)
     {
@@ -170,7 +170,7 @@ class AvailStatusMessageType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\AvailStatusMessageType
+     * @return \Devlabs91\TravelgatePushApi\StructType\AvailStatusMessageType
      */
     public static function __set_state(array $array)
     {

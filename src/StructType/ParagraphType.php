@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class ParagraphType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\FormattedTextTextType
+     * @var \Devlabs91\TravelgatePushApi\StructType\FormattedTextTextType
      */
     public $Text;
     /**
@@ -36,11 +36,11 @@ class ParagraphType extends AbstractStructBase
      * @uses ParagraphType::setText()
      * @uses ParagraphType::setImage()
      * @uses ParagraphType::setName()
-     * @param \StructType\FormattedTextTextType $text
+     * @param \Devlabs91\TravelgatePushApi\StructType\FormattedTextTextType $text
      * @param mixed $image
      * @param string $name
      */
-    public function __construct(\StructType\FormattedTextTextType $text = null, $image = null, $name = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\StructType\FormattedTextTextType $text = null, $image = null, $name = null)
     {
         $this
             ->setText($text)
@@ -49,7 +49,7 @@ class ParagraphType extends AbstractStructBase
     }
     /**
      * Get Text value
-     * @return \StructType\FormattedTextTextType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\FormattedTextTextType|null
      */
     public function getText()
     {
@@ -57,10 +57,10 @@ class ParagraphType extends AbstractStructBase
     }
     /**
      * Set Text value
-     * @param \StructType\FormattedTextTextType $text
-     * @return \StructType\ParagraphType
+     * @param \Devlabs91\TravelgatePushApi\StructType\FormattedTextTextType $text
+     * @return \Devlabs91\TravelgatePushApi\StructType\ParagraphType
      */
-    public function setText(\StructType\FormattedTextTextType $text = null)
+    public function setText(\Devlabs91\TravelgatePushApi\StructType\FormattedTextTextType $text = null)
     {
         $this->Text = $text;
         return $this;
@@ -76,7 +76,7 @@ class ParagraphType extends AbstractStructBase
     /**
      * Set Image value
      * @param mixed $image
-     * @return \StructType\ParagraphType
+     * @return \Devlabs91\TravelgatePushApi\StructType\ParagraphType
      */
     public function setImage($image = null)
     {
@@ -94,7 +94,7 @@ class ParagraphType extends AbstractStructBase
     /**
      * Set Name value
      * @param string $name
-     * @return \StructType\ParagraphType
+     * @return \Devlabs91\TravelgatePushApi\StructType\ParagraphType
      */
     public function setName($name = null)
     {
@@ -111,7 +111,7 @@ class ParagraphType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ParagraphType
+     * @return \Devlabs91\TravelgatePushApi\StructType\ParagraphType
      */
     public static function __set_state(array $array)
     {

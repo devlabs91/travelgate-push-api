@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class CancelPenaltiesType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\CancelPenaltyType[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\CancelPenaltyType[]
      */
     public $CancelPenalty;
     /**
@@ -27,7 +27,7 @@ class CancelPenaltiesType extends AbstractStructBase
      * Constructor method for CancelPenaltiesType
      * @uses CancelPenaltiesType::setCancelPenalty()
      * @uses CancelPenaltiesType::setCancelPolicyIndicator()
-     * @param \StructType\CancelPenaltyType[] $cancelPenalty
+     * @param \Devlabs91\TravelgatePushApi\StructType\CancelPenaltyType[] $cancelPenalty
      * @param string $cancelPolicyIndicator
      */
     public function __construct(array $cancelPenalty = array(), $cancelPolicyIndicator = null)
@@ -38,7 +38,7 @@ class CancelPenaltiesType extends AbstractStructBase
     }
     /**
      * Get CancelPenalty value
-     * @return \StructType\CancelPenaltyType[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\CancelPenaltyType[]|null
      */
     public function getCancelPenalty()
     {
@@ -47,15 +47,15 @@ class CancelPenaltiesType extends AbstractStructBase
     /**
      * Set CancelPenalty value
      * @throws \InvalidArgumentException
-     * @param \StructType\CancelPenaltyType[] $cancelPenalty
-     * @return \StructType\CancelPenaltiesType
+     * @param \Devlabs91\TravelgatePushApi\StructType\CancelPenaltyType[] $cancelPenalty
+     * @return \Devlabs91\TravelgatePushApi\StructType\CancelPenaltiesType
      */
     public function setCancelPenalty(array $cancelPenalty = array())
     {
         foreach ($cancelPenalty as $cancelPenaltiesTypeCancelPenaltyItem) {
             // validation for constraint: itemType
-            if (!$cancelPenaltiesTypeCancelPenaltyItem instanceof \StructType\CancelPenaltyType) {
-                throw new \InvalidArgumentException(sprintf('The CancelPenalty property can only contain items of \StructType\CancelPenaltyType, "%s" given', is_object($cancelPenaltiesTypeCancelPenaltyItem) ? get_class($cancelPenaltiesTypeCancelPenaltyItem) : gettype($cancelPenaltiesTypeCancelPenaltyItem)), __LINE__);
+            if (!$cancelPenaltiesTypeCancelPenaltyItem instanceof \Devlabs91\TravelgatePushApi\StructType\CancelPenaltyType) {
+                throw new \InvalidArgumentException(sprintf('The CancelPenalty property can only contain items of \Devlabs91\TravelgatePushApi\StructType\CancelPenaltyType, "%s" given', is_object($cancelPenaltiesTypeCancelPenaltyItem) ? get_class($cancelPenaltiesTypeCancelPenaltyItem) : gettype($cancelPenaltiesTypeCancelPenaltyItem)), __LINE__);
             }
         }
         $this->CancelPenalty = $cancelPenalty;
@@ -64,14 +64,14 @@ class CancelPenaltiesType extends AbstractStructBase
     /**
      * Add item to CancelPenalty value
      * @throws \InvalidArgumentException
-     * @param \StructType\CancelPenaltyType $item
-     * @return \StructType\CancelPenaltiesType
+     * @param \Devlabs91\TravelgatePushApi\StructType\CancelPenaltyType $item
+     * @return \Devlabs91\TravelgatePushApi\StructType\CancelPenaltiesType
      */
-    public function addToCancelPenalty(\StructType\CancelPenaltyType $item)
+    public function addToCancelPenalty(\Devlabs91\TravelgatePushApi\StructType\CancelPenaltyType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\CancelPenaltyType) {
-            throw new \InvalidArgumentException(sprintf('The CancelPenalty property can only contain items of \StructType\CancelPenaltyType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\CancelPenaltyType) {
+            throw new \InvalidArgumentException(sprintf('The CancelPenalty property can only contain items of \Devlabs91\TravelgatePushApi\StructType\CancelPenaltyType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->CancelPenalty[] = $item;
         return $this;
@@ -87,7 +87,7 @@ class CancelPenaltiesType extends AbstractStructBase
     /**
      * Set CancelPolicyIndicator value
      * @param string $cancelPolicyIndicator
-     * @return \StructType\CancelPenaltiesType
+     * @return \Devlabs91\TravelgatePushApi\StructType\CancelPenaltiesType
      */
     public function setCancelPolicyIndicator($cancelPolicyIndicator = null)
     {
@@ -104,7 +104,7 @@ class CancelPenaltiesType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\CancelPenaltiesType
+     * @return \Devlabs91\TravelgatePushApi\StructType\CancelPenaltiesType
      */
     public static function __set_state(array $array)
     {

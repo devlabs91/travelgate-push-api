@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class HotelInfoType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\CategoryCodesType
+     * @var \Devlabs91\TravelgatePushApi\StructType\CategoryCodesType
      */
     public $CategoryCodes;
     /**
@@ -23,7 +23,7 @@ class HotelInfoType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Descriptions
+     * @var \Devlabs91\TravelgatePushApi\StructType\Descriptions
      */
     public $Descriptions;
     /**
@@ -31,7 +31,7 @@ class HotelInfoType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Position
+     * @var \Devlabs91\TravelgatePushApi\StructType\Position
      */
     public $Position;
     /**
@@ -39,7 +39,7 @@ class HotelInfoType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfHotelInfoTypeService
+     * @var \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfHotelInfoTypeService
      */
     public $Services;
     /**
@@ -60,14 +60,14 @@ class HotelInfoType extends AbstractStructBase
      * @uses HotelInfoType::setServices()
      * @uses HotelInfoType::setWhenBuilt()
      * @uses HotelInfoType::setLastUpdated()
-     * @param \StructType\CategoryCodesType $categoryCodes
-     * @param \StructType\Descriptions $descriptions
-     * @param \StructType\Position $position
-     * @param \ArrayType\ArrayOfHotelInfoTypeService $services
+     * @param \Devlabs91\TravelgatePushApi\StructType\CategoryCodesType $categoryCodes
+     * @param \Devlabs91\TravelgatePushApi\StructType\Descriptions $descriptions
+     * @param \Devlabs91\TravelgatePushApi\StructType\Position $position
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfHotelInfoTypeService $services
      * @param string $whenBuilt
      * @param string $lastUpdated
      */
-    public function __construct(\StructType\CategoryCodesType $categoryCodes = null, \StructType\Descriptions $descriptions = null, \StructType\Position $position = null, \ArrayType\ArrayOfHotelInfoTypeService $services = null, $whenBuilt = null, $lastUpdated = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\StructType\CategoryCodesType $categoryCodes = null, \Devlabs91\TravelgatePushApi\StructType\Descriptions $descriptions = null, \Devlabs91\TravelgatePushApi\StructType\Position $position = null, \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfHotelInfoTypeService $services = null, $whenBuilt = null, $lastUpdated = null)
     {
         $this
             ->setCategoryCodes($categoryCodes)
@@ -79,7 +79,7 @@ class HotelInfoType extends AbstractStructBase
     }
     /**
      * Get CategoryCodes value
-     * @return \StructType\CategoryCodesType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\CategoryCodesType|null
      */
     public function getCategoryCodes()
     {
@@ -87,17 +87,17 @@ class HotelInfoType extends AbstractStructBase
     }
     /**
      * Set CategoryCodes value
-     * @param \StructType\CategoryCodesType $categoryCodes
-     * @return \StructType\HotelInfoType
+     * @param \Devlabs91\TravelgatePushApi\StructType\CategoryCodesType $categoryCodes
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelInfoType
      */
-    public function setCategoryCodes(\StructType\CategoryCodesType $categoryCodes = null)
+    public function setCategoryCodes(\Devlabs91\TravelgatePushApi\StructType\CategoryCodesType $categoryCodes = null)
     {
         $this->CategoryCodes = $categoryCodes;
         return $this;
     }
     /**
      * Get Descriptions value
-     * @return \StructType\Descriptions|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Descriptions|null
      */
     public function getDescriptions()
     {
@@ -105,17 +105,17 @@ class HotelInfoType extends AbstractStructBase
     }
     /**
      * Set Descriptions value
-     * @param \StructType\Descriptions $descriptions
-     * @return \StructType\HotelInfoType
+     * @param \Devlabs91\TravelgatePushApi\StructType\Descriptions $descriptions
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelInfoType
      */
-    public function setDescriptions(\StructType\Descriptions $descriptions = null)
+    public function setDescriptions(\Devlabs91\TravelgatePushApi\StructType\Descriptions $descriptions = null)
     {
         $this->Descriptions = $descriptions;
         return $this;
     }
     /**
      * Get Position value
-     * @return \StructType\Position|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Position|null
      */
     public function getPosition()
     {
@@ -123,17 +123,17 @@ class HotelInfoType extends AbstractStructBase
     }
     /**
      * Set Position value
-     * @param \StructType\Position $position
-     * @return \StructType\HotelInfoType
+     * @param \Devlabs91\TravelgatePushApi\StructType\Position $position
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelInfoType
      */
-    public function setPosition(\StructType\Position $position = null)
+    public function setPosition(\Devlabs91\TravelgatePushApi\StructType\Position $position = null)
     {
         $this->Position = $position;
         return $this;
     }
     /**
      * Get Services value
-     * @return \ArrayType\ArrayOfHotelInfoTypeService|null
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfHotelInfoTypeService|null
      */
     public function getServices()
     {
@@ -141,10 +141,10 @@ class HotelInfoType extends AbstractStructBase
     }
     /**
      * Set Services value
-     * @param \ArrayType\ArrayOfHotelInfoTypeService $services
-     * @return \StructType\HotelInfoType
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfHotelInfoTypeService $services
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelInfoType
      */
-    public function setServices(\ArrayType\ArrayOfHotelInfoTypeService $services = null)
+    public function setServices(\Devlabs91\TravelgatePushApi\ArrayType\ArrayOfHotelInfoTypeService $services = null)
     {
         $this->Services = $services;
         return $this;
@@ -160,7 +160,7 @@ class HotelInfoType extends AbstractStructBase
     /**
      * Set WhenBuilt value
      * @param string $whenBuilt
-     * @return \StructType\HotelInfoType
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelInfoType
      */
     public function setWhenBuilt($whenBuilt = null)
     {
@@ -182,7 +182,7 @@ class HotelInfoType extends AbstractStructBase
     /**
      * Set LastUpdated value
      * @param string $lastUpdated
-     * @return \StructType\HotelInfoType
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelInfoType
      */
     public function setLastUpdated($lastUpdated = null)
     {
@@ -199,7 +199,7 @@ class HotelInfoType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HotelInfoType
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelInfoType
      */
     public static function __set_state(array $array)
     {

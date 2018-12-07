@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class RoomStayType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfRoomTypeType
+     * @var \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRoomTypeType
      */
     public $RoomTypes;
     /**
@@ -23,7 +23,7 @@ class RoomStayType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfRatePlanType
+     * @var \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRatePlanType
      */
     public $RatePlans;
     /**
@@ -31,7 +31,7 @@ class RoomStayType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\RoomRates
+     * @var \Devlabs91\TravelgatePushApi\StructType\RoomRates
      */
     public $RoomRates;
     /**
@@ -39,7 +39,7 @@ class RoomStayType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\GuestCountType
+     * @var \Devlabs91\TravelgatePushApi\StructType\GuestCountType
      */
     public $GuestCounts;
     /**
@@ -47,7 +47,7 @@ class RoomStayType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\DateTimeSpanType
+     * @var \Devlabs91\TravelgatePushApi\StructType\DateTimeSpanType
      */
     public $TimeSpan;
     /**
@@ -55,7 +55,7 @@ class RoomStayType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\CancelPenaltiesType
+     * @var \Devlabs91\TravelgatePushApi\StructType\CancelPenaltiesType
      */
     public $CancelPenalties;
     /**
@@ -63,7 +63,7 @@ class RoomStayType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\TotalType
+     * @var \Devlabs91\TravelgatePushApi\StructType\TotalType
      */
     public $Total;
     /**
@@ -71,7 +71,7 @@ class RoomStayType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\BasicPropertyInfo
+     * @var \Devlabs91\TravelgatePushApi\StructType\BasicPropertyInfo
      */
     public $BasicPropertyInfo;
     /**
@@ -84,16 +84,16 @@ class RoomStayType extends AbstractStructBase
      * @uses RoomStayType::setCancelPenalties()
      * @uses RoomStayType::setTotal()
      * @uses RoomStayType::setBasicPropertyInfo()
-     * @param \ArrayType\ArrayOfRoomTypeType $roomTypes
-     * @param \ArrayType\ArrayOfRatePlanType $ratePlans
-     * @param \StructType\RoomRates $roomRates
-     * @param \StructType\GuestCountType $guestCounts
-     * @param \StructType\DateTimeSpanType $timeSpan
-     * @param \StructType\CancelPenaltiesType $cancelPenalties
-     * @param \StructType\TotalType $total
-     * @param \StructType\BasicPropertyInfo $basicPropertyInfo
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRoomTypeType $roomTypes
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRatePlanType $ratePlans
+     * @param \Devlabs91\TravelgatePushApi\StructType\RoomRates $roomRates
+     * @param \Devlabs91\TravelgatePushApi\StructType\GuestCountType $guestCounts
+     * @param \Devlabs91\TravelgatePushApi\StructType\DateTimeSpanType $timeSpan
+     * @param \Devlabs91\TravelgatePushApi\StructType\CancelPenaltiesType $cancelPenalties
+     * @param \Devlabs91\TravelgatePushApi\StructType\TotalType $total
+     * @param \Devlabs91\TravelgatePushApi\StructType\BasicPropertyInfo $basicPropertyInfo
      */
-    public function __construct(\ArrayType\ArrayOfRoomTypeType $roomTypes = null, \ArrayType\ArrayOfRatePlanType $ratePlans = null, \StructType\RoomRates $roomRates = null, \StructType\GuestCountType $guestCounts = null, \StructType\DateTimeSpanType $timeSpan = null, \StructType\CancelPenaltiesType $cancelPenalties = null, \StructType\TotalType $total = null, \StructType\BasicPropertyInfo $basicPropertyInfo = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRoomTypeType $roomTypes = null, \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRatePlanType $ratePlans = null, \Devlabs91\TravelgatePushApi\StructType\RoomRates $roomRates = null, \Devlabs91\TravelgatePushApi\StructType\GuestCountType $guestCounts = null, \Devlabs91\TravelgatePushApi\StructType\DateTimeSpanType $timeSpan = null, \Devlabs91\TravelgatePushApi\StructType\CancelPenaltiesType $cancelPenalties = null, \Devlabs91\TravelgatePushApi\StructType\TotalType $total = null, \Devlabs91\TravelgatePushApi\StructType\BasicPropertyInfo $basicPropertyInfo = null)
     {
         $this
             ->setRoomTypes($roomTypes)
@@ -107,7 +107,7 @@ class RoomStayType extends AbstractStructBase
     }
     /**
      * Get RoomTypes value
-     * @return \ArrayType\ArrayOfRoomTypeType|null
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRoomTypeType|null
      */
     public function getRoomTypes()
     {
@@ -115,17 +115,17 @@ class RoomStayType extends AbstractStructBase
     }
     /**
      * Set RoomTypes value
-     * @param \ArrayType\ArrayOfRoomTypeType $roomTypes
-     * @return \StructType\RoomStayType
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRoomTypeType $roomTypes
+     * @return \Devlabs91\TravelgatePushApi\StructType\RoomStayType
      */
-    public function setRoomTypes(\ArrayType\ArrayOfRoomTypeType $roomTypes = null)
+    public function setRoomTypes(\Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRoomTypeType $roomTypes = null)
     {
         $this->RoomTypes = $roomTypes;
         return $this;
     }
     /**
      * Get RatePlans value
-     * @return \ArrayType\ArrayOfRatePlanType|null
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRatePlanType|null
      */
     public function getRatePlans()
     {
@@ -133,17 +133,17 @@ class RoomStayType extends AbstractStructBase
     }
     /**
      * Set RatePlans value
-     * @param \ArrayType\ArrayOfRatePlanType $ratePlans
-     * @return \StructType\RoomStayType
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRatePlanType $ratePlans
+     * @return \Devlabs91\TravelgatePushApi\StructType\RoomStayType
      */
-    public function setRatePlans(\ArrayType\ArrayOfRatePlanType $ratePlans = null)
+    public function setRatePlans(\Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRatePlanType $ratePlans = null)
     {
         $this->RatePlans = $ratePlans;
         return $this;
     }
     /**
      * Get RoomRates value
-     * @return \StructType\RoomRates|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\RoomRates|null
      */
     public function getRoomRates()
     {
@@ -151,17 +151,17 @@ class RoomStayType extends AbstractStructBase
     }
     /**
      * Set RoomRates value
-     * @param \StructType\RoomRates $roomRates
-     * @return \StructType\RoomStayType
+     * @param \Devlabs91\TravelgatePushApi\StructType\RoomRates $roomRates
+     * @return \Devlabs91\TravelgatePushApi\StructType\RoomStayType
      */
-    public function setRoomRates(\StructType\RoomRates $roomRates = null)
+    public function setRoomRates(\Devlabs91\TravelgatePushApi\StructType\RoomRates $roomRates = null)
     {
         $this->RoomRates = $roomRates;
         return $this;
     }
     /**
      * Get GuestCounts value
-     * @return \StructType\GuestCountType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\GuestCountType|null
      */
     public function getGuestCounts()
     {
@@ -169,17 +169,17 @@ class RoomStayType extends AbstractStructBase
     }
     /**
      * Set GuestCounts value
-     * @param \StructType\GuestCountType $guestCounts
-     * @return \StructType\RoomStayType
+     * @param \Devlabs91\TravelgatePushApi\StructType\GuestCountType $guestCounts
+     * @return \Devlabs91\TravelgatePushApi\StructType\RoomStayType
      */
-    public function setGuestCounts(\StructType\GuestCountType $guestCounts = null)
+    public function setGuestCounts(\Devlabs91\TravelgatePushApi\StructType\GuestCountType $guestCounts = null)
     {
         $this->GuestCounts = $guestCounts;
         return $this;
     }
     /**
      * Get TimeSpan value
-     * @return \StructType\DateTimeSpanType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\DateTimeSpanType|null
      */
     public function getTimeSpan()
     {
@@ -187,17 +187,17 @@ class RoomStayType extends AbstractStructBase
     }
     /**
      * Set TimeSpan value
-     * @param \StructType\DateTimeSpanType $timeSpan
-     * @return \StructType\RoomStayType
+     * @param \Devlabs91\TravelgatePushApi\StructType\DateTimeSpanType $timeSpan
+     * @return \Devlabs91\TravelgatePushApi\StructType\RoomStayType
      */
-    public function setTimeSpan(\StructType\DateTimeSpanType $timeSpan = null)
+    public function setTimeSpan(\Devlabs91\TravelgatePushApi\StructType\DateTimeSpanType $timeSpan = null)
     {
         $this->TimeSpan = $timeSpan;
         return $this;
     }
     /**
      * Get CancelPenalties value
-     * @return \StructType\CancelPenaltiesType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\CancelPenaltiesType|null
      */
     public function getCancelPenalties()
     {
@@ -205,17 +205,17 @@ class RoomStayType extends AbstractStructBase
     }
     /**
      * Set CancelPenalties value
-     * @param \StructType\CancelPenaltiesType $cancelPenalties
-     * @return \StructType\RoomStayType
+     * @param \Devlabs91\TravelgatePushApi\StructType\CancelPenaltiesType $cancelPenalties
+     * @return \Devlabs91\TravelgatePushApi\StructType\RoomStayType
      */
-    public function setCancelPenalties(\StructType\CancelPenaltiesType $cancelPenalties = null)
+    public function setCancelPenalties(\Devlabs91\TravelgatePushApi\StructType\CancelPenaltiesType $cancelPenalties = null)
     {
         $this->CancelPenalties = $cancelPenalties;
         return $this;
     }
     /**
      * Get Total value
-     * @return \StructType\TotalType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\TotalType|null
      */
     public function getTotal()
     {
@@ -223,17 +223,17 @@ class RoomStayType extends AbstractStructBase
     }
     /**
      * Set Total value
-     * @param \StructType\TotalType $total
-     * @return \StructType\RoomStayType
+     * @param \Devlabs91\TravelgatePushApi\StructType\TotalType $total
+     * @return \Devlabs91\TravelgatePushApi\StructType\RoomStayType
      */
-    public function setTotal(\StructType\TotalType $total = null)
+    public function setTotal(\Devlabs91\TravelgatePushApi\StructType\TotalType $total = null)
     {
         $this->Total = $total;
         return $this;
     }
     /**
      * Get BasicPropertyInfo value
-     * @return \StructType\BasicPropertyInfo|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\BasicPropertyInfo|null
      */
     public function getBasicPropertyInfo()
     {
@@ -241,10 +241,10 @@ class RoomStayType extends AbstractStructBase
     }
     /**
      * Set BasicPropertyInfo value
-     * @param \StructType\BasicPropertyInfo $basicPropertyInfo
-     * @return \StructType\RoomStayType
+     * @param \Devlabs91\TravelgatePushApi\StructType\BasicPropertyInfo $basicPropertyInfo
+     * @return \Devlabs91\TravelgatePushApi\StructType\RoomStayType
      */
-    public function setBasicPropertyInfo(\StructType\BasicPropertyInfo $basicPropertyInfo = null)
+    public function setBasicPropertyInfo(\Devlabs91\TravelgatePushApi\StructType\BasicPropertyInfo $basicPropertyInfo = null)
     {
         $this->BasicPropertyInfo = $basicPropertyInfo;
         return $this;
@@ -255,7 +255,7 @@ class RoomStayType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\RoomStayType
+     * @return \Devlabs91\TravelgatePushApi\StructType\RoomStayType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class FacilityInfoType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\GuestRooms
+     * @var \Devlabs91\TravelgatePushApi\StructType\GuestRooms
      */
     public $GuestRooms;
     /**
      * Constructor method for FacilityInfoType
      * @uses FacilityInfoType::setGuestRooms()
-     * @param \StructType\GuestRooms $guestRooms
+     * @param \Devlabs91\TravelgatePushApi\StructType\GuestRooms $guestRooms
      */
-    public function __construct(\StructType\GuestRooms $guestRooms = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\StructType\GuestRooms $guestRooms = null)
     {
         $this
             ->setGuestRooms($guestRooms);
     }
     /**
      * Get GuestRooms value
-     * @return \StructType\GuestRooms|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\GuestRooms|null
      */
     public function getGuestRooms()
     {
@@ -38,10 +38,10 @@ class FacilityInfoType extends AbstractStructBase
     }
     /**
      * Set GuestRooms value
-     * @param \StructType\GuestRooms $guestRooms
-     * @return \StructType\FacilityInfoType
+     * @param \Devlabs91\TravelgatePushApi\StructType\GuestRooms $guestRooms
+     * @return \Devlabs91\TravelgatePushApi\StructType\FacilityInfoType
      */
-    public function setGuestRooms(\StructType\GuestRooms $guestRooms = null)
+    public function setGuestRooms(\Devlabs91\TravelgatePushApi\StructType\GuestRooms $guestRooms = null)
     {
         $this->GuestRooms = $guestRooms;
         return $this;
@@ -52,7 +52,7 @@ class FacilityInfoType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\FacilityInfoType
+     * @return \Devlabs91\TravelgatePushApi\StructType\FacilityInfoType
      */
     public static function __set_state(array $array)
     {

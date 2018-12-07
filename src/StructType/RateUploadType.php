@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class RateUploadType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfRateUploadTypeBaseByGuestAmt
+     * @var \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRateUploadTypeBaseByGuestAmt
      */
     public $BaseByGuestAmts;
     /**
@@ -23,7 +23,7 @@ class RateUploadType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfRateUploadTypeAdditionalGuestAmount
+     * @var \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRateUploadTypeAdditionalGuestAmount
      */
     public $AdditionalGuestAmounts;
     /**
@@ -31,7 +31,7 @@ class RateUploadType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfRequiredPaymentsTypeGuaranteePayment
+     * @var \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRequiredPaymentsTypeGuaranteePayment
      */
     public $PaymentPolicies;
     /**
@@ -39,7 +39,7 @@ class RateUploadType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\MealsIncluded
+     * @var \Devlabs91\TravelgatePushApi\StructType\MealsIncluded
      */
     public $MealsIncluded;
     /**
@@ -102,10 +102,10 @@ class RateUploadType extends AbstractStructBase
      * @uses RateUploadType::setFri()
      * @uses RateUploadType::setSat()
      * @uses RateUploadType::setSun()
-     * @param \ArrayType\ArrayOfRateUploadTypeBaseByGuestAmt $baseByGuestAmts
-     * @param \ArrayType\ArrayOfRateUploadTypeAdditionalGuestAmount $additionalGuestAmounts
-     * @param \ArrayType\ArrayOfRequiredPaymentsTypeGuaranteePayment $paymentPolicies
-     * @param \StructType\MealsIncluded $mealsIncluded
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRateUploadTypeBaseByGuestAmt $baseByGuestAmts
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRateUploadTypeAdditionalGuestAmount $additionalGuestAmounts
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRequiredPaymentsTypeGuaranteePayment $paymentPolicies
+     * @param \Devlabs91\TravelgatePushApi\StructType\MealsIncluded $mealsIncluded
      * @param string $start
      * @param string $end
      * @param bool $mon
@@ -116,7 +116,7 @@ class RateUploadType extends AbstractStructBase
      * @param bool $sat
      * @param bool $sun
      */
-    public function __construct(\ArrayType\ArrayOfRateUploadTypeBaseByGuestAmt $baseByGuestAmts = null, \ArrayType\ArrayOfRateUploadTypeAdditionalGuestAmount $additionalGuestAmounts = null, \ArrayType\ArrayOfRequiredPaymentsTypeGuaranteePayment $paymentPolicies = null, \StructType\MealsIncluded $mealsIncluded = null, $start = null, $end = null, $mon = null, $tue = null, $weds = null, $thur = null, $fri = null, $sat = null, $sun = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRateUploadTypeBaseByGuestAmt $baseByGuestAmts = null, \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRateUploadTypeAdditionalGuestAmount $additionalGuestAmounts = null, \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRequiredPaymentsTypeGuaranteePayment $paymentPolicies = null, \Devlabs91\TravelgatePushApi\StructType\MealsIncluded $mealsIncluded = null, $start = null, $end = null, $mon = null, $tue = null, $weds = null, $thur = null, $fri = null, $sat = null, $sun = null)
     {
         $this
             ->setBaseByGuestAmts($baseByGuestAmts)
@@ -135,7 +135,7 @@ class RateUploadType extends AbstractStructBase
     }
     /**
      * Get BaseByGuestAmts value
-     * @return \ArrayType\ArrayOfRateUploadTypeBaseByGuestAmt|null
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRateUploadTypeBaseByGuestAmt|null
      */
     public function getBaseByGuestAmts()
     {
@@ -143,17 +143,17 @@ class RateUploadType extends AbstractStructBase
     }
     /**
      * Set BaseByGuestAmts value
-     * @param \ArrayType\ArrayOfRateUploadTypeBaseByGuestAmt $baseByGuestAmts
-     * @return \StructType\RateUploadType
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRateUploadTypeBaseByGuestAmt $baseByGuestAmts
+     * @return \Devlabs91\TravelgatePushApi\StructType\RateUploadType
      */
-    public function setBaseByGuestAmts(\ArrayType\ArrayOfRateUploadTypeBaseByGuestAmt $baseByGuestAmts = null)
+    public function setBaseByGuestAmts(\Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRateUploadTypeBaseByGuestAmt $baseByGuestAmts = null)
     {
         $this->BaseByGuestAmts = $baseByGuestAmts;
         return $this;
     }
     /**
      * Get AdditionalGuestAmounts value
-     * @return \ArrayType\ArrayOfRateUploadTypeAdditionalGuestAmount|null
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRateUploadTypeAdditionalGuestAmount|null
      */
     public function getAdditionalGuestAmounts()
     {
@@ -161,17 +161,17 @@ class RateUploadType extends AbstractStructBase
     }
     /**
      * Set AdditionalGuestAmounts value
-     * @param \ArrayType\ArrayOfRateUploadTypeAdditionalGuestAmount $additionalGuestAmounts
-     * @return \StructType\RateUploadType
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRateUploadTypeAdditionalGuestAmount $additionalGuestAmounts
+     * @return \Devlabs91\TravelgatePushApi\StructType\RateUploadType
      */
-    public function setAdditionalGuestAmounts(\ArrayType\ArrayOfRateUploadTypeAdditionalGuestAmount $additionalGuestAmounts = null)
+    public function setAdditionalGuestAmounts(\Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRateUploadTypeAdditionalGuestAmount $additionalGuestAmounts = null)
     {
         $this->AdditionalGuestAmounts = $additionalGuestAmounts;
         return $this;
     }
     /**
      * Get PaymentPolicies value
-     * @return \ArrayType\ArrayOfRequiredPaymentsTypeGuaranteePayment|null
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRequiredPaymentsTypeGuaranteePayment|null
      */
     public function getPaymentPolicies()
     {
@@ -179,17 +179,17 @@ class RateUploadType extends AbstractStructBase
     }
     /**
      * Set PaymentPolicies value
-     * @param \ArrayType\ArrayOfRequiredPaymentsTypeGuaranteePayment $paymentPolicies
-     * @return \StructType\RateUploadType
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRequiredPaymentsTypeGuaranteePayment $paymentPolicies
+     * @return \Devlabs91\TravelgatePushApi\StructType\RateUploadType
      */
-    public function setPaymentPolicies(\ArrayType\ArrayOfRequiredPaymentsTypeGuaranteePayment $paymentPolicies = null)
+    public function setPaymentPolicies(\Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRequiredPaymentsTypeGuaranteePayment $paymentPolicies = null)
     {
         $this->PaymentPolicies = $paymentPolicies;
         return $this;
     }
     /**
      * Get MealsIncluded value
-     * @return \StructType\MealsIncluded|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\MealsIncluded|null
      */
     public function getMealsIncluded()
     {
@@ -197,10 +197,10 @@ class RateUploadType extends AbstractStructBase
     }
     /**
      * Set MealsIncluded value
-     * @param \StructType\MealsIncluded $mealsIncluded
-     * @return \StructType\RateUploadType
+     * @param \Devlabs91\TravelgatePushApi\StructType\MealsIncluded $mealsIncluded
+     * @return \Devlabs91\TravelgatePushApi\StructType\RateUploadType
      */
-    public function setMealsIncluded(\StructType\MealsIncluded $mealsIncluded = null)
+    public function setMealsIncluded(\Devlabs91\TravelgatePushApi\StructType\MealsIncluded $mealsIncluded = null)
     {
         $this->MealsIncluded = $mealsIncluded;
         return $this;
@@ -216,7 +216,7 @@ class RateUploadType extends AbstractStructBase
     /**
      * Set Start value
      * @param string $start
-     * @return \StructType\RateUploadType
+     * @return \Devlabs91\TravelgatePushApi\StructType\RateUploadType
      */
     public function setStart($start = null)
     {
@@ -238,7 +238,7 @@ class RateUploadType extends AbstractStructBase
     /**
      * Set End value
      * @param string $end
-     * @return \StructType\RateUploadType
+     * @return \Devlabs91\TravelgatePushApi\StructType\RateUploadType
      */
     public function setEnd($end = null)
     {
@@ -260,7 +260,7 @@ class RateUploadType extends AbstractStructBase
     /**
      * Set Mon value
      * @param bool $mon
-     * @return \StructType\RateUploadType
+     * @return \Devlabs91\TravelgatePushApi\StructType\RateUploadType
      */
     public function setMon($mon = null)
     {
@@ -282,7 +282,7 @@ class RateUploadType extends AbstractStructBase
     /**
      * Set Tue value
      * @param bool $tue
-     * @return \StructType\RateUploadType
+     * @return \Devlabs91\TravelgatePushApi\StructType\RateUploadType
      */
     public function setTue($tue = null)
     {
@@ -304,7 +304,7 @@ class RateUploadType extends AbstractStructBase
     /**
      * Set Weds value
      * @param bool $weds
-     * @return \StructType\RateUploadType
+     * @return \Devlabs91\TravelgatePushApi\StructType\RateUploadType
      */
     public function setWeds($weds = null)
     {
@@ -326,7 +326,7 @@ class RateUploadType extends AbstractStructBase
     /**
      * Set Thur value
      * @param bool $thur
-     * @return \StructType\RateUploadType
+     * @return \Devlabs91\TravelgatePushApi\StructType\RateUploadType
      */
     public function setThur($thur = null)
     {
@@ -348,7 +348,7 @@ class RateUploadType extends AbstractStructBase
     /**
      * Set Fri value
      * @param bool $fri
-     * @return \StructType\RateUploadType
+     * @return \Devlabs91\TravelgatePushApi\StructType\RateUploadType
      */
     public function setFri($fri = null)
     {
@@ -370,7 +370,7 @@ class RateUploadType extends AbstractStructBase
     /**
      * Set Sat value
      * @param bool $sat
-     * @return \StructType\RateUploadType
+     * @return \Devlabs91\TravelgatePushApi\StructType\RateUploadType
      */
     public function setSat($sat = null)
     {
@@ -392,7 +392,7 @@ class RateUploadType extends AbstractStructBase
     /**
      * Set Sun value
      * @param bool $sun
-     * @return \StructType\RateUploadType
+     * @return \Devlabs91\TravelgatePushApi\StructType\RateUploadType
      */
     public function setSun($sun = null)
     {
@@ -409,7 +409,7 @@ class RateUploadType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\RateUploadType
+     * @return \Devlabs91\TravelgatePushApi\StructType\RateUploadType
      */
     public static function __set_state(array $array)
     {

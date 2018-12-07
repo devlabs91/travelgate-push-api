@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class ContactInfoType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfAddressesTypeAddress
+     * @var \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfAddressesTypeAddress
      */
     public $Addresses;
     /**
@@ -23,7 +23,7 @@ class ContactInfoType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfPhonesTypePhone
+     * @var \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfPhonesTypePhone
      */
     public $Phones;
     /**
@@ -31,7 +31,7 @@ class ContactInfoType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfEmailsTypeEmail
+     * @var \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfEmailsTypeEmail
      */
     public $Emails;
     /**
@@ -39,7 +39,7 @@ class ContactInfoType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfURLsTypeURL
+     * @var \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfURLsTypeURL
      */
     public $URLs;
     /**
@@ -48,12 +48,12 @@ class ContactInfoType extends AbstractStructBase
      * @uses ContactInfoType::setPhones()
      * @uses ContactInfoType::setEmails()
      * @uses ContactInfoType::setURLs()
-     * @param \ArrayType\ArrayOfAddressesTypeAddress $addresses
-     * @param \ArrayType\ArrayOfPhonesTypePhone $phones
-     * @param \ArrayType\ArrayOfEmailsTypeEmail $emails
-     * @param \ArrayType\ArrayOfURLsTypeURL $uRLs
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfAddressesTypeAddress $addresses
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfPhonesTypePhone $phones
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfEmailsTypeEmail $emails
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfURLsTypeURL $uRLs
      */
-    public function __construct(\ArrayType\ArrayOfAddressesTypeAddress $addresses = null, \ArrayType\ArrayOfPhonesTypePhone $phones = null, \ArrayType\ArrayOfEmailsTypeEmail $emails = null, \ArrayType\ArrayOfURLsTypeURL $uRLs = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\ArrayType\ArrayOfAddressesTypeAddress $addresses = null, \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfPhonesTypePhone $phones = null, \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfEmailsTypeEmail $emails = null, \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfURLsTypeURL $uRLs = null)
     {
         $this
             ->setAddresses($addresses)
@@ -63,7 +63,7 @@ class ContactInfoType extends AbstractStructBase
     }
     /**
      * Get Addresses value
-     * @return \ArrayType\ArrayOfAddressesTypeAddress|null
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfAddressesTypeAddress|null
      */
     public function getAddresses()
     {
@@ -71,17 +71,17 @@ class ContactInfoType extends AbstractStructBase
     }
     /**
      * Set Addresses value
-     * @param \ArrayType\ArrayOfAddressesTypeAddress $addresses
-     * @return \StructType\ContactInfoType
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfAddressesTypeAddress $addresses
+     * @return \Devlabs91\TravelgatePushApi\StructType\ContactInfoType
      */
-    public function setAddresses(\ArrayType\ArrayOfAddressesTypeAddress $addresses = null)
+    public function setAddresses(\Devlabs91\TravelgatePushApi\ArrayType\ArrayOfAddressesTypeAddress $addresses = null)
     {
         $this->Addresses = $addresses;
         return $this;
     }
     /**
      * Get Phones value
-     * @return \ArrayType\ArrayOfPhonesTypePhone|null
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfPhonesTypePhone|null
      */
     public function getPhones()
     {
@@ -89,17 +89,17 @@ class ContactInfoType extends AbstractStructBase
     }
     /**
      * Set Phones value
-     * @param \ArrayType\ArrayOfPhonesTypePhone $phones
-     * @return \StructType\ContactInfoType
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfPhonesTypePhone $phones
+     * @return \Devlabs91\TravelgatePushApi\StructType\ContactInfoType
      */
-    public function setPhones(\ArrayType\ArrayOfPhonesTypePhone $phones = null)
+    public function setPhones(\Devlabs91\TravelgatePushApi\ArrayType\ArrayOfPhonesTypePhone $phones = null)
     {
         $this->Phones = $phones;
         return $this;
     }
     /**
      * Get Emails value
-     * @return \ArrayType\ArrayOfEmailsTypeEmail|null
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfEmailsTypeEmail|null
      */
     public function getEmails()
     {
@@ -107,17 +107,17 @@ class ContactInfoType extends AbstractStructBase
     }
     /**
      * Set Emails value
-     * @param \ArrayType\ArrayOfEmailsTypeEmail $emails
-     * @return \StructType\ContactInfoType
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfEmailsTypeEmail $emails
+     * @return \Devlabs91\TravelgatePushApi\StructType\ContactInfoType
      */
-    public function setEmails(\ArrayType\ArrayOfEmailsTypeEmail $emails = null)
+    public function setEmails(\Devlabs91\TravelgatePushApi\ArrayType\ArrayOfEmailsTypeEmail $emails = null)
     {
         $this->Emails = $emails;
         return $this;
     }
     /**
      * Get URLs value
-     * @return \ArrayType\ArrayOfURLsTypeURL|null
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfURLsTypeURL|null
      */
     public function getURLs()
     {
@@ -125,10 +125,10 @@ class ContactInfoType extends AbstractStructBase
     }
     /**
      * Set URLs value
-     * @param \ArrayType\ArrayOfURLsTypeURL $uRLs
-     * @return \StructType\ContactInfoType
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfURLsTypeURL $uRLs
+     * @return \Devlabs91\TravelgatePushApi\StructType\ContactInfoType
      */
-    public function setURLs(\ArrayType\ArrayOfURLsTypeURL $uRLs = null)
+    public function setURLs(\Devlabs91\TravelgatePushApi\ArrayType\ArrayOfURLsTypeURL $uRLs = null)
     {
         $this->URLs = $uRLs;
         return $this;
@@ -139,7 +139,7 @@ class ContactInfoType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ContactInfoType
+     * @return \Devlabs91\TravelgatePushApi\StructType\ContactInfoType
      */
     public static function __set_state(array $array)
     {

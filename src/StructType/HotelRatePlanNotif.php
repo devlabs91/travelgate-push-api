@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class HotelRatePlanNotif extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\OTA_HotelRatePlanNotifRQ
+     * @var \Devlabs91\TravelgatePushApi\StructType\OTA_HotelRatePlanNotifRQ
      */
     public $request;
     /**
      * Constructor method for HotelRatePlanNotif
      * @uses HotelRatePlanNotif::setRequest()
-     * @param \StructType\OTA_HotelRatePlanNotifRQ $request
+     * @param \Devlabs91\TravelgatePushApi\StructType\OTA_HotelRatePlanNotifRQ $request
      */
-    public function __construct(\StructType\OTA_HotelRatePlanNotifRQ $request = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\StructType\OTA_HotelRatePlanNotifRQ $request = null)
     {
         $this
             ->setRequest($request);
     }
     /**
      * Get request value
-     * @return \StructType\OTA_HotelRatePlanNotifRQ|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_HotelRatePlanNotifRQ|null
      */
     public function getRequest()
     {
@@ -38,10 +38,10 @@ class HotelRatePlanNotif extends AbstractStructBase
     }
     /**
      * Set request value
-     * @param \StructType\OTA_HotelRatePlanNotifRQ $request
-     * @return \StructType\HotelRatePlanNotif
+     * @param \Devlabs91\TravelgatePushApi\StructType\OTA_HotelRatePlanNotifRQ $request
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRatePlanNotif
      */
-    public function setRequest(\StructType\OTA_HotelRatePlanNotifRQ $request = null)
+    public function setRequest(\Devlabs91\TravelgatePushApi\StructType\OTA_HotelRatePlanNotifRQ $request = null)
     {
         $this->request = $request;
         return $this;
@@ -52,7 +52,7 @@ class HotelRatePlanNotif extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HotelRatePlanNotif
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRatePlanNotif
      */
     public static function __set_state(array $array)
     {

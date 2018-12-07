@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class Viewership extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\LocationCodes
+     * @var \Devlabs91\TravelgatePushApi\StructType\LocationCodes
      */
     public $LocationCodes;
     /**
      * Constructor method for Viewership
      * @uses Viewership::setLocationCodes()
-     * @param \StructType\LocationCodes $locationCodes
+     * @param \Devlabs91\TravelgatePushApi\StructType\LocationCodes $locationCodes
      */
-    public function __construct(\StructType\LocationCodes $locationCodes = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\StructType\LocationCodes $locationCodes = null)
     {
         $this
             ->setLocationCodes($locationCodes);
     }
     /**
      * Get LocationCodes value
-     * @return \StructType\LocationCodes|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\LocationCodes|null
      */
     public function getLocationCodes()
     {
@@ -38,10 +38,10 @@ class Viewership extends AbstractStructBase
     }
     /**
      * Set LocationCodes value
-     * @param \StructType\LocationCodes $locationCodes
-     * @return \StructType\Viewership
+     * @param \Devlabs91\TravelgatePushApi\StructType\LocationCodes $locationCodes
+     * @return \Devlabs91\TravelgatePushApi\StructType\Viewership
      */
-    public function setLocationCodes(\StructType\LocationCodes $locationCodes = null)
+    public function setLocationCodes(\Devlabs91\TravelgatePushApi\StructType\LocationCodes $locationCodes = null)
     {
         $this->LocationCodes = $locationCodes;
         return $this;
@@ -52,7 +52,7 @@ class Viewership extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Viewership
+     * @return \Devlabs91\TravelgatePushApi\StructType\Viewership
      */
     public static function __set_state(array $array)
     {

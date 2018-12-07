@@ -1,6 +1,6 @@
 <?php
 
-namespace ArrayType;
+namespace Devlabs91\TravelgatePushApi\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -15,13 +15,13 @@ class ArrayOfRefPointsTypeRefPoint extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\RefPoint[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\RefPoint[]
      */
     public $RefPoint;
     /**
      * Constructor method for ArrayOfRefPointsTypeRefPoint
      * @uses ArrayOfRefPointsTypeRefPoint::setRefPoint()
-     * @param \StructType\RefPoint[] $refPoint
+     * @param \Devlabs91\TravelgatePushApi\StructType\RefPoint[] $refPoint
      */
     public function __construct(array $refPoint = array())
     {
@@ -30,7 +30,7 @@ class ArrayOfRefPointsTypeRefPoint extends AbstractStructArrayBase
     }
     /**
      * Get RefPoint value
-     * @return \StructType\RefPoint[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\RefPoint[]|null
      */
     public function getRefPoint()
     {
@@ -39,15 +39,15 @@ class ArrayOfRefPointsTypeRefPoint extends AbstractStructArrayBase
     /**
      * Set RefPoint value
      * @throws \InvalidArgumentException
-     * @param \StructType\RefPoint[] $refPoint
-     * @return \ArrayType\ArrayOfRefPointsTypeRefPoint
+     * @param \Devlabs91\TravelgatePushApi\StructType\RefPoint[] $refPoint
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRefPointsTypeRefPoint
      */
     public function setRefPoint(array $refPoint = array())
     {
         foreach ($refPoint as $arrayOfRefPointsTypeRefPointRefPointItem) {
             // validation for constraint: itemType
-            if (!$arrayOfRefPointsTypeRefPointRefPointItem instanceof \StructType\RefPoint) {
-                throw new \InvalidArgumentException(sprintf('The RefPoint property can only contain items of \StructType\RefPoint, "%s" given', is_object($arrayOfRefPointsTypeRefPointRefPointItem) ? get_class($arrayOfRefPointsTypeRefPointRefPointItem) : gettype($arrayOfRefPointsTypeRefPointRefPointItem)), __LINE__);
+            if (!$arrayOfRefPointsTypeRefPointRefPointItem instanceof \Devlabs91\TravelgatePushApi\StructType\RefPoint) {
+                throw new \InvalidArgumentException(sprintf('The RefPoint property can only contain items of \Devlabs91\TravelgatePushApi\StructType\RefPoint, "%s" given', is_object($arrayOfRefPointsTypeRefPointRefPointItem) ? get_class($arrayOfRefPointsTypeRefPointRefPointItem) : gettype($arrayOfRefPointsTypeRefPointRefPointItem)), __LINE__);
             }
         }
         $this->RefPoint = $refPoint;
@@ -56,14 +56,14 @@ class ArrayOfRefPointsTypeRefPoint extends AbstractStructArrayBase
     /**
      * Add item to RefPoint value
      * @throws \InvalidArgumentException
-     * @param \StructType\RefPoint $item
-     * @return \ArrayType\ArrayOfRefPointsTypeRefPoint
+     * @param \Devlabs91\TravelgatePushApi\StructType\RefPoint $item
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRefPointsTypeRefPoint
      */
-    public function addToRefPoint(\StructType\RefPoint $item)
+    public function addToRefPoint(\Devlabs91\TravelgatePushApi\StructType\RefPoint $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\RefPoint) {
-            throw new \InvalidArgumentException(sprintf('The RefPoint property can only contain items of \StructType\RefPoint, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\RefPoint) {
+            throw new \InvalidArgumentException(sprintf('The RefPoint property can only contain items of \Devlabs91\TravelgatePushApi\StructType\RefPoint, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->RefPoint[] = $item;
         return $this;
@@ -71,7 +71,7 @@ class ArrayOfRefPointsTypeRefPoint extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \StructType\RefPoint|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\RefPoint|null
      */
     public function current()
     {
@@ -81,7 +81,7 @@ class ArrayOfRefPointsTypeRefPoint extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \StructType\RefPoint|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\RefPoint|null
      */
     public function item($index)
     {
@@ -90,7 +90,7 @@ class ArrayOfRefPointsTypeRefPoint extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \StructType\RefPoint|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\RefPoint|null
      */
     public function first()
     {
@@ -99,7 +99,7 @@ class ArrayOfRefPointsTypeRefPoint extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \StructType\RefPoint|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\RefPoint|null
      */
     public function last()
     {
@@ -109,7 +109,7 @@ class ArrayOfRefPointsTypeRefPoint extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \StructType\RefPoint|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\RefPoint|null
      */
     public function offsetGet($offset)
     {
@@ -130,7 +130,7 @@ class ArrayOfRefPointsTypeRefPoint extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \ArrayType\ArrayOfRefPointsTypeRefPoint
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRefPointsTypeRefPoint
      */
     public static function __set_state(array $array)
     {

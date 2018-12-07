@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -44,7 +44,7 @@ class HotelRef extends AbstractStructBase
     /**
      * Set HotelCode value
      * @param string $hotelCode
-     * @return \StructType\HotelRef
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRef
      */
     public function setHotelCode($hotelCode = null)
     {
@@ -66,7 +66,7 @@ class HotelRef extends AbstractStructBase
     /**
      * Set HotelCityCode value
      * @param string $hotelCityCode
-     * @return \StructType\HotelRef
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRef
      */
     public function setHotelCityCode($hotelCityCode = null)
     {
@@ -83,7 +83,7 @@ class HotelRef extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HotelRef
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRef
      */
     public static function __set_state(array $array)
     {

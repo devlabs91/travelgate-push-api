@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -39,7 +39,7 @@ class ImageItemType extends AbstractStructBase
     /**
      * Set URL value
      * @param string $uRL
-     * @return \StructType\ImageItemType
+     * @return \Devlabs91\TravelgatePushApi\StructType\ImageItemType
      */
     public function setURL($uRL = null)
     {
@@ -56,7 +56,7 @@ class ImageItemType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ImageItemType
+     * @return \Devlabs91\TravelgatePushApi\StructType\ImageItemType
      */
     public static function __set_state(array $array)
     {

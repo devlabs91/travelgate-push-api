@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class GuestRoom extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\TypeRoom[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\TypeRoom[]
      */
     public $TypeRoom;
     /**
@@ -23,7 +23,7 @@ class GuestRoom extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfFacilityInfoTypeGuestRoomsGuestRoomAmenity
+     * @var \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfFacilityInfoTypeGuestRoomsGuestRoomAmenity
      */
     public $Amenities;
     /**
@@ -31,7 +31,7 @@ class GuestRoom extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\MultimediaDescriptionsType
+     * @var \Devlabs91\TravelgatePushApi\StructType\MultimediaDescriptionsType
      */
     public $MultimediaDescriptions;
     /**
@@ -51,13 +51,13 @@ class GuestRoom extends AbstractStructBase
      * @uses GuestRoom::setMultimediaDescriptions()
      * @uses GuestRoom::setRoomTypeName()
      * @uses GuestRoom::setMaxOccupancy()
-     * @param \StructType\TypeRoom[] $typeRoom
-     * @param \ArrayType\ArrayOfFacilityInfoTypeGuestRoomsGuestRoomAmenity $amenities
-     * @param \StructType\MultimediaDescriptionsType $multimediaDescriptions
+     * @param \Devlabs91\TravelgatePushApi\StructType\TypeRoom[] $typeRoom
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfFacilityInfoTypeGuestRoomsGuestRoomAmenity $amenities
+     * @param \Devlabs91\TravelgatePushApi\StructType\MultimediaDescriptionsType $multimediaDescriptions
      * @param string $roomTypeName
      * @param int $maxOccupancy
      */
-    public function __construct(array $typeRoom = array(), \ArrayType\ArrayOfFacilityInfoTypeGuestRoomsGuestRoomAmenity $amenities = null, \StructType\MultimediaDescriptionsType $multimediaDescriptions = null, $roomTypeName = null, $maxOccupancy = null)
+    public function __construct(array $typeRoom = array(), \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfFacilityInfoTypeGuestRoomsGuestRoomAmenity $amenities = null, \Devlabs91\TravelgatePushApi\StructType\MultimediaDescriptionsType $multimediaDescriptions = null, $roomTypeName = null, $maxOccupancy = null)
     {
         $this
             ->setTypeRoom($typeRoom)
@@ -68,7 +68,7 @@ class GuestRoom extends AbstractStructBase
     }
     /**
      * Get TypeRoom value
-     * @return \StructType\TypeRoom[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\TypeRoom[]|null
      */
     public function getTypeRoom()
     {
@@ -77,15 +77,15 @@ class GuestRoom extends AbstractStructBase
     /**
      * Set TypeRoom value
      * @throws \InvalidArgumentException
-     * @param \StructType\TypeRoom[] $typeRoom
-     * @return \StructType\GuestRoom
+     * @param \Devlabs91\TravelgatePushApi\StructType\TypeRoom[] $typeRoom
+     * @return \Devlabs91\TravelgatePushApi\StructType\GuestRoom
      */
     public function setTypeRoom(array $typeRoom = array())
     {
         foreach ($typeRoom as $guestRoomTypeRoomItem) {
             // validation for constraint: itemType
-            if (!$guestRoomTypeRoomItem instanceof \StructType\TypeRoom) {
-                throw new \InvalidArgumentException(sprintf('The TypeRoom property can only contain items of \StructType\TypeRoom, "%s" given', is_object($guestRoomTypeRoomItem) ? get_class($guestRoomTypeRoomItem) : gettype($guestRoomTypeRoomItem)), __LINE__);
+            if (!$guestRoomTypeRoomItem instanceof \Devlabs91\TravelgatePushApi\StructType\TypeRoom) {
+                throw new \InvalidArgumentException(sprintf('The TypeRoom property can only contain items of \Devlabs91\TravelgatePushApi\StructType\TypeRoom, "%s" given', is_object($guestRoomTypeRoomItem) ? get_class($guestRoomTypeRoomItem) : gettype($guestRoomTypeRoomItem)), __LINE__);
             }
         }
         $this->TypeRoom = $typeRoom;
@@ -94,21 +94,21 @@ class GuestRoom extends AbstractStructBase
     /**
      * Add item to TypeRoom value
      * @throws \InvalidArgumentException
-     * @param \StructType\TypeRoom $item
-     * @return \StructType\GuestRoom
+     * @param \Devlabs91\TravelgatePushApi\StructType\TypeRoom $item
+     * @return \Devlabs91\TravelgatePushApi\StructType\GuestRoom
      */
-    public function addToTypeRoom(\StructType\TypeRoom $item)
+    public function addToTypeRoom(\Devlabs91\TravelgatePushApi\StructType\TypeRoom $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\TypeRoom) {
-            throw new \InvalidArgumentException(sprintf('The TypeRoom property can only contain items of \StructType\TypeRoom, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\TypeRoom) {
+            throw new \InvalidArgumentException(sprintf('The TypeRoom property can only contain items of \Devlabs91\TravelgatePushApi\StructType\TypeRoom, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->TypeRoom[] = $item;
         return $this;
     }
     /**
      * Get Amenities value
-     * @return \ArrayType\ArrayOfFacilityInfoTypeGuestRoomsGuestRoomAmenity|null
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfFacilityInfoTypeGuestRoomsGuestRoomAmenity|null
      */
     public function getAmenities()
     {
@@ -116,17 +116,17 @@ class GuestRoom extends AbstractStructBase
     }
     /**
      * Set Amenities value
-     * @param \ArrayType\ArrayOfFacilityInfoTypeGuestRoomsGuestRoomAmenity $amenities
-     * @return \StructType\GuestRoom
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfFacilityInfoTypeGuestRoomsGuestRoomAmenity $amenities
+     * @return \Devlabs91\TravelgatePushApi\StructType\GuestRoom
      */
-    public function setAmenities(\ArrayType\ArrayOfFacilityInfoTypeGuestRoomsGuestRoomAmenity $amenities = null)
+    public function setAmenities(\Devlabs91\TravelgatePushApi\ArrayType\ArrayOfFacilityInfoTypeGuestRoomsGuestRoomAmenity $amenities = null)
     {
         $this->Amenities = $amenities;
         return $this;
     }
     /**
      * Get MultimediaDescriptions value
-     * @return \StructType\MultimediaDescriptionsType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\MultimediaDescriptionsType|null
      */
     public function getMultimediaDescriptions()
     {
@@ -134,10 +134,10 @@ class GuestRoom extends AbstractStructBase
     }
     /**
      * Set MultimediaDescriptions value
-     * @param \StructType\MultimediaDescriptionsType $multimediaDescriptions
-     * @return \StructType\GuestRoom
+     * @param \Devlabs91\TravelgatePushApi\StructType\MultimediaDescriptionsType $multimediaDescriptions
+     * @return \Devlabs91\TravelgatePushApi\StructType\GuestRoom
      */
-    public function setMultimediaDescriptions(\StructType\MultimediaDescriptionsType $multimediaDescriptions = null)
+    public function setMultimediaDescriptions(\Devlabs91\TravelgatePushApi\StructType\MultimediaDescriptionsType $multimediaDescriptions = null)
     {
         $this->MultimediaDescriptions = $multimediaDescriptions;
         return $this;
@@ -153,7 +153,7 @@ class GuestRoom extends AbstractStructBase
     /**
      * Set RoomTypeName value
      * @param string $roomTypeName
-     * @return \StructType\GuestRoom
+     * @return \Devlabs91\TravelgatePushApi\StructType\GuestRoom
      */
     public function setRoomTypeName($roomTypeName = null)
     {
@@ -175,7 +175,7 @@ class GuestRoom extends AbstractStructBase
     /**
      * Set MaxOccupancy value
      * @param int $maxOccupancy
-     * @return \StructType\GuestRoom
+     * @return \Devlabs91\TravelgatePushApi\StructType\GuestRoom
      */
     public function setMaxOccupancy($maxOccupancy = null)
     {
@@ -192,7 +192,7 @@ class GuestRoom extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\GuestRoom
+     * @return \Devlabs91\TravelgatePushApi\StructType\GuestRoom
      */
     public static function __set_state(array $array)
     {

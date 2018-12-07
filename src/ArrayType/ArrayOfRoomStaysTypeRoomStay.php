@@ -1,6 +1,6 @@
 <?php
 
-namespace ArrayType;
+namespace Devlabs91\TravelgatePushApi\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -15,13 +15,13 @@ class ArrayOfRoomStaysTypeRoomStay extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\RoomStay[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\RoomStay[]
      */
     public $RoomStay;
     /**
      * Constructor method for ArrayOfRoomStaysTypeRoomStay
      * @uses ArrayOfRoomStaysTypeRoomStay::setRoomStay()
-     * @param \StructType\RoomStay[] $roomStay
+     * @param \Devlabs91\TravelgatePushApi\StructType\RoomStay[] $roomStay
      */
     public function __construct(array $roomStay = array())
     {
@@ -30,7 +30,7 @@ class ArrayOfRoomStaysTypeRoomStay extends AbstractStructArrayBase
     }
     /**
      * Get RoomStay value
-     * @return \StructType\RoomStay[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\RoomStay[]|null
      */
     public function getRoomStay()
     {
@@ -39,15 +39,15 @@ class ArrayOfRoomStaysTypeRoomStay extends AbstractStructArrayBase
     /**
      * Set RoomStay value
      * @throws \InvalidArgumentException
-     * @param \StructType\RoomStay[] $roomStay
-     * @return \ArrayType\ArrayOfRoomStaysTypeRoomStay
+     * @param \Devlabs91\TravelgatePushApi\StructType\RoomStay[] $roomStay
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRoomStaysTypeRoomStay
      */
     public function setRoomStay(array $roomStay = array())
     {
         foreach ($roomStay as $arrayOfRoomStaysTypeRoomStayRoomStayItem) {
             // validation for constraint: itemType
-            if (!$arrayOfRoomStaysTypeRoomStayRoomStayItem instanceof \StructType\RoomStay) {
-                throw new \InvalidArgumentException(sprintf('The RoomStay property can only contain items of \StructType\RoomStay, "%s" given', is_object($arrayOfRoomStaysTypeRoomStayRoomStayItem) ? get_class($arrayOfRoomStaysTypeRoomStayRoomStayItem) : gettype($arrayOfRoomStaysTypeRoomStayRoomStayItem)), __LINE__);
+            if (!$arrayOfRoomStaysTypeRoomStayRoomStayItem instanceof \Devlabs91\TravelgatePushApi\StructType\RoomStay) {
+                throw new \InvalidArgumentException(sprintf('The RoomStay property can only contain items of \Devlabs91\TravelgatePushApi\StructType\RoomStay, "%s" given', is_object($arrayOfRoomStaysTypeRoomStayRoomStayItem) ? get_class($arrayOfRoomStaysTypeRoomStayRoomStayItem) : gettype($arrayOfRoomStaysTypeRoomStayRoomStayItem)), __LINE__);
             }
         }
         $this->RoomStay = $roomStay;
@@ -56,14 +56,14 @@ class ArrayOfRoomStaysTypeRoomStay extends AbstractStructArrayBase
     /**
      * Add item to RoomStay value
      * @throws \InvalidArgumentException
-     * @param \StructType\RoomStay $item
-     * @return \ArrayType\ArrayOfRoomStaysTypeRoomStay
+     * @param \Devlabs91\TravelgatePushApi\StructType\RoomStay $item
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRoomStaysTypeRoomStay
      */
-    public function addToRoomStay(\StructType\RoomStay $item)
+    public function addToRoomStay(\Devlabs91\TravelgatePushApi\StructType\RoomStay $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\RoomStay) {
-            throw new \InvalidArgumentException(sprintf('The RoomStay property can only contain items of \StructType\RoomStay, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\RoomStay) {
+            throw new \InvalidArgumentException(sprintf('The RoomStay property can only contain items of \Devlabs91\TravelgatePushApi\StructType\RoomStay, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->RoomStay[] = $item;
         return $this;
@@ -71,7 +71,7 @@ class ArrayOfRoomStaysTypeRoomStay extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \StructType\RoomStay|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\RoomStay|null
      */
     public function current()
     {
@@ -81,7 +81,7 @@ class ArrayOfRoomStaysTypeRoomStay extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \StructType\RoomStay|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\RoomStay|null
      */
     public function item($index)
     {
@@ -90,7 +90,7 @@ class ArrayOfRoomStaysTypeRoomStay extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \StructType\RoomStay|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\RoomStay|null
      */
     public function first()
     {
@@ -99,7 +99,7 @@ class ArrayOfRoomStaysTypeRoomStay extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \StructType\RoomStay|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\RoomStay|null
      */
     public function last()
     {
@@ -109,7 +109,7 @@ class ArrayOfRoomStaysTypeRoomStay extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \StructType\RoomStay|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\RoomStay|null
      */
     public function offsetGet($offset)
     {
@@ -130,7 +130,7 @@ class ArrayOfRoomStaysTypeRoomStay extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \ArrayType\ArrayOfRoomStaysTypeRoomStay
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRoomStaysTypeRoomStay
      */
     public static function __set_state(array $array)
     {

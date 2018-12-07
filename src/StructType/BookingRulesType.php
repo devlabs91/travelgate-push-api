@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,13 +15,13 @@ class BookingRulesType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\BookingRule[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\BookingRule[]
      */
     public $BookingRule;
     /**
      * Constructor method for BookingRulesType
      * @uses BookingRulesType::setBookingRule()
-     * @param \StructType\BookingRule[] $bookingRule
+     * @param \Devlabs91\TravelgatePushApi\StructType\BookingRule[] $bookingRule
      */
     public function __construct(array $bookingRule = array())
     {
@@ -30,7 +30,7 @@ class BookingRulesType extends AbstractStructBase
     }
     /**
      * Get BookingRule value
-     * @return \StructType\BookingRule[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\BookingRule[]|null
      */
     public function getBookingRule()
     {
@@ -39,15 +39,15 @@ class BookingRulesType extends AbstractStructBase
     /**
      * Set BookingRule value
      * @throws \InvalidArgumentException
-     * @param \StructType\BookingRule[] $bookingRule
-     * @return \StructType\BookingRulesType
+     * @param \Devlabs91\TravelgatePushApi\StructType\BookingRule[] $bookingRule
+     * @return \Devlabs91\TravelgatePushApi\StructType\BookingRulesType
      */
     public function setBookingRule(array $bookingRule = array())
     {
         foreach ($bookingRule as $bookingRulesTypeBookingRuleItem) {
             // validation for constraint: itemType
-            if (!$bookingRulesTypeBookingRuleItem instanceof \StructType\BookingRule) {
-                throw new \InvalidArgumentException(sprintf('The BookingRule property can only contain items of \StructType\BookingRule, "%s" given', is_object($bookingRulesTypeBookingRuleItem) ? get_class($bookingRulesTypeBookingRuleItem) : gettype($bookingRulesTypeBookingRuleItem)), __LINE__);
+            if (!$bookingRulesTypeBookingRuleItem instanceof \Devlabs91\TravelgatePushApi\StructType\BookingRule) {
+                throw new \InvalidArgumentException(sprintf('The BookingRule property can only contain items of \Devlabs91\TravelgatePushApi\StructType\BookingRule, "%s" given', is_object($bookingRulesTypeBookingRuleItem) ? get_class($bookingRulesTypeBookingRuleItem) : gettype($bookingRulesTypeBookingRuleItem)), __LINE__);
             }
         }
         $this->BookingRule = $bookingRule;
@@ -56,14 +56,14 @@ class BookingRulesType extends AbstractStructBase
     /**
      * Add item to BookingRule value
      * @throws \InvalidArgumentException
-     * @param \StructType\BookingRule $item
-     * @return \StructType\BookingRulesType
+     * @param \Devlabs91\TravelgatePushApi\StructType\BookingRule $item
+     * @return \Devlabs91\TravelgatePushApi\StructType\BookingRulesType
      */
-    public function addToBookingRule(\StructType\BookingRule $item)
+    public function addToBookingRule(\Devlabs91\TravelgatePushApi\StructType\BookingRule $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\BookingRule) {
-            throw new \InvalidArgumentException(sprintf('The BookingRule property can only contain items of \StructType\BookingRule, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\BookingRule) {
+            throw new \InvalidArgumentException(sprintf('The BookingRule property can only contain items of \Devlabs91\TravelgatePushApi\StructType\BookingRule, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->BookingRule[] = $item;
         return $this;
@@ -74,7 +74,7 @@ class BookingRulesType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\BookingRulesType
+     * @return \Devlabs91\TravelgatePushApi\StructType\BookingRulesType
      */
     public static function __set_state(array $array)
     {

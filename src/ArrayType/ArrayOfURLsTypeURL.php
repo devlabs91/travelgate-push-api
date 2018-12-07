@@ -1,6 +1,6 @@
 <?php
 
-namespace ArrayType;
+namespace Devlabs91\TravelgatePushApi\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -15,13 +15,13 @@ class ArrayOfURLsTypeURL extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\URL[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\URL[]
      */
     public $URL;
     /**
      * Constructor method for ArrayOfURLsTypeURL
      * @uses ArrayOfURLsTypeURL::setURL()
-     * @param \StructType\URL[] $uRL
+     * @param \Devlabs91\TravelgatePushApi\StructType\URL[] $uRL
      */
     public function __construct(array $uRL = array())
     {
@@ -30,7 +30,7 @@ class ArrayOfURLsTypeURL extends AbstractStructArrayBase
     }
     /**
      * Get URL value
-     * @return \StructType\URL[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\URL[]|null
      */
     public function getURL()
     {
@@ -39,15 +39,15 @@ class ArrayOfURLsTypeURL extends AbstractStructArrayBase
     /**
      * Set URL value
      * @throws \InvalidArgumentException
-     * @param \StructType\URL[] $uRL
-     * @return \ArrayType\ArrayOfURLsTypeURL
+     * @param \Devlabs91\TravelgatePushApi\StructType\URL[] $uRL
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfURLsTypeURL
      */
     public function setURL(array $uRL = array())
     {
         foreach ($uRL as $arrayOfURLsTypeURLURLItem) {
             // validation for constraint: itemType
-            if (!$arrayOfURLsTypeURLURLItem instanceof \StructType\URL) {
-                throw new \InvalidArgumentException(sprintf('The URL property can only contain items of \StructType\URL, "%s" given', is_object($arrayOfURLsTypeURLURLItem) ? get_class($arrayOfURLsTypeURLURLItem) : gettype($arrayOfURLsTypeURLURLItem)), __LINE__);
+            if (!$arrayOfURLsTypeURLURLItem instanceof \Devlabs91\TravelgatePushApi\StructType\URL) {
+                throw new \InvalidArgumentException(sprintf('The URL property can only contain items of \Devlabs91\TravelgatePushApi\StructType\URL, "%s" given', is_object($arrayOfURLsTypeURLURLItem) ? get_class($arrayOfURLsTypeURLURLItem) : gettype($arrayOfURLsTypeURLURLItem)), __LINE__);
             }
         }
         $this->URL = $uRL;
@@ -56,14 +56,14 @@ class ArrayOfURLsTypeURL extends AbstractStructArrayBase
     /**
      * Add item to URL value
      * @throws \InvalidArgumentException
-     * @param \StructType\URL $item
-     * @return \ArrayType\ArrayOfURLsTypeURL
+     * @param \Devlabs91\TravelgatePushApi\StructType\URL $item
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfURLsTypeURL
      */
-    public function addToURL(\StructType\URL $item)
+    public function addToURL(\Devlabs91\TravelgatePushApi\StructType\URL $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\URL) {
-            throw new \InvalidArgumentException(sprintf('The URL property can only contain items of \StructType\URL, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\URL) {
+            throw new \InvalidArgumentException(sprintf('The URL property can only contain items of \Devlabs91\TravelgatePushApi\StructType\URL, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->URL[] = $item;
         return $this;
@@ -71,7 +71,7 @@ class ArrayOfURLsTypeURL extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \StructType\URL|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\URL|null
      */
     public function current()
     {
@@ -81,7 +81,7 @@ class ArrayOfURLsTypeURL extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \StructType\URL|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\URL|null
      */
     public function item($index)
     {
@@ -90,7 +90,7 @@ class ArrayOfURLsTypeURL extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \StructType\URL|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\URL|null
      */
     public function first()
     {
@@ -99,7 +99,7 @@ class ArrayOfURLsTypeURL extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \StructType\URL|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\URL|null
      */
     public function last()
     {
@@ -109,7 +109,7 @@ class ArrayOfURLsTypeURL extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \StructType\URL|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\URL|null
      */
     public function offsetGet($offset)
     {
@@ -130,7 +130,7 @@ class ArrayOfURLsTypeURL extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \ArrayType\ArrayOfURLsTypeURL
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfURLsTypeURL
      */
     public static function __set_state(array $array)
     {

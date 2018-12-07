@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -68,7 +68,7 @@ class Occupancy extends AbstractStructBase
     /**
      * Set MinOccupancy value
      * @param int $minOccupancy
-     * @return \StructType\Occupancy
+     * @return \Devlabs91\TravelgatePushApi\StructType\Occupancy
      */
     public function setMinOccupancy($minOccupancy = null)
     {
@@ -90,7 +90,7 @@ class Occupancy extends AbstractStructBase
     /**
      * Set MaxOccupancy value
      * @param int $maxOccupancy
-     * @return \StructType\Occupancy
+     * @return \Devlabs91\TravelgatePushApi\StructType\Occupancy
      */
     public function setMaxOccupancy($maxOccupancy = null)
     {
@@ -112,7 +112,7 @@ class Occupancy extends AbstractStructBase
     /**
      * Set AgeQualifyingCode value
      * @param string $ageQualifyingCode
-     * @return \StructType\Occupancy
+     * @return \Devlabs91\TravelgatePushApi\StructType\Occupancy
      */
     public function setAgeQualifyingCode($ageQualifyingCode = null)
     {
@@ -134,7 +134,7 @@ class Occupancy extends AbstractStructBase
     /**
      * Set MinAge value
      * @param int $minAge
-     * @return \StructType\Occupancy
+     * @return \Devlabs91\TravelgatePushApi\StructType\Occupancy
      */
     public function setMinAge($minAge = null)
     {
@@ -156,7 +156,7 @@ class Occupancy extends AbstractStructBase
     /**
      * Set MaxAge value
      * @param int $maxAge
-     * @return \StructType\Occupancy
+     * @return \Devlabs91\TravelgatePushApi\StructType\Occupancy
      */
     public function setMaxAge($maxAge = null)
     {
@@ -173,7 +173,7 @@ class Occupancy extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Occupancy
+     * @return \Devlabs91\TravelgatePushApi\StructType\Occupancy
      */
     public static function __set_state(array $array)
     {

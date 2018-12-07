@@ -1,6 +1,6 @@
 <?php
 
-namespace ArrayType;
+namespace Devlabs91\TravelgatePushApi\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -15,13 +15,13 @@ class ArrayOfCancelRuleType extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\CancelRuleType[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\CancelRuleType[]
      */
     public $CancelRule;
     /**
      * Constructor method for ArrayOfCancelRuleType
      * @uses ArrayOfCancelRuleType::setCancelRule()
-     * @param \StructType\CancelRuleType[] $cancelRule
+     * @param \Devlabs91\TravelgatePushApi\StructType\CancelRuleType[] $cancelRule
      */
     public function __construct(array $cancelRule = array())
     {
@@ -30,7 +30,7 @@ class ArrayOfCancelRuleType extends AbstractStructArrayBase
     }
     /**
      * Get CancelRule value
-     * @return \StructType\CancelRuleType[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\CancelRuleType[]|null
      */
     public function getCancelRule()
     {
@@ -39,15 +39,15 @@ class ArrayOfCancelRuleType extends AbstractStructArrayBase
     /**
      * Set CancelRule value
      * @throws \InvalidArgumentException
-     * @param \StructType\CancelRuleType[] $cancelRule
-     * @return \ArrayType\ArrayOfCancelRuleType
+     * @param \Devlabs91\TravelgatePushApi\StructType\CancelRuleType[] $cancelRule
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfCancelRuleType
      */
     public function setCancelRule(array $cancelRule = array())
     {
         foreach ($cancelRule as $arrayOfCancelRuleTypeCancelRuleItem) {
             // validation for constraint: itemType
-            if (!$arrayOfCancelRuleTypeCancelRuleItem instanceof \StructType\CancelRuleType) {
-                throw new \InvalidArgumentException(sprintf('The CancelRule property can only contain items of \StructType\CancelRuleType, "%s" given', is_object($arrayOfCancelRuleTypeCancelRuleItem) ? get_class($arrayOfCancelRuleTypeCancelRuleItem) : gettype($arrayOfCancelRuleTypeCancelRuleItem)), __LINE__);
+            if (!$arrayOfCancelRuleTypeCancelRuleItem instanceof \Devlabs91\TravelgatePushApi\StructType\CancelRuleType) {
+                throw new \InvalidArgumentException(sprintf('The CancelRule property can only contain items of \Devlabs91\TravelgatePushApi\StructType\CancelRuleType, "%s" given', is_object($arrayOfCancelRuleTypeCancelRuleItem) ? get_class($arrayOfCancelRuleTypeCancelRuleItem) : gettype($arrayOfCancelRuleTypeCancelRuleItem)), __LINE__);
             }
         }
         $this->CancelRule = $cancelRule;
@@ -56,14 +56,14 @@ class ArrayOfCancelRuleType extends AbstractStructArrayBase
     /**
      * Add item to CancelRule value
      * @throws \InvalidArgumentException
-     * @param \StructType\CancelRuleType $item
-     * @return \ArrayType\ArrayOfCancelRuleType
+     * @param \Devlabs91\TravelgatePushApi\StructType\CancelRuleType $item
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfCancelRuleType
      */
-    public function addToCancelRule(\StructType\CancelRuleType $item)
+    public function addToCancelRule(\Devlabs91\TravelgatePushApi\StructType\CancelRuleType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\CancelRuleType) {
-            throw new \InvalidArgumentException(sprintf('The CancelRule property can only contain items of \StructType\CancelRuleType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\CancelRuleType) {
+            throw new \InvalidArgumentException(sprintf('The CancelRule property can only contain items of \Devlabs91\TravelgatePushApi\StructType\CancelRuleType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->CancelRule[] = $item;
         return $this;
@@ -71,7 +71,7 @@ class ArrayOfCancelRuleType extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \StructType\CancelRuleType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\CancelRuleType|null
      */
     public function current()
     {
@@ -81,7 +81,7 @@ class ArrayOfCancelRuleType extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \StructType\CancelRuleType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\CancelRuleType|null
      */
     public function item($index)
     {
@@ -90,7 +90,7 @@ class ArrayOfCancelRuleType extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \StructType\CancelRuleType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\CancelRuleType|null
      */
     public function first()
     {
@@ -99,7 +99,7 @@ class ArrayOfCancelRuleType extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \StructType\CancelRuleType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\CancelRuleType|null
      */
     public function last()
     {
@@ -109,7 +109,7 @@ class ArrayOfCancelRuleType extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \StructType\CancelRuleType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\CancelRuleType|null
      */
     public function offsetGet($offset)
     {
@@ -130,7 +130,7 @@ class ArrayOfCancelRuleType extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \ArrayType\ArrayOfCancelRuleType
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfCancelRuleType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class HotelDescriptiveContentType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\HotelInfoType
+     * @var \Devlabs91\TravelgatePushApi\StructType\HotelInfoType
      */
     public $HotelInfo;
     /**
@@ -23,7 +23,7 @@ class HotelDescriptiveContentType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\FacilityInfoType
+     * @var \Devlabs91\TravelgatePushApi\StructType\FacilityInfoType
      */
     public $FacilityInfo;
     /**
@@ -31,7 +31,7 @@ class HotelDescriptiveContentType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Policies
+     * @var \Devlabs91\TravelgatePushApi\StructType\Policies
      */
     public $Policies;
     /**
@@ -39,7 +39,7 @@ class HotelDescriptiveContentType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\AreaInfoType
+     * @var \Devlabs91\TravelgatePushApi\StructType\AreaInfoType
      */
     public $AreaInfo;
     /**
@@ -47,7 +47,7 @@ class HotelDescriptiveContentType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\AffiliationInfoType
+     * @var \Devlabs91\TravelgatePushApi\StructType\AffiliationInfoType
      */
     public $AffiliationInfo;
     /**
@@ -55,7 +55,7 @@ class HotelDescriptiveContentType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\MultimediaDescriptionsType
+     * @var \Devlabs91\TravelgatePushApi\StructType\MultimediaDescriptionsType
      */
     public $MultimediaDescriptions;
     /**
@@ -63,7 +63,7 @@ class HotelDescriptiveContentType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfContactInfoRootType
+     * @var \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfContactInfoRootType
      */
     public $ContactInfos;
     /**
@@ -75,15 +75,15 @@ class HotelDescriptiveContentType extends AbstractStructBase
      * @uses HotelDescriptiveContentType::setAffiliationInfo()
      * @uses HotelDescriptiveContentType::setMultimediaDescriptions()
      * @uses HotelDescriptiveContentType::setContactInfos()
-     * @param \StructType\HotelInfoType $hotelInfo
-     * @param \StructType\FacilityInfoType $facilityInfo
-     * @param \StructType\Policies $policies
-     * @param \StructType\AreaInfoType $areaInfo
-     * @param \StructType\AffiliationInfoType $affiliationInfo
-     * @param \StructType\MultimediaDescriptionsType $multimediaDescriptions
-     * @param \ArrayType\ArrayOfContactInfoRootType $contactInfos
+     * @param \Devlabs91\TravelgatePushApi\StructType\HotelInfoType $hotelInfo
+     * @param \Devlabs91\TravelgatePushApi\StructType\FacilityInfoType $facilityInfo
+     * @param \Devlabs91\TravelgatePushApi\StructType\Policies $policies
+     * @param \Devlabs91\TravelgatePushApi\StructType\AreaInfoType $areaInfo
+     * @param \Devlabs91\TravelgatePushApi\StructType\AffiliationInfoType $affiliationInfo
+     * @param \Devlabs91\TravelgatePushApi\StructType\MultimediaDescriptionsType $multimediaDescriptions
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfContactInfoRootType $contactInfos
      */
-    public function __construct(\StructType\HotelInfoType $hotelInfo = null, \StructType\FacilityInfoType $facilityInfo = null, \StructType\Policies $policies = null, \StructType\AreaInfoType $areaInfo = null, \StructType\AffiliationInfoType $affiliationInfo = null, \StructType\MultimediaDescriptionsType $multimediaDescriptions = null, \ArrayType\ArrayOfContactInfoRootType $contactInfos = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\StructType\HotelInfoType $hotelInfo = null, \Devlabs91\TravelgatePushApi\StructType\FacilityInfoType $facilityInfo = null, \Devlabs91\TravelgatePushApi\StructType\Policies $policies = null, \Devlabs91\TravelgatePushApi\StructType\AreaInfoType $areaInfo = null, \Devlabs91\TravelgatePushApi\StructType\AffiliationInfoType $affiliationInfo = null, \Devlabs91\TravelgatePushApi\StructType\MultimediaDescriptionsType $multimediaDescriptions = null, \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfContactInfoRootType $contactInfos = null)
     {
         $this
             ->setHotelInfo($hotelInfo)
@@ -96,7 +96,7 @@ class HotelDescriptiveContentType extends AbstractStructBase
     }
     /**
      * Get HotelInfo value
-     * @return \StructType\HotelInfoType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelInfoType|null
      */
     public function getHotelInfo()
     {
@@ -104,17 +104,17 @@ class HotelDescriptiveContentType extends AbstractStructBase
     }
     /**
      * Set HotelInfo value
-     * @param \StructType\HotelInfoType $hotelInfo
-     * @return \StructType\HotelDescriptiveContentType
+     * @param \Devlabs91\TravelgatePushApi\StructType\HotelInfoType $hotelInfo
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelDescriptiveContentType
      */
-    public function setHotelInfo(\StructType\HotelInfoType $hotelInfo = null)
+    public function setHotelInfo(\Devlabs91\TravelgatePushApi\StructType\HotelInfoType $hotelInfo = null)
     {
         $this->HotelInfo = $hotelInfo;
         return $this;
     }
     /**
      * Get FacilityInfo value
-     * @return \StructType\FacilityInfoType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\FacilityInfoType|null
      */
     public function getFacilityInfo()
     {
@@ -122,17 +122,17 @@ class HotelDescriptiveContentType extends AbstractStructBase
     }
     /**
      * Set FacilityInfo value
-     * @param \StructType\FacilityInfoType $facilityInfo
-     * @return \StructType\HotelDescriptiveContentType
+     * @param \Devlabs91\TravelgatePushApi\StructType\FacilityInfoType $facilityInfo
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelDescriptiveContentType
      */
-    public function setFacilityInfo(\StructType\FacilityInfoType $facilityInfo = null)
+    public function setFacilityInfo(\Devlabs91\TravelgatePushApi\StructType\FacilityInfoType $facilityInfo = null)
     {
         $this->FacilityInfo = $facilityInfo;
         return $this;
     }
     /**
      * Get Policies value
-     * @return \StructType\Policies|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Policies|null
      */
     public function getPolicies()
     {
@@ -140,17 +140,17 @@ class HotelDescriptiveContentType extends AbstractStructBase
     }
     /**
      * Set Policies value
-     * @param \StructType\Policies $policies
-     * @return \StructType\HotelDescriptiveContentType
+     * @param \Devlabs91\TravelgatePushApi\StructType\Policies $policies
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelDescriptiveContentType
      */
-    public function setPolicies(\StructType\Policies $policies = null)
+    public function setPolicies(\Devlabs91\TravelgatePushApi\StructType\Policies $policies = null)
     {
         $this->Policies = $policies;
         return $this;
     }
     /**
      * Get AreaInfo value
-     * @return \StructType\AreaInfoType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\AreaInfoType|null
      */
     public function getAreaInfo()
     {
@@ -158,17 +158,17 @@ class HotelDescriptiveContentType extends AbstractStructBase
     }
     /**
      * Set AreaInfo value
-     * @param \StructType\AreaInfoType $areaInfo
-     * @return \StructType\HotelDescriptiveContentType
+     * @param \Devlabs91\TravelgatePushApi\StructType\AreaInfoType $areaInfo
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelDescriptiveContentType
      */
-    public function setAreaInfo(\StructType\AreaInfoType $areaInfo = null)
+    public function setAreaInfo(\Devlabs91\TravelgatePushApi\StructType\AreaInfoType $areaInfo = null)
     {
         $this->AreaInfo = $areaInfo;
         return $this;
     }
     /**
      * Get AffiliationInfo value
-     * @return \StructType\AffiliationInfoType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\AffiliationInfoType|null
      */
     public function getAffiliationInfo()
     {
@@ -176,17 +176,17 @@ class HotelDescriptiveContentType extends AbstractStructBase
     }
     /**
      * Set AffiliationInfo value
-     * @param \StructType\AffiliationInfoType $affiliationInfo
-     * @return \StructType\HotelDescriptiveContentType
+     * @param \Devlabs91\TravelgatePushApi\StructType\AffiliationInfoType $affiliationInfo
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelDescriptiveContentType
      */
-    public function setAffiliationInfo(\StructType\AffiliationInfoType $affiliationInfo = null)
+    public function setAffiliationInfo(\Devlabs91\TravelgatePushApi\StructType\AffiliationInfoType $affiliationInfo = null)
     {
         $this->AffiliationInfo = $affiliationInfo;
         return $this;
     }
     /**
      * Get MultimediaDescriptions value
-     * @return \StructType\MultimediaDescriptionsType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\MultimediaDescriptionsType|null
      */
     public function getMultimediaDescriptions()
     {
@@ -194,17 +194,17 @@ class HotelDescriptiveContentType extends AbstractStructBase
     }
     /**
      * Set MultimediaDescriptions value
-     * @param \StructType\MultimediaDescriptionsType $multimediaDescriptions
-     * @return \StructType\HotelDescriptiveContentType
+     * @param \Devlabs91\TravelgatePushApi\StructType\MultimediaDescriptionsType $multimediaDescriptions
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelDescriptiveContentType
      */
-    public function setMultimediaDescriptions(\StructType\MultimediaDescriptionsType $multimediaDescriptions = null)
+    public function setMultimediaDescriptions(\Devlabs91\TravelgatePushApi\StructType\MultimediaDescriptionsType $multimediaDescriptions = null)
     {
         $this->MultimediaDescriptions = $multimediaDescriptions;
         return $this;
     }
     /**
      * Get ContactInfos value
-     * @return \ArrayType\ArrayOfContactInfoRootType|null
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfContactInfoRootType|null
      */
     public function getContactInfos()
     {
@@ -212,10 +212,10 @@ class HotelDescriptiveContentType extends AbstractStructBase
     }
     /**
      * Set ContactInfos value
-     * @param \ArrayType\ArrayOfContactInfoRootType $contactInfos
-     * @return \StructType\HotelDescriptiveContentType
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfContactInfoRootType $contactInfos
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelDescriptiveContentType
      */
-    public function setContactInfos(\ArrayType\ArrayOfContactInfoRootType $contactInfos = null)
+    public function setContactInfos(\Devlabs91\TravelgatePushApi\ArrayType\ArrayOfContactInfoRootType $contactInfos = null)
     {
         $this->ContactInfos = $contactInfos;
         return $this;
@@ -226,7 +226,7 @@ class HotelDescriptiveContentType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HotelDescriptiveContentType
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelDescriptiveContentType
      */
     public static function __set_state(array $array)
     {

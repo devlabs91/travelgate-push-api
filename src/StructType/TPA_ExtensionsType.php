@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -31,7 +31,7 @@ class TPA_ExtensionsType extends AbstractStructBase
      * @uses \DOMDocument::hasChildNodes()
      * @uses \DOMDocument::saveXML()
      * @uses \DOMNode::item()
-     * @uses \StructType\TPA_ExtensionsType::setAny()
+     * @uses \Devlabs91\TravelgatePushApi\StructType\TPA_ExtensionsType::setAny()
      * @param bool $asString true: returns XML string, false: returns \DOMDocument
      * @return \DOMDocument|null
      */
@@ -50,7 +50,7 @@ class TPA_ExtensionsType extends AbstractStructBase
     /**
      * Set any value
      * @param \DOMDocument $any
-     * @return \StructType\TPA_ExtensionsType
+     * @return \Devlabs91\TravelgatePushApi\StructType\TPA_ExtensionsType
      */
     public function setAny(\DOMDocument $any = null)
     {
@@ -63,7 +63,7 @@ class TPA_ExtensionsType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\TPA_ExtensionsType
+     * @return \Devlabs91\TravelgatePushApi\StructType\TPA_ExtensionsType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -12,22 +12,22 @@ class Email extends EmailType
 {
     /**
      * The _
-     * @var \StructType\EmailType
+     * @var \Devlabs91\TravelgatePushApi\StructType\EmailType
      */
     public $_;
     /**
      * Constructor method for Email
      * @uses Email::set_()
-     * @param \StructType\EmailType $_
+     * @param \Devlabs91\TravelgatePushApi\StructType\EmailType $_
      */
-    public function __construct(\StructType\EmailType $_ = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\StructType\EmailType $_ = null)
     {
         $this
             ->set_($_);
     }
     /**
      * Get _ value
-     * @return \StructType\EmailType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\EmailType|null
      */
     public function get_()
     {
@@ -35,10 +35,10 @@ class Email extends EmailType
     }
     /**
      * Set _ value
-     * @param \StructType\EmailType $_
-     * @return \StructType\Email
+     * @param \Devlabs91\TravelgatePushApi\StructType\EmailType $_
+     * @return \Devlabs91\TravelgatePushApi\StructType\Email
      */
-    public function set_(\StructType\EmailType $_ = null)
+    public function set_(\Devlabs91\TravelgatePushApi\StructType\EmailType $_ = null)
     {
         $this->_ = $_;
         return $this;
@@ -49,7 +49,7 @@ class Email extends EmailType
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Email
+     * @return \Devlabs91\TravelgatePushApi\StructType\Email
      */
     public static function __set_state(array $array)
     {

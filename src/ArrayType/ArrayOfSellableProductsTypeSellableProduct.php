@@ -1,6 +1,6 @@
 <?php
 
-namespace ArrayType;
+namespace Devlabs91\TravelgatePushApi\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -15,13 +15,13 @@ class ArrayOfSellableProductsTypeSellableProduct extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\SellableProduct[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\SellableProduct[]
      */
     public $SellableProduct;
     /**
      * Constructor method for ArrayOfSellableProductsTypeSellableProduct
      * @uses ArrayOfSellableProductsTypeSellableProduct::setSellableProduct()
-     * @param \StructType\SellableProduct[] $sellableProduct
+     * @param \Devlabs91\TravelgatePushApi\StructType\SellableProduct[] $sellableProduct
      */
     public function __construct(array $sellableProduct = array())
     {
@@ -30,7 +30,7 @@ class ArrayOfSellableProductsTypeSellableProduct extends AbstractStructArrayBase
     }
     /**
      * Get SellableProduct value
-     * @return \StructType\SellableProduct[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\SellableProduct[]|null
      */
     public function getSellableProduct()
     {
@@ -39,15 +39,15 @@ class ArrayOfSellableProductsTypeSellableProduct extends AbstractStructArrayBase
     /**
      * Set SellableProduct value
      * @throws \InvalidArgumentException
-     * @param \StructType\SellableProduct[] $sellableProduct
-     * @return \ArrayType\ArrayOfSellableProductsTypeSellableProduct
+     * @param \Devlabs91\TravelgatePushApi\StructType\SellableProduct[] $sellableProduct
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfSellableProductsTypeSellableProduct
      */
     public function setSellableProduct(array $sellableProduct = array())
     {
         foreach ($sellableProduct as $arrayOfSellableProductsTypeSellableProductSellableProductItem) {
             // validation for constraint: itemType
-            if (!$arrayOfSellableProductsTypeSellableProductSellableProductItem instanceof \StructType\SellableProduct) {
-                throw new \InvalidArgumentException(sprintf('The SellableProduct property can only contain items of \StructType\SellableProduct, "%s" given', is_object($arrayOfSellableProductsTypeSellableProductSellableProductItem) ? get_class($arrayOfSellableProductsTypeSellableProductSellableProductItem) : gettype($arrayOfSellableProductsTypeSellableProductSellableProductItem)), __LINE__);
+            if (!$arrayOfSellableProductsTypeSellableProductSellableProductItem instanceof \Devlabs91\TravelgatePushApi\StructType\SellableProduct) {
+                throw new \InvalidArgumentException(sprintf('The SellableProduct property can only contain items of \Devlabs91\TravelgatePushApi\StructType\SellableProduct, "%s" given', is_object($arrayOfSellableProductsTypeSellableProductSellableProductItem) ? get_class($arrayOfSellableProductsTypeSellableProductSellableProductItem) : gettype($arrayOfSellableProductsTypeSellableProductSellableProductItem)), __LINE__);
             }
         }
         $this->SellableProduct = $sellableProduct;
@@ -56,14 +56,14 @@ class ArrayOfSellableProductsTypeSellableProduct extends AbstractStructArrayBase
     /**
      * Add item to SellableProduct value
      * @throws \InvalidArgumentException
-     * @param \StructType\SellableProduct $item
-     * @return \ArrayType\ArrayOfSellableProductsTypeSellableProduct
+     * @param \Devlabs91\TravelgatePushApi\StructType\SellableProduct $item
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfSellableProductsTypeSellableProduct
      */
-    public function addToSellableProduct(\StructType\SellableProduct $item)
+    public function addToSellableProduct(\Devlabs91\TravelgatePushApi\StructType\SellableProduct $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\SellableProduct) {
-            throw new \InvalidArgumentException(sprintf('The SellableProduct property can only contain items of \StructType\SellableProduct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\SellableProduct) {
+            throw new \InvalidArgumentException(sprintf('The SellableProduct property can only contain items of \Devlabs91\TravelgatePushApi\StructType\SellableProduct, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->SellableProduct[] = $item;
         return $this;
@@ -71,7 +71,7 @@ class ArrayOfSellableProductsTypeSellableProduct extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \StructType\SellableProduct|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\SellableProduct|null
      */
     public function current()
     {
@@ -81,7 +81,7 @@ class ArrayOfSellableProductsTypeSellableProduct extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \StructType\SellableProduct|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\SellableProduct|null
      */
     public function item($index)
     {
@@ -90,7 +90,7 @@ class ArrayOfSellableProductsTypeSellableProduct extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \StructType\SellableProduct|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\SellableProduct|null
      */
     public function first()
     {
@@ -99,7 +99,7 @@ class ArrayOfSellableProductsTypeSellableProduct extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \StructType\SellableProduct|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\SellableProduct|null
      */
     public function last()
     {
@@ -109,7 +109,7 @@ class ArrayOfSellableProductsTypeSellableProduct extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \StructType\SellableProduct|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\SellableProduct|null
      */
     public function offsetGet($offset)
     {
@@ -130,7 +130,7 @@ class ArrayOfSellableProductsTypeSellableProduct extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \ArrayType\ArrayOfSellableProductsTypeSellableProduct
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfSellableProductsTypeSellableProduct
      */
     public static function __set_state(array $array)
     {

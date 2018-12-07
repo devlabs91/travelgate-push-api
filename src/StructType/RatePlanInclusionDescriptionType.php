@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -39,7 +39,7 @@ class RatePlanInclusionDescriptionType extends AbstractStructBase
     /**
      * Set Name value
      * @param string $name
-     * @return \StructType\RatePlanInclusionDescriptionType
+     * @return \Devlabs91\TravelgatePushApi\StructType\RatePlanInclusionDescriptionType
      */
     public function setName($name = null)
     {
@@ -56,7 +56,7 @@ class RatePlanInclusionDescriptionType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\RatePlanInclusionDescriptionType
+     * @return \Devlabs91\TravelgatePushApi\StructType\RatePlanInclusionDescriptionType
      */
     public static function __set_state(array $array)
     {

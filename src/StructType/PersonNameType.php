@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -62,7 +62,7 @@ class PersonNameType extends AbstractStructBase
      * Set NamePrefix value
      * @throws \InvalidArgumentException
      * @param string[] $namePrefix
-     * @return \StructType\PersonNameType
+     * @return \Devlabs91\TravelgatePushApi\StructType\PersonNameType
      */
     public function setNamePrefix(array $namePrefix = array())
     {
@@ -79,7 +79,7 @@ class PersonNameType extends AbstractStructBase
      * Add item to NamePrefix value
      * @throws \InvalidArgumentException
      * @param string $item
-     * @return \StructType\PersonNameType
+     * @return \Devlabs91\TravelgatePushApi\StructType\PersonNameType
      */
     public function addToNamePrefix($item)
     {
@@ -102,7 +102,7 @@ class PersonNameType extends AbstractStructBase
      * Set GivenName value
      * @throws \InvalidArgumentException
      * @param string[] $givenName
-     * @return \StructType\PersonNameType
+     * @return \Devlabs91\TravelgatePushApi\StructType\PersonNameType
      */
     public function setGivenName(array $givenName = array())
     {
@@ -119,7 +119,7 @@ class PersonNameType extends AbstractStructBase
      * Add item to GivenName value
      * @throws \InvalidArgumentException
      * @param string $item
-     * @return \StructType\PersonNameType
+     * @return \Devlabs91\TravelgatePushApi\StructType\PersonNameType
      */
     public function addToGivenName($item)
     {
@@ -141,7 +141,7 @@ class PersonNameType extends AbstractStructBase
     /**
      * Set Surname value
      * @param string $surname
-     * @return \StructType\PersonNameType
+     * @return \Devlabs91\TravelgatePushApi\StructType\PersonNameType
      */
     public function setSurname($surname = null)
     {
@@ -158,7 +158,7 @@ class PersonNameType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\PersonNameType
+     * @return \Devlabs91\TravelgatePushApi\StructType\PersonNameType
      */
     public static function __set_state(array $array)
     {

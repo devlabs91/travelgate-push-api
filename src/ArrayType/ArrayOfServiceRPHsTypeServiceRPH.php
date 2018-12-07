@@ -1,6 +1,6 @@
 <?php
 
-namespace ArrayType;
+namespace Devlabs91\TravelgatePushApi\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -15,13 +15,13 @@ class ArrayOfServiceRPHsTypeServiceRPH extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\ServiceRPH[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\ServiceRPH[]
      */
     public $ServiceRPH;
     /**
      * Constructor method for ArrayOfServiceRPHsTypeServiceRPH
      * @uses ArrayOfServiceRPHsTypeServiceRPH::setServiceRPH()
-     * @param \StructType\ServiceRPH[] $serviceRPH
+     * @param \Devlabs91\TravelgatePushApi\StructType\ServiceRPH[] $serviceRPH
      */
     public function __construct(array $serviceRPH = array())
     {
@@ -30,7 +30,7 @@ class ArrayOfServiceRPHsTypeServiceRPH extends AbstractStructArrayBase
     }
     /**
      * Get ServiceRPH value
-     * @return \StructType\ServiceRPH[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\ServiceRPH[]|null
      */
     public function getServiceRPH()
     {
@@ -39,15 +39,15 @@ class ArrayOfServiceRPHsTypeServiceRPH extends AbstractStructArrayBase
     /**
      * Set ServiceRPH value
      * @throws \InvalidArgumentException
-     * @param \StructType\ServiceRPH[] $serviceRPH
-     * @return \ArrayType\ArrayOfServiceRPHsTypeServiceRPH
+     * @param \Devlabs91\TravelgatePushApi\StructType\ServiceRPH[] $serviceRPH
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfServiceRPHsTypeServiceRPH
      */
     public function setServiceRPH(array $serviceRPH = array())
     {
         foreach ($serviceRPH as $arrayOfServiceRPHsTypeServiceRPHServiceRPHItem) {
             // validation for constraint: itemType
-            if (!$arrayOfServiceRPHsTypeServiceRPHServiceRPHItem instanceof \StructType\ServiceRPH) {
-                throw new \InvalidArgumentException(sprintf('The ServiceRPH property can only contain items of \StructType\ServiceRPH, "%s" given', is_object($arrayOfServiceRPHsTypeServiceRPHServiceRPHItem) ? get_class($arrayOfServiceRPHsTypeServiceRPHServiceRPHItem) : gettype($arrayOfServiceRPHsTypeServiceRPHServiceRPHItem)), __LINE__);
+            if (!$arrayOfServiceRPHsTypeServiceRPHServiceRPHItem instanceof \Devlabs91\TravelgatePushApi\StructType\ServiceRPH) {
+                throw new \InvalidArgumentException(sprintf('The ServiceRPH property can only contain items of \Devlabs91\TravelgatePushApi\StructType\ServiceRPH, "%s" given', is_object($arrayOfServiceRPHsTypeServiceRPHServiceRPHItem) ? get_class($arrayOfServiceRPHsTypeServiceRPHServiceRPHItem) : gettype($arrayOfServiceRPHsTypeServiceRPHServiceRPHItem)), __LINE__);
             }
         }
         $this->ServiceRPH = $serviceRPH;
@@ -56,14 +56,14 @@ class ArrayOfServiceRPHsTypeServiceRPH extends AbstractStructArrayBase
     /**
      * Add item to ServiceRPH value
      * @throws \InvalidArgumentException
-     * @param \StructType\ServiceRPH $item
-     * @return \ArrayType\ArrayOfServiceRPHsTypeServiceRPH
+     * @param \Devlabs91\TravelgatePushApi\StructType\ServiceRPH $item
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfServiceRPHsTypeServiceRPH
      */
-    public function addToServiceRPH(\StructType\ServiceRPH $item)
+    public function addToServiceRPH(\Devlabs91\TravelgatePushApi\StructType\ServiceRPH $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\ServiceRPH) {
-            throw new \InvalidArgumentException(sprintf('The ServiceRPH property can only contain items of \StructType\ServiceRPH, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\ServiceRPH) {
+            throw new \InvalidArgumentException(sprintf('The ServiceRPH property can only contain items of \Devlabs91\TravelgatePushApi\StructType\ServiceRPH, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->ServiceRPH[] = $item;
         return $this;
@@ -71,7 +71,7 @@ class ArrayOfServiceRPHsTypeServiceRPH extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \StructType\ServiceRPH|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\ServiceRPH|null
      */
     public function current()
     {
@@ -81,7 +81,7 @@ class ArrayOfServiceRPHsTypeServiceRPH extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \StructType\ServiceRPH|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\ServiceRPH|null
      */
     public function item($index)
     {
@@ -90,7 +90,7 @@ class ArrayOfServiceRPHsTypeServiceRPH extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \StructType\ServiceRPH|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\ServiceRPH|null
      */
     public function first()
     {
@@ -99,7 +99,7 @@ class ArrayOfServiceRPHsTypeServiceRPH extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \StructType\ServiceRPH|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\ServiceRPH|null
      */
     public function last()
     {
@@ -109,7 +109,7 @@ class ArrayOfServiceRPHsTypeServiceRPH extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \StructType\ServiceRPH|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\ServiceRPH|null
      */
     public function offsetGet($offset)
     {
@@ -130,7 +130,7 @@ class ArrayOfServiceRPHsTypeServiceRPH extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \ArrayType\ArrayOfServiceRPHsTypeServiceRPH
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfServiceRPHsTypeServiceRPH
      */
     public static function __set_state(array $array)
     {

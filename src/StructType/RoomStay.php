@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -20,7 +20,7 @@ class RoomStay extends RoomStayType
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfCommentTypeComment
+     * @var \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfCommentTypeComment
      */
     public $Comments;
     /**
@@ -28,7 +28,7 @@ class RoomStay extends RoomStayType
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfServiceRPHsTypeServiceRPH
+     * @var \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfServiceRPHsTypeServiceRPH
      */
     public $ServiceRPHs;
     /**
@@ -37,10 +37,10 @@ class RoomStay extends RoomStayType
      * @uses RoomStay::setComments()
      * @uses RoomStay::setServiceRPHs()
      * @param string $roomStayCandidateRPH
-     * @param \ArrayType\ArrayOfCommentTypeComment $comments
-     * @param \ArrayType\ArrayOfServiceRPHsTypeServiceRPH $serviceRPHs
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfCommentTypeComment $comments
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfServiceRPHsTypeServiceRPH $serviceRPHs
      */
-    public function __construct($roomStayCandidateRPH = null, \ArrayType\ArrayOfCommentTypeComment $comments = null, \ArrayType\ArrayOfServiceRPHsTypeServiceRPH $serviceRPHs = null)
+    public function __construct($roomStayCandidateRPH = null, \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfCommentTypeComment $comments = null, \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfServiceRPHsTypeServiceRPH $serviceRPHs = null)
     {
         $this
             ->setRoomStayCandidateRPH($roomStayCandidateRPH)
@@ -58,7 +58,7 @@ class RoomStay extends RoomStayType
     /**
      * Set RoomStayCandidateRPH value
      * @param string $roomStayCandidateRPH
-     * @return \StructType\RoomStay
+     * @return \Devlabs91\TravelgatePushApi\StructType\RoomStay
      */
     public function setRoomStayCandidateRPH($roomStayCandidateRPH = null)
     {
@@ -71,7 +71,7 @@ class RoomStay extends RoomStayType
     }
     /**
      * Get Comments value
-     * @return \ArrayType\ArrayOfCommentTypeComment|null
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfCommentTypeComment|null
      */
     public function getComments()
     {
@@ -79,17 +79,17 @@ class RoomStay extends RoomStayType
     }
     /**
      * Set Comments value
-     * @param \ArrayType\ArrayOfCommentTypeComment $comments
-     * @return \StructType\RoomStay
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfCommentTypeComment $comments
+     * @return \Devlabs91\TravelgatePushApi\StructType\RoomStay
      */
-    public function setComments(\ArrayType\ArrayOfCommentTypeComment $comments = null)
+    public function setComments(\Devlabs91\TravelgatePushApi\ArrayType\ArrayOfCommentTypeComment $comments = null)
     {
         $this->Comments = $comments;
         return $this;
     }
     /**
      * Get ServiceRPHs value
-     * @return \ArrayType\ArrayOfServiceRPHsTypeServiceRPH|null
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfServiceRPHsTypeServiceRPH|null
      */
     public function getServiceRPHs()
     {
@@ -97,10 +97,10 @@ class RoomStay extends RoomStayType
     }
     /**
      * Set ServiceRPHs value
-     * @param \ArrayType\ArrayOfServiceRPHsTypeServiceRPH $serviceRPHs
-     * @return \StructType\RoomStay
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfServiceRPHsTypeServiceRPH $serviceRPHs
+     * @return \Devlabs91\TravelgatePushApi\StructType\RoomStay
      */
-    public function setServiceRPHs(\ArrayType\ArrayOfServiceRPHsTypeServiceRPH $serviceRPHs = null)
+    public function setServiceRPHs(\Devlabs91\TravelgatePushApi\ArrayType\ArrayOfServiceRPHsTypeServiceRPH $serviceRPHs = null)
     {
         $this->ServiceRPHs = $serviceRPHs;
         return $this;
@@ -111,7 +111,7 @@ class RoomStay extends RoomStayType
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\RoomStay
+     * @return \Devlabs91\TravelgatePushApi\StructType\RoomStay
      */
     public static function __set_state(array $array)
     {

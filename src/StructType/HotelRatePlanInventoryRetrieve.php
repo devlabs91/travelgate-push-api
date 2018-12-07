@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class HotelRatePlanInventoryRetrieve extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\OTA_HotelRatePlanRQ
+     * @var \Devlabs91\TravelgatePushApi\StructType\OTA_HotelRatePlanRQ
      */
     public $request;
     /**
      * Constructor method for HotelRatePlanInventoryRetrieve
      * @uses HotelRatePlanInventoryRetrieve::setRequest()
-     * @param \StructType\OTA_HotelRatePlanRQ $request
+     * @param \Devlabs91\TravelgatePushApi\StructType\OTA_HotelRatePlanRQ $request
      */
-    public function __construct(\StructType\OTA_HotelRatePlanRQ $request = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\StructType\OTA_HotelRatePlanRQ $request = null)
     {
         $this
             ->setRequest($request);
     }
     /**
      * Get request value
-     * @return \StructType\OTA_HotelRatePlanRQ|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_HotelRatePlanRQ|null
      */
     public function getRequest()
     {
@@ -38,10 +38,10 @@ class HotelRatePlanInventoryRetrieve extends AbstractStructBase
     }
     /**
      * Set request value
-     * @param \StructType\OTA_HotelRatePlanRQ $request
-     * @return \StructType\HotelRatePlanInventoryRetrieve
+     * @param \Devlabs91\TravelgatePushApi\StructType\OTA_HotelRatePlanRQ $request
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRatePlanInventoryRetrieve
      */
-    public function setRequest(\StructType\OTA_HotelRatePlanRQ $request = null)
+    public function setRequest(\Devlabs91\TravelgatePushApi\StructType\OTA_HotelRatePlanRQ $request = null)
     {
         $this->request = $request;
         return $this;
@@ -52,7 +52,7 @@ class HotelRatePlanInventoryRetrieve extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HotelRatePlanInventoryRetrieve
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRatePlanInventoryRetrieve
      */
     public static function __set_state(array $array)
     {

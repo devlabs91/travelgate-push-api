@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class RoomRates extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\RoomRate[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\RoomRate[]
      */
     public $RoomRate;
     /**
@@ -27,7 +27,7 @@ class RoomRates extends AbstractStructBase
      * Constructor method for RoomRates
      * @uses RoomRates::setRoomRate()
      * @uses RoomRates::setMoreRatesExistInd()
-     * @param \StructType\RoomRate[] $roomRate
+     * @param \Devlabs91\TravelgatePushApi\StructType\RoomRate[] $roomRate
      * @param string $moreRatesExistInd
      */
     public function __construct(array $roomRate = array(), $moreRatesExistInd = null)
@@ -38,7 +38,7 @@ class RoomRates extends AbstractStructBase
     }
     /**
      * Get RoomRate value
-     * @return \StructType\RoomRate[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\RoomRate[]|null
      */
     public function getRoomRate()
     {
@@ -47,15 +47,15 @@ class RoomRates extends AbstractStructBase
     /**
      * Set RoomRate value
      * @throws \InvalidArgumentException
-     * @param \StructType\RoomRate[] $roomRate
-     * @return \StructType\RoomRates
+     * @param \Devlabs91\TravelgatePushApi\StructType\RoomRate[] $roomRate
+     * @return \Devlabs91\TravelgatePushApi\StructType\RoomRates
      */
     public function setRoomRate(array $roomRate = array())
     {
         foreach ($roomRate as $roomRatesRoomRateItem) {
             // validation for constraint: itemType
-            if (!$roomRatesRoomRateItem instanceof \StructType\RoomRate) {
-                throw new \InvalidArgumentException(sprintf('The RoomRate property can only contain items of \StructType\RoomRate, "%s" given', is_object($roomRatesRoomRateItem) ? get_class($roomRatesRoomRateItem) : gettype($roomRatesRoomRateItem)), __LINE__);
+            if (!$roomRatesRoomRateItem instanceof \Devlabs91\TravelgatePushApi\StructType\RoomRate) {
+                throw new \InvalidArgumentException(sprintf('The RoomRate property can only contain items of \Devlabs91\TravelgatePushApi\StructType\RoomRate, "%s" given', is_object($roomRatesRoomRateItem) ? get_class($roomRatesRoomRateItem) : gettype($roomRatesRoomRateItem)), __LINE__);
             }
         }
         $this->RoomRate = $roomRate;
@@ -64,14 +64,14 @@ class RoomRates extends AbstractStructBase
     /**
      * Add item to RoomRate value
      * @throws \InvalidArgumentException
-     * @param \StructType\RoomRate $item
-     * @return \StructType\RoomRates
+     * @param \Devlabs91\TravelgatePushApi\StructType\RoomRate $item
+     * @return \Devlabs91\TravelgatePushApi\StructType\RoomRates
      */
-    public function addToRoomRate(\StructType\RoomRate $item)
+    public function addToRoomRate(\Devlabs91\TravelgatePushApi\StructType\RoomRate $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\RoomRate) {
-            throw new \InvalidArgumentException(sprintf('The RoomRate property can only contain items of \StructType\RoomRate, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\RoomRate) {
+            throw new \InvalidArgumentException(sprintf('The RoomRate property can only contain items of \Devlabs91\TravelgatePushApi\StructType\RoomRate, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->RoomRate[] = $item;
         return $this;
@@ -87,7 +87,7 @@ class RoomRates extends AbstractStructBase
     /**
      * Set MoreRatesExistInd value
      * @param string $moreRatesExistInd
-     * @return \StructType\RoomRates
+     * @return \Devlabs91\TravelgatePushApi\StructType\RoomRates
      */
     public function setMoreRatesExistInd($moreRatesExistInd = null)
     {
@@ -104,7 +104,7 @@ class RoomRates extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\RoomRates
+     * @return \Devlabs91\TravelgatePushApi\StructType\RoomRates
      */
     public static function __set_state(array $array)
     {

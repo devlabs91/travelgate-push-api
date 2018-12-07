@@ -1,6 +1,6 @@
 <?php
 
-namespace ArrayType;
+namespace Devlabs91\TravelgatePushApi\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -15,13 +15,13 @@ class ArrayOfHotelRatePlanTypeSupplement extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Supplement[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\Supplement[]
      */
     public $Supplement;
     /**
      * Constructor method for ArrayOfHotelRatePlanTypeSupplement
      * @uses ArrayOfHotelRatePlanTypeSupplement::setSupplement()
-     * @param \StructType\Supplement[] $supplement
+     * @param \Devlabs91\TravelgatePushApi\StructType\Supplement[] $supplement
      */
     public function __construct(array $supplement = array())
     {
@@ -30,7 +30,7 @@ class ArrayOfHotelRatePlanTypeSupplement extends AbstractStructArrayBase
     }
     /**
      * Get Supplement value
-     * @return \StructType\Supplement[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Supplement[]|null
      */
     public function getSupplement()
     {
@@ -39,15 +39,15 @@ class ArrayOfHotelRatePlanTypeSupplement extends AbstractStructArrayBase
     /**
      * Set Supplement value
      * @throws \InvalidArgumentException
-     * @param \StructType\Supplement[] $supplement
-     * @return \ArrayType\ArrayOfHotelRatePlanTypeSupplement
+     * @param \Devlabs91\TravelgatePushApi\StructType\Supplement[] $supplement
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfHotelRatePlanTypeSupplement
      */
     public function setSupplement(array $supplement = array())
     {
         foreach ($supplement as $arrayOfHotelRatePlanTypeSupplementSupplementItem) {
             // validation for constraint: itemType
-            if (!$arrayOfHotelRatePlanTypeSupplementSupplementItem instanceof \StructType\Supplement) {
-                throw new \InvalidArgumentException(sprintf('The Supplement property can only contain items of \StructType\Supplement, "%s" given', is_object($arrayOfHotelRatePlanTypeSupplementSupplementItem) ? get_class($arrayOfHotelRatePlanTypeSupplementSupplementItem) : gettype($arrayOfHotelRatePlanTypeSupplementSupplementItem)), __LINE__);
+            if (!$arrayOfHotelRatePlanTypeSupplementSupplementItem instanceof \Devlabs91\TravelgatePushApi\StructType\Supplement) {
+                throw new \InvalidArgumentException(sprintf('The Supplement property can only contain items of \Devlabs91\TravelgatePushApi\StructType\Supplement, "%s" given', is_object($arrayOfHotelRatePlanTypeSupplementSupplementItem) ? get_class($arrayOfHotelRatePlanTypeSupplementSupplementItem) : gettype($arrayOfHotelRatePlanTypeSupplementSupplementItem)), __LINE__);
             }
         }
         $this->Supplement = $supplement;
@@ -56,14 +56,14 @@ class ArrayOfHotelRatePlanTypeSupplement extends AbstractStructArrayBase
     /**
      * Add item to Supplement value
      * @throws \InvalidArgumentException
-     * @param \StructType\Supplement $item
-     * @return \ArrayType\ArrayOfHotelRatePlanTypeSupplement
+     * @param \Devlabs91\TravelgatePushApi\StructType\Supplement $item
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfHotelRatePlanTypeSupplement
      */
-    public function addToSupplement(\StructType\Supplement $item)
+    public function addToSupplement(\Devlabs91\TravelgatePushApi\StructType\Supplement $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Supplement) {
-            throw new \InvalidArgumentException(sprintf('The Supplement property can only contain items of \StructType\Supplement, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\Supplement) {
+            throw new \InvalidArgumentException(sprintf('The Supplement property can only contain items of \Devlabs91\TravelgatePushApi\StructType\Supplement, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->Supplement[] = $item;
         return $this;
@@ -71,7 +71,7 @@ class ArrayOfHotelRatePlanTypeSupplement extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \StructType\Supplement|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Supplement|null
      */
     public function current()
     {
@@ -81,7 +81,7 @@ class ArrayOfHotelRatePlanTypeSupplement extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \StructType\Supplement|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Supplement|null
      */
     public function item($index)
     {
@@ -90,7 +90,7 @@ class ArrayOfHotelRatePlanTypeSupplement extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \StructType\Supplement|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Supplement|null
      */
     public function first()
     {
@@ -99,7 +99,7 @@ class ArrayOfHotelRatePlanTypeSupplement extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \StructType\Supplement|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Supplement|null
      */
     public function last()
     {
@@ -109,7 +109,7 @@ class ArrayOfHotelRatePlanTypeSupplement extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \StructType\Supplement|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Supplement|null
      */
     public function offsetGet($offset)
     {
@@ -130,7 +130,7 @@ class ArrayOfHotelRatePlanTypeSupplement extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \ArrayType\ArrayOfHotelRatePlanTypeSupplement
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfHotelRatePlanTypeSupplement
      */
     public static function __set_state(array $array)
     {

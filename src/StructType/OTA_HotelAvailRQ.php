@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class OTA_HotelAvailRQ extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfSourceType
+     * @var \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfSourceType
      */
     public $POS;
     /**
@@ -23,7 +23,7 @@ class OTA_HotelAvailRQ extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\AvailRequestSegments
+     * @var \Devlabs91\TravelgatePushApi\StructType\AvailRequestSegments
      */
     public $AvailRequestSegments;
     /**
@@ -36,11 +36,11 @@ class OTA_HotelAvailRQ extends AbstractStructBase
      * @uses OTA_HotelAvailRQ::setPOS()
      * @uses OTA_HotelAvailRQ::setAvailRequestSegments()
      * @uses OTA_HotelAvailRQ::setPrimaryLangID()
-     * @param \ArrayType\ArrayOfSourceType $pOS
-     * @param \StructType\AvailRequestSegments $availRequestSegments
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfSourceType $pOS
+     * @param \Devlabs91\TravelgatePushApi\StructType\AvailRequestSegments $availRequestSegments
      * @param string $primaryLangID
      */
-    public function __construct(\ArrayType\ArrayOfSourceType $pOS = null, \StructType\AvailRequestSegments $availRequestSegments = null, $primaryLangID = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\ArrayType\ArrayOfSourceType $pOS = null, \Devlabs91\TravelgatePushApi\StructType\AvailRequestSegments $availRequestSegments = null, $primaryLangID = null)
     {
         $this
             ->setPOS($pOS)
@@ -49,7 +49,7 @@ class OTA_HotelAvailRQ extends AbstractStructBase
     }
     /**
      * Get POS value
-     * @return \ArrayType\ArrayOfSourceType|null
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfSourceType|null
      */
     public function getPOS()
     {
@@ -57,17 +57,17 @@ class OTA_HotelAvailRQ extends AbstractStructBase
     }
     /**
      * Set POS value
-     * @param \ArrayType\ArrayOfSourceType $pOS
-     * @return \StructType\OTA_HotelAvailRQ
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfSourceType $pOS
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_HotelAvailRQ
      */
-    public function setPOS(\ArrayType\ArrayOfSourceType $pOS = null)
+    public function setPOS(\Devlabs91\TravelgatePushApi\ArrayType\ArrayOfSourceType $pOS = null)
     {
         $this->POS = $pOS;
         return $this;
     }
     /**
      * Get AvailRequestSegments value
-     * @return \StructType\AvailRequestSegments|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\AvailRequestSegments|null
      */
     public function getAvailRequestSegments()
     {
@@ -75,10 +75,10 @@ class OTA_HotelAvailRQ extends AbstractStructBase
     }
     /**
      * Set AvailRequestSegments value
-     * @param \StructType\AvailRequestSegments $availRequestSegments
-     * @return \StructType\OTA_HotelAvailRQ
+     * @param \Devlabs91\TravelgatePushApi\StructType\AvailRequestSegments $availRequestSegments
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_HotelAvailRQ
      */
-    public function setAvailRequestSegments(\StructType\AvailRequestSegments $availRequestSegments = null)
+    public function setAvailRequestSegments(\Devlabs91\TravelgatePushApi\StructType\AvailRequestSegments $availRequestSegments = null)
     {
         $this->AvailRequestSegments = $availRequestSegments;
         return $this;
@@ -94,7 +94,7 @@ class OTA_HotelAvailRQ extends AbstractStructBase
     /**
      * Set PrimaryLangID value
      * @param string $primaryLangID
-     * @return \StructType\OTA_HotelAvailRQ
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_HotelAvailRQ
      */
     public function setPrimaryLangID($primaryLangID = null)
     {
@@ -111,7 +111,7 @@ class OTA_HotelAvailRQ extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\OTA_HotelAvailRQ
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_HotelAvailRQ
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -36,7 +36,7 @@ class Cash extends AbstractStructBase
     /**
      * Set CashIndicator value
      * @param bool $cashIndicator
-     * @return \StructType\Cash
+     * @return \Devlabs91\TravelgatePushApi\StructType\Cash
      */
     public function setCashIndicator($cashIndicator = null)
     {
@@ -53,7 +53,7 @@ class Cash extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Cash
+     * @return \Devlabs91\TravelgatePushApi\StructType\Cash
      */
     public static function __set_state(array $array)
     {

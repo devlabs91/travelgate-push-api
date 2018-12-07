@@ -1,6 +1,6 @@
 <?php
 
-namespace EnumType;
+namespace Devlabs91\TravelgatePushApi\EnumType;
 
 /**
  * This class stands for TransactionStatusType EnumType

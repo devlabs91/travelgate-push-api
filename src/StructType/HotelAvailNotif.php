@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class HotelAvailNotif extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\OTA_HotelAvailNotifRQ
+     * @var \Devlabs91\TravelgatePushApi\StructType\OTA_HotelAvailNotifRQ
      */
     public $request;
     /**
      * Constructor method for HotelAvailNotif
      * @uses HotelAvailNotif::setRequest()
-     * @param \StructType\OTA_HotelAvailNotifRQ $request
+     * @param \Devlabs91\TravelgatePushApi\StructType\OTA_HotelAvailNotifRQ $request
      */
-    public function __construct(\StructType\OTA_HotelAvailNotifRQ $request = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\StructType\OTA_HotelAvailNotifRQ $request = null)
     {
         $this
             ->setRequest($request);
     }
     /**
      * Get request value
-     * @return \StructType\OTA_HotelAvailNotifRQ|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_HotelAvailNotifRQ|null
      */
     public function getRequest()
     {
@@ -38,10 +38,10 @@ class HotelAvailNotif extends AbstractStructBase
     }
     /**
      * Set request value
-     * @param \StructType\OTA_HotelAvailNotifRQ $request
-     * @return \StructType\HotelAvailNotif
+     * @param \Devlabs91\TravelgatePushApi\StructType\OTA_HotelAvailNotifRQ $request
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelAvailNotif
      */
-    public function setRequest(\StructType\OTA_HotelAvailNotifRQ $request = null)
+    public function setRequest(\Devlabs91\TravelgatePushApi\StructType\OTA_HotelAvailNotifRQ $request = null)
     {
         $this->request = $request;
         return $this;
@@ -52,7 +52,7 @@ class HotelAvailNotif extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HotelAvailNotif
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelAvailNotif
      */
     public static function __set_state(array $array)
     {

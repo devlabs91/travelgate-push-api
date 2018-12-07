@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class OTA_HotelRatePlanNotifRQ extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfSourceType
+     * @var \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfSourceType
      */
     public $POS;
     /**
@@ -23,7 +23,7 @@ class OTA_HotelRatePlanNotifRQ extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\RatePlans
+     * @var \Devlabs91\TravelgatePushApi\StructType\RatePlans
      */
     public $RatePlans;
     /**
@@ -31,7 +31,7 @@ class OTA_HotelRatePlanNotifRQ extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\TPA_ExtensionsType
+     * @var \Devlabs91\TravelgatePushApi\StructType\TPA_ExtensionsType
      */
     public $TPA_Extensions;
     /**
@@ -45,12 +45,12 @@ class OTA_HotelRatePlanNotifRQ extends AbstractStructBase
      * @uses OTA_HotelRatePlanNotifRQ::setRatePlans()
      * @uses OTA_HotelRatePlanNotifRQ::setTPA_Extensions()
      * @uses OTA_HotelRatePlanNotifRQ::setPrimaryLangID()
-     * @param \ArrayType\ArrayOfSourceType $pOS
-     * @param \StructType\RatePlans $ratePlans
-     * @param \StructType\TPA_ExtensionsType $tPA_Extensions
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfSourceType $pOS
+     * @param \Devlabs91\TravelgatePushApi\StructType\RatePlans $ratePlans
+     * @param \Devlabs91\TravelgatePushApi\StructType\TPA_ExtensionsType $tPA_Extensions
      * @param string $primaryLangID
      */
-    public function __construct(\ArrayType\ArrayOfSourceType $pOS = null, \StructType\RatePlans $ratePlans = null, \StructType\TPA_ExtensionsType $tPA_Extensions = null, $primaryLangID = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\ArrayType\ArrayOfSourceType $pOS = null, \Devlabs91\TravelgatePushApi\StructType\RatePlans $ratePlans = null, \Devlabs91\TravelgatePushApi\StructType\TPA_ExtensionsType $tPA_Extensions = null, $primaryLangID = null)
     {
         $this
             ->setPOS($pOS)
@@ -60,7 +60,7 @@ class OTA_HotelRatePlanNotifRQ extends AbstractStructBase
     }
     /**
      * Get POS value
-     * @return \ArrayType\ArrayOfSourceType|null
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfSourceType|null
      */
     public function getPOS()
     {
@@ -68,17 +68,17 @@ class OTA_HotelRatePlanNotifRQ extends AbstractStructBase
     }
     /**
      * Set POS value
-     * @param \ArrayType\ArrayOfSourceType $pOS
-     * @return \StructType\OTA_HotelRatePlanNotifRQ
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfSourceType $pOS
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_HotelRatePlanNotifRQ
      */
-    public function setPOS(\ArrayType\ArrayOfSourceType $pOS = null)
+    public function setPOS(\Devlabs91\TravelgatePushApi\ArrayType\ArrayOfSourceType $pOS = null)
     {
         $this->POS = $pOS;
         return $this;
     }
     /**
      * Get RatePlans value
-     * @return \StructType\RatePlans|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\RatePlans|null
      */
     public function getRatePlans()
     {
@@ -86,17 +86,17 @@ class OTA_HotelRatePlanNotifRQ extends AbstractStructBase
     }
     /**
      * Set RatePlans value
-     * @param \StructType\RatePlans $ratePlans
-     * @return \StructType\OTA_HotelRatePlanNotifRQ
+     * @param \Devlabs91\TravelgatePushApi\StructType\RatePlans $ratePlans
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_HotelRatePlanNotifRQ
      */
-    public function setRatePlans(\StructType\RatePlans $ratePlans = null)
+    public function setRatePlans(\Devlabs91\TravelgatePushApi\StructType\RatePlans $ratePlans = null)
     {
         $this->RatePlans = $ratePlans;
         return $this;
     }
     /**
      * Get TPA_Extensions value
-     * @return \StructType\TPA_ExtensionsType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\TPA_ExtensionsType|null
      */
     public function getTPA_Extensions()
     {
@@ -104,10 +104,10 @@ class OTA_HotelRatePlanNotifRQ extends AbstractStructBase
     }
     /**
      * Set TPA_Extensions value
-     * @param \StructType\TPA_ExtensionsType $tPA_Extensions
-     * @return \StructType\OTA_HotelRatePlanNotifRQ
+     * @param \Devlabs91\TravelgatePushApi\StructType\TPA_ExtensionsType $tPA_Extensions
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_HotelRatePlanNotifRQ
      */
-    public function setTPA_Extensions(\StructType\TPA_ExtensionsType $tPA_Extensions = null)
+    public function setTPA_Extensions(\Devlabs91\TravelgatePushApi\StructType\TPA_ExtensionsType $tPA_Extensions = null)
     {
         $this->TPA_Extensions = $tPA_Extensions;
         return $this;
@@ -123,7 +123,7 @@ class OTA_HotelRatePlanNotifRQ extends AbstractStructBase
     /**
      * Set PrimaryLangID value
      * @param string $primaryLangID
-     * @return \StructType\OTA_HotelRatePlanNotifRQ
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_HotelRatePlanNotifRQ
      */
     public function setPrimaryLangID($primaryLangID = null)
     {
@@ -140,7 +140,7 @@ class OTA_HotelRatePlanNotifRQ extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\OTA_HotelRatePlanNotifRQ
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_HotelRatePlanNotifRQ
      */
     public static function __set_state(array $array)
     {

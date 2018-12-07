@@ -1,6 +1,6 @@
 <?php
 
-namespace ArrayType;
+namespace Devlabs91\TravelgatePushApi\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -15,13 +15,13 @@ class ArrayOfRateUploadTypeAdditionalGuestAmount extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\AdditionalGuestAmount[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\AdditionalGuestAmount[]
      */
     public $AdditionalGuestAmount;
     /**
      * Constructor method for ArrayOfRateUploadTypeAdditionalGuestAmount
      * @uses ArrayOfRateUploadTypeAdditionalGuestAmount::setAdditionalGuestAmount()
-     * @param \StructType\AdditionalGuestAmount[] $additionalGuestAmount
+     * @param \Devlabs91\TravelgatePushApi\StructType\AdditionalGuestAmount[] $additionalGuestAmount
      */
     public function __construct(array $additionalGuestAmount = array())
     {
@@ -30,7 +30,7 @@ class ArrayOfRateUploadTypeAdditionalGuestAmount extends AbstractStructArrayBase
     }
     /**
      * Get AdditionalGuestAmount value
-     * @return \StructType\AdditionalGuestAmount[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\AdditionalGuestAmount[]|null
      */
     public function getAdditionalGuestAmount()
     {
@@ -39,15 +39,15 @@ class ArrayOfRateUploadTypeAdditionalGuestAmount extends AbstractStructArrayBase
     /**
      * Set AdditionalGuestAmount value
      * @throws \InvalidArgumentException
-     * @param \StructType\AdditionalGuestAmount[] $additionalGuestAmount
-     * @return \ArrayType\ArrayOfRateUploadTypeAdditionalGuestAmount
+     * @param \Devlabs91\TravelgatePushApi\StructType\AdditionalGuestAmount[] $additionalGuestAmount
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRateUploadTypeAdditionalGuestAmount
      */
     public function setAdditionalGuestAmount(array $additionalGuestAmount = array())
     {
         foreach ($additionalGuestAmount as $arrayOfRateUploadTypeAdditionalGuestAmountAdditionalGuestAmountItem) {
             // validation for constraint: itemType
-            if (!$arrayOfRateUploadTypeAdditionalGuestAmountAdditionalGuestAmountItem instanceof \StructType\AdditionalGuestAmount) {
-                throw new \InvalidArgumentException(sprintf('The AdditionalGuestAmount property can only contain items of \StructType\AdditionalGuestAmount, "%s" given', is_object($arrayOfRateUploadTypeAdditionalGuestAmountAdditionalGuestAmountItem) ? get_class($arrayOfRateUploadTypeAdditionalGuestAmountAdditionalGuestAmountItem) : gettype($arrayOfRateUploadTypeAdditionalGuestAmountAdditionalGuestAmountItem)), __LINE__);
+            if (!$arrayOfRateUploadTypeAdditionalGuestAmountAdditionalGuestAmountItem instanceof \Devlabs91\TravelgatePushApi\StructType\AdditionalGuestAmount) {
+                throw new \InvalidArgumentException(sprintf('The AdditionalGuestAmount property can only contain items of \Devlabs91\TravelgatePushApi\StructType\AdditionalGuestAmount, "%s" given', is_object($arrayOfRateUploadTypeAdditionalGuestAmountAdditionalGuestAmountItem) ? get_class($arrayOfRateUploadTypeAdditionalGuestAmountAdditionalGuestAmountItem) : gettype($arrayOfRateUploadTypeAdditionalGuestAmountAdditionalGuestAmountItem)), __LINE__);
             }
         }
         $this->AdditionalGuestAmount = $additionalGuestAmount;
@@ -56,14 +56,14 @@ class ArrayOfRateUploadTypeAdditionalGuestAmount extends AbstractStructArrayBase
     /**
      * Add item to AdditionalGuestAmount value
      * @throws \InvalidArgumentException
-     * @param \StructType\AdditionalGuestAmount $item
-     * @return \ArrayType\ArrayOfRateUploadTypeAdditionalGuestAmount
+     * @param \Devlabs91\TravelgatePushApi\StructType\AdditionalGuestAmount $item
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRateUploadTypeAdditionalGuestAmount
      */
-    public function addToAdditionalGuestAmount(\StructType\AdditionalGuestAmount $item)
+    public function addToAdditionalGuestAmount(\Devlabs91\TravelgatePushApi\StructType\AdditionalGuestAmount $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\AdditionalGuestAmount) {
-            throw new \InvalidArgumentException(sprintf('The AdditionalGuestAmount property can only contain items of \StructType\AdditionalGuestAmount, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\AdditionalGuestAmount) {
+            throw new \InvalidArgumentException(sprintf('The AdditionalGuestAmount property can only contain items of \Devlabs91\TravelgatePushApi\StructType\AdditionalGuestAmount, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->AdditionalGuestAmount[] = $item;
         return $this;
@@ -71,7 +71,7 @@ class ArrayOfRateUploadTypeAdditionalGuestAmount extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \StructType\AdditionalGuestAmount|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\AdditionalGuestAmount|null
      */
     public function current()
     {
@@ -81,7 +81,7 @@ class ArrayOfRateUploadTypeAdditionalGuestAmount extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \StructType\AdditionalGuestAmount|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\AdditionalGuestAmount|null
      */
     public function item($index)
     {
@@ -90,7 +90,7 @@ class ArrayOfRateUploadTypeAdditionalGuestAmount extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \StructType\AdditionalGuestAmount|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\AdditionalGuestAmount|null
      */
     public function first()
     {
@@ -99,7 +99,7 @@ class ArrayOfRateUploadTypeAdditionalGuestAmount extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \StructType\AdditionalGuestAmount|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\AdditionalGuestAmount|null
      */
     public function last()
     {
@@ -109,7 +109,7 @@ class ArrayOfRateUploadTypeAdditionalGuestAmount extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \StructType\AdditionalGuestAmount|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\AdditionalGuestAmount|null
      */
     public function offsetGet($offset)
     {
@@ -130,7 +130,7 @@ class ArrayOfRateUploadTypeAdditionalGuestAmount extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \ArrayType\ArrayOfRateUploadTypeAdditionalGuestAmount
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRateUploadTypeAdditionalGuestAmount
      */
     public static function __set_state(array $array)
     {

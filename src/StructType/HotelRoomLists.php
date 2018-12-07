@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,13 +15,13 @@ class HotelRoomLists extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\HotelRoomListType[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\HotelRoomListType[]
      */
     public $HotelRoomList;
     /**
      * Constructor method for HotelRoomLists
      * @uses HotelRoomLists::setHotelRoomList()
-     * @param \StructType\HotelRoomListType[] $hotelRoomList
+     * @param \Devlabs91\TravelgatePushApi\StructType\HotelRoomListType[] $hotelRoomList
      */
     public function __construct(array $hotelRoomList = array())
     {
@@ -30,7 +30,7 @@ class HotelRoomLists extends AbstractStructBase
     }
     /**
      * Get HotelRoomList value
-     * @return \StructType\HotelRoomListType[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRoomListType[]|null
      */
     public function getHotelRoomList()
     {
@@ -39,15 +39,15 @@ class HotelRoomLists extends AbstractStructBase
     /**
      * Set HotelRoomList value
      * @throws \InvalidArgumentException
-     * @param \StructType\HotelRoomListType[] $hotelRoomList
-     * @return \StructType\HotelRoomLists
+     * @param \Devlabs91\TravelgatePushApi\StructType\HotelRoomListType[] $hotelRoomList
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRoomLists
      */
     public function setHotelRoomList(array $hotelRoomList = array())
     {
         foreach ($hotelRoomList as $hotelRoomListsHotelRoomListItem) {
             // validation for constraint: itemType
-            if (!$hotelRoomListsHotelRoomListItem instanceof \StructType\HotelRoomListType) {
-                throw new \InvalidArgumentException(sprintf('The HotelRoomList property can only contain items of \StructType\HotelRoomListType, "%s" given', is_object($hotelRoomListsHotelRoomListItem) ? get_class($hotelRoomListsHotelRoomListItem) : gettype($hotelRoomListsHotelRoomListItem)), __LINE__);
+            if (!$hotelRoomListsHotelRoomListItem instanceof \Devlabs91\TravelgatePushApi\StructType\HotelRoomListType) {
+                throw new \InvalidArgumentException(sprintf('The HotelRoomList property can only contain items of \Devlabs91\TravelgatePushApi\StructType\HotelRoomListType, "%s" given', is_object($hotelRoomListsHotelRoomListItem) ? get_class($hotelRoomListsHotelRoomListItem) : gettype($hotelRoomListsHotelRoomListItem)), __LINE__);
             }
         }
         $this->HotelRoomList = $hotelRoomList;
@@ -56,14 +56,14 @@ class HotelRoomLists extends AbstractStructBase
     /**
      * Add item to HotelRoomList value
      * @throws \InvalidArgumentException
-     * @param \StructType\HotelRoomListType $item
-     * @return \StructType\HotelRoomLists
+     * @param \Devlabs91\TravelgatePushApi\StructType\HotelRoomListType $item
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRoomLists
      */
-    public function addToHotelRoomList(\StructType\HotelRoomListType $item)
+    public function addToHotelRoomList(\Devlabs91\TravelgatePushApi\StructType\HotelRoomListType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\HotelRoomListType) {
-            throw new \InvalidArgumentException(sprintf('The HotelRoomList property can only contain items of \StructType\HotelRoomListType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\HotelRoomListType) {
+            throw new \InvalidArgumentException(sprintf('The HotelRoomList property can only contain items of \Devlabs91\TravelgatePushApi\StructType\HotelRoomListType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->HotelRoomList[] = $item;
         return $this;
@@ -74,7 +74,7 @@ class HotelRoomLists extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HotelRoomLists
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRoomLists
      */
     public static function __set_state(array $array)
     {

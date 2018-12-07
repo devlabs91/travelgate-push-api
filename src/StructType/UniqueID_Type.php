@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class UniqueID_Type extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\CompanyNameType
+     * @var \Devlabs91\TravelgatePushApi\StructType\CompanyNameType
      */
     public $CompanyName;
     /**
@@ -39,12 +39,12 @@ class UniqueID_Type extends AbstractStructBase
      * @uses UniqueID_Type::setType()
      * @uses UniqueID_Type::setID()
      * @uses UniqueID_Type::setID_Context()
-     * @param \StructType\CompanyNameType $companyName
+     * @param \Devlabs91\TravelgatePushApi\StructType\CompanyNameType $companyName
      * @param string $type
      * @param string $iD
      * @param string $iD_Context
      */
-    public function __construct(\StructType\CompanyNameType $companyName = null, $type = null, $iD = null, $iD_Context = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\StructType\CompanyNameType $companyName = null, $type = null, $iD = null, $iD_Context = null)
     {
         $this
             ->setCompanyName($companyName)
@@ -54,7 +54,7 @@ class UniqueID_Type extends AbstractStructBase
     }
     /**
      * Get CompanyName value
-     * @return \StructType\CompanyNameType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\CompanyNameType|null
      */
     public function getCompanyName()
     {
@@ -62,10 +62,10 @@ class UniqueID_Type extends AbstractStructBase
     }
     /**
      * Set CompanyName value
-     * @param \StructType\CompanyNameType $companyName
-     * @return \StructType\UniqueID_Type
+     * @param \Devlabs91\TravelgatePushApi\StructType\CompanyNameType $companyName
+     * @return \Devlabs91\TravelgatePushApi\StructType\UniqueID_Type
      */
-    public function setCompanyName(\StructType\CompanyNameType $companyName = null)
+    public function setCompanyName(\Devlabs91\TravelgatePushApi\StructType\CompanyNameType $companyName = null)
     {
         $this->CompanyName = $companyName;
         return $this;
@@ -81,7 +81,7 @@ class UniqueID_Type extends AbstractStructBase
     /**
      * Set Type value
      * @param string $type
-     * @return \StructType\UniqueID_Type
+     * @return \Devlabs91\TravelgatePushApi\StructType\UniqueID_Type
      */
     public function setType($type = null)
     {
@@ -103,7 +103,7 @@ class UniqueID_Type extends AbstractStructBase
     /**
      * Set ID value
      * @param string $iD
-     * @return \StructType\UniqueID_Type
+     * @return \Devlabs91\TravelgatePushApi\StructType\UniqueID_Type
      */
     public function setID($iD = null)
     {
@@ -125,7 +125,7 @@ class UniqueID_Type extends AbstractStructBase
     /**
      * Set ID_Context value
      * @param string $iD_Context
-     * @return \StructType\UniqueID_Type
+     * @return \Devlabs91\TravelgatePushApi\StructType\UniqueID_Type
      */
     public function setID_Context($iD_Context = null)
     {
@@ -142,7 +142,7 @@ class UniqueID_Type extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\UniqueID_Type
+     * @return \Devlabs91\TravelgatePushApi\StructType\UniqueID_Type
      */
     public static function __set_state(array $array)
     {

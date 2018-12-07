@@ -1,6 +1,6 @@
 <?php
 
-namespace ArrayType;
+namespace Devlabs91\TravelgatePushApi\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -15,13 +15,13 @@ class ArrayOfAcceptedPaymentsTypeAcceptedPayment extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\AcceptedPayment[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\AcceptedPayment[]
      */
     public $AcceptedPayment;
     /**
      * Constructor method for ArrayOfAcceptedPaymentsTypeAcceptedPayment
      * @uses ArrayOfAcceptedPaymentsTypeAcceptedPayment::setAcceptedPayment()
-     * @param \StructType\AcceptedPayment[] $acceptedPayment
+     * @param \Devlabs91\TravelgatePushApi\StructType\AcceptedPayment[] $acceptedPayment
      */
     public function __construct(array $acceptedPayment = array())
     {
@@ -30,7 +30,7 @@ class ArrayOfAcceptedPaymentsTypeAcceptedPayment extends AbstractStructArrayBase
     }
     /**
      * Get AcceptedPayment value
-     * @return \StructType\AcceptedPayment[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\AcceptedPayment[]|null
      */
     public function getAcceptedPayment()
     {
@@ -39,15 +39,15 @@ class ArrayOfAcceptedPaymentsTypeAcceptedPayment extends AbstractStructArrayBase
     /**
      * Set AcceptedPayment value
      * @throws \InvalidArgumentException
-     * @param \StructType\AcceptedPayment[] $acceptedPayment
-     * @return \ArrayType\ArrayOfAcceptedPaymentsTypeAcceptedPayment
+     * @param \Devlabs91\TravelgatePushApi\StructType\AcceptedPayment[] $acceptedPayment
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfAcceptedPaymentsTypeAcceptedPayment
      */
     public function setAcceptedPayment(array $acceptedPayment = array())
     {
         foreach ($acceptedPayment as $arrayOfAcceptedPaymentsTypeAcceptedPaymentAcceptedPaymentItem) {
             // validation for constraint: itemType
-            if (!$arrayOfAcceptedPaymentsTypeAcceptedPaymentAcceptedPaymentItem instanceof \StructType\AcceptedPayment) {
-                throw new \InvalidArgumentException(sprintf('The AcceptedPayment property can only contain items of \StructType\AcceptedPayment, "%s" given', is_object($arrayOfAcceptedPaymentsTypeAcceptedPaymentAcceptedPaymentItem) ? get_class($arrayOfAcceptedPaymentsTypeAcceptedPaymentAcceptedPaymentItem) : gettype($arrayOfAcceptedPaymentsTypeAcceptedPaymentAcceptedPaymentItem)), __LINE__);
+            if (!$arrayOfAcceptedPaymentsTypeAcceptedPaymentAcceptedPaymentItem instanceof \Devlabs91\TravelgatePushApi\StructType\AcceptedPayment) {
+                throw new \InvalidArgumentException(sprintf('The AcceptedPayment property can only contain items of \Devlabs91\TravelgatePushApi\StructType\AcceptedPayment, "%s" given', is_object($arrayOfAcceptedPaymentsTypeAcceptedPaymentAcceptedPaymentItem) ? get_class($arrayOfAcceptedPaymentsTypeAcceptedPaymentAcceptedPaymentItem) : gettype($arrayOfAcceptedPaymentsTypeAcceptedPaymentAcceptedPaymentItem)), __LINE__);
             }
         }
         $this->AcceptedPayment = $acceptedPayment;
@@ -56,14 +56,14 @@ class ArrayOfAcceptedPaymentsTypeAcceptedPayment extends AbstractStructArrayBase
     /**
      * Add item to AcceptedPayment value
      * @throws \InvalidArgumentException
-     * @param \StructType\AcceptedPayment $item
-     * @return \ArrayType\ArrayOfAcceptedPaymentsTypeAcceptedPayment
+     * @param \Devlabs91\TravelgatePushApi\StructType\AcceptedPayment $item
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfAcceptedPaymentsTypeAcceptedPayment
      */
-    public function addToAcceptedPayment(\StructType\AcceptedPayment $item)
+    public function addToAcceptedPayment(\Devlabs91\TravelgatePushApi\StructType\AcceptedPayment $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\AcceptedPayment) {
-            throw new \InvalidArgumentException(sprintf('The AcceptedPayment property can only contain items of \StructType\AcceptedPayment, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\AcceptedPayment) {
+            throw new \InvalidArgumentException(sprintf('The AcceptedPayment property can only contain items of \Devlabs91\TravelgatePushApi\StructType\AcceptedPayment, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->AcceptedPayment[] = $item;
         return $this;
@@ -71,7 +71,7 @@ class ArrayOfAcceptedPaymentsTypeAcceptedPayment extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \StructType\AcceptedPayment|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\AcceptedPayment|null
      */
     public function current()
     {
@@ -81,7 +81,7 @@ class ArrayOfAcceptedPaymentsTypeAcceptedPayment extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \StructType\AcceptedPayment|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\AcceptedPayment|null
      */
     public function item($index)
     {
@@ -90,7 +90,7 @@ class ArrayOfAcceptedPaymentsTypeAcceptedPayment extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \StructType\AcceptedPayment|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\AcceptedPayment|null
      */
     public function first()
     {
@@ -99,7 +99,7 @@ class ArrayOfAcceptedPaymentsTypeAcceptedPayment extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \StructType\AcceptedPayment|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\AcceptedPayment|null
      */
     public function last()
     {
@@ -109,7 +109,7 @@ class ArrayOfAcceptedPaymentsTypeAcceptedPayment extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \StructType\AcceptedPayment|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\AcceptedPayment|null
      */
     public function offsetGet($offset)
     {
@@ -130,7 +130,7 @@ class ArrayOfAcceptedPaymentsTypeAcceptedPayment extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \ArrayType\ArrayOfAcceptedPaymentsTypeAcceptedPayment
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfAcceptedPaymentsTypeAcceptedPayment
      */
     public static function __set_state(array $array)
     {

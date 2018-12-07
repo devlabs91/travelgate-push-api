@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Recreation extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\ContactInfoType
+     * @var \Devlabs91\TravelgatePushApi\StructType\ContactInfoType
      */
     public $Contact;
     /**
@@ -23,7 +23,7 @@ class Recreation extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfBoolean
+     * @var \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfBoolean
      */
     public $OperationSchedules;
     /**
@@ -31,7 +31,7 @@ class Recreation extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfRefPointsTypeRefPoint
+     * @var \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRefPointsTypeRefPoint
      */
     public $RefPoints;
     /**
@@ -47,7 +47,7 @@ class Recreation extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfBoolean1
+     * @var \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfBoolean1
      */
     public $RecreationDetails;
     /**
@@ -90,18 +90,18 @@ class Recreation extends AbstractStructBase
      * @uses Recreation::setName()
      * @uses Recreation::setProximityCode()
      * @uses Recreation::setIncluded()
-     * @param \StructType\ContactInfoType $contact
-     * @param \ArrayType\ArrayOfBoolean $operationSchedules
-     * @param \ArrayType\ArrayOfRefPointsTypeRefPoint $refPoints
+     * @param \Devlabs91\TravelgatePushApi\StructType\ContactInfoType $contact
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfBoolean $operationSchedules
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRefPointsTypeRefPoint $refPoints
      * @param bool $multimediaDescriptions
-     * @param \ArrayType\ArrayOfBoolean1 $recreationDetails
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfBoolean1 $recreationDetails
      * @param string $descriptiveText
      * @param string $code
      * @param string $name
      * @param string $proximityCode
      * @param bool $included
      */
-    public function __construct(\StructType\ContactInfoType $contact = null, \ArrayType\ArrayOfBoolean $operationSchedules = null, \ArrayType\ArrayOfRefPointsTypeRefPoint $refPoints = null, $multimediaDescriptions = null, \ArrayType\ArrayOfBoolean1 $recreationDetails = null, $descriptiveText = null, $code = null, $name = null, $proximityCode = null, $included = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\StructType\ContactInfoType $contact = null, \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfBoolean $operationSchedules = null, \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRefPointsTypeRefPoint $refPoints = null, $multimediaDescriptions = null, \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfBoolean1 $recreationDetails = null, $descriptiveText = null, $code = null, $name = null, $proximityCode = null, $included = null)
     {
         $this
             ->setContact($contact)
@@ -117,7 +117,7 @@ class Recreation extends AbstractStructBase
     }
     /**
      * Get Contact value
-     * @return \StructType\ContactInfoType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\ContactInfoType|null
      */
     public function getContact()
     {
@@ -125,17 +125,17 @@ class Recreation extends AbstractStructBase
     }
     /**
      * Set Contact value
-     * @param \StructType\ContactInfoType $contact
-     * @return \StructType\Recreation
+     * @param \Devlabs91\TravelgatePushApi\StructType\ContactInfoType $contact
+     * @return \Devlabs91\TravelgatePushApi\StructType\Recreation
      */
-    public function setContact(\StructType\ContactInfoType $contact = null)
+    public function setContact(\Devlabs91\TravelgatePushApi\StructType\ContactInfoType $contact = null)
     {
         $this->Contact = $contact;
         return $this;
     }
     /**
      * Get OperationSchedules value
-     * @return \ArrayType\ArrayOfBoolean|null
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfBoolean|null
      */
     public function getOperationSchedules()
     {
@@ -143,17 +143,17 @@ class Recreation extends AbstractStructBase
     }
     /**
      * Set OperationSchedules value
-     * @param \ArrayType\ArrayOfBoolean $operationSchedules
-     * @return \StructType\Recreation
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfBoolean $operationSchedules
+     * @return \Devlabs91\TravelgatePushApi\StructType\Recreation
      */
-    public function setOperationSchedules(\ArrayType\ArrayOfBoolean $operationSchedules = null)
+    public function setOperationSchedules(\Devlabs91\TravelgatePushApi\ArrayType\ArrayOfBoolean $operationSchedules = null)
     {
         $this->OperationSchedules = $operationSchedules;
         return $this;
     }
     /**
      * Get RefPoints value
-     * @return \ArrayType\ArrayOfRefPointsTypeRefPoint|null
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRefPointsTypeRefPoint|null
      */
     public function getRefPoints()
     {
@@ -161,10 +161,10 @@ class Recreation extends AbstractStructBase
     }
     /**
      * Set RefPoints value
-     * @param \ArrayType\ArrayOfRefPointsTypeRefPoint $refPoints
-     * @return \StructType\Recreation
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRefPointsTypeRefPoint $refPoints
+     * @return \Devlabs91\TravelgatePushApi\StructType\Recreation
      */
-    public function setRefPoints(\ArrayType\ArrayOfRefPointsTypeRefPoint $refPoints = null)
+    public function setRefPoints(\Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRefPointsTypeRefPoint $refPoints = null)
     {
         $this->RefPoints = $refPoints;
         return $this;
@@ -180,7 +180,7 @@ class Recreation extends AbstractStructBase
     /**
      * Set MultimediaDescriptions value
      * @param bool $multimediaDescriptions
-     * @return \StructType\Recreation
+     * @return \Devlabs91\TravelgatePushApi\StructType\Recreation
      */
     public function setMultimediaDescriptions($multimediaDescriptions = null)
     {
@@ -193,7 +193,7 @@ class Recreation extends AbstractStructBase
     }
     /**
      * Get RecreationDetails value
-     * @return \ArrayType\ArrayOfBoolean1|null
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfBoolean1|null
      */
     public function getRecreationDetails()
     {
@@ -201,10 +201,10 @@ class Recreation extends AbstractStructBase
     }
     /**
      * Set RecreationDetails value
-     * @param \ArrayType\ArrayOfBoolean1 $recreationDetails
-     * @return \StructType\Recreation
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfBoolean1 $recreationDetails
+     * @return \Devlabs91\TravelgatePushApi\StructType\Recreation
      */
-    public function setRecreationDetails(\ArrayType\ArrayOfBoolean1 $recreationDetails = null)
+    public function setRecreationDetails(\Devlabs91\TravelgatePushApi\ArrayType\ArrayOfBoolean1 $recreationDetails = null)
     {
         $this->RecreationDetails = $recreationDetails;
         return $this;
@@ -220,7 +220,7 @@ class Recreation extends AbstractStructBase
     /**
      * Set DescriptiveText value
      * @param string $descriptiveText
-     * @return \StructType\Recreation
+     * @return \Devlabs91\TravelgatePushApi\StructType\Recreation
      */
     public function setDescriptiveText($descriptiveText = null)
     {
@@ -242,7 +242,7 @@ class Recreation extends AbstractStructBase
     /**
      * Set Code value
      * @param string $code
-     * @return \StructType\Recreation
+     * @return \Devlabs91\TravelgatePushApi\StructType\Recreation
      */
     public function setCode($code = null)
     {
@@ -264,7 +264,7 @@ class Recreation extends AbstractStructBase
     /**
      * Set Name value
      * @param string $name
-     * @return \StructType\Recreation
+     * @return \Devlabs91\TravelgatePushApi\StructType\Recreation
      */
     public function setName($name = null)
     {
@@ -286,7 +286,7 @@ class Recreation extends AbstractStructBase
     /**
      * Set ProximityCode value
      * @param string $proximityCode
-     * @return \StructType\Recreation
+     * @return \Devlabs91\TravelgatePushApi\StructType\Recreation
      */
     public function setProximityCode($proximityCode = null)
     {
@@ -308,7 +308,7 @@ class Recreation extends AbstractStructBase
     /**
      * Set Included value
      * @param bool $included
-     * @return \StructType\Recreation
+     * @return \Devlabs91\TravelgatePushApi\StructType\Recreation
      */
     public function setIncluded($included = null)
     {
@@ -325,7 +325,7 @@ class Recreation extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Recreation
+     * @return \Devlabs91\TravelgatePushApi\StructType\Recreation
      */
     public static function __set_state(array $array)
     {

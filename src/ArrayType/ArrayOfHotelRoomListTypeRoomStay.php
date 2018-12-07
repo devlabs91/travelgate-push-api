@@ -1,6 +1,6 @@
 <?php
 
-namespace ArrayType;
+namespace Devlabs91\TravelgatePushApi\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -15,13 +15,13 @@ class ArrayOfHotelRoomListTypeRoomStay extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\RoomStay[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\RoomStay[]
      */
     public $RoomStay;
     /**
      * Constructor method for ArrayOfHotelRoomListTypeRoomStay
      * @uses ArrayOfHotelRoomListTypeRoomStay::setRoomStay()
-     * @param \StructType\RoomStay[] $roomStay
+     * @param \Devlabs91\TravelgatePushApi\StructType\RoomStay[] $roomStay
      */
     public function __construct(array $roomStay = array())
     {
@@ -30,7 +30,7 @@ class ArrayOfHotelRoomListTypeRoomStay extends AbstractStructArrayBase
     }
     /**
      * Get RoomStay value
-     * @return \StructType\RoomStay[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\RoomStay[]|null
      */
     public function getRoomStay()
     {
@@ -39,15 +39,15 @@ class ArrayOfHotelRoomListTypeRoomStay extends AbstractStructArrayBase
     /**
      * Set RoomStay value
      * @throws \InvalidArgumentException
-     * @param \StructType\RoomStay[] $roomStay
-     * @return \ArrayType\ArrayOfHotelRoomListTypeRoomStay
+     * @param \Devlabs91\TravelgatePushApi\StructType\RoomStay[] $roomStay
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfHotelRoomListTypeRoomStay
      */
     public function setRoomStay(array $roomStay = array())
     {
         foreach ($roomStay as $arrayOfHotelRoomListTypeRoomStayRoomStayItem) {
             // validation for constraint: itemType
-            if (!$arrayOfHotelRoomListTypeRoomStayRoomStayItem instanceof \StructType\RoomStay) {
-                throw new \InvalidArgumentException(sprintf('The RoomStay property can only contain items of \StructType\RoomStay, "%s" given', is_object($arrayOfHotelRoomListTypeRoomStayRoomStayItem) ? get_class($arrayOfHotelRoomListTypeRoomStayRoomStayItem) : gettype($arrayOfHotelRoomListTypeRoomStayRoomStayItem)), __LINE__);
+            if (!$arrayOfHotelRoomListTypeRoomStayRoomStayItem instanceof \Devlabs91\TravelgatePushApi\StructType\RoomStay) {
+                throw new \InvalidArgumentException(sprintf('The RoomStay property can only contain items of \Devlabs91\TravelgatePushApi\StructType\RoomStay, "%s" given', is_object($arrayOfHotelRoomListTypeRoomStayRoomStayItem) ? get_class($arrayOfHotelRoomListTypeRoomStayRoomStayItem) : gettype($arrayOfHotelRoomListTypeRoomStayRoomStayItem)), __LINE__);
             }
         }
         $this->RoomStay = $roomStay;
@@ -56,14 +56,14 @@ class ArrayOfHotelRoomListTypeRoomStay extends AbstractStructArrayBase
     /**
      * Add item to RoomStay value
      * @throws \InvalidArgumentException
-     * @param \StructType\RoomStay $item
-     * @return \ArrayType\ArrayOfHotelRoomListTypeRoomStay
+     * @param \Devlabs91\TravelgatePushApi\StructType\RoomStay $item
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfHotelRoomListTypeRoomStay
      */
-    public function addToRoomStay(\StructType\RoomStay $item)
+    public function addToRoomStay(\Devlabs91\TravelgatePushApi\StructType\RoomStay $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\RoomStay) {
-            throw new \InvalidArgumentException(sprintf('The RoomStay property can only contain items of \StructType\RoomStay, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\RoomStay) {
+            throw new \InvalidArgumentException(sprintf('The RoomStay property can only contain items of \Devlabs91\TravelgatePushApi\StructType\RoomStay, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->RoomStay[] = $item;
         return $this;
@@ -71,7 +71,7 @@ class ArrayOfHotelRoomListTypeRoomStay extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \StructType\RoomStay|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\RoomStay|null
      */
     public function current()
     {
@@ -81,7 +81,7 @@ class ArrayOfHotelRoomListTypeRoomStay extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \StructType\RoomStay|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\RoomStay|null
      */
     public function item($index)
     {
@@ -90,7 +90,7 @@ class ArrayOfHotelRoomListTypeRoomStay extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \StructType\RoomStay|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\RoomStay|null
      */
     public function first()
     {
@@ -99,7 +99,7 @@ class ArrayOfHotelRoomListTypeRoomStay extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \StructType\RoomStay|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\RoomStay|null
      */
     public function last()
     {
@@ -109,7 +109,7 @@ class ArrayOfHotelRoomListTypeRoomStay extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \StructType\RoomStay|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\RoomStay|null
      */
     public function offsetGet($offset)
     {
@@ -130,7 +130,7 @@ class ArrayOfHotelRoomListTypeRoomStay extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \ArrayType\ArrayOfHotelRoomListTypeRoomStay
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfHotelRoomListTypeRoomStay
      */
     public static function __set_state(array $array)
     {

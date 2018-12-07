@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class PaymentFormType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Cash
+     * @var \Devlabs91\TravelgatePushApi\StructType\Cash
      */
     public $Cash;
     /**
@@ -23,17 +23,17 @@ class PaymentFormType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\PaymentCardType
+     * @var \Devlabs91\TravelgatePushApi\StructType\PaymentCardType
      */
     public $PaymentCard;
     /**
      * Constructor method for PaymentFormType
      * @uses PaymentFormType::setCash()
      * @uses PaymentFormType::setPaymentCard()
-     * @param \StructType\Cash $cash
-     * @param \StructType\PaymentCardType $paymentCard
+     * @param \Devlabs91\TravelgatePushApi\StructType\Cash $cash
+     * @param \Devlabs91\TravelgatePushApi\StructType\PaymentCardType $paymentCard
      */
-    public function __construct(\StructType\Cash $cash = null, \StructType\PaymentCardType $paymentCard = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\StructType\Cash $cash = null, \Devlabs91\TravelgatePushApi\StructType\PaymentCardType $paymentCard = null)
     {
         $this
             ->setCash($cash)
@@ -41,7 +41,7 @@ class PaymentFormType extends AbstractStructBase
     }
     /**
      * Get Cash value
-     * @return \StructType\Cash|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Cash|null
      */
     public function getCash()
     {
@@ -49,17 +49,17 @@ class PaymentFormType extends AbstractStructBase
     }
     /**
      * Set Cash value
-     * @param \StructType\Cash $cash
-     * @return \StructType\PaymentFormType
+     * @param \Devlabs91\TravelgatePushApi\StructType\Cash $cash
+     * @return \Devlabs91\TravelgatePushApi\StructType\PaymentFormType
      */
-    public function setCash(\StructType\Cash $cash = null)
+    public function setCash(\Devlabs91\TravelgatePushApi\StructType\Cash $cash = null)
     {
         $this->Cash = $cash;
         return $this;
     }
     /**
      * Get PaymentCard value
-     * @return \StructType\PaymentCardType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\PaymentCardType|null
      */
     public function getPaymentCard()
     {
@@ -67,10 +67,10 @@ class PaymentFormType extends AbstractStructBase
     }
     /**
      * Set PaymentCard value
-     * @param \StructType\PaymentCardType $paymentCard
-     * @return \StructType\PaymentFormType
+     * @param \Devlabs91\TravelgatePushApi\StructType\PaymentCardType $paymentCard
+     * @return \Devlabs91\TravelgatePushApi\StructType\PaymentFormType
      */
-    public function setPaymentCard(\StructType\PaymentCardType $paymentCard = null)
+    public function setPaymentCard(\Devlabs91\TravelgatePushApi\StructType\PaymentCardType $paymentCard = null)
     {
         $this->PaymentCard = $paymentCard;
         return $this;
@@ -81,7 +81,7 @@ class PaymentFormType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\PaymentFormType
+     * @return \Devlabs91\TravelgatePushApi\StructType\PaymentFormType
      */
     public static function __set_state(array $array)
     {

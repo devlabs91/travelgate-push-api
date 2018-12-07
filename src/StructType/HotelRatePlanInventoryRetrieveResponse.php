@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class HotelRatePlanInventoryRetrieveResponse extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\OTA_HotelRatePlanRS
+     * @var \Devlabs91\TravelgatePushApi\StructType\OTA_HotelRatePlanRS
      */
     public $HotelRatePlanInventoryRetrieveResult;
     /**
      * Constructor method for HotelRatePlanInventoryRetrieveResponse
      * @uses HotelRatePlanInventoryRetrieveResponse::setHotelRatePlanInventoryRetrieveResult()
-     * @param \StructType\OTA_HotelRatePlanRS $hotelRatePlanInventoryRetrieveResult
+     * @param \Devlabs91\TravelgatePushApi\StructType\OTA_HotelRatePlanRS $hotelRatePlanInventoryRetrieveResult
      */
-    public function __construct(\StructType\OTA_HotelRatePlanRS $hotelRatePlanInventoryRetrieveResult = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\StructType\OTA_HotelRatePlanRS $hotelRatePlanInventoryRetrieveResult = null)
     {
         $this
             ->setHotelRatePlanInventoryRetrieveResult($hotelRatePlanInventoryRetrieveResult);
     }
     /**
      * Get HotelRatePlanInventoryRetrieveResult value
-     * @return \StructType\OTA_HotelRatePlanRS|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_HotelRatePlanRS|null
      */
     public function getHotelRatePlanInventoryRetrieveResult()
     {
@@ -38,10 +38,10 @@ class HotelRatePlanInventoryRetrieveResponse extends AbstractStructBase
     }
     /**
      * Set HotelRatePlanInventoryRetrieveResult value
-     * @param \StructType\OTA_HotelRatePlanRS $hotelRatePlanInventoryRetrieveResult
-     * @return \StructType\HotelRatePlanInventoryRetrieveResponse
+     * @param \Devlabs91\TravelgatePushApi\StructType\OTA_HotelRatePlanRS $hotelRatePlanInventoryRetrieveResult
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRatePlanInventoryRetrieveResponse
      */
-    public function setHotelRatePlanInventoryRetrieveResult(\StructType\OTA_HotelRatePlanRS $hotelRatePlanInventoryRetrieveResult = null)
+    public function setHotelRatePlanInventoryRetrieveResult(\Devlabs91\TravelgatePushApi\StructType\OTA_HotelRatePlanRS $hotelRatePlanInventoryRetrieveResult = null)
     {
         $this->HotelRatePlanInventoryRetrieveResult = $hotelRatePlanInventoryRetrieveResult;
         return $this;
@@ -52,7 +52,7 @@ class HotelRatePlanInventoryRetrieveResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HotelRatePlanInventoryRetrieveResponse
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRatePlanInventoryRetrieveResponse
      */
     public static function __set_state(array $array)
     {

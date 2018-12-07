@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -22,7 +22,7 @@ class AcceptedPayment extends PaymentFormType
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\AcceptedPayment
+     * @return \Devlabs91\TravelgatePushApi\StructType\AcceptedPayment
      */
     public static function __set_state(array $array)
     {

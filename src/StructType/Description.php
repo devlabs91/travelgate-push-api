@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -12,7 +12,7 @@ class Description extends FormattedTextTextType
 {
     /**
      * The _
-     * @var \StructType\FormattedTextTextType
+     * @var \Devlabs91\TravelgatePushApi\StructType\FormattedTextTextType
      */
     public $_;
     /**
@@ -24,10 +24,10 @@ class Description extends FormattedTextTextType
      * Constructor method for Description
      * @uses Description::set_()
      * @uses Description::setListItem()
-     * @param \StructType\FormattedTextTextType $_
+     * @param \Devlabs91\TravelgatePushApi\StructType\FormattedTextTextType $_
      * @param int $listItem
      */
-    public function __construct(\StructType\FormattedTextTextType $_ = null, $listItem = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\StructType\FormattedTextTextType $_ = null, $listItem = null)
     {
         $this
             ->set_($_)
@@ -35,7 +35,7 @@ class Description extends FormattedTextTextType
     }
     /**
      * Get _ value
-     * @return \StructType\FormattedTextTextType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\FormattedTextTextType|null
      */
     public function get_()
     {
@@ -43,10 +43,10 @@ class Description extends FormattedTextTextType
     }
     /**
      * Set _ value
-     * @param \StructType\FormattedTextTextType $_
-     * @return \StructType\Description
+     * @param \Devlabs91\TravelgatePushApi\StructType\FormattedTextTextType $_
+     * @return \Devlabs91\TravelgatePushApi\StructType\Description
      */
-    public function set_(\StructType\FormattedTextTextType $_ = null)
+    public function set_(\Devlabs91\TravelgatePushApi\StructType\FormattedTextTextType $_ = null)
     {
         $this->_ = $_;
         return $this;
@@ -62,7 +62,7 @@ class Description extends FormattedTextTextType
     /**
      * Set ListItem value
      * @param int $listItem
-     * @return \StructType\Description
+     * @return \Devlabs91\TravelgatePushApi\StructType\Description
      */
     public function setListItem($listItem = null)
     {
@@ -79,7 +79,7 @@ class Description extends FormattedTextTextType
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Description
+     * @return \Devlabs91\TravelgatePushApi\StructType\Description
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -23,7 +23,7 @@ class ReadRequests extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\HotelReadRequest
+     * @var \Devlabs91\TravelgatePushApi\StructType\HotelReadRequest
      */
     public $HotelReadRequest;
     /**
@@ -31,9 +31,9 @@ class ReadRequests extends AbstractStructBase
      * @uses ReadRequests::setCruiseReadRequest()
      * @uses ReadRequests::setHotelReadRequest()
      * @param mixed $cruiseReadRequest
-     * @param \StructType\HotelReadRequest $hotelReadRequest
+     * @param \Devlabs91\TravelgatePushApi\StructType\HotelReadRequest $hotelReadRequest
      */
-    public function __construct($cruiseReadRequest = null, \StructType\HotelReadRequest $hotelReadRequest = null)
+    public function __construct($cruiseReadRequest = null, \Devlabs91\TravelgatePushApi\StructType\HotelReadRequest $hotelReadRequest = null)
     {
         $this
             ->setCruiseReadRequest($cruiseReadRequest)
@@ -50,7 +50,7 @@ class ReadRequests extends AbstractStructBase
     /**
      * Set CruiseReadRequest value
      * @param mixed $cruiseReadRequest
-     * @return \StructType\ReadRequests
+     * @return \Devlabs91\TravelgatePushApi\StructType\ReadRequests
      */
     public function setCruiseReadRequest($cruiseReadRequest = null)
     {
@@ -59,7 +59,7 @@ class ReadRequests extends AbstractStructBase
     }
     /**
      * Get HotelReadRequest value
-     * @return \StructType\HotelReadRequest|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelReadRequest|null
      */
     public function getHotelReadRequest()
     {
@@ -67,10 +67,10 @@ class ReadRequests extends AbstractStructBase
     }
     /**
      * Set HotelReadRequest value
-     * @param \StructType\HotelReadRequest $hotelReadRequest
-     * @return \StructType\ReadRequests
+     * @param \Devlabs91\TravelgatePushApi\StructType\HotelReadRequest $hotelReadRequest
+     * @return \Devlabs91\TravelgatePushApi\StructType\ReadRequests
      */
-    public function setHotelReadRequest(\StructType\HotelReadRequest $hotelReadRequest = null)
+    public function setHotelReadRequest(\Devlabs91\TravelgatePushApi\StructType\HotelReadRequest $hotelReadRequest = null)
     {
         $this->HotelReadRequest = $hotelReadRequest;
         return $this;
@@ -81,7 +81,7 @@ class ReadRequests extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ReadRequests
+     * @return \Devlabs91\TravelgatePushApi\StructType\ReadRequests
      */
     public static function __set_state(array $array)
     {

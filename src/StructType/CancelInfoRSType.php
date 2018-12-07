@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class CancelInfoRSType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfCancelRuleType
+     * @var \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfCancelRuleType
      */
     public $CancelRules;
     /**
      * Constructor method for CancelInfoRSType
      * @uses CancelInfoRSType::setCancelRules()
-     * @param \ArrayType\ArrayOfCancelRuleType $cancelRules
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfCancelRuleType $cancelRules
      */
-    public function __construct(\ArrayType\ArrayOfCancelRuleType $cancelRules = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\ArrayType\ArrayOfCancelRuleType $cancelRules = null)
     {
         $this
             ->setCancelRules($cancelRules);
     }
     /**
      * Get CancelRules value
-     * @return \ArrayType\ArrayOfCancelRuleType|null
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfCancelRuleType|null
      */
     public function getCancelRules()
     {
@@ -38,10 +38,10 @@ class CancelInfoRSType extends AbstractStructBase
     }
     /**
      * Set CancelRules value
-     * @param \ArrayType\ArrayOfCancelRuleType $cancelRules
-     * @return \StructType\CancelInfoRSType
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfCancelRuleType $cancelRules
+     * @return \Devlabs91\TravelgatePushApi\StructType\CancelInfoRSType
      */
-    public function setCancelRules(\ArrayType\ArrayOfCancelRuleType $cancelRules = null)
+    public function setCancelRules(\Devlabs91\TravelgatePushApi\ArrayType\ArrayOfCancelRuleType $cancelRules = null)
     {
         $this->CancelRules = $cancelRules;
         return $this;
@@ -52,7 +52,7 @@ class CancelInfoRSType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\CancelInfoRSType
+     * @return \Devlabs91\TravelgatePushApi\StructType\CancelInfoRSType
      */
     public static function __set_state(array $array)
     {

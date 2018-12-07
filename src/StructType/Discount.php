@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -60,7 +60,7 @@ class Discount extends DiscountType
     /**
      * Set NightsDiscounted value
      * @param int $nightsDiscounted
-     * @return \StructType\Discount
+     * @return \Devlabs91\TravelgatePushApi\StructType\Discount
      */
     public function setNightsDiscounted($nightsDiscounted = null)
     {
@@ -82,7 +82,7 @@ class Discount extends DiscountType
     /**
      * Set DiscountPattern value
      * @param string $discountPattern
-     * @return \StructType\Discount
+     * @return \Devlabs91\TravelgatePushApi\StructType\Discount
      */
     public function setDiscountPattern($discountPattern = null)
     {
@@ -104,7 +104,7 @@ class Discount extends DiscountType
     /**
      * Set Amount value
      * @param float $amount
-     * @return \StructType\Discount
+     * @return \Devlabs91\TravelgatePushApi\StructType\Discount
      */
     public function setAmount($amount = null)
     {
@@ -122,7 +122,7 @@ class Discount extends DiscountType
     /**
      * Set Percent value
      * @param float $percent
-     * @return \StructType\Discount
+     * @return \Devlabs91\TravelgatePushApi\StructType\Discount
      */
     public function setPercent($percent = null)
     {
@@ -135,7 +135,7 @@ class Discount extends DiscountType
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Discount
+     * @return \Devlabs91\TravelgatePushApi\StructType\Discount
      */
     public static function __set_state(array $array)
     {

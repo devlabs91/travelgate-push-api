@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -60,7 +60,7 @@ class Phone extends AbstractStructBase
     /**
      * Set PhoneLocationType value
      * @param string $phoneLocationType
-     * @return \StructType\Phone
+     * @return \Devlabs91\TravelgatePushApi\StructType\Phone
      */
     public function setPhoneLocationType($phoneLocationType = null)
     {
@@ -82,7 +82,7 @@ class Phone extends AbstractStructBase
     /**
      * Set PhoneTechType value
      * @param string $phoneTechType
-     * @return \StructType\Phone
+     * @return \Devlabs91\TravelgatePushApi\StructType\Phone
      */
     public function setPhoneTechType($phoneTechType = null)
     {
@@ -104,7 +104,7 @@ class Phone extends AbstractStructBase
     /**
      * Set PhoneUseType value
      * @param string $phoneUseType
-     * @return \StructType\Phone
+     * @return \Devlabs91\TravelgatePushApi\StructType\Phone
      */
     public function setPhoneUseType($phoneUseType = null)
     {
@@ -126,7 +126,7 @@ class Phone extends AbstractStructBase
     /**
      * Set PhoneNumber value
      * @param string $phoneNumber
-     * @return \StructType\Phone
+     * @return \Devlabs91\TravelgatePushApi\StructType\Phone
      */
     public function setPhoneNumber($phoneNumber = null)
     {
@@ -143,7 +143,7 @@ class Phone extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Phone
+     * @return \Devlabs91\TravelgatePushApi\StructType\Phone
      */
     public static function __set_state(array $array)
     {

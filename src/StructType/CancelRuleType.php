@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class CancelRuleType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\CommissionType
+     * @var \Devlabs91\TravelgatePushApi\StructType\CommissionType
      */
     public $Commission;
     /**
@@ -39,12 +39,12 @@ class CancelRuleType extends AbstractStructBase
      * @uses CancelRuleType::setCurrencyCode()
      * @uses CancelRuleType::setDecimalPlaces()
      * @uses CancelRuleType::setAmount()
-     * @param \StructType\CommissionType $commission
+     * @param \Devlabs91\TravelgatePushApi\StructType\CommissionType $commission
      * @param string $currencyCode
      * @param int $decimalPlaces
      * @param float $amount
      */
-    public function __construct(\StructType\CommissionType $commission = null, $currencyCode = null, $decimalPlaces = null, $amount = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\StructType\CommissionType $commission = null, $currencyCode = null, $decimalPlaces = null, $amount = null)
     {
         $this
             ->setCommission($commission)
@@ -54,7 +54,7 @@ class CancelRuleType extends AbstractStructBase
     }
     /**
      * Get Commission value
-     * @return \StructType\CommissionType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\CommissionType|null
      */
     public function getCommission()
     {
@@ -62,10 +62,10 @@ class CancelRuleType extends AbstractStructBase
     }
     /**
      * Set Commission value
-     * @param \StructType\CommissionType $commission
-     * @return \StructType\CancelRuleType
+     * @param \Devlabs91\TravelgatePushApi\StructType\CommissionType $commission
+     * @return \Devlabs91\TravelgatePushApi\StructType\CancelRuleType
      */
-    public function setCommission(\StructType\CommissionType $commission = null)
+    public function setCommission(\Devlabs91\TravelgatePushApi\StructType\CommissionType $commission = null)
     {
         $this->Commission = $commission;
         return $this;
@@ -81,7 +81,7 @@ class CancelRuleType extends AbstractStructBase
     /**
      * Set CurrencyCode value
      * @param string $currencyCode
-     * @return \StructType\CancelRuleType
+     * @return \Devlabs91\TravelgatePushApi\StructType\CancelRuleType
      */
     public function setCurrencyCode($currencyCode = null)
     {
@@ -103,7 +103,7 @@ class CancelRuleType extends AbstractStructBase
     /**
      * Set DecimalPlaces value
      * @param int $decimalPlaces
-     * @return \StructType\CancelRuleType
+     * @return \Devlabs91\TravelgatePushApi\StructType\CancelRuleType
      */
     public function setDecimalPlaces($decimalPlaces = null)
     {
@@ -125,7 +125,7 @@ class CancelRuleType extends AbstractStructBase
     /**
      * Set Amount value
      * @param float $amount
-     * @return \StructType\CancelRuleType
+     * @return \Devlabs91\TravelgatePushApi\StructType\CancelRuleType
      */
     public function setAmount($amount = null)
     {
@@ -138,7 +138,7 @@ class CancelRuleType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\CancelRuleType
+     * @return \Devlabs91\TravelgatePushApi\StructType\CancelRuleType
      */
     public static function __set_state(array $array)
     {

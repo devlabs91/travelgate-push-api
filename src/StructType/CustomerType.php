@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class CustomerType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\PersonNameType[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\PersonNameType[]
      */
     public $PersonName;
     /**
@@ -23,7 +23,7 @@ class CustomerType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Telephone[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\Telephone[]
      */
     public $Telephone;
     /**
@@ -31,7 +31,7 @@ class CustomerType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Email[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\Email[]
      */
     public $Email;
     /**
@@ -39,7 +39,7 @@ class CustomerType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Address[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\Address[]
      */
     public $Address;
     /**
@@ -48,10 +48,10 @@ class CustomerType extends AbstractStructBase
      * @uses CustomerType::setTelephone()
      * @uses CustomerType::setEmail()
      * @uses CustomerType::setAddress()
-     * @param \StructType\PersonNameType[] $personName
-     * @param \StructType\Telephone[] $telephone
-     * @param \StructType\Email[] $email
-     * @param \StructType\Address[] $address
+     * @param \Devlabs91\TravelgatePushApi\StructType\PersonNameType[] $personName
+     * @param \Devlabs91\TravelgatePushApi\StructType\Telephone[] $telephone
+     * @param \Devlabs91\TravelgatePushApi\StructType\Email[] $email
+     * @param \Devlabs91\TravelgatePushApi\StructType\Address[] $address
      */
     public function __construct(array $personName = array(), array $telephone = array(), array $email = array(), array $address = array())
     {
@@ -63,7 +63,7 @@ class CustomerType extends AbstractStructBase
     }
     /**
      * Get PersonName value
-     * @return \StructType\PersonNameType[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\PersonNameType[]|null
      */
     public function getPersonName()
     {
@@ -72,15 +72,15 @@ class CustomerType extends AbstractStructBase
     /**
      * Set PersonName value
      * @throws \InvalidArgumentException
-     * @param \StructType\PersonNameType[] $personName
-     * @return \StructType\CustomerType
+     * @param \Devlabs91\TravelgatePushApi\StructType\PersonNameType[] $personName
+     * @return \Devlabs91\TravelgatePushApi\StructType\CustomerType
      */
     public function setPersonName(array $personName = array())
     {
         foreach ($personName as $customerTypePersonNameItem) {
             // validation for constraint: itemType
-            if (!$customerTypePersonNameItem instanceof \StructType\PersonNameType) {
-                throw new \InvalidArgumentException(sprintf('The PersonName property can only contain items of \StructType\PersonNameType, "%s" given', is_object($customerTypePersonNameItem) ? get_class($customerTypePersonNameItem) : gettype($customerTypePersonNameItem)), __LINE__);
+            if (!$customerTypePersonNameItem instanceof \Devlabs91\TravelgatePushApi\StructType\PersonNameType) {
+                throw new \InvalidArgumentException(sprintf('The PersonName property can only contain items of \Devlabs91\TravelgatePushApi\StructType\PersonNameType, "%s" given', is_object($customerTypePersonNameItem) ? get_class($customerTypePersonNameItem) : gettype($customerTypePersonNameItem)), __LINE__);
             }
         }
         $this->PersonName = $personName;
@@ -89,21 +89,21 @@ class CustomerType extends AbstractStructBase
     /**
      * Add item to PersonName value
      * @throws \InvalidArgumentException
-     * @param \StructType\PersonNameType $item
-     * @return \StructType\CustomerType
+     * @param \Devlabs91\TravelgatePushApi\StructType\PersonNameType $item
+     * @return \Devlabs91\TravelgatePushApi\StructType\CustomerType
      */
-    public function addToPersonName(\StructType\PersonNameType $item)
+    public function addToPersonName(\Devlabs91\TravelgatePushApi\StructType\PersonNameType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\PersonNameType) {
-            throw new \InvalidArgumentException(sprintf('The PersonName property can only contain items of \StructType\PersonNameType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\PersonNameType) {
+            throw new \InvalidArgumentException(sprintf('The PersonName property can only contain items of \Devlabs91\TravelgatePushApi\StructType\PersonNameType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->PersonName[] = $item;
         return $this;
     }
     /**
      * Get Telephone value
-     * @return \StructType\Telephone[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Telephone[]|null
      */
     public function getTelephone()
     {
@@ -112,15 +112,15 @@ class CustomerType extends AbstractStructBase
     /**
      * Set Telephone value
      * @throws \InvalidArgumentException
-     * @param \StructType\Telephone[] $telephone
-     * @return \StructType\CustomerType
+     * @param \Devlabs91\TravelgatePushApi\StructType\Telephone[] $telephone
+     * @return \Devlabs91\TravelgatePushApi\StructType\CustomerType
      */
     public function setTelephone(array $telephone = array())
     {
         foreach ($telephone as $customerTypeTelephoneItem) {
             // validation for constraint: itemType
-            if (!$customerTypeTelephoneItem instanceof \StructType\Telephone) {
-                throw new \InvalidArgumentException(sprintf('The Telephone property can only contain items of \StructType\Telephone, "%s" given', is_object($customerTypeTelephoneItem) ? get_class($customerTypeTelephoneItem) : gettype($customerTypeTelephoneItem)), __LINE__);
+            if (!$customerTypeTelephoneItem instanceof \Devlabs91\TravelgatePushApi\StructType\Telephone) {
+                throw new \InvalidArgumentException(sprintf('The Telephone property can only contain items of \Devlabs91\TravelgatePushApi\StructType\Telephone, "%s" given', is_object($customerTypeTelephoneItem) ? get_class($customerTypeTelephoneItem) : gettype($customerTypeTelephoneItem)), __LINE__);
             }
         }
         $this->Telephone = $telephone;
@@ -129,21 +129,21 @@ class CustomerType extends AbstractStructBase
     /**
      * Add item to Telephone value
      * @throws \InvalidArgumentException
-     * @param \StructType\Telephone $item
-     * @return \StructType\CustomerType
+     * @param \Devlabs91\TravelgatePushApi\StructType\Telephone $item
+     * @return \Devlabs91\TravelgatePushApi\StructType\CustomerType
      */
-    public function addToTelephone(\StructType\Telephone $item)
+    public function addToTelephone(\Devlabs91\TravelgatePushApi\StructType\Telephone $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Telephone) {
-            throw new \InvalidArgumentException(sprintf('The Telephone property can only contain items of \StructType\Telephone, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\Telephone) {
+            throw new \InvalidArgumentException(sprintf('The Telephone property can only contain items of \Devlabs91\TravelgatePushApi\StructType\Telephone, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->Telephone[] = $item;
         return $this;
     }
     /**
      * Get Email value
-     * @return \StructType\Email[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Email[]|null
      */
     public function getEmail()
     {
@@ -152,15 +152,15 @@ class CustomerType extends AbstractStructBase
     /**
      * Set Email value
      * @throws \InvalidArgumentException
-     * @param \StructType\Email[] $email
-     * @return \StructType\CustomerType
+     * @param \Devlabs91\TravelgatePushApi\StructType\Email[] $email
+     * @return \Devlabs91\TravelgatePushApi\StructType\CustomerType
      */
     public function setEmail(array $email = array())
     {
         foreach ($email as $customerTypeEmailItem) {
             // validation for constraint: itemType
-            if (!$customerTypeEmailItem instanceof \StructType\Email) {
-                throw new \InvalidArgumentException(sprintf('The Email property can only contain items of \StructType\Email, "%s" given', is_object($customerTypeEmailItem) ? get_class($customerTypeEmailItem) : gettype($customerTypeEmailItem)), __LINE__);
+            if (!$customerTypeEmailItem instanceof \Devlabs91\TravelgatePushApi\StructType\Email) {
+                throw new \InvalidArgumentException(sprintf('The Email property can only contain items of \Devlabs91\TravelgatePushApi\StructType\Email, "%s" given', is_object($customerTypeEmailItem) ? get_class($customerTypeEmailItem) : gettype($customerTypeEmailItem)), __LINE__);
             }
         }
         $this->Email = $email;
@@ -169,21 +169,21 @@ class CustomerType extends AbstractStructBase
     /**
      * Add item to Email value
      * @throws \InvalidArgumentException
-     * @param \StructType\Email $item
-     * @return \StructType\CustomerType
+     * @param \Devlabs91\TravelgatePushApi\StructType\Email $item
+     * @return \Devlabs91\TravelgatePushApi\StructType\CustomerType
      */
-    public function addToEmail(\StructType\Email $item)
+    public function addToEmail(\Devlabs91\TravelgatePushApi\StructType\Email $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Email) {
-            throw new \InvalidArgumentException(sprintf('The Email property can only contain items of \StructType\Email, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\Email) {
+            throw new \InvalidArgumentException(sprintf('The Email property can only contain items of \Devlabs91\TravelgatePushApi\StructType\Email, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->Email[] = $item;
         return $this;
     }
     /**
      * Get Address value
-     * @return \StructType\Address[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Address[]|null
      */
     public function getAddress()
     {
@@ -192,15 +192,15 @@ class CustomerType extends AbstractStructBase
     /**
      * Set Address value
      * @throws \InvalidArgumentException
-     * @param \StructType\Address[] $address
-     * @return \StructType\CustomerType
+     * @param \Devlabs91\TravelgatePushApi\StructType\Address[] $address
+     * @return \Devlabs91\TravelgatePushApi\StructType\CustomerType
      */
     public function setAddress(array $address = array())
     {
         foreach ($address as $customerTypeAddressItem) {
             // validation for constraint: itemType
-            if (!$customerTypeAddressItem instanceof \StructType\Address) {
-                throw new \InvalidArgumentException(sprintf('The Address property can only contain items of \StructType\Address, "%s" given', is_object($customerTypeAddressItem) ? get_class($customerTypeAddressItem) : gettype($customerTypeAddressItem)), __LINE__);
+            if (!$customerTypeAddressItem instanceof \Devlabs91\TravelgatePushApi\StructType\Address) {
+                throw new \InvalidArgumentException(sprintf('The Address property can only contain items of \Devlabs91\TravelgatePushApi\StructType\Address, "%s" given', is_object($customerTypeAddressItem) ? get_class($customerTypeAddressItem) : gettype($customerTypeAddressItem)), __LINE__);
             }
         }
         $this->Address = $address;
@@ -209,14 +209,14 @@ class CustomerType extends AbstractStructBase
     /**
      * Add item to Address value
      * @throws \InvalidArgumentException
-     * @param \StructType\Address $item
-     * @return \StructType\CustomerType
+     * @param \Devlabs91\TravelgatePushApi\StructType\Address $item
+     * @return \Devlabs91\TravelgatePushApi\StructType\CustomerType
      */
-    public function addToAddress(\StructType\Address $item)
+    public function addToAddress(\Devlabs91\TravelgatePushApi\StructType\Address $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Address) {
-            throw new \InvalidArgumentException(sprintf('The Address property can only contain items of \StructType\Address, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\Address) {
+            throw new \InvalidArgumentException(sprintf('The Address property can only contain items of \Devlabs91\TravelgatePushApi\StructType\Address, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->Address[] = $item;
         return $this;
@@ -227,7 +227,7 @@ class CustomerType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\CustomerType
+     * @return \Devlabs91\TravelgatePushApi\StructType\CustomerType
      */
     public static function __set_state(array $array)
     {

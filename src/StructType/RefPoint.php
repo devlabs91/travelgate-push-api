@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -52,7 +52,7 @@ class RefPoint extends RelativePositionType
     /**
      * Set RefPointName value
      * @param string $refPointName
-     * @return \StructType\RefPoint
+     * @return \Devlabs91\TravelgatePushApi\StructType\RefPoint
      */
     public function setRefPointName($refPointName = null)
     {
@@ -74,7 +74,7 @@ class RefPoint extends RelativePositionType
     /**
      * Set Latitude value
      * @param string $latitude
-     * @return \StructType\RefPoint
+     * @return \Devlabs91\TravelgatePushApi\StructType\RefPoint
      */
     public function setLatitude($latitude = null)
     {
@@ -96,7 +96,7 @@ class RefPoint extends RelativePositionType
     /**
      * Set Longitude value
      * @param string $longitude
-     * @return \StructType\RefPoint
+     * @return \Devlabs91\TravelgatePushApi\StructType\RefPoint
      */
     public function setLongitude($longitude = null)
     {
@@ -113,7 +113,7 @@ class RefPoint extends RelativePositionType
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\RefPoint
+     * @return \Devlabs91\TravelgatePushApi\StructType\RefPoint
      */
     public static function __set_state(array $array)
     {

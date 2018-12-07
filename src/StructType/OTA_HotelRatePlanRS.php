@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class OTA_HotelRatePlanRS extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\ErrorsType
+     * @var \Devlabs91\TravelgatePushApi\StructType\ErrorsType
      */
     public $Errors;
     /**
@@ -23,7 +23,7 @@ class OTA_HotelRatePlanRS extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\SuccessType
+     * @var \Devlabs91\TravelgatePushApi\StructType\SuccessType
      */
     public $Success;
     /**
@@ -31,7 +31,7 @@ class OTA_HotelRatePlanRS extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\RatePlans[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\RatePlans[]
      */
     public $RatePlans;
     /**
@@ -39,11 +39,11 @@ class OTA_HotelRatePlanRS extends AbstractStructBase
      * @uses OTA_HotelRatePlanRS::setErrors()
      * @uses OTA_HotelRatePlanRS::setSuccess()
      * @uses OTA_HotelRatePlanRS::setRatePlans()
-     * @param \StructType\ErrorsType $errors
-     * @param \StructType\SuccessType $success
-     * @param \StructType\RatePlans[] $ratePlans
+     * @param \Devlabs91\TravelgatePushApi\StructType\ErrorsType $errors
+     * @param \Devlabs91\TravelgatePushApi\StructType\SuccessType $success
+     * @param \Devlabs91\TravelgatePushApi\StructType\RatePlans[] $ratePlans
      */
-    public function __construct(\StructType\ErrorsType $errors = null, \StructType\SuccessType $success = null, array $ratePlans = array())
+    public function __construct(\Devlabs91\TravelgatePushApi\StructType\ErrorsType $errors = null, \Devlabs91\TravelgatePushApi\StructType\SuccessType $success = null, array $ratePlans = array())
     {
         $this
             ->setErrors($errors)
@@ -52,7 +52,7 @@ class OTA_HotelRatePlanRS extends AbstractStructBase
     }
     /**
      * Get Errors value
-     * @return \StructType\ErrorsType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\ErrorsType|null
      */
     public function getErrors()
     {
@@ -60,17 +60,17 @@ class OTA_HotelRatePlanRS extends AbstractStructBase
     }
     /**
      * Set Errors value
-     * @param \StructType\ErrorsType $errors
-     * @return \StructType\OTA_HotelRatePlanRS
+     * @param \Devlabs91\TravelgatePushApi\StructType\ErrorsType $errors
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_HotelRatePlanRS
      */
-    public function setErrors(\StructType\ErrorsType $errors = null)
+    public function setErrors(\Devlabs91\TravelgatePushApi\StructType\ErrorsType $errors = null)
     {
         $this->Errors = $errors;
         return $this;
     }
     /**
      * Get Success value
-     * @return \StructType\SuccessType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\SuccessType|null
      */
     public function getSuccess()
     {
@@ -78,17 +78,17 @@ class OTA_HotelRatePlanRS extends AbstractStructBase
     }
     /**
      * Set Success value
-     * @param \StructType\SuccessType $success
-     * @return \StructType\OTA_HotelRatePlanRS
+     * @param \Devlabs91\TravelgatePushApi\StructType\SuccessType $success
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_HotelRatePlanRS
      */
-    public function setSuccess(\StructType\SuccessType $success = null)
+    public function setSuccess(\Devlabs91\TravelgatePushApi\StructType\SuccessType $success = null)
     {
         $this->Success = $success;
         return $this;
     }
     /**
      * Get RatePlans value
-     * @return \StructType\RatePlans[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\RatePlans[]|null
      */
     public function getRatePlans()
     {
@@ -97,15 +97,15 @@ class OTA_HotelRatePlanRS extends AbstractStructBase
     /**
      * Set RatePlans value
      * @throws \InvalidArgumentException
-     * @param \StructType\RatePlans[] $ratePlans
-     * @return \StructType\OTA_HotelRatePlanRS
+     * @param \Devlabs91\TravelgatePushApi\StructType\RatePlans[] $ratePlans
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_HotelRatePlanRS
      */
     public function setRatePlans(array $ratePlans = array())
     {
         foreach ($ratePlans as $oTA_HotelRatePlanRSRatePlansItem) {
             // validation for constraint: itemType
-            if (!$oTA_HotelRatePlanRSRatePlansItem instanceof \StructType\RatePlans) {
-                throw new \InvalidArgumentException(sprintf('The RatePlans property can only contain items of \StructType\RatePlans, "%s" given', is_object($oTA_HotelRatePlanRSRatePlansItem) ? get_class($oTA_HotelRatePlanRSRatePlansItem) : gettype($oTA_HotelRatePlanRSRatePlansItem)), __LINE__);
+            if (!$oTA_HotelRatePlanRSRatePlansItem instanceof \Devlabs91\TravelgatePushApi\StructType\RatePlans) {
+                throw new \InvalidArgumentException(sprintf('The RatePlans property can only contain items of \Devlabs91\TravelgatePushApi\StructType\RatePlans, "%s" given', is_object($oTA_HotelRatePlanRSRatePlansItem) ? get_class($oTA_HotelRatePlanRSRatePlansItem) : gettype($oTA_HotelRatePlanRSRatePlansItem)), __LINE__);
             }
         }
         $this->RatePlans = $ratePlans;
@@ -114,14 +114,14 @@ class OTA_HotelRatePlanRS extends AbstractStructBase
     /**
      * Add item to RatePlans value
      * @throws \InvalidArgumentException
-     * @param \StructType\RatePlans $item
-     * @return \StructType\OTA_HotelRatePlanRS
+     * @param \Devlabs91\TravelgatePushApi\StructType\RatePlans $item
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_HotelRatePlanRS
      */
-    public function addToRatePlans(\StructType\RatePlans $item)
+    public function addToRatePlans(\Devlabs91\TravelgatePushApi\StructType\RatePlans $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\RatePlans) {
-            throw new \InvalidArgumentException(sprintf('The RatePlans property can only contain items of \StructType\RatePlans, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\RatePlans) {
+            throw new \InvalidArgumentException(sprintf('The RatePlans property can only contain items of \Devlabs91\TravelgatePushApi\StructType\RatePlans, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->RatePlans[] = $item;
         return $this;
@@ -132,7 +132,7 @@ class OTA_HotelRatePlanRS extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\OTA_HotelRatePlanRS
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_HotelRatePlanRS
      */
     public static function __set_state(array $array)
     {

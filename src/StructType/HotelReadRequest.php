@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class HotelReadRequest extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\SelectionCriteria
+     * @var \Devlabs91\TravelgatePushApi\StructType\SelectionCriteria
      */
     public $SelectionCriteria;
     /**
@@ -27,10 +27,10 @@ class HotelReadRequest extends AbstractStructBase
      * Constructor method for HotelReadRequest
      * @uses HotelReadRequest::setSelectionCriteria()
      * @uses HotelReadRequest::setHotelCode()
-     * @param \StructType\SelectionCriteria $selectionCriteria
+     * @param \Devlabs91\TravelgatePushApi\StructType\SelectionCriteria $selectionCriteria
      * @param string $hotelCode
      */
-    public function __construct(\StructType\SelectionCriteria $selectionCriteria = null, $hotelCode = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\StructType\SelectionCriteria $selectionCriteria = null, $hotelCode = null)
     {
         $this
             ->setSelectionCriteria($selectionCriteria)
@@ -38,7 +38,7 @@ class HotelReadRequest extends AbstractStructBase
     }
     /**
      * Get SelectionCriteria value
-     * @return \StructType\SelectionCriteria|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\SelectionCriteria|null
      */
     public function getSelectionCriteria()
     {
@@ -46,10 +46,10 @@ class HotelReadRequest extends AbstractStructBase
     }
     /**
      * Set SelectionCriteria value
-     * @param \StructType\SelectionCriteria $selectionCriteria
-     * @return \StructType\HotelReadRequest
+     * @param \Devlabs91\TravelgatePushApi\StructType\SelectionCriteria $selectionCriteria
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelReadRequest
      */
-    public function setSelectionCriteria(\StructType\SelectionCriteria $selectionCriteria = null)
+    public function setSelectionCriteria(\Devlabs91\TravelgatePushApi\StructType\SelectionCriteria $selectionCriteria = null)
     {
         $this->SelectionCriteria = $selectionCriteria;
         return $this;
@@ -65,7 +65,7 @@ class HotelReadRequest extends AbstractStructBase
     /**
      * Set HotelCode value
      * @param string $hotelCode
-     * @return \StructType\HotelReadRequest
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelReadRequest
      */
     public function setHotelCode($hotelCode = null)
     {
@@ -82,7 +82,7 @@ class HotelReadRequest extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HotelReadRequest
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelReadRequest
      */
     public static function __set_state(array $array)
     {

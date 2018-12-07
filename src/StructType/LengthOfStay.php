@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -52,7 +52,7 @@ class LengthOfStay extends AbstractStructBase
     /**
      * Set Time value
      * @param int $time
-     * @return \StructType\LengthOfStay
+     * @return \Devlabs91\TravelgatePushApi\StructType\LengthOfStay
      */
     public function setTime($time = null)
     {
@@ -73,17 +73,17 @@ class LengthOfStay extends AbstractStructBase
     }
     /**
      * Set TimeUnit value
-     * @uses \EnumType\TimeUnitType::valueIsValid()
-     * @uses \EnumType\TimeUnitType::getValidValues()
+     * @uses \Devlabs91\TravelgatePushApi\EnumType\TimeUnitType::valueIsValid()
+     * @uses \Devlabs91\TravelgatePushApi\EnumType\TimeUnitType::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $timeUnit
-     * @return \StructType\LengthOfStay
+     * @return \Devlabs91\TravelgatePushApi\StructType\LengthOfStay
      */
     public function setTimeUnit($timeUnit = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\TimeUnitType::valueIsValid($timeUnit)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $timeUnit, implode(', ', \EnumType\TimeUnitType::getValidValues())), __LINE__);
+        if (!\Devlabs91\TravelgatePushApi\EnumType\TimeUnitType::valueIsValid($timeUnit)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $timeUnit, implode(', ', \Devlabs91\TravelgatePushApi\EnumType\TimeUnitType::getValidValues())), __LINE__);
         }
         $this->TimeUnit = $timeUnit;
         return $this;
@@ -99,7 +99,7 @@ class LengthOfStay extends AbstractStructBase
     /**
      * Set MinMaxMessageType value
      * @param string $minMaxMessageType
-     * @return \StructType\LengthOfStay
+     * @return \Devlabs91\TravelgatePushApi\StructType\LengthOfStay
      */
     public function setMinMaxMessageType($minMaxMessageType = null)
     {
@@ -116,7 +116,7 @@ class LengthOfStay extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\LengthOfStay
+     * @return \Devlabs91\TravelgatePushApi\StructType\LengthOfStay
      */
     public static function __set_state(array $array)
     {

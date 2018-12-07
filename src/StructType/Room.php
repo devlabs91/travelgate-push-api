@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -52,7 +52,7 @@ class Room extends AbstractStructBase
     /**
      * Set RoomType value
      * @param string $roomType
-     * @return \StructType\Room
+     * @return \Devlabs91\TravelgatePushApi\StructType\Room
      */
     public function setRoomType($roomType = null)
     {
@@ -74,7 +74,7 @@ class Room extends AbstractStructBase
     /**
      * Set RoomTypeCode value
      * @param string $roomTypeCode
-     * @return \StructType\Room
+     * @return \Devlabs91\TravelgatePushApi\StructType\Room
      */
     public function setRoomTypeCode($roomTypeCode = null)
     {
@@ -96,7 +96,7 @@ class Room extends AbstractStructBase
     /**
      * Set RoomID value
      * @param string $roomID
-     * @return \StructType\Room
+     * @return \Devlabs91\TravelgatePushApi\StructType\Room
      */
     public function setRoomID($roomID = null)
     {
@@ -113,7 +113,7 @@ class Room extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Room
+     * @return \Devlabs91\TravelgatePushApi\StructType\Room
      */
     public static function __set_state(array $array)
     {

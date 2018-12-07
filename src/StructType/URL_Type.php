@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -36,7 +36,7 @@ class URL_Type extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\URL_Type
+     * @return \Devlabs91\TravelgatePushApi\StructType\URL_Type
      */
     public function set_($_ = null)
     {
@@ -53,7 +53,7 @@ class URL_Type extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\URL_Type
+     * @return \Devlabs91\TravelgatePushApi\StructType\URL_Type
      */
     public static function __set_state(array $array)
     {

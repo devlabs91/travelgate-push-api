@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class HotelAvailRequest extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\DateRange
+     * @var \Devlabs91\TravelgatePushApi\StructType\DateRange
      */
     public $DateRange;
     /**
@@ -23,7 +23,7 @@ class HotelAvailRequest extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfRatePlanCandidatesTypeRatePlanCandidate
+     * @var \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRatePlanCandidatesTypeRatePlanCandidate
      */
     public $RatePlanCandidates;
     /**
@@ -31,7 +31,7 @@ class HotelAvailRequest extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\HotelRef
+     * @var \Devlabs91\TravelgatePushApi\StructType\HotelRef
      */
     public $HotelRef;
     /**
@@ -39,11 +39,11 @@ class HotelAvailRequest extends AbstractStructBase
      * @uses HotelAvailRequest::setDateRange()
      * @uses HotelAvailRequest::setRatePlanCandidates()
      * @uses HotelAvailRequest::setHotelRef()
-     * @param \StructType\DateRange $dateRange
-     * @param \ArrayType\ArrayOfRatePlanCandidatesTypeRatePlanCandidate $ratePlanCandidates
-     * @param \StructType\HotelRef $hotelRef
+     * @param \Devlabs91\TravelgatePushApi\StructType\DateRange $dateRange
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRatePlanCandidatesTypeRatePlanCandidate $ratePlanCandidates
+     * @param \Devlabs91\TravelgatePushApi\StructType\HotelRef $hotelRef
      */
-    public function __construct(\StructType\DateRange $dateRange = null, \ArrayType\ArrayOfRatePlanCandidatesTypeRatePlanCandidate $ratePlanCandidates = null, \StructType\HotelRef $hotelRef = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\StructType\DateRange $dateRange = null, \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRatePlanCandidatesTypeRatePlanCandidate $ratePlanCandidates = null, \Devlabs91\TravelgatePushApi\StructType\HotelRef $hotelRef = null)
     {
         $this
             ->setDateRange($dateRange)
@@ -52,7 +52,7 @@ class HotelAvailRequest extends AbstractStructBase
     }
     /**
      * Get DateRange value
-     * @return \StructType\DateRange|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\DateRange|null
      */
     public function getDateRange()
     {
@@ -60,17 +60,17 @@ class HotelAvailRequest extends AbstractStructBase
     }
     /**
      * Set DateRange value
-     * @param \StructType\DateRange $dateRange
-     * @return \StructType\HotelAvailRequest
+     * @param \Devlabs91\TravelgatePushApi\StructType\DateRange $dateRange
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelAvailRequest
      */
-    public function setDateRange(\StructType\DateRange $dateRange = null)
+    public function setDateRange(\Devlabs91\TravelgatePushApi\StructType\DateRange $dateRange = null)
     {
         $this->DateRange = $dateRange;
         return $this;
     }
     /**
      * Get RatePlanCandidates value
-     * @return \ArrayType\ArrayOfRatePlanCandidatesTypeRatePlanCandidate|null
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRatePlanCandidatesTypeRatePlanCandidate|null
      */
     public function getRatePlanCandidates()
     {
@@ -78,17 +78,17 @@ class HotelAvailRequest extends AbstractStructBase
     }
     /**
      * Set RatePlanCandidates value
-     * @param \ArrayType\ArrayOfRatePlanCandidatesTypeRatePlanCandidate $ratePlanCandidates
-     * @return \StructType\HotelAvailRequest
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRatePlanCandidatesTypeRatePlanCandidate $ratePlanCandidates
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelAvailRequest
      */
-    public function setRatePlanCandidates(\ArrayType\ArrayOfRatePlanCandidatesTypeRatePlanCandidate $ratePlanCandidates = null)
+    public function setRatePlanCandidates(\Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRatePlanCandidatesTypeRatePlanCandidate $ratePlanCandidates = null)
     {
         $this->RatePlanCandidates = $ratePlanCandidates;
         return $this;
     }
     /**
      * Get HotelRef value
-     * @return \StructType\HotelRef|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRef|null
      */
     public function getHotelRef()
     {
@@ -96,10 +96,10 @@ class HotelAvailRequest extends AbstractStructBase
     }
     /**
      * Set HotelRef value
-     * @param \StructType\HotelRef $hotelRef
-     * @return \StructType\HotelAvailRequest
+     * @param \Devlabs91\TravelgatePushApi\StructType\HotelRef $hotelRef
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelAvailRequest
      */
-    public function setHotelRef(\StructType\HotelRef $hotelRef = null)
+    public function setHotelRef(\Devlabs91\TravelgatePushApi\StructType\HotelRef $hotelRef = null)
     {
         $this->HotelRef = $hotelRef;
         return $this;
@@ -110,7 +110,7 @@ class HotelAvailRequest extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HotelAvailRequest
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelAvailRequest
      */
     public static function __set_state(array $array)
     {

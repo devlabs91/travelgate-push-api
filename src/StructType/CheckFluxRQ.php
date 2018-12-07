@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -69,7 +69,7 @@ class CheckFluxRQ extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $client
-     * @return \StructType\CheckFluxRQ
+     * @return \Devlabs91\TravelgatePushApi\StructType\CheckFluxRQ
      */
     public function setClient($client = null)
     {
@@ -100,7 +100,7 @@ class CheckFluxRQ extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $hotel
-     * @return \StructType\CheckFluxRQ
+     * @return \Devlabs91\TravelgatePushApi\StructType\CheckFluxRQ
      */
     public function setHotel($hotel = null)
     {
@@ -131,7 +131,7 @@ class CheckFluxRQ extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $provider
-     * @return \StructType\CheckFluxRQ
+     * @return \Devlabs91\TravelgatePushApi\StructType\CheckFluxRQ
      */
     public function setProvider($provider = null)
     {
@@ -152,7 +152,7 @@ class CheckFluxRQ extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\CheckFluxRQ
+     * @return \Devlabs91\TravelgatePushApi\StructType\CheckFluxRQ
      */
     public static function __set_state(array $array)
     {

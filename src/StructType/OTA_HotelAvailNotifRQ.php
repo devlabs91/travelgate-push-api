@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class OTA_HotelAvailNotifRQ extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfSourceType
+     * @var \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfSourceType
      */
     public $POS;
     /**
@@ -23,7 +23,7 @@ class OTA_HotelAvailNotifRQ extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\AvailStatusMessages
+     * @var \Devlabs91\TravelgatePushApi\StructType\AvailStatusMessages
      */
     public $AvailStatusMessages;
     /**
@@ -36,11 +36,11 @@ class OTA_HotelAvailNotifRQ extends AbstractStructBase
      * @uses OTA_HotelAvailNotifRQ::setPOS()
      * @uses OTA_HotelAvailNotifRQ::setAvailStatusMessages()
      * @uses OTA_HotelAvailNotifRQ::setPrimaryLangID()
-     * @param \ArrayType\ArrayOfSourceType $pOS
-     * @param \StructType\AvailStatusMessages $availStatusMessages
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfSourceType $pOS
+     * @param \Devlabs91\TravelgatePushApi\StructType\AvailStatusMessages $availStatusMessages
      * @param string $primaryLangID
      */
-    public function __construct(\ArrayType\ArrayOfSourceType $pOS = null, \StructType\AvailStatusMessages $availStatusMessages = null, $primaryLangID = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\ArrayType\ArrayOfSourceType $pOS = null, \Devlabs91\TravelgatePushApi\StructType\AvailStatusMessages $availStatusMessages = null, $primaryLangID = null)
     {
         $this
             ->setPOS($pOS)
@@ -49,7 +49,7 @@ class OTA_HotelAvailNotifRQ extends AbstractStructBase
     }
     /**
      * Get POS value
-     * @return \ArrayType\ArrayOfSourceType|null
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfSourceType|null
      */
     public function getPOS()
     {
@@ -57,17 +57,17 @@ class OTA_HotelAvailNotifRQ extends AbstractStructBase
     }
     /**
      * Set POS value
-     * @param \ArrayType\ArrayOfSourceType $pOS
-     * @return \StructType\OTA_HotelAvailNotifRQ
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfSourceType $pOS
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_HotelAvailNotifRQ
      */
-    public function setPOS(\ArrayType\ArrayOfSourceType $pOS = null)
+    public function setPOS(\Devlabs91\TravelgatePushApi\ArrayType\ArrayOfSourceType $pOS = null)
     {
         $this->POS = $pOS;
         return $this;
     }
     /**
      * Get AvailStatusMessages value
-     * @return \StructType\AvailStatusMessages|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\AvailStatusMessages|null
      */
     public function getAvailStatusMessages()
     {
@@ -75,10 +75,10 @@ class OTA_HotelAvailNotifRQ extends AbstractStructBase
     }
     /**
      * Set AvailStatusMessages value
-     * @param \StructType\AvailStatusMessages $availStatusMessages
-     * @return \StructType\OTA_HotelAvailNotifRQ
+     * @param \Devlabs91\TravelgatePushApi\StructType\AvailStatusMessages $availStatusMessages
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_HotelAvailNotifRQ
      */
-    public function setAvailStatusMessages(\StructType\AvailStatusMessages $availStatusMessages = null)
+    public function setAvailStatusMessages(\Devlabs91\TravelgatePushApi\StructType\AvailStatusMessages $availStatusMessages = null)
     {
         $this->AvailStatusMessages = $availStatusMessages;
         return $this;
@@ -94,7 +94,7 @@ class OTA_HotelAvailNotifRQ extends AbstractStructBase
     /**
      * Set PrimaryLangID value
      * @param string $primaryLangID
-     * @return \StructType\OTA_HotelAvailNotifRQ
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_HotelAvailNotifRQ
      */
     public function setPrimaryLangID($primaryLangID = null)
     {
@@ -111,7 +111,7 @@ class OTA_HotelAvailNotifRQ extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\OTA_HotelAvailNotifRQ
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_HotelAvailNotifRQ
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class RoomStayCandidateType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\GuestCountType
+     * @var \Devlabs91\TravelgatePushApi\StructType\GuestCountType
      */
     public $GuestCounts;
     /**
@@ -27,10 +27,10 @@ class RoomStayCandidateType extends AbstractStructBase
      * Constructor method for RoomStayCandidateType
      * @uses RoomStayCandidateType::setGuestCounts()
      * @uses RoomStayCandidateType::setRPH()
-     * @param \StructType\GuestCountType $guestCounts
+     * @param \Devlabs91\TravelgatePushApi\StructType\GuestCountType $guestCounts
      * @param string $rPH
      */
-    public function __construct(\StructType\GuestCountType $guestCounts = null, $rPH = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\StructType\GuestCountType $guestCounts = null, $rPH = null)
     {
         $this
             ->setGuestCounts($guestCounts)
@@ -38,7 +38,7 @@ class RoomStayCandidateType extends AbstractStructBase
     }
     /**
      * Get GuestCounts value
-     * @return \StructType\GuestCountType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\GuestCountType|null
      */
     public function getGuestCounts()
     {
@@ -46,10 +46,10 @@ class RoomStayCandidateType extends AbstractStructBase
     }
     /**
      * Set GuestCounts value
-     * @param \StructType\GuestCountType $guestCounts
-     * @return \StructType\RoomStayCandidateType
+     * @param \Devlabs91\TravelgatePushApi\StructType\GuestCountType $guestCounts
+     * @return \Devlabs91\TravelgatePushApi\StructType\RoomStayCandidateType
      */
-    public function setGuestCounts(\StructType\GuestCountType $guestCounts = null)
+    public function setGuestCounts(\Devlabs91\TravelgatePushApi\StructType\GuestCountType $guestCounts = null)
     {
         $this->GuestCounts = $guestCounts;
         return $this;
@@ -65,7 +65,7 @@ class RoomStayCandidateType extends AbstractStructBase
     /**
      * Set RPH value
      * @param string $rPH
-     * @return \StructType\RoomStayCandidateType
+     * @return \Devlabs91\TravelgatePushApi\StructType\RoomStayCandidateType
      */
     public function setRPH($rPH = null)
     {
@@ -82,7 +82,7 @@ class RoomStayCandidateType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\RoomStayCandidateType
+     * @return \Devlabs91\TravelgatePushApi\StructType\RoomStayCandidateType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -47,7 +47,7 @@ class Service extends AbstractStructBase
     /**
      * Set DescriptiveText value
      * @param string $descriptiveText
-     * @return \StructType\Service
+     * @return \Devlabs91\TravelgatePushApi\StructType\Service
      */
     public function setDescriptiveText($descriptiveText = null)
     {
@@ -69,7 +69,7 @@ class Service extends AbstractStructBase
     /**
      * Set ID value
      * @param string $iD
-     * @return \StructType\Service
+     * @return \Devlabs91\TravelgatePushApi\StructType\Service
      */
     public function setID($iD = null)
     {
@@ -86,7 +86,7 @@ class Service extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Service
+     * @return \Devlabs91\TravelgatePushApi\StructType\Service
      */
     public static function __set_state(array $array)
     {

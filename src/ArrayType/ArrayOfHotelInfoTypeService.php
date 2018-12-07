@@ -1,6 +1,6 @@
 <?php
 
-namespace ArrayType;
+namespace Devlabs91\TravelgatePushApi\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -15,13 +15,13 @@ class ArrayOfHotelInfoTypeService extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Service[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\Service[]
      */
     public $Service;
     /**
      * Constructor method for ArrayOfHotelInfoTypeService
      * @uses ArrayOfHotelInfoTypeService::setService()
-     * @param \StructType\Service[] $service
+     * @param \Devlabs91\TravelgatePushApi\StructType\Service[] $service
      */
     public function __construct(array $service = array())
     {
@@ -30,7 +30,7 @@ class ArrayOfHotelInfoTypeService extends AbstractStructArrayBase
     }
     /**
      * Get Service value
-     * @return \StructType\Service[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Service[]|null
      */
     public function getService()
     {
@@ -39,15 +39,15 @@ class ArrayOfHotelInfoTypeService extends AbstractStructArrayBase
     /**
      * Set Service value
      * @throws \InvalidArgumentException
-     * @param \StructType\Service[] $service
-     * @return \ArrayType\ArrayOfHotelInfoTypeService
+     * @param \Devlabs91\TravelgatePushApi\StructType\Service[] $service
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfHotelInfoTypeService
      */
     public function setService(array $service = array())
     {
         foreach ($service as $arrayOfHotelInfoTypeServiceServiceItem) {
             // validation for constraint: itemType
-            if (!$arrayOfHotelInfoTypeServiceServiceItem instanceof \StructType\Service) {
-                throw new \InvalidArgumentException(sprintf('The Service property can only contain items of \StructType\Service, "%s" given', is_object($arrayOfHotelInfoTypeServiceServiceItem) ? get_class($arrayOfHotelInfoTypeServiceServiceItem) : gettype($arrayOfHotelInfoTypeServiceServiceItem)), __LINE__);
+            if (!$arrayOfHotelInfoTypeServiceServiceItem instanceof \Devlabs91\TravelgatePushApi\StructType\Service) {
+                throw new \InvalidArgumentException(sprintf('The Service property can only contain items of \Devlabs91\TravelgatePushApi\StructType\Service, "%s" given', is_object($arrayOfHotelInfoTypeServiceServiceItem) ? get_class($arrayOfHotelInfoTypeServiceServiceItem) : gettype($arrayOfHotelInfoTypeServiceServiceItem)), __LINE__);
             }
         }
         $this->Service = $service;
@@ -56,14 +56,14 @@ class ArrayOfHotelInfoTypeService extends AbstractStructArrayBase
     /**
      * Add item to Service value
      * @throws \InvalidArgumentException
-     * @param \StructType\Service $item
-     * @return \ArrayType\ArrayOfHotelInfoTypeService
+     * @param \Devlabs91\TravelgatePushApi\StructType\Service $item
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfHotelInfoTypeService
      */
-    public function addToService(\StructType\Service $item)
+    public function addToService(\Devlabs91\TravelgatePushApi\StructType\Service $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Service) {
-            throw new \InvalidArgumentException(sprintf('The Service property can only contain items of \StructType\Service, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\Service) {
+            throw new \InvalidArgumentException(sprintf('The Service property can only contain items of \Devlabs91\TravelgatePushApi\StructType\Service, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->Service[] = $item;
         return $this;
@@ -71,7 +71,7 @@ class ArrayOfHotelInfoTypeService extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \StructType\Service|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Service|null
      */
     public function current()
     {
@@ -81,7 +81,7 @@ class ArrayOfHotelInfoTypeService extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \StructType\Service|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Service|null
      */
     public function item($index)
     {
@@ -90,7 +90,7 @@ class ArrayOfHotelInfoTypeService extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \StructType\Service|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Service|null
      */
     public function first()
     {
@@ -99,7 +99,7 @@ class ArrayOfHotelInfoTypeService extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \StructType\Service|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Service|null
      */
     public function last()
     {
@@ -109,7 +109,7 @@ class ArrayOfHotelInfoTypeService extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \StructType\Service|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Service|null
      */
     public function offsetGet($offset)
     {
@@ -130,7 +130,7 @@ class ArrayOfHotelInfoTypeService extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \ArrayType\ArrayOfHotelInfoTypeService
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfHotelInfoTypeService
      */
     public static function __set_state(array $array)
     {

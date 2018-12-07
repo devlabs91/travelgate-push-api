@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class HotelAvailRetrieveResponse extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\OTA_HotelAvailGetRS
+     * @var \Devlabs91\TravelgatePushApi\StructType\OTA_HotelAvailGetRS
      */
     public $HotelAvailRetrieveResult;
     /**
      * Constructor method for HotelAvailRetrieveResponse
      * @uses HotelAvailRetrieveResponse::setHotelAvailRetrieveResult()
-     * @param \StructType\OTA_HotelAvailGetRS $hotelAvailRetrieveResult
+     * @param \Devlabs91\TravelgatePushApi\StructType\OTA_HotelAvailGetRS $hotelAvailRetrieveResult
      */
-    public function __construct(\StructType\OTA_HotelAvailGetRS $hotelAvailRetrieveResult = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\StructType\OTA_HotelAvailGetRS $hotelAvailRetrieveResult = null)
     {
         $this
             ->setHotelAvailRetrieveResult($hotelAvailRetrieveResult);
     }
     /**
      * Get HotelAvailRetrieveResult value
-     * @return \StructType\OTA_HotelAvailGetRS|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_HotelAvailGetRS|null
      */
     public function getHotelAvailRetrieveResult()
     {
@@ -38,10 +38,10 @@ class HotelAvailRetrieveResponse extends AbstractStructBase
     }
     /**
      * Set HotelAvailRetrieveResult value
-     * @param \StructType\OTA_HotelAvailGetRS $hotelAvailRetrieveResult
-     * @return \StructType\HotelAvailRetrieveResponse
+     * @param \Devlabs91\TravelgatePushApi\StructType\OTA_HotelAvailGetRS $hotelAvailRetrieveResult
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelAvailRetrieveResponse
      */
-    public function setHotelAvailRetrieveResult(\StructType\OTA_HotelAvailGetRS $hotelAvailRetrieveResult = null)
+    public function setHotelAvailRetrieveResult(\Devlabs91\TravelgatePushApi\StructType\OTA_HotelAvailGetRS $hotelAvailRetrieveResult = null)
     {
         $this->HotelAvailRetrieveResult = $hotelAvailRetrieveResult;
         return $this;
@@ -52,7 +52,7 @@ class HotelAvailRetrieveResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HotelAvailRetrieveResponse
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelAvailRetrieveResponse
      */
     public static function __set_state(array $array)
     {

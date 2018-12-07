@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Attractions extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Attraction[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\Attraction[]
      */
     public $Attraction;
     /**
@@ -27,7 +27,7 @@ class Attractions extends AbstractStructBase
      * Constructor method for Attractions
      * @uses Attractions::setAttraction()
      * @uses Attractions::setLastUpdated()
-     * @param \StructType\Attraction[] $attraction
+     * @param \Devlabs91\TravelgatePushApi\StructType\Attraction[] $attraction
      * @param string $lastUpdated
      */
     public function __construct(array $attraction = array(), $lastUpdated = null)
@@ -38,7 +38,7 @@ class Attractions extends AbstractStructBase
     }
     /**
      * Get Attraction value
-     * @return \StructType\Attraction[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Attraction[]|null
      */
     public function getAttraction()
     {
@@ -47,15 +47,15 @@ class Attractions extends AbstractStructBase
     /**
      * Set Attraction value
      * @throws \InvalidArgumentException
-     * @param \StructType\Attraction[] $attraction
-     * @return \StructType\Attractions
+     * @param \Devlabs91\TravelgatePushApi\StructType\Attraction[] $attraction
+     * @return \Devlabs91\TravelgatePushApi\StructType\Attractions
      */
     public function setAttraction(array $attraction = array())
     {
         foreach ($attraction as $attractionsAttractionItem) {
             // validation for constraint: itemType
-            if (!$attractionsAttractionItem instanceof \StructType\Attraction) {
-                throw new \InvalidArgumentException(sprintf('The Attraction property can only contain items of \StructType\Attraction, "%s" given', is_object($attractionsAttractionItem) ? get_class($attractionsAttractionItem) : gettype($attractionsAttractionItem)), __LINE__);
+            if (!$attractionsAttractionItem instanceof \Devlabs91\TravelgatePushApi\StructType\Attraction) {
+                throw new \InvalidArgumentException(sprintf('The Attraction property can only contain items of \Devlabs91\TravelgatePushApi\StructType\Attraction, "%s" given', is_object($attractionsAttractionItem) ? get_class($attractionsAttractionItem) : gettype($attractionsAttractionItem)), __LINE__);
             }
         }
         $this->Attraction = $attraction;
@@ -64,14 +64,14 @@ class Attractions extends AbstractStructBase
     /**
      * Add item to Attraction value
      * @throws \InvalidArgumentException
-     * @param \StructType\Attraction $item
-     * @return \StructType\Attractions
+     * @param \Devlabs91\TravelgatePushApi\StructType\Attraction $item
+     * @return \Devlabs91\TravelgatePushApi\StructType\Attractions
      */
-    public function addToAttraction(\StructType\Attraction $item)
+    public function addToAttraction(\Devlabs91\TravelgatePushApi\StructType\Attraction $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Attraction) {
-            throw new \InvalidArgumentException(sprintf('The Attraction property can only contain items of \StructType\Attraction, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\Attraction) {
+            throw new \InvalidArgumentException(sprintf('The Attraction property can only contain items of \Devlabs91\TravelgatePushApi\StructType\Attraction, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->Attraction[] = $item;
         return $this;
@@ -87,7 +87,7 @@ class Attractions extends AbstractStructBase
     /**
      * Set LastUpdated value
      * @param string $lastUpdated
-     * @return \StructType\Attractions
+     * @return \Devlabs91\TravelgatePushApi\StructType\Attractions
      */
     public function setLastUpdated($lastUpdated = null)
     {
@@ -104,7 +104,7 @@ class Attractions extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Attractions
+     * @return \Devlabs91\TravelgatePushApi\StructType\Attractions
      */
     public static function __set_state(array $array)
     {

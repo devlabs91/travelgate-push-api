@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class HotelListInfo extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\OTA_HotelDescriptiveInfoRQ
+     * @var \Devlabs91\TravelgatePushApi\StructType\OTA_HotelDescriptiveInfoRQ
      */
     public $request;
     /**
      * Constructor method for HotelListInfo
      * @uses HotelListInfo::setRequest()
-     * @param \StructType\OTA_HotelDescriptiveInfoRQ $request
+     * @param \Devlabs91\TravelgatePushApi\StructType\OTA_HotelDescriptiveInfoRQ $request
      */
-    public function __construct(\StructType\OTA_HotelDescriptiveInfoRQ $request = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\StructType\OTA_HotelDescriptiveInfoRQ $request = null)
     {
         $this
             ->setRequest($request);
     }
     /**
      * Get request value
-     * @return \StructType\OTA_HotelDescriptiveInfoRQ|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_HotelDescriptiveInfoRQ|null
      */
     public function getRequest()
     {
@@ -38,10 +38,10 @@ class HotelListInfo extends AbstractStructBase
     }
     /**
      * Set request value
-     * @param \StructType\OTA_HotelDescriptiveInfoRQ $request
-     * @return \StructType\HotelListInfo
+     * @param \Devlabs91\TravelgatePushApi\StructType\OTA_HotelDescriptiveInfoRQ $request
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelListInfo
      */
-    public function setRequest(\StructType\OTA_HotelDescriptiveInfoRQ $request = null)
+    public function setRequest(\Devlabs91\TravelgatePushApi\StructType\OTA_HotelDescriptiveInfoRQ $request = null)
     {
         $this->request = $request;
         return $this;
@@ -52,7 +52,7 @@ class HotelListInfo extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HotelListInfo
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelListInfo
      */
     public static function __set_state(array $array)
     {

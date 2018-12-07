@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,13 +15,13 @@ class TextItemsType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\TextItem[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\TextItem[]
      */
     public $TextItem;
     /**
      * Constructor method for TextItemsType
      * @uses TextItemsType::setTextItem()
-     * @param \StructType\TextItem[] $textItem
+     * @param \Devlabs91\TravelgatePushApi\StructType\TextItem[] $textItem
      */
     public function __construct(array $textItem = array())
     {
@@ -30,7 +30,7 @@ class TextItemsType extends AbstractStructBase
     }
     /**
      * Get TextItem value
-     * @return \StructType\TextItem[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\TextItem[]|null
      */
     public function getTextItem()
     {
@@ -39,15 +39,15 @@ class TextItemsType extends AbstractStructBase
     /**
      * Set TextItem value
      * @throws \InvalidArgumentException
-     * @param \StructType\TextItem[] $textItem
-     * @return \StructType\TextItemsType
+     * @param \Devlabs91\TravelgatePushApi\StructType\TextItem[] $textItem
+     * @return \Devlabs91\TravelgatePushApi\StructType\TextItemsType
      */
     public function setTextItem(array $textItem = array())
     {
         foreach ($textItem as $textItemsTypeTextItemItem) {
             // validation for constraint: itemType
-            if (!$textItemsTypeTextItemItem instanceof \StructType\TextItem) {
-                throw new \InvalidArgumentException(sprintf('The TextItem property can only contain items of \StructType\TextItem, "%s" given', is_object($textItemsTypeTextItemItem) ? get_class($textItemsTypeTextItemItem) : gettype($textItemsTypeTextItemItem)), __LINE__);
+            if (!$textItemsTypeTextItemItem instanceof \Devlabs91\TravelgatePushApi\StructType\TextItem) {
+                throw new \InvalidArgumentException(sprintf('The TextItem property can only contain items of \Devlabs91\TravelgatePushApi\StructType\TextItem, "%s" given', is_object($textItemsTypeTextItemItem) ? get_class($textItemsTypeTextItemItem) : gettype($textItemsTypeTextItemItem)), __LINE__);
             }
         }
         $this->TextItem = $textItem;
@@ -56,14 +56,14 @@ class TextItemsType extends AbstractStructBase
     /**
      * Add item to TextItem value
      * @throws \InvalidArgumentException
-     * @param \StructType\TextItem $item
-     * @return \StructType\TextItemsType
+     * @param \Devlabs91\TravelgatePushApi\StructType\TextItem $item
+     * @return \Devlabs91\TravelgatePushApi\StructType\TextItemsType
      */
-    public function addToTextItem(\StructType\TextItem $item)
+    public function addToTextItem(\Devlabs91\TravelgatePushApi\StructType\TextItem $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\TextItem) {
-            throw new \InvalidArgumentException(sprintf('The TextItem property can only contain items of \StructType\TextItem, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\TextItem) {
+            throw new \InvalidArgumentException(sprintf('The TextItem property can only contain items of \Devlabs91\TravelgatePushApi\StructType\TextItem, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->TextItem[] = $item;
         return $this;
@@ -74,7 +74,7 @@ class TextItemsType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\TextItemsType
+     * @return \Devlabs91\TravelgatePushApi\StructType\TextItemsType
      */
     public static function __set_state(array $array)
     {

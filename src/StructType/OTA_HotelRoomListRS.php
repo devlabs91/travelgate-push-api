@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class OTA_HotelRoomListRS extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\ErrorsType
+     * @var \Devlabs91\TravelgatePushApi\StructType\ErrorsType
      */
     public $Errors;
     /**
@@ -23,7 +23,7 @@ class OTA_HotelRoomListRS extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\HotelRoomLists
+     * @var \Devlabs91\TravelgatePushApi\StructType\HotelRoomLists
      */
     public $HotelRoomLists;
     /**
@@ -31,7 +31,7 @@ class OTA_HotelRoomListRS extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\SuccessType
+     * @var \Devlabs91\TravelgatePushApi\StructType\SuccessType
      */
     public $Success;
     /**
@@ -39,11 +39,11 @@ class OTA_HotelRoomListRS extends AbstractStructBase
      * @uses OTA_HotelRoomListRS::setErrors()
      * @uses OTA_HotelRoomListRS::setHotelRoomLists()
      * @uses OTA_HotelRoomListRS::setSuccess()
-     * @param \StructType\ErrorsType $errors
-     * @param \StructType\HotelRoomLists $hotelRoomLists
-     * @param \StructType\SuccessType $success
+     * @param \Devlabs91\TravelgatePushApi\StructType\ErrorsType $errors
+     * @param \Devlabs91\TravelgatePushApi\StructType\HotelRoomLists $hotelRoomLists
+     * @param \Devlabs91\TravelgatePushApi\StructType\SuccessType $success
      */
-    public function __construct(\StructType\ErrorsType $errors = null, \StructType\HotelRoomLists $hotelRoomLists = null, \StructType\SuccessType $success = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\StructType\ErrorsType $errors = null, \Devlabs91\TravelgatePushApi\StructType\HotelRoomLists $hotelRoomLists = null, \Devlabs91\TravelgatePushApi\StructType\SuccessType $success = null)
     {
         $this
             ->setErrors($errors)
@@ -52,7 +52,7 @@ class OTA_HotelRoomListRS extends AbstractStructBase
     }
     /**
      * Get Errors value
-     * @return \StructType\ErrorsType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\ErrorsType|null
      */
     public function getErrors()
     {
@@ -60,17 +60,17 @@ class OTA_HotelRoomListRS extends AbstractStructBase
     }
     /**
      * Set Errors value
-     * @param \StructType\ErrorsType $errors
-     * @return \StructType\OTA_HotelRoomListRS
+     * @param \Devlabs91\TravelgatePushApi\StructType\ErrorsType $errors
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_HotelRoomListRS
      */
-    public function setErrors(\StructType\ErrorsType $errors = null)
+    public function setErrors(\Devlabs91\TravelgatePushApi\StructType\ErrorsType $errors = null)
     {
         $this->Errors = $errors;
         return $this;
     }
     /**
      * Get HotelRoomLists value
-     * @return \StructType\HotelRoomLists|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRoomLists|null
      */
     public function getHotelRoomLists()
     {
@@ -78,17 +78,17 @@ class OTA_HotelRoomListRS extends AbstractStructBase
     }
     /**
      * Set HotelRoomLists value
-     * @param \StructType\HotelRoomLists $hotelRoomLists
-     * @return \StructType\OTA_HotelRoomListRS
+     * @param \Devlabs91\TravelgatePushApi\StructType\HotelRoomLists $hotelRoomLists
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_HotelRoomListRS
      */
-    public function setHotelRoomLists(\StructType\HotelRoomLists $hotelRoomLists = null)
+    public function setHotelRoomLists(\Devlabs91\TravelgatePushApi\StructType\HotelRoomLists $hotelRoomLists = null)
     {
         $this->HotelRoomLists = $hotelRoomLists;
         return $this;
     }
     /**
      * Get Success value
-     * @return \StructType\SuccessType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\SuccessType|null
      */
     public function getSuccess()
     {
@@ -96,10 +96,10 @@ class OTA_HotelRoomListRS extends AbstractStructBase
     }
     /**
      * Set Success value
-     * @param \StructType\SuccessType $success
-     * @return \StructType\OTA_HotelRoomListRS
+     * @param \Devlabs91\TravelgatePushApi\StructType\SuccessType $success
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_HotelRoomListRS
      */
-    public function setSuccess(\StructType\SuccessType $success = null)
+    public function setSuccess(\Devlabs91\TravelgatePushApi\StructType\SuccessType $success = null)
     {
         $this->Success = $success;
         return $this;
@@ -110,7 +110,7 @@ class OTA_HotelRoomListRS extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\OTA_HotelRoomListRS
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_HotelRoomListRS
      */
     public static function __set_state(array $array)
     {

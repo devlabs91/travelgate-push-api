@@ -1,6 +1,6 @@
 <?php
 
-namespace ArrayType;
+namespace Devlabs91\TravelgatePushApi\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -15,13 +15,13 @@ class ArrayOfViewershipsTypeViewership extends AbstractStructArrayBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Viewership[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\Viewership[]
      */
     public $Viewership;
     /**
      * Constructor method for ArrayOfViewershipsTypeViewership
      * @uses ArrayOfViewershipsTypeViewership::setViewership()
-     * @param \StructType\Viewership[] $viewership
+     * @param \Devlabs91\TravelgatePushApi\StructType\Viewership[] $viewership
      */
     public function __construct(array $viewership = array())
     {
@@ -30,7 +30,7 @@ class ArrayOfViewershipsTypeViewership extends AbstractStructArrayBase
     }
     /**
      * Get Viewership value
-     * @return \StructType\Viewership[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Viewership[]|null
      */
     public function getViewership()
     {
@@ -39,15 +39,15 @@ class ArrayOfViewershipsTypeViewership extends AbstractStructArrayBase
     /**
      * Set Viewership value
      * @throws \InvalidArgumentException
-     * @param \StructType\Viewership[] $viewership
-     * @return \ArrayType\ArrayOfViewershipsTypeViewership
+     * @param \Devlabs91\TravelgatePushApi\StructType\Viewership[] $viewership
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfViewershipsTypeViewership
      */
     public function setViewership(array $viewership = array())
     {
         foreach ($viewership as $arrayOfViewershipsTypeViewershipViewershipItem) {
             // validation for constraint: itemType
-            if (!$arrayOfViewershipsTypeViewershipViewershipItem instanceof \StructType\Viewership) {
-                throw new \InvalidArgumentException(sprintf('The Viewership property can only contain items of \StructType\Viewership, "%s" given', is_object($arrayOfViewershipsTypeViewershipViewershipItem) ? get_class($arrayOfViewershipsTypeViewershipViewershipItem) : gettype($arrayOfViewershipsTypeViewershipViewershipItem)), __LINE__);
+            if (!$arrayOfViewershipsTypeViewershipViewershipItem instanceof \Devlabs91\TravelgatePushApi\StructType\Viewership) {
+                throw new \InvalidArgumentException(sprintf('The Viewership property can only contain items of \Devlabs91\TravelgatePushApi\StructType\Viewership, "%s" given', is_object($arrayOfViewershipsTypeViewershipViewershipItem) ? get_class($arrayOfViewershipsTypeViewershipViewershipItem) : gettype($arrayOfViewershipsTypeViewershipViewershipItem)), __LINE__);
             }
         }
         $this->Viewership = $viewership;
@@ -56,14 +56,14 @@ class ArrayOfViewershipsTypeViewership extends AbstractStructArrayBase
     /**
      * Add item to Viewership value
      * @throws \InvalidArgumentException
-     * @param \StructType\Viewership $item
-     * @return \ArrayType\ArrayOfViewershipsTypeViewership
+     * @param \Devlabs91\TravelgatePushApi\StructType\Viewership $item
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfViewershipsTypeViewership
      */
-    public function addToViewership(\StructType\Viewership $item)
+    public function addToViewership(\Devlabs91\TravelgatePushApi\StructType\Viewership $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Viewership) {
-            throw new \InvalidArgumentException(sprintf('The Viewership property can only contain items of \StructType\Viewership, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\Viewership) {
+            throw new \InvalidArgumentException(sprintf('The Viewership property can only contain items of \Devlabs91\TravelgatePushApi\StructType\Viewership, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->Viewership[] = $item;
         return $this;
@@ -71,7 +71,7 @@ class ArrayOfViewershipsTypeViewership extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \StructType\Viewership|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Viewership|null
      */
     public function current()
     {
@@ -81,7 +81,7 @@ class ArrayOfViewershipsTypeViewership extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \StructType\Viewership|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Viewership|null
      */
     public function item($index)
     {
@@ -90,7 +90,7 @@ class ArrayOfViewershipsTypeViewership extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \StructType\Viewership|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Viewership|null
      */
     public function first()
     {
@@ -99,7 +99,7 @@ class ArrayOfViewershipsTypeViewership extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \StructType\Viewership|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Viewership|null
      */
     public function last()
     {
@@ -109,7 +109,7 @@ class ArrayOfViewershipsTypeViewership extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \StructType\Viewership|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\Viewership|null
      */
     public function offsetGet($offset)
     {
@@ -130,7 +130,7 @@ class ArrayOfViewershipsTypeViewership extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \ArrayType\ArrayOfViewershipsTypeViewership
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfViewershipsTypeViewership
      */
     public static function __set_state(array $array)
     {

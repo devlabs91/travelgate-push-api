@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class CancelResponse extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\OTA_CancelRS
+     * @var \Devlabs91\TravelgatePushApi\StructType\OTA_CancelRS
      */
     public $CancelResult;
     /**
      * Constructor method for CancelResponse
      * @uses CancelResponse::setCancelResult()
-     * @param \StructType\OTA_CancelRS $cancelResult
+     * @param \Devlabs91\TravelgatePushApi\StructType\OTA_CancelRS $cancelResult
      */
-    public function __construct(\StructType\OTA_CancelRS $cancelResult = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\StructType\OTA_CancelRS $cancelResult = null)
     {
         $this
             ->setCancelResult($cancelResult);
     }
     /**
      * Get CancelResult value
-     * @return \StructType\OTA_CancelRS|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_CancelRS|null
      */
     public function getCancelResult()
     {
@@ -38,10 +38,10 @@ class CancelResponse extends AbstractStructBase
     }
     /**
      * Set CancelResult value
-     * @param \StructType\OTA_CancelRS $cancelResult
-     * @return \StructType\CancelResponse
+     * @param \Devlabs91\TravelgatePushApi\StructType\OTA_CancelRS $cancelResult
+     * @return \Devlabs91\TravelgatePushApi\StructType\CancelResponse
      */
-    public function setCancelResult(\StructType\OTA_CancelRS $cancelResult = null)
+    public function setCancelResult(\Devlabs91\TravelgatePushApi\StructType\OTA_CancelRS $cancelResult = null)
     {
         $this->CancelResult = $cancelResult;
         return $this;
@@ -52,7 +52,7 @@ class CancelResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\CancelResponse
+     * @return \Devlabs91\TravelgatePushApi\StructType\CancelResponse
      */
     public static function __set_state(array $array)
     {

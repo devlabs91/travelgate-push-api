@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class OTA_CancelRQ extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfSourceType
+     * @var \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfSourceType
      */
     public $POS;
     /**
@@ -23,7 +23,7 @@ class OTA_CancelRQ extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\UniqueID[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\UniqueID[]
      */
     public $UniqueID;
     /**
@@ -36,11 +36,11 @@ class OTA_CancelRQ extends AbstractStructBase
      * @uses OTA_CancelRQ::setPOS()
      * @uses OTA_CancelRQ::setUniqueID()
      * @uses OTA_CancelRQ::setPrimaryLangID()
-     * @param \ArrayType\ArrayOfSourceType $pOS
-     * @param \StructType\UniqueID[] $uniqueID
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfSourceType $pOS
+     * @param \Devlabs91\TravelgatePushApi\StructType\UniqueID[] $uniqueID
      * @param string $primaryLangID
      */
-    public function __construct(\ArrayType\ArrayOfSourceType $pOS = null, array $uniqueID = array(), $primaryLangID = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\ArrayType\ArrayOfSourceType $pOS = null, array $uniqueID = array(), $primaryLangID = null)
     {
         $this
             ->setPOS($pOS)
@@ -49,7 +49,7 @@ class OTA_CancelRQ extends AbstractStructBase
     }
     /**
      * Get POS value
-     * @return \ArrayType\ArrayOfSourceType|null
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfSourceType|null
      */
     public function getPOS()
     {
@@ -57,17 +57,17 @@ class OTA_CancelRQ extends AbstractStructBase
     }
     /**
      * Set POS value
-     * @param \ArrayType\ArrayOfSourceType $pOS
-     * @return \StructType\OTA_CancelRQ
+     * @param \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfSourceType $pOS
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_CancelRQ
      */
-    public function setPOS(\ArrayType\ArrayOfSourceType $pOS = null)
+    public function setPOS(\Devlabs91\TravelgatePushApi\ArrayType\ArrayOfSourceType $pOS = null)
     {
         $this->POS = $pOS;
         return $this;
     }
     /**
      * Get UniqueID value
-     * @return \StructType\UniqueID[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\UniqueID[]|null
      */
     public function getUniqueID()
     {
@@ -76,15 +76,15 @@ class OTA_CancelRQ extends AbstractStructBase
     /**
      * Set UniqueID value
      * @throws \InvalidArgumentException
-     * @param \StructType\UniqueID[] $uniqueID
-     * @return \StructType\OTA_CancelRQ
+     * @param \Devlabs91\TravelgatePushApi\StructType\UniqueID[] $uniqueID
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_CancelRQ
      */
     public function setUniqueID(array $uniqueID = array())
     {
         foreach ($uniqueID as $oTA_CancelRQUniqueIDItem) {
             // validation for constraint: itemType
-            if (!$oTA_CancelRQUniqueIDItem instanceof \StructType\UniqueID) {
-                throw new \InvalidArgumentException(sprintf('The UniqueID property can only contain items of \StructType\UniqueID, "%s" given', is_object($oTA_CancelRQUniqueIDItem) ? get_class($oTA_CancelRQUniqueIDItem) : gettype($oTA_CancelRQUniqueIDItem)), __LINE__);
+            if (!$oTA_CancelRQUniqueIDItem instanceof \Devlabs91\TravelgatePushApi\StructType\UniqueID) {
+                throw new \InvalidArgumentException(sprintf('The UniqueID property can only contain items of \Devlabs91\TravelgatePushApi\StructType\UniqueID, "%s" given', is_object($oTA_CancelRQUniqueIDItem) ? get_class($oTA_CancelRQUniqueIDItem) : gettype($oTA_CancelRQUniqueIDItem)), __LINE__);
             }
         }
         $this->UniqueID = $uniqueID;
@@ -93,14 +93,14 @@ class OTA_CancelRQ extends AbstractStructBase
     /**
      * Add item to UniqueID value
      * @throws \InvalidArgumentException
-     * @param \StructType\UniqueID $item
-     * @return \StructType\OTA_CancelRQ
+     * @param \Devlabs91\TravelgatePushApi\StructType\UniqueID $item
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_CancelRQ
      */
-    public function addToUniqueID(\StructType\UniqueID $item)
+    public function addToUniqueID(\Devlabs91\TravelgatePushApi\StructType\UniqueID $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\UniqueID) {
-            throw new \InvalidArgumentException(sprintf('The UniqueID property can only contain items of \StructType\UniqueID, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\UniqueID) {
+            throw new \InvalidArgumentException(sprintf('The UniqueID property can only contain items of \Devlabs91\TravelgatePushApi\StructType\UniqueID, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->UniqueID[] = $item;
         return $this;
@@ -116,7 +116,7 @@ class OTA_CancelRQ extends AbstractStructBase
     /**
      * Set PrimaryLangID value
      * @param string $primaryLangID
-     * @return \StructType\OTA_CancelRQ
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_CancelRQ
      */
     public function setPrimaryLangID($primaryLangID = null)
     {
@@ -133,7 +133,7 @@ class OTA_CancelRQ extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\OTA_CancelRQ
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_CancelRQ
      */
     public static function __set_state(array $array)
     {

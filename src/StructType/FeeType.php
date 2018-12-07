@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class FeeType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\ParagraphType[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\ParagraphType[]
      */
     public $Description;
     /**
@@ -27,7 +27,7 @@ class FeeType extends AbstractStructBase
      * Constructor method for FeeType
      * @uses FeeType::setDescription()
      * @uses FeeType::setTaxes()
-     * @param \StructType\ParagraphType[] $description
+     * @param \Devlabs91\TravelgatePushApi\StructType\ParagraphType[] $description
      * @param string $taxes
      */
     public function __construct(array $description = array(), $taxes = null)
@@ -38,7 +38,7 @@ class FeeType extends AbstractStructBase
     }
     /**
      * Get Description value
-     * @return \StructType\ParagraphType[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\ParagraphType[]|null
      */
     public function getDescription()
     {
@@ -47,15 +47,15 @@ class FeeType extends AbstractStructBase
     /**
      * Set Description value
      * @throws \InvalidArgumentException
-     * @param \StructType\ParagraphType[] $description
-     * @return \StructType\FeeType
+     * @param \Devlabs91\TravelgatePushApi\StructType\ParagraphType[] $description
+     * @return \Devlabs91\TravelgatePushApi\StructType\FeeType
      */
     public function setDescription(array $description = array())
     {
         foreach ($description as $feeTypeDescriptionItem) {
             // validation for constraint: itemType
-            if (!$feeTypeDescriptionItem instanceof \StructType\ParagraphType) {
-                throw new \InvalidArgumentException(sprintf('The Description property can only contain items of \StructType\ParagraphType, "%s" given', is_object($feeTypeDescriptionItem) ? get_class($feeTypeDescriptionItem) : gettype($feeTypeDescriptionItem)), __LINE__);
+            if (!$feeTypeDescriptionItem instanceof \Devlabs91\TravelgatePushApi\StructType\ParagraphType) {
+                throw new \InvalidArgumentException(sprintf('The Description property can only contain items of \Devlabs91\TravelgatePushApi\StructType\ParagraphType, "%s" given', is_object($feeTypeDescriptionItem) ? get_class($feeTypeDescriptionItem) : gettype($feeTypeDescriptionItem)), __LINE__);
             }
         }
         $this->Description = $description;
@@ -64,14 +64,14 @@ class FeeType extends AbstractStructBase
     /**
      * Add item to Description value
      * @throws \InvalidArgumentException
-     * @param \StructType\ParagraphType $item
-     * @return \StructType\FeeType
+     * @param \Devlabs91\TravelgatePushApi\StructType\ParagraphType $item
+     * @return \Devlabs91\TravelgatePushApi\StructType\FeeType
      */
-    public function addToDescription(\StructType\ParagraphType $item)
+    public function addToDescription(\Devlabs91\TravelgatePushApi\StructType\ParagraphType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\ParagraphType) {
-            throw new \InvalidArgumentException(sprintf('The Description property can only contain items of \StructType\ParagraphType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\ParagraphType) {
+            throw new \InvalidArgumentException(sprintf('The Description property can only contain items of \Devlabs91\TravelgatePushApi\StructType\ParagraphType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->Description[] = $item;
         return $this;
@@ -87,7 +87,7 @@ class FeeType extends AbstractStructBase
     /**
      * Set Taxes value
      * @param string $taxes
-     * @return \StructType\FeeType
+     * @return \Devlabs91\TravelgatePushApi\StructType\FeeType
      */
     public function setTaxes($taxes = null)
     {
@@ -104,7 +104,7 @@ class FeeType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\FeeType
+     * @return \Devlabs91\TravelgatePushApi\StructType\FeeType
      */
     public static function __set_state(array $array)
     {

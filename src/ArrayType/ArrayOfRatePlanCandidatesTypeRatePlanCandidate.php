@@ -1,6 +1,6 @@
 <?php
 
-namespace ArrayType;
+namespace Devlabs91\TravelgatePushApi\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -15,13 +15,13 @@ class ArrayOfRatePlanCandidatesTypeRatePlanCandidate extends AbstractStructArray
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\RatePlanCandidate[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\RatePlanCandidate[]
      */
     public $RatePlanCandidate;
     /**
      * Constructor method for ArrayOfRatePlanCandidatesTypeRatePlanCandidate
      * @uses ArrayOfRatePlanCandidatesTypeRatePlanCandidate::setRatePlanCandidate()
-     * @param \StructType\RatePlanCandidate[] $ratePlanCandidate
+     * @param \Devlabs91\TravelgatePushApi\StructType\RatePlanCandidate[] $ratePlanCandidate
      */
     public function __construct(array $ratePlanCandidate = array())
     {
@@ -30,7 +30,7 @@ class ArrayOfRatePlanCandidatesTypeRatePlanCandidate extends AbstractStructArray
     }
     /**
      * Get RatePlanCandidate value
-     * @return \StructType\RatePlanCandidate[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\RatePlanCandidate[]|null
      */
     public function getRatePlanCandidate()
     {
@@ -39,15 +39,15 @@ class ArrayOfRatePlanCandidatesTypeRatePlanCandidate extends AbstractStructArray
     /**
      * Set RatePlanCandidate value
      * @throws \InvalidArgumentException
-     * @param \StructType\RatePlanCandidate[] $ratePlanCandidate
-     * @return \ArrayType\ArrayOfRatePlanCandidatesTypeRatePlanCandidate
+     * @param \Devlabs91\TravelgatePushApi\StructType\RatePlanCandidate[] $ratePlanCandidate
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRatePlanCandidatesTypeRatePlanCandidate
      */
     public function setRatePlanCandidate(array $ratePlanCandidate = array())
     {
         foreach ($ratePlanCandidate as $arrayOfRatePlanCandidatesTypeRatePlanCandidateRatePlanCandidateItem) {
             // validation for constraint: itemType
-            if (!$arrayOfRatePlanCandidatesTypeRatePlanCandidateRatePlanCandidateItem instanceof \StructType\RatePlanCandidate) {
-                throw new \InvalidArgumentException(sprintf('The RatePlanCandidate property can only contain items of \StructType\RatePlanCandidate, "%s" given', is_object($arrayOfRatePlanCandidatesTypeRatePlanCandidateRatePlanCandidateItem) ? get_class($arrayOfRatePlanCandidatesTypeRatePlanCandidateRatePlanCandidateItem) : gettype($arrayOfRatePlanCandidatesTypeRatePlanCandidateRatePlanCandidateItem)), __LINE__);
+            if (!$arrayOfRatePlanCandidatesTypeRatePlanCandidateRatePlanCandidateItem instanceof \Devlabs91\TravelgatePushApi\StructType\RatePlanCandidate) {
+                throw new \InvalidArgumentException(sprintf('The RatePlanCandidate property can only contain items of \Devlabs91\TravelgatePushApi\StructType\RatePlanCandidate, "%s" given', is_object($arrayOfRatePlanCandidatesTypeRatePlanCandidateRatePlanCandidateItem) ? get_class($arrayOfRatePlanCandidatesTypeRatePlanCandidateRatePlanCandidateItem) : gettype($arrayOfRatePlanCandidatesTypeRatePlanCandidateRatePlanCandidateItem)), __LINE__);
             }
         }
         $this->RatePlanCandidate = $ratePlanCandidate;
@@ -56,14 +56,14 @@ class ArrayOfRatePlanCandidatesTypeRatePlanCandidate extends AbstractStructArray
     /**
      * Add item to RatePlanCandidate value
      * @throws \InvalidArgumentException
-     * @param \StructType\RatePlanCandidate $item
-     * @return \ArrayType\ArrayOfRatePlanCandidatesTypeRatePlanCandidate
+     * @param \Devlabs91\TravelgatePushApi\StructType\RatePlanCandidate $item
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRatePlanCandidatesTypeRatePlanCandidate
      */
-    public function addToRatePlanCandidate(\StructType\RatePlanCandidate $item)
+    public function addToRatePlanCandidate(\Devlabs91\TravelgatePushApi\StructType\RatePlanCandidate $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\RatePlanCandidate) {
-            throw new \InvalidArgumentException(sprintf('The RatePlanCandidate property can only contain items of \StructType\RatePlanCandidate, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\RatePlanCandidate) {
+            throw new \InvalidArgumentException(sprintf('The RatePlanCandidate property can only contain items of \Devlabs91\TravelgatePushApi\StructType\RatePlanCandidate, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->RatePlanCandidate[] = $item;
         return $this;
@@ -71,7 +71,7 @@ class ArrayOfRatePlanCandidatesTypeRatePlanCandidate extends AbstractStructArray
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \StructType\RatePlanCandidate|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\RatePlanCandidate|null
      */
     public function current()
     {
@@ -81,7 +81,7 @@ class ArrayOfRatePlanCandidatesTypeRatePlanCandidate extends AbstractStructArray
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \StructType\RatePlanCandidate|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\RatePlanCandidate|null
      */
     public function item($index)
     {
@@ -90,7 +90,7 @@ class ArrayOfRatePlanCandidatesTypeRatePlanCandidate extends AbstractStructArray
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \StructType\RatePlanCandidate|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\RatePlanCandidate|null
      */
     public function first()
     {
@@ -99,7 +99,7 @@ class ArrayOfRatePlanCandidatesTypeRatePlanCandidate extends AbstractStructArray
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \StructType\RatePlanCandidate|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\RatePlanCandidate|null
      */
     public function last()
     {
@@ -109,7 +109,7 @@ class ArrayOfRatePlanCandidatesTypeRatePlanCandidate extends AbstractStructArray
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \StructType\RatePlanCandidate|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\RatePlanCandidate|null
      */
     public function offsetGet($offset)
     {
@@ -130,7 +130,7 @@ class ArrayOfRatePlanCandidatesTypeRatePlanCandidate extends AbstractStructArray
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \ArrayType\ArrayOfRatePlanCandidatesTypeRatePlanCandidate
+     * @return \Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRatePlanCandidatesTypeRatePlanCandidate
      */
     public static function __set_state(array $array)
     {

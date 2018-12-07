@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class LocationCodes extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\LocationCode[]
+     * @var \Devlabs91\TravelgatePushApi\StructType\LocationCode[]
      */
     public $LocationCode;
     /**
@@ -27,7 +27,7 @@ class LocationCodes extends AbstractStructBase
      * Constructor method for LocationCodes
      * @uses LocationCodes::setLocationCode()
      * @uses LocationCodes::setLocationCodesInclusive()
-     * @param \StructType\LocationCode[] $locationCode
+     * @param \Devlabs91\TravelgatePushApi\StructType\LocationCode[] $locationCode
      * @param bool $locationCodesInclusive
      */
     public function __construct(array $locationCode = array(), $locationCodesInclusive = null)
@@ -38,7 +38,7 @@ class LocationCodes extends AbstractStructBase
     }
     /**
      * Get LocationCode value
-     * @return \StructType\LocationCode[]|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\LocationCode[]|null
      */
     public function getLocationCode()
     {
@@ -47,15 +47,15 @@ class LocationCodes extends AbstractStructBase
     /**
      * Set LocationCode value
      * @throws \InvalidArgumentException
-     * @param \StructType\LocationCode[] $locationCode
-     * @return \StructType\LocationCodes
+     * @param \Devlabs91\TravelgatePushApi\StructType\LocationCode[] $locationCode
+     * @return \Devlabs91\TravelgatePushApi\StructType\LocationCodes
      */
     public function setLocationCode(array $locationCode = array())
     {
         foreach ($locationCode as $locationCodesLocationCodeItem) {
             // validation for constraint: itemType
-            if (!$locationCodesLocationCodeItem instanceof \StructType\LocationCode) {
-                throw new \InvalidArgumentException(sprintf('The LocationCode property can only contain items of \StructType\LocationCode, "%s" given', is_object($locationCodesLocationCodeItem) ? get_class($locationCodesLocationCodeItem) : gettype($locationCodesLocationCodeItem)), __LINE__);
+            if (!$locationCodesLocationCodeItem instanceof \Devlabs91\TravelgatePushApi\StructType\LocationCode) {
+                throw new \InvalidArgumentException(sprintf('The LocationCode property can only contain items of \Devlabs91\TravelgatePushApi\StructType\LocationCode, "%s" given', is_object($locationCodesLocationCodeItem) ? get_class($locationCodesLocationCodeItem) : gettype($locationCodesLocationCodeItem)), __LINE__);
             }
         }
         $this->LocationCode = $locationCode;
@@ -64,14 +64,14 @@ class LocationCodes extends AbstractStructBase
     /**
      * Add item to LocationCode value
      * @throws \InvalidArgumentException
-     * @param \StructType\LocationCode $item
-     * @return \StructType\LocationCodes
+     * @param \Devlabs91\TravelgatePushApi\StructType\LocationCode $item
+     * @return \Devlabs91\TravelgatePushApi\StructType\LocationCodes
      */
-    public function addToLocationCode(\StructType\LocationCode $item)
+    public function addToLocationCode(\Devlabs91\TravelgatePushApi\StructType\LocationCode $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\LocationCode) {
-            throw new \InvalidArgumentException(sprintf('The LocationCode property can only contain items of \StructType\LocationCode, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Devlabs91\TravelgatePushApi\StructType\LocationCode) {
+            throw new \InvalidArgumentException(sprintf('The LocationCode property can only contain items of \Devlabs91\TravelgatePushApi\StructType\LocationCode, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->LocationCode[] = $item;
         return $this;
@@ -87,7 +87,7 @@ class LocationCodes extends AbstractStructBase
     /**
      * Set LocationCodesInclusive value
      * @param bool $locationCodesInclusive
-     * @return \StructType\LocationCodes
+     * @return \Devlabs91\TravelgatePushApi\StructType\LocationCodes
      */
     public function setLocationCodesInclusive($locationCodesInclusive = null)
     {
@@ -104,7 +104,7 @@ class LocationCodes extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\LocationCodes
+     * @return \Devlabs91\TravelgatePushApi\StructType\LocationCodes
      */
     public static function __set_state(array $array)
     {

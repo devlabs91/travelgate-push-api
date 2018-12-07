@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class HotelRes extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\OTA_HotelResRQ
+     * @var \Devlabs91\TravelgatePushApi\StructType\OTA_HotelResRQ
      */
     public $request;
     /**
      * Constructor method for HotelRes
      * @uses HotelRes::setRequest()
-     * @param \StructType\OTA_HotelResRQ $request
+     * @param \Devlabs91\TravelgatePushApi\StructType\OTA_HotelResRQ $request
      */
-    public function __construct(\StructType\OTA_HotelResRQ $request = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\StructType\OTA_HotelResRQ $request = null)
     {
         $this
             ->setRequest($request);
     }
     /**
      * Get request value
-     * @return \StructType\OTA_HotelResRQ|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_HotelResRQ|null
      */
     public function getRequest()
     {
@@ -38,10 +38,10 @@ class HotelRes extends AbstractStructBase
     }
     /**
      * Set request value
-     * @param \StructType\OTA_HotelResRQ $request
-     * @return \StructType\HotelRes
+     * @param \Devlabs91\TravelgatePushApi\StructType\OTA_HotelResRQ $request
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRes
      */
-    public function setRequest(\StructType\OTA_HotelResRQ $request = null)
+    public function setRequest(\Devlabs91\TravelgatePushApi\StructType\OTA_HotelResRQ $request = null)
     {
         $this->request = $request;
         return $this;
@@ -52,7 +52,7 @@ class HotelRes extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HotelRes
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRes
      */
     public static function __set_state(array $array)
     {

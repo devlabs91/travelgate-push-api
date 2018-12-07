@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class HotelListInfoResponse extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\OTA_HotelDescriptiveInfoRS
+     * @var \Devlabs91\TravelgatePushApi\StructType\OTA_HotelDescriptiveInfoRS
      */
     public $HotelListInfoResult;
     /**
      * Constructor method for HotelListInfoResponse
      * @uses HotelListInfoResponse::setHotelListInfoResult()
-     * @param \StructType\OTA_HotelDescriptiveInfoRS $hotelListInfoResult
+     * @param \Devlabs91\TravelgatePushApi\StructType\OTA_HotelDescriptiveInfoRS $hotelListInfoResult
      */
-    public function __construct(\StructType\OTA_HotelDescriptiveInfoRS $hotelListInfoResult = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\StructType\OTA_HotelDescriptiveInfoRS $hotelListInfoResult = null)
     {
         $this
             ->setHotelListInfoResult($hotelListInfoResult);
     }
     /**
      * Get HotelListInfoResult value
-     * @return \StructType\OTA_HotelDescriptiveInfoRS|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_HotelDescriptiveInfoRS|null
      */
     public function getHotelListInfoResult()
     {
@@ -38,10 +38,10 @@ class HotelListInfoResponse extends AbstractStructBase
     }
     /**
      * Set HotelListInfoResult value
-     * @param \StructType\OTA_HotelDescriptiveInfoRS $hotelListInfoResult
-     * @return \StructType\HotelListInfoResponse
+     * @param \Devlabs91\TravelgatePushApi\StructType\OTA_HotelDescriptiveInfoRS $hotelListInfoResult
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelListInfoResponse
      */
-    public function setHotelListInfoResult(\StructType\OTA_HotelDescriptiveInfoRS $hotelListInfoResult = null)
+    public function setHotelListInfoResult(\Devlabs91\TravelgatePushApi\StructType\OTA_HotelDescriptiveInfoRS $hotelListInfoResult = null)
     {
         $this->HotelListInfoResult = $hotelListInfoResult;
         return $this;
@@ -52,7 +52,7 @@ class HotelListInfoResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HotelListInfoResponse
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelListInfoResponse
      */
     public static function __set_state(array $array)
     {

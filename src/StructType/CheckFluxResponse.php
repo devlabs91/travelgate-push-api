@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,15 +15,15 @@ class CheckFluxResponse extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
      * - nillable: true
-     * @var \StructType\CheckFluxRS
+     * @var \Devlabs91\TravelgatePushApi\StructType\CheckFluxRS
      */
     public $CheckFluxResult;
     /**
      * Constructor method for CheckFluxResponse
      * @uses CheckFluxResponse::setCheckFluxResult()
-     * @param \StructType\CheckFluxRS $checkFluxResult
+     * @param \Devlabs91\TravelgatePushApi\StructType\CheckFluxRS $checkFluxResult
      */
-    public function __construct(\StructType\CheckFluxRS $checkFluxResult = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\StructType\CheckFluxRS $checkFluxResult = null)
     {
         $this
             ->setCheckFluxResult($checkFluxResult);
@@ -33,7 +33,7 @@ class CheckFluxResponse extends AbstractStructBase
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
      * removable from the request (nillable=true+minOccurs=0)
-     * @return \StructType\CheckFluxRS|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\CheckFluxRS|null
      */
     public function getCheckFluxResult()
     {
@@ -43,10 +43,10 @@ class CheckFluxResponse extends AbstractStructBase
      * Set CheckFluxResult value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
-     * @param \StructType\CheckFluxRS $checkFluxResult
-     * @return \StructType\CheckFluxResponse
+     * @param \Devlabs91\TravelgatePushApi\StructType\CheckFluxRS $checkFluxResult
+     * @return \Devlabs91\TravelgatePushApi\StructType\CheckFluxResponse
      */
-    public function setCheckFluxResult(\StructType\CheckFluxRS $checkFluxResult = null)
+    public function setCheckFluxResult(\Devlabs91\TravelgatePushApi\StructType\CheckFluxRS $checkFluxResult = null)
     {
         if (is_null($checkFluxResult) || (is_array($checkFluxResult) && empty($checkFluxResult))) {
             unset($this->CheckFluxResult);
@@ -61,7 +61,7 @@ class CheckFluxResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\CheckFluxResponse
+     * @return \Devlabs91\TravelgatePushApi\StructType\CheckFluxResponse
      */
     public static function __set_state(array $array)
     {

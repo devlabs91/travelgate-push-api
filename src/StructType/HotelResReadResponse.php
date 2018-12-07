@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class HotelResReadResponse extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\OTA_HotelResRS
+     * @var \Devlabs91\TravelgatePushApi\StructType\OTA_HotelResRS
      */
     public $HotelResReadResult;
     /**
      * Constructor method for HotelResReadResponse
      * @uses HotelResReadResponse::setHotelResReadResult()
-     * @param \StructType\OTA_HotelResRS $hotelResReadResult
+     * @param \Devlabs91\TravelgatePushApi\StructType\OTA_HotelResRS $hotelResReadResult
      */
-    public function __construct(\StructType\OTA_HotelResRS $hotelResReadResult = null)
+    public function __construct(\Devlabs91\TravelgatePushApi\StructType\OTA_HotelResRS $hotelResReadResult = null)
     {
         $this
             ->setHotelResReadResult($hotelResReadResult);
     }
     /**
      * Get HotelResReadResult value
-     * @return \StructType\OTA_HotelResRS|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\OTA_HotelResRS|null
      */
     public function getHotelResReadResult()
     {
@@ -38,10 +38,10 @@ class HotelResReadResponse extends AbstractStructBase
     }
     /**
      * Set HotelResReadResult value
-     * @param \StructType\OTA_HotelResRS $hotelResReadResult
-     * @return \StructType\HotelResReadResponse
+     * @param \Devlabs91\TravelgatePushApi\StructType\OTA_HotelResRS $hotelResReadResult
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelResReadResponse
      */
-    public function setHotelResReadResult(\StructType\OTA_HotelResRS $hotelResReadResult = null)
+    public function setHotelResReadResult(\Devlabs91\TravelgatePushApi\StructType\OTA_HotelResRS $hotelResReadResult = null)
     {
         $this->HotelResReadResult = $hotelResReadResult;
         return $this;
@@ -52,7 +52,7 @@ class HotelResReadResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HotelResReadResponse
+     * @return \Devlabs91\TravelgatePushApi\StructType\HotelResReadResponse
      */
     public static function __set_state(array $array)
     {

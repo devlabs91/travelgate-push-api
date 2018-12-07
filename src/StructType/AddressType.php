@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Devlabs91\TravelgatePushApi\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -39,7 +39,7 @@ class AddressType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\StateProvType
+     * @var \Devlabs91\TravelgatePushApi\StructType\StateProvType
      */
     public $StateProv;
     /**
@@ -47,7 +47,7 @@ class AddressType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\CountryNameType
+     * @var \Devlabs91\TravelgatePushApi\StructType\CountryNameType
      */
     public $CountryName;
     /**
@@ -66,11 +66,11 @@ class AddressType extends AbstractStructBase
      * @param string[] $addressLine
      * @param string $cityName
      * @param string $postalCode
-     * @param \StructType\StateProvType $stateProv
-     * @param \StructType\CountryNameType $countryName
+     * @param \Devlabs91\TravelgatePushApi\StructType\StateProvType $stateProv
+     * @param \Devlabs91\TravelgatePushApi\StructType\CountryNameType $countryName
      * @param string $type
      */
-    public function __construct(array $addressLine = array(), $cityName = null, $postalCode = null, \StructType\StateProvType $stateProv = null, \StructType\CountryNameType $countryName = null, $type = null)
+    public function __construct(array $addressLine = array(), $cityName = null, $postalCode = null, \Devlabs91\TravelgatePushApi\StructType\StateProvType $stateProv = null, \Devlabs91\TravelgatePushApi\StructType\CountryNameType $countryName = null, $type = null)
     {
         $this
             ->setAddressLine($addressLine)
@@ -92,7 +92,7 @@ class AddressType extends AbstractStructBase
      * Set AddressLine value
      * @throws \InvalidArgumentException
      * @param string[] $addressLine
-     * @return \StructType\AddressType
+     * @return \Devlabs91\TravelgatePushApi\StructType\AddressType
      */
     public function setAddressLine(array $addressLine = array())
     {
@@ -109,7 +109,7 @@ class AddressType extends AbstractStructBase
      * Add item to AddressLine value
      * @throws \InvalidArgumentException
      * @param string $item
-     * @return \StructType\AddressType
+     * @return \Devlabs91\TravelgatePushApi\StructType\AddressType
      */
     public function addToAddressLine($item)
     {
@@ -131,7 +131,7 @@ class AddressType extends AbstractStructBase
     /**
      * Set CityName value
      * @param string $cityName
-     * @return \StructType\AddressType
+     * @return \Devlabs91\TravelgatePushApi\StructType\AddressType
      */
     public function setCityName($cityName = null)
     {
@@ -153,7 +153,7 @@ class AddressType extends AbstractStructBase
     /**
      * Set PostalCode value
      * @param string $postalCode
-     * @return \StructType\AddressType
+     * @return \Devlabs91\TravelgatePushApi\StructType\AddressType
      */
     public function setPostalCode($postalCode = null)
     {
@@ -166,7 +166,7 @@ class AddressType extends AbstractStructBase
     }
     /**
      * Get StateProv value
-     * @return \StructType\StateProvType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\StateProvType|null
      */
     public function getStateProv()
     {
@@ -174,17 +174,17 @@ class AddressType extends AbstractStructBase
     }
     /**
      * Set StateProv value
-     * @param \StructType\StateProvType $stateProv
-     * @return \StructType\AddressType
+     * @param \Devlabs91\TravelgatePushApi\StructType\StateProvType $stateProv
+     * @return \Devlabs91\TravelgatePushApi\StructType\AddressType
      */
-    public function setStateProv(\StructType\StateProvType $stateProv = null)
+    public function setStateProv(\Devlabs91\TravelgatePushApi\StructType\StateProvType $stateProv = null)
     {
         $this->StateProv = $stateProv;
         return $this;
     }
     /**
      * Get CountryName value
-     * @return \StructType\CountryNameType|null
+     * @return \Devlabs91\TravelgatePushApi\StructType\CountryNameType|null
      */
     public function getCountryName()
     {
@@ -192,10 +192,10 @@ class AddressType extends AbstractStructBase
     }
     /**
      * Set CountryName value
-     * @param \StructType\CountryNameType $countryName
-     * @return \StructType\AddressType
+     * @param \Devlabs91\TravelgatePushApi\StructType\CountryNameType $countryName
+     * @return \Devlabs91\TravelgatePushApi\StructType\AddressType
      */
-    public function setCountryName(\StructType\CountryNameType $countryName = null)
+    public function setCountryName(\Devlabs91\TravelgatePushApi\StructType\CountryNameType $countryName = null)
     {
         $this->CountryName = $countryName;
         return $this;
@@ -211,7 +211,7 @@ class AddressType extends AbstractStructBase
     /**
      * Set Type value
      * @param string $type
-     * @return \StructType\AddressType
+     * @return \Devlabs91\TravelgatePushApi\StructType\AddressType
      */
     public function setType($type = null)
     {
@@ -228,7 +228,7 @@ class AddressType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\AddressType
+     * @return \Devlabs91\TravelgatePushApi\StructType\AddressType
      */
     public static function __set_state(array $array)
     {
