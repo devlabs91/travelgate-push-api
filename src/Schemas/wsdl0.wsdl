@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions
+	targetNamespace="http://schemas.xmltravelgate.com/hubpush/provider/2012/10"
+	xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+	xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex"
+	xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+	xmlns:wsa10="http://www.w3.org/2005/08/addressing"
+	xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy"
+	xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy"
+	xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract"
+	xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"
+	xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing"
+	xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns="http://schemas.xmltravelgate.com/hubpush/provider/2012/10"
+	xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+	xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl"
+	xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+	<wsdl:types>
+		<xsd:schema
+			targetNamespace="http://schemas.xmltravelgate.com/hubpush/provider/2012/10/Imports">
+			<xsd:import
+				schemaLocation="xsd0.xsd"
+				namespace="http://schemas.xmltravelgate.com/hubpush/provider/2012/10" />
+			<xsd:import
+				schemaLocation="xsd1.xsd"
+				namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+			<xsd:import
+				schemaLocation="xsd2.xsd"
+				namespace="http://schemas.datacontract.org/2004/07/XTG.HubPush.WSProvider.Classes" />
+			<xsd:import
+				schemaLocation="xsd3.xsd"
+				namespace="http://schemas.datacontract.org/2004/07/XTG.HubPush.WSProvider.Classes.Flux" />
+			<xsd:import
+				schemaLocation="xsd4.xsd"
+				namespace="http://www.opentravel.org/OTA/2003/05" />
+		</xsd:schema>
+	</wsdl:types>
+	<wsdl:message name="IProviderGen_CheckStatus_InputMessage">
+		<wsdl:part name="parameters" element="tns:CheckStatus" />
+	</wsdl:message>
+	<wsdl:message
+		name="IProviderGen_CheckStatus_OutputMessage">
+		<wsdl:part name="parameters"
+			element="tns:CheckStatusResponse" />
+	</wsdl:message>
+	<wsdl:message name="IProviderGen_CheckFlux_InputMessage">
+		<wsdl:part name="parameters" element="tns:CheckFlux" />
+	</wsdl:message>
+	<wsdl:message name="IProviderGen_CheckFlux_OutputMessage">
+		<wsdl:part name="parameters" element="tns:CheckFluxResponse" />
+	</wsdl:message>
+	<wsdl:message name="IProviderGen_HotelAvail_InputMessage">
+		<wsdl:part name="parameters" element="tns:HotelAvail" />
+	</wsdl:message>
+	<wsdl:message name="IProviderGen_HotelAvail_OutputMessage">
+		<wsdl:part name="parameters"
+			element="tns:HotelAvailResponse" />
+	</wsdl:message>
+	<wsdl:message
+		name="IProviderGen_HotelValuation_InputMessage">
+		<wsdl:part name="parameters" element="tns:HotelValuation" />
+	</wsdl:message>
+	<wsdl:message
+		name="IProviderGen_HotelValuation_OutputMessage">
+		<wsdl:part name="parameters"
+			element="tns:HotelValuationResponse" />
+	</wsdl:message>
+	<wsdl:message name="IProviderGen_HotelRes_InputMessage">
+		<wsdl:part name="parameters" element="tns:HotelRes" />
+	</wsdl:message>
+	<wsdl:message name="IProviderGen_HotelRes_OutputMessage">
+		<wsdl:part name="parameters" element="tns:HotelResResponse" />
+	</wsdl:message>
+	<wsdl:message name="IProviderGen_Cancel_InputMessage">
+		<wsdl:part name="parameters" element="tns:Cancel" />
+	</wsdl:message>
+	<wsdl:message name="IProviderGen_Cancel_OutputMessage">
+		<wsdl:part name="parameters" element="tns:CancelResponse" />
+	</wsdl:message>
+	<wsdl:message
+		name="IProviderGen_HotelResRead_InputMessage">
+		<wsdl:part name="parameters" element="tns:HotelResRead" />
+	</wsdl:message>
+	<wsdl:message
+		name="IProviderGen_HotelResRead_OutputMessage">
+		<wsdl:part name="parameters"
+			element="tns:HotelResReadResponse" />
+	</wsdl:message>
+	<wsdl:message
+		name="IProviderGen_HotelReservationList_InputMessage">
+		<wsdl:part name="parameters"
+			element="tns:HotelReservationList" />
+	</wsdl:message>
+	<wsdl:message
+		name="IProviderGen_HotelReservationList_OutputMessage">
+		<wsdl:part name="parameters"
+			element="tns:HotelReservationListResponse" />
+	</wsdl:message>
+	<wsdl:message
+		name="IProviderGen_HotelDescriptiveInfo_InputMessage">
+		<wsdl:part name="parameters"
+			element="tns:HotelDescriptiveInfo" />
+	</wsdl:message>
+	<wsdl:message
+		name="IProviderGen_HotelDescriptiveInfo_OutputMessage">
+		<wsdl:part name="parameters"
+			element="tns:HotelDescriptiveInfoResponse" />
+	</wsdl:message>
+	<wsdl:message
+		name="IProviderGen_HotelListInfo_InputMessage">
+		<wsdl:part name="parameters" element="tns:HotelListInfo" />
+	</wsdl:message>
+	<wsdl:message
+		name="IProviderGen_HotelListInfo_OutputMessage">
+		<wsdl:part name="parameters"
+			element="tns:HotelListInfoResponse" />
+	</wsdl:message>
+	<wsdl:message
+		name="IProviderGen_HotelAvailNotif_InputMessage">
+		<wsdl:part name="parameters" element="tns:HotelAvailNotif" />
+	</wsdl:message>
+	<wsdl:message
+		name="IProviderGen_HotelAvailNotif_OutputMessage">
+		<wsdl:part name="parameters"
+			element="tns:HotelAvailNotifResponse" />
+	</wsdl:message>
+	<wsdl:message
+		name="IProviderGen_HotelRatePlanNotif_InputMessage">
+		<wsdl:part name="parameters"
+			element="tns:HotelRatePlanNotif" />
+	</wsdl:message>
+	<wsdl:message
+		name="IProviderGen_HotelRatePlanNotif_OutputMessage">
+		<wsdl:part name="parameters"
+			element="tns:HotelRatePlanNotifResponse" />
+	</wsdl:message>
+	<wsdl:message
+		name="IProviderGen_HotelRatePlanInventoryNotif_InputMessage">
+		<wsdl:part name="parameters"
+			element="tns:HotelRatePlanInventoryNotif" />
+	</wsdl:message>
+	<wsdl:message
+		name="IProviderGen_HotelRatePlanInventoryNotif_OutputMessage">
+		<wsdl:part name="parameters"
+			element="tns:HotelRatePlanInventoryNotifResponse" />
+	</wsdl:message>
+	<wsdl:message
+		name="IProviderGen_HotelRatePlanRetrieve_InputMessage">
+		<wsdl:part name="parameters"
+			element="tns:HotelRatePlanRetrieve" />
+	</wsdl:message>
+	<wsdl:message
+		name="IProviderGen_HotelRatePlanRetrieve_OutputMessage">
+		<wsdl:part name="parameters"
+			element="tns:HotelRatePlanRetrieveResponse" />
+	</wsdl:message>
+	<wsdl:message
+		name="IProviderGen_HotelAvailRetrieve_InputMessage">
+		<wsdl:part name="parameters"
+			element="tns:HotelAvailRetrieve" />
+	</wsdl:message>
+	<wsdl:message
+		name="IProviderGen_HotelAvailRetrieve_OutputMessage">
+		<wsdl:part name="parameters"
+			element="tns:HotelAvailRetrieveResponse" />
+	</wsdl:message>
+	<wsdl:message
+		name="IProviderGen_HotelRatePlanInventoryRetrieve_InputMessage">
+		<wsdl:part name="parameters"
+			element="tns:HotelRatePlanInventoryRetrieve" />
+	</wsdl:message>
+	<wsdl:message
+		name="IProviderGen_HotelRatePlanInventoryRetrieve_OutputMessage">
+		<wsdl:part name="parameters"
+			element="tns:HotelRatePlanInventoryRetrieveResponse" />
+	</wsdl:message>
+	<wsdl:message
+		name="IProviderGen_HotelResRetrieve_InputMessage">
+		<wsdl:part name="parameters" element="tns:HotelResRetrieve" />
+	</wsdl:message>
+	<wsdl:message
+		name="IProviderGen_HotelResRetrieve_OutputMessage">
+		<wsdl:part name="parameters"
+			element="tns:HotelResRetrieveResponse" />
+	</wsdl:message>
+	<wsdl:message
+		name="IProviderGen_HotelRoomListRetrieve_InputMessage">
+		<wsdl:part name="parameters"
+			element="tns:HotelRoomListRetrieve" />
+	</wsdl:message>
+	<wsdl:message
+		name="IProviderGen_HotelRoomListRetrieve_OutputMessage">
+		<wsdl:part name="parameters"
+			element="tns:HotelRoomListRetrieveResponse" />
+	</wsdl:message>
+	<wsdl:portType name="IProviderGen">
+		<wsdl:operation name="CheckStatus">
+			<wsdl:input
+				wsaw:Action="http://schemas.xmltravelgate.com/hubpush/provider/2012/10/IProviderGen/CheckStatus"
+				message="tns:IProviderGen_CheckStatus_InputMessage" />
+			<wsdl:output
+				wsaw:Action="http://schemas.xmltravelgate.com/hubpush/provider/2012/10/IProviderGen/CheckStatusResponse"
+				message="tns:IProviderGen_CheckStatus_OutputMessage" />
+		</wsdl:operation>
+		<wsdl:operation name="CheckFlux">
+			<wsdl:input
+				wsaw:Action="http://schemas.xmltravelgate.com/hubpush/provider/2012/10/IProviderGen/CheckFlux"
+				message="tns:IProviderGen_CheckFlux_InputMessage" />
+			<wsdl:output
+				wsaw:Action="http://schemas.xmltravelgate.com/hubpush/provider/2012/10/IProviderGen/CheckFluxResponse"
+				message="tns:IProviderGen_CheckFlux_OutputMessage" />
+		</wsdl:operation>
+		<wsdl:operation name="HotelAvail">
+			<wsdl:input
+				wsaw:Action="http://schemas.xmltravelgate.com/hubpush/provider/2012/10/IProviderGen/HotelAvail"
+				message="tns:IProviderGen_HotelAvail_InputMessage" />
+			<wsdl:output
+				wsaw:Action="http://schemas.xmltravelgate.com/hubpush/provider/2012/10/IProviderGen/HotelAvailResponse"
+				message="tns:IProviderGen_HotelAvail_OutputMessage" />
+		</wsdl:operation>
+		<wsdl:operation name="HotelValuation">
+			<wsdl:input
+				wsaw:Action="http://schemas.xmltravelgate.com/hubpush/provider/2012/10/IProviderGen/HotelValuation"
+				message="tns:IProviderGen_HotelValuation_InputMessage" />
+			<wsdl:output
+				wsaw:Action="http://schemas.xmltravelgate.com/hubpush/provider/2012/10/IProviderGen/HotelValuationResponse"
+				message="tns:IProviderGen_HotelValuation_OutputMessage" />
+		</wsdl:operation>
+		<wsdl:operation name="HotelRes">
+			<wsdl:input
+				wsaw:Action="http://schemas.xmltravelgate.com/hubpush/provider/2012/10/IProviderGen/HotelRes"
+				message="tns:IProviderGen_HotelRes_InputMessage" />
+			<wsdl:output
+				wsaw:Action="http://schemas.xmltravelgate.com/hubpush/provider/2012/10/IProviderGen/HotelResResponse"
+				message="tns:IProviderGen_HotelRes_OutputMessage" />
+		</wsdl:operation>
+		<wsdl:operation name="Cancel">
+			<wsdl:input
+				wsaw:Action="http://schemas.xmltravelgate.com/hubpush/provider/2012/10/IProviderGen/Cancel"
+				message="tns:IProviderGen_Cancel_InputMessage" />
+			<wsdl:output
+				wsaw:Action="http://schemas.xmltravelgate.com/hubpush/provider/2012/10/IProviderGen/CancelResponse"
+				message="tns:IProviderGen_Cancel_OutputMessage" />
+		</wsdl:operation>
+		<wsdl:operation name="HotelResRead">
+			<wsdl:input
+				wsaw:Action="http://schemas.xmltravelgate.com/hubpush/provider/2012/10/IProviderGen/HotelResRead"
+				message="tns:IProviderGen_HotelResRead_InputMessage" />
+			<wsdl:output
+				wsaw:Action="http://schemas.xmltravelgate.com/hubpush/provider/2012/10/IProviderGen/HotelResReadResponse"
+				message="tns:IProviderGen_HotelResRead_OutputMessage" />
+		</wsdl:operation>
+		<wsdl:operation name="HotelReservationList">
+			<wsdl:input
+				wsaw:Action="http://schemas.xmltravelgate.com/hubpush/provider/2012/10/IProviderGen/HotelReservationList"
+				message="tns:IProviderGen_HotelReservationList_InputMessage" />
+			<wsdl:output
+				wsaw:Action="http://schemas.xmltravelgate.com/hubpush/provider/2012/10/IProviderGen/HotelReservationListResponse"
+				message="tns:IProviderGen_HotelReservationList_OutputMessage" />
+		</wsdl:operation>
+		<wsdl:operation name="HotelDescriptiveInfo">
+			<wsdl:input
+				wsaw:Action="http://schemas.xmltravelgate.com/hubpush/provider/2012/10/IProviderGen/HotelDescriptiveInfo"
+				message="tns:IProviderGen_HotelDescriptiveInfo_InputMessage" />
+			<wsdl:output
+				wsaw:Action="http://schemas.xmltravelgate.com/hubpush/provider/2012/10/IProviderGen/HotelDescriptiveInfoResponse"
+				message="tns:IProviderGen_HotelDescriptiveInfo_OutputMessage" />
+		</wsdl:operation>
+		<wsdl:operation name="HotelListInfo">
+			<wsdl:input
+				wsaw:Action="http://schemas.xmltravelgate.com/hubpush/provider/2012/10/IProviderGen/HotelListInfo"
+				message="tns:IProviderGen_HotelListInfo_InputMessage" />
+			<wsdl:output
+				wsaw:Action="http://schemas.xmltravelgate.com/hubpush/provider/2012/10/IProviderGen/HotelListInfoResponse"
+				message="tns:IProviderGen_HotelListInfo_OutputMessage" />
+		</wsdl:operation>
+		<wsdl:operation name="HotelAvailNotif">
+			<wsdl:input
+				wsaw:Action="http://schemas.xmltravelgate.com/hubpush/provider/2012/10/IProviderGen/HotelAvailNotif"
+				message="tns:IProviderGen_HotelAvailNotif_InputMessage" />
+			<wsdl:output
+				wsaw:Action="http://schemas.xmltravelgate.com/hubpush/provider/2012/10/IProviderGen/HotelAvailNotifResponse"
+				message="tns:IProviderGen_HotelAvailNotif_OutputMessage" />
+		</wsdl:operation>
+		<wsdl:operation name="HotelRatePlanNotif">
+			<wsdl:input
+				wsaw:Action="http://schemas.xmltravelgate.com/hubpush/provider/2012/10/IProviderGen/HotelRatePlanNotif"
+				message="tns:IProviderGen_HotelRatePlanNotif_InputMessage" />
+			<wsdl:output
+				wsaw:Action="http://schemas.xmltravelgate.com/hubpush/provider/2012/10/IProviderGen/HotelRatePlanNotifResponse"
+				message="tns:IProviderGen_HotelRatePlanNotif_OutputMessage" />
+		</wsdl:operation>
+		<wsdl:operation name="HotelRatePlanInventoryNotif">
+			<wsdl:input
+				wsaw:Action="http://schemas.xmltravelgate.com/hubpush/provider/2012/10/IProviderGen/HotelRatePlanInventoryNotif"
+				message="tns:IProviderGen_HotelRatePlanInventoryNotif_InputMessage" />
+			<wsdl:output
+				wsaw:Action="http://schemas.xmltravelgate.com/hubpush/provider/2012/10/IProviderGen/HotelRatePlanInventoryNotifResponse"
+				message="tns:IProviderGen_HotelRatePlanInventoryNotif_OutputMessage" />
+		</wsdl:operation>
+		<wsdl:operation name="HotelRatePlanRetrieve">
+			<wsdl:input
+				wsaw:Action="http://schemas.xmltravelgate.com/hubpush/provider/2012/10/IProviderGen/HotelRatePlanRetrieve"
+				message="tns:IProviderGen_HotelRatePlanRetrieve_InputMessage" />
+			<wsdl:output
+				wsaw:Action="http://schemas.xmltravelgate.com/hubpush/provider/2012/10/IProviderGen/HotelRatePlanRetrieveResponse"
+				message="tns:IProviderGen_HotelRatePlanRetrieve_OutputMessage" />
+		</wsdl:operation>
+		<wsdl:operation name="HotelAvailRetrieve">
+			<wsdl:input
+				wsaw:Action="http://schemas.xmltravelgate.com/hubpush/provider/2012/10/IProviderGen/HotelAvailRetrieve"
+				message="tns:IProviderGen_HotelAvailRetrieve_InputMessage" />
+			<wsdl:output
+				wsaw:Action="http://schemas.xmltravelgate.com/hubpush/provider/2012/10/IProviderGen/HotelAvailRetrieveResponse"
+				message="tns:IProviderGen_HotelAvailRetrieve_OutputMessage" />
+		</wsdl:operation>
+		<wsdl:operation name="HotelRatePlanInventoryRetrieve">
+			<wsdl:input
+				wsaw:Action="http://schemas.xmltravelgate.com/hubpush/provider/2012/10/IProviderGen/HotelRatePlanInventoryRetrieve"
+				message="tns:IProviderGen_HotelRatePlanInventoryRetrieve_InputMessage" />
+			<wsdl:output
+				wsaw:Action="http://schemas.xmltravelgate.com/hubpush/provider/2012/10/IProviderGen/HotelRatePlanInventoryRetrieveResponse"
+				message="tns:IProviderGen_HotelRatePlanInventoryRetrieve_OutputMessage" />
+		</wsdl:operation>
+		<wsdl:operation name="HotelResRetrieve">
+			<wsdl:input
+				wsaw:Action="http://schemas.xmltravelgate.com/hubpush/provider/2012/10/IProviderGen/HotelResRetrieve"
+				message="tns:IProviderGen_HotelResRetrieve_InputMessage" />
+			<wsdl:output
+				wsaw:Action="http://schemas.xmltravelgate.com/hubpush/provider/2012/10/IProviderGen/HotelResRetrieveResponse"
+				message="tns:IProviderGen_HotelResRetrieve_OutputMessage" />
+		</wsdl:operation>
+		<wsdl:operation name="HotelRoomListRetrieve">
+			<wsdl:input
+				wsaw:Action="http://schemas.xmltravelgate.com/hubpush/provider/2012/10/IProviderGen/HotelRoomListRetrieve"
+				message="tns:IProviderGen_HotelRoomListRetrieve_InputMessage" />
+			<wsdl:output
+				wsaw:Action="http://schemas.xmltravelgate.com/hubpush/provider/2012/10/IProviderGen/HotelRoomListRetrieveResponse"
+				message="tns:IProviderGen_HotelRoomListRetrieve_OutputMessage" />
+		</wsdl:operation>
+	</wsdl:portType>
+</wsdl:definitions>

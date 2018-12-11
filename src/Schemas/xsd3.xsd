@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified"
+	targetNamespace="http://schemas.datacontract.org/2004/07/XTG.HubPush.WSProvider.Classes.Flux"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns="http://schemas.datacontract.org/2004/07/XTG.HubPush.WSProvider.Classes.Flux">
+	<xs:complexType name="CheckFluxRQ">
+		<xs:sequence>
+			<xs:element minOccurs="0" name="client" nillable="true"
+				type="xs:string" />
+			<xs:element minOccurs="0" name="hotel" nillable="true"
+				type="xs:string" />
+			<xs:element minOccurs="0" name="provider" nillable="true"
+				type="xs:string" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="CheckFluxRQ" nillable="true"
+		type="tns:CheckFluxRQ" />
+	<xs:complexType name="CheckFluxRS">
+		<xs:sequence>
+			<xs:element minOccurs="0" name="Message" nillable="true"
+				type="xs:string" />
+			<xs:element minOccurs="0" name="Status" nillable="true"
+				type="xs:string" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="CheckFluxRS" nillable="true"
+		type="tns:CheckFluxRS" />
+</xs:schema>

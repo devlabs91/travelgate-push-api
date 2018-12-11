@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified"
+	targetNamespace="http://schemas.xmltravelgate.com/hubpush/provider/2012/10"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns="http://schemas.xmltravelgate.com/hubpush/provider/2012/10">
+	<xs:import
+		schemaLocation="xsd2.xsd"
+		namespace="http://schemas.datacontract.org/2004/07/XTG.HubPush.WSProvider.Classes" />
+	<xs:import
+		schemaLocation="xsd3.xsd"
+		namespace="http://schemas.datacontract.org/2004/07/XTG.HubPush.WSProvider.Classes.Flux" />
+	<xs:import
+		schemaLocation="xsd4.xsd"
+		namespace="http://www.opentravel.org/OTA/2003/05" />
+	<xs:element name="CheckStatus">
+		<xs:complexType>
+			<xs:sequence />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="CheckStatusResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" name="CheckStatusResult"
+					nillable="true" type="q1:Response"
+					xmlns:q1="http://schemas.datacontract.org/2004/07/XTG.HubPush.WSProvider.Classes" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="CheckFlux">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" name="request" nillable="true"
+					type="q2:CheckFluxRQ"
+					xmlns:q2="http://schemas.datacontract.org/2004/07/XTG.HubPush.WSProvider.Classes.Flux" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="CheckFluxResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" name="CheckFluxResult"
+					nillable="true" type="q3:CheckFluxRS"
+					xmlns:q3="http://schemas.datacontract.org/2004/07/XTG.HubPush.WSProvider.Classes.Flux" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="HotelAvail">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="1" name="request"
+					type="q4:OTA_HotelAvailRQ"
+					xmlns:q4="http://www.opentravel.org/OTA/2003/05" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="HotelAvailResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="1"
+					name="HotelAvailResult" type="q5:OTA_HotelAvailRS"
+					xmlns:q5="http://www.opentravel.org/OTA/2003/05" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="HotelValuation">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="1" name="request"
+					type="q6:OTA_HotelResRQ"
+					xmlns:q6="http://www.opentravel.org/OTA/2003/05" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="HotelValuationResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="1"
+					name="HotelValuationResult" type="q7:OTA_HotelResRS"
+					xmlns:q7="http://www.opentravel.org/OTA/2003/05" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="HotelRes">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="1" name="request"
+					type="q8:OTA_HotelResRQ"
+					xmlns:q8="http://www.opentravel.org/OTA/2003/05" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="HotelResResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="1"
+					name="HotelResResult" type="q9:OTA_HotelResRS"
+					xmlns:q9="http://www.opentravel.org/OTA/2003/05" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Cancel">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="1" name="request"
+					type="q10:OTA_CancelRQ"
+					xmlns:q10="http://www.opentravel.org/OTA/2003/05" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="CancelResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="1"
+					name="CancelResult" type="q11:OTA_CancelRS"
+					xmlns:q11="http://www.opentravel.org/OTA/2003/05" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="HotelResRead">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="1" name="request"
+					type="q12:OTA_ReadRQ"
+					xmlns:q12="http://www.opentravel.org/OTA/2003/05" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="HotelResReadResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="1"
+					name="HotelResReadResult" type="q13:OTA_HotelResRS"
+					xmlns:q13="http://www.opentravel.org/OTA/2003/05" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="HotelReservationList">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="1" name="request"
+					type="q14:OTA_ReadRQ"
+					xmlns:q14="http://www.opentravel.org/OTA/2003/05" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="HotelReservationListResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="1"
+					name="HotelReservationListResult" type="q15:OTA_HotelResRS"
+					xmlns:q15="http://www.opentravel.org/OTA/2003/05" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="HotelDescriptiveInfo">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="1" name="request"
+					type="q16:OTA_HotelDescriptiveInfoRQ"
+					xmlns:q16="http://www.opentravel.org/OTA/2003/05" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="HotelDescriptiveInfoResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="1"
+					name="HotelDescriptiveInfoResult"
+					type="q17:OTA_HotelDescriptiveInfoRS"
+					xmlns:q17="http://www.opentravel.org/OTA/2003/05" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="HotelListInfo">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="1" name="request"
+					type="q18:OTA_HotelDescriptiveInfoRQ"
+					xmlns:q18="http://www.opentravel.org/OTA/2003/05" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="HotelListInfoResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="1"
+					name="HotelListInfoResult" type="q19:OTA_HotelDescriptiveInfoRS"
+					xmlns:q19="http://www.opentravel.org/OTA/2003/05" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="HotelAvailNotif">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="1" name="request"
+					type="q20:OTA_HotelAvailNotifRQ"
+					xmlns:q20="http://www.opentravel.org/OTA/2003/05" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="HotelAvailNotifResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="1"
+					name="HotelAvailNotifResult" type="q21:OTA_HotelAvailNotifRS"
+					xmlns:q21="http://www.opentravel.org/OTA/2003/05" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="HotelRatePlanNotif">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="1" name="request"
+					type="q22:OTA_HotelRatePlanNotifRQ"
+					xmlns:q22="http://www.opentravel.org/OTA/2003/05" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="HotelRatePlanNotifResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="1"
+					name="HotelRatePlanNotifResult" type="q23:OTA_HotelRatePlanNotifRS"
+					xmlns:q23="http://www.opentravel.org/OTA/2003/05" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="HotelRatePlanInventoryNotif">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="1" name="request"
+					type="q24:OTA_HotelRatePlanNotifRQ"
+					xmlns:q24="http://www.opentravel.org/OTA/2003/05" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="HotelRatePlanInventoryNotifResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="1"
+					name="HotelRatePlanInventoryNotifResult"
+					type="q25:OTA_HotelRatePlanNotifRS"
+					xmlns:q25="http://www.opentravel.org/OTA/2003/05" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="HotelRatePlanRetrieve">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="1" name="request"
+					type="q26:OTA_HotelRatePlanRQ"
+					xmlns:q26="http://www.opentravel.org/OTA/2003/05" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="HotelRatePlanRetrieveResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="1"
+					name="HotelRatePlanRetrieveResult" type="q27:OTA_HotelRatePlanRS"
+					xmlns:q27="http://www.opentravel.org/OTA/2003/05" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="HotelAvailRetrieve">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="1" name="request"
+					type="q28:OTA_HotelAvailGetRQ"
+					xmlns:q28="http://www.opentravel.org/OTA/2003/05" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="HotelAvailRetrieveResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="1"
+					name="HotelAvailRetrieveResult" type="q29:OTA_HotelAvailGetRS"
+					xmlns:q29="http://www.opentravel.org/OTA/2003/05" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="HotelRatePlanInventoryRetrieve">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="1" name="request"
+					type="q30:OTA_HotelRatePlanRQ"
+					xmlns:q30="http://www.opentravel.org/OTA/2003/05" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="HotelRatePlanInventoryRetrieveResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="1"
+					name="HotelRatePlanInventoryRetrieveResult"
+					type="q31:OTA_HotelRatePlanRS"
+					xmlns:q31="http://www.opentravel.org/OTA/2003/05" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="HotelResRetrieve">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="1" name="request"
+					type="q32:OTA_ReadRQ"
+					xmlns:q32="http://www.opentravel.org/OTA/2003/05" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="HotelResRetrieveResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="1"
+					name="HotelResRetrieveResult" type="q33:OTA_HotelResRS"
+					xmlns:q33="http://www.opentravel.org/OTA/2003/05" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="HotelRoomListRetrieve">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="1" name="request"
+					type="q34:OTA_HotelRoomListRQ"
+					xmlns:q34="http://www.opentravel.org/OTA/2003/05" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="HotelRoomListRetrieveResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="1"
+					name="HotelRoomListRetrieveResult" type="q35:OTA_HotelRoomListRS"
+					xmlns:q35="http://www.opentravel.org/OTA/2003/05" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
