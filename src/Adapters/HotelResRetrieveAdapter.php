@@ -8,7 +8,7 @@ use Devlabs91\TravelgatePushApi\StructType\HotelReadRequest;
 use Devlabs91\TravelgatePushApi\StructType\SelectionCriteria;
 use Devlabs91\TravelgatePushApi\StructType\HotelResRetrieve;
 
-class HotelResAdapter extends BaseAdapter {
+class HotelResRetrieveAdapter extends BaseAdapter {
 
     /** @var \Devlabs91\TravelgatePushApi\StructType\OTA_HotelRatePlanRQ */
     public $request;
