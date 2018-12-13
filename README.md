@@ -18,7 +18,7 @@ of the Composer documentation.
 Documentation
 ============
 
-Documentation is stored in the `Resources/doc/index.md` file in this bundle:
+Documentation is stored in the `doc/index.md` file in this bundle:
 
 [Read the documentation](https://github.com/devlabs91/travelgate-push-api/blob/master/doc/index.md)
 
