@@ -5,13 +5,17 @@ namespace Devlabs91\TravelgatePushApi\Models;
 class AdditionalGuestAmount {
     
     /**
-     * Number of additional pax, one node for each additional pax, int the above example has one for first child, and one for second.
+     * Number of additional pax, one node for each additional pax, int the above example 
+     * has one for first child, and one for second.
+     * - maxOccurs: 1
+     * - minOccurs: 1
      * @var int
      */
     public $MaxAdditionalGuests;
     
     /**
-     * OTA AmountDeterminationType. If not specified then the price is a supplement, if @Type is Exclusive then the the price is absolute.
+     * OTA AmountDeterminationType. If not specified then the price is a supplement, if @Type 
+     * is Exclusive then the the price is absolute.
      * - maxOccurs: 1
      * - minOccurs: 0
      * @var string
@@ -20,6 +24,8 @@ class AdditionalGuestAmount {
     
     /**
      * (10 - Adult,8 - Child,7 - Infant).
+     * - maxOccurs: 1
+     * - minOccurs: 1
      * @var string
      */
     public $AgeQualifyingCode;

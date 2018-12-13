@@ -6,12 +6,15 @@ class BaseByGuestAmt
 {
     /**
      * Total amount for @NumberOfGuests by day indicated. This amount doesn’t include tax.
+     * - maxOccurs: 1
+     * - minOccurs: 1
      * @var float
      */
     public $AmountAfterTax;
     
     /**
-     * How many adults are the @AmountAfterTax for day indicated. If @NumberOfGuests is not informed then @Type must be informed. The maximum @NumberOfGuests is the standard occupancy of the room.
+     * How many adults are the @AmountAfterTax for day indicated. If @NumberOfGuests is not 
+     * informed then @Type must be informed. The maximum @NumberOfGuests is the standard occupancy of the room.
      * - maxOccurs: 1
      * - minOccurs: 0
      * @var int
@@ -19,7 +22,8 @@ class BaseByGuestAmt
     public $NumberOfGuests;
     
     /**
-     * Amounts are per Room or per Occupancy instead of per Pax. If @Type=25. If @Type=14, price is per occupancy, @Code is mandatory and @NumberOfGuests and AdditionalGuestAmounts are not allowed.
+     * Amounts are per Room or per Occupancy instead of per Pax. If @Type=25. If @Type=14, 
+     * price is per occupancy, @Code is mandatory and @NumberOfGuests and AdditionalGuestAmounts are not allowed.
      * - maxOccurs: 1
      * - minOccurs: 0
      * @var string
@@ -27,7 +31,8 @@ class BaseByGuestAmt
     public $Type;
     
     /**
-     * Mandatory if @Type=14. The occupancy code is defined by AdultNumber-ChildNumber-InfantNumber. @Code for an occupancy of 2 adults, 1 child and 0 babies would be “2-1-0”.
+     * Mandatory if @Type=14. The occupancy code is defined by AdultNumber-ChildNumber-InfantNumber. 
+     * @Code for an occupancy of 2 adults, 1 child and 0 babies would be “2-1-0”.
      * - maxOccurs: 1
      * - minOccurs: 0
      * @var string
@@ -45,8 +50,7 @@ class BaseByGuestAmt
      * Get AmountAfterTax value
      * @return float|null
      */
-    public function getAmountAfterTax()
-    {
+    public function getAmountAfterTax() {
         return $this->AmountAfterTax;
     }
     /**
@@ -54,8 +58,7 @@ class BaseByGuestAmt
      * @param float $amountAfterTax
      * @return \Devlabs91\TravelgatePushApi\StructType\TotalType
      */
-    public function setAmountAfterTax($amountAfterTax = null)
-    {
+    public function setAmountAfterTax($amountAfterTax = null) {
         $this->AmountAfterTax = $amountAfterTax;
         return $this;
     }
@@ -64,8 +67,7 @@ class BaseByGuestAmt
      * Get NumberOfGuests value
      * @return int|null
      */
-    public function getNumberOfGuests()
-    {
+    public function getNumberOfGuests() {
         return $this->NumberOfGuests;
     }
     /**
@@ -73,8 +75,7 @@ class BaseByGuestAmt
      * @param int $numberOfGuests
      * @return \Devlabs91\TravelgatePushApi\StructType\BaseByGuestAmt
      */
-    public function setNumberOfGuests($numberOfGuests = null)
-    {
+    public function setNumberOfGuests($numberOfGuests = null) {
         // validation for constraint: int
         if (!is_null($numberOfGuests) && !is_numeric($numberOfGuests)) {
             throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($numberOfGuests)), __LINE__);
@@ -86,8 +87,7 @@ class BaseByGuestAmt
      * Get Type value
      * @return string|null
      */
-    public function getType()
-    {
+    public function getType() {
         return $this->Type;
     }
     /**
@@ -95,8 +95,7 @@ class BaseByGuestAmt
      * @param string $type
      * @return \Devlabs91\TravelgatePushApi\StructType\TotalType
      */
-    public function setType($type = null)
-    {
+    public function setType($type = null) {
         // validation for constraint: string
         if (!is_null($type) && !is_string($type)) {
             throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($type)), __LINE__);
@@ -108,8 +107,7 @@ class BaseByGuestAmt
      * Get Code value
      * @return string|null
      */
-    public function getCode()
-    {
+    public function getCode() {
         return $this->Code;
     }
     /**
@@ -117,8 +115,7 @@ class BaseByGuestAmt
      * @param string $code
      * @return \Devlabs91\TravelgatePushApi\StructType\BaseByGuestAmt
      */
-    public function setCode($code = null)
-    {
+    public function setCode($code = null) {
         // validation for constraint: string
         if (!is_null($code) && !is_string($code)) {
             throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($code)), __LINE__);

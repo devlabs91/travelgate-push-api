@@ -6,18 +6,23 @@ class Rate
 {
     /**
      * Start date of rate.
+     * - maxOccurs: 1
+     * - minOccurs: 1
      * @var string
      */
     public $Start;
     
     /**
      * End date of rate.
+     * - maxOccurs: 1
+     * - minOccurs: 1
      * @var string
      */
     public $End;
     
     /**
-     * The percentage off the base rate plan amount used to determine the price of this derived rate plan. Only used for derived rates.
+     * The percentage off the base rate plan amount used to determine the price of this derived rate plan. 
+     * Only used for derived rates.
      * - maxOccurs: 1
      * - minOccurs: 0
      * @var float
@@ -25,7 +30,8 @@ class Rate
     public $AdjustedPercentage;
     
     /**
-     * The amount which should be added to the base rate plan to determine the price of this derived rate plan. Only used for derived rates.
+     * The amount which should be added to the base rate plan to determine the price of this derived rate plan. 
+     * Only used for derived rates.
      * - maxOccurs: 1
      * - minOccurs: 0
      * @var float
@@ -33,7 +39,9 @@ class Rate
     public $AdjustedAmount;
     
     /**
-     * When true, the adjusted amount or adjusted percentage is added to the amount specified for the base rate plan to determine the derived rate amount. When false, the adjusted amount or adjusted percentage is subtracted from the amount specified for the base rate plan to determine the derived rate amount. Only used for derived rates.
+     * When true, the adjusted amount or adjusted percentage is added to the amount specified for the base rate plan 
+     * to determine the derived rate amount. When false, the adjusted amount or adjusted percentage is subtracted from 
+     * the amount specified for the base rate plan to determine the derived rate amount. Only used for derived rates.
      * - maxOccurs: 1
      * - minOccurs: 0
      * @var bool
@@ -66,8 +74,7 @@ class Rate
      * Get Start value
      * @return string|null
      */
-    public function getStart()
-    {
+    public function getStart() {
         return $this->Start;
     }
     /**
@@ -75,8 +82,7 @@ class Rate
      * @param string $start
      * @return \Devlabs91\TravelgatePushApi\StructType\RateUploadType
      */
-    public function setStart($start = null)
-    {
+    public function setStart($start = null) {
         // validation for constraint: string
         if (!is_null($start) && !is_string($start)) {
             throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($start)), __LINE__);
@@ -88,8 +94,7 @@ class Rate
      * Get End value
      * @return string|null
      */
-    public function getEnd()
-    {
+    public function getEnd() {
         return $this->End;
     }
     /**
@@ -97,8 +102,7 @@ class Rate
      * @param string $end
      * @return \Devlabs91\TravelgatePushApi\StructType\RateUploadType
      */
-    public function setEnd($end = null)
-    {
+    public function setEnd($end = null) {
         // validation for constraint: string
         if (!is_null($end) && !is_string($end)) {
             throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($end)), __LINE__);
@@ -110,8 +114,7 @@ class Rate
      * Get AdjustedPercentage value
      * @return float|null
      */
-    public function getAdjustedPercentage()
-    {
+    public function getAdjustedPercentage() {
         return $this->AdjustedPercentage;
     }
     /**
@@ -119,8 +122,7 @@ class Rate
      * @param float $adjustedPercentage
      * @return \Devlabs91\TravelgatePushApi\StructType\Rate
      */
-    public function setAdjustedPercentage($adjustedPercentage = null)
-    {
+    public function setAdjustedPercentage($adjustedPercentage = null) {
         $this->AdjustedPercentage = $adjustedPercentage;
         return $this;
     }
@@ -128,8 +130,7 @@ class Rate
      * Get AdjustedAmount value
      * @return float|null
      */
-    public function getAdjustedAmount()
-    {
+    public function getAdjustedAmount() {
         return $this->AdjustedAmount;
     }
     /**
@@ -137,8 +138,7 @@ class Rate
      * @param float $adjustedAmount
      * @return \Devlabs91\TravelgatePushApi\StructType\Rate
      */
-    public function setAdjustedAmount($adjustedAmount = null)
-    {
+    public function setAdjustedAmount($adjustedAmount = null) {
         $this->AdjustedAmount = $adjustedAmount;
         return $this;
     }
@@ -146,8 +146,7 @@ class Rate
      * Get AdjustUpIndicator value
      * @return bool|null
      */
-    public function getAdjustUpIndicator()
-    {
+    public function getAdjustUpIndicator() {
         return $this->AdjustUpIndicator;
     }
     /**
@@ -155,8 +154,7 @@ class Rate
      * @param bool $adjustUpIndicator
      * @return \Devlabs91\TravelgatePushApi\StructType\Rate
      */
-    public function setAdjustUpIndicator($adjustUpIndicator = null)
-    {
+    public function setAdjustUpIndicator($adjustUpIndicator = null) {
         // validation for constraint: boolean
         if (!is_null($adjustUpIndicator) && !is_bool($adjustUpIndicator)) {
             throw new \InvalidArgumentException(sprintf('Invalid value, please provide a bool, "%s" given', gettype($adjustUpIndicator)), __LINE__);
@@ -169,8 +167,7 @@ class Rate
         $this->BaseByGuestAmts[] = $baseByGuestAmts;
     }
 
-    public function getBaseByGuestAmts()
-    {
+    public function getBaseByGuestAmts() {
         return $this->BaseByGuestAmts;
     }
     
@@ -178,8 +175,7 @@ class Rate
         $this->AdditionalGuestAmounts[] = $additionalGuestAmounts;
     }
     
-    public function getAdditionalGuestAmounts()
-    {
+    public function getAdditionalGuestAmounts() {
         return $this->AdditionalGuestAmounts;
     }
     

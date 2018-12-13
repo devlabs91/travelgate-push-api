@@ -6,12 +6,16 @@ class SellableProduct
 {
     /**
      * Sellable Product Code.
+     * - maxOccurs: 1
+     * - minOccurs: 1
      * @var string
      */
     public $InvCode;
     
     /**
      * Sellable product type (ROOM).
+     * - maxOccurs: 1
+     * - minOccurs: 1
      * @var string
      */
     public $InvType;

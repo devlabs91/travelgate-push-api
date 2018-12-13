@@ -62,7 +62,7 @@ class ErrorType extends FreeTextType
      * @param \Devlabs91\TravelgatePushApi\StructType\FreeTextType $_
      * @return \Devlabs91\TravelgatePushApi\StructType\ErrorType
      */
-    public function set_(\Devlabs91\TravelgatePushApi\StructType\FreeTextType $_ = null)
+    public function set_($_ = null)
     {
         $this->_ = $_;
         return $this;

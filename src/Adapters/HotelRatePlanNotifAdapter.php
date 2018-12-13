@@ -2,20 +2,18 @@
 
 namespace Devlabs91\TravelgatePushApi\Adapters;
 
-use Devlabs91\TravelgatePushApi\ArrayType\ArrayOfSourceType;
-use Devlabs91\TravelgatePushApi\StructType\RatePlan;
-use Devlabs91\TravelgatePushApi\StructType\HotelRef;
-use Devlabs91\TravelgatePushApi\StructType\HotelRatePlanNotif;
-use Devlabs91\TravelgatePushApi\StructType\RatePlans;
-use Devlabs91\TravelgatePushApi\Models\Hotel;
-use Devlabs91\TravelgatePushApi\StructType\HotelRatePlanType;
-use Devlabs91\TravelgatePushApi\StructType\Rate;
 use Devlabs91\TravelgatePushApi\ArrayType\ArrayOfHotelRatePlanTypeRate;
-use Devlabs91\TravelgatePushApi\StructType\BaseByGuestAmt;
-use Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRateUploadTypeBaseByGuestAmt;
 use Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRateUploadTypeAdditionalGuestAmount;
-use Devlabs91\TravelgatePushApi\Models\AdditionalGuestAmount;
+use Devlabs91\TravelgatePushApi\ArrayType\ArrayOfRateUploadTypeBaseByGuestAmt;
 use Devlabs91\TravelgatePushApi\ArrayType\ArrayOfSellableProductsTypeSellableProduct;
+use Devlabs91\TravelgatePushApi\ArrayType\ArrayOfSourceType;
+use Devlabs91\TravelgatePushApi\StructType\BaseByGuestAmt;
+use Devlabs91\TravelgatePushApi\StructType\HotelRatePlanNotif;
+use Devlabs91\TravelgatePushApi\StructType\HotelRatePlanType;
+use Devlabs91\TravelgatePushApi\StructType\RatePlans;
+use Devlabs91\TravelgatePushApi\StructType\Rate;
+use Devlabs91\TravelgatePushApi\Models\Hotel;
+use Devlabs91\TravelgatePushApi\Models\AdditionalGuestAmount;
 use Devlabs91\TravelgatePushApi\Models\SellableProduct;
 
 class HotelRatePlanNotifAdapter extends BaseAdapter {
@@ -35,8 +33,6 @@ class HotelRatePlanNotifAdapter extends BaseAdapter {
         $this->addSoapHeaderSecurity( $this->hotel );
     }
 
-//    public function 
-    
     /**
      * 
      * @return \Devlabs91\TravelgatePushApi\StructType\OTA_HotelRatePlanNotifRS|NULL|NULL
@@ -155,4 +151,5 @@ class HotelRatePlanNotifAdapter extends BaseAdapter {
         $item->setInvType( $sellableProcuct->getInvType() );
         return $item;
     }
+    
 }
