@@ -36,7 +36,7 @@ class SellableProduct
     /**
      * Set InvCode value
      * @param string $invCode
-     * @return \Devlabs91\TravelgatePushApi\StructType\SellableProduct
+     * @return \Devlabs91\TravelgatePushApi\Models\SellableProduct
      */
     public function setInvCode($invCode = null) {
         // validation for constraint: string
@@ -58,7 +58,7 @@ class SellableProduct
     /**
      * Set InvType value
      * @param string $invType
-     * @return \Devlabs91\TravelgatePushApi\StructType\SellableProduct
+     * @return \Devlabs91\TravelgatePushApi\Models\SellableProduct
      */
     public function setInvType($invType = null) {
         // validation for constraint: string

@@ -46,8 +46,10 @@ class AdditionalGuestAmount {
      */
     public $Percent;
     
-    public function __construct( ) {
-        
+    public function __construct( $maxAdditionalGuests, $AgeQualifyingCode = 10, $amount = null ) {
+        $this->MaxAdditionalGuests = $maxAdditionalGuests;
+        $this->AgeQualifyingCode = (string) $AgeQualifyingCode;
+        $this->Amount = $amount;
     }
     
     /**
@@ -86,7 +88,7 @@ class AdditionalGuestAmount {
      * @uses \Devlabs91\TravelgatePushApi\EnumType\AmountDeterminationType::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \Devlabs91\TravelgatePushApi\StructType\AdditionalGuestAmount
+     * @return \Devlabs91\TravelgatePushApi\Models\AdditionalGuestAmount
      */
     public function setType($type = null) {
         // validation for constraint: enumeration
@@ -108,7 +110,7 @@ class AdditionalGuestAmount {
     /**
      * Set AgeQualifyingCode value
      * @param string $ageQualifyingCode
-     * @return \Devlabs91\TravelgatePushApi\StructType\AdditionalGuestAmount
+     * @return \Devlabs91\TravelgatePushApi\Models\AdditionalGuestAmount
      */
     public function setAgeQualifyingCode($ageQualifyingCode = null) {
         // validation for constraint: string
@@ -130,7 +132,7 @@ class AdditionalGuestAmount {
     /**
      * Set Amount value
      * @param float $amount
-     * @return \Devlabs91\TravelgatePushApi\StructType\AdditionalGuestAmount
+     * @return \Devlabs91\TravelgatePushApi\Models\AdditionalGuestAmount
      */
     public function setAmount($amount = null) {
         $this->Amount = $amount;
@@ -148,7 +150,7 @@ class AdditionalGuestAmount {
     /**
      * Set Percent value
      * @param float $percent
-     * @return \Devlabs91\TravelgatePushApi\StructType\AdditionalGuestAmount
+     * @return \Devlabs91\TravelgatePushApi\Models\AdditionalGuestAmount
      */
     public function setPercent($percent = null) {
         $this->Percent = $percent;

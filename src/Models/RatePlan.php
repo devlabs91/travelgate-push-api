@@ -63,7 +63,6 @@ class RatePlan {
         $this->RatePlanCode = $ratePlanCode;
         $this->RatePlanStatusType = $ratePlanStatusType;
         $this->CurrencyCode = $currencyCode;
-        
         $this->Rates = [];
         $this->Supplements = [];
         $this->SellableProducts = [];
@@ -79,7 +78,7 @@ class RatePlan {
     /**
      * Set RatePlanCode value
      * @param string $ratePlanCode
-     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRatePlanType
+     * @return RatePlan
      */
     public function setRatePlanCode($ratePlanCode = null) {
         // validation for constraint: string
@@ -100,7 +99,7 @@ class RatePlan {
     /**
      * Set RatePlanStatusType value
      * @param string $ratePlanStatusType
-     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRatePlanType
+     * @return RatePlan
      */
     public function setRatePlanStatusType($ratePlanStatusType = null) {
         // validation for constraint: string
@@ -120,7 +119,7 @@ class RatePlan {
     /**
      * Set BaseRatePlanCode value
      * @param string $baseRatePlanCode
-     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRatePlanType
+     * @return RatePlan
      */
     public function setBaseRatePlanCode($baseRatePlanCode = null) {
         // validation for constraint: string
@@ -140,7 +139,7 @@ class RatePlan {
     /**
      * Set CurrencyCode value
      * @param string $currencyCode
-     * @return \Devlabs91\TravelgatePushApi\StructType\HotelRatePlanType
+     * @return RatePlan
      */
     public function setCurrencyCode($currencyCode = null) {
         // validation for constraint: string
@@ -151,26 +150,50 @@ class RatePlan {
         return $this;
     }
     
+    /**
+     * 
+     * @param Rate $rate
+     */
     public function addToRates( Rate $rate ) {
         $this->Rates[] = $rate;
     }
     
+    /**
+     * 
+     * @return \Devlabs91\TravelgatePushApi\Models\Rate[]
+     */
     public function getRates() {
         return $this->Rates;
     }
     
+    /**
+     * 
+     * @param Supplement $supplement
+     */
     public function addToSupplements( Supplement $supplement ) {
         $this->Supplements[] = $supplement;
     }
     
+    /**
+     * 
+     * @return \Devlabs91\TravelgatePushApi\Models\Supplement[]
+     */
     public function getSupplements() {
         return $this->Supplements;
     }
     
+    /**
+     * 
+     * @param SellableProduct $sellableProduct
+     */
     public function addToSellableProducts( SellableProduct $sellableProduct ) {
         $this->SellableProducts[] = $sellableProduct;
     }
     
+    /**
+     * 
+     * @return \Devlabs91\TravelgatePushApi\Models\SellableProduct[]
+     */
     public function getSellableProducts() {
         return $this->SellableProducts;
     }

@@ -51,10 +51,9 @@ class HotelRatePlanNotifAdapter extends BaseAdapter {
     }
     
     public function buildRequest( Hotel $hotel ) {
-        
-        $ratePlans = new RatePlans();$ratePlans->setHotelCode( $hotel->getHotelCode() );
+        $ratePlans = new RatePlans();
+        $ratePlans->setHotelCode( $hotel->getHotelCode() );
         foreach( $hotel->getRatePlans() AS $ratePlan ) {
-            
             $item = new HotelRatePlanType();
             $item->setRatePlanCode( $ratePlan->getRatePlanCode() );
             if( $ratePlan->getRatePlanStatusType() ) {
@@ -63,7 +62,7 @@ class HotelRatePlanNotifAdapter extends BaseAdapter {
             if( $ratePlan->getBaseRatePlanCode() ) {
                 $item->setBaseRatePlanCode( $ratePlan->getBaseRatePlanCode() );
             }
-            if($ratePlan->getCurrencyCode() ) {
+            if( $ratePlan->getCurrencyCode() ) {
                 $item->setCurrencyCode( $ratePlan->getCurrencyCode() );
             }
 
@@ -76,38 +75,37 @@ class HotelRatePlanNotifAdapter extends BaseAdapter {
             foreach( $ratePlan->getSellableProducts() AS $sellableProcuct ) {
                 $item->getSellableProducts()->addToSellableProduct( $this->createSellableProcuct( $sellableProcuct ) );
             }
-            
-            $ratePlans->addToRatePlan($item);
-            
+            $ratePlans->addToRatePlan( $item );
         }
         $this->request->setRatePlans($ratePlans);
-        
     }
     
     public function createRate( \Devlabs91\TravelgatePushApi\Models\Rate $rate ) {
         $item = new Rate();
         $item->setStart( $rate->getStart() );
         $item->setEnd( $rate->getEnd() );
-        if($rate->getAdjustedPercentage()) {
+        if( $rate->getAdjustedPercentage() ) {
             $item->setAdjustedPercentage( $rate->getAdjustedPercentage() );
         }
-        if($rate->getAdjustedAmount()) {
+        if( $rate->getAdjustedAmount() ) {
             $item->setAdjustedAmount( $rate->getAdjustedAmount() );
         }
-        if($rate->getAdjustUpIndicator()) {
+        if( $rate->getAdjustUpIndicator() ) {
             $item->setAdjustUpIndicator( $rate->getAdjustUpIndicator() );
         }
         
-        $baseByGuestAmts = new ArrayOfRateUploadTypeBaseByGuestAmt();
-        foreach($rate->getBaseByGuestAmts() AS $baseByGuestAmt) {
-            $baseByGuestAmts->addToBaseByGuestAmt( $this->createBaseByGuestAmt($baseByGuestAmt) );
+        if( $rate->getBaseByGuestAmts() && !empty( $rate->getBaseByGuestAmts() ) ) {
+            $baseByGuestAmts = new ArrayOfRateUploadTypeBaseByGuestAmt();
+            foreach( $rate->getBaseByGuestAmts() AS $baseByGuestAmt ) {
+                $baseByGuestAmts->addToBaseByGuestAmt( $this->createBaseByGuestAmt($baseByGuestAmt) );
+            }
+            $item->setBaseByGuestAmts( $baseByGuestAmts );
         }
-        $item->setBaseByGuestAmts( $baseByGuestAmts );
         
-        if( $rate->getAdditionalGuestAmounts() ) {
+        if( $rate->getAdditionalGuestAmounts() && !empty( $rate->getBaseByGuestAmts() ) ) {
             $additionalGuestAmounts = new ArrayOfRateUploadTypeAdditionalGuestAmount();
             foreach($rate->getAdditionalGuestAmounts() AS $additionalGuestAmount ) {
-                $baseByGuestAmts->addToBaseByGuestAmt( $this->createBaseByGuestAmt( $additionalGuestAmount ) );
+                $additionalGuestAmounts->addToAdditionalGuestAmount( $this->createAdditionalGuestAmounts( $additionalGuestAmount ) );
             }
             $item->setAdditionalGuestAmounts( $additionalGuestAmounts );
         }
