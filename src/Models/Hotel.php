@@ -19,10 +19,19 @@ class Hotel {
      * @var RatePlan[]
      */
     public $RatePlans;
+
+    /**
+     * Present if availability exists.
+     * - maxOccurs: unbounded
+     * - minOccurs: 1
+     * @var AvailStatusMessage[]
+     */
+    public $AvailStatusMessages;
     
     public function __construct( $hotelCode ) {
         $this->HotelCode = $hotelCode;
         $this->RatePlans = [];
+        $this->AvailStatusMessages = [];
     }
     
     /**
@@ -38,6 +47,14 @@ class Hotel {
     
     public function getRatePlans() {
         return $this->RatePlans;
+    }
+    
+    public function addToAvailStatusMessages( AvailStatusMessage $availStatusMessage ) {
+        $this->AvailStatusMessages[] = $availStatusMessage;
+    }
+    
+    public function getAvailStatusMessages() {
+        return $this->AvailStatusMessages;
     }
     
 }
