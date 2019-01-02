@@ -54,6 +54,6 @@ class BaseAdapter {
     }
     
     public function getLastRequestResponse() {
-        return [ 'request' => $this->hotel->getLastRequest(), 'response' => $this->hotel->getLastResponse() ];
+        return [ 'request' => $this->hotel->getLastRequest(), 'response' => $this->hotel->getLastResponse(), 'headers' => $this->hotel->getLastResponseHeaders() ];
     }
 }
