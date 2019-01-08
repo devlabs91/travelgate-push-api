@@ -55,6 +55,6 @@ class BaseAdapter {
     }
     
     public function getLastRequestResponse() {
-        return [ 'request' => $this->hotel->getLastRequest(), 'response' => $this->hotel->getLastResponse(), 'headers' => Http::parse_header( $this->hotel->getLastResponseHeaders( true ) ) ];
+        return [ 'request' => $this->hotel->getLastRequest(), 'response' => $this->hotel->getLastResponse(), 'headers' => Http::parse_header( explode( '\n', $this->hotel->getLastResponseHeaders() ) ) ];
     }
 }
