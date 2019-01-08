@@ -1683,9 +1683,9 @@
 					<xs:attribute name="SellThroughOpenIndicator"
 						type="xs:boolean" />
 					<xs:attribute name="MaxAdvancedBookingOffset"
-						type="xs:duration" />
+						type="xs:nonNegativeInteger" />
 					<xs:attribute name="MinAdvancedBookingOffset"
-						type="xs:duration" />
+						type="xs:nonNegativeInteger" />
 				</xs:complexType>
 			</xs:element>
 		</xs:sequence>

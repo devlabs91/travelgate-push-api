@@ -27,26 +27,12 @@ class RestrictionStatus extends AbstractStructBase
     public $SellThroughOpenIndicator;
     /**
      * The MaxAdvancedBookingOffset
-     * Meta informations extracted from the WSDL
-     * - base: xs:duration
-     * - maxInclusive: P10675199DT2H48M5.4775807S
-     * - minInclusive: -P10675199DT2H48M5.4775808S
-     * - nillable: true
-     * - pattern: \-?P(\d*D)?(T(\d*H)?(\d*M)?(\d*(\.\d*)?S)?)?
-     * - type: tns:duration
-     * @var string
+     * @var int
      */
     public $MaxAdvancedBookingOffset;
     /**
      * The MinAdvancedBookingOffset
-     * Meta informations extracted from the WSDL
-     * - base: xs:duration
-     * - maxInclusive: P10675199DT2H48M5.4775807S
-     * - minInclusive: -P10675199DT2H48M5.4775808S
-     * - nillable: true
-     * - pattern: \-?P(\d*D)?(T(\d*H)?(\d*M)?(\d*(\.\d*)?S)?)?
-     * - type: tns:duration
-     * @var string
+     * @var int
      */
     public $MinAdvancedBookingOffset;
     /**
@@ -59,8 +45,8 @@ class RestrictionStatus extends AbstractStructBase
      * @param string $restriction
      * @param string $status
      * @param bool $sellThroughOpenIndicator
-     * @param string $maxAdvancedBookingOffset
-     * @param string $minAdvancedBookingOffset
+     * @param int $maxAdvancedBookingOffset
+     * @param int $minAdvancedBookingOffset
      */
     public function __construct($restriction = null, $status = null, $sellThroughOpenIndicator = null, $maxAdvancedBookingOffset = null, $minAdvancedBookingOffset = null)
     {
@@ -142,7 +128,7 @@ class RestrictionStatus extends AbstractStructBase
     }
     /**
      * Get MaxAdvancedBookingOffset value
-     * @return string|null
+     * @return int|null
      */
     public function getMaxAdvancedBookingOffset()
     {
@@ -150,33 +136,21 @@ class RestrictionStatus extends AbstractStructBase
     }
     /**
      * Set MaxAdvancedBookingOffset value
-     * @param string $maxAdvancedBookingOffset
+     * @param int $maxAdvancedBookingOffset
      * @return \Devlabs91\TravelgatePushApi\StructType\RestrictionStatus
      */
     public function setMaxAdvancedBookingOffset($maxAdvancedBookingOffset = null)
     {
-        // validation for constraint: maxInclusive
-        if ($maxAdvancedBookingOffset > 0) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, the value must be inferior or equal to 0, "%s" given', $maxAdvancedBookingOffset), __LINE__);
-        }
-        // validation for constraint: minInclusive
-        if ($maxAdvancedBookingOffset < 0) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, the value must be superior or equal to 0, "%s" given', $maxAdvancedBookingOffset), __LINE__);
-        }
-        // validation for constraint: pattern
-        if (is_scalar($maxAdvancedBookingOffset) && !preg_match('/\\-?P(\\d*D)?(T(\\d*H)?(\\d*M)?(\\d*(\\.\\d*)?S)?)?/', $maxAdvancedBookingOffset)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a scalar value that matches "\-?P(\d*D)?(T(\d*H)?(\d*M)?(\d*(\.\d*)?S)?)?", "%s" given', var_export($maxAdvancedBookingOffset, true)), __LINE__);
-        }
-        // validation for constraint: string
-        if (!is_null($maxAdvancedBookingOffset) && !is_string($maxAdvancedBookingOffset)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($maxAdvancedBookingOffset)), __LINE__);
+        // validation for constraint: int
+        if (!is_null($maxAdvancedBookingOffset) && !is_numeric($maxAdvancedBookingOffset)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($maxAdvancedBookingOffset)), __LINE__);
         }
         $this->MaxAdvancedBookingOffset = $maxAdvancedBookingOffset;
         return $this;
     }
     /**
      * Get MinAdvancedBookingOffset value
-     * @return string|null
+     * @return int|null
      */
     public function getMinAdvancedBookingOffset()
     {
@@ -184,26 +158,14 @@ class RestrictionStatus extends AbstractStructBase
     }
     /**
      * Set MinAdvancedBookingOffset value
-     * @param string $minAdvancedBookingOffset
+     * @param int $minAdvancedBookingOffset
      * @return \Devlabs91\TravelgatePushApi\StructType\RestrictionStatus
      */
     public function setMinAdvancedBookingOffset($minAdvancedBookingOffset = null)
     {
-        // validation for constraint: maxInclusive
-        if ($minAdvancedBookingOffset > 0) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, the value must be inferior or equal to 0, "%s" given', $minAdvancedBookingOffset), __LINE__);
-        }
-        // validation for constraint: minInclusive
-        if ($minAdvancedBookingOffset < 0) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, the value must be superior or equal to 0, "%s" given', $minAdvancedBookingOffset), __LINE__);
-        }
-        // validation for constraint: pattern
-        if (is_scalar($minAdvancedBookingOffset) && !preg_match('/\\-?P(\\d*D)?(T(\\d*H)?(\\d*M)?(\\d*(\\.\\d*)?S)?)?/', $minAdvancedBookingOffset)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a scalar value that matches "\-?P(\d*D)?(T(\d*H)?(\d*M)?(\d*(\.\d*)?S)?)?", "%s" given', var_export($minAdvancedBookingOffset, true)), __LINE__);
-        }
-        // validation for constraint: string
-        if (!is_null($minAdvancedBookingOffset) && !is_string($minAdvancedBookingOffset)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($minAdvancedBookingOffset)), __LINE__);
+        // validation for constraint: int
+        if (!is_null($minAdvancedBookingOffset) && !is_numeric($minAdvancedBookingOffset)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($minAdvancedBookingOffset)), __LINE__);
         }
         $this->MinAdvancedBookingOffset = $minAdvancedBookingOffset;
         return $this;
