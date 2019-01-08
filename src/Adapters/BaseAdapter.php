@@ -5,6 +5,7 @@ namespace Devlabs91\TravelgatePushApi\Adapters;
 use Devlabs91\TravelgatePushApi\StructType\RequestorID;
 use Devlabs91\TravelgatePushApi\StructType\BookingChannel;
 use Devlabs91\TravelgatePushApi\StructType\CompanyNameType;
+use Devlabs91\TravelgatePushApi\Utils\Http;
 
 class BaseAdapter {
     
@@ -54,6 +55,6 @@ class BaseAdapter {
     }
     
     public function getLastRequestResponse() {
-        return [ 'request' => $this->hotel->getLastRequest(), 'response' => $this->hotel->getLastResponse(), 'headers' => $this->hotel->getLastResponseHeaders() ];
+        return [ 'request' => $this->hotel->getLastRequest(), 'response' => $this->hotel->getLastResponse(), 'headers' => Http::parse_header( $this->hotel->getLastResponseHeaders( true ) ) ];
     }
 }
