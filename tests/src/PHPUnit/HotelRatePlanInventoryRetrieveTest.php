@@ -30,6 +30,7 @@ class HotelRatePlanInventoryRetrieveTest extends \PHPUnit_Framework_TestCase
     public function testHotelRatePlanInventoryRetrieve() {
         
         $class = HotelRatePlanInventoryRetrieveAdapterFactory::factory( $this::USERNAME, $this::PASSWORD, $this::CLIENT_CODE, $this::REQUESTOR_ID, $this::HOTEL_CODE );
+        $class->setHotel( new HotelSoapClient( $class->getOptions() ) );
         $response = $class->retrieve();
         if($response) {
             $this->assertInstanceOf(OTA_HotelRatePlanRS::class, $response);
@@ -82,5 +83,6 @@ class HotelRatePlanInventoryRetrieveTest extends \PHPUnit_Framework_TestCase
                 echo($error->getMessage().PHP_EOL);
             }
         }
+        
     }
 }

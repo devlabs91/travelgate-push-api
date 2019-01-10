@@ -1,0 +1,122 @@
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns:u="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+  <s:Header>
+    <o:Security xmlns:o="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" s:mustUnderstand="1">
+      <u:Timestamp u:Id="_0">
+        <u:Created>2019-01-10T07:30:29.608Z</u:Created>
+        <u:Expires>2019-01-10T07:35:29.608Z</u:Expires>
+      </u:Timestamp>
+    </o:Security>
+  </s:Header>
+  <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <HotelRatePlanInventoryRetrieveResponse xmlns="http://schemas.xmltravelgate.com/hubpush/provider/2012/10">
+      <HotelRatePlanInventoryRetrieveResult Version="0">
+        <Success xmlns="http://www.opentravel.org/OTA/2003/05"/>
+        <RatePlans xmlns="http://www.opentravel.org/OTA/2003/05" HotelCode="1" HotelName="Hotel Travelgate">
+          <RatePlan RatePlanCode="PACK" RatePlanType="11" YieldableIndicator="false" CurrencyCode="EUR" RatePlanStatusType="Active" Start="2016-01-01" End="2016-05-01">
+            <BookingRules>
+              <BookingRule Code="1 Noche">
+                <CancelPenalties>
+                  <CancelPenalty NonRefundable="false">
+                    <Deadline OffsetTimeUnit="Day" OffsetUnitMultiplier="1" OffsetDropTime="BeforeArrival"/>
+                    <AmountPercent NmbrOfNights="1"/>
+                  </CancelPenalty>
+                </CancelPenalties>
+              </BookingRule>
+              <BookingRule>
+                <Viewerships>
+                  <Viewership>
+                    <LocationCodes LocationCodesInclusive="true">
+                      <LocationCode CountryCode="ES"/>
+                    </LocationCodes>
+                  </Viewership>
+                  <Viewership>
+                    <LocationCodes LocationCodesInclusive="false"/>
+                  </Viewership>
+                </Viewerships>
+              </BookingRule>
+            </BookingRules>
+            <Description>
+              <Text>Packaged Rate</Text>
+            </Description>
+            <Rates>
+              <Rate>
+                <AdditionalGuestAmounts>
+                  <AdditionalGuestAmount AgeQualifyingCode="8" MaxAge="12"/>
+                  <AdditionalGuestAmount AgeQualifyingCode="8" MaxAge="12"/>
+                  <AdditionalGuestAmount AgeQualifyingCode="7" MaxAge="7"/>
+                </AdditionalGuestAmounts>
+                <PaymentPolicies>
+                  <GuaranteePayment PaymentCode="MerchantPayment"/>
+                  <GuaranteePayment PaymentCode="DirectPayment">
+                    <AcceptedPayments>
+                      <AcceptedPayment>
+                        <PaymentCard CardCode="VI"/>
+                      </AcceptedPayment>
+                      <AcceptedPayment>
+                        <PaymentCard>
+                          <PaymentCard CardCode="CA"/>
+                        </PaymentCard>
+                      </AcceptedPayment>
+                    </AcceptedPayments>
+                  </GuaranteePayment>
+                </PaymentPolicies>
+                <MealsIncluded MealPlanCodes="8"/>
+              </Rate>
+            </Rates>
+            <Offers>
+              <Offer OfferCode="Offer1FN" OfferStatusType="Active">
+                <OfferRules>
+                  <OfferRule>
+                    <DateRestriction Start="9/1/2017 12:00:00 AM" End="9/1/2017 12:00:00 AM"/>
+                    <LengthsOfStay ArrivalDateBased="false">
+                      <LengthOfStay Time="2" MinMaxMessageType="MinLOS"/>
+                      <LengthOfStay Time="5" MinMaxMessageType="MaxLOS"/>
+                    </LengthsOfStay>
+                    <DOW_Restrictions>
+                      <AvailableDaysOfWeek Mon="true" Tue="true" Weds="true" Thur="true" Fri="true" Sat="true" Sun="true"/>
+                    </DOW_Restrictions>
+                  </OfferRule>
+                </OfferRules>
+                <Discount NightsDiscounted="1" DiscountPattern="First"/>
+                <OfferDescription>
+                  <Text>Offer 1 Night Free</Text>
+                </OfferDescription>
+              </Offer>
+            </Offers>
+            <SellableProducts>
+              <SellableProduct InvCode="STD1" InvType="ROOM" InvStatusType="Active" InvTypeCode="ROOMSTD1">
+                <GuestRoom>
+                  <Quantities StandardNumBeds="2"/>
+                  <Occupancy MinOccupancy="2" MaxOccupancy="2" AgeQualifyingCode="10"/>
+                  <Occupancy MinOccupancy="1" MaxOccupancy="1" AgeQualifyingCode="8"/>
+                  <Description>
+                    <Text>Standard</Text>
+                  </Description>
+                </GuestRoom>
+              </SellableProduct>
+              <SellableProduct InvCode="STD2" InvType="ROOM" InvStatusType="Deactivated" InvTypeCode="">
+                <GuestRoom>
+                  <Quantities StandardNumBeds="2"/>
+                  <Occupancy MinOccupancy="2" MaxOccupancy="2" AgeQualifyingCode="10"/>
+                  <Occupancy MinOccupancy="1" MaxOccupancy="1" AgeQualifyingCode="8"/>
+                  <Description>
+                    <Text>Standard</Text>
+                  </Description>
+                </GuestRoom>
+              </SellableProduct>
+              <SellableProduct InvCode="STD2" InvType="ROOM" InvStatusType="Deactivated" InvTypeCode="">
+                <GuestRoom>
+                  <Quantities StandardNumBeds="2"/>
+                  <Occupancy MinOccupancy="2" MaxOccupancy="2" AgeQualifyingCode="10"/>
+                  <Description>
+                    <Text>Standard</Text>
+                  </Description>
+                </GuestRoom>
+              </SellableProduct>
+            </SellableProducts>
+          </RatePlan>
+        </RatePlans>
+      </HotelRatePlanInventoryRetrieveResult>
+    </HotelRatePlanInventoryRetrieveResponse>
+  </s:Body>
+</s:Envelope>

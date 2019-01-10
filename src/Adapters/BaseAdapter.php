@@ -6,6 +6,7 @@ use Devlabs91\TravelgatePushApi\StructType\RequestorID;
 use Devlabs91\TravelgatePushApi\StructType\BookingChannel;
 use Devlabs91\TravelgatePushApi\StructType\CompanyNameType;
 use Devlabs91\TravelgatePushApi\Utils\Http;
+use Devlabs91\TravelgatePushApi\ServiceType\Hotel;
 
 class BaseAdapter {
     
@@ -26,6 +27,12 @@ class BaseAdapter {
         $this->primaryLangID = $primaryLangID;
         
         $this->hotel = new \Devlabs91\TravelgatePushApi\ServiceType\Hotel( $this->getOptions() );
+        
+    }
+    
+    public function setHotel( Hotel $hotel ) {
+        $this->hotel = $hotel;
+        $this->addSoapHeaderSecurity( $hotel );
         
     }
     

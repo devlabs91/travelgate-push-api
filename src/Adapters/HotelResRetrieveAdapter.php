@@ -10,7 +10,7 @@ use Devlabs91\TravelgatePushApi\StructType\HotelResRetrieve;
 
 class HotelResRetrieveAdapter extends BaseAdapter {
 
-    /** @var \Devlabs91\TravelgatePushApi\StructType\OTA_HotelRatePlanRQ */
+    /** @var \Devlabs91\TravelgatePushApi\StructType\OTA_ReadRQ */
     public $request;
     
     public $hotelCode;
