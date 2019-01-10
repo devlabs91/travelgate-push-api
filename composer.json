@@ -1,6 +1,8 @@
 {
     "name": "devlabs91/travelgate-push-api",
     "description": "Package generated from https://pushprovider.xmltravelgate.com/Service/Hotel/Provider/ProviderGEN.svc?wsdl using wsdltophp/packagegenerator",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "require": {
         "php": ">=7.1.16",
         "ext-soap": "*",
@@ -10,5 +12,9 @@
         "psr-4": {
             "Devlabs91\\TravelgatePushApi\\": "./src/"
         }
+    },
+    "require-dev": {
+        "devlabs91/generic-hotel-api": "dev-master",
+        "phpunit/phpunit": "^7.5"
     }
 }
