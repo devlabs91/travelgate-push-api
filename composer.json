@@ -15,6 +15,6 @@
     },
     "require-dev": {
         "devlabs91/generic-hotel-api": "dev-master",
-        "phpunit/phpunit": "^7.5"
+        "phpunit/phpunit": "^5.6"
     }
 }

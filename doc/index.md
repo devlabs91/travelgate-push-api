@@ -16,3 +16,25 @@ Issues
 Issues with generation are stored in the `doc/issues.md` file in this bundle:
 
 [Read the documentation](https://github.com/devlabs91/travelgate-push-api/blob/master/doc/issues.md)
+
+Testing
+=======
+
+To test, you will need to update your credentials in ./phpunit.xml
+
+    <php>
+        <const name="PHPUNIT_TG_USERNAME" value="" />
+        <const name="PHPUNIT_TG_PASSWORD" value="" />
+        <const name="PHPUNIT_TG_CLIENT_CODE" value="" />
+        <const name="PHPUNIT_TG_REQUESTOR_ID" value="" />
+        <const name="PHPUNIT_TG_HOTEL_CODE" value="" />
+    </php>
+
+then run
+    
+    ./vendor/bin/phpunit 
+    
+or run for individual files
+
+    ./vendor/bin/phpunit tests/src/PHPUnit/HotelRatePlanInventoryRetrieveTest.php
+
