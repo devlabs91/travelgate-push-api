@@ -38,7 +38,7 @@ class Email extends EmailType
      * @param \Devlabs91\TravelgatePushApi\StructType\EmailType $_
      * @return \Devlabs91\TravelgatePushApi\StructType\Email
      */
-    public function set_(\Devlabs91\TravelgatePushApi\StructType\EmailType $_ = null)
+    public function set_($_ = null)
     {
         $this->_ = $_;
         return $this;

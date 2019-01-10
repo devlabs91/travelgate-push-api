@@ -20,6 +20,24 @@ Fix needed after generation, if not fixed the following notice appears :
              $this->_ = $_;
              return $this;
 
+Another issue, if not fixed the following notice appears :
+
+    Declaration of Devlabs91\TravelgatePushApi\StructType\Email::set_(?Devlabs91\TravelgatePushApi\StructType\EmailType $_ = NULL) should be compatible with Devlabs91\TravelgatePushApi\StructType\EmailType::set_($_ = NULL)
+
+    diff --git a/src/StructType/Email.php b/src/StructType/Email.php
+    index 66f08e4..b2e1f8a 100644
+    --- a/src/StructType/Email.php
+    +++ b/src/StructType/Email.php
+    @@ -38,7 +38,7 @@ class Email extends EmailType
+          * @param \Devlabs91\TravelgatePushApi\StructType\EmailType $_
+          * @return \Devlabs91\TravelgatePushApi\StructType\Email
+          */
+    -    public function set_(\Devlabs91\TravelgatePushApi\StructType\EmailType $_ = null)
+    +    public function set_($_ = null)
+         {
+             $this->_ = $_;
+             return $this;
+
 Schema Changes
 ==============
 
