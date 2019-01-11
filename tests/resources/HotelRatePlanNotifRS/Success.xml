@@ -1,0 +1,14 @@
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns:u="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+<s:Header>
+<o:Security s:mustUnderstand="1" xmlns:o="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+<u:Timestamp u:Id="_0"><u:Created>2019-01-11T09:57:26.024Z</u:Created><u:Expires>2019-01-11T10:02:26.024Z</u:Expires></u:Timestamp>
+</o:Security>
+</s:Header>
+<s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<HotelRatePlanNotifResponse xmlns="http://schemas.xmltravelgate.com/hubpush/provider/2012/10">
+  <HotelRatePlanNotifResult>
+    <Success xmlns="http://www.opentravel.org/OTA/2003/05"/>
+  </HotelRatePlanNotifResult>
+</HotelRatePlanNotifResponse>
+</s:Body>
+</s:Envelope>
