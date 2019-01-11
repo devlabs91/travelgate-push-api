@@ -1,0 +1,84 @@
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns:u="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+  <s:Header>
+    <o:Security xmlns:o="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" s:mustUnderstand="1">
+      <u:Timestamp u:Id="_0">
+        <u:Created>2019-01-10T07:30:29.608Z</u:Created>
+        <u:Expires>2019-01-10T07:35:29.608Z</u:Expires>
+      </u:Timestamp>
+    </o:Security>
+  </s:Header>
+  <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <HotelRatePlanInventoryRetrieveResponse xmlns = "http://schemas.xmltravelgate.com/hubpush/provider/2012/10">
+        <HotelRatePlanInventoryRetrieveResult Version = "0">
+            <Success xmlns = "http://www.opentravel.org/OTA/2003/05"/>
+            <RatePlans HotelCode = "1" HotelName = "Hotel Test Pruebas Travelgate " xmlns = "http://www.opentravel.org/OTA/2003/05">
+                <RatePlan RatePlanCode = "DRVT" BaseRatePlanCode = "SRATE2" RatePlanStatusType = "Active">
+                    <SellableProducts>
+                        <SellableProduct InvCode = "TRP" InvType = "ROOM" InvStatusType = "Active">
+                            <GuestRoom>
+                                <Quantities StandardNumBeds = "3"/>
+                                <Occupancy MinOccupancy = "3" MaxOccupancy = "3" AgeQualifyingCode = "10"/>
+                                <Room RoomTypeCode = "TRP" RoomID = "44"/>
+                                <Description>
+                                    <Text>Triple</Text>
+                                </Description>
+                            </GuestRoom>
+                        </SellableProduct>
+                        <SellableProduct InvCode = "TRP" InvType = "ROOM" InvStatusType = "Active">
+                            <GuestRoom>
+                                <Quantities StandardNumBeds = "3"/>
+                                <Occupancy MinOccupancy = "4" MaxOccupancy = "4" AgeQualifyingCode = "10"/>
+                                <Room RoomTypeCode = "TRP" RoomID = "44"/>
+                                <Description>
+                                    <Text>Triple</Text>
+                                </Description>
+                            </GuestRoom>
+                        </SellableProduct>
+                        <SellableProduct InvCode = "TRP" InvType = "ROOM" InvStatusType = "Active">
+                            <GuestRoom>
+                                <Quantities StandardNumBeds = "3"/>
+                                <Occupancy MinOccupancy = "2" MaxOccupancy = "2" AgeQualifyingCode = "10"/>
+                                <Occupancy MinOccupancy = "2" MaxOccupancy = "2" AgeQualifyingCode = "8"/>
+                                <Room RoomTypeCode = "TRP" RoomID = "44"/>
+                                <Description>
+                                    <Text>Triple</Text>
+                                </Description>
+                            </GuestRoom>
+                        </SellableProduct>
+                    </SellableProducts>
+                    <Description>
+                        <Text>Derivada Test</Text>
+                    </Description>
+                </RatePlan>
+                <RatePlan RatePlanCode = "DRV" BaseRatePlanCode = "SRATE" RatePlanStatusType = "Active">
+                    <BookingRules>
+                        <BookingRule>
+                            <CancelPenalties>
+                                <CancelPenalty NonRefundable = "false">
+                                    <Deadline OffsetTimeUnit = "Day" OffsetUnitMultiplier = "10" OffsetDropTime = "BeforeArrival"/>
+                                    <AmountPercent Amount = "2.00"/>
+                                </CancelPenalty>
+                            </CancelPenalties>
+                        </BookingRule>
+                        <BookingRule>
+                            <Viewerships>
+                                <Viewership>
+                                    <LocationCodes LocationCodesInclusive = "true">
+                                        <LocationCode CountryCode = "ES"/>
+                                    </LocationCodes>
+                                </Viewership>
+                                <Viewership>
+                                    <LocationCodes LocationCodesInclusive = "false"/>
+                                </Viewership>
+                            </Viewerships>
+                        </BookingRule>
+                    </BookingRules>
+                    <Description>
+                        <Text>TarifaDerivada</Text>
+                    </Description>
+                </RatePlan>
+            </RatePlans>
+        </HotelRatePlanInventoryRetrieveResult>
+    </HotelRatePlanInventoryRetrieveResponse>
+  </s:Body>
+</s:Envelope>

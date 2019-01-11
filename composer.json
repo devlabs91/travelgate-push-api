@@ -13,6 +13,11 @@
             "Devlabs91\\TravelgatePushApi\\": "./src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Devlabs91\\TravelgatePushApi\\Tests\\": "tests/src/"
+        }
+    },
     "require-dev": {
         "devlabs91/generic-hotel-api": "dev-master",
         "phpunit/phpunit": "^5.6"

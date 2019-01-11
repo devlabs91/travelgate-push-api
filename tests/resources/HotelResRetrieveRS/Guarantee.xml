@@ -1,0 +1,149 @@
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns:u="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+  <s:Header>
+    <o:Security s:mustUnderstand="1" xmlns:o="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+      <u:Timestamp u:Id="_0"><u:Created>2019-01-10T07:04:27.390Z</u:Created><u:Expires>2019-01-10T07:09:27.390Z</u:Expires></u:Timestamp>
+    </o:Security>
+  </s:Header>
+  <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<HotelResRetrieveResponse xmlns = "http://schemas.xmltravelgate.com/hubpush/client/2012/10">
+	  <HotelResRetrieveResult Version = "0">
+	    <Success xmlns = "http://www.opentravel.org/OTA/2003/05"/>
+	    <HotelReservations xmlns = "http://www.opentravel.org/OTA/2003/05">
+	      <HotelReservation ResStatus = "Confirmed" CreateDateTime = "2013-09-01T11:09:57.5387811Z">
+	        <RoomStays>
+	          <RoomStay>
+	            <RoomTypes>
+	              <RoomType RoomTypeCode = "STD1" RoomID = "1">
+	                <RoomDescription>
+	                  <Text>Standard</Text>
+	                </RoomDescription>
+	              </RoomType>
+	            </RoomTypes>
+	            <RatePlans>
+	              <RatePlan RatePlanCode = "BAR">
+	                <RatePlanDescription>
+	                  <Text>Best Available Rate</Text>
+	                </RatePlanDescription>
+	                <Commission Percent = "15.00"/>
+	              </RatePlan>
+	            </RatePlans>
+	            <RoomRates>
+	              <RoomRate EffectiveDate = "2013-09-03" ExpireDate = "2013-09-07" RoomTypeCode = "STD1" InvBlockCode = "7" RatePlanCode = "BAR">
+	                <Rates>
+	                  <Rate EffectiveDate = "2013-09-03" ExpireDate = "2013-09-07">
+	                    <Base AmountBeforeTax = "200.00" AmountAfterTax = "200.00" CurrencyCode = "EUR"/>
+	                    <CancelPolicies>
+	                      <CancelPenalty PolicyCode = "0912f3bc-40cc-4566-a5d7-0d2833ab62de"/>
+	                      <CancelPenalty PolicyCode = "cd4aa15e-82e4-420a-937e-63e802ba352a"/>
+	                    </CancelPolicies>
+	                  </Rate>
+	                </Rates>
+	                <Total AmountBeforeTax = "200.00" AmountAfterTax = "200.00" CurrencyCode = "EUR"/>
+	              </RoomRate>
+	            </RoomRates>
+	            <CancelPenalties>
+	              <CancelPenalty PolicyCode = "0912f3bc-40cc-4566-a5d7-0d2833ab62de" NonRefundable = "false">
+	                <Deadline AbsoluteDeadline = "2013-08-29" OffsetTimeUnit = "Day" OffsetUnitMultiplier = "5" OffsetDropTime = "BeforeArrival"/>
+	                <AmountPercent Percent = "15.00" CurrencyCode = "EUR"/>
+	              </CancelPenalty>
+	              <CancelPenalty PolicyCode = "cd4aa15e-82e4-420a-937e-63e802ba352a" NonRefundable = "false">
+	                <Deadline AbsoluteDeadline = "2013-08-31" OffsetTimeUnit = "Day" OffsetUnitMultiplier = "3" OffsetDropTime = "BeforeArrival"/>
+	                <AmountPercent NmbrOfNights = "2" CurrencyCode = "EUR"/>
+	              </CancelPenalty>
+	            </CancelPenalties>
+	            <BasicPropertyInfo HotelCode = "12" HotelName = "Adagio City Aparthotel Annecy Centre"/>
+	            <ServiceRPHs>
+	              <ServiceRPH RPH = "1"/>
+	              <ServiceRPH RPH = "2"/>
+	            </ServiceRPHs>
+	          </RoomStay>
+	        </RoomStays>
+	        <ResGuests>
+	          <ResGuest ResGuestRPH = "1" AgeQualifyingCode = "10">
+	            <Profiles>
+	              <ProfileInfo>
+	                <Profile>
+	                  <Customer>
+	                    <PersonName>
+	                      <NamePrefix>Mr</NamePrefix>
+	                      <GivenName>Test11</GivenName>
+	                      <Surname>TestAp11</Surname>
+	                    </PersonName>
+	                  </Customer>
+	                </Profile>
+	              </ProfileInfo>
+	            </Profiles>
+	            <GuestCounts>
+	              <GuestCount Age = "30"/>
+	            </GuestCounts>
+	          </ResGuest>
+	          <ResGuest ResGuestRPH = "2" AgeQualifyingCode = "10">
+	            <Profiles>
+	              <ProfileInfo>
+	                <Profile>
+	                  <Customer>
+	                    <PersonName>
+	                      <NamePrefix>Mr</NamePrefix>
+	                      <GivenName>Test22</GivenName>
+	                      <Surname>TestAp22</Surname>
+	                    </PersonName>
+	                  </Customer>
+	                </Profile>
+	              </ProfileInfo>
+	            </Profiles>
+	            <GuestCounts>
+	              <GuestCount Age = "30"/>
+	            </GuestCounts>
+	          </ResGuest>
+	        </ResGuests>
+	        <ResGlobalInfo>
+	          <Total AmountBeforeTax = "200.00" AmountAfterTax = "200.00" CurrencyCode = "USD"/>
+	          <Guarantee PaymentCode="DirectPayment">
+			      <GuaranteesAccepted>
+			        <GuaranteeAccepted>
+			          <PaymentCard ExpireDate="0614" CardCode ="VI">
+			            <CardHolderName>John Smith</CardHolderName>
+			            <CardNumber>
+			              <PlainText>4321432143214327</PlainText>
+			            </CardNumber>
+			            <SeriesCode>
+			              <PlainText>123</PlainText>
+			            </SeriesCode>
+			          </PaymentCard>
+			        </GuaranteeAccepted>
+			      </GuaranteesAccepted>
+			    </Guarantee>
+	          <HotelReservationIDs>
+	            <HotelReservationID ResID_Value = "123456" ResID_SourceContext = "Client"/>
+	            <HotelReservationID ResID_Value = "124" ResID_SourceContext = "Internal"/>
+	            <HotelReservationID ResID_Value = "115137" ResID_SourceContext = "Provider"/>
+	          </HotelReservationIDs>
+	          <Profiles>
+	            <ProfileInfo>
+	              <Profile>
+	                <Customer>
+	                  <PersonName>
+	                    <NamePrefix>Mr</NamePrefix>
+	                    <GivenName>Test12</GivenName>
+	                    <Surname>TestAp12</Surname>
+	                  </PersonName>
+	                  <Telephone PhoneTechType = "1" PhoneNumber = "1212121212" FormattedInd = "false" DefaultInd = "true"/>
+	                  <Email DefaultInd = "true" EmailType = "1">test@yourdomain.com</Email>
+	                  <Address Type = "1">
+	                    <AddressLine>B-15, Sector-57</AddressLine>
+	                    <CityName>NOIDA</CityName>
+	                    <PostalCode>201301</PostalCode>
+	                    <StateProv StateCode = "UP">Uttar Pradesh</StateProv>
+	                    <CountryName Code = "IN">INDIA</CountryName>
+	                  </Address>
+	                </Customer>
+	              </Profile>
+	            </ProfileInfo>
+	          </Profiles>
+	        </ResGlobalInfo>
+	      </HotelReservation>
+	    </HotelReservations>
+	  </HotelResRetrieveResult>
+	</HotelResRetrieveResponse>
+  </s:Body>
+</s:Envelope>
