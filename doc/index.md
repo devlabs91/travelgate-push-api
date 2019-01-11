@@ -1,3 +1,15 @@
+Introduction
+============
+
+Soap Client API generated for use with [Travelgate Hotel Push API](http://tech.xmltravelgate.com/docs/hotel-push/index).
+
+Functiallity focused on :
+
+    HotelRatePlanInventoryRetrieve
+    HotelResRetrieve
+    HotelAvailNotif
+    HotelRatePlanNotif
+
 Generation
 ==========
 
@@ -20,7 +32,9 @@ Issues with generation are stored in the `doc/issues.md` file in this bundle:
 Testing
 =======
 
-To test, you will need to update your credentials in ./phpunit.xml
+Tests are using mockup responses located in tests/resources/
+
+For additional testing using the real soap client, you will need to update your credentials in ./phpunit.xml
 
     <php>
         <const name="PHPUNIT_TG_USERNAME" value="" />
@@ -37,4 +51,3 @@ then run
 or run for individual files
 
     ./vendor/bin/phpunit tests/src/PHPUnit/HotelRatePlanInventoryRetrieveTest.php
-
