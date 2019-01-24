@@ -917,6 +917,21 @@
 		<xs:attribute name="ResResponseType"
 			type="tns:TransactionStatusType" />
 	</xs:complexType>
+	<xs:complexType name="OTA_HotelResNotifRS">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" name="POS"
+                type="tns:ArrayOfSourceType" />
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element minOccurs="0" maxOccurs="1" name="Errors"
+                    type="tns:ErrorsType" />
+                <xs:element minOccurs="0" maxOccurs="1"
+                    name="HotelReservations" type="tns:HotelReservationsType" />
+                <xs:element minOccurs="0" maxOccurs="1" name="Success"
+                    type="tns:SuccessType" />
+            </xs:choice>
+        </xs:sequence>
+        <xs:attribute name="TimeStamp" type="xs:dateTime" />
+    </xs:complexType>
 	<xs:simpleType name="TransactionStatusType">
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="Pending" />

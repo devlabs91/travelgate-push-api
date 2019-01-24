@@ -122,6 +122,7 @@ class ClassMap
             'ArrayOfHotelReservationIDsTypeHotelReservationID' => '\\Devlabs91\\TravelgatePushApi\\ArrayType\\ArrayOfHotelReservationIDsTypeHotelReservationID',
             'HotelReservationID' => '\\Devlabs91\\TravelgatePushApi\\StructType\\HotelReservationID',
             'OTA_HotelResRS' => '\\Devlabs91\\TravelgatePushApi\\StructType\\OTA_HotelResRS',
+            'OTA_HotelResNotifRS' => '\\Devlabs91\\TravelgatePushApi\\StructType\\OTA_HotelResNotifRS',
             'OTA_CancelRQ' => '\\Devlabs91\\TravelgatePushApi\\StructType\\OTA_CancelRQ',
             'UniqueID' => '\\Devlabs91\\TravelgatePushApi\\StructType\\UniqueID',
             'OTA_CancelRS' => '\\Devlabs91\\TravelgatePushApi\\StructType\\OTA_CancelRS',

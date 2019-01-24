@@ -256,6 +256,17 @@
 				<soap:body use="literal" />
 			</wsdl:output>
 		</wsdl:operation>
+        <wsdl:operation name="OTA_HotelResRS">
+            <soap:operation
+                soapAction="http://schemas.xmltravelgate.com/hubpush/provider/2012/10/IProviderGen/OTA_HotelResRS"
+                style="document" />
+            <wsdl:input>
+                <soap:body use="literal" />
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal" />
+            </wsdl:output>
+        </wsdl:operation>
 		<wsdl:operation name="HotelRoomListRetrieve">
 			<soap:operation
 				soapAction="http://schemas.xmltravelgate.com/hubpush/provider/2012/10/IProviderGen/HotelRoomListRetrieve"

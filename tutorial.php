@@ -177,3 +177,15 @@ if ($cancel->Cancel(new \Devlabs91\TravelgatePushApi\StructType\Cancel()) !== fa
 } else {
     print_r($cancel->getLastError());
 }
+/**
+ * Samples for OTAH ServiceType
+ */
+$oTAH = new \Devlabs91\TravelgatePushApi\ServiceType\OTAH($options);
+/**
+ * Sample call for OTA_HotelResRS operation/method
+ */
+if ($oTAH->OTA_HotelResRS(new \Devlabs91\TravelgatePushApi\StructType\OTA_HotelResRS()) !== false) {
+    print_r($oTAH->getResult());
+} else {
+    print_r($oTAH->getLastError());
+}
