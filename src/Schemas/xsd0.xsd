@@ -335,4 +335,18 @@
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
+    <xs:element name="OTA_HotelResRS">
+      <xs:complexType>
+          <xs:complexContent mixed="false">
+              <xs:extension base="q36:OTA_HotelResRS" xmlns:q36="http://www.opentravel.org/OTA/2003/05" />
+          </xs:complexContent>
+      </xs:complexType>
+    </xs:element>
+    <xs:element name="OTA_HotelResNotifRS">
+      <xs:complexType>
+          <xs:complexContent mixed="false">
+              <xs:extension base="q37:OTA_HotelResNotifRS" xmlns:q37="http://www.opentravel.org/OTA/2003/05" />
+          </xs:complexContent>
+      </xs:complexType>
+    </xs:element>
 </xs:schema>

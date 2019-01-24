@@ -135,6 +135,16 @@
 		<wsdl:part name="parameters"
 			element="tns:HotelRatePlanNotifResponse" />
 	</wsdl:message>
+    <wsdl:message
+        name="IProviderGen_OTA_HotelResRS_InputMessage">
+        <wsdl:part name="parameters" 
+            element="tns:OTA_HotelResRS" />
+    </wsdl:message>
+    <wsdl:message
+        name="IProviderGen_OTA_HotelResRS_OutputMessage">
+        <wsdl:part name="parameters" 
+        element="tns:OTA_HotelResNotifRS" />
+    </wsdl:message>
 	<wsdl:message
 		name="IProviderGen_HotelRatePlanInventoryNotif_InputMessage">
 		<wsdl:part name="parameters"
@@ -184,17 +194,6 @@
 		<wsdl:part name="parameters"
 			element="tns:HotelResRetrieveResponse" />
 	</wsdl:message>
-    <wsdl:message
-        name="IProviderGen_OTA_HotelResRS_InputMessage">
-        <wsdl:part name="parameters" element="q7:OTA_HotelResRS" 
-            xmlns:q7="http://www.opentravel.org/OTA/2003/05" />
-    </wsdl:message>
-    <wsdl:message
-        name="IProviderGen_OTA_HotelResRS_OutputMessage">
-        <wsdl:part name="parameters"
-            element="q7:OTA_HotelResNotifRS" 
-            xmlns:q7="http://www.opentravel.org/OTA/2003/05" />
-    </wsdl:message>
 	<wsdl:message
 		name="IProviderGen_HotelRoomListRetrieve_InputMessage">
 		<wsdl:part name="parameters"
@@ -302,6 +301,14 @@
 				wsaw:Action="http://schemas.xmltravelgate.com/hubpush/provider/2012/10/IProviderGen/HotelRatePlanNotifResponse"
 				message="tns:IProviderGen_HotelRatePlanNotif_OutputMessage" />
 		</wsdl:operation>
+        <wsdl:operation name="OTA_HotelResRS">
+            <wsdl:input
+                wsaw:Action="http://schemas.xmltravelgate.com/hubpush/provider/2012/10/IProviderGen/OTA_HotelResRS"
+                message="tns:IProviderGen_OTA_HotelResRS_InputMessage" />
+            <wsdl:output
+                wsaw:Action="http://schemas.xmltravelgate.com/hubpush/provider/2012/10/IProviderGen/OTA_HotelResNotifRS"
+                message="tns:IProviderGen_OTA_HotelResRS_OutputMessage" />
+        </wsdl:operation>
 		<wsdl:operation name="HotelRatePlanInventoryNotif">
 			<wsdl:input
 				wsaw:Action="http://schemas.xmltravelgate.com/hubpush/provider/2012/10/IProviderGen/HotelRatePlanInventoryNotif"
@@ -342,14 +349,6 @@
 				wsaw:Action="http://schemas.xmltravelgate.com/hubpush/provider/2012/10/IProviderGen/HotelResRetrieveResponse"
 				message="tns:IProviderGen_HotelResRetrieve_OutputMessage" />
 		</wsdl:operation>
-        <wsdl:operation name="OTA_HotelResRS">
-            <wsdl:input
-                wsaw:Action="http://schemas.xmltravelgate.com/hubpush/provider/2012/10/IProviderGen/OTA_HotelResRS"
-                message="tns:IProviderGen_OTA_HotelResRS_InputMessage" />
-            <wsdl:output
-                wsaw:Action="http://schemas.xmltravelgate.com/hubpush/provider/2012/10/IProviderGen/OTA_HotelResNotifRS"
-                message="tns:IProviderGen_OTA_HotelResRS_OutputMessage" />
-        </wsdl:operation>
 		<wsdl:operation name="HotelRoomListRetrieve">
 			<wsdl:input
 				wsaw:Action="http://schemas.xmltravelgate.com/hubpush/provider/2012/10/IProviderGen/HotelRoomListRetrieve"

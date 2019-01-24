@@ -20,6 +20,56 @@ Fix needed after generation, if not fixed the following notice appears :
              $this->_ = $_;
              return $this;
 
+And fixed
+
+    diff --git a/src/StructType/ErrorType.php b/src/StructType/ErrorType.php
+    index 663eb31..76d6279 100644
+    --- a/src/StructType/ErrorType.php
+    +++ b/src/StructType/ErrorType.php
+    @@ -12,7 +12,7 @@ class ErrorType extends FreeTextType
+     {
+         /**
+          * The _
+    -     * @var \Devlabs91\TravelgatePushApi\StructType\FreeTextType
+    +     * @var string
+          */
+         public $_;
+         /**
+    @@ -36,12 +36,12 @@ class ErrorType extends FreeTextType
+          * @uses ErrorType::setType()
+          * @uses ErrorType::setShortText()
+          * @uses ErrorType::setCode()
+    -     * @param \Devlabs91\TravelgatePushApi\StructType\FreeTextType $_
+    +     * @param string $_
+          * @param string $type
+          * @param string $shortText
+          * @param string $code
+          */
+    -    public function __construct(\Devlabs91\TravelgatePushApi\StructType\FreeTextType $_ = null, $type = null, $shortText = null, $code = null)
+    +    public function __construct($_ = null, $type = null, $shortText = null, $code = null)
+         {
+             $this
+                 ->set_($_)
+    @@ -51,7 +51,7 @@ class ErrorType extends FreeTextType
+         }
+         /**
+          * Get _ value
+    -     * @return \Devlabs91\TravelgatePushApi\StructType\FreeTextType|null
+    +     * @return string|null
+          */
+         public function get_()
+         {
+    @@ -59,7 +59,7 @@ class ErrorType extends FreeTextType
+         }
+         /**
+          * Set _ value
+    -     * @param \Devlabs91\TravelgatePushApi\StructType\FreeTextType $_
+    +     * @param string $_
+          * @return \Devlabs91\TravelgatePushApi\StructType\ErrorType
+          */
+         public function set_($_ = null)
+
+
 Another issue, if not fixed the following notice appears :
 
     Declaration of Devlabs91\TravelgatePushApi\StructType\Email::set_(?Devlabs91\TravelgatePushApi\StructType\EmailType $_ = NULL) should be compatible with Devlabs91\TravelgatePushApi\StructType\EmailType::set_($_ = NULL)
