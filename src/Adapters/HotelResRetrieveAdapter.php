@@ -35,7 +35,7 @@ class HotelResRetrieveAdapter extends BaseAdapter {
         if( !$start ) { $start = clone $end; $start->sub( new \DateInterval('P2D') ); }
         
         $this->request->getReadRequests()->setHotelReadRequest(
-            new HotelReadRequest( new SelectionCriteria( $start->format('Y-m-d'), $end->format('Y-m-d'), $dateType ) ) );
+            new HotelReadRequest( new SelectionCriteria( $start->format('Y-m-d'), $end->format('Y-m-d'), $dateType ), $this->hotelCode ) );
         $parameters = new HotelResRetrieve( $this->request );
         
         if ( $this->hotel->HotelResRetrieve( $parameters ) !== false ) {
